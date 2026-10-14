@@ -1,0 +1,133 @@
+{
+  "_id": "9ac7fcd9d5ed9486",
+  "name": "Gorgon",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A snake-headed, scaled woman with a gilded bow.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "champion",
+    "type": "solo",
+    "difficulty": 19,
+    "notes": "<h3>Champion | Solo</h3>\n<p><em>A snake-headed, scaled woman with a gilded bow.</em></p>\n<p><strong>Motives &amp; Tactics:</strong> Corner, hit-and-run, petrify, seek vengeance</p>\n<p><strong>Difficulty:</strong> 19 | <strong>Thresholds:</strong> 13/25 | <strong>HP:</strong> 9 | <strong>Stress:</strong> 3</p>\n<p><strong>ATK:</strong> +5 | Sunsear Shortbow: Far | 2d20+3 physical</p>\n<hr>\n<p><strong>Experience:</strong> Stealth +3</p>\n<h4>Features</h4>\n<p><strong>Relentless (2) - Passive</strong>: The Gorgon can be spotlighted up to two times per GM turn. Spend Fear as usual to spotlight them.</p>\n<p><strong>Sunsear - Passive</strong>: When the Gorgon makes a successful standard attack, the target Glows until the end of the scene and can’t become Cloaked. Attacks against a Glowing target have Advantage.</p>\n<p><strong>Crown of Serpents - Action</strong>: Make an attack roll against a target within Melee using her snakes. On a success, <strong>mark a Stress</strong> to deal 2d10+4 physical damage and the target must <strong>mark a Stress</strong>.</p>\n<p><strong>Petrifying Gaze - Reaction</strong>: When the Gorgon takes damage from an attack within Close range, you can spend a Fear to force the attacker to make an Instinct Reaction Roll. On a failure, they begin to turn to stone, marking a HP and starting a Petrification Countdown (4). This countdown ticks down when the Gorgon is attacked. When it triggers, the target must make a death move. If the Gorgon is defeated, all petrification countdowns end.</p>\n<p><strong>Momentum - Reaction</strong>: When the Gorgon makes a successful attack against a PC, you gain a Fear.</p>\n",
+    "damageThresholds": {
+      "major": 13,
+      "severe": 25
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 9
+      },
+      "stress": {
+        "value": 0,
+        "max": 3
+      }
+    },
+    "motivesAndTactics": "Corner, hit-and-run, petrify, seek vengeance",
+    "experiences": {
+      "335100943ae71cd7": {
+        "name": "Stealth",
+        "value": 3
+      }
+    },
+    "attack": {
+      "_id": "44d951ede3dc4c5c",
+      "name": "Sunsear Shortbow",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/weapons/bows/longbow-recurve-leather-brown.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "far",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 5
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "2d20+3"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "910bda96ff9f4446",
+      "name": "Relentless (2) - Passive",
+      "type": "feature",
+      "img": "icons/equipment/shield/heater-steel-gold.webp",
+      "system": {
+        "description": "<p>The Gorgon can be spotlighted up to two times per GM turn. Spend Fear as usual to spotlight them.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!9ac7fcd9d5ed9486.910bda96ff9f4446"
+    },
+    {
+      "_id": "7c304cfa79ee6332",
+      "name": "Sunsear - Passive",
+      "type": "feature",
+      "img": "icons/magic/fire/explosion-fireball-medium-orange.webp",
+      "system": {
+        "description": "<p>When the Gorgon makes a successful standard attack, the target Glows until the end of the scene and can’t become Cloaked. Attacks against a Glowing target have Advantage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!9ac7fcd9d5ed9486.7c304cfa79ee6332"
+    },
+    {
+      "_id": "a2283b724a5b22c9",
+      "name": "Crown of Serpents - Action",
+      "type": "feature",
+      "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+      "system": {
+        "description": "<p>Make an attack roll against a target within Melee using her snakes. On a success, <strong>mark a Stress</strong> to deal 2d10+4 physical damage and the target must <strong>mark a Stress</strong>.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!9ac7fcd9d5ed9486.a2283b724a5b22c9"
+    },
+    {
+      "_id": "346b6d6e36bf390a",
+      "name": "Petrifying Gaze - Reaction",
+      "type": "feature",
+      "img": "icons/creatures/eyes/humanoid-single-purple-blue.webp",
+      "system": {
+        "description": "<p>When the Gorgon takes damage from an attack within Close range, you can spend a Fear to force the attacker to make an Instinct Reaction Roll. On a failure, they begin to turn to stone, marking a HP and starting a Petrification Countdown (4). This countdown ticks down when the Gorgon is attacked. When it triggers, the target must make a death move. If the Gorgon is defeated, all petrification countdowns end.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!9ac7fcd9d5ed9486.346b6d6e36bf390a"
+    },
+    {
+      "_id": "dd83bf8c5aa9081a",
+      "name": "Momentum - Reaction",
+      "type": "feature",
+      "img": "icons/environment/creatures/horse-brown.webp",
+      "system": {
+        "description": "<p>When the Gorgon makes a successful attack against a PC, you gain a Fear.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!9ac7fcd9d5ed9486.dd83bf8c5aa9081a"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Gorgon",
+    "actorLink": false
+  },
+  "_key": "!actors!9ac7fcd9d5ed9486"
+}

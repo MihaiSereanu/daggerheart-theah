@@ -1,0 +1,20 @@
+{
+  "_id": "43eed949e042ad94",
+  "name": "Trick up my sleeve",
+  "type": "domainCard",
+  "img": "icons/skills/melee/strike-blade-scimitar-orange-blue.webp",
+  "system": {
+    "description": "<p>You can <strong>mark a Stress</strong> to immediately describe how you clear a temporary <em>Restrained</em> or <em>Vulnerable</em> condition on yourself or an ally within Very Close.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "flair",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "4c13446263efc38b",
+  "_key": "!items!43eed949e042ad94"
+}

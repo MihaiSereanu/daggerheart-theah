@@ -14,7 +14,7 @@ import { parseInlineParams } from './parser.mjs';
  * The rollTable format also the following additional params:
  * - min: and max: params control what range is displayed
  * - digits: adds 0 padding to the roll result. If omitted, it figures it out from the highest number
- * For example: @EmbedTable[rollTable:Compendium.daggerheart.rolltables.RollTable.tF04P02yVN1YDVel|min:1|max:13] shows values 1 to 13 of the consumable table
+ * For example: @EmbedTable[rollTable:Compendium.daggerheart-theah.rolltables.RollTable.tF04P02yVN1YDVel|min:1|max:13] shows values 1 to 13 of the consumable table
  */
 export async function DhEmbedTableEnricher(match) {
     const params = parseInlineParams(match[1], { first: 'uuids' });

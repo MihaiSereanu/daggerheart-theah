@@ -21,7 +21,7 @@ export default class DHRoll extends BaseRoll {
 
     static messageType = 'adversaryRoll';
 
-    static CHAT_TEMPLATE = 'systems/daggerheart/templates/ui/chat/roll.hbs';
+    static CHAT_TEMPLATE = 'systems/daggerheart-theah/templates/ui/chat/roll.hbs';
 
     static DefaultDialog = D20RollDialog;
 
@@ -33,13 +33,12 @@ export default class DHRoll extends BaseRoll {
         const roll = await this.buildConfigure(config, message);
         if (!roll) return;
 
-        if (config.skips?.createMessage) config.messageRoll = roll;
-
         if (config.evaluate !== false) {
             await this.buildEvaluate(roll, config, message);
         }
         await this.buildPost(roll, config, message);
-        return config;
+        // The roll holds config as its options. Keep the live roll outside that object to avoid circular JSON.
+        return config.skips?.createMessage ? { ...config, messageRoll: roll } : config;
     }
 
     static createRollInstance(config) {

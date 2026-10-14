@@ -1,0 +1,18 @@
+{
+  "_id": "68fb0d12a2d05519",
+  "name": "Village",
+  "type": "community",
+  "img": "icons/environment/settlement/house-farmland-small.webp",
+  "system": {
+    "description": "<p>You were raised in a quiet village or rural hamlet, where daily life centers around hard work, shared meals, and long-held traditions. These communities rely on close ties between neighbors, shaped by harvest cycles, festivals, and the rhythm of the land. Everyone knows everyone else, and reputation matters.</p>\n<p><strong>Close-Knit</strong>. Once per Rest, you can spend any number of Hope to give an ally the same number of Hope.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "features": [
+      "Compendium.daggerheart-theah.features.Item.b3262e0d49407f96"
+    ],
+    "loreReference": null
+  },
+  "effects": [],
+  "_key": "!items!68fb0d12a2d05519"
+}

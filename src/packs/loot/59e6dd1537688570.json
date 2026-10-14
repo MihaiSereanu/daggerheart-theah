@@ -1,0 +1,15 @@
+{
+  "_id": "59e6dd1537688570",
+  "name": "Companion Reliquary",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Companion Reliquary</strong>: This case can fit a small animal companion. While the companion is inside, the animal and case are immune to all damage and harmful effects.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!59e6dd1537688570"
+}

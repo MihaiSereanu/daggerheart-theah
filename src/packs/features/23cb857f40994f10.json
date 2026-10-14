@@ -1,0 +1,23 @@
+{
+  "_id": "23cb857f40994f10",
+  "name": "Dedicated",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-standard-purple.webp",
+  "system": {
+    "description": "<p>Record three sayings or values your upbringing instilled in you. Once per rest, when you describe how you’re embodying one of these principles through your current action, you can roll a d20 as your Hope Die.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    }
+  },
+  "effects": [],
+  "folder": "b0fbc9c33b95ef44",
+  "_key": "!items!23cb857f40994f10"
+}

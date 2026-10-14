@@ -1,0 +1,20 @@
+{
+  "_id": "5837e7fcd29779b1",
+  "name": "Moulinet",
+  "type": "domainCard",
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "system": {
+    "description": "<p>When an enemy misses you with a melee attack, you can <strong>spend a Hope</strong> to target all other targets within Very Close range. All additional adversaries you succeed against take half the original damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "steel",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "6aabc2e2c710379d",
+  "_key": "!items!5837e7fcd29779b1"
+}

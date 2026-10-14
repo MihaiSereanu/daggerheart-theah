@@ -1,0 +1,15 @@
+{
+  "_id": "6507e99f56995a19",
+  "name": "Whistle of the Saintly Piper",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Whistle of the Saintly Piper</strong>: This handcrafted whistle has a distinctive sound. When you blow this whistle, its piercing tone can be heard within a 1-mile (1.6 km) radius.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!6507e99f56995a19"
+}

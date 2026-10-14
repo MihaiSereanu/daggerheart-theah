@@ -1,0 +1,12 @@
+{
+  "foundry": "14.367",
+  "documents": 619,
+  "features": 424,
+  "emptyFeatures": [],
+  "bogusFeatures": [],
+  "legacyRepairs": "passed",
+  "customRules": "preserved",
+  "counterValues": "preserved",
+  "idempotence": "passed",
+  "browserErrors": []
+}

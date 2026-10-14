@@ -1,0 +1,20 @@
+{
+  "_id": "ddd17416289a8beb",
+  "name": "Covering Withdrawal",
+  "type": "domainCard",
+  "img": "icons/sundries/flags/banner-sword-blue.webp",
+  "system": {
+    "description": "<p>When an ally takes damage, <strong>spend a Hope</strong> to reduce the damage by 1d8 and let them reposition within Close range.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "anchor",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "9aaa1110e6898797",
+  "_key": "!items!ddd17416289a8beb"
+}

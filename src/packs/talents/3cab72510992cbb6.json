@@ -1,0 +1,20 @@
+{
+  "_id": "3cab72510992cbb6",
+  "name": "Beastform",
+  "type": "domainCard",
+  "img": "icons/sundries/books/book-symbol-leaf-gold-green.webp",
+  "system": {
+    "description": "<p>When you first gain this Talent, choose 2 from the Beastform List - <strong>see next page</strong>. <strong>Mark a Stress</strong> to transform into either of your chosen Beastforms. You can drop out of it at any time. While transformed, you can communicate normally and still benefit from features or abilities you have access to, but cannot cast spells. Additionally, you gain the Beastform’s features, add their listed Trait bonus to your own as well as their Evasion bonus to your Evasion. While you’re in Beastform, your Armor becomes part of your body and you mark Armor Slots as usual. If you mark your last HP, you automatically drop the form.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "druidism",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "7f26513e087dfe71",
+  "_key": "!items!3cab72510992cbb6"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "e364b6fd0d421d7f",
+  "name": "Ring of The Brotherhood",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Ring of The Brotherhood</strong>: Spend a Hope to activate this ring. Your footsteps are silent until your next rest.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!e364b6fd0d421d7f"
+}

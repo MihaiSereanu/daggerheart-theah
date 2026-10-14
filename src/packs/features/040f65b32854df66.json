@@ -1,0 +1,15 @@
+{
+  "_id": "040f65b32854df66",
+  "name": "Conviction",
+  "type": "feature",
+  "img": "icons/sundries/books/book-red-cross.webp",
+  "system": {
+    "description": "<p>Whenever you fail an Action Roll, you may <strong>mark a Stress</strong> to give yourself advantage after the roll is made. If this causes the roll to succeed, gain a Hope.</p>\n<blockquote>\n<p>You may replace an Archetype feature with a Talent from <strong>the Art of the Second Prophet</strong> - see <em>Appendix</em>. This is a Sorcerous Tradition. You learn further Art Talents via Advancement.</p>\n</blockquote>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "0cf46745a38c78fa",
+  "_key": "!items!040f65b32854df66"
+}

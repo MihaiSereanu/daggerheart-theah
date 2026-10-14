@@ -1,0 +1,15 @@
+{
+  "_id": "0e271e2e2b43eeaa",
+  "name": "Quiver of The Huntress",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Quiver of The Huntress</strong>: When you succeed on an attack with an arrow stored in this quiver, gain a bonus to the damage roll equal to half your level.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!0e271e2e2b43eeaa"
+}

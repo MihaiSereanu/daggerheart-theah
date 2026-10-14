@@ -43,12 +43,12 @@ export default class SettingFeatureConfig extends HandlebarsApplicationMixin(App
     };
 
     static PARTS = {
-        header: { template: 'systems/daggerheart/templates/settings/downtime-config/header.hbs' },
-        tabs: { template: 'systems/daggerheart/templates/sheets/global/tabs/tab-navigation.hbs' },
-        main: { template: 'systems/daggerheart/templates/settings/downtime-config/main.hbs' },
-        actions: { template: 'systems/daggerheart/templates/settings/downtime-config/actions.hbs' },
-        effects: { template: 'systems/daggerheart/templates/settings/downtime-config/effects.hbs' },
-        footer: { template: 'systems/daggerheart/templates/settings/downtime-config/footer.hbs' }
+        header: { template: 'systems/daggerheart-theah/templates/settings/downtime-config/header.hbs' },
+        tabs: { template: 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-navigation.hbs' },
+        main: { template: 'systems/daggerheart-theah/templates/settings/downtime-config/main.hbs' },
+        actions: { template: 'systems/daggerheart-theah/templates/settings/downtime-config/actions.hbs' },
+        effects: { template: 'systems/daggerheart-theah/templates/settings/downtime-config/effects.hbs' },
+        footer: { template: 'systems/daggerheart-theah/templates/settings/downtime-config/footer.hbs' }
     };
 
     /** @inheritdoc */
@@ -109,7 +109,7 @@ export default class SettingFeatureConfig extends HandlebarsApplicationMixin(App
                 position: { width: 380 },
                 classes: ['daggerheart', 'dh-style'],
                 content: await foundry.applications.handlebars.renderTemplate(
-                    'systems/daggerheart/templates/actionTypes/actionType.hbs',
+                    'systems/daggerheart-theah/templates/actionTypes/actionType.hbs',
                     { types: types }
                 ),
                 ok: {

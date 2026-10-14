@@ -1,0 +1,20 @@
+{
+  "_id": "32ed2828ab9ecf1a",
+  "name": "False Opening",
+  "type": "domainCard",
+  "img": "icons/skills/melee/strike-blade-scimitar-orange-blue.webp",
+  "system": {
+    "description": "<p>When an adversary targets you with an attack while you are <em>Vulnerable</em>, <strong>spend a Hope</strong> to negate their Advantage. If the attack fails, the attacker must <strong>mark a Stress</strong>.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "flair",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "4c13446263efc38b",
+  "_key": "!items!32ed2828ab9ecf1a"
+}

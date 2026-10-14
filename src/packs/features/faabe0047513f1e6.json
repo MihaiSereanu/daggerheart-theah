@@ -1,0 +1,23 @@
+{
+  "_id": "faabe0047513f1e6",
+  "name": "Press the Advantage",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-standard-blue.webp",
+  "system": {
+    "description": "<p>Once per Rest, when an adversary within Close range takes damage and marks HP from an ally’s attack, you can move to them and strike. On a success, the adversary marks the same number of HP again.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    }
+  },
+  "effects": [],
+  "folder": "cb58dca1e0223ef3",
+  "_key": "!items!faabe0047513f1e6"
+}

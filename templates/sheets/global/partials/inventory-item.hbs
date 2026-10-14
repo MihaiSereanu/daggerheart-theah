@@ -7,7 +7,7 @@
             {{else}}
                 <div class="item-name">{{localize item.name}}</div>
             {{/if}}
-            {{#if  (eq type 'weapon')}} 
+            {{#if  (eq type 'weapon')}}
                 <div class="item-tags">
                     {{#if isSidebar}}
                         <div class="item-labels">
@@ -152,7 +152,7 @@
             {{/if}}
         </div>
         {{#if (and (not isSidebar) (eq item.system.resource.type 'simple'))}}
-            {{> "systems/daggerheart/templates/sheets/global/partials/item-resource.hbs"}}
+            {{> "systems/daggerheart-theah/templates/sheets/global/partials/item-resource.hbs"}}
         {{/if}}
         {{#if (and (not isSidebar) item.system.quantity)}}
             <div class="item-resource">
@@ -191,15 +191,11 @@
                 {{/if}}
                 {{#if (eq type 'domainCard')}}
                     {{#unless item.system.inVault}}
-                        <a data-action="toggleVault" data-tooltip="{{localize 'DAGGERHEART.UI.Tooltip.sendToVault'}}">
-                            <i class="fa-solid fa-arrow-down"></i>
-                        </a>
+
                     {{else}}
-                        <a data-action="toggleVault" data-tooltip="{{localize 'DAGGERHEART.UI.Tooltip.sendToLoadout'}}">
-                            <i class="fa-solid fa-arrow-up"></i>
-                        </a>
+
                     {{/unless}}
-                    
+
                 {{/if}}
                 <a data-action="toChat" data-tooltip="{{localize 'DAGGERHEART.UI.Tooltip.sendToChat'}}"><i class="fa-regular fa-message"></i></a>
                 <a data-action="triggerContextMenu" data-tooltip="{{localize 'DAGGERHEART.UI.Tooltip.moreOptions'}}"><i class="fa-solid fa-ellipsis-vertical"></i></a>
@@ -210,7 +206,7 @@
     {{/unless}}
     <div class="item-description">{{#unless isSidebar}}{{{item.system.description}}}{{/unless}}</div>
     {{#if (and (not isSidebar) (eq item.system.resource.type 'diceValue'))}}
-        {{> "systems/daggerheart/templates/sheets/global/partials/item-resource.hbs"}}
+        {{> "systems/daggerheart-theah/templates/sheets/global/partials/item-resource.hbs"}}
     {{/if}}
     {{#if featureType}}
         <div class="item-buttons">

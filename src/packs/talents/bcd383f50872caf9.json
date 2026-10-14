@@ -1,0 +1,21 @@
+{
+  "_id": "bcd383f50872caf9",
+  "name": "Cleansing Flames",
+  "type": "domainCard",
+  "img": "icons/magic/fire/explosion-fireball-medium-orange.webp",
+  "system": {
+    "description": "<p>You gather flames in your palm and steer them gently. Make a Spellcast Roll (15) within Melee range. On a success, <strong>mark a Stress</strong> to heal 2 Hit Points, clear 2 Stress or remove a Condition. On a failure, <strong>mark a Stress</strong> to heal a Hit Point or clear a Stress on the target. You can only affect a target in this way once per Rest.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "firewithin",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false,
+    "usageNote": "Once per target per Rest. Track affected targets in Notes."
+  },
+  "effects": [],
+  "folder": "95f4956bfe177487",
+  "_key": "!items!bcd383f50872caf9"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "1b36b2ff61079de5",
+  "name": "Bash",
+  "type": "feature",
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "system": {
+    "description": "<p>Move up to Close range and make a standard attack. On a success, deal 2d8+4 physical damage and the target must <strong>mark a Stress</strong>.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!1b36b2ff61079de5"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "974dd3ab603bb2a8",
+  "name": "Unrelenting",
+  "type": "feature",
+  "img": "icons/equipment/shield/heater-steel-gold.webp",
+  "system": {
+    "description": "<p>The adversary’s attacks deal direct damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!974dd3ab603bb2a8"
+}

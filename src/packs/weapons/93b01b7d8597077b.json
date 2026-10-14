@@ -1,0 +1,52 @@
+{
+  "_id": "93b01b7d8597077b",
+  "name": "Spear",
+  "type": "weapon",
+  "img": "icons/weapons/polearms/spear-flared-wrapped.webp",
+  "system": {
+    "description": "<p><strong>Spear</strong></p>\n<p><strong>Thrown</strong>: Mark 1 Stress to throw up to Close with ADV</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "blackpowder": false,
+    "reloading": false,
+    "secondary": false,
+    "burden": "twoHanded",
+    "weaponFeatures": [],
+    "attack": {
+      "_id": "5d36bacca6f174e7",
+      "name": "Spear",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/weapons/polearms/spear-flared-wrapped.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "veryClose",
+      "roll": {
+        "type": "attack",
+        "trait": "finesse",
+        "bonus": 0
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d8 + @finesse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "_key": "!items!93b01b7d8597077b"
+}

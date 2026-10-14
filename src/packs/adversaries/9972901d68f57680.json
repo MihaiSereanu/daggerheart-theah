@@ -1,0 +1,115 @@
+{
+  "_id": "9972901d68f57680",
+  "name": "Bear",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A large bear with thick fur and powerful claws.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "bruiser",
+    "difficulty": 14,
+    "notes": "<h3>Normal | Bruiser</h3>\n<p><em>A large bear with thick fur and powerful claws.</em><br><strong>Motives &amp; Tactics:</strong> Climb, defend territory, pummel, track</p>\n<p><strong>Difficulty:</strong> 14 | <strong>Thresholds:</strong> 9/17 | <strong>HP:</strong> 7 | <strong>Stress:</strong> 2</p>\n<p><strong>ATK:</strong> +1 | Bite &amp; Claws: Melee | 1d12+3 physical</p>\n<hr>\n<p><strong>Experience:</strong> Ambusher +3, Keen Senses +2</p>\n<h4>Features</h4>\n<p><strong>Overwhelming Force - Passive</strong>: Targets who mark HP from the Bear&#39;s standard attack are knocked back to Very Close range. </p>\n<p><strong>Bite - Action</strong>: Mark a Stress to make an attack against a target within Melee. On a success, deal 3d4+10 physical damage and the target is Restrained until they break free with a successful Brawn Roll.</p>\n<p><strong>Momentum - Reaction</strong>: When the Bear makes a successful attack against a PC, you gain a Fear. </p>\n",
+    "damageThresholds": {
+      "major": 9,
+      "severe": 17
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 7
+      },
+      "stress": {
+        "value": 0,
+        "max": 2
+      }
+    },
+    "motivesAndTactics": "Climb, defend territory, pummel, track",
+    "experiences": {
+      "9fff2c2158096560": {
+        "name": "Ambusher",
+        "value": 3
+      },
+      "378b7a1900fc6161": {
+        "name": "Keen Senses",
+        "value": 2
+      }
+    },
+    "attack": {
+      "_id": "5e236792f6370be9",
+      "name": "Bite & Claws",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/creatures/claws/claw-talons-yellow-red.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 1
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d12+3"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "05cbbd4d2999bb73",
+      "name": "Overwhelming Force - Passive",
+      "type": "feature",
+      "img": "icons/sundries/flags/banner-sword-blue.webp",
+      "system": {
+        "description": "<p>Targets who mark HP from the Bear&#39;s standard attack are knocked back to Very Close range. </p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!9972901d68f57680.05cbbd4d2999bb73"
+    },
+    {
+      "_id": "cf9f04b9c0769c26",
+      "name": "Bite - Action",
+      "type": "feature",
+      "img": "icons/creatures/abilities/bear-roar-bite-brown-green.webp",
+      "system": {
+        "description": "<p>Mark a Stress to make an attack against a target within Melee. On a success, deal 3d4+10 physical damage and the target is Restrained until they break free with a successful Brawn Roll.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!9972901d68f57680.cf9f04b9c0769c26"
+    },
+    {
+      "_id": "e2e342face40d630",
+      "name": "Momentum - Reaction",
+      "type": "feature",
+      "img": "icons/environment/creatures/horse-brown.webp",
+      "system": {
+        "description": "<p>When the Bear makes a successful attack against a PC, you gain a Fear. </p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!9972901d68f57680.e2e342face40d630"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Bear",
+    "actorLink": false
+  },
+  "_key": "!actors!9972901d68f57680"
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "7166a24b4b227777",
+  "name": "Bravo",
+  "type": "subclass",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow-teal.webp",
+  "system": {
+    "description": "<p>Play the Bravo if you want to turn fear and danger into strength.</p>\n<h4>Features</h4>\n<p><strong>Courage</strong>. When you fail a roll with Fear, you gain a Hope. Once per Rest, before facing overwhelming odds, describe how you steady yourself - clear 1 Stress and gain 1 Hope.</p>\n<p><strong>Rise to the Challenge</strong>. When you are reduced to 2 or fewer HP, your will sharpens. You may roll a d20 as your Hope Die.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.9636ffa6820561cb",
+    "spellcastingTrait": null,
+    "features": [
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.7e483076da9e2d03"
+      },
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.70cbc58aae86c471"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": "9a97d5ef2539552b",
+  "_key": "!items!7166a24b4b227777"
+}

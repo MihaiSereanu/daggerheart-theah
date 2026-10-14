@@ -93,10 +93,6 @@ const EVENT_HANDLERS = {
                     )
                 );
                 break;
-            case GMUpdateEvent.UpdateCountdowns:
-                await game.settings.set(CONFIG.DH.id, CONFIG.DH.SETTINGS.gameSettings.Countdowns, data.data);
-                Hooks.callAll(socketEvent.Refresh, { refreshType: RefreshType.Countdown });
-                break;
             case GMUpdateEvent.UpdateSaveMessage:
                 const message = game.messages.get(data.data.message);
                 if (!message) return;
@@ -124,15 +120,7 @@ const EVENT_HANDLERS = {
                 break;
         }
     },
-    [socketEvent.AddCountdown]: async data => {
-        const setting = game.settings.get(CONFIG.DH.id, CONFIG.DH.SETTINGS.gameSettings.Countdowns);
-        const countdowns = data.countdowns ?? [];
-        // User created countdowns should always be not hidden
-        for (const countdown of countdowns) {
-            countdown.hidden = false;
-        }
-        await setting.add(...countdowns);
-    }
+
 }
 
 export const registerSocketHooks = () => {

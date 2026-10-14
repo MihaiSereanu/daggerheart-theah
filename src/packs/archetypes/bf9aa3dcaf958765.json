@@ -1,0 +1,50 @@
+{
+  "_id": "bf9aa3dcaf958765",
+  "name": "Commander",
+  "type": "class",
+  "img": "icons/sundries/flags/banner-standard-blue.webp",
+  "system": {
+    "description": "<p>As a Commander, you are the voice that cuts through the clash of steel and the roar of cannon. You might be a decorated officer of the Eisen army, a mercenary captain, or a privateer who’s earned the respect of a crew. What matters is that others follow when you give the order.</p>\n<h5>STARTING EVASION: 11</h5>\n<h5>STARTING HP: 6</h5>\n<h4>Thematic Items</h4>\n<p>A bloodstained standard, or a dented officer’s badge</p>\n<h4>Commander&#39;s Hope Feature</h4>\n<p><strong>Issued Orders</strong>. Spend 3 Hope issue orders, making an ally that can hear you gain Advantage on rolls made to carry them out until the scene ends or they fail with Fear.</p>\n<h4>Archetype Feature</h4>\n<h5>Veteran of Many Fields</h5>\n<p>Gain a Talent from any non-magical Domain. At level 5, gain an additional Talent from a different non-magical Domain.</p>\n<h5>Battle Ritual</h5>\n<p>Once per rest, before you attempt something incredibly dangerous or face off against a foe who clearly outmatches you, describe what ritual you perform or preparations you make. When you do, clear 2 Stress and gain 2 Hope.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "evasion": 11,
+    "hitPoints": 6,
+    "domains": [],
+    "features": [
+      {
+        "type": "hope",
+        "item": "Compendium.daggerheart-theah.features.Item.b6e7672d0a175c79"
+      },
+      {
+        "type": "class",
+        "item": "Compendium.daggerheart-theah.features.Item.9887a4bf7f32e950"
+      },
+      {
+        "type": "class",
+        "item": "Compendium.daggerheart-theah.features.Item.391a5135e2e57c39"
+      }
+    ],
+    "subclasses": [
+      "Compendium.daggerheart-theah.specialisations.Item.72d3ca39f218762c",
+      "Compendium.daggerheart-theah.specialisations.Item.c520e406ac6977d3"
+    ],
+    "inventory": {
+      "take": [],
+      "choiceA": [],
+      "choiceB": []
+    },
+    "backgroundQuestions": [
+      "Who taught you the art of command, and what did you learn from their greatest failure?",
+      "You once led others into a battle they didn’t return from. What happened?",
+      "What are you fighting for?"
+    ],
+    "connections": [
+      "You once served under my command. What did we face, and how did we survive?",
+      "What do I always trust you to do?",
+      "What lesson did I teach you - intended or not - that you’ve never forgotten?"
+    ]
+  },
+  "effects": [],
+  "_key": "!items!bf9aa3dcaf958765"
+}

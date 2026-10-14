@@ -1,0 +1,15 @@
+{
+  "_id": "89770de2843ed39f",
+  "name": "Kinetic Slam",
+  "type": "feature",
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "system": {
+    "description": "<p>Targets who take damage from the adversary’s standard attack are knocked back to Very Close range.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!89770de2843ed39f"
+}

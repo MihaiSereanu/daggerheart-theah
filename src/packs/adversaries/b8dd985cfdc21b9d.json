@@ -1,0 +1,146 @@
+{
+  "_id": "b8dd985cfdc21b9d",
+  "name": "Sorcerer",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A spellcaster trained in specific magic.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "ranged",
+    "difficulty": 12,
+    "notes": "<h3>Normal | Ranged</h3>\n<p><em>A spellcaster trained in specific magic.</em><br><strong>Motives &amp; Tactics:</strong> Seek power; learn at any cost</p>\n<p><strong>Difficulty:</strong> 12 | <strong>Thresholds:</strong> 5/9 | <strong>HP:</strong> 5 | <strong>Stress:</strong> 5</p>\n<p><strong>ATK:</strong> +2 | Magic: Far | 1d10+4 physical</p>\n<hr>\n<p><strong>Experience:</strong> Magical Knowledge +2; Strategize +2</p>\n<h4>Features</h4>\n<p><strong>Battle Teleport - Passive</strong>: Before or after making a standard attack, you can <strong>mark a Stress</strong> to teleport to a location within Far range.</p>\n<p><strong>Refresh - Action</strong>: <strong>Mark a Stress</strong> to refresh “Arcane Shield”.</p>\n<p><strong>Eruption - Action</strong>: Spend a Fear and choose a point within Far range. A Very Close area around it erupts into impassable terrain. All targets within that area must make an Finesse Reaction Roll (14). Targets who fail take 2d6 magic damage and are thrown out of the area. Targets who succeed take half damage and aren’t moved.</p>\n<p><strong>Arcane Artillery - Action</strong>: Spend a Fear to unleash a precise hail of magical blasts. All targets in the scene must make an Finesse Reaction Roll. Targets who fail take 2d8 magic damage. Targets who succeed take half damage.</p>\n<p><strong>Arcane Shield - Reaction</strong>: When the Sorcerer takes damage from an attack within Close range, the damage is reduced by one threshold and the attacker takes 2d4 magic damage. This reaction can’t be used again until the Sorcerer uses the &quot;Refresh&quot; action.</p>\n",
+    "damageThresholds": {
+      "major": 5,
+      "severe": 9
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 5
+      },
+      "stress": {
+        "value": 0,
+        "max": 5
+      }
+    },
+    "motivesAndTactics": "Seek power; learn at any cost",
+    "experiences": {
+      "ff632cbcf75a5760": {
+        "name": "Magical Knowledge",
+        "value": 2
+      },
+      "6dd37ee8b53980da": {
+        "name": "Strategize",
+        "value": 2
+      }
+    },
+    "attack": {
+      "_id": "83715232bff67a38",
+      "name": "Magic",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/magic/symbols/runes-star-magenta.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "far",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 2
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d10+4"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "66b1229ed20d840a",
+      "name": "Battle Teleport - Passive",
+      "type": "feature",
+      "img": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+      "system": {
+        "description": "<p>Before or after making a standard attack, you can <strong>mark a Stress</strong> to teleport to a location within Far range.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!b8dd985cfdc21b9d.66b1229ed20d840a"
+    },
+    {
+      "_id": "f671fb619182ea2b",
+      "name": "Refresh - Action",
+      "type": "feature",
+      "img": "icons/magic/life/heart-cross-strong-green.webp",
+      "system": {
+        "description": "<p><strong>Mark a Stress</strong> to refresh “Arcane Shield”.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!b8dd985cfdc21b9d.f671fb619182ea2b"
+    },
+    {
+      "_id": "34a42fdacceba423",
+      "name": "Eruption - Action",
+      "type": "feature",
+      "img": "icons/magic/fire/explosion-fireball-medium-orange.webp",
+      "system": {
+        "description": "<p>Spend a Fear and choose a point within Far range. A Very Close area around it erupts into impassable terrain. All targets within that area must make an Finesse Reaction Roll (14). Targets who fail take 2d6 magic damage and are thrown out of the area. Targets who succeed take half damage and aren’t moved.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!b8dd985cfdc21b9d.34a42fdacceba423"
+    },
+    {
+      "_id": "9bcc960fd8023a26",
+      "name": "Arcane Artillery - Action",
+      "type": "feature",
+      "img": "icons/magic/symbols/runes-star-magenta.webp",
+      "system": {
+        "description": "<p>Spend a Fear to unleash a precise hail of magical blasts. All targets in the scene must make an Finesse Reaction Roll. Targets who fail take 2d8 magic damage. Targets who succeed take half damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!b8dd985cfdc21b9d.9bcc960fd8023a26"
+    },
+    {
+      "_id": "6c290a62d9cec0c6",
+      "name": "Arcane Shield - Reaction",
+      "type": "feature",
+      "img": "icons/equipment/shield/heater-steel-gold.webp",
+      "system": {
+        "description": "<p>When the Sorcerer takes damage from an attack within Close range, the damage is reduced by one threshold and the attacker takes 2d4 magic damage. This reaction can’t be used again until the Sorcerer uses the &quot;Refresh&quot; action.</p>\n",
+        "resource": {
+          "type": "simple",
+          "value": 0,
+          "max": "1",
+          "recovery": null,
+          "progression": "increasing",
+          "label": "Unavailable (0 / 1)"
+        },
+        "usageNote": "Set to 1 after reacting; reset to 0 after Refresh."
+      },
+      "effects": [],
+      "_key": "!actors.items!b8dd985cfdc21b9d.6c290a62d9cec0c6"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Sorcerer",
+    "actorLink": false
+  },
+  "_key": "!actors!b8dd985cfdc21b9d"
+}

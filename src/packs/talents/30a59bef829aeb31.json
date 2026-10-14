@@ -1,0 +1,20 @@
+{
+  "_id": "30a59bef829aeb31",
+  "name": "Stealth Expertise",
+  "type": "domainCard",
+  "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+  "system": {
+    "description": "<p>When you roll with Fear while attempting to move unnoticed through a dangerous area, you can <strong>mark a Stress</strong> to roll with Hope instead. If an ally within Close range also rolls with Fear, you may <strong>mark a Stress</strong> to turn their roll into one with Hope.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "shade",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "5af6d37ce4bdfed9",
+  "_key": "!items!30a59bef829aeb31"
+}

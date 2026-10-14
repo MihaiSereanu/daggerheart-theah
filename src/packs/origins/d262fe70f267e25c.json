@@ -1,0 +1,25 @@
+{
+  "_id": "d262fe70f267e25c",
+  "name": "Castille",
+  "type": "ancestry",
+  "img": "icons/sundries/flags/banner-symbol-sun-gold-red.webp",
+  "system": {
+    "description": "<p><strong>Graceful</strong>. Gain a permanent +1 bonus to your Evasion.</p>\n<p><strong>Instinct for Trouble</strong>. Once per Rest, <strong>mark a Stress</strong> to force an adversary to reroll an attack against you or an ally within Close.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "features": [
+      {
+        "type": "primary",
+        "item": "Compendium.daggerheart-theah.features.Item.b866212a2a710b17"
+      },
+      {
+        "type": "secondary",
+        "item": "Compendium.daggerheart-theah.features.Item.00ee46bc4914dd1e"
+      }
+    ],
+    "loreReference": null
+  },
+  "effects": [],
+  "_key": "!items!d262fe70f267e25c"
+}

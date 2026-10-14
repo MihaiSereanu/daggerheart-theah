@@ -1,0 +1,20 @@
+{
+  "_id": "309d0c28b02f0ebb",
+  "name": "Threads of Misfortune",
+  "type": "domainCard",
+  "img": "icons/commodities/cloth/thread-and-needle.webp",
+  "system": {
+    "description": "<p><strong>Spend a Hope</strong>, then make a Spellcast Roll against a target within Very Close range. On a success, you subtly twist the strands of fate around them, causing a small but immediately harmful misstep. They’re knocked prone and take 2d6+2 physical damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "sorte",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "172ae6710886d3ba",
+  "_key": "!items!309d0c28b02f0ebb"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "64dc6e63daaaafde",
+  "name": "Bargain of Borrowed Flesh",
+  "type": "domainCard",
+  "img": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+  "system": {
+    "description": "<p>Anytime you use this Talent, you must also <strong>mark a Stress</strong>. Then, <strong>spend any number of Favour</strong> to temporarily imbue yourself with demonic power. When you make an Action or Damage roll, you can choose to add an additional 1d6 per Favour spent.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "sanderis",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "83fcfb9315a1e619",
+  "_key": "!items!64dc6e63daaaafde"
+}

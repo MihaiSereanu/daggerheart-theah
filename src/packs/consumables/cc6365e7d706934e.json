@@ -1,0 +1,15 @@
+{
+  "_id": "cc6365e7d706934e",
+  "name": "Circle of the Void",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Circle of the Void</strong>: Mark a Stress to create a void that extends up to Far range. No magic can be cast inside the void, and creatures within the void are immune to magic damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!cc6365e7d706934e"
+}

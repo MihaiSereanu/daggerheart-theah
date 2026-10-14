@@ -1,0 +1,100 @@
+{
+  "_id": "4482d4b5f8ec3156",
+  "name": "Bandit Lackey",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A thief in simple clothes with daggers, eager to prove themselves.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "minion",
+    "difficulty": 9,
+    "notes": "<h3>Normal | Minion</h3>\n<p><em>A thief in simple clothes with daggers, eager to prove themselves.</em><br><strong>Motives &amp; Tactics:</strong> Escape, profit, throw smoke</p>\n<p><strong>Difficulty:</strong> 9 | <strong>Thresholds:</strong> None | <strong>HP:</strong> 1 | <strong>Stress:</strong> 1</p>\n<p><strong>ATK:</strong> -2 | Weapon: Melee | 2 physical</p>\n<hr>\n<p><strong>Experience:</strong> Thief +2</p>\n<h4>Features</h4>\n<p><strong>Minion (3) - Passive</strong>: The Lackey is defeated by any damage. For every 3 damage a PC deals to a Lackey, defeat one additional Minion within any range the same attack would have hit.</p>\n<p><strong>Group Attack - Action</strong>: Spend 1 Fear to pick a target and spotlight all Bandit Lackeys within Close range. Those Minions move into Melee with the target and make one shared attack roll. On a success, each deals 2 physical damage. Combine the damage.</p>\n",
+    "damageThresholds": {
+      "major": 0,
+      "severe": 0
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 1
+      },
+      "stress": {
+        "value": 0,
+        "max": 1
+      }
+    },
+    "motivesAndTactics": "Escape, profit, throw smoke",
+    "experiences": {
+      "89ff9d4af77d9940": {
+        "name": "Thief",
+        "value": 2
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/hand-grip-sword-orange.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": -2
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "0"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "2dc196c1bb098cce",
+      "name": "Minion (3) - Passive",
+      "type": "feature",
+      "img": "icons/sundries/flags/banner-sword-blue.webp",
+      "system": {
+        "description": "<p>The Lackey is defeated by any damage. For every 3 damage a PC deals to a Lackey, defeat one additional Minion within any range the same attack would have hit.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!4482d4b5f8ec3156.2dc196c1bb098cce"
+    },
+    {
+      "_id": "a1c7cd419ea368f3",
+      "name": "Group Attack - Action",
+      "type": "feature",
+      "img": "icons/sundries/flags/banner-sword-blue.webp",
+      "system": {
+        "description": "<p>Spend 1 Fear to pick a target and spotlight all Bandit Lackeys within Close range. Those Minions move into Melee with the target and make one shared attack roll. On a success, each deals 2 physical damage. Combine the damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!4482d4b5f8ec3156.a1c7cd419ea368f3"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Bandit Lackey",
+    "actorLink": false
+  },
+  "_key": "!actors!4482d4b5f8ec3156"
+}

@@ -21,6 +21,15 @@ export default class DhTooltipManager extends foundry.helpers.interaction.Toolti
         let html = options.html;
         const key = element.dataset.tooltip?.match(/^#([\w-]+)#/)?.[1];
         switch (key) {
+            case 'domain': {
+                const domain = CONFIG.DH.DOMAIN.allDomains()[element.dataset.tooltip.slice(8)];
+                if (!domain) return;
+                const description = await foundry.applications.ux.TextEditor.enrichHTML(
+                    game.i18n.localize(domain.description ?? domain.label)
+                );
+                html = `<div class="heart-domain-tooltip">${description}</div>`;
+                break;
+            }
             case 'actor':
                 html = await this.#activateActor(element, options);
                 break;
@@ -117,7 +126,7 @@ export default class DhTooltipManager extends foundry.helpers.interaction.Toolti
                 }
 
                 effect.description = await foundry.applications.handlebars.renderTemplate(
-                    'systems/daggerheart/templates/ui/tooltip/parts/beastformData.hbs',
+                    'systems/daggerheart-theah/templates/ui/tooltip/parts/beastformData.hbs',
                     {
                         item: { system: beastformData }
                     }
@@ -140,7 +149,7 @@ export default class DhTooltipManager extends foundry.helpers.interaction.Toolti
         }
 
         const html = await foundry.applications.handlebars.renderTemplate(
-            `systems/daggerheart/templates/ui/tooltip/effect-display.hbs`,
+            `systems/daggerheart-theah/templates/ui/tooltip/effect-display.hbs`,
             {
                 effect
             }
@@ -175,7 +184,7 @@ export default class DhTooltipManager extends foundry.helpers.interaction.Toolti
         // Beastform special case
         if (item.type === 'beastform') {
             const html = await foundry.applications.handlebars.renderTemplate(
-                `systems/daggerheart/templates/ui/tooltip/beastform.hbs`,
+                `systems/daggerheart-theah/templates/ui/tooltip/beastform.hbs`,
                 {
                     item,
                     description: item.system?.enrichedDescription ?? item.enrichedDescription,
@@ -253,7 +262,7 @@ export default class DhTooltipManager extends foundry.helpers.interaction.Toolti
         }
 
         const html = await foundry.applications.handlebars.renderTemplate(
-            `systems/daggerheart/templates/ui/tooltip/basic.hbs`,
+            `systems/daggerheart-theah/templates/ui/tooltip/basic.hbs`,
             {
                 ...pick(item, ['img', 'name']),
                 description: item.system?.enrichedDescription ?? item.enrichedDescription,
@@ -289,7 +298,7 @@ export default class DhTooltipManager extends foundry.helpers.interaction.Toolti
             `${attack.getDamageFormula()}${typeAddendum}`
         ].filter(t => Boolean(t));
         const html = await foundry.applications.handlebars.renderTemplate(
-            `systems/daggerheart/templates/ui/tooltip/basic.hbs`,
+            `systems/daggerheart-theah/templates/ui/tooltip/basic.hbs`,
             {
                 ...pick(attack, ['img', 'name']),
                 description: description,
@@ -309,7 +318,7 @@ export default class DhTooltipManager extends foundry.helpers.interaction.Toolti
 
         if (actor) {
             return await foundry.applications.handlebars.renderTemplate(
-                `systems/daggerheart/templates/ui/tooltip/advantage.hbs`,
+                `systems/daggerheart-theah/templates/ui/tooltip/advantage.hbs`,
                 {
                     sources: isAdvantage ? actor.system.advantageSources : actor.system.disadvantageSources
                 }
@@ -324,7 +333,7 @@ export default class DhTooltipManager extends foundry.helpers.interaction.Toolti
         const description = element.dataset.deathDescription;
 
         const html = await foundry.applications.handlebars.renderTemplate(
-            `systems/daggerheart/templates/ui/tooltip/basic.hbs`,
+            `systems/daggerheart-theah/templates/ui/tooltip/basic.hbs`,
             { name, img, description }
         );
 
@@ -343,7 +352,7 @@ export default class DhTooltipManager extends foundry.helpers.interaction.Toolti
         const move = moves[key];
         const description = await foundry.applications.ux.TextEditor.enrichHTML(move.description);
         const html = await foundry.applications.handlebars.renderTemplate(
-            `systems/daggerheart/templates/ui/tooltip/basic.hbs`,
+            `systems/daggerheart-theah/templates/ui/tooltip/basic.hbs`,
             {
                 ...pick(move, ['img', 'name']),
                 description: description
@@ -579,7 +588,7 @@ export default class DhTooltipManager extends foundry.helpers.interaction.Toolti
             });
 
         return await foundry.applications.handlebars.renderTemplate(
-            `systems/daggerheart/templates/ui/tooltip/battlepoints.hbs`,
+            `systems/daggerheart-theah/templates/ui/tooltip/battlepoints.hbs`,
             {
                 combatId: combat.id,
                 nrCharacters,

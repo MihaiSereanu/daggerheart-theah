@@ -12,24 +12,25 @@ export default class BeastformSheet extends DHBaseItemSheet {
 
     /**@override */
     static PARTS = {
-        header: { template: 'systems/daggerheart/templates/sheets/items/beastform/header.hbs' },
-        tabs: { template: 'systems/daggerheart/templates/sheets/global/tabs/tab-navigation.hbs' },
-        settings: { template: 'systems/daggerheart/templates/sheets/items/beastform/settings.hbs' },
+        header: { template: 'systems/daggerheart-theah/templates/sheets/items/beastform/header.hbs' },
+        tabs: { template: 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-navigation.hbs' },
+        description: { template: 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-description.hbs' },
+        settings: { template: 'systems/daggerheart-theah/templates/sheets/items/beastform/settings.hbs' },
         features: {
-            template: 'systems/daggerheart/templates/sheets/global/tabs/tab-features.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-features.hbs',
             scrollable: ['.features']
         },
-        advanced: { template: 'systems/daggerheart/templates/sheets/items/beastform/advanced.hbs' },
+        advanced: { template: 'systems/daggerheart-theah/templates/sheets/items/beastform/advanced.hbs' },
         effects: {
-            template: 'systems/daggerheart/templates/sheets/global/tabs/tab-effects.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-effects.hbs',
             scrollable: ['.effects']
         }
     };
 
     static TABS = {
         primary: {
-            tabs: [{ id: 'settings' }, { id: 'features' }, { id: 'advanced' }, { id: 'effects' }],
-            initial: 'settings',
+            tabs: [{ id: 'description' }, { id: 'settings' }, { id: 'features' }, { id: 'effects' }],
+            initial: 'description',
             labelPrefix: 'DAGGERHEART.GENERAL.Tabs'
         }
     };

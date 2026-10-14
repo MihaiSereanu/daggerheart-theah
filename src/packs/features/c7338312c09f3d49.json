@@ -1,0 +1,15 @@
+{
+  "_id": "c7338312c09f3d49",
+  "name": "Nomadic Preparedness",
+  "type": "feature",
+  "img": "icons/tools/navigation/compass-brass-blue-red.webp",
+  "system": {
+    "description": "<p>During a Rest, you or an ally can reroll a die used for a downtime action.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "0d3cb9fdccdbeab6",
+  "_key": "!items!c7338312c09f3d49"
+}

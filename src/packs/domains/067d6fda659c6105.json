@@ -1,0 +1,14 @@
+{
+  "_id": "067d6fda659c6105",
+  "name": "Fire Within",
+  "type": "feature",
+  "img": "icons/magic/fire/explosion-fireball-medium-orange.webp",
+  "system": {
+    "description": "<h2>Fire Within</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.f711fd169cf289c0]{Radiate}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.8f5157ad4c20226e]{Heartflare}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.be4b98d1aedd4fdd]{Wrathful Flames}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.bcd383f50872caf9]{Cleansing Flames}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.9aa372bab87142bf]{Embers Yet Burn}</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!067d6fda659c6105"
+}

@@ -1,0 +1,122 @@
+{
+  "_id": "dd9f74190741df4a",
+  "name": "Marksman Duelist",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A swordsman combining steel and gunpowder to deadly effect.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "leader",
+    "difficulty": 14,
+    "notes": "<h3>Normal | Leader</h3>\n<p><em>A swordsman combining steel and gunpowder to deadly effect.</em><br><strong>Motives &amp; Tactics:</strong> Blast, command, endure</p>\n<p><strong>Difficulty:</strong> 14 | <strong>Thresholds:</strong> 8/14 | <strong>HP:</strong> 6 | <strong>Stress:</strong> 3</p>\n<p><strong>ATK:</strong> +3 | Weapon: Melee/Far | 1d8+4 phy</p>\n<hr>\n<p><strong>Experience:</strong> Magical Knowledge +2</p>\n<h4>Features</h4>\n<p><strong>Holster - Passive</strong>: The duelist can attack within Far with his gun.</p>\n<p><strong>Blunderbuss - Action</strong>: <strong>Mark a Stress</strong> and target a group within Far. Each target makes a Finesse Reaction Roll or takes 1d8+2 physical damage. You gain a Fear for each target who marked HP.</p>\n<p><strong>Reinforce - Reaction</strong>: When the Duelist&#39;s allies are forced to make a reaction roll, you can <strong>mark a Stress</strong> to give them a +2 to the roll.</p>\n<p><strong>Momentum - Reaction</strong>: When the Duelist makes a successful attack against a PC, you gain a Fear.</p>\n",
+    "damageThresholds": {
+      "major": 8,
+      "severe": 14
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 6
+      },
+      "stress": {
+        "value": 0,
+        "max": 3
+      }
+    },
+    "motivesAndTactics": "Blast, command, endure",
+    "experiences": {
+      "5f753f85faf0d79f": {
+        "name": "Magical Knowledge",
+        "value": 2
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/hand-grip-sword-orange.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 3
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d8+4"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "dd5aff88a9af237b",
+      "name": "Holster - Passive",
+      "type": "feature",
+      "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+      "system": {
+        "description": "<p>The duelist can attack within Far with his gun.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!dd9f74190741df4a.dd5aff88a9af237b"
+    },
+    {
+      "_id": "adb0c31124fede98",
+      "name": "Blunderbuss - Action",
+      "type": "feature",
+      "img": "icons/magic/fire/explosion-fireball-medium-orange.webp",
+      "system": {
+        "description": "<p><strong>Mark a Stress</strong> and target a group within Far. Each target makes a Finesse Reaction Roll or takes 1d8+2 physical damage. You gain a Fear for each target who marked HP.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!dd9f74190741df4a.adb0c31124fede98"
+    },
+    {
+      "_id": "a2d03bc41aaabe72",
+      "name": "Reinforce - Reaction",
+      "type": "feature",
+      "img": "icons/equipment/shield/heater-steel-gold.webp",
+      "system": {
+        "description": "<p>When the Duelist&#39;s allies are forced to make a reaction roll, you can <strong>mark a Stress</strong> to give them a +2 to the roll.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!dd9f74190741df4a.a2d03bc41aaabe72"
+    },
+    {
+      "_id": "d9ae8a301152dc2e",
+      "name": "Momentum - Reaction",
+      "type": "feature",
+      "img": "icons/environment/creatures/horse-brown.webp",
+      "system": {
+        "description": "<p>When the Duelist makes a successful attack against a PC, you gain a Fear.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!dd9f74190741df4a.d9ae8a301152dc2e"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Marksman Duelist",
+    "actorLink": false
+  },
+  "_key": "!actors!dd9f74190741df4a"
+}

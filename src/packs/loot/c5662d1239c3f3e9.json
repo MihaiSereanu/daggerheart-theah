@@ -1,0 +1,15 @@
+{
+  "_id": "c5662d1239c3f3e9",
+  "name": "Drachenflame Pendant",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Drachenflame Pendant</strong>: While you carry this pendant, you become immune to fire and its effects.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!c5662d1239c3f3e9"
+}

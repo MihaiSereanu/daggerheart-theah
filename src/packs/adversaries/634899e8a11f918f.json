@@ -1,0 +1,84 @@
+{
+  "_id": "634899e8a11f918f",
+  "name": "Giant Eagle",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A noble creature, capable of understanding human speech.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "champion",
+    "type": "skulk",
+    "difficulty": 14,
+    "notes": "<h3>Champion | Skulk</h3>\n<p><em>A noble creature, capable of understanding human speech.</em><br><strong>Motives &amp; Tactics:</strong> Soar the skies, protect humanity</p>\n<p><strong>Difficulty:</strong> 14 | <strong>Thresholds:</strong> 8/15 | <strong>HP:</strong> 4 | <strong>Stress:</strong> 4</p>\n<p><strong>ATK:</strong> +1 | Claws &amp; Beak: Very Close | 2d6 physical</p>\n<h4>Features</h4>\n<p><strong>Dive &amp; Drop - Action:</strong> Mark a Stress to attack within Far range. On a success, deal 2d8 physical damage; the target must pass a Finesse Reaction Roll or be Restrained and immediately carried to Very Far. While flying, the Eagle can spend another Fear drop its captive, ending its Restrained condition and dealing 2d20 physical damage upon landing unless the fall is prevented.</p>\n",
+    "damageThresholds": {
+      "major": 8,
+      "severe": 15
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 4
+      },
+      "stress": {
+        "value": 0,
+        "max": 4
+      }
+    },
+    "motivesAndTactics": "Soar the skies, protect humanity",
+    "experiences": {},
+    "attack": {
+      "_id": "f9b31d92cfc06d47",
+      "name": "Claws & Beak",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/creatures/claws/claw-talons-yellow-red.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "veryClose",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 1
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "2d6"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "29923657eea8d14c",
+      "name": "Dive & Drop - Action",
+      "type": "feature",
+      "img": "icons/magic/control/buff-flight-wings-blue.webp",
+      "system": {
+        "description": "<p>Mark a Stress to attack within Far range. On a success, deal 2d8 physical damage; the target must pass a Finesse Reaction Roll or be Restrained and immediately carried to Very Far. While flying, the Eagle can spend another Fear drop its captive, ending its Restrained condition and dealing 2d20 physical damage upon landing unless the fall is prevented.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!634899e8a11f918f.29923657eea8d14c"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Giant Eagle",
+    "actorLink": false
+  },
+  "_key": "!actors!634899e8a11f918f"
+}

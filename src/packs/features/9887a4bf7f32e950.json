@@ -1,0 +1,15 @@
+{
+  "_id": "9887a4bf7f32e950",
+  "name": "Veteran of Many Fields",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-standard-blue.webp",
+  "system": {
+    "description": "<p>Gain a Talent from any non-magical Domain. At level 5, gain an additional Talent from a different non-magical Domain.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "bdef6361b368d1ef",
+  "_key": "!items!9887a4bf7f32e950"
+}

@@ -1,0 +1,23 @@
+{
+  "_id": "10c8c6c80ffe79a2",
+  "name": "Leather Armor",
+  "type": "armor",
+  "img": "icons/equipment/chest/breastplate-layered-leather-brown.webp",
+  "system": {
+    "description": "<p>—</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "armor": {
+      "max": 3,
+      "current": 0
+    },
+    "baseThresholds": {
+      "major": 6,
+      "severe": 13
+    },
+    "armorFeatures": []
+  },
+  "effects": [],
+  "_key": "!items!10c8c6c80ffe79a2"
+}

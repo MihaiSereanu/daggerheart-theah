@@ -1,0 +1,15 @@
+{
+  "_id": "0a1fbf1f451bb1f1",
+  "name": "Terrifying",
+  "type": "feature",
+  "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
+  "system": {
+    "description": "<p>When the adversary makes a successful attack, all PCs within Close range lose a Hope and you gain a Fear.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!0a1fbf1f451bb1f1"
+}

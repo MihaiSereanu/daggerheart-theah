@@ -1,0 +1,14 @@
+{
+  "_id": "100774930a4ffd60",
+  "name": "Tactics",
+  "type": "feature",
+  "img": "icons/skills/melee/swords-parry-block-yellow.webp",
+  "system": {
+    "description": "<h2>Tactics</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.7a5a0b2f35f24ad9]{A Hero’s Bond}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.fb6c40d1e9814547]{Brace}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.a78027596aaa6384]{Dueling Style}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.6edb6f47902e5fa0]{Fast Guard}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.b9b3569f141879c1]{Redirect}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.90a64afaa789dd16]{Rapid Riposte}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.cf1570da0df7634e]{Swift Defense}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.d11960bca93f37b9]{Tactician’s Reflexes}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.76b6b994c543eee5]{Turning Tide}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.34f2ea72c9c0c3a8]{Veteran’s Rest}</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!100774930a4ffd60"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "8e455bb151708af4",
+  "name": "Powder of Mending",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Powder of Mending</strong>: Mark a Stress and clear a Hit Point.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!8e455bb151708af4"
+}

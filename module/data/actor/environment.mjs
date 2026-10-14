@@ -7,7 +7,7 @@ import { fromUuids } from '../../helpers/utils.mjs';
 export default class DhEnvironment extends BaseDataActor {
     scenes = new Set();
 
-    static embedTemplate = 'systems/daggerheart/templates/components/actor-embed/environment.hbs';
+    static embedTemplate = 'systems/daggerheart-theah/templates/components/actor-embed/environment.hbs';
 
     /**@override */
     static LOCALIZATION_PREFIXES = ['DAGGERHEART.ACTORS.Environment'];
@@ -28,11 +28,10 @@ export default class DhEnvironment extends BaseDataActor {
         const fields = foundry.data.fields;
         return {
             ...super.defineSchema(),
-            tier: new fields.NumberField({
+            classification: new fields.StringField({
                 required: true,
-                integer: true,
-                choices: CONFIG.DH.GENERAL.tiers,
-                initial: CONFIG.DH.GENERAL.tiers[1].id
+                choices: { standard: 'Standard', mythic: 'Mythic' },
+                initial: 'standard'
             }),
             type: new fields.StringField({ choices: CONFIG.DH.ACTOR.environmentTypes }),
             impulses: new fields.StringField(),
@@ -51,7 +50,7 @@ export default class DhEnvironment extends BaseDataActor {
     /* -------------------------------------------- */
 
     /**@inheritdoc */
-    static DEFAULT_ICON = 'systems/daggerheart/assets/icons/documents/actors/forest.svg';
+    static DEFAULT_ICON = 'systems/daggerheart-theah/assets/icons/documents/actors/forest.svg';
 
     /* -------------------------------------------- */
 
@@ -74,10 +73,10 @@ export default class DhEnvironment extends BaseDataActor {
         super._onDelete(options, userId);
         for (const scene of this.scenes) {
             if (game.user.isActiveGM) {
-                const newSceneEnvironments = scene.flags.daggerheart.sceneEnvironments.filter(
+                const newSceneEnvironments = scene.flags['daggerheart-theah']-theah.sceneEnvironments.filter(
                     x => x !== this.parent.uuid
                 );
-                scene.update({ 'flags.daggerheart.sceneEnvironments': newSceneEnvironments }).then(() => {
+                scene.update({ 'flags.daggerheart-theah.sceneEnvironments': newSceneEnvironments }).then(() => {
                     Hooks.callAll(socketEvent.Refresh, { refreshType: RefreshType.Scene });
                 });
             }
@@ -102,4 +101,10 @@ export default class DhEnvironment extends BaseDataActor {
             potentialAdversaries: adversaryGroups.join(', ') || _loc('DAGGERHEART.ACTORS.Environment.Embed.any')
         };
     }
+    static migrateData(source) {
+        source.classification ??= source.tier === 2 ? 'mythic' : 'standard';
+        delete source.tier;
+        return super.migrateData(source);
+    }
+
 }

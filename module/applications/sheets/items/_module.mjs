@@ -9,4 +9,3 @@ export { default as Feature } from './feature-sheet.mjs';
 export { default as Loot } from './loot-sheet.mjs';
 export { default as Subclass } from './subclass-sheet.mjs';
 export { default as Weapon } from './weapon-sheet.mjs';
-export { default as Transformation } from './transformation-sheet.mjs';

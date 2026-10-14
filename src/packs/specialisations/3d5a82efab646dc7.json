@@ -1,0 +1,27 @@
+{
+  "_id": "3d5a82efab646dc7",
+  "name": "Troubadour",
+  "type": "subclass",
+  "img": "icons/tools/instruments/lute-gold-brown.webp",
+  "system": {
+    "description": "<p>Play the Troubadour if you want to bolster your allies through music.</p>\n<h4>Features</h4>\n<p><strong>Gifted Performance</strong>. Describe how you perform for others. You and all allies that can hear you gain its effect. You can play each song once per Rest:</p>\n<ul>\n<li><strong>Relaxing Song</strong>: Clear 1 HP.</li>\n<li><strong>Inspiring Song</strong>: Gain 1 Hope.</li>\n</ul>\n<p><strong>Maestro</strong>. Your songs steel the courage of those who listen. When you give a Rally Die to an ally, they also gain a Hope or clear a Stress.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.90f54b69d80225e2",
+    "spellcastingTrait": null,
+    "features": [
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.2c3c3dfd0192216b"
+      },
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.e5e5a9a5934effdb"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": "3574f65753c1326d",
+  "_key": "!items!3d5a82efab646dc7"
+}

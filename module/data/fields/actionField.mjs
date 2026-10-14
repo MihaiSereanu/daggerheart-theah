@@ -235,7 +235,7 @@ export function ActionMixin(Base) {
                         position: { width: 380 },
                         classes: ['daggerheart', 'dh-style'],
                         content: await foundry.applications.handlebars.renderTemplate(
-                            'systems/daggerheart/templates/actionTypes/actionType.hbs',
+                            'systems/daggerheart-theah/templates/actionTypes/actionType.hbs',
                             {
                                 types: types,
                                 itemName: parent.parent?.name
@@ -341,11 +341,11 @@ export function ActionMixin(Base) {
                 title: game.i18n.localize('DAGGERHEART.UI.Chat.action.title'),
                 system: systemData,
                 content: await foundry.applications.handlebars.renderTemplate(
-                    'systems/daggerheart/templates/ui/chat/action.hbs',
+                    'systems/daggerheart-theah/templates/ui/chat/action.hbs',
                     systemData
                 ),
                 flags: {
-                    daggerheart: {
+                    'daggerheart-theah': {
                         cssClass: 'dh-chat-message dh-style'
                     }
                 }

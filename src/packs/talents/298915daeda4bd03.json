@@ -1,0 +1,21 @@
+{
+  "_id": "298915daeda4bd03",
+  "name": "Path of the Just",
+  "type": "domainCard",
+  "img": "icons/sundries/books/book-symbol-canterbury-cross.webp",
+  "system": {
+    "description": "<p>The Path of the Just teaches you that every life deserves a fair chance. With your abilities, you can protect those that need protection and feed those that need food, making sure everyone has a fighting chance to enjoy al-Musawwir’s creation. <strong>Spend 3 Hope</strong> and choose an ally within Close range. They are marked with a glowing sigil of protection. When this ally would next take damage, they may ignore it. You may only affect someone in this way once per Rest.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "artofthesecondprophet",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false,
+    "usageNote": "Once per target per Rest. Track affected targets in Notes."
+  },
+  "effects": [],
+  "folder": "5b8c67f9d145528b",
+  "_key": "!items!298915daeda4bd03"
+}

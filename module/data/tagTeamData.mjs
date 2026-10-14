@@ -13,7 +13,7 @@ export default class TagTeamData extends foundry.abstract.DataModel {
                     }),
                     cost: new fields.NumberField({
                         integer: true,
-                        initial: 3,
+                        initial: 2,
                         label: 'DAGGERHEART.APPLICATIONS.TagTeamSelect.FIELDS.initiator.cost.label'
                     })
                 },

@@ -1,0 +1,28 @@
+{
+  "_id": "9cb33dc99e49a67a",
+  "name": "Banish Horror",
+  "type": "domainCard",
+  "img": "icons/consumables/potions/round-decorated-snake-green.webp",
+  "system": {
+    "description": "<p>Once per Rest, make a <strong>Spellcast Roll</strong> against an unnatural creature within Close range. On a success, roll a number of d20s equal to your Wits. The creature must make a Reaction Roll with a Difficulty equal to your highest result. On a success, the creature must <strong>mark a Stress</strong> but isn’t banished. If they fail, they are banished. Rest assured, it the creature has the capacity to hold grudges, it will crawl back and seek you out to enact revenge.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "hexenwerk",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false,
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    }
+  },
+  "effects": [],
+  "folder": "a29c13e0edf57b40",
+  "_key": "!items!9cb33dc99e49a67a"
+}

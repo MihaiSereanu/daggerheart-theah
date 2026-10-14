@@ -1,6 +1,6 @@
 <div class="compendium-results">
-    {{#if menu.path.length }}
         <div class="menu-path">
+            {{#unless menu.path.length}}<span class="item-path">All Collections</span>{{/unless}}
             {{#each menu.pathLabels}}
                 {{#unless @first}}
                     <span class="path-link">
@@ -17,7 +17,7 @@
                     <div class="icon">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
-                    <input type="search" name="search" class="search-input" placeholder="{{localize 'DAGGERHEART.GENERAL.searchPlaceholder'}}">
+                    <input type="search" name="search" class="search-input" value="{{searchTerm}}" placeholder="{{localize 'DAGGERHEART.GENERAL.searchPlaceholder'}}">
                 </div>
                 <a data-tooltip="{{localize 'DAGGERHEART.UI.ItemBrowser.tooltipFilters'}}" data-action="expandContent" disabled><i class="fa-solid fa-filter"></i></a>
                 <a data-tooltip="{{localize 'DAGGERHEART.UI.ItemBrowser.tooltipErase'}}" data-action="resetFilters"><i class="fa-solid fa-eraser"></i></a>
@@ -36,10 +36,4 @@
                 </div>
         {{/if}}
         <div class="item-list"></div>
-    {{else}}
-        <div class="welcome-message">
-            <h2 class="title">{{localize "DAGGERHEART.UI.ItemBrowser.title"}}</h2>
-            <span class="hint"><i>{{localize "DAGGERHEART.UI.ItemBrowser.hint"}}</i></span>
-        </div>
-    {{/if}}
 </div>

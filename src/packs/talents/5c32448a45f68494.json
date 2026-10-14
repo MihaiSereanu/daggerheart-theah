@@ -1,0 +1,29 @@
+{
+  "_id": "5c32448a45f68494",
+  "name": "Shrug It Off",
+  "type": "domainCard",
+  "img": "icons/equipment/shield/heater-steel-gold.webp",
+  "system": {
+    "description": "<p>When you would take damage, you can <strong>mark a Stress</strong> to reduce the severity of the damage by one threshold. When you do, roll a d6. On a result of 4 or lower, you can no longer use this ability until the next rest.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "valour",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false,
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Unavailable (0 / 1)"
+    },
+    "usageNote": "Set to 1 when the d6 is 4 or lower; resets on Rest."
+  },
+  "effects": [],
+  "folder": "b68f69b8dced9462",
+  "_key": "!items!5c32448a45f68494"
+}

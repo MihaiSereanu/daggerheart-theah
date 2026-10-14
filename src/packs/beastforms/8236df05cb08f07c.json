@@ -1,0 +1,80 @@
+{
+  "_id": "8236df05cb08f07c",
+  "name": "Household Friend",
+  "type": "beastform",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": "<p><em>(Cat, Dog, Rabbit, etc)</em><br><strong>Instinct</strong> +1 <strong>Evasion</strong> +2</p>\n<p><strong>ATK:</strong> Melee Finesse d4 phy</p>\n<hr>\n<p><strong>Gain Advantage on</strong>: climb, locate, protect</p>\n<h4>Features</h4>\n<p><strong>Companion</strong>: When you Help an Ally, you can roll d8 as ADV die.</p>\n<p><strong>Fragile</strong>: When you take Major+ damage, you drop out of Beastform.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "mainTrait": "instinct",
+    "tokenSize": {
+      "size": "custom",
+      "width": 1,
+      "height": 1,
+      "depth": 1,
+      "scale": 1
+    },
+    "features": [
+      "Compendium.daggerheart-theah.features.Item.0270c2b72aef94f7",
+      "Compendium.daggerheart-theah.features.Item.237677b446ca8385"
+    ],
+    "examples": "Cat, Dog, Rabbit, etc",
+    "advantageOn": {
+      "0708d4b1b14e7aa4": {
+        "value": "climb"
+      },
+      "751721601c75ce13": {
+        "value": "locate"
+      },
+      "f97e3d81ce8d6961": {
+        "value": "protect"
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "03ef7d1115a6ee79",
+      "name": "Household Friend",
+      "type": "beastform",
+      "transfer": true,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "system": {
+        "changes": [
+          {
+            "type": "add",
+            "key": "system.traits.instinct.value",
+            "value": 1,
+            "phase": "initial"
+          },
+          {
+            "type": "add",
+            "key": "system.evasion",
+            "value": 2,
+            "phase": "initial"
+          },
+          {
+            "type": "standardAttack",
+            "phase": "initial",
+            "value": {
+              "name": "Household Friend Attack",
+              "damageTypes": [
+                "physical"
+              ],
+              "attackRange": "melee",
+              "trait": "instinct",
+              "damageFormula": "1d4 + @instinct",
+              "img": "icons/creatures/claws/claw-straight-brown.webp"
+            }
+          }
+        ],
+        "duration": {
+          "type": "shortRest"
+        }
+      },
+      "_key": "!items.effects!8236df05cb08f07c.03ef7d1115a6ee79"
+    }
+  ],
+  "_key": "!items!8236df05cb08f07c"
+}

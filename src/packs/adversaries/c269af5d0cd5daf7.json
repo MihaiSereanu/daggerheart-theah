@@ -1,0 +1,100 @@
+{
+  "_id": "c269af5d0cd5daf7",
+  "name": "Spy",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A skilled espionage agent, always in the right place.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "social",
+    "difficulty": 13,
+    "notes": "<h3>Normal | Social</h3>\n<p><em>A skilled espionage agent, always in the right place.</em><br><strong>Motives &amp; Tactics:</strong> Cut and run, disguise appearance, eavesdrop</p>\n<p><strong>Difficulty:</strong> 13 | <strong>Thresholds:</strong> 5/9 | <strong>HP:</strong> 4 | <strong>Stress:</strong> 3</p>\n<p><strong>ATK:</strong> -2 | Weapon: Melee | 1d6+3 physical</p>\n<hr>\n<p><strong>Experience:</strong> Espionage +3</p>\n<h4>Features</h4>\n<p><strong>Gathering Secrets - Action</strong>: Spend a Fear to describe how the Spy knows a secret about a PC in the scene.</p>\n<p><strong>Fly on the Wall - Reaction</strong>: When a PC or group is discussing something sensitive, you can <strong>mark a Stress</strong> to reveal that the Spy had heard them. If the Spy escapes the scene, you gain 1d4 Fear.</p>\n",
+    "damageThresholds": {
+      "major": 5,
+      "severe": 9
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 4
+      },
+      "stress": {
+        "value": 0,
+        "max": 3
+      }
+    },
+    "motivesAndTactics": "Cut and run, disguise appearance, eavesdrop",
+    "experiences": {
+      "d13720a0fad9408e": {
+        "name": "Espionage",
+        "value": 3
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/hand-grip-sword-orange.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": -2
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d6+3"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "a40c167c6953b668",
+      "name": "Gathering Secrets - Action",
+      "type": "feature",
+      "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+      "system": {
+        "description": "<p>Spend a Fear to describe how the Spy knows a secret about a PC in the scene.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!c269af5d0cd5daf7.a40c167c6953b668"
+    },
+    {
+      "_id": "f035c06bceaea73b",
+      "name": "Fly on the Wall - Reaction",
+      "type": "feature",
+      "img": "icons/magic/control/buff-flight-wings-blue.webp",
+      "system": {
+        "description": "<p>When a PC or group is discussing something sensitive, you can <strong>mark a Stress</strong> to reveal that the Spy had heard them. If the Spy escapes the scene, you gain 1d4 Fear.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!c269af5d0cd5daf7.f035c06bceaea73b"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Spy",
+    "actorLink": false
+  },
+  "_key": "!actors!c269af5d0cd5daf7"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "ebd9cd40b520dd33",
+  "name": "Tempest Wings",
+  "type": "feature",
+  "img": "icons/magic/control/buff-flight-wings-blue.webp",
+  "system": {
+    "description": "<p>Spend a Fear to flail the adversary’s wings with explosive force, creating a shockwave within Close range. All targets in this area must succeed on a Finesse Reaction Roll or become <em>Vulnerable</em> until they spend an action to right themselves or until they clear a Stress. For each PC that fails the roll, you gain a Fear.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!ebd9cd40b520dd33"
+}

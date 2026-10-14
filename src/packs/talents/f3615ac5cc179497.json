@@ -1,0 +1,20 @@
+{
+  "_id": "f3615ac5cc179497",
+  "name": "Blood Puppet",
+  "type": "domainCard",
+  "img": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+  "system": {
+    "description": "<p>Make a Spellcast Roll against a living adversary within Far range. On a success, <strong>spend any number of Hope</strong> to issue as many orders:</p>\n<ul>\n<li>If you cause the target to move, they move to a location you choose that’s within Close range of them.</li>\n<li>If you cause the target to attack, make a Spellcast Roll against a target within Melee range of them. On a success, deals its weapon damage.</li>\n<li>If you cause the target to do anything else, it does so to the best of its ability.</li>\n</ul>\n<p>Whenever you issue an order that is against the target&#39;s nature, they may <strong>mark a Stress</strong> to immediately end the effect. The effect otherwise ends if the puppet is no longer in your line of sight.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "porte",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "abd4fb970d402f00",
+  "_key": "!items!f3615ac5cc179497"
+}

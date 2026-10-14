@@ -1,0 +1,20 @@
+{
+  "_id": "9598b412f5df84fe",
+  "name": "Interrogation Tactics",
+  "type": "domainCard",
+  "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+  "system": {
+    "description": "<p>Make a Instinct roll against a bound or restrained adversary. On a success, they cannot lie to you, but they do not have to answer your questions. If they refuse to answer, they must <strong>mark a Stress</strong> and make a Wits (15) Reaction Roll, ending the effects on a success.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "shade",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "5af6d37ce4bdfed9",
+  "_key": "!items!9598b412f5df84fe"
+}

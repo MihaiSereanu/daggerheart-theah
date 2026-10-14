@@ -16,7 +16,7 @@ export class SceneDarknessSlider extends HandlebarsApplicationMixin(ApplicationV
 
     static PARTS = {
         main: {
-            template: 'systems/daggerheart/templates/ui/scene-darkness-slider.hbs',
+            template: 'systems/daggerheart-theah/templates/ui/scene-darkness-slider.hbs',
             root: true
         }
     }

@@ -1,0 +1,15 @@
+{
+  "_id": "ae0a930269d9498e",
+  "name": "Clear the Decks",
+  "type": "feature",
+  "img": "icons/environment/settlement/ship.webp",
+  "system": {
+    "description": "<p>Make an attack against a target within Very Close. On success, <strong>mark a Stress</strong> to move into Melee with the target, deal 3d4 physical damage, and knock the target to Close.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!ae0a930269d9498e"
+}

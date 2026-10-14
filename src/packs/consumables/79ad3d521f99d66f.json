@@ -1,0 +1,15 @@
+{
+  "_id": "79ad3d521f99d66f",
+  "name": "Sweet Moss",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Sweet Moss</strong>: You can consume this moss during a rest to clear 1d10 Hit Points or 1d10 Stress.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!79ad3d521f99d66f"
+}

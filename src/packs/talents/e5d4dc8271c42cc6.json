@@ -1,0 +1,20 @@
+{
+  "_id": "e5d4dc8271c42cc6",
+  "name": "Steady Hands",
+  "type": "domainCard",
+  "img": "icons/sundries/books/book-embossed-jewel-gold-green.webp",
+  "system": {
+    "description": "<p>When a Countdown is in progress, your nerves stay sharp. You can <strong>mark a Stress</strong> to add a d6 to any action roll influence or control the Countdown.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "lore",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "12efbf11db2e768a",
+  "_key": "!items!e5d4dc8271c42cc6"
+}

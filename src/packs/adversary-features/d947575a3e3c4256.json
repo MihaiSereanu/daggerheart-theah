@@ -1,0 +1,15 @@
+{
+  "_id": "d947575a3e3c4256",
+  "name": "Deadly Venom",
+  "type": "feature",
+  "img": "icons/weapons/daggers/dagger-poisoned-curved-green.webp",
+  "system": {
+    "description": "<p>Targets who mark HP from the adversary's attacks are Vulnerable until they clear an HP.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!d947575a3e3c4256"
+}

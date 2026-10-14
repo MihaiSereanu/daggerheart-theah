@@ -1,0 +1,58 @@
+{
+  "_id": "f829ff47cc390417",
+  "name": "Crossbow",
+  "type": "weapon",
+  "img": "icons/weapons/crossbows/crossbow-long-brown.webp",
+  "system": {
+    "description": "<p><strong>Crossbow</strong></p>\n<p><strong>Reloading</strong>: After you attack, roll a d6; on a 1, mark 1 Stress to reload</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "blackpowder": false,
+    "reloading": true,
+    "resource": {
+      "type": "simple",
+      "value": 1,
+      "max": "1",
+      "progression": "decreasing"
+    },
+    "secondary": false,
+    "burden": "twoHanded",
+    "weaponFeatures": [],
+    "attack": {
+      "_id": "3c634a2d14a37bec",
+      "name": "Crossbow",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/weapons/crossbows/crossbow-long-brown.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "far",
+      "roll": {
+        "type": "attack",
+        "trait": "finesse",
+        "bonus": 0
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d6+2 + @finesse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "_key": "!items!f829ff47cc390417"
+}

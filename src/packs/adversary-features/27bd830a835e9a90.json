@@ -1,0 +1,15 @@
+{
+  "_id": "27bd830a835e9a90",
+  "name": "Reaper",
+  "type": "feature",
+  "img": "icons/sundries/books/book-symbol-skull-grey.webp",
+  "system": {
+    "description": "<p>Before rolling damage for the adversary's attack, you can <strong>mark a Stress</strong> to gain a bonus to the damage roll equal to the adversary's current number of marked HP.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "reaction"
+  },
+  "effects": [],
+  "_key": "!items!27bd830a835e9a90"
+}

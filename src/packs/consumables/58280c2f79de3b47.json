@@ -1,0 +1,15 @@
+{
+  "_id": "58280c2f79de3b47",
+  "name": "Elixir of the Trickster",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Elixir of the Trickster</strong>: Gain +1 Finesse until your next rest.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!58280c2f79de3b47"
+}

@@ -1,0 +1,18 @@
+{
+  "_id": "43c111580576f3c8",
+  "name": "Glamour",
+  "type": "subclass",
+  "img": "icons/magic/symbols/runes-star-magenta.webp",
+  "system": {
+    "description": "<p>Play a Glamour-Sorcerer if you want to embody the spirit of legends and use borrowed power.</p>\n<h4>SPELLCASTING TRAIT: CHARM</h4>\n<blockquote>\n<p>“<em>For as long as you and your descendants sit on the throne of Avalon, so shall the blessing of the Sidhe be with you...”</em>\n:\nWith these words the Sidhe turned the Graal over to King Elilodd. Magic rippled across Avalon. The Graal found those most loyal to the Isles and imbued them with great power. Until the return of Queen Elaine, these stories were myths.</p>\n</blockquote>\n<blockquote>\n<h4>The Knights&#39; Geas</h4>\n<p>In order to keep receiving these benefits, you must follow the Seven Knightly Tenets. Persistent breaking of the Tenets can lead to losing one&#39;s Glamour.</p>\n<ul>\n<li>Always serve the Graal</li>\n<li>Never steal something for yourself</li>\n<li>Never let your passions rule you</li>\n<li>Never be idle when there is work to be done</li>\n<li>Never break your word or help someone break theirs</li>\n<li>Never abandon the fight before it is through</li>\n<li>Never raise your sword against a countryman</li>\n</ul>\n</blockquote>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.619fbc2f6e310fa4",
+    "spellcastingTrait": "charm",
+    "features": []
+  },
+  "effects": [],
+  "folder": "1adde1032a0a00cf",
+  "_key": "!items!43c111580576f3c8"
+}

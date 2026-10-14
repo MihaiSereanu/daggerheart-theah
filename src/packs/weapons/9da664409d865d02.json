@@ -1,0 +1,53 @@
+{
+  "_id": "9da664409d865d02",
+  "name": "Dracheneisen Longsword",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-guard-engraved.webp",
+  "system": {
+    "description": "<p><strong>Longsword</strong></p>\n<p><strong>Reliable</strong>: +1 to attack rolls</p>\n<p><strong><em>Dracheneisen</em></strong> is a rare, legendary alloy unique to Eisen. Dark and heavy with a faint metallic sheen, it is said to be forged with the remnants of ancient dragons. No new Dracheneisen items have been made in generations. All known pieces are heirlooms, trophies, or war relics sought by many factions. The secrets of their forging have been lost to time, or are kept very closely guarded.</p>\n<h4>Ironforged Weapons</h4>\n<p>Dracheneisen Weapons are <strong>Ironforged</strong>. These weapons have the following features:</p>\n<ul>\n<li><strong>Warforged.</strong> Increase the weapon’s damage by a static +5.</li>\n<li><strong>Mastercrafted.</strong> If the weapon is <strong>Reliable</strong>, increase that bonus by a further +1. If it is not <strong>Reliable</strong>, it gains <strong>Reliable</strong>.</li>\n<li><strong>Magical.</strong> The weapon bypasses supernatural resistances unless otherwise specified.</li>\n</ul>\n<h4>Ironbound Armours</h4>\n<p>Dracheneisen Armours are <strong>Ironbound</strong>. These pieces have the following features:</p>\n<ul>\n<li><strong>Resilient.</strong> Increase the armour’s base thresholds by +3.</li>\n<li><strong>Warded.</strong> Reduce incoming damage by the Armor Score before applying it to Thresholds.</li>\n<li><strong>Light.</strong> If the armour is <strong>Very Heavy</strong>, treat it as <strong>Heavy</strong>. If it is <strong>Heavy</strong>, ignore the trait.</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "blackpowder": false,
+    "reloading": false,
+    "secondary": false,
+    "burden": "twoHanded",
+    "weaponFeatures": [],
+    "attack": {
+      "_id": "c25563432a9a4bda",
+      "name": "Longsword",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/weapons/swords/sword-guard-engraved.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": "finesse",
+        "bonus": 2
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d8+1 + @finesse + 5"
+            }
+          }
+        }
+      }
+    },
+    "ironforged": true
+  },
+  "effects": [],
+  "_key": "!items!9da664409d865d02"
+}

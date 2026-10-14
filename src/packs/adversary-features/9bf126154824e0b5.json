@@ -1,0 +1,15 @@
+{
+  "_id": "9bf126154824e0b5",
+  "name": "The Runaround",
+  "type": "feature",
+  "img": "icons/tools/navigation/compass-brass-blue-red.webp",
+  "system": {
+    "description": "<p>When a PC rolls a 14 or lower on a Charm Roll made against the adversary, they must <strong>mark a Stress</strong>.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!9bf126154824e0b5"
+}

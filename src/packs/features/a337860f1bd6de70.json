@@ -1,0 +1,15 @@
+{
+  "_id": "a337860f1bd6de70",
+  "name": "Ruthless Precision",
+  "type": "feature",
+  "img": "icons/skills/ranged/target-bullseye-arrow-green.webp",
+  "system": {
+    "description": "<p>When you make a damage roll against your Focus, you may <strong>mark a Stress</strong> to deal 1d6 extra damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "a17be006999e60eb",
+  "_key": "!items!a337860f1bd6de70"
+}

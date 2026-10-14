@@ -1,0 +1,15 @@
+{
+  "_id": "1220c445d0beb1cc",
+  "name": "Blood in the Water",
+  "type": "feature",
+  "img": "icons/creatures/abilities/bear-roar-bite-brown-green.webp",
+  "system": {
+    "description": "<p>When a creature within Close range of the adversary marks HP from another creature’s attack, you can <strong>mark a Stress</strong> to immediately spotlight the adversary, move into Melee with that target, and make a standard attack.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "reaction"
+  },
+  "effects": [],
+  "_key": "!items!1220c445d0beb1cc"
+}

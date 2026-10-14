@@ -66,6 +66,7 @@ export default class BaseDataItem extends foundry.abstract.TypeDataModel {
                     value: new fields.NumberField({ integer: true, min: 0, initial: 0 }),
                     max: new FormulaField({ nullable: true, initial: null, deterministic: true }),
                     icon: new fields.StringField(),
+                    label: new fields.StringField(),
                     recovery: new fields.StringField({
                         choices: CONFIG.DH.GENERAL.refreshTypes,
                         initial: null,
@@ -89,6 +90,13 @@ export default class BaseDataItem extends foundry.abstract.TypeDataModel {
                 },
                 { nullable: true, initial: null }
             );
+            schema.usageNote = new fields.StringField();
+            schema.usageCounters = new fields.TypedObjectField(new fields.SchemaField({
+                label: new fields.StringField(),
+                value: new fields.NumberField({ integer: true, min: 0, initial: 0 }),
+                max: new FormulaField({ deterministic: true }),
+                recovery: new fields.StringField({ nullable: true, initial: null })
+            }));
         }
 
         if (this.metadata.isInventoryItem)

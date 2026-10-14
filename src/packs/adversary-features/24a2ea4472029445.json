@@ -1,0 +1,15 @@
+{
+  "_id": "24a2ea4472029445",
+  "name": "Reinforce",
+  "type": "feature",
+  "img": "icons/equipment/shield/heater-steel-gold.webp",
+  "system": {
+    "description": "<p>When the adversary's allies are forced to make a reaction roll, you can <strong>mark a Stress</strong> to give them a +2 to the roll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "reaction"
+  },
+  "effects": [],
+  "_key": "!items!24a2ea4472029445"
+}

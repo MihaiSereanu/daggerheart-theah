@@ -1,0 +1,15 @@
+{
+  "_id": "976c58861d73e95d",
+  "name": "Disheartening Blast",
+  "type": "feature",
+  "img": "icons/magic/symbols/runes-star-magenta.webp",
+  "system": {
+    "description": "<p>When a PC takes damage from the adversary, they must <strong>mark a Stress</strong> or lose a Hope.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!976c58861d73e95d"
+}

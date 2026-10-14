@@ -1,0 +1,14 @@
+{
+  "_id": "f7c637af4bc021d1",
+  "name": "Steel",
+  "type": "feature",
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "system": {
+    "description": "<h2>Steel</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.6483637cd8e69453]{Battle-Hardened}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.b8d07e2657a419f5]{Deadly Gambit}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.a6959d92daf66236]{Fortified}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.7543415716504c9f]{Get Back Up}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.5837e7fcd29779b1]{Moulinet}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.f3bf950b5cf2c6c6]{Reckless}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.98561ea613d4cfaf]{Scramble}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.79f232be5741dc0c]{Steel’s Promise}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.86f359481ac308f8]{Vicious}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.3b985db4a1159b83]{Weaponmaster}</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!f7c637af4bc021d1"
+}

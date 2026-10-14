@@ -14,7 +14,7 @@ export default function ItemAttachmentSheet(Base) {
         static PARTS = {
             ...super.PARTS,
             attachments: {
-                template: 'systems/daggerheart/templates/sheets/global/tabs/tab-attachments.hbs',
+                template: 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-attachments.hbs',
                 scrollable: ['.attachments']
             }
         };

@@ -1,0 +1,15 @@
+{
+  "_id": "9fd80df06eb59e70",
+  "name": "Recipe: Draught of Vitality",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Recipe: Draught of Vitality</strong>: As a downtime move, you can use a vial of blood to craft a Vial of Vitae.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!9fd80df06eb59e70"
+}

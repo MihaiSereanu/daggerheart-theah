@@ -1,0 +1,128 @@
+{
+  "_id": "af51b2ddbfc9754c",
+  "name": "Syrneth Construct",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A roughly humanoid being of stone and steel.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "solo",
+    "difficulty": 16,
+    "notes": "<h3>Normal | Solo</h3>\n<p><em>A roughly humanoid being of stone and steel.</em><br><strong>Motives &amp; Tactics:</strong> Serve creator, smash target, trample groups</p>\n<p><strong>Difficulty:</strong> 16 | <strong>Thresholds:</strong> 7/15 | <strong>HP:</strong> 9 | <strong>Stress:</strong> 4</p>\n<p><strong>ATK:</strong> +4 | Slam: Melee | 1d20 physical</p>\n<hr>\n<p><strong>Experience:</strong> —</p>\n<h4>Features</h4>\n<p><strong>Relentless (2) - Passive</strong>: The Construct can be spotlighted up to two times per GM turn. Spend Fear as usual to spotlight them.</p>\n<p><strong>Weak Structure - Passive</strong>: When the Construct marks HP from physical damage, they must mark an additional HP.</p>\n<p><strong>Trample - Action</strong>: Mark a Stress to make an attack against all targets in the Construct&#39;s path when they move. Targets the Construct succeeds against take 1d8 physical damage.</p>\n<p><strong>Overload - Reaction</strong>: Before rolling damage for the Construct&#39;s attack, you can <strong>mark a Stress</strong> to gain a +10 bonus to the damage roll. The Construct can then take the spotlight again.</p>\n<p><strong>Death Quake - Reaction</strong>: When the Construct marks their last HP, the magic powering them ruptures in an explosion of force. Make an attack with Advantage against all targets within Very Close range. Targets the Construct succeeds against take 1d12+2 magic damage.</p>\n",
+    "damageThresholds": {
+      "major": 7,
+      "severe": 15
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 9
+      },
+      "stress": {
+        "value": 0,
+        "max": 4
+      }
+    },
+    "motivesAndTactics": "Serve creator, smash target, trample groups",
+    "experiences": {},
+    "attack": {
+      "_id": "4caf003ad1aeaadc",
+      "name": "Slam",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/unarmed-punch-fist-yellow-red.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 4
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d20"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "2755a67fe78a74b5",
+      "name": "Relentless (2) - Passive",
+      "type": "feature",
+      "img": "icons/equipment/shield/heater-steel-gold.webp",
+      "system": {
+        "description": "<p>The Construct can be spotlighted up to two times per GM turn. Spend Fear as usual to spotlight them.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!af51b2ddbfc9754c.2755a67fe78a74b5"
+    },
+    {
+      "_id": "978f3dd956b49e1b",
+      "name": "Weak Structure - Passive",
+      "type": "feature",
+      "img": "icons/environment/settlement/castle.webp",
+      "system": {
+        "description": "<p>When the Construct marks HP from physical damage, they must mark an additional HP.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!af51b2ddbfc9754c.978f3dd956b49e1b"
+    },
+    {
+      "_id": "65c11c6108fcb793",
+      "name": "Trample - Action",
+      "type": "feature",
+      "img": "icons/environment/creatures/horse-brown.webp",
+      "system": {
+        "description": "<p>Mark a Stress to make an attack against all targets in the Construct&#39;s path when they move. Targets the Construct succeeds against take 1d8 physical damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!af51b2ddbfc9754c.65c11c6108fcb793"
+    },
+    {
+      "_id": "dd82b1c4efca3eaa",
+      "name": "Overload - Reaction",
+      "type": "feature",
+      "img": "icons/magic/symbols/runes-star-magenta.webp",
+      "system": {
+        "description": "<p>Before rolling damage for the Construct&#39;s attack, you can <strong>mark a Stress</strong> to gain a +10 bonus to the damage roll. The Construct can then take the spotlight again.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!af51b2ddbfc9754c.dd82b1c4efca3eaa"
+    },
+    {
+      "_id": "0fd63559761dab10",
+      "name": "Death Quake - Reaction",
+      "type": "feature",
+      "img": "icons/sundries/books/book-symbol-skull-grey.webp",
+      "system": {
+        "description": "<p>When the Construct marks their last HP, the magic powering them ruptures in an explosion of force. Make an attack with Advantage against all targets within Very Close range. Targets the Construct succeeds against take 1d12+2 magic damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!af51b2ddbfc9754c.0fd63559761dab10"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Syrneth Construct",
+    "actorLink": false
+  },
+  "_key": "!actors!af51b2ddbfc9754c"
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "ad771166e6aca101",
+  "name": "Hypnotic Shimmer",
+  "type": "domainCard",
+  "img": "icons/magic/control/buff-luck-fortune-rainbow.webp",
+  "system": {
+    "description": "<p>Make a <strong>Spellcast Roll</strong> against all adversaries in front of you within Close range. Once per rest on a success, create an illusion of flashing colours and lights that temporarily <em>Stuns</em> targets you succeed against and forces them to <strong>mark a Stress</strong>. While Stunned, they can’t use reactions and can’t take any other actions until they clear this condition.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "glamour",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false,
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    }
+  },
+  "effects": [],
+  "folder": "33dde1086e88a00a",
+  "_key": "!items!ad771166e6aca101"
+}

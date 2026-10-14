@@ -1,0 +1,52 @@
+{
+  "_id": "856c4707524db522",
+  "name": "Shortbow",
+  "type": "weapon",
+  "img": "icons/weapons/bows/shortbow-recurve-leather.webp",
+  "system": {
+    "description": "<p><strong>Shortbow</strong></p>\n<p><strong>Quick</strong>: Mark 1 Stress to target another creature within range</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "blackpowder": false,
+    "reloading": false,
+    "secondary": false,
+    "burden": "twoHanded",
+    "weaponFeatures": [],
+    "attack": {
+      "_id": "4993d603f5c75332",
+      "name": "Shortbow",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/weapons/bows/shortbow-recurve-leather.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "far",
+      "roll": {
+        "type": "attack",
+        "trait": "finesse",
+        "bonus": 0
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d6 + @finesse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "_key": "!items!856c4707524db522"
+}

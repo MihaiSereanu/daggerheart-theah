@@ -1,0 +1,15 @@
+{
+  "_id": "cb70df80ddf14477",
+  "name": "Never Fear",
+  "type": "feature",
+  "img": "icons/skills/melee/sword-twirl-orange.webp",
+  "system": {
+    "description": "<p>When you fail with Fear, you may <strong>mark a Stress</strong> to turn it into a Failure with Hope instead.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "fabc53f3d627635a",
+  "_key": "!items!cb70df80ddf14477"
+}

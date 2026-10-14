@@ -1,0 +1,20 @@
+{
+  "_id": "dddb52483969a9a6",
+  "name": "Threads of Memory",
+  "type": "domainCard",
+  "img": "icons/commodities/cloth/thread-and-needle.webp",
+  "system": {
+    "description": "<p>Make a Spellcast Roll against a target you can touch. On a success, you can peer into their mind and ask the GM a question. The GM will describe any memories the target has pertaining to the answer.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "sorte",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "172ae6710886d3ba",
+  "_key": "!items!dddb52483969a9a6"
+}

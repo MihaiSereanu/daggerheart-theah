@@ -1,0 +1,89 @@
+{
+  "_id": "4c3055a2aff2cdc6",
+  "name": "Archer Guard",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A guard bearing a longbow and quiver with fletched arrows.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "ranged",
+    "difficulty": 10,
+    "notes": "<h3>Normal | Ranged</h3>\n<p><em>A guard bearing a longbow and quiver with fletched arrows.</em><br><strong>Motives &amp; Tactics:</strong> Arrest, make it through the day, pin down</p>\n<p><strong>Difficulty:</strong> 10 | <strong>Thresholds:</strong> 4/8 | <strong>HP:</strong> 3 | <strong>Stress:</strong> 2</p>\n<p><strong>ATK:</strong> +1 | Longbow: Far | 1d8+3 physical</p>\n<hr>\n<p><strong>Experience:</strong> Local Knowledge +3</p>\n<h4>Features</h4>\n<p><strong>Hobbling Shot - Action</strong>: Make an attack against a target within Far range. On a success, <strong>mark a Stress</strong> to deal 1d12+3 physical damage. If the target marks HP from this attack, they have Disadvantage on Finesse Rolls until they clear at least 1 HP.</p>\n",
+    "damageThresholds": {
+      "major": 4,
+      "severe": 8
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 3
+      },
+      "stress": {
+        "value": 0,
+        "max": 2
+      }
+    },
+    "motivesAndTactics": "Arrest, make it through the day, pin down",
+    "experiences": {
+      "9e7c9bc535c15a90": {
+        "name": "Local Knowledge",
+        "value": 3
+      }
+    },
+    "attack": {
+      "_id": "100b2f17c75b446f",
+      "name": "Longbow",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/weapons/bows/longbow-recurve-leather-brown.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "far",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 1
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d8+3"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "9020a29bd41f274b",
+      "name": "Hobbling Shot - Action",
+      "type": "feature",
+      "img": "icons/skills/ranged/target-bullseye-arrow-green.webp",
+      "system": {
+        "description": "<p>Make an attack against a target within Far range. On a success, <strong>mark a Stress</strong> to deal 1d12+3 physical damage. If the target marks HP from this attack, they have Disadvantage on Finesse Rolls until they clear at least 1 HP.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!4c3055a2aff2cdc6.9020a29bd41f274b"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Archer Guard",
+    "actorLink": false
+  },
+  "_key": "!actors!4c3055a2aff2cdc6"
+}

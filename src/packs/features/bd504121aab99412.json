@@ -1,0 +1,15 @@
+{
+  "_id": "bd504121aab99412",
+  "name": "Steady",
+  "type": "feature",
+  "img": "icons/environment/wilderness/cave-entrance-mountain-blue.webp",
+  "system": {
+    "description": "<p>You have advantage on rolls to navigate harsh environments and to use your survival knowledge.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "07a9c841463fd5e9",
+  "_key": "!items!bd504121aab99412"
+}

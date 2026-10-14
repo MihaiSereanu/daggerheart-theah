@@ -1,0 +1,15 @@
+{
+  "_id": "7f00e4b45d23ac99",
+  "name": "Cut to the Bone",
+  "type": "feature",
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "system": {
+    "description": "<p>Mark a Stress to make an attack against all targets within Very Close range. Targets the adversary succeeds against take 1d8+2 physical damage and must <strong>mark a Stress</strong>.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!7f00e4b45d23ac99"
+}

@@ -1,0 +1,23 @@
+{
+  "_id": "62121f0f3c4837e1",
+  "name": "Guards, Seize Them!",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-sword-blue.webp",
+  "system": {
+    "description": "<p>Once per scene, <strong>mark a Stress</strong> to summon 1d4 Guards, who appear at Far range.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "scene",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!62121f0f3c4837e1"
+}

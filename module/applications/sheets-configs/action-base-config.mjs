@@ -60,25 +60,25 @@ export default class DHActionBaseConfig extends DaggerheartSheet(ApplicationV2) 
     static PARTS = {
         header: {
             id: 'header',
-            template: 'systems/daggerheart/templates/sheets-settings/action-settings/header.hbs'
+            template: 'systems/daggerheart-theah/templates/sheets-settings/action-settings/header.hbs'
         },
-        tabs: { template: 'systems/daggerheart/templates/sheets/global/tabs/tab-navigation.hbs' },
+        tabs: { template: 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-navigation.hbs' },
         base: {
             id: 'base',
-            template: 'systems/daggerheart/templates/sheets-settings/action-settings/base.hbs'
+            template: 'systems/daggerheart-theah/templates/sheets-settings/action-settings/base.hbs'
         },
         configuration: {
             id: 'configuration',
-            template: 'systems/daggerheart/templates/sheets-settings/action-settings/configuration.hbs'
+            template: 'systems/daggerheart-theah/templates/sheets-settings/action-settings/configuration.hbs'
         },
         effect: {
             id: 'effect',
-            template: 'systems/daggerheart/templates/sheets-settings/action-settings/effect.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets-settings/action-settings/effect.hbs',
             scrollable: ['']
         },
         trigger: {
             id: 'trigger',
-            template: 'systems/daggerheart/templates/sheets-settings/action-settings/trigger.hbs'
+            template: 'systems/daggerheart-theah/templates/sheets-settings/action-settings/trigger.hbs'
         }
     };
 
@@ -240,11 +240,6 @@ export default class DHActionBaseConfig extends DaggerheartSheet(ApplicationV2) 
             };
         });
 
-        const settingsTiers = game.settings.get(CONFIG.DH.id, CONFIG.DH.SETTINGS.gameSettings.LevelTiers).tiers;
-        context.tierOptions = [
-            { key: 1, label: game.i18n.localize('DAGGERHEART.GENERAL.Tiers.1') },
-            ...Object.values(settingsTiers).map(x => ({ key: x.tier, label: x.name }))
-        ];
         return context;
     }
 

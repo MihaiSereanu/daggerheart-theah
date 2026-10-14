@@ -1,0 +1,52 @@
+{
+  "_id": "cb8121d1ff975921",
+  "name": "Whip",
+  "type": "weapon",
+  "img": "icons/weapons/misc/whip-leather.webp",
+  "system": {
+    "description": "<p><strong>Whip</strong></p>\n<p><strong>Startling</strong>: Mark 1 Stress to force all adversaries in Melee back to Very Close</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "blackpowder": false,
+    "reloading": false,
+    "secondary": false,
+    "burden": "oneHanded",
+    "weaponFeatures": [],
+    "attack": {
+      "_id": "95c1eb1c0c9fa3a7",
+      "name": "Whip",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/weapons/misc/whip-leather.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "veryClose",
+      "roll": {
+        "type": "attack",
+        "trait": "finesse",
+        "bonus": 0
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d4 + @finesse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "_key": "!items!cb8121d1ff975921"
+}

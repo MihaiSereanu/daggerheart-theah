@@ -1,0 +1,20 @@
+{
+  "_id": "dfdab5107a9c54c3",
+  "name": "Daring Stunt",
+  "type": "domainCard",
+  "img": "icons/skills/melee/strike-blade-scimitar-orange-blue.webp",
+  "system": {
+    "description": "<p>When you make an attack roll and are not <em>Vulnerable</em>, describe a daring action to make the roll with Advantage. Succeed or fail, you then gain the <em>Vulnerable</em> condition until you next succeed with Hope.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "flair",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "4c13446263efc38b",
+  "_key": "!items!dfdab5107a9c54c3"
+}

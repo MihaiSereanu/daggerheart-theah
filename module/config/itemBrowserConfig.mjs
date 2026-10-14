@@ -2,10 +2,6 @@ export const typeConfig = {
     adversaries: {
         columns: [
             {
-                key: 'system.tier',
-                label: 'DAGGERHEART.GENERAL.Tiers.singular'
-            },
-            {
                 key: 'system.type',
                 label: 'DAGGERHEART.GENERAL.type',
                 format: type => {
@@ -16,11 +12,6 @@ export const typeConfig = {
             }
         ],
         filters: [
-            {
-                key: 'system.tier',
-                label: 'DAGGERHEART.GENERAL.Tiers.singular',
-                field: 'system.api.models.actors.DhAdversary.schema.fields.tier'
-            },
             {
                 key: 'system.type',
                 label: 'DAGGERHEART.GENERAL.type',
@@ -73,10 +64,6 @@ export const typeConfig = {
     environments: {
         columns: [
             {
-                key: 'system.tier',
-                label: 'DAGGERHEART.GENERAL.Tiers.singular'
-            },
-            {
                 key: 'system.type',
                 label: 'DAGGERHEART.GENERAL.type',
                 format: type => {
@@ -87,11 +74,6 @@ export const typeConfig = {
             }
         ],
         filters: [
-            {
-                key: 'system.tier',
-                label: 'DAGGERHEART.GENERAL.Tiers.singular',
-                field: 'system.api.models.actors.DhEnvironment.schema.fields.tier'
-            },
             {
                 key: 'system.type',
                 label: 'DAGGERHEART.GENERAL.type',
@@ -129,10 +111,6 @@ export const typeConfig = {
                         : isSecondary === false
                             ? 'DAGGERHEART.ITEMS.Weapon.primaryWeapon.short'
                             : '-'
-            },
-            {
-                key: 'system.tier',
-                label: 'DAGGERHEART.GENERAL.Tiers.singular'
             }
         ],
         filters: [
@@ -150,16 +128,6 @@ export const typeConfig = {
                 choices: [
                     { value: false, label: 'DAGGERHEART.ITEMS.Weapon.primaryWeapon.full' },
                     { value: true, label: 'DAGGERHEART.ITEMS.Weapon.secondaryWeapon.full' }
-                ]
-            },
-            {
-                key: 'system.tier',
-                label: 'DAGGERHEART.GENERAL.Tiers.singular',
-                choices: [
-                    { value: '1', label: '1' },
-                    { value: '2', label: '2' },
-                    { value: '3', label: '3' },
-                    { value: '4', label: '4' }
                 ]
             },
             {
@@ -209,10 +177,6 @@ export const typeConfig = {
                 key: 'system.secondary',
                 label: 'DAGGERHEART.UI.ItemBrowser.subtype',
                 format: isSecondary => (isSecondary ? 'DAGGERHEART.ITEMS.Weapon.secondaryWeapon.short' : isSecondary === false ? 'DAGGERHEART.ITEMS.Weapon.primaryWeapon.short' : '-')
-            },
-            {
-                key: 'system.tier',
-                label: 'DAGGERHEART.GENERAL.Tiers.singular'
             }
         ],
         filters: [
@@ -222,16 +186,6 @@ export const typeConfig = {
                 choices: [
                     { value: false, label: 'DAGGERHEART.ITEMS.Weapon.primaryWeapon.full' },
                     { value: true, label: 'DAGGERHEART.ITEMS.Weapon.secondaryWeapon.full' }
-                ]
-            },
-            {
-                key: 'system.tier',
-                label: 'DAGGERHEART.GENERAL.Tiers.singular',
-                choices: [
-                    { value: '1', label: '1' },
-                    { value: '2', label: '2' },
-                    { value: '3', label: '3' },
-                    { value: '4', label: '4' }
                 ]
             },
             {
@@ -260,22 +214,8 @@ export const typeConfig = {
     },
     armors: {
         columns: [
-            {
-                key: 'system.tier',
-                label: 'DAGGERHEART.GENERAL.Tiers.singular'
-            }
         ],
         filters: [
-            {
-                key: 'system.tier',
-                label: 'DAGGERHEART.GENERAL.Tiers.singular',
-                choices: [
-                    { value: '1', label: '1' },
-                    { value: '2', label: '2' },
-                    { value: '3', label: '3' },
-                    { value: '4', label: '4' }
-                ]
-            },
             {
                 key: 'system.baseScore',
                 name: 'armor.min',
@@ -304,63 +244,8 @@ export const typeConfig = {
         filters: []
     },
     cards: {
-        columns: [
-            {
-                key: 'system.type',
-                label: 'DAGGERHEART.GENERAL.type',
-                format: type => (type ? `DAGGERHEART.CONFIG.DomainCardTypes.${type}` : '-')
-            },
-            {
-                key: 'system.domain',
-                label: 'DAGGERHEART.GENERAL.Domain.single',
-                format: domain => (domain ? CONFIG.DH.DOMAIN.allDomains()[domain].label : '-')
-            },
-            {
-                key: 'system.level',
-                label: 'DAGGERHEART.GENERAL.level'
-            }
-        ],
-        filters: [
-            {
-                key: 'system.type',
-                label: 'DAGGERHEART.GENERAL.type',
-                field: 'system.api.models.items.DHDomainCard.schema.fields.type'
-            },
-            {
-                key: 'system.domain',
-                label: 'DAGGERHEART.GENERAL.Domain.single',
-                field: 'system.api.models.items.DHDomainCard.schema.fields.domain',
-                operator: 'contains2'
-            },
-            {
-                key: 'system.level',
-                name: 'level.min',
-                label: 'DAGGERHEART.UI.ItemBrowser.levelMin',
-                field: 'system.api.models.items.DHDomainCard.schema.fields.level',
-                operator: 'gte'
-            },
-            {
-                key: 'system.level',
-                name: 'level.max',
-                label: 'DAGGERHEART.UI.ItemBrowser.levelMax',
-                field: 'system.api.models.items.DHDomainCard.schema.fields.level',
-                operator: 'lte'
-            },
-            {
-                key: 'system.recallCost',
-                name: 'recall.min',
-                label: 'DAGGERHEART.UI.ItemBrowser.recallCostMin',
-                field: 'system.api.models.items.DHDomainCard.schema.fields.recallCost',
-                operator: 'gte'
-            },
-            {
-                key: 'system.recallCost',
-                name: 'recall.max',
-                label: 'DAGGERHEART.UI.ItemBrowser.recallCostMax',
-                field: 'system.api.models.items.DHDomainCard.schema.fields.recallCost',
-                operator: 'lte'
-            }
-        ]
+        columns: [{ key: 'system.domain', label: 'Domain / Tradition', format: domain => CONFIG.DH.DOMAIN.allDomains()[domain]?.label ?? domain }],
+        filters: [{ key: 'system.domain', label: 'Domain / Tradition', field: 'system.api.models.items.DHDomainCard.schema.fields.domain', operator: 'contains2' }]
     },
     classes: {
         columns: [
@@ -462,10 +347,6 @@ export const typeConfig = {
     beastforms: {
         columns: [
             {
-                key: 'system.tier',
-                label: 'DAGGERHEART.GENERAL.Tiers.singular'
-            },
-            {
                 key: 'system.mainTrait',
                 label: 'DAGGERHEART.GENERAL.Trait.single',
                 format: trait => (trait ? `DAGGERHEART.CONFIG.Traits.${trait}.name` : '-')
@@ -473,20 +354,11 @@ export const typeConfig = {
         ],
         filters: [
             {
-                key: 'system.tier',
-                label: 'DAGGERHEART.GENERAL.Tiers.singular',
-                field: 'system.api.models.items.DHBeastform.schema.fields.tier'
-            },
-            {
                 key: 'system.mainTrait',
                 label: 'DAGGERHEART.GENERAL.Trait.single',
                 field: 'system.api.models.items.DHBeastform.schema.fields.mainTrait'
             }
         ]
-    },
-    transformations: {
-        columns: [],
-        filters: []
     }
 };
 
@@ -520,7 +392,7 @@ export const compendiumConfig = {
     // items
     ancestries: {
         id: 'ancestries',
-        keys: ['ancestries'],
+        keys: ['origins'],
         label: 'DAGGERHEART.UI.ItemBrowser.folders.ancestries',
         type: ['ancestry'],
         documentName: 'Item'
@@ -563,19 +435,19 @@ export const compendiumConfig = {
     },
     classes: {
         id: 'classes',
-        keys: ['classes'],
+        keys: ['archetypes'],
         label: 'DAGGERHEART.UI.ItemBrowser.folders.classes',
         type: ['class'],
         /* folders: {
             features: {
                 id: 'features',
-                keys: ['classes'],
+                keys: ['archetypes'],
                 label: 'DAGGERHEART.UI.ItemBrowser.folders.features',
                 type: ['feature']
             },
             items: {
                 id: 'items',
-                keys: ['classes'],
+                keys: ['archetypes'],
                 label: 'DAGGERHEART.UI.ItemBrowser.folders.items',
                 type: ['armor', 'weapon', 'consumable', 'loot'],
                 listType: 'items'
@@ -586,7 +458,7 @@ export const compendiumConfig = {
     },
     subclasses: {
         id: 'subclasses',
-        keys: ['subclasses'],
+        keys: ['specialisations'],
         label: 'DAGGERHEART.UI.ItemBrowser.folders.subclasses',
         type: ['subclass'],
         listType: 'subclasses',
@@ -594,7 +466,7 @@ export const compendiumConfig = {
     },
     domains: {
         id: 'domains',
-        keys: ['domains'],
+        keys: ['talents'],
         label: 'DAGGERHEART.UI.ItemBrowser.folders.domainCards',
         type: ['domainCard'],
         listType: 'cards',
@@ -617,16 +489,9 @@ export const compendiumConfig = {
     },
     features: {
         id: 'features',
-        keys: ['features'],
+        keys: ['features', 'dueling-styles', 'domains'],
         label: 'DAGGERHEART.UI.ItemBrowser.folders.features',
         type: ['feature'],
-        documentName: 'Item'
-    },
-    transformations: {
-        id: 'transformations',
-        keys: ['transformations'],
-        label: 'DAGGERHEART.UI.ItemBrowser.folders.transformations',
-        type: ['transformation'],
         documentName: 'Item'
     }
 };

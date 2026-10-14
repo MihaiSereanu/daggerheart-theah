@@ -1,0 +1,20 @@
+{
+  "_id": "adda83b26538ce35",
+  "name": "Bloodboil",
+  "type": "domainCard",
+  "img": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+  "system": {
+    "description": "<p><strong>Mark a Stress</strong>, then make a Spellcast Roll against a target within Far range. On a success, they’re temporarily <em>Restrained</em> and take 1d12+4 magic damage as their blood boils and twists inside them. While they remain Restrained, you can <strong>mark an additional Stress</strong> to deal 1d8 damage to them.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "porte",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "abd4fb970d402f00",
+  "_key": "!items!adda83b26538ce35"
+}

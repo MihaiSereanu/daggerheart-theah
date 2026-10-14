@@ -1,0 +1,15 @@
+{
+  "_id": "36d223ba500a452b",
+  "name": "Philosopher’s Draught",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Philosopher’s Draught</strong>: You gain a +1 bonus to your next Roll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!36d223ba500a452b"
+}

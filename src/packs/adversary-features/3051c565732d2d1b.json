@@ -1,0 +1,15 @@
+{
+  "_id": "3051c565732d2d1b",
+  "name": "Momentum",
+  "type": "feature",
+  "img": "icons/environment/creatures/horse-brown.webp",
+  "system": {
+    "description": "<p>When the adversary makes a successful attack against a PC, you gain a Fear.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "reaction"
+  },
+  "effects": [],
+  "_key": "!items!3051c565732d2d1b"
+}

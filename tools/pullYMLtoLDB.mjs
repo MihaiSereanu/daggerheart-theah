@@ -42,7 +42,7 @@ async function pullToLDB() {
     function transformEntry(entry) {
         const stats = {
             coreVersion: systemJSON.compatibility.minimum,
-            systemId: 'daggerheart',
+            systemId: 'daggerheart-theah',
             systemVersion: systemJSON.version
         };
 

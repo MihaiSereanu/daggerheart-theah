@@ -1,0 +1,18 @@
+{
+  "_id": "6742737458da584d",
+  "name": "Dar Matushki",
+  "type": "subclass",
+  "img": "icons/magic/symbols/runes-star-magenta.webp",
+  "system": {
+    "description": "<p>Play a Matushkan Witch if you want to balance nature’s gifts and burdens.</p>\n<h4>SPELLCASTING TRAIT: CHARM</h4>\n<blockquote>\n<p><em>“There may come a time in life when you meet Matushka. Take care, sweet child, in how you treat her. For her blessings are wonderful but never come without a lesson.”</em>\n:\nEveryone in Ussura has heard a story or three about the little old woman who lives in the woods. Some seek her out and beg for her help. Others try to rob or trick her. All the stories end the same: Matushka reached out and touched their arm, imparting great power at a price few are willing to pay.\n:\nThese seeming færie tales have a truth behind them. A truth you know all too well. Matushka gives whatever is needed to survive. The question is, what price does she ask?</p>\n</blockquote>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.619fbc2f6e310fa4",
+    "spellcastingTrait": "charm",
+    "features": []
+  },
+  "effects": [],
+  "folder": "1adde1032a0a00cf",
+  "_key": "!items!6742737458da584d"
+}

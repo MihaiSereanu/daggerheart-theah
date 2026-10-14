@@ -1,0 +1,155 @@
+{
+  "_id": "627287f681ea6b8a",
+  "name": "Drachen",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A huge dragon with four powerful limbs and crimson-tinged wings.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "champion",
+    "type": "solo",
+    "difficulty": 20,
+    "notes": "<h3>Champion | Solo</h3>\n<p><em>A huge dragon with four powerful limbs and crimson-tinged wings.</em><br><strong>Motives &amp; Tactics:</strong> Avalanche, defend lair, fly, breathe flames, defend what is mine, maul</p>\n<p><strong>Difficulty:</strong> 20 | <strong>Thresholds:</strong> 15/25 | <strong>HP:</strong> 10 | <strong>Stress:</strong> 6</p>\n<p><strong>ATK:</strong> +6 | Bite &amp; Claws: Close | 2d12+5 phy</p>\n<hr>\n<p><strong>Experience:</strong> Protect What Is Mine +3</p>\n<h4>Features</h4>\n<p><strong>Relentless (3) - Passive</strong>: The Drachen can be spotlighted up to three times per GM turn. Spend Fear as usual to spotlight them.</p>\n<p><strong>Rend and Crush - Passive</strong>: If a target damaged by the Drachen doesn’t mark an Armor Slot to reduce the damage, they must <strong>mark a Stress</strong>.</p>\n<p><strong>No Hope - Passive</strong>: When a PC rolls with Fear while within Far range of the Drachen, they lose a Hope.</p>\n<p><strong>Tempest Wings - Action</strong>: Spend a Fear to flail the Drachen’s wings with explosive force, creating a shockwave within Close range. All targets in this area must succeed on a Finesse Reaction Roll or become <em>Vulnerable</em> until they spend an action to right themselves or until they clear a Stress. For each PC that fails the roll, you gain a Fear.</p>\n<p><strong>Dragon&#39;s Breath - Action</strong>: Spend 2 Fear to release a burst of flames in front of the Drachen within Close range. All targets in this area must make a Finesse Reaction Roll. Targets who fail take 4d6+5 magic damage and are <em>Burning</em> until they steel themselves with a successful Brawn Roll. Targets who succeed must <strong>mark a Stress</strong> or take half damage.</p>\n<p><strong>Flaming - Reaction</strong>: When a creature makes a successful attack against the Drachen from within Very Close, they must <strong>mark a Stress</strong> or become <em>Burning</em> until they put themselves out with a Finesse roll. While <em>Burning</em>, they take 2d6 magic damage when they have the spotlight.</p>\n<p><strong>Momentum - Reaction</strong>: When the Drachen makes a successful attack against a PC, you gain a Fear.</p>\n",
+    "damageThresholds": {
+      "major": 15,
+      "severe": 25
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 10
+      },
+      "stress": {
+        "value": 0,
+        "max": 6
+      }
+    },
+    "motivesAndTactics": "Avalanche, defend lair, fly, breathe flames, defend what is mine, maul",
+    "experiences": {
+      "60064642c2eba661": {
+        "name": "Protect What Is Mine",
+        "value": 3
+      }
+    },
+    "attack": {
+      "_id": "5e236792f6370be9",
+      "name": "Bite & Claws",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/creatures/claws/claw-talons-yellow-red.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "close",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 6
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "2d12+5"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "63a90548d69ea288",
+      "name": "Relentless (3) - Passive",
+      "type": "feature",
+      "img": "icons/equipment/shield/heater-steel-gold.webp",
+      "system": {
+        "description": "<p>The Drachen can be spotlighted up to three times per GM turn. Spend Fear as usual to spotlight them.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!627287f681ea6b8a.63a90548d69ea288"
+    },
+    {
+      "_id": "9f19b5919ccee5da",
+      "name": "Rend and Crush - Passive",
+      "type": "feature",
+      "img": "icons/creatures/claws/claw-talons-yellow-red.webp",
+      "system": {
+        "description": "<p>If a target damaged by the Drachen doesn’t mark an Armor Slot to reduce the damage, they must <strong>mark a Stress</strong>.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!627287f681ea6b8a.9f19b5919ccee5da"
+    },
+    {
+      "_id": "d45a689909b11cca",
+      "name": "No Hope - Passive",
+      "type": "feature",
+      "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
+      "system": {
+        "description": "<p>When a PC rolls with Fear while within Far range of the Drachen, they lose a Hope.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!627287f681ea6b8a.d45a689909b11cca"
+    },
+    {
+      "_id": "e1541b0e6d429361",
+      "name": "Tempest Wings - Action",
+      "type": "feature",
+      "img": "icons/magic/control/buff-flight-wings-blue.webp",
+      "system": {
+        "description": "<p>Spend a Fear to flail the Drachen’s wings with explosive force, creating a shockwave within Close range. All targets in this area must succeed on a Finesse Reaction Roll or become <em>Vulnerable</em> until they spend an action to right themselves or until they clear a Stress. For each PC that fails the roll, you gain a Fear.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!627287f681ea6b8a.e1541b0e6d429361"
+    },
+    {
+      "_id": "0ecac825bb7deea4",
+      "name": "Dragon's Breath - Action",
+      "type": "feature",
+      "img": "icons/magic/fire/explosion-fireball-medium-orange.webp",
+      "system": {
+        "description": "<p>Spend 2 Fear to release a burst of flames in front of the Drachen within Close range. All targets in this area must make a Finesse Reaction Roll. Targets who fail take 4d6+5 magic damage and are <em>Burning</em> until they steel themselves with a successful Brawn Roll. Targets who succeed must <strong>mark a Stress</strong> or take half damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!627287f681ea6b8a.0ecac825bb7deea4"
+    },
+    {
+      "_id": "82ca03b871263e91",
+      "name": "Flaming - Reaction",
+      "type": "feature",
+      "img": "icons/magic/fire/explosion-fireball-medium-orange.webp",
+      "system": {
+        "description": "<p>When a creature makes a successful attack against the Drachen from within Very Close, they must <strong>mark a Stress</strong> or become <em>Burning</em> until they put themselves out with a Finesse roll. While <em>Burning</em>, they take 2d6 magic damage when they have the spotlight.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!627287f681ea6b8a.82ca03b871263e91"
+    },
+    {
+      "_id": "1680c0611be0c786",
+      "name": "Momentum - Reaction",
+      "type": "feature",
+      "img": "icons/environment/creatures/horse-brown.webp",
+      "system": {
+        "description": "<p>When the Drachen makes a successful attack against a PC, you gain a Fear.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!627287f681ea6b8a.1680c0611be0c786"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Drachen",
+    "actorLink": false
+  },
+  "_key": "!actors!627287f681ea6b8a"
+}

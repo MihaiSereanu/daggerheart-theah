@@ -1,0 +1,104 @@
+{
+  "_id": "c14df3cd99bda8d9",
+  "name": "Master Thief",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A cunning thief with acrobatic skill and a flair for the dramatic.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "skulk",
+    "difficulty": 15,
+    "notes": "<h3>Normal | Skulk</h3>\n<p><em>A cunning thief with acrobatic skill and a flair for the dramatic.</em>\n<strong>Motives &amp; Tactics:</strong> Evade, hide, pilfer, profit</p>\n<p><strong>Difficulty:</strong> 15 | <strong>Thresholds:</strong> 5/9 | <strong>HP:</strong> 4 | <strong>Stress:</strong> 5</p>\n<p><strong>ATK:</strong> +3 | Weapon: Melee | 1d6+2 physical</p>\n<hr>\n<p><strong>Experience:</strong> Acrobatics +3, Intrusion +3</p>\n<h4>Features</h4>\n<p><strong>Quick Hands - Action</strong>: Make an attack against a target within Melee range. On a success, deal 1d4+2 physical damage and the Thief steals one item or consumable from the target’s inventory.</p>\n<p><strong>Escape Plan - Action</strong>: <strong>Mark a Stress</strong> to enact an escape plan. All targets within Very Close range of the Thief must succeed on a Finesse Reaction Roll (13) or be taken by surprise. A surprised target is Restrained and Vulnerable until they gain their senses with a successful Wits (15) rolll.</p>\n",
+    "damageThresholds": {
+      "major": 5,
+      "severe": 9
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 4
+      },
+      "stress": {
+        "value": 0,
+        "max": 5
+      }
+    },
+    "motivesAndTactics": "Evade, hide, pilfer, profit",
+    "experiences": {
+      "df3ce08f3ee33413": {
+        "name": "Acrobatics",
+        "value": 3
+      },
+      "170cb1b41c516e04": {
+        "name": "Intrusion",
+        "value": 3
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/hand-grip-sword-orange.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 3
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d6+2"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "531437231b948f98",
+      "name": "Quick Hands - Action",
+      "type": "feature",
+      "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+      "system": {
+        "description": "<p>Make an attack against a target within Melee range. On a success, deal 1d4+2 physical damage and the Thief steals one item or consumable from the target’s inventory.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!c14df3cd99bda8d9.531437231b948f98"
+    },
+    {
+      "_id": "ac2e736c2d55040f",
+      "name": "Escape Plan - Action",
+      "type": "feature",
+      "img": "icons/tools/navigation/compass-brass-blue-red.webp",
+      "system": {
+        "description": "<p><strong>Mark a Stress</strong> to enact an escape plan. All targets within Very Close range of the Thief must succeed on a Finesse Reaction Roll (13) or be taken by surprise. A surprised target is Restrained and Vulnerable until they gain their senses with a successful Wits (15) rolll.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!c14df3cd99bda8d9.ac2e736c2d55040f"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Master Thief",
+    "actorLink": false
+  },
+  "_key": "!actors!c14df3cd99bda8d9"
+}

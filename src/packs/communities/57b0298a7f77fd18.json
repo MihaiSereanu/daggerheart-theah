@@ -1,0 +1,18 @@
+{
+  "_id": "57b0298a7f77fd18",
+  "name": "Wildborne",
+  "type": "community",
+  "img": "icons/environment/wilderness/tree-oak.webp",
+  "system": {
+    "description": "<p>You were raised far from civilisation, where life is interwoven with the land. Wildborne communities protect their forests and live in harmony with them, building homes that blend with nature. Their ways are shaped by reverence for the wild.</p>\n<p><strong>Careful Steps</strong>. Your movement is naturally silent. You have advantage on rolls to move without being heard.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "features": [
+      "Compendium.daggerheart-theah.features.Item.c4d332ebd2ff46f6"
+    ],
+    "loreReference": null
+  },
+  "effects": [],
+  "_key": "!items!57b0298a7f77fd18"
+}

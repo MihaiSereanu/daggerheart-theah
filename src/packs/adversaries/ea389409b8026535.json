@@ -1,0 +1,111 @@
+{
+  "_id": "ea389409b8026535",
+  "name": "Shark",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A large aquatic predator, always on the move.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "bruiser",
+    "difficulty": 14,
+    "notes": "<h3>Normal | Bruiser</h3>\n<p><em>A large aquatic predator, always on the move.</em><br><strong>Motives &amp; Tactics:</strong> Find the blood, isolate prey, target the weak</p>\n<p><strong>Difficulty:</strong> 14 | <strong>Thresholds:</strong> 9/17 | <strong>HP:</strong> 7 | <strong>Stress:</strong> 2</p>\n<p><strong>ATK:</strong> +1 | Toothy Maw: Very Close | 1d12+1 phy</p>\n<hr>\n<p><strong>Experience:</strong> Sense of Smell +3</p>\n<h4>Features</h4>\n<p><strong>Terrifying - Passive</strong>: When the Shark makes a successful attack, all PCs within Far range lose a Hope and you gain a Fear.</p>\n<p><strong>Rending Bite - Passive</strong>: When the Shark makes a successful attack, the target must mark an Armor Slot without receiving its benefits. If they cannot mark an Armor Slot, they must mark an extra HP.</p>\n<p><strong>Blood in the Water - Reaction</strong>: When a creature within Close range of the Shark marks HP from another creature’s attack, you can <strong>mark a Stress</strong> to immediately spotlight the Shark, move into Melee with that target, and make a standard attack.</p>\n",
+    "damageThresholds": {
+      "major": 9,
+      "severe": 17
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 7
+      },
+      "stress": {
+        "value": 0,
+        "max": 2
+      }
+    },
+    "motivesAndTactics": "Find the blood, isolate prey, target the weak",
+    "experiences": {
+      "0bfffbe7bc28dbc7": {
+        "name": "Sense of Smell",
+        "value": 3
+      }
+    },
+    "attack": {
+      "_id": "29bcb5994b5f8650",
+      "name": "Toothy Maw",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/creatures/abilities/bear-roar-bite-brown-green.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "veryClose",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 1
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d12+1"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "3b1efcebc0438c98",
+      "name": "Terrifying - Passive",
+      "type": "feature",
+      "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
+      "system": {
+        "description": "<p>When the Shark makes a successful attack, all PCs within Far range lose a Hope and you gain a Fear.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!ea389409b8026535.3b1efcebc0438c98"
+    },
+    {
+      "_id": "c6bd2b4924b9c2cc",
+      "name": "Rending Bite - Passive",
+      "type": "feature",
+      "img": "icons/creatures/abilities/bear-roar-bite-brown-green.webp",
+      "system": {
+        "description": "<p>When the Shark makes a successful attack, the target must mark an Armor Slot without receiving its benefits. If they cannot mark an Armor Slot, they must mark an extra HP.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!ea389409b8026535.c6bd2b4924b9c2cc"
+    },
+    {
+      "_id": "cb91008c1078d466",
+      "name": "Blood in the Water - Reaction",
+      "type": "feature",
+      "img": "icons/creatures/abilities/bear-roar-bite-brown-green.webp",
+      "system": {
+        "description": "<p>When a creature within Close range of the Shark marks HP from another creature’s attack, you can <strong>mark a Stress</strong> to immediately spotlight the Shark, move into Melee with that target, and make a standard attack.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!ea389409b8026535.cb91008c1078d466"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Shark",
+    "actorLink": false
+  },
+  "_key": "!actors!ea389409b8026535"
+}

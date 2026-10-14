@@ -36,19 +36,19 @@ export default class EnvironmentSheet extends DHBaseActorSheet {
     /**@override */
     static PARTS = {
         limited: {
-            template: 'systems/daggerheart/templates/sheets/actors/environment/limited.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets/actors/environment/limited.hbs',
             scrollable: ['.limited-container']
         },
-        header: { template: 'systems/daggerheart/templates/sheets/actors/environment/header.hbs' },
+        header: { template: 'systems/daggerheart-theah/templates/sheets/actors/environment/header.hbs' },
         features: {
-            template: 'systems/daggerheart/templates/sheets/actors/environment/features.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets/actors/environment/features.hbs',
             scrollable: ['.feature-section']
         },
         potentialAdversaries: {
-            template: 'systems/daggerheart/templates/sheets/actors/environment/potentialAdversaries.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets/actors/environment/potentialAdversaries.hbs',
             scrollable: ['.items-section']
         },
-        notes: { template: 'systems/daggerheart/templates/sheets/actors/environment/notes.hbs' }
+        notes: { template: 'systems/daggerheart-theah/templates/sheets/actors/environment/notes.hbs' }
     };
 
     /** @inheritdoc */
@@ -230,11 +230,12 @@ export default class EnvironmentSheet extends DHBaseActorSheet {
     /*  Application Listener Actions                */
     /* -------------------------------------------- */
     async updateItemResource(event) {
-        const item = await getDocFromElement(event.currentTarget);
-        if (!item) return;
+        const input = event.currentTarget;
+        const item = await getDocFromElement(input);
+        if (!item || !this.isEditable) return;
 
-        const max = event.currentTarget.max ? Number(event.currentTarget.max) : null;
-        const value = max ? Math.min(Number(event.currentTarget.value), max) : event.currentTarget.value;
+        const max = input.max === '' ? Infinity : Number(input.max);
+        const value = Math.clamp(Number(input.value) || 0, 0, max);
         await item.update({ 'system.resource.value': value });
         this.render();
     }

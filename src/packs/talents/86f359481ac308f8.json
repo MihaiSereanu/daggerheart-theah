@@ -1,0 +1,20 @@
+{
+  "_id": "86f359481ac308f8",
+  "name": "Vicious",
+  "type": "domainCard",
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "system": {
+    "description": "<p>When you deal damage, you can <strong>mark a Stress</strong> to use the maximum result of one of your damage dice.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "steel",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "6aabc2e2c710379d",
+  "_key": "!items!86f359481ac308f8"
+}

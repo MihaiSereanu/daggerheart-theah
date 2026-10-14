@@ -1,0 +1,15 @@
+{
+  "_id": "0ec042045da6b580",
+  "name": "Bulwark",
+  "type": "feature",
+  "img": "icons/skills/melee/shield-block-bash-blue.webp",
+  "system": {
+    "description": "<p>Spend 3 Hope to clear 2 Armor Slots.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "4afee21a6e76de31",
+  "_key": "!items!0ec042045da6b580"
+}

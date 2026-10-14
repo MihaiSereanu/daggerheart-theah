@@ -27,8 +27,8 @@ export default class DHAppearanceSettings extends HandlebarsApplicationMixin(App
     };
 
     static PARTS = {
-        header: { template: 'systems/daggerheart/templates/settings/appearance-settings/header.hbs' },
-        main: { template: 'systems/daggerheart/templates/settings/appearance-settings/main.hbs' },
+        header: { template: 'systems/daggerheart-theah/templates/settings/appearance-settings/header.hbs' },
+        main: { template: 'systems/daggerheart-theah/templates/settings/appearance-settings/main.hbs' },
         footer: { template: 'templates/generic/form-footer.hbs' }
     };
 

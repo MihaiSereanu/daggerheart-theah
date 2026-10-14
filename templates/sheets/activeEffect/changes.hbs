@@ -20,7 +20,7 @@
                 {{localize "DAGGERHEART.GENERAL.armor"}} 
                 <a class="icon fa-solid fa-trash" data-action="removeCustomChange" data-index="{{typedChanges.armor.index}}" data-type="armor"></a>
             </legend>
-            {{> "systems/daggerheart/templates/sheets/activeEffect/typeChanges/armorChange.hbs" typedChanges.armor fields=@root.systemFields.changes.element.types.armor.fields}}
+            {{> "systems/daggerheart-theah/templates/sheets/activeEffect/typeChanges/armorChange.hbs" typedChanges.armor fields=@root.systemFields.changes.element.types.armor.fields}}
         </fieldset>
     {{/if}}
 
@@ -30,7 +30,7 @@
                 {{localize "DAGGERHEART.EFFECTS.ChangeTypes.standardAttack.name"}} 
                 <a class="icon fa-solid fa-trash" data-action="removeCustomChange" data-index="{{typedChanges.standardAttack.index}}" data-type="standardAttack"></a>
             </legend>
-            {{> "systems/daggerheart/templates/sheets/activeEffect/typeChanges/standardAttack.hbs" typedChanges.standardAttack fields=@root.systemFields.changes.element.types.standardAttack.fields}}
+            {{> "systems/daggerheart-theah/templates/sheets/activeEffect/typeChanges/standardAttack.hbs" typedChanges.standardAttack fields=@root.systemFields.changes.element.types.standardAttack.fields}}
         </fieldset>
     {{/if}}
 

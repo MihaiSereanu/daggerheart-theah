@@ -1,0 +1,27 @@
+{
+  "_id": "4e711b3dd2e431a3",
+  "name": "Dashing Duelist",
+  "type": "subclass",
+  "img": "icons/skills/melee/sword-twirl-orange.webp",
+  "system": {
+    "description": "<p>Play the Dashing Duelist if you want to face your foes with precision and flair.</p>\n<h4>Features</h4>\n<p><strong>Flourish</strong>. During a combat scene, you may spend Style Dice to gain a number of Flourishes equal to its rolled value. Unspent Flourishes are lost when the combat scene ends. A Flourish can be spent on the following options:</p>\n<ul>\n<li><strong>Bind</strong>. When you make a successful attack against an adversary, making them Restrained until they pass a Brawn (15) Reaction Roll</li>\n<li><strong>Parry</strong>. When an adversary makes an attack roll against you, increase your Evasion by your Finesse.</li>\n<li><strong>Riposte</strong>. When an enemy misses you with an attack within Melee, make an attack against them. If this attack deals Severe damage, the enemy must mark an additional Hit Point.</li>\n</ul>\n<p><strong>Never Fear</strong>. When you fail with Fear, you may <strong>mark a Stress</strong> to turn it into a Failure with Hope instead.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.516b8518d8a01ac1",
+    "spellcastingTrait": null,
+    "features": [
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.2f4d9e6941d2c650"
+      },
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.cb70df80ddf14477"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": "1cf14cd678066c06",
+  "_key": "!items!4e711b3dd2e431a3"
+}

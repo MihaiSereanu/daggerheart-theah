@@ -1,0 +1,69 @@
+{
+  "_id": "7f7c5ad47c58b5ed",
+  "name": "Bustling Marketplace",
+  "type": "environment",
+  "img": "systems/daggerheart-theah/assets/icons/documents/actors/forest.svg",
+  "system": {
+    "description": "<p><em>The economic heart of the settlement, with local artisans, traveling merchants, and patrons across social classes.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "standard",
+    "type": "social",
+    "difficulty": 10,
+    "notes": "<h3>Standard | Social</h3>\n<p><em>The economic heart of the settlement, with local artisans, traveling merchants, and patrons across social classes.</em><br><strong>Impulses:</strong> Buy low, sell high, tempt and tantalize with wares</p>\n<p><strong>Difficulty:</strong> 10</p>\n<p><strong>Potential Adversaries</strong>: Guards, Masked Thief, Merchant</p>\n<h4>Features</h4>\n<p><strong>Tip the Scales - Passive</strong>: PCs can gain advantage on a Charm Roll by offering a handful of gold as part of the interaction.</p>\n<p><strong>Unexpected Find - Action</strong>: Reveal to the PCs that one of the merchants has something they want or need, such as a rare book, magical doodads, a dubious treasure map, and so on.</p>\n<p><strong>Sticky Fingers - Action:</strong> A thief tries to steal something from a PC. The PC must succeed on an Instinct Roll to notice the thief or lose an item of the GM&#39;s choice as the thief escapes to a Close distance. To retrieve the stolen item, the PCs must complete a Progress Countdown (6) to chase down the thief before the thief completes a Consequence Countdown (4) and escapes to their hideout.</p>\n<p><strong>Crowd Control - Reaction</strong>: When one of the PCs splits from the group, the crowds shift and cut them off from the party.</p>\n",
+    "impulses": "Buy low, sell high, tempt and tantalize with wares"
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "bdf5f57489c05f7c",
+      "name": "Tip the Scales - Passive",
+      "type": "feature",
+      "img": "icons/tools/navigation/compass-brass-blue-red.webp",
+      "system": {
+        "description": "<p>PCs can gain advantage on a Charm Roll by offering a handful of gold as part of the interaction.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!7f7c5ad47c58b5ed.bdf5f57489c05f7c"
+    },
+    {
+      "_id": "32accec9bf7bbae3",
+      "name": "Unexpected Find - Action",
+      "type": "feature",
+      "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+      "system": {
+        "description": "<p>Reveal to the PCs that one of the merchants has something they want or need, such as a rare book, magical doodads, a dubious treasure map, and so on.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!7f7c5ad47c58b5ed.32accec9bf7bbae3"
+    },
+    {
+      "_id": "0d6d4c483ba0aac8",
+      "name": "Sticky Fingers - Action",
+      "type": "feature",
+      "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+      "system": {
+        "description": "<p>A thief tries to steal something from a PC. The PC must succeed on an Instinct Roll to notice the thief or lose an item of the GM&#39;s choice as the thief escapes to a Close distance. To retrieve the stolen item, the PCs must complete a Progress Countdown (6) to chase down the thief before the thief completes a Consequence Countdown (4) and escapes to their hideout.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!7f7c5ad47c58b5ed.0d6d4c483ba0aac8"
+    },
+    {
+      "_id": "65b1da08a6a87ebc",
+      "name": "Crowd Control - Reaction",
+      "type": "feature",
+      "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+      "system": {
+        "description": "<p>When one of the PCs splits from the group, the crowds shift and cut them off from the party.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!7f7c5ad47c58b5ed.65b1da08a6a87ebc"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Bustling Marketplace",
+    "actorLink": false
+  },
+  "_key": "!actors!7f7c5ad47c58b5ed"
+}

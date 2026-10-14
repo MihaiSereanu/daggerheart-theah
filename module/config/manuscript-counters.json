@@ -1,0 +1,853 @@
+{
+  "Compendium.daggerheart-theah.features.Item.6bec04a1e1d3597b": {
+    "description": "<p>Once per Rest, you can <strong>mark a Stress</strong> to change an attack roll from a failure into a success with Fear.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.features.Item.d363a71670e0ed39": {
+    "description": "<p>Once per Rest, you may immediately perform an Ambush against a <em>Compromised</em> target. This attack deals damage even on a miss, but on a hit, it becomes a critical hit.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.features.Item.391a5135e2e57c39": {
+    "description": "<p>Once per rest, before you attempt something incredibly dangerous or face off against a foe who clearly outmatches you, describe what ritual you perform or preparations you make. When you do, clear 2 Stress and gain 2 Hope.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.features.Item.dba548d41c360968": {
+    "description": "<p>Once per Rest, you can initiate a <strong>Stunt</strong> with an ally without either of you spending Hope.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.features.Item.faabe0047513f1e6": {
+    "description": "<p>Once per Rest, when an adversary within Close range takes damage and marks HP from an ally’s attack, you can move to them and strike. On a success, the adversary marks the same number of HP again.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.features.Item.e8b6ad49bb64427d": {
+    "description": "<p>At the beginning of each session, roll a number of d4s equal to your Instinct and place them on your character sheet. These are your Creed Dice. You can spend any number of Creed Dice to aid yourself or an ally within Far range. You can use a spent die’s value to reduce incoming damage, add to a roll’s result after the roll is made, or gain Hope equal to the result. At the end of each session, clear all unspent dice.</p>\n",
+    "resource": {
+      "type": "diceValue",
+      "value": 0,
+      "max": "@instinctCount",
+      "recovery": "session",
+      "progression": "increasing",
+      "dieFaces": "d4",
+      "diceStates": {}
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.features.Item.d220ca8cccf9a4eb": {
+    "description": "<p>Once per Rest, you can spend a Creed die to clear a number of HP or Stress equal to its value to yourself and all allies within Close range.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.features.Item.9f39ef0748487a0f": {
+    "description": "<p>Once per Rest, when you engage directly with someone, you may spend up to 3 Hope to ask the GM one question about them per Hope spent:</p>\n<ul>\n<li>What do they fear?</li>\n<li>What do they desire?</li>\n<li>What are they hiding?</li>\n</ul>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.features.Item.7825a6ab092ec950": {
+    "description": "<p>Once per session, describe how you rally the party and give yourself and each of your allies a 1d8 Rally Die. A PC can spend their Rally Die to add its result to an roll, or to clear an amount of Stress equal to its result. At the end of each session, clear all unspent Rally dice.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "session",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.features.Item.2c3c3dfd0192216b": {
+    "description": "<p>Describe how you perform for others. You and all allies that can hear you gain its effect. You can play each song once per Rest:</p>\n<ul>\n<li><strong>Relaxing Song</strong>: Clear 1 HP.</li>\n<li><strong>Inspiring Song</strong>: Gain 1 Hope.</li>\n</ul>\n",
+    "resource": null,
+    "usageCounters": {
+      "3112f9ca5c2932c8": {
+        "label": "Relaxing Song",
+        "value": 0,
+        "max": "1",
+        "recovery": "shortRest"
+      },
+      "2345b0ccff3c0074": {
+        "label": "Inspiring Song",
+        "value": 0,
+        "max": "1",
+        "recovery": "shortRest"
+      }
+    },
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.features.Item.608f8659296426c7": {
+    "description": "<p>Once per Rest, you may deliver a stirring call to action. Allies who can hear you feel their burdens lifting, clearing 2 Stress.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.features.Item.d514bdf3f71a89be": {
+    "description": "<p>Once per scene, you may employ outside-the-box solutions to roll a d20 as your Hope die. If you fail, you must also <strong>mark a Stress</strong>.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "scene",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.features.Item.74cdc279a2393993": {
+    "description": "<p>Once per session, you may call in an established contact. Describe how they aid you, choosing from below:</p>\n<ul>\n<li>They deliver gold, a rare tool, or a needed object</li>\n<li>They assist, adding +4 to a Duality Die on your next roll</li>\n<li>They ambush, adding 2d8 to your next damage roll</li>\n</ul>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "session",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.features.Item.375752c666dd2bf6": {
+    "description": "<p>Once per rest, you can declare yourself <em>Unstoppable</em>. You gain an <em>Unstoppable Die</em> - place it on your sheet with the 1 facing up. Each time you deal 1 or more Hit Points of damage, increase the die&#39;s value by 1. If the value would exceed the die’s maximum or the scene ends, remove the die and lose the Unstoppable state. While <em>Unstoppable</em>, you gain the following benefits:</p>\n<ul>\n<li>Reduce the severity of physical damage by one threshold</li>\n<li>Add the current value of your Die to damage rolls</li>\n</ul>\n<blockquote>\n<p>Your Unstoppable die is a d4 at level 1, and d6 at level 5.</p>\n</blockquote>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {
+      "85288ed62e4d526d": {
+        "label": "Unstoppable Die (0 = inactive)",
+        "value": 0,
+        "max": "4 + 2 * min(1, floor(@system.level / 5))",
+        "recovery": "scene"
+      }
+    },
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.features.Item.34d6a72e5cfaaade": {
+    "description": "<p>Once per combat scene, when you fail with Fear, you may <strong>mark a Stres</strong>s to reroll your Hope die.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "scene",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.features.Item.35d436b8f8d252d2": {
+    "description": "<p>Once per Rest, <strong>mark a Stress</strong> to rally your companions. You and all allies gain Advantage on all rolls until the scene ends or until you roll with Fear.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.features.Item.7e483076da9e2d03": {
+    "description": "<p>When you fail a roll with Fear, you gain a Hope. Once per Rest, before facing overwhelming odds, describe how you steady yourself - clear 1 Stress and gain 1 Hope.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.features.Item.00ee46bc4914dd1e": {
+    "description": "<p>Once per Rest, <strong>mark a Stress</strong> to force an adversary to reroll an attack against you or an ally within Close.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.features.Item.71d33e4bc7eb6c07": {
+    "description": "<p>Once per Rest, you can Help an Ally traverse difficult terain without spending a Hope.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.features.Item.b3262e0d49407f96": {
+    "description": "<p>Once per Rest, you can spend any number of Hope to give an ally the same number of Hope.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.features.Item.23cb857f40994f10": {
+    "description": "<p>Record three sayings or values your upbringing instilled in you. Once per rest, when you describe how you’re embodying one of these principles through your current action, you can roll a d20 as your Hope Die.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.b030916d9f44faf5": {
+    "description": "<p>When you make a Reaction Roll, you can <strong>mark a Stress</strong> to add either your Instinct or Wits to the roll.</p>\n<p>Additionally, once per Rest when an ally in Very Close range would gain a Condition, describe how you aid your ally such that they avoid gaining it.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.1772586668407b89": {
+    "description": "<p>Once per Rest, name and describe a brave but risky gambit. You may initiate a Stunt with an ally without spending Hope, but both of you must replace your Fear die with a d20.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.caf3ac911bcda93b": {
+    "description": "<p>If you have 4 or more Anchor Talents, gain the following:</p>\n<ul>\n<li>When you succeed with Hope, an ally within Close range of you gains a Hope.</li>\n<li>Once per Rest, if you fail with Fear, you fail with Hope.</li>\n</ul>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.eb271b63b5878e46": {
+    "description": "<p>Once per rest, if one of your attacks cause an adversary to mark their last HP, make a snarky comment to clear a number of Stress equal to the number of HP you inflicted.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.f2fc6239e934bf0c": {
+    "description": "<p>Once per scene, when you fail an Action Roll, <strong>spend a Hope</strong> to reveal how you were debilitating yourself on purpose the whole time. Then, make the same roll with Advantage: if you succeed, clear a Stress.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "scene",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.ff74e559f2bab2c5": {
+    "description": "<p>Once per Rest, when you make a daring Action Roll, you may voluntarily set its Difficulty to 20. If you roll a success, you critically succeed instead. Then, all your allies gain a Hope.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.d622d894f0df2cb2": {
+    "description": "<p>After a Rest, gain a number of uses equal to your Wits. When an ally within Close fails a roll with Hope, spend a use and describe how you add a d8 to the roll. You regain uses after a rest.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "@witsCount",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.cd5cc0e409ec317d": {
+    "description": "<p>Once per Rest, describe how you apply careful study, preparation, or lore to adjust an item or method. <strong>Spend a Hope</strong> to grant yourself or an ally one of the following effects until next rest:</p>\n<ul>\n<li>Gain a +1 bonus to Evasion</li>\n<li>Gain an Armour slot</li>\n<li>Gain a Stress slot</li>\n</ul>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.26188adfd9118fea": {
+    "description": "<p>After a Rest, gain a number of uses equal to your Charm. These uses reset after a Rest. Spend your uses to assist your allies. Describe how:</p>\n<ul>\n<li><strong>Relax</strong>. Help your ally clear 1 Stress.</li>\n<li><strong>Tend</strong>. Help your ally clear 1 HP.</li>\n<li><strong>Inspire</strong>. Help your ally gain 1 Hope.</li>\n</ul>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "@charmCount",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.58771b177439a089": {
+    "description": "<p>Once per Rest, when you insult or belittle an adversary, they must <strong>mark a Stress</strong> as you clear a Stress.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.29b2d8d181ec67cd": {
+    "description": "<p>Once per Rest, take on the stress of a willing ally. You may transfer any number of their marked Stress to you, then gain a Hope for each Stress transferred.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.ca18586ddc9a0f6e": {
+    "description": "<p>Once per Rest, when you console or inspire an ally who failed an action roll, you can both clear 2 Stress.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.45cc22b791dbb53c": {
+    "description": "<p>When you taunt or provoke a target within Far range, make a Charm roll against them. Once per Rest on a success, roll a number of d4s equal to your Charm. The target must mark Stress equal to the highest result rolled.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.e8c22b8956397c2c": {
+    "description": "<p>Spend a Hope to set a concealed exit in your immediate area - describe it. Once per Rest, you and any allies that aren’t <em>Vulnerable</em> can safely retreat to that exit if it’s accessible.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.0f8de6ca971a58ea": {
+    "description": "<p>If you have 4 or more Shade Talents, gain the following:</p>\n<ul>\n<li>Once per Rest, when the GM would gain a Fear, you gain a Hope instead.</li>\n<li>When you make a successful attack, you can <strong>mark a Stress</strong> to add the result of your Fear Die to your damage roll.</li>\n</ul>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.6483637cd8e69453": {
+    "description": "<p>Once per Rest when you would make a Death Move, you can <strong>spend a Hope</strong> to clear 1 HP instead.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.98561ea613d4cfaf": {
+    "description": "<p>Once per Rest, when an adversary within Melee range would deal damage to you, you can avoid the attack and safely move out of their range.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.7a5a0b2f35f24ad9": {
+    "description": "<p>Once per Rest, when you compliment someone or ask them about something they’re good at, you can both gain 3 Hope.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.d11960bca93f37b9": {
+    "description": "<p>If you have 4 or more Tactics Talents, gain the following:</p>\n<ul>\n<li>Gain +1 Evasion</li>\n<li>Once per scene, <strong>spend 3 Hope</strong> to avoid a successful attack</li>\n</ul>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "scene",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.5d51a8315d3d45c3": {
+    "description": "<p>Once per Rest, <strong>mark 3 Stress</strong> to push your body to its limits. Gain a +2 bonus to all of your character traits until your next rest or until you mark your last HP.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.b3d5e328b6c672ba": {
+    "description": "<p>Once per Rest, when you critically succeed on an attack, you and all allies can clear 1 HP or 2 Stress.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.576ab0c5078d8352": {
+    "description": "<p>When you make a Charm roll to intimidate, you can <strong>spend a Hope</strong> to add your Brawn to the roll. In addition, once per Rest when you would gain a <em>Condition</em>, describe how you push through and avoid gaining it.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.f56dcaa9ea23a59f": {
+    "description": "<p>Once per Rest, when you critically succeed on an attack, all allies that can see you can clear a Stress or gain a Hope.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.98a2dffda63d0ff0": {
+    "description": "<p>Once per Rest, when you succeed on an attack against an adversary, you can clear 3 Stress or a HP. On a success with Hope, you also allow an ally within Close to do the same.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.5c32448a45f68494": {
+    "description": "<p>When you would take damage, you can <strong>mark a Stress</strong> to reduce the severity of the damage by one threshold. When you do, roll a d6. On a result of 4 or lower, you can no longer use this ability until the next rest.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Unavailable (0 / 1)"
+    },
+    "usageCounters": {},
+    "usageNote": "Set to 1 when the d6 is 4 or lower; resets on Rest."
+  },
+  "Compendium.daggerheart-theah.talents.Item.aa6d916cf7ff37a9": {
+    "description": "<p>Once per rest, during a moment of calm, you can commune with Matushka. Ask her a question, then roll a number of d6s equal to your Charm. Choose one value from the rolled results and reference the chart below for the effect:</p>\n<ul>\n<li><strong>1-3</strong>: You taste a flavour, smell a scent, or feel a sensation relevant to the answer.</li>\n<li><strong>4-5</strong>: You hear sounds or see a vision relevant to the answer.</li>\n<li><strong>6</strong>: You psychically experience a scene relevant to the answer as if you were there.</li>\n</ul>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.df15c7d24be26f6c": {
+    "description": "<p>Once per Rest, Matushka may grant temporary access to a Druidism Talent of your choice, but in return requires you to internalise her harsh lessons. While you maintain access to this Talent, you cannot be granted another one from this feature and your Hope die is reduced to a d10.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.357d5c8c90a105ac": {
+    "description": "<p>Once per Rest, you can imbue a small item with protective essence and give it to someone else. When the person holding the talisman takes damage, you can <strong>mark a Stress</strong> to reduce the number of HP they mark by one. Then, roll a d6; on a 5 or 6, the talisman shatters. At the end of the day, the talisman loses its potency.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.20e72c8c4f5b77a3": {
+    "description": "<p>Make a <strong>Spellcast Roll (15)</strong> to step beyond the mortal veil and converse with nearby spirits. You gain a number of Uses equal to your Charm, which can be spent to seek answers from the spirits. Each time they answer, spend one Use. You return to the mortal realm when the last use is expended.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "@charmCount",
+      "recovery": null,
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.f28f2949425c2a63": {
+    "description": "<p>Once per Rest after any roll, make a <strong>Spellcast Roll</strong> against the target Difficulty or against one set by the GM. On a success, <strong>spend a Hope</strong> to change the numerical result of that roll to one of your choice instead. The result must be within the range of the dice.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.bcd383f50872caf9": {
+    "description": "<p>You gather flames in your palm and steer them gently. Make a Spellcast Roll (15) within Melee range. On a success, <strong>mark a Stress</strong> to heal 2 Hit Points, clear 2 Stress or remove a Condition. On a failure, <strong>mark a Stress</strong> to heal a Hit Point or clear a Stress on the target. You can only affect a target in this way once per Rest.</p>\n",
+    "resource": null,
+    "usageCounters": {},
+    "usageNote": "Once per target per Rest. Track affected targets in Notes."
+  },
+  "Compendium.daggerheart-theah.talents.Item.ad771166e6aca101": {
+    "description": "<p>Make a <strong>Spellcast Roll</strong> against all adversaries in front of you within Close range. Once per rest on a success, create an illusion of flashing colours and lights that temporarily <em>Stuns</em> targets you succeed against and forces them to <strong>mark a Stress</strong>. While Stunned, they can’t use reactions and can’t take any other actions until they clear this condition.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.9cb33dc99e49a67a": {
+    "description": "<p>Once per Rest, make a <strong>Spellcast Roll</strong> against an unnatural creature within Close range. On a success, roll a number of d20s equal to your Wits. The creature must make a Reaction Roll with a Difficulty equal to your highest result. On a success, the creature must <strong>mark a Stress</strong> but isn’t banished. If they fail, they are banished. Rest assured, it the creature has the capacity to hold grudges, it will crawl back and seek you out to enact revenge.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.b3c59e5387bb0cb7": {
+    "description": "<p>Once per Rest, you can instantly teleport yourself and a number of willing targets equal to your Spellcasting Trait to an object marked by your blood. <strong>Mark a Stress</strong>, then make a <strong>Spellcast Roll (15)</strong> to step The Walkway. On a success, you appear at your destination. On a failure, the group must collectively <strong>mark 10 Stress</strong>.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.65abe998d72355fb": {
+    "description": "<p>Once per Rest, you can <strong>spend any number of Favour</strong> to heal an equal number of HP. This attracts nearby dark forces; the GM gains an equal number of Fear.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.talents.Item.298915daeda4bd03": {
+    "description": "<p>The Path of the Just teaches you that every life deserves a fair chance. With your abilities, you can protect those that need protection and feed those that need food, making sure everyone has a fighting chance to enjoy al-Musawwir’s creation. <strong>Spend 3 Hope</strong> and choose an ally within Close range. They are marked with a glowing sigil of protection. When this ally would next take damage, they may ignore it. You may only affect someone in this way once per Rest.</p>\n",
+    "resource": null,
+    "usageCounters": {},
+    "usageNote": "Once per target per Rest. Track affected targets in Notes."
+  },
+  "Compendium.daggerheart-theah.talents.Item.a7d22629849abf03": {
+    "description": "<p>The Path of the Merciful shows you how to heal the wounded. When you can take a few minutes to focus on the target you&#39;re helping, you can <strong>spend a Hope</strong> to make them clear a Hit Point or a Stress. Once per Rest, when you spend this time learning something new about them or revealing something about al-Musawwir&#39;s teachings, you help them clear 2 Hit Points or 2 Stress instead. You may only affect someone in this way once per Rest.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Enhanced healing uses"
+    },
+    "usageCounters": {},
+    "usageNote": "Each recipient can benefit once per Rest. Track affected targets in Notes."
+  },
+  "Compendium.daggerheart-theah.talents.Item.127b71ab816c1661": {
+    "description": "<p>The Path of the Pariah teaches that Terra is beautiful and full of wonder, regardless of one&#39;s circumstances. This lightness in both body and spirit can manifest as a presence impossible to detect. Once per Rest, <strong>spend 3 Hope</strong> to make a Spellcast Roll (15). On a success, you become Hidden and remain Hidden while moving, even in plain sight, for a number of scenes equal to your Instinct. The effect ends early if you take actions that explicitly reveal your position.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.adversaries.Actor.515db1e4a619a03c.Item.bc820af9299dcda7": {
+    "description": "<p>Once per scene, when the Leader marks 2 or more HP, you can <strong>mark a Stress</strong> to summon a Zombie Pack at Close range and immediately spotlight it.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "scene",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.adversaries.Actor.37a965e6bf6a6a57.Item.243a152e72ea5edb": {
+    "description": "<p>Once per scene, <strong>mark a Stress</strong> to summon Pirate Raiders at Far range.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "scene",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.adversaries.Actor.b8dd985cfdc21b9d.Item.6c290a62d9cec0c6": {
+    "description": "<p>When the Sorcerer takes damage from an attack within Close range, the damage is reduced by one threshold and the attacker takes 2d4 magic damage. This reaction can’t be used again until the Sorcerer uses the &quot;Refresh&quot; action.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": null,
+      "progression": "increasing",
+      "label": "Unavailable (0 / 1)"
+    },
+    "usageCounters": {},
+    "usageNote": "Set to 1 after reacting; reset to 0 after Refresh."
+  },
+  "Compendium.daggerheart-theah.adversaries.Actor.9f435cc60c31add6.Item.c87fcb99205af26c": {
+    "description": "<p>Once per scene, <strong>mark a Stress</strong> to summon 1d4 Guards, who appear at Far range.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "scene",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.adversaries.Actor.2363f091fecff7bf.Item.7258d878a32db69d": {
+    "description": "<p>Once per scene, <strong>mark a Stress</strong> to summon 1d4+1 Guards, who appear at Far range.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "scene",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.environments.Actor.4f226bcfe0074d86.Item.4b9a27432dace463": {
+    "description": "<p>Once per scene, roll a d4. Each ally of the villain within Far range of them clears HP and Stress equal to the result. The villain can decide how to split the result for each ally.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "scene",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "usageCounters": {},
+    "usageNote": ""
+  },
+  "Compendium.daggerheart-theah.environments.Actor.460f17143ea88728.Item.5d4671fffa4402f9": {
+    "description": "<p>Once per session, a PC can <strong>spend a Hope</strong> to explain how they prepared for the current situation and reveal a key piece of information or produce a helpful item.</p>\n",
+    "resource": null,
+    "usageCounters": {},
+    "usageNote": "Once per PC per session. Track participating PCs in Notes."
+  }
+}

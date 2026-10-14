@@ -1,0 +1,15 @@
+{
+  "_id": "ebb69e47a7b5c2c6",
+  "name": "Loyal Protector",
+  "type": "feature",
+  "img": "icons/skills/melee/shield-block-bash-blue.webp",
+  "system": {
+    "description": "<p>When an ally within Close range has 2 or fewer HP and would take damage, you may <strong>mark a Stress</strong> to rush to their side and take the damage instead.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "53a6e665e6106909",
+  "_key": "!items!ebb69e47a7b5c2c6"
+}

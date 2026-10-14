@@ -13,7 +13,7 @@
             
             <div class="settings-items">
                 {{#each settingFields._source.itemFeatures.weaponFeatures as |feature id|}}
-                    {{> "systems/daggerheart/templates/settings/components/settings-item-line.hbs" this type="weaponFeatures" id=id }}
+                    {{> "systems/daggerheart-theah/templates/settings/components/settings-item-line.hbs" this type="weaponFeatures" id=id }}
                 {{/each}}
             </div>
         </fieldset>
@@ -27,7 +27,7 @@
             
             <div class="settings-items">
                 {{#each settingFields._source.itemFeatures.armorFeatures as |feature id|}}
-                    {{> "systems/daggerheart/templates/settings/components/settings-item-line.hbs" this type="armorFeatures" id=id }}
+                    {{> "systems/daggerheart-theah/templates/settings/components/settings-item-line.hbs" this type="armorFeatures" id=id }}
                 {{/each}}
             </div>
         </fieldset>

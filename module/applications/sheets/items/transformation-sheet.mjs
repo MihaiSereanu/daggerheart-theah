@@ -12,18 +12,18 @@ export default class TransformationSheet extends DHBaseItemSheet {
 
     /**@override */
     static PARTS = {
-        header: { template: 'systems/daggerheart/templates/sheets/items/transformation/header.hbs' },
-        tabs: { template: 'systems/daggerheart/templates/sheets/global/tabs/tab-navigation.hbs' },
+        header: { template: 'systems/daggerheart-theah/templates/sheets/items/transformation/header.hbs' },
+        tabs: { template: 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-navigation.hbs' },
         description: { 
-            template: 'systems/daggerheart/templates/sheets/global/tabs/tab-description.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-description.hbs',
             scrollable: ['.description-section']
         },
         features: { 
-            template: 'systems/daggerheart/templates/sheets/items/transformation/features.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets/items/transformation/features.hbs',
             scrollable: ['']
         },
         questions: { 
-            template: 'systems/daggerheart/templates/sheets/items/transformation/questions.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets/items/transformation/questions.hbs',
             scrollable: ['.questions-container']
         }
     };

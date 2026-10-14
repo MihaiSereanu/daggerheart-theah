@@ -5,7 +5,7 @@ import { fromUuids, getFeaturesHTMLData, sortBy } from '../../helpers/utils.mjs'
 const fields = foundry.data.fields;
 
 export default class DHAncestry extends BaseDataItem {
-    static embedTemplate = 'systems/daggerheart/templates/components/card/ancestry.hbs';
+    static embedTemplate = 'systems/daggerheart-theah/templates/components/card/ancestry.hbs';
 
     /** @inheritDoc */
     static get metadata() {
@@ -29,7 +29,7 @@ export default class DHAncestry extends BaseDataItem {
     /* -------------------------------------------- */
 
     /**@override */
-    static DEFAULT_ICON = 'systems/daggerheart/assets/icons/documents/items/family-tree.svg';
+    static DEFAULT_ICON = 'systems/daggerheart-theah/assets/icons/documents/items/family-tree.svg';
 
     /* -------------------------------------------- */
 
@@ -68,7 +68,7 @@ export default class DHAncestry extends BaseDataItem {
 
         if (!features.length) return { prefix: null, value: baseDescription, suffix: null };
         const suffix = await foundry.applications.handlebars.renderTemplate(
-            'systems/daggerheart/templates/sheets/items/description.hbs',
+            'systems/daggerheart-theah/templates/sheets/items/description.hbs',
             { features }
         );
 

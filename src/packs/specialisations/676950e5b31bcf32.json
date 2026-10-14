@@ -1,0 +1,27 @@
+{
+  "_id": "676950e5b31bcf32",
+  "name": "Chronicler",
+  "type": "subclass",
+  "img": "icons/sundries/books/book-open-turquoise.webp",
+  "system": {
+    "description": "<p>Play the Chronicler if you want to interpret, analyse, and out-think the world around you.</p>\n<h4>Features</h4>\n<p><strong>Adept</strong>. When you rely on an Experience, you may <strong>mark a Stress</strong> instead of spending Hope. If you do, double the Experience’s modifier for that roll.</p>\n<p><strong>Learned Application.</strong> When you <em>Help an Ally</em> with a problem where your Academic Insight is useful, roll a d6. On a 5-6, you do not need to spend a Hope.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.62ed690fa19d812c",
+    "spellcastingTrait": null,
+    "features": [
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.7c8ccff76acc8e47"
+      },
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.cd6a31688f89b657"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": "347bd4a2733ebebd",
+  "_key": "!items!676950e5b31bcf32"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "25ba3d02a1002256",
+  "name": "Shroud of the Prophet",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Shroud of the Prophet</strong>: During downtime, you automatically clear a Stress.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!25ba3d02a1002256"
+}

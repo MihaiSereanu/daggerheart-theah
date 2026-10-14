@@ -1,0 +1,20 @@
+{
+  "_id": "c9e0dee81bb0b86e",
+  "name": "Hexen’s Unguents",
+  "type": "domainCard",
+  "img": "icons/consumables/potions/round-decorated-snake-green.webp",
+  "system": {
+    "description": "<p>You prepare unguents to be applied to weapons or bodies. Crafting them a <strong>Spellcast Roll (10)</strong> as a Downtime action, which consumes 2 Handfuls and remains potent for a week unless otherwise specified.</p>\n<ul>\n<li><strong>Revenant Venom</strong>. Coat a weapon with this slick, grey fluid. Attacks with this weapon render supernatural creatures temporarily <em>Vulnerable</em>. The venom’s potency lasts until the weapon’s wielder rolls with Fear as part of an attack.</li>\n<li><strong>Scourgebane</strong>. Horrors struck by this herbal resin must mark twice the usual Stress cost to use their abilities.</li>\n<li><strong>Tears of the Prophet</strong>. Anoint a corpse with this sacred oil. That body can no longer be raised or\nused by dark forces.</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "hexenwerk",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "a29c13e0edf57b40",
+  "_key": "!items!c9e0dee81bb0b86e"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "d24b4e65cae32c9b",
+  "name": "Vial of Darksmoke",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Vial of Darksmoke</strong>: This smoke fills the air within Close with smoke, granting DISADV to those within on their next action roll</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!d24b4e65cae32c9b"
+}

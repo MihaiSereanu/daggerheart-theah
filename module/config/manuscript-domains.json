@@ -1,0 +1,164 @@
+{
+  "anchor": {
+    "id": "anchor",
+    "label": "Anchor",
+    "description": "<h2>Anchor</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.b030916d9f44faf5]{Adaptable Tactics}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.ddd17416289a8beb]{Covering Withdrawal}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.5b0bad937bfb24f4]{Exploit Weakness}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.d1ab330e543c4a38]{Keep the Momentum}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.24a8b1d7ab9ff658]{Keen Instincts}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.b607503c315c67cf]{Seize the Moment}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.62e73af9b2f5bdd5]{Sharp as a Tack}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.32dbf94eadb0a1c7]{Shared Tactics}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.1772586668407b89]{Trust me, it&#39;ll work}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.caf3ac911bcda93b]{Their Anchor}</li>\n</ul>\n",
+    "src": "icons/sundries/flags/banner-sword-blue.webp",
+    "color": "#4e345b",
+    "tradition": false,
+    "spellcastingTrait": null
+  },
+  "flair": {
+    "id": "flair",
+    "label": "Flair",
+    "description": "<h2>Flair</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.1ac278dfe638653e]{Casual Side-Step}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.dfdab5107a9c54c3]{Daring Stunt}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.f08e0b4d34206e98]{Deadly Draw}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.eb271b63b5878e46]{Deadly One-Liner}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.32ed2828ab9ecf1a]{False Opening}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.af29e41937b489e4]{No Time for Henchmen}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.f2fc6239e934bf0c]{Not Left-Handed}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.0bafbca43ca48795]{Showman}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.ff74e559f2bab2c5]{Tempt the Odds}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.43eed949e042ad94]{Trick up my sleeve}</li>\n</ul>\n",
+    "src": "icons/skills/melee/strike-blade-scimitar-orange-blue.webp",
+    "color": "#af231c",
+    "tradition": false,
+    "spellcastingTrait": null
+  },
+  "lore": {
+    "id": "lore",
+    "label": "Lore",
+    "description": "<h2>Lore</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.efb4204df8654b3f]{Herbal Remedies}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.502bfb4c6fae2178]{Keen Intuition}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.795f3e0e914114b3]{Lorekeeper}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.58d88d086ceb0887]{Measured Counsel}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.4fc29bf21dd33d63]{Physician Training}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.6395314dc60581f6]{Principia Ascendant}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.d622d894f0df2cb2]{Quick Assist}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.956b313fc8e9135f]{Scholar’s Eye}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.cd5cc0e409ec317d]{Sound Judgement}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.e5d4dc8271c42cc6]{Steady Hands}</li>\n</ul>\n",
+    "src": "icons/sundries/books/book-embossed-jewel-gold-green.webp",
+    "color": "#24395d",
+    "tradition": false,
+    "spellcastingTrait": null
+  },
+  "poise": {
+    "id": "poise",
+    "label": "Poise",
+    "description": "<h2>Poise</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.9961b8bf45295f6b]{Deft Deceiver}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.26188adfd9118fea]{Gentle Words}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.58771b177439a089]{Menacing Quip}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.20ccb14428990052]{Never Upstaged}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.dc852e743122919d]{Raw Magnetism}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.29b2d8d181ec67cd]{Share the Burden}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.ca18586ddc9a0f6e]{Shoulder to Shoulder}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.af06a65be44e7923]{Soothing Speech}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.45cc22b791dbb53c]{Troublemaker}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.fc93d1a8263f59ef]{Unnatural Charisma}</li>\n</ul>\n",
+    "src": "icons/skills/social/diplomacy-handshake-yellow.webp",
+    "color": "#8d3965",
+    "tradition": false,
+    "spellcastingTrait": null
+  },
+  "shade": {
+    "id": "shade",
+    "label": "Shade",
+    "description": "<h2>Shade</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.b5c86b530f66a9b4]{Chokehold}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.e8c22b8956397c2c]{Escape Route}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.9598b412f5df84fe]{Interrogation Tactics}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.0f8de6ca971a58ea]{Secrets Abound}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.30a59bef829aeb31]{Stealth Expertise}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.673356132db52646]{Study Mark}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.51c4b1f87750b7d3]{Takedown}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.c5d419279dd789d7]{Thieves’ Cant}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.f2179cfd117333a5]{Uncanny Disguise}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.8098777735f3bb87]{Vanish}</li>\n</ul>\n",
+    "src": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+    "color": "#4e345b",
+    "tradition": false,
+    "spellcastingTrait": null
+  },
+  "steel": {
+    "id": "steel",
+    "label": "Steel",
+    "description": "<h2>Steel</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.6483637cd8e69453]{Battle-Hardened}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.b8d07e2657a419f5]{Deadly Gambit}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.a6959d92daf66236]{Fortified}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.7543415716504c9f]{Get Back Up}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.5837e7fcd29779b1]{Moulinet}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.f3bf950b5cf2c6c6]{Reckless}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.98561ea613d4cfaf]{Scramble}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.79f232be5741dc0c]{Steel’s Promise}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.86f359481ac308f8]{Vicious}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.3b985db4a1159b83]{Weaponmaster}</li>\n</ul>\n",
+    "src": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+    "color": "#af231c",
+    "tradition": false,
+    "spellcastingTrait": null
+  },
+  "tactics": {
+    "id": "tactics",
+    "label": "Tactics",
+    "description": "<h2>Tactics</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.7a5a0b2f35f24ad9]{A Hero’s Bond}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.fb6c40d1e9814547]{Brace}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.a78027596aaa6384]{Dueling Style}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.6edb6f47902e5fa0]{Fast Guard}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.b9b3569f141879c1]{Redirect}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.90a64afaa789dd16]{Rapid Riposte}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.cf1570da0df7634e]{Swift Defense}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.d11960bca93f37b9]{Tactician’s Reflexes}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.76b6b994c543eee5]{Turning Tide}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.34f2ea72c9c0c3a8]{Veteran’s Rest}</li>\n</ul>\n",
+    "src": "icons/skills/melee/swords-parry-block-yellow.webp",
+    "color": "#24395d",
+    "tradition": false,
+    "spellcastingTrait": null
+  },
+  "valour": {
+    "id": "valour",
+    "label": "Valour",
+    "description": "<h2>Valour</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.5d51a8315d3d45c3]{All or Nothing}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.1f26828e75e1b40b]{Avatar}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.b3d5e328b6c672ba]{Flash of Courage}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.756b2404282af4d4]{I Am Your Shield}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.576ab0c5078d8352]{Intense Conviction}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.0a9ffd852dc7b955]{Lean on me}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.f56dcaa9ea23a59f]{Rallying Blow}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.98a2dffda63d0ff0]{Second Wind}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.5c32448a45f68494]{Shrug It Off}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.8fd54a909f215e01]{Unbowed}</li>\n</ul>\n",
+    "src": "icons/equipment/shield/heater-steel-gold.webp",
+    "color": "#8d3965",
+    "tradition": false,
+    "spellcastingTrait": null
+  },
+  "druidism": {
+    "id": "druidism",
+    "label": "Druidism",
+    "description": "<h2>Druidism</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.6fda6463d5eb8541]{Geas}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.3cab72510992cbb6]{Beastform}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.39651f0fcfedff51]{Wildtouch}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.cf433c2d5f63d2dc]{Nature&#39;s Tongue}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.e388faf9b12bafad]{Vicious Entangle}</li>\n</ul>\n",
+    "src": "icons/sundries/books/book-symbol-leaf-gold-green.webp",
+    "color": "#4e345b",
+    "tradition": true,
+    "spellcastingTrait": "instinct"
+  },
+  "darmatushki": {
+    "id": "darmatushki",
+    "label": "Dar Matushki",
+    "description": "<h2>Dar Matushki</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.aa6d916cf7ff37a9]{Beseech}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.df15c7d24be26f6c]{Mother&#39;s Lesson}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.357d5c8c90a105ac]{Mother&#39;s Gift}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.4b701ad805c582ff]{Mother&#39;s Bargain}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.20e72c8c4f5b77a3]{Walk Between Worlds}</li>\n</ul>\n",
+    "src": "icons/creatures/abilities/bear-roar-bite-brown-green.webp",
+    "color": "#af231c",
+    "tradition": true,
+    "spellcastingTrait": "charm"
+  },
+  "galdr": {
+    "id": "galdr",
+    "label": "Galdr",
+    "description": "<h2>Galdr</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.2bb76e9196c59e93]{Rune of the First Word}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.74c14f1dc2671ddd]{Rune of Ekerila}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.f28f2949425c2a63]{Rune of Rewrite}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.7c08cf9820c5feb9]{Rune of Binding}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.e246c2f08bb82fac]{Rune of Retribution}</li>\n</ul>\n",
+    "src": "icons/magic/symbols/runes-carved-stone-purple.webp",
+    "color": "#24395d",
+    "tradition": true,
+    "spellcastingTrait": "wits"
+  },
+  "firewithin": {
+    "id": "firewithin",
+    "label": "Fire Within",
+    "description": "<h2>Fire Within</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.f711fd169cf289c0]{Radiate}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.8f5157ad4c20226e]{Heartflare}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.be4b98d1aedd4fdd]{Wrathful Flames}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.bcd383f50872caf9]{Cleansing Flames}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.9aa372bab87142bf]{Embers Yet Burn}</li>\n</ul>\n",
+    "src": "icons/magic/fire/explosion-fireball-medium-orange.webp",
+    "color": "#8d3965",
+    "tradition": true,
+    "spellcastingTrait": "instinct"
+  },
+  "glamour": {
+    "id": "glamour",
+    "label": "Glamour",
+    "description": "<h2>Glamour</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.6d836f2d859de4b4]{Knightly Embodiment}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.7a94661df82e6a05]{Heroes of Legend}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.2b1325152cd8e6c7]{Sidhe Charisma}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.ad771166e6aca101]{Hypnotic Shimmer}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.110c61e4780762d9]{Mirrorwalk}</li>\n</ul>\n",
+    "src": "icons/magic/control/buff-luck-fortune-rainbow.webp",
+    "color": "#4e345b",
+    "tradition": true,
+    "spellcastingTrait": "charm"
+  },
+  "hexenwerk": {
+    "id": "hexenwerk",
+    "label": "Hexenwerk",
+    "description": "<h2>Hexenwerk</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.9cb33dc99e49a67a]{Banish Horror}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.57cb81e5c1d909d3]{Create Horror}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.f05e1174c16faf78]{Hexen’s Potions}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.c9e0dee81bb0b86e]{Hexen’s Unguents}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.97fa93effaddfecf]{Hexen’s Talismans}</li>\n</ul>\n",
+    "src": "icons/consumables/potions/round-decorated-snake-green.webp",
+    "color": "#af231c",
+    "tradition": true,
+    "spellcastingTrait": "wits"
+  },
+  "porte": {
+    "id": "porte",
+    "label": "Porte",
+    "description": "<h2>Porte</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.5c769438fd3c92da]{Blood Portal}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.b3c59e5387bb0cb7]{Blood Walkway}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.adda83b26538ce35]{Bloodboil}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.f3615ac5cc179497]{Blood Puppet}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.196712caaf45db42]{The Blood Remembers}</li>\n</ul>\n",
+    "src": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+    "color": "#24395d",
+    "tradition": true,
+    "spellcastingTrait": "instinct"
+  },
+  "sorte": {
+    "id": "sorte",
+    "label": "Sorte",
+    "description": "<h2>Sorte</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.e080022f6fa46921]{Alter Fate}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.172a70e3cc1db7f1]{Strange Patterns}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.85b932f5bf116095]{Pull the Strands}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.309d0c28b02f0ebb]{Threads of Misfortune}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.dddb52483969a9a6]{Threads of Memory}</li>\n</ul>\n",
+    "src": "icons/commodities/cloth/thread-and-needle.webp",
+    "color": "#8d3965",
+    "tradition": true,
+    "spellcastingTrait": "charm"
+  },
+  "sanderis": {
+    "id": "sanderis",
+    "label": "Sanderis",
+    "description": "<h2>Sanderis</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.64dc6e63daaaafde]{Bargain of Borrowed Flesh}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.65abe998d72355fb]{Bargain of the Borrowed Breath}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.8fbd592ef12ee4d8]{Bargain of Waning Fortune}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.5d9f1e3141b0e174]{Bargain of Fading Might}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.ca35bb468819687c]{Bargain of the Hungry Flame}</li>\n</ul>\n",
+    "src": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+    "color": "#4e345b",
+    "tradition": true,
+    "spellcastingTrait": "charm"
+  },
+  "artofthesecondprophet": {
+    "id": "artofthesecondprophet",
+    "label": "Art of the Second Prophet",
+    "description": "<h2>Art of the Second Prophet</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.1389585af94789d2]{Path of the Devout}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.4ee2cef891141aab]{Path of the Humble}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.298915daeda4bd03]{Path of the Just}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.a7d22629849abf03]{Path of the Merciful}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.127b71ab816c1661]{path of the Pariah}</li>\n</ul>\n",
+    "src": "icons/sundries/books/book-symbol-canterbury-cross.webp",
+    "color": "#af231c",
+    "tradition": true,
+    "spellcastingTrait": "instinct"
+  }
+}

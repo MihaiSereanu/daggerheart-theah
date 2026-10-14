@@ -1,0 +1,23 @@
+{
+  "_id": "74cdc279a2393993",
+  "name": "Fixer",
+  "type": "feature",
+  "img": "icons/equipment/back/cloak-hooded-green-gold.webp",
+  "system": {
+    "description": "<p>Once per session, you may call in an established contact. Describe how they aid you, choosing from below:</p>\n<ul>\n<li>They deliver gold, a rare tool, or a needed object</li>\n<li>They assist, adding +4 to a Duality Die on your next roll</li>\n<li>They ambush, adding 2d8 to your next damage roll</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "session",
+      "progression": "increasing",
+      "label": "Uses"
+    }
+  },
+  "effects": [],
+  "folder": "10fca7dfd752f74e",
+  "_key": "!items!74cdc279a2393993"
+}

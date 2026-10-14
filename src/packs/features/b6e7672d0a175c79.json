@@ -1,0 +1,15 @@
+{
+  "_id": "b6e7672d0a175c79",
+  "name": "Issued Orders",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-standard-blue.webp",
+  "system": {
+    "description": "<p>Spend 3 Hope issue orders, making an ally that can hear you gain Advantage on rolls made to carry them out until the scene ends or they fail with Fear.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "bdef6361b368d1ef",
+  "_key": "!items!b6e7672d0a175c79"
+}

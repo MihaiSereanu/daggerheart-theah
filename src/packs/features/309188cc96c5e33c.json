@@ -1,0 +1,15 @@
+{
+  "_id": "309188cc96c5e33c",
+  "name": "Powerhouse",
+  "type": "feature",
+  "img": "icons/skills/melee/unarmed-punch-fist-yellow-red.webp",
+  "system": {
+    "description": "<p>Increase your unarmed attack dies by 1 step. Additionally, you can <strong>mark a Stress</strong> to swing wildly, targeting two creatures within Melee range with a single attack roll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "a58d9b380e272631",
+  "_key": "!items!309188cc96c5e33c"
+}

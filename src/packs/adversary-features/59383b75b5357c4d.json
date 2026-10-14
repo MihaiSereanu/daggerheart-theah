@@ -1,0 +1,15 @@
+{
+  "_id": "59383b75b5357c4d",
+  "name": "Strike as One",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-sword-blue.webp",
+  "system": {
+    "description": "<p>Mark a Stress to spotlight a number of other adversary with this feature equal to the adversary’s unmarked Stress.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!59383b75b5357c4d"
+}

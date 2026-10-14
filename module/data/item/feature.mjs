@@ -15,7 +15,7 @@ export default class DHFeature extends BaseDataItem {
     /* -------------------------------------------- */
 
     /**@override */
-    static DEFAULT_ICON = 'systems/daggerheart/assets/icons/documents/items/stars-stack.svg';
+    static DEFAULT_ICON = 'systems/daggerheart-theah/assets/icons/documents/items/stars-stack.svg';
 
     /* -------------------------------------------- */
 

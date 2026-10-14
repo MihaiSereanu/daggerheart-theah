@@ -1,0 +1,18 @@
+{
+  "_id": "739592ca1d479ddc",
+  "name": "Coastal",
+  "type": "community",
+  "img": "icons/environment/settlement/lighthouse-rock-blue.webp",
+  "system": {
+    "description": "<p>You were raised where the sea shapes all things. Whether in bustling port towns or aboard ships that never dock, your people live by the tides. From a young age, you learned to sail, fish, and survive rough waters. Your people are prized as sailors and navigators, carrying the rhythms of the ocean in their blood.</p>\n<p><strong>Know the Tide</strong>. You can sense the ebb and flow of life. When you roll with Fear, make a note of it. You can hold a record equal to your level. Before you make an action roll, you can spend any number of these failures to gain a +1 bonus to the roll for each failure spent. At the end of each session, clear the record.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "features": [
+      "Compendium.daggerheart-theah.features.Item.a07cccbc994f7b3f"
+    ],
+    "loreReference": null
+  },
+  "effects": [],
+  "_key": "!items!739592ca1d479ddc"
+}

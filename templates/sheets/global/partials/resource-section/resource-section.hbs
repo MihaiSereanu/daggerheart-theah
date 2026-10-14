@@ -10,11 +10,22 @@
 
     {{#if source.system.resource}}
         {{#if (eq source.system.resource.type 'simple')}}
-            {{> "systems/daggerheart/templates/sheets/global/partials/resource-section/simple.hbs"}}
+            {{> "systems/daggerheart-theah/templates/sheets/global/partials/resource-section/simple.hbs"}}
         {{else if (eq source.system.resource.type 'diceValue')}}
-            {{> "systems/daggerheart/templates/sheets/global/partials/resource-section/dice-value.hbs"}}
+            {{> "systems/daggerheart-theah/templates/sheets/global/partials/resource-section/dice-value.hbs"}}
         {{else}}
-            {{> "systems/daggerheart/templates/sheets/global/partials/resource-section/die.hbs"}}
+            {{> "systems/daggerheart-theah/templates/sheets/global/partials/resource-section/die.hbs"}}
         {{/if}}
     {{/if}}
 </fieldset>
+{{#if source.system.resource.label}}
+    {{formGroup systemFields.resource.fields.label value=source.system.resource.label localize=true}}
+{{/if}}
+{{#each source.system.usageCounters as |counter key|}}
+    <fieldset>
+        <legend>{{counter.label}}</legend>
+        <label>Value <input type="number" name="system.usageCounters.{{key}}.value" value="{{counter.value}}" min="0"></label>
+        <label>Maximum <input name="system.usageCounters.{{key}}.max" value="{{counter.max}}"></label>
+    </fieldset>
+{{/each}}
+{{#if source.system.usageNote}}<p class="hint">{{source.system.usageNote}}</p>{{/if}}

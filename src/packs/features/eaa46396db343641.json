@@ -1,0 +1,15 @@
+{
+  "_id": "eaa46396db343641",
+  "name": "Wrathful Candor",
+  "type": "feature",
+  "img": "icons/sundries/books/book-red-cross.webp",
+  "system": {
+    "description": "<p>When you speak your interpretation of the truth after using <em>Interrogating Gaze</em>, <strong>spend a Hope</strong> to force each adversary within Far range to make a Reaction Roll (15). On a failure, they become temporarily <em>Vulnerable</em>.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "6a394ff38b203fd9",
+  "_key": "!items!eaa46396db343641"
+}

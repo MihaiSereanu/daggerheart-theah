@@ -1,0 +1,28 @@
+{
+  "_id": "ca18586ddc9a0f6e",
+  "name": "Shoulder to Shoulder",
+  "type": "domainCard",
+  "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+  "system": {
+    "description": "<p>Once per Rest, when you console or inspire an ally who failed an action roll, you can both clear 2 Stress.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "poise",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false,
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    }
+  },
+  "effects": [],
+  "folder": "872e6545268d2095",
+  "_key": "!items!ca18586ddc9a0f6e"
+}

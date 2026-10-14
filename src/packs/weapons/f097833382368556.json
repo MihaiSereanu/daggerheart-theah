@@ -1,0 +1,97 @@
+{
+  "_id": "f097833382368556",
+  "name": "Panzerhand",
+  "type": "weapon",
+  "img": "icons/equipment/hand/gauntlet-armored-heavy-steel.webp",
+  "system": {
+    "description": "<p><strong>Panzerhand</strong></p>\n<p><strong>Barrier</strong>: +2 to Armor Score; -1 to Evasion. <strong>Cumbersome</strong>: -1 to Finesse</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "blackpowder": false,
+    "reloading": false,
+    "secondary": true,
+    "burden": "oneHanded",
+    "weaponFeatures": [],
+    "attack": {
+      "_id": "b4d43150a181971a",
+      "name": "Panzerhand",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/equipment/hand/gauntlet-armored-heavy-steel.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": "brawn",
+        "bonus": 0
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d8 + @brawn"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "44af20a0b3e92ee5",
+      "name": "Panzerhand",
+      "type": "base",
+      "transfer": true,
+      "img": "icons/equipment/hand/gauntlet-armored-heavy-steel.webp",
+      "system": {
+        "changes": [
+          {
+            "type": "add",
+            "key": "system.evasion",
+            "value": -1,
+            "phase": "initial"
+          },
+          {
+            "type": "add",
+            "key": "system.traits.finesse.value",
+            "value": -1,
+            "phase": "initial"
+          }
+        ]
+      },
+      "_key": "!items.effects!f097833382368556.44af20a0b3e92ee5"
+    },
+    {
+      "_id": "a63fb53348790149",
+      "name": "Panzerhand",
+      "type": "base",
+      "transfer": true,
+      "img": "icons/equipment/hand/gauntlet-armored-heavy-steel.webp",
+      "system": {
+        "changes": [
+          {
+            "type": "armor",
+            "phase": "initial",
+            "value": {
+              "current": 0,
+              "max": 2
+            }
+          }
+        ]
+      },
+      "_key": "!items.effects!f097833382368556.a63fb53348790149"
+    }
+  ],
+  "_key": "!items!f097833382368556"
+}

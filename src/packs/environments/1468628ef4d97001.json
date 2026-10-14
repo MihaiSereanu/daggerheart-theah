@@ -1,0 +1,69 @@
+{
+  "_id": "1468628ef4d97001",
+  "name": "Outpost Town",
+  "type": "environment",
+  "img": "systems/daggerheart-theah/assets/icons/documents/actors/forest.svg",
+  "system": {
+    "description": "<p><em>A small town on the outskirts of a nation or region</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "standard",
+    "type": "social",
+    "difficulty": 12,
+    "notes": "<h3>Standard | Social</h3>\n<p><em>A small town on the outskirts of a nation or region</em><br><strong>Impulses:</strong> Drive the desperate to doom, profit off of ragged hope</p>\n<p><strong>Difficulty:</strong> 12</p>\n<h4>Features</h4>\n<p><strong>Rumors Abound - Passive</strong>: Gossip is the fastest-traveling currency in the realm. A PC can inquire about major events by making a Charm Roll. What they learn depends on the outcome of their roll, based on the following criteria:</p>\n<ul>\n<li><strong>Critical Succes</strong>s: Learn about two major events. The PC can ask one follow-up question about one of the rumors and get a truthful (if not always complete) answer.</li>\n<li><strong>Success with Hope</strong>: Learn about two events, at least one of which is relevant to the character&#39;s background.</li>\n<li><strong>Success with Fear</strong>: Learn an alarming rumor related to the character&#39;s background.</li>\n<li><strong>Any Failure</strong>: The locals respond poorly to their inquiries. The PC must <strong>mark a Stress</strong> to learn one relevant rumor.</li>\n</ul>\n<p><strong>Rival Party - Passive</strong>: Another adventuring party is here, seeking the same lead as the PCs, or actively working against them.</p>\n<p><strong>It&#39;d Be a Shame If... - Action</strong>: The PCs witness as agents of a local crime boss shake down a general goods store.</p>\n<p><strong>Wrong Place - Reaction</strong>: At night, spend a Fear to introduce a group of thieves who try to rob them. The thieves appear at Close range of a PC and include a Bandit Kneebreaker, as many Lackeys as there are PCs, and a Lieutenant.</p>\n",
+    "impulses": "Drive the desperate to doom, profit off of ragged hope"
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "3725d98186f65f8b",
+      "name": "Rumors Abound - Passive",
+      "type": "feature",
+      "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+      "system": {
+        "description": "<p>Gossip is the fastest-traveling currency in the realm. A PC can inquire about major events by making a Charm Roll. What they learn depends on the outcome of their roll, based on the following criteria:</p>\n<ul>\n<li><strong>Critical Succes</strong>s: Learn about two major events. The PC can ask one follow-up question about one of the rumors and get a truthful (if not always complete) answer.</li>\n<li><strong>Success with Hope</strong>: Learn about two events, at least one of which is relevant to the character&#39;s background.</li>\n<li><strong>Success with Fear</strong>: Learn an alarming rumor related to the character&#39;s background.</li>\n<li><strong>Any Failure</strong>: The locals respond poorly to their inquiries. The PC must <strong>mark a Stress</strong> to learn one relevant rumor.</li>\n</ul>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!1468628ef4d97001.3725d98186f65f8b"
+    },
+    {
+      "_id": "a19e181682b368fa",
+      "name": "Rival Party - Passive",
+      "type": "feature",
+      "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+      "system": {
+        "description": "<p>Another adventuring party is here, seeking the same lead as the PCs, or actively working against them.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!1468628ef4d97001.a19e181682b368fa"
+    },
+    {
+      "_id": "d0d9beafc2faa09d",
+      "name": "It'd Be a Shame If... - Action",
+      "type": "feature",
+      "img": "icons/tools/navigation/compass-brass-blue-red.webp",
+      "system": {
+        "description": "<p>The PCs witness as agents of a local crime boss shake down a general goods store.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!1468628ef4d97001.d0d9beafc2faa09d"
+    },
+    {
+      "_id": "4dae3595a31667ce",
+      "name": "Wrong Place - Reaction",
+      "type": "feature",
+      "img": "icons/skills/melee/swords-parry-block-yellow.webp",
+      "system": {
+        "description": "<p>At night, spend a Fear to introduce a group of thieves who try to rob them. The thieves appear at Close range of a PC and include a Bandit Kneebreaker, as many Lackeys as there are PCs, and a Lieutenant.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!1468628ef4d97001.4dae3595a31667ce"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Outpost Town",
+    "actorLink": false
+  },
+  "_key": "!actors!1468628ef4d97001"
+}

@@ -1,0 +1,14 @@
+{
+  "_id": "35e75024397b191e",
+  "name": "Sorte",
+  "type": "feature",
+  "img": "icons/commodities/cloth/thread-and-needle.webp",
+  "system": {
+    "description": "<h2>Sorte</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.e080022f6fa46921]{Alter Fate}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.172a70e3cc1db7f1]{Strange Patterns}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.85b932f5bf116095]{Pull the Strands}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.309d0c28b02f0ebb]{Threads of Misfortune}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.dddb52483969a9a6]{Threads of Memory}</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!35e75024397b191e"
+}

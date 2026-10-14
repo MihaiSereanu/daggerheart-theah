@@ -1,0 +1,15 @@
+{
+  "_id": "d0f492506228771d",
+  "name": "Sturdy",
+  "type": "feature",
+  "img": "icons/creatures/abilities/wolf-howl-moon-purple.webp",
+  "system": {
+    "description": "<p>When you take Severe+ damage, you drop out of Beastform.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "4cffe85f2cf5597c",
+  "_key": "!items!d0f492506228771d"
+}

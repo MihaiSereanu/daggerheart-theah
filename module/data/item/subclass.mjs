@@ -3,7 +3,7 @@ import ItemLinkFields from '../fields/itemLinkFields.mjs';
 import BaseDataItem from './base.mjs';
 
 export default class DHSubclass extends BaseDataItem {
-    static embedTemplate = 'systems/daggerheart/templates/components/card/subclass.hbs';
+    static embedTemplate = 'systems/daggerheart-theah/templates/components/card/subclass.hbs';
 
     /** @inheritDoc */
     static get metadata() {
@@ -36,7 +36,7 @@ export default class DHSubclass extends BaseDataItem {
     /* -------------------------------------------- */
 
     /**@override */
-    static DEFAULT_ICON = 'systems/daggerheart/assets/icons/documents/items/laurels.svg';
+    static DEFAULT_ICON = 'systems/daggerheart-theah/assets/icons/documents/items/laurels.svg';
 
     /* -------------------------------------------- */
 
@@ -108,7 +108,7 @@ export default class DHSubclass extends BaseDataItem {
             const masteryFeatures = await getFeaturesHTMLData(this.masteryFeatures);
 
             const suffix = await foundry.applications.handlebars.renderTemplate(
-                'systems/daggerheart/templates/sheets/items/subclass/description.hbs',
+                'systems/daggerheart-theah/templates/sheets/items/subclass/description.hbs',
                 {
                     spellcastTrait,
                     foundationFeatures,

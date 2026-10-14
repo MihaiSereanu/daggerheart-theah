@@ -1,0 +1,15 @@
+{
+  "_id": "fabab1a81b4c9db8",
+  "name": "Shield Wall",
+  "type": "feature",
+  "img": "icons/equipment/shield/heater-steel-gold.webp",
+  "system": {
+    "description": "<p>While shielding, the adversary gains +2 Difficulty. When they take Severe damage, they lose this benefit until they are next spotlighted.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!fabab1a81b4c9db8"
+}

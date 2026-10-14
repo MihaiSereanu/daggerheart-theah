@@ -6,7 +6,7 @@ export default class DhTokenPlaceable extends foundry.canvas.placeables.Token {
     async _draw(options) {
         await super._draw(options);
 
-        if (this.document.flags.daggerheart?.createPlacement)
+        if (this.document.flags['daggerheart-theah']?.createPlacement)
             this.previewHelp ||= this.addChild(this.#drawPreviewHelp());
     }
 

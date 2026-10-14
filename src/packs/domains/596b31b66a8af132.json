@@ -1,0 +1,14 @@
+{
+  "_id": "596b31b66a8af132",
+  "name": "Porte",
+  "type": "feature",
+  "img": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+  "system": {
+    "description": "<h2>Porte</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.5c769438fd3c92da]{Blood Portal}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.b3c59e5387bb0cb7]{Blood Walkway}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.adda83b26538ce35]{Bloodboil}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.f3615ac5cc179497]{Blood Puppet}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.196712caaf45db42]{The Blood Remembers}</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!596b31b66a8af132"
+}

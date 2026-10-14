@@ -1,0 +1,15 @@
+{
+  "_id": "5c1a0a258def31ab",
+  "name": "Arrows of Piercing Breath",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Arrows of Piercing Breath</strong>: Three times per rest when you succeed on an attack with one of these arrows, you can add your level to the damage roll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!5c1a0a258def31ab"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "7a94661df82e6a05",
+  "name": "Heroes of Legend",
+  "type": "domainCard",
+  "img": "icons/magic/control/buff-luck-fortune-rainbow.webp",
+  "system": {
+    "description": "<p>Make a Spellcasting Roll (15) to embody an aspect of Eliodd. The embodiment lasts until the next rest or you take Severe damage. You may <strong>mark a Stress</strong> to change between aspects.</p>\n<ul>\n<li><strong>Aspect of the Warrior.</strong> When you succeed with Fear, you may clear a Stress.</li>\n<li><strong>Aspect of the Poet.</strong> When the GM spends a Fear, you may <strong>mark a Stress</strong> to gain a Hope.</li>\n<li><strong>Aspect of the King.</strong> When an ally rolls with Hope, you may <strong>mark a Stress</strong> to also gain a Hope.</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "glamour",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "33dde1086e88a00a",
+  "_key": "!items!7a94661df82e6a05"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "a9338be0a982fd6a",
+  "name": "Randomized Tactics",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-sword-blue.webp",
+  "system": {
+    "description": "<p>Mark a Stress and roll a d6. The adversary uses the corresponding move:</p>\n<blockquote>\n<p><strong>1. Mana Beam:</strong> Make an attack against a target within Far range. On a success, deal 2d10+2 magic damage.</p>\n<p><strong>2. Fire Jets:</strong> Make an attack against all targets within Close range. Targets the adversary succeeds against take 2d8 physical damage.</p>\n<p><strong>3. Dizzying Charge:</strong> Make an attack against all PCs within Close range. Targets the adversary succeeds against take 1d6+5 physical damage and are Vulnerable until their next roll with Hope.</p>\n<p><strong>4. Shocking Gas:</strong> All targets within Close range must succeed on a Finesse Reaction Roll or mark 3 Stress.</p>\n<p><strong>5. Stunning Clap:</strong> All targets within Very Close range must succeed on a Brawn Reaction Roll or become Vulnerable until the adversary is defeated.</p>\n<p><strong>6. Psionic Whine:</strong> All targets within Close range must succeed on a Charm Reaction Roll or take 2d4+9 direct magic damage.</p>\n</blockquote>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!a9338be0a982fd6a"
+}

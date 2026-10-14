@@ -1,0 +1,15 @@
+{
+  "_id": "e0b252a09f71fa67",
+  "name": "Shield Wall",
+  "type": "feature",
+  "img": "icons/equipment/shield/heater-steel-gold.webp",
+  "system": {
+    "description": "<p>A creature who tries to move within Very Close range of the adversary must succeed on an Finesse Roll. If additional adversary with this feature are standing in a line alongside the first, and each is within Melee range of another adversary with this feature in the line, the Difficulty increases by the total number of guards in that line.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!e0b252a09f71fa67"
+}

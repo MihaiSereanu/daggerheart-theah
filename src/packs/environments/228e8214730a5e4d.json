@@ -1,0 +1,69 @@
+{
+  "_id": "228e8214730a5e4d",
+  "name": "Heretical Convocation",
+  "type": "environment",
+  "img": "systems/daggerheart-theah/assets/icons/documents/actors/forest.svg",
+  "system": {
+    "description": "<p><em>A secretive sect gathers surrounding a circle of blood and scripture</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "standard",
+    "type": "event",
+    "difficulty": 14,
+    "notes": "<h3>Standard | Event</h3>\n<p><em>A secretive sect gathers surrounding a circle of blood and scripture</em><br><strong>Impulses:</strong> Profane the sacred, erode faith in the Prophet</p>\n<p><strong>Difficulty:</strong> 14</p>\n<h4>Features</h4>\n<p><strong>Blasphemed Ground - Passive</strong>: This place has been ritually profaned with blood and oil. PCs’ Hope Dice are reduced to a d10 while in this environment. The desecration can be cleansed with a Progress Countdown (6) by taking appropriate action.</p>\n<p><strong>Ecstatic Fervor - Action</strong>: The congregation names one member the “mouth of the true god,” Empowering them until the scene ends or they are defeated. They immediately take the spotlight and gain one of the following benefits (or all three if you spend a Fear):</p>\n<ul>\n<li>Gains Advantage on all attacks.</li>\n<li>Deals an extra 1d10 damage on a successful attack.</li>\n<li><strong>Gains Relentless (2) — Passive</strong>: This adversary can be spotlighted multiple times per GM turn. Spend Fear as usual to spotlight them.</li>\n</ul>\n<p><strong>Unveiling the Secret – Reaction:</strong> Countdown (6): When the PCs arrive or the rite begins, start the countdown. It ticks down whenever a PC rolls with Fear. When it triggers, the Keeper delivers the “final revelation,” forcing each PC to make a Charm Reaction Roll or lose a Hope. If the Keeper is defeated, the rite fails.</p>\n<p><strong>Shield of Devotion - Reaction</strong>: When the Keeper is targeted by an attack, an ally within Very Close range may <strong>mark a Stress</strong> to throw themselves in the way, taking the blow instead.</p>\n",
+    "impulses": "Profane the sacred, erode faith in the Prophet"
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "4352275bc55eef2d",
+      "name": "Blasphemed Ground - Passive",
+      "type": "feature",
+      "img": "icons/sundries/books/book-symbol-skull-grey.webp",
+      "system": {
+        "description": "<p>This place has been ritually profaned with blood and oil. PCs’ Hope Dice are reduced to a d10 while in this environment. The desecration can be cleansed with a Progress Countdown (6) by taking appropriate action.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!228e8214730a5e4d.4352275bc55eef2d"
+    },
+    {
+      "_id": "8a0c6d6c47190609",
+      "name": "Ecstatic Fervor - Action",
+      "type": "feature",
+      "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+      "system": {
+        "description": "<p>The congregation names one member the “mouth of the true god,” Empowering them until the scene ends or they are defeated. They immediately take the spotlight and gain one of the following benefits (or all three if you spend a Fear):</p>\n<ul>\n<li>Gains Advantage on all attacks.</li>\n<li>Deals an extra 1d10 damage on a successful attack.</li>\n<li><strong>Gains Relentless (2) — Passive</strong>: This adversary can be spotlighted multiple times per GM turn. Spend Fear as usual to spotlight them.</li>\n</ul>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!228e8214730a5e4d.8a0c6d6c47190609"
+    },
+    {
+      "_id": "84e7256ace20a061",
+      "name": "Unveiling the Secret – Reaction",
+      "type": "feature",
+      "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+      "system": {
+        "description": "<p>Countdown (6): When the PCs arrive or the rite begins, start the countdown. It ticks down whenever a PC rolls with Fear. When it triggers, the Keeper delivers the “final revelation,” forcing each PC to make a Charm Reaction Roll or lose a Hope. If the Keeper is defeated, the rite fails.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!228e8214730a5e4d.84e7256ace20a061"
+    },
+    {
+      "_id": "3cf67639167b77f0",
+      "name": "Shield of Devotion - Reaction",
+      "type": "feature",
+      "img": "icons/equipment/shield/heater-steel-gold.webp",
+      "system": {
+        "description": "<p>When the Keeper is targeted by an attack, an ally within Very Close range may <strong>mark a Stress</strong> to throw themselves in the way, taking the blow instead.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!228e8214730a5e4d.3cf67639167b77f0"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Heretical Convocation",
+    "actorLink": false
+  },
+  "_key": "!actors!228e8214730a5e4d"
+}

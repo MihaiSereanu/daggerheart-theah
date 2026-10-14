@@ -1,0 +1,14 @@
+{
+  "_id": "7007b465dbcb12d0",
+  "name": "Valroux",
+  "type": "feature",
+  "img": "icons/skills/melee/strike-sword-dagger-runes-gold.webp",
+  "system": {
+    "description": "<p><strong>Required Weapon: Rapier</strong>\nA Montaigne style focused on humiliation and psychological domination. Its masters circle and mock, grinding down opponents until they make mistakes.</p>\n<ul>\n<li><strong>Valroux Cross</strong>. When you avoid marking HP from an enemy, you may <strong>mark any number of Stress</strong> to increase your Evasion and reduce your opponent’s Difficulty for the rest of the scene by that amount.</li>\n<li><strong>Opportune Strike.</strong> When you deal damage to a <em>Vulnerable</em> or <em>Restrained</em> target, they must also <strong>mark a Stress</strong>.</li>\n<li><strong>Feed on the Fumes.</strong> Spend 2 Hope to recover a Stress.</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!7007b465dbcb12d0"
+}

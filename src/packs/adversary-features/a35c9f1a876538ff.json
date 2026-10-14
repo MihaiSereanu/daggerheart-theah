@@ -1,0 +1,15 @@
+{
+  "_id": "a35c9f1a876538ff",
+  "name": "Searing Glance",
+  "type": "feature",
+  "img": "icons/creatures/eyes/humanoid-single-purple-blue.webp",
+  "system": {
+    "description": "<p>When a PC within Close makes a Charm Roll, you can <strong>mark a Stress</strong> to cast a gaze toward the aftermath. If the target fails, they must <strong>mark 2 Stress</strong> and are Vulnerable until the scene ends or they succeed on a social action against the adversary. On the target’s success, they must <strong>mark a Stress</strong>.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "reaction"
+  },
+  "effects": [],
+  "_key": "!items!a35c9f1a876538ff"
+}

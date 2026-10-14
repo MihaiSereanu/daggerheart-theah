@@ -47,24 +47,24 @@ export default class AdversarySheet extends DHBaseActorSheet {
 
     static PARTS = {
         limited: {
-            template: 'systems/daggerheart/templates/sheets/actors/adversary/limited.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets/actors/adversary/limited.hbs',
             scrollable: ['.limited-container']
         },
         sidebar: {
-            template: 'systems/daggerheart/templates/sheets/actors/adversary/sidebar.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets/actors/adversary/sidebar.hbs',
             scrollable: ['.shortcut-items-section']
         },
-        header: { template: 'systems/daggerheart/templates/sheets/actors/adversary/header.hbs' },
+        header: { template: 'systems/daggerheart-theah/templates/sheets/actors/adversary/header.hbs' },
         features: {
-            template: 'systems/daggerheart/templates/sheets/actors/adversary/features.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets/actors/adversary/features.hbs',
             scrollable: ['.feature-section']
         },
         effects: {
-            template: 'systems/daggerheart/templates/sheets/global/tabs/tab-effects.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-effects.hbs',
             scrollable: ['.effects-sections']
         },
         notes: {
-            template: 'systems/daggerheart/templates/sheets/actors/adversary/notes.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets/actors/adversary/notes.hbs',
             scrollable: ['.editor-content']
         }
     };
@@ -339,11 +339,12 @@ export default class AdversarySheet extends DHBaseActorSheet {
     /* -------------------------------------------- */
 
     async updateItemResource(event) {
-        const item = await getDocFromElement(event.currentTarget);
-        if (!item) return;
+        const input = event.currentTarget;
+        const item = await getDocFromElement(input);
+        if (!item || !this.isEditable) return;
 
-        const max = event.currentTarget.max ? Number(event.currentTarget.max) : null;
-        const value = max ? Math.min(Number(event.currentTarget.value), max) : event.currentTarget.value;
+        const max = input.max === '' ? Infinity : Number(input.max);
+        const value = Math.clamp(Number(input.value) || 0, 0, max);
         await item.update({ 'system.resource.value': value });
         this.render();
     }

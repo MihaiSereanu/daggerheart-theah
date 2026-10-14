@@ -1,0 +1,15 @@
+{
+  "_id": "39d7dee60f413320",
+  "name": "We Are All One",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-sword-blue.webp",
+  "system": {
+    "description": "<p>When an ally dies within Close range, you can spend a Fear to clear 2 HP and 2 Stress as the fallen ally’s life force is returned to Bryn Bresail.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "reaction"
+  },
+  "effects": [],
+  "_key": "!items!39d7dee60f413320"
+}

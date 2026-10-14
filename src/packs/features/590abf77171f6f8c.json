@@ -1,0 +1,15 @@
+{
+  "_id": "590abf77171f6f8c",
+  "name": "Wordly Insight",
+  "type": "feature",
+  "img": "icons/sundries/books/book-open-turquoise.webp",
+  "system": {
+    "description": "<p>You can make a Wits roll against an adversary to learn one of the following about them:</p>\n<ul>\n<li>Their current state of mind</li>\n<li>An Experience they may have and its value</li>\n<li>A hidden detail, either narrative or mechanical</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "44fce0e030416eae",
+  "_key": "!items!590abf77171f6f8c"
+}

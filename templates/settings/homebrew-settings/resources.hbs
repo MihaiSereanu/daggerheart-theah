@@ -12,12 +12,12 @@
                 </legend>
 
                 {{#each type.resources as |resource key|}}
-                    {{> "systems/daggerheart/templates/sheets/global/partials/custom-resource/custom-resource.hbs" 
+                    {{> "systems/daggerheart-theah/templates/sheets/global/partials/custom-resource/custom-resource.hbs"
                         resource
-                        actorType=@../key 
+                        actorType=@../key
                         key=key
                         fields=@root.schemaFields.resources.element.fields.resources.element.fields
-                        basePath=(concat "resources." @../key ".resources." key ".") 
+                        basePath=(concat "resources." @../key ".resources." key ".")
                     }}
                 {{/each}}
             </fieldset>

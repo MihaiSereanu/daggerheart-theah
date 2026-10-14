@@ -1,0 +1,20 @@
+{
+  "_id": "8fbd592ef12ee4d8",
+  "name": "Bargain of Waning Fortune",
+  "type": "domainCard",
+  "img": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+  "system": {
+    "description": "<p>Make a Spellcasting Roll on a target within Far range. On a success, <strong>spend a Favour</strong> to make the target temporarily <em>Withered</em>. While Withered, they roll a d12 instead of a d20. You can only hold this spell on one creature at a time.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "sanderis",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "83fcfb9315a1e619",
+  "_key": "!items!8fbd592ef12ee4d8"
+}

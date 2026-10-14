@@ -1,0 +1,15 @@
+{
+  "_id": "f0d3094d01b3e9b7",
+  "name": "Flow of Battle",
+  "type": "feature",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow-teal.webp",
+  "system": {
+    "description": "<p>If an adversary within Melee range shifts their focus away from you, describe how you impede them and make a Reaction Roll using an appropriate Trait against theim. Choose an effect on a success, or two on a critical:</p>\n<ul>\n<li>They can&#39;t move, or you move with them.</li>\n<li>You deal your weapon damage to them.</li>\n<li>You set them up, making them <em>Vulnerable</em>.</li>\n</ul>\n<blockquote>\n<p>You may replace an Archetype Feature with a <strong>Duelist Style</strong>. See Appendix for <strong>Duelist Styles</strong>.</p>\n</blockquote>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "6a57a9300575c5b7",
+  "_key": "!items!f0d3094d01b3e9b7"
+}

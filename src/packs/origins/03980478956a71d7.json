@@ -1,0 +1,25 @@
+{
+  "_id": "03980478956a71d7",
+  "name": "Eisen",
+  "type": "ancestry",
+  "img": "icons/equipment/shield/heater-steel-boss-red.webp",
+  "system": {
+    "description": "<p><strong>Iron Defense.</strong> When you have 1 HP remaining, all attacks against you have Disadvantage.</p>\n<p><strong>Brutal Beatdown</strong>. When you succeed on an attack against a target within Melee, you can <strong>mark a Stress</strong> to slam into them with sheer force, dealing an extra 1d6 damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "features": [
+      {
+        "type": "primary",
+        "item": "Compendium.daggerheart-theah.features.Item.5f79f4363d4bee00"
+      },
+      {
+        "type": "secondary",
+        "item": "Compendium.daggerheart-theah.features.Item.1b0e8ab7c2a255d9"
+      }
+    ],
+    "loreReference": null
+  },
+  "effects": [],
+  "_key": "!items!03980478956a71d7"
+}

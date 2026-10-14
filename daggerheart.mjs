@@ -1,4 +1,9 @@
 import { SYSTEM } from './module/config/system.mjs';
+import HeartDaggerCharacterSheet from './module/heart-dagger/characterSheet.mjs';
+import { normalizeImportedNames } from './module/heart-dagger/names.mjs';
+import { repairImportedFeatures } from './module/heart-dagger/feature-repairs.mjs';
+import { grantExistingSorcerousAttacks } from './module/heart-dagger/sorcerous-attack.mjs';
+import { applySystemDialogStyle } from './module/heart-dagger/dialog-style.mjs';
 import * as applications from './module/applications/_module.mjs';
 import * as data from './module/data/_module.mjs';
 import * as models from './module/data/_module.mjs';
@@ -65,7 +70,7 @@ CONFIG.Combatant.dataModels = { base: models.DhCombatant };
 
 CONFIG.ChatMessage.dataModels = models.chatMessages.config;
 CONFIG.ChatMessage.documentClass = documents.DhChatMessage;
-CONFIG.ChatMessage.template = 'systems/daggerheart/templates/ui/chat/chat-message.hbs';
+CONFIG.ChatMessage.template = 'systems/daggerheart-theah/templates/ui/chat/chat-message.hbs';
 
 CONFIG.Canvas.rulerClass = placeables.DhRuler;
 CONFIG.Canvas.layers.regions.layerClass = placeables.DhRegionLayer;
@@ -76,7 +81,7 @@ CONFIG.MeasuredTemplate.objectClass = placeables.DhMeasuredTemplate;
 CONFIG.Region.objectClass = placeables.DhRegion;
 
 CONFIG.RollTable.documentClass = documents.DhRollTable;
-CONFIG.RollTable.resultTemplate = 'systems/daggerheart/templates/ui/chat/table-result.hbs';
+CONFIG.RollTable.resultTemplate = 'systems/daggerheart-theah/templates/ui/chat/table-result.hbs';
 
 CONFIG.Scene.documentClass = documents.DhScene;
 
@@ -110,7 +115,6 @@ CONFIG.ui.actors = applications.sidebar.DhActorDirectory;
 CONFIG.ui.daggerheartMenu = applications.sidebar.DaggerheartMenu;
 CONFIG.ui.settings = applications.sidebar.DhSettings;
 CONFIG.ui.resources = applications.ui.DhFearTracker;
-CONFIG.ui.countdowns = applications.ui.DhCountdowns;
 CONFIG.ui.pause = applications.ui.DhGamePause;
 CONFIG.ux.ContextMenu = applications.ux.DHContextMenu;
 CONFIG.ux.TooltipManager = documents.DhTooltipManager;
@@ -215,22 +219,12 @@ Hooks.once('init', () => {
         makeDefault: true,
         label: sheetLabel('TYPES.Item.beastform')
     });
-    Items.registerSheet(SYSTEM.id, applications.sheets.items.Transformation, {
-        types: ['transformation'],
-        makeDefault: true,
-        label: sheetLabel('TYPES.Item.transformation')
-    });
 
     Actors.unregisterSheet('core', foundry.applications.sheets.ActorSheetV2);
-    Actors.registerSheet(SYSTEM.id, applications.sheets.actors.Character, {
+    Actors.registerSheet(SYSTEM.id, HeartDaggerCharacterSheet, {
         types: ['character'],
         makeDefault: true,
         label: sheetLabel('TYPES.Actor.character')
-    });
-    Actors.registerSheet(SYSTEM.id, applications.sheets.actors.Companion, {
-        types: ['companion'],
-        makeDefault: true,
-        label: sheetLabel('TYPES.Actor.companion')
     });
     Actors.registerSheet(SYSTEM.id, applications.sheets.actors.Adversary, {
         types: ['adversary'],
@@ -241,11 +235,6 @@ Hooks.once('init', () => {
         types: ['environment'],
         makeDefault: true,
         label: sheetLabel('TYPES.Actor.environment')
-    });
-    Actors.registerSheet(SYSTEM.id, applications.sheets.actors.NPC, {
-        types: ['npc'],
-        makeDefault: true,
-        label: sheetLabel('TYPES.Actor.npc')
     });
     Actors.registerSheet(SYSTEM.id, applications.sheets.actors.Party, {
         types: ['party'],
@@ -357,10 +346,6 @@ Hooks.on('setup', () => {
         adversary: {
             bar: [...actorCommon.bar, 'resources.hitPoints'],
             value: [...actorCommon.value, ...damageThresholds, 'criticalThreshold', 'difficulty']
-        },
-        companion: {
-            bar: [...actorCommon.bar],
-            value: [...actorCommon.value, 'evasion', 'levelData.level.current']
         }
     };
 
@@ -369,15 +354,13 @@ Hooks.on('setup', () => {
 });
 
 Hooks.on('ready', async () => {
+    await repairImportedFeatures();
+    await normalizeImportedNames();
+    await grantExistingSorcerousAttacks();
     const appearanceSettings = game.settings.get(SYSTEM.id, SYSTEM.SETTINGS.gameSettings.appearance);
     const homebrewSettings = game.settings.get(CONFIG.DH.id, CONFIG.DH.SETTINGS.gameSettings.Homebrew);
     ui.resources = new CONFIG.ui.resources();
     if (appearanceSettings.displayFear !== 'hide') ui.resources.render({ force: true });
-
-    if (appearanceSettings.displayCountdownUI) {
-        ui.countdowns = new CONFIG.ui.countdowns();
-        ui.countdowns.render({ force: true });
-    }
 
     ui.effectsDisplay = new CONFIG.ui.effectsDisplay();
     ui.effectsDisplay.render({ force: true });
@@ -527,7 +510,10 @@ Hooks.on('refreshToken', (token, options) => {
 });
 
 Hooks.on('renderCompendiumDirectory', (app, html) => applications.ui.ItemBrowser.injectSidebarButton(html));
-Hooks.on('renderDocumentDirectory', (app, html) => applications.ui.ItemBrowser.injectSidebarButton(html));
+Hooks.on('renderDocumentDirectory', (app, html) => {
+    applications.ui.ItemBrowser.injectSidebarButton(html);
+    applications.dialogs.AdversaryCreator.injectSidebarButton(html);
+});
 
 /* Non actor-linked Actors should unregister the triggers of their tokens if a scene's token layer is torn down */
 Hooks.on('canvasTearDown', canvas => {
@@ -572,6 +558,7 @@ Hooks.on('activateSceneControls', controls => {
 
 /** Make the user to select a document type, instead of having a default doc type for them to accidentally keep */
 Hooks.on('renderDialogV2', (dialog, html) => {
+    applySystemDialogStyle(html);
     if (!html.classList.contains('dialog')) return;
     const cls = html.classList.contains('item-create')
         ? documents.DhItem.implementation
@@ -585,6 +572,13 @@ Hooks.on('renderDialogV2', (dialog, html) => {
     const select = html.querySelector('select[name=type]');
     const nameInput = html.querySelector('input[name=name]');
     if (!form || !select || !submit || !nameInput) return;
+
+    if (html.classList.contains('actor-create')) {
+        for (const type of ['character', 'adversary', 'environment', 'party']) {
+            const option = select.querySelector(`option[value="${type}"]`);
+            if (option) select.append(option);
+        }
+    }
 
     const defaultEntity = dialog.options.defaultEntity;
     if (!defaultEntity) {

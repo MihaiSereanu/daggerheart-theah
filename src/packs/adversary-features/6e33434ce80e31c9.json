@@ -1,0 +1,15 @@
+{
+  "_id": "6e33434ce80e31c9",
+  "name": "Escape Plan",
+  "type": "feature",
+  "img": "icons/tools/navigation/compass-brass-blue-red.webp",
+  "system": {
+    "description": "<p><strong>Mark a Stress</strong> to enact an escape plan. All targets within Very Close range of the adversary must succeed on a Finesse Reaction Roll (13) or be taken by surprise. A surprised target is Restrained and Vulnerable until they gain their senses with a successful Wits (15) rolll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!6e33434ce80e31c9"
+}

@@ -1,0 +1,100 @@
+{
+  "_id": "5bf5138843f24c3a",
+  "name": "Bandit",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A cunning criminal in a cloak bearing one of the gang&#39;s iconic knives.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "standard",
+    "difficulty": 12,
+    "notes": "<h3>Normal | Standard</h3>\n<p><em>A cunning criminal in a cloak bearing one of the gang&#39;s iconic knives.</em>\n<strong>Motives &amp; Tactics:</strong> Escape, profit, steal, throw smoke</p>\n<p><strong>Difficulty:</strong> 12 | <strong>Thresholds:</strong> 6/10 | <strong>HP:</strong> 5 | <strong>Stress:</strong> 3</p>\n<p><strong>ATK:</strong> +1 | Weapon: Melee | 1d8+1 physical</p>\n<hr>\n<p><strong>Experience:</strong> Thief +2</p>\n<h4>Features</h4>\n<p><strong>Climber - Passive</strong>: The Bandit climbs just as easily as they run.</p>\n<p><strong>From Above - Passive</strong>: When the Bandit succeeds on a standard attack from above a target, they deal 1d10+1 physical damage instead of their standard damage.</p>\n",
+    "damageThresholds": {
+      "major": 6,
+      "severe": 10
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 5
+      },
+      "stress": {
+        "value": 0,
+        "max": 3
+      }
+    },
+    "motivesAndTactics": "Escape, profit, steal, throw smoke",
+    "experiences": {
+      "383fec8057914db5": {
+        "name": "Thief",
+        "value": 2
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/hand-grip-sword-orange.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 1
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d8+1"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "4ce1a4cd37a3189f",
+      "name": "Climber - Passive",
+      "type": "feature",
+      "img": "icons/creatures/claws/claw-talons-yellow-red.webp",
+      "system": {
+        "description": "<p>The Bandit climbs just as easily as they run.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!5bf5138843f24c3a.4ce1a4cd37a3189f"
+    },
+    {
+      "_id": "a776d2be9b5ad988",
+      "name": "From Above - Passive",
+      "type": "feature",
+      "img": "icons/magic/control/buff-flight-wings-blue.webp",
+      "system": {
+        "description": "<p>When the Bandit succeeds on a standard attack from above a target, they deal 1d10+1 physical damage instead of their standard damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!5bf5138843f24c3a.a776d2be9b5ad988"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Bandit",
+    "actorLink": false
+  },
+  "_key": "!actors!5bf5138843f24c3a"
+}

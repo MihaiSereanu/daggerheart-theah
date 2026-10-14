@@ -31,10 +31,10 @@ export default class ImageSelectDialog extends HandlebarsApplicationMixin(Applic
     /** @override */
     static PARTS = {
         main: {
-            template: 'systems/daggerheart/templates/dialogs/image-select/main.hbs',
+            template: 'systems/daggerheart-theah/templates/dialogs/image-select/main.hbs',
             scrollable: ['.images-container']
         },
-        footer: { template: 'systems/daggerheart/templates/dialogs/image-select/footer.hbs' }
+        footer: { template: 'systems/daggerheart-theah/templates/dialogs/image-select/footer.hbs' }
     };
 
     async _prepareContext(_options) {

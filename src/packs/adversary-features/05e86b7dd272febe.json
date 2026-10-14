@@ -1,0 +1,15 @@
+{
+  "_id": "05e86b7dd272febe",
+  "name": "Fumigation",
+  "type": "feature",
+  "img": "icons/weapons/daggers/dagger-poisoned-curved-green.webp",
+  "system": {
+    "description": "<p>Drop a smoke bomb that fills the air within Close range with smoke, Dizzying all targets in this area. Dizzied targets have Disadvantage on their next action roll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!05e86b7dd272febe"
+}

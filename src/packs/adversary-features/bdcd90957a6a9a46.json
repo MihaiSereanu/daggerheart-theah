@@ -1,0 +1,15 @@
+{
+  "_id": "bdcd90957a6a9a46",
+  "name": "All Must Fall",
+  "type": "feature",
+  "img": "icons/tools/navigation/compass-brass-blue-red.webp",
+  "system": {
+    "description": "<p>When a PC rolls a failure with Fear while within Close range of the adversary, they lose a Hope.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!bdcd90957a6a9a46"
+}

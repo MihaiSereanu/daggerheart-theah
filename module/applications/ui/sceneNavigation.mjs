@@ -14,7 +14,7 @@ export default class DhSceneNavigation extends foundry.applications.ui.SceneNavi
     static PARTS = {
         scenes: {
             root: true,
-            template: 'systems/daggerheart/templates/ui/sceneNavigation/scene-navigation.hbs'
+            template: 'systems/daggerheart-theah/templates/ui/sceneNavigation/scene-navigation.hbs'
         }
     };
 
@@ -25,9 +25,9 @@ export default class DhSceneNavigation extends foundry.applications.ui.SceneNavi
         const extendScenes = scenes =>
             scenes.map(x => {
                 const scene = game.scenes.get(x.id);
-                if (!scene.flags.daggerheart) return x;
+                if (!scene.flags['daggerheart-theah']) return x;
 
-                const daggerheartInfo = new game.system.api.data.scenes.DHScene(scene.flags.daggerheart);
+                const daggerheartInfo = new game.system.api.data.scenes.DHScene(scene.flags['daggerheart-theah']);
                 const environments = daggerheartInfo.sceneEnvironments.filter(
                     x => x && x.testUserPermission(game.user, 'LIMITED')
                 );
@@ -49,7 +49,7 @@ export default class DhSceneNavigation extends foundry.applications.ui.SceneNavi
     static async #openSceneEnvironment(event, button) {
         const scene = game.scenes.get(button.dataset.sceneId);
         const sceneEnvironments = new game.system.api.data.scenes.DHScene(
-            scene.flags.daggerheart
+            scene.flags['daggerheart-theah']
         ).sceneEnvironments.filter(x => x.testUserPermission(game.user, 'LIMITED'));
 
         if (sceneEnvironments.length === 1 || event.shiftKey) {
@@ -61,8 +61,8 @@ export default class DhSceneNavigation extends foundry.applications.ui.SceneNavi
                 sceneEnvironments.map(environment => ({
                     name: environment.name,
                     callback: () => {
-                        if (scene.flags.daggerheart.sceneEnvironments[0] !== environment.uuid) {
-                            const newEnvironments = scene.flags.daggerheart.sceneEnvironments;
+                        if (scene.flags['daggerheart-theah']-theah.sceneEnvironments[0] !== environment.uuid) {
+                            const newEnvironments = scene.flags['daggerheart-theah']-theah.sceneEnvironments;
                             const newFirst = newEnvironments.splice(
                                 newEnvironments.findIndex(x => x === environment.uuid),
                                 1
@@ -71,7 +71,7 @@ export default class DhSceneNavigation extends foundry.applications.ui.SceneNavi
                             emitGMUpdate(
                                 GMUpdateEvent.UpdateDocument,
                                 scene.update.bind(scene),
-                                { 'flags.daggerheart.sceneEnvironments': newEnvironments },
+                                { 'flags.daggerheart-theah.sceneEnvironments': newEnvironments },
                                 scene.uuid
                             );
                         }

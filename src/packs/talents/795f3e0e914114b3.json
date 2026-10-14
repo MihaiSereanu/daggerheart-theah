@@ -1,0 +1,20 @@
+{
+  "_id": "795f3e0e914114b3",
+  "name": "Lorekeeper",
+  "type": "domainCard",
+  "img": "icons/sundries/books/book-embossed-jewel-gold-green.webp",
+  "system": {
+    "description": "<p>When you recall or research obscure knowledge, you may <strong>spend a Hope</strong> to always know a specific question about the topic. The GM will tell you honestly, and if the answer is unknown, they must give you a lead on where such knowledge might be found.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "lore",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "12efbf11db2e768a",
+  "_key": "!items!795f3e0e914114b3"
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "91b9b897eb361f30",
+  "name": "Vodacce",
+  "type": "ancestry",
+  "img": "icons/magic/symbols/mask-yellow-orange.webp",
+  "system": {
+    "description": "<p><strong>Sly</strong>. Gain an additional Stress at character creation.</p>\n<p><strong>Surefooted</strong>. You ignore Disadvantage on Finesse rolls.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "features": [
+      {
+        "type": "primary",
+        "item": "Compendium.daggerheart-theah.features.Item.54278abf5040276f"
+      },
+      {
+        "type": "secondary",
+        "item": "Compendium.daggerheart-theah.features.Item.92d9cf6b6ce13039"
+      }
+    ],
+    "loreReference": null
+  },
+  "effects": [],
+  "_key": "!items!91b9b897eb361f30"
+}

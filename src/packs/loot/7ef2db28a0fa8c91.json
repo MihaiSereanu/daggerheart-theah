@@ -1,0 +1,15 @@
+{
+  "_id": "7ef2db28a0fa8c91",
+  "name": "Syrneth Scouter",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Syrneth Scouter</strong>: You can store the name and details of up to three hostile creatures inside this headpiece. You gain a +1 bonus to action rolls against those creatures.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!7ef2db28a0fa8c91"
+}

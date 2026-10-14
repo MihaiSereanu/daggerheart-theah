@@ -1,0 +1,69 @@
+{
+  "_id": "3b220f7944990ebd",
+  "name": "Dense Forest",
+  "type": "environment",
+  "img": "systems/daggerheart-theah/assets/icons/documents/actors/forest.svg",
+  "system": {
+    "description": "<p><em>A overgrown forest where the paths are narrow and visibility is poor</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "standard",
+    "type": "exploration",
+    "difficulty": 12,
+    "notes": "<h3>Standard | Exploration</h3>\n<p><em>A overgrown forest where the paths are narrow and visibility is poor</em><br><strong>Impulses:</strong> Ambush the unwary, block safe passage</p>\n<p><strong>Difficulty:</strong> 12</p>\n<h4>Features</h4>\n<p><strong>Signs of Trouble - Passive</strong>: The forest shows signs of recent human activity. A PC can make an Instinct Roll to notice details. On a success with Hope, learn all three pieces of information below. On a success with Fear, learn two. On a failure, a PC can mark 3 Stress to learn one and gain Advantage on the next roll to deal with this environment. A PC with a relevant background or Experience can learn an additional detail and ask a follow-up question about what they find, receiving a truthful answer.</p>\n<ul>\n<li>Bootprints and broken branches suggest several people passed through recently, moving off the path.</li>\n<li>A makeshift campsite nearby shows signs of a quick and hasty departure.</li>\n<li>Scratched trees mark the edge of some sort of site.</li>\n</ul>\n<p><strong>Falling Branches - Action</strong>: Pick a point along the path. All targets within Very Close range must succeed on a Finesse Reaction Roll or take 1d8+3 physical damage as a branch trap or deadfall crashes down. Those who fail are Restrained until freed with a successful Brawn Roll or by removing the debris.</p>\n<p><strong>Bandit Ambush - Action</strong>: A Bandit Shadow, two Bandit Archers, and a number of Bandit Lackeys equal to the number of PCs attack from cover, using the terrain for Advantage.</p>\n<p><strong>Call for Reinforcements - Action</strong>: Spend a Fear to summon 1d4 Bandit Lackeys, who arrive from Far range and immediately act.</p>\n",
+    "impulses": "Ambush the unwary, block safe passage"
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "20918e676174f260",
+      "name": "Signs of Trouble - Passive",
+      "type": "feature",
+      "img": "icons/skills/melee/swords-parry-block-yellow.webp",
+      "system": {
+        "description": "<p>The forest shows signs of recent human activity. A PC can make an Instinct Roll to notice details. On a success with Hope, learn all three pieces of information below. On a success with Fear, learn two. On a failure, a PC can mark 3 Stress to learn one and gain Advantage on the next roll to deal with this environment. A PC with a relevant background or Experience can learn an additional detail and ask a follow-up question about what they find, receiving a truthful answer.</p>\n<ul>\n<li>Bootprints and broken branches suggest several people passed through recently, moving off the path.</li>\n<li>A makeshift campsite nearby shows signs of a quick and hasty departure.</li>\n<li>Scratched trees mark the edge of some sort of site.</li>\n</ul>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!3b220f7944990ebd.20918e676174f260"
+    },
+    {
+      "_id": "df626f88a0f2b897",
+      "name": "Falling Branches - Action",
+      "type": "feature",
+      "img": "icons/tools/navigation/compass-brass-blue-red.webp",
+      "system": {
+        "description": "<p>Pick a point along the path. All targets within Very Close range must succeed on a Finesse Reaction Roll or take 1d8+3 physical damage as a branch trap or deadfall crashes down. Those who fail are Restrained until freed with a successful Brawn Roll or by removing the debris.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!3b220f7944990ebd.df626f88a0f2b897"
+    },
+    {
+      "_id": "7fc2f1c41b3951e5",
+      "name": "Bandit Ambush - Action",
+      "type": "feature",
+      "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+      "system": {
+        "description": "<p>A Bandit Shadow, two Bandit Archers, and a number of Bandit Lackeys equal to the number of PCs attack from cover, using the terrain for Advantage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!3b220f7944990ebd.7fc2f1c41b3951e5"
+    },
+    {
+      "_id": "7ff0e2f2ac7b7843",
+      "name": "Call for Reinforcements - Action",
+      "type": "feature",
+      "img": "icons/equipment/shield/heater-steel-gold.webp",
+      "system": {
+        "description": "<p>Spend a Fear to summon 1d4 Bandit Lackeys, who arrive from Far range and immediately act.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!3b220f7944990ebd.7ff0e2f2ac7b7843"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Dense Forest",
+    "actorLink": false
+  },
+  "_key": "!actors!3b220f7944990ebd"
+}

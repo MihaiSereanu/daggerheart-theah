@@ -20,7 +20,7 @@ Parameters:
 --}}
 
 <li class="inventory-item {{#if inactive}}inactive{{/if}}" data-item-id="{{item.id}}"
-    {{#if (or (eq type 'action' ) (eq type 'attack' ))}}data-action-id="{{item.id}}" {{/if}} 
+    {{#if (or (eq type 'action' ) (eq type 'attack' ))}}data-action-id="{{item.id}}" {{/if}}
     {{#if (or inactive disabledEffect)}}data-disabled="true"{{/if}}
     data-type="{{type}}" data-item-type="{{item.type}}"
     data-item-uuid="{{item.uuid}}" data-no-compendium-edit="{{noCompendiumEdit}}"
@@ -32,13 +32,13 @@ Parameters:
                 {{#unless (eq showActions false)}}data-action='{{ifThen (and (not inactive) item.usable) "useItem" (ifThen (hasProperty item "toChat" ) "toChat" "editDoc" ) }}'{{/unless}}
                 {{#unless hideTooltip}} {{#if (eq type 'attack' )}} data-tooltip="#attack#{{item.actor.uuid}}" {{else}} data-tooltip="#item#{{item.uuid}}" {{/if}} {{/unless}}
             >
-                    <img src="{{item.img}}" class="item-img {{#if isActor}}actor-img{{/if}}" 
+                    <img src="{{item.img}}" class="item-img {{#if isActor}}actor-img{{/if}}"
             />
                 {{#if (and (not inactive) item.usable (ne showActions false))}}
                     {{#if @root.isNPC}}
-                        <img class="roll-img d20" src="systems/daggerheart/assets/icons/dice/default/d20.svg" alt="d20">
+                        <img class="roll-img d20" src="systems/daggerheart-theah/assets/icons/dice/default/d20.svg" alt="d20">
                     {{else}}
-                        <img class="roll-img duality" src="systems/daggerheart/assets/icons/dice/duality/DualityBW.svg" alt="2d12">
+                        <img class="roll-img duality" src="systems/daggerheart-theah/assets/icons/dice/duality/DualityBW.svg" alt="2d12">
                     {{/if}}
                 {{/if}}
             </div>
@@ -50,13 +50,13 @@ Parameters:
 
                 {{!-- Tags Start --}}
                 {{#if (not hideTags)}}
-                    {{#> "systems/daggerheart/templates/sheets/global/partials/item-tags.hbs" item}}
+                    {{#> "systems/daggerheart-theah/templates/sheets/global/partials/item-tags.hbs" item}}
                         {{#if (and (eq ../type 'feature') system.featureForm (ne @root.document.type "character"))}}
                             <div class="tag feature-form">
                                 <span class="recall-value">{{localize (concat "DAGGERHEART.CONFIG.FeatureForm." system.featureForm)}}</span>
                             </div>
                         {{/if}}
-                    {{/ "systems/daggerheart/templates/sheets/global/partials/item-tags.hbs"}}
+                    {{/ "systems/daggerheart-theah/templates/sheets/global/partials/item-tags.hbs"}}
                 {{/if}}
 
             {{!--Tags End --}}
@@ -64,7 +64,7 @@ Parameters:
 
             {{!-- Simple Resource --}}
             {{#if (and (not hideResources) (not (eq item.system.resource.type 'diceValue')))}}
-                {{> "systems/daggerheart/templates/sheets/global/partials/item-resource.hbs"}}
+                {{> "systems/daggerheart-theah/templates/sheets/global/partials/item-resource.hbs"}}
             {{/if}}
             {{#if (or isQuantifiable (or (eq item.system.quantity 0) (gt item.system.quantity 1)))}}
                 <div class="item-resource">
@@ -95,10 +95,7 @@ Parameters:
                             </a>
                         {{/if}}
                         {{#if (and (eq type 'domainCard'))}}
-                            <a data-action="toggleVault"
-                                data-tooltip="DAGGERHEART.UI.Tooltip.{{ifThen item.system.inVault 'sendToLoadout' 'sendToVault' }}">
-                                <i class="fa-solid {{ifThen item.system.inVault 'fa-arrow-up' 'fa-arrow-down'}}" inert></i>
-                            </a>
+
                         {{/if}}
                         {{#if (and (and (eq type 'effect') (not (eq item.type 'beastform'))))}}
                             <a data-action="toggleEffect"
@@ -146,9 +143,17 @@ Parameters:
     </div>
     {{!-- Dice Resource --}}
     {{#if (and (not hideResources) (eq item.system.resource.type 'diceValue'))}}
-        {{> "systems/daggerheart/templates/sheets/global/partials/item-resource.hbs"}}
+        {{> "systems/daggerheart-theah/templates/sheets/global/partials/item-resource.hbs"}}
     {{/if}}
     {{!-- Actions Buttons --}}
+    {{#each item.system.usageCounters as |counter key|}}
+        <div class="usage-counter">
+            <label>{{counter.label}}</label>
+            <input type="number" class="feature-usage-counter" data-counter="{{key}}" value="{{counter.value}}" min="0" max="{{rollParsed counter.max ../item.actor ../item true}}" {{#unless @root.editable}}disabled{{/unless}}>
+            <span>/ {{rollParsed counter.max ../item.actor ../item true}}</span>
+        </div>
+    {{/each}}
+    {{#if item.system.usageNote}}<p class="hint usage-note">{{item.system.usageNote}}</p>{{/if}}
     {{#if (and showActions item.system.actions.size)}}
     <div class="item-buttons">
         {{#each item.system.actions as | action |}}

@@ -1,0 +1,15 @@
+{
+  "_id": "0ed236985a4066ac",
+  "name": "First One's Ring",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>First One&#39;s Ring</strong>: Once per Rest, you can activate this ring after a successful attack against you to halve the damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!0ed236985a4066ac"
+}

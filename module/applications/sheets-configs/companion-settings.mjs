@@ -18,20 +18,20 @@ export default class DHCompanionSettings extends DHBaseActorSettings {
     static PARTS = {
         header: {
             id: 'header',
-            template: 'systems/daggerheart/templates/sheets-settings/companion-settings/header.hbs'
+            template: 'systems/daggerheart-theah/templates/sheets-settings/companion-settings/header.hbs'
         },
-        tabs: { template: 'systems/daggerheart/templates/sheets/global/tabs/tab-navigation.hbs' },
+        tabs: { template: 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-navigation.hbs' },
         details: {
             id: 'details',
-            template: 'systems/daggerheart/templates/sheets-settings/companion-settings/details.hbs'
+            template: 'systems/daggerheart-theah/templates/sheets-settings/companion-settings/details.hbs'
         },
         experiences: {
             id: 'experiences',
-            template: 'systems/daggerheart/templates/sheets-settings/companion-settings/experiences.hbs'
+            template: 'systems/daggerheart-theah/templates/sheets-settings/companion-settings/experiences.hbs'
         },
         attack: {
             id: 'attack',
-            template: 'systems/daggerheart/templates/sheets-settings/companion-settings/attack.hbs'
+            template: 'systems/daggerheart-theah/templates/sheets-settings/companion-settings/attack.hbs'
         }
     };
 

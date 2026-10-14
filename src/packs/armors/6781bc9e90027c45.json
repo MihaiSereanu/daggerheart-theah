@@ -1,0 +1,48 @@
+{
+  "_id": "6781bc9e90027c45",
+  "name": "Full Plate Armor",
+  "type": "armor",
+  "img": "icons/equipment/chest/breastplate-cuirass-steel-grey.webp",
+  "system": {
+    "description": "<p><strong>Very Heavy</strong>: -2 to Evasion; -1 to Finesse</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "armor": {
+      "max": 4,
+      "current": 0
+    },
+    "baseThresholds": {
+      "major": 8,
+      "severe": 17
+    },
+    "armorFeatures": []
+  },
+  "effects": [
+    {
+      "_id": "ce14764317413ce8",
+      "name": "Full Plate Armor",
+      "type": "base",
+      "transfer": true,
+      "img": "icons/equipment/chest/breastplate-cuirass-steel-grey.webp",
+      "system": {
+        "changes": [
+          {
+            "type": "add",
+            "key": "system.evasion",
+            "value": -2,
+            "phase": "initial"
+          },
+          {
+            "type": "add",
+            "key": "system.traits.finesse.value",
+            "value": -1,
+            "phase": "initial"
+          }
+        ]
+      },
+      "_key": "!items.effects!6781bc9e90027c45.ce14764317413ce8"
+    }
+  ],
+  "_key": "!items!6781bc9e90027c45"
+}

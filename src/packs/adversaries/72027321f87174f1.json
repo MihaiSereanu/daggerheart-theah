@@ -1,0 +1,100 @@
+{
+  "_id": "72027321f87174f1",
+  "name": "Bandit Kneebreaker",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>An imposing brawler carrying a large weapon.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "bruiser",
+    "difficulty": 12,
+    "notes": "<h3>Normal | Bruiser</h3>\n<p><em>An imposing brawler carrying a large weapon.</em><br><strong>Motives &amp; Tactics:</strong> Grapple, intimidate, profit, steal</p>\n<p><strong>Difficulty:</strong> 12 | <strong>Thresholds:</strong> 7/14 | <strong>HP:</strong> 7 | <strong>Stress:</strong> 4</p>\n<p><strong>ATK:</strong> +1 | Weapon: Melee | 1d10+2 phy</p>\n<hr>\n<p><strong>Experience:</strong> Unveiled Threats +3</p>\n<h4>Features</h4>\n<p><strong>I&#39;ve Got &#39;Em - Passive:</strong> Creatures Restrained by the Kneebreaker take double damage from attacks by other adversaries.</p>\n<p><strong>Hold Them Down - Action:</strong> Make an attack against a target within Melee range. On a success, the target takes no damage but is Restrained and Vulnerable. The target can break free, clearing both conditions, with a successful Brawn Roll or is freed automatically if the Kneebreaker takes Major or greater damage.</p>\n",
+    "damageThresholds": {
+      "major": 7,
+      "severe": 14
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 7
+      },
+      "stress": {
+        "value": 0,
+        "max": 4
+      }
+    },
+    "motivesAndTactics": "Grapple, intimidate, profit, steal",
+    "experiences": {
+      "8ac00d5eb0ebb1d0": {
+        "name": "Unveiled Threats",
+        "value": 3
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/hand-grip-sword-orange.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 1
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d10+2"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "a0dc47c9f054de95",
+      "name": "I've Got 'Em - Passive",
+      "type": "feature",
+      "img": "icons/magic/control/debuff-chains-shackles-movement-purple.webp",
+      "system": {
+        "description": "<p>Creatures Restrained by the Kneebreaker take double damage from attacks by other adversaries.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!72027321f87174f1.a0dc47c9f054de95"
+    },
+    {
+      "_id": "8e4a91b9a41841fd",
+      "name": "Hold Them Down - Action",
+      "type": "feature",
+      "img": "icons/magic/control/debuff-chains-shackles-movement-purple.webp",
+      "system": {
+        "description": "<p>Make an attack against a target within Melee range. On a success, the target takes no damage but is Restrained and Vulnerable. The target can break free, clearing both conditions, with a successful Brawn Roll or is freed automatically if the Kneebreaker takes Major or greater damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!72027321f87174f1.8e4a91b9a41841fd"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Bandit Kneebreaker",
+    "actorLink": false
+  },
+  "_key": "!actors!72027321f87174f1"
+}

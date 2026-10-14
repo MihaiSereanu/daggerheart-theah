@@ -1,0 +1,52 @@
+{
+  "_id": "3e7f5ac90608901d",
+  "name": "Rapier",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-guard-brass-worn.webp",
+  "system": {
+    "description": "<p><strong>Rapier</strong></p>\n<p><strong>Dueling</strong>: Gain ADV on the attack if none of the target&#39;s allies are within Close</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "blackpowder": false,
+    "reloading": false,
+    "secondary": false,
+    "burden": "oneHanded",
+    "weaponFeatures": [],
+    "attack": {
+      "_id": "331b1f3dba8da3c7",
+      "name": "Rapier",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/weapons/swords/sword-guard-brass-worn.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": "finesse",
+        "bonus": 0
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d8 + @finesse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "_key": "!items!3e7f5ac90608901d"
+}

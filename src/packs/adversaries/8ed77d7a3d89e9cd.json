@@ -1,0 +1,104 @@
+{
+  "_id": "8ed77d7a3d89e9cd",
+  "name": "Courtesan",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>An accomplished manipulator and master of the social arts.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "social",
+    "difficulty": 13,
+    "notes": "<h3>Normal | Social</h3>\n<p><em>An accomplished manipulator and master of the social arts.</em><br><strong>Motives &amp; Tactics:</strong> Entice, maneuver, secure patrons</p>\n<p><strong>Difficulty:</strong> 13 | <strong>Thresholds:</strong> 7/13 | <strong>HP:</strong> 3 | <strong>Stress:</strong> 4</p>\n<p><strong>ATK:</strong> -3 | Weapon: Melee | 1d4+3 physical</p>\n<hr>\n<p><strong>Experience:</strong> Manipulation +3, Socialite +3</p>\n<h4>Features</h4>\n<p><strong>Searing Glance - Reaction</strong>: When a PC within Close makes a Charm Roll, you can <strong>mark a Stress</strong> to cast a gaze toward the aftermath. If the target fails, they must <strong>mark 2 Stress</strong> and are Vulnerable until the scene ends or they succeed on a social action against the Courtesan. On the target’s success, they must <strong>mark a Stress</strong>.</p>\n<p><strong>Mockery - Action</strong>: Mark a Stress to say something mocking and force a target to make a Charm Reaction Roll (14). On a failure, the target must <strong>mark 2 Stress</strong> and is Vulnerable until the scene ends.</p>\n",
+    "damageThresholds": {
+      "major": 7,
+      "severe": 13
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 3
+      },
+      "stress": {
+        "value": 0,
+        "max": 4
+      }
+    },
+    "motivesAndTactics": "Entice, maneuver, secure patrons",
+    "experiences": {
+      "88caf4b96dad5264": {
+        "name": "Manipulation",
+        "value": 3
+      },
+      "fa2bc9280fa7b137": {
+        "name": "Socialite",
+        "value": 3
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/hand-grip-sword-orange.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": -3
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d4+3"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "d829352a9ee23c9f",
+      "name": "Searing Glance - Reaction",
+      "type": "feature",
+      "img": "icons/creatures/eyes/humanoid-single-purple-blue.webp",
+      "system": {
+        "description": "<p>When a PC within Close makes a Charm Roll, you can <strong>mark a Stress</strong> to cast a gaze toward the aftermath. If the target fails, they must <strong>mark 2 Stress</strong> and are Vulnerable until the scene ends or they succeed on a social action against the Courtesan. On the target’s success, they must <strong>mark a Stress</strong>.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!8ed77d7a3d89e9cd.d829352a9ee23c9f"
+    },
+    {
+      "_id": "044460f99049fe80",
+      "name": "Mockery - Action",
+      "type": "feature",
+      "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+      "system": {
+        "description": "<p>Mark a Stress to say something mocking and force a target to make a Charm Reaction Roll (14). On a failure, the target must <strong>mark 2 Stress</strong> and is Vulnerable until the scene ends.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!8ed77d7a3d89e9cd.044460f99049fe80"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Courtesan",
+    "actorLink": false
+  },
+  "_key": "!actors!8ed77d7a3d89e9cd"
+}

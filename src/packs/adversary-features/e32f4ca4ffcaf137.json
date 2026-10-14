@@ -1,0 +1,15 @@
+{
+  "_id": "e32f4ca4ffcaf137",
+  "name": "Hobbling Strike",
+  "type": "feature",
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "system": {
+    "description": "<p><strong>Mark a Stress</strong> to make an attack against a target within Melee range. On a success, deal 3d4+10 physical damage and make them Vulnerable until they clear at least 1 HP.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!e32f4ca4ffcaf137"
+}

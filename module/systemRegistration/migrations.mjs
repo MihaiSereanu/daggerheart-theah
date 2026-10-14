@@ -10,6 +10,12 @@ import { Migration_2_10_0_Refresh } from './migration-handlers/2_10_0-refresh.mj
 import { Migration_2_10_10_FixMoves } from './migration-handlers/2_10_10-fixmoves.mjs'
 
 export async function runMigrations() {
+    // This fork has its own version history. Upstream migrations refresh SRD data
+    // and must never rewrite the manuscript compendiums.
+    if (game.system.id === 'daggerheart-theah') {
+        if (game.user.isActiveGM) await game.settings.set(CONFIG.DH.id, CONFIG.DH.SETTINGS.gameSettings.LastMigrationVersion, game.system.version);
+        return;
+    }
     // All migrations here are meant for the active gm to run. 
     // If we ever need to migrate client settings, split into a new function
     if (!game.user.isActiveGM) return;
@@ -192,13 +198,13 @@ export async function runMigrations() {
     if (foundry.utils.isNewerVersion('1.5.5', lastMigrationVersion)) {
         /* Clear out Environments that were added directly from compendium */
         for (const scene of game.scenes) {
-            if (!scene.flags.daggerheart) continue;
-            const systemData = new game.system.api.data.scenes.DHScene(scene.flags.daggerheart);
+            if (!scene.flags['daggerheart-theah']) continue;
+            const systemData = new game.system.api.data.scenes.DHScene(scene.flags['daggerheart-theah']);
             const sceneEnvironments = systemData.sceneEnvironments;
 
             const newEnvironments = sceneEnvironments.filter(x => !x?.pack);
             if (newEnvironments.length !== sceneEnvironments.length)
-                await scene.update({ 'flags.daggerheart.sceneEnvironments': newEnvironments });
+                await scene.update({ 'flags.daggerheart-theah.sceneEnvironments': newEnvironments });
         }
 
         ui.nav.render(true);

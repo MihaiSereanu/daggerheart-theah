@@ -1,0 +1,20 @@
+{
+  "_id": "6d836f2d859de4b4",
+  "name": "Knightly Embodiment",
+  "type": "domainCard",
+  "img": "icons/magic/control/buff-luck-fortune-rainbow.webp",
+  "system": {
+    "description": "<p><strong>Spend 3 Hope</strong> to invoke the name of one of Eliodd’s 12 Knights. Describe the legend they’re known for and the Trait they embody. Until you roll with Fear, you gain Advantage on all rolls with that Trait. When you roll with Fear, the effect ends and you must <strong>mark a Stress.</strong></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "glamour",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "33dde1086e88a00a",
+  "_key": "!items!6d836f2d859de4b4"
+}

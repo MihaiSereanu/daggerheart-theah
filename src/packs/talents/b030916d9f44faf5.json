@@ -1,0 +1,28 @@
+{
+  "_id": "b030916d9f44faf5",
+  "name": "Adaptable Tactics",
+  "type": "domainCard",
+  "img": "icons/sundries/flags/banner-sword-blue.webp",
+  "system": {
+    "description": "<p>When you make a Reaction Roll, you can <strong>mark a Stress</strong> to add either your Instinct or Wits to the roll.</p>\n<p>Additionally, once per Rest when an ally in Very Close range would gain a Condition, describe how you aid your ally such that they avoid gaining it.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "anchor",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false,
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    }
+  },
+  "effects": [],
+  "folder": "9aaa1110e6898797",
+  "_key": "!items!b030916d9f44faf5"
+}

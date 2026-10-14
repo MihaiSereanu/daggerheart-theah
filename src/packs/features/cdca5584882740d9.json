@@ -1,0 +1,15 @@
+{
+  "_id": "cdca5584882740d9",
+  "name": "Agile",
+  "type": "feature",
+  "img": "icons/creatures/abilities/paw-print-orange.webp",
+  "system": {
+    "description": "<p>Your movement is silent, and you can <strong>spend a Hope</strong> to move up to Far range without rolling.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "714eb26a23174569",
+  "_key": "!items!cdca5584882740d9"
+}

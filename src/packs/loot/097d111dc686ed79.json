@@ -1,0 +1,15 @@
+{
+  "_id": "097d111dc686ed79",
+  "name": "Shackles of the Oathbound",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Shackles of the Oathbound</strong>: This pair of locking cuffs comes with a key.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!097d111dc686ed79"
+}

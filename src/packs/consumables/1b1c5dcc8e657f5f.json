@@ -1,0 +1,15 @@
+{
+  "_id": "1b1c5dcc8e657f5f",
+  "name": "Elixir of Growth",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Elixir of Growth</strong>: You can drink this elixir to double your size until you choose to drop this form or your next rest. While in this form, you have a +2 bonus to Brawn and a +1 bonus to your damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!1b1c5dcc8e657f5f"
+}

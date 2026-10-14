@@ -1,0 +1,15 @@
+{
+  "_id": "8a693fc124828381",
+  "name": "Art of the Deal",
+  "type": "feature",
+  "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+  "system": {
+    "description": "<p>Spend a Fear to offer a PC a dangerous bargain for something they need - Charm Reaction Roll (17). On a failure, they must <strong>mark 2 Stress</strong> or take the deal.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!8a693fc124828381"
+}

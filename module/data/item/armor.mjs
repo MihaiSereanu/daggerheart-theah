@@ -19,7 +19,7 @@ export default class DHArmor extends BaseDataItem {
         const fields = foundry.data.fields;
         return {
             ...super.defineSchema(),
-            tier: new fields.NumberField({ required: true, integer: true, initial: 1, min: 1 }),
+            ironbound: new fields.BooleanField({ initial: false }),
             equipped: new fields.BooleanField({ initial: false }),
             armor: new fields.SchemaField({
                 current: new fields.NumberField({ integer: true, min: 0, initial: 0 }),
@@ -44,7 +44,7 @@ export default class DHArmor extends BaseDataItem {
     /* -------------------------------------------- */
 
     /**@override */
-    static DEFAULT_ICON = 'systems/daggerheart/assets/icons/documents/items/chest-armor.svg';
+    static DEFAULT_ICON = 'icons/equipment/chest/breastplate-cuirass-steel-grey.webp';
 
     /* -------------------------------------------- */
 
@@ -65,7 +65,7 @@ export default class DHArmor extends BaseDataItem {
         const features = this.armorFeatures.map(x => allFeatures[x.value]).filter(x => x);
 
         const prefix = await foundry.applications.handlebars.renderTemplate(
-            'systems/daggerheart/templates/sheets/items/description.hbs',
+            'systems/daggerheart-theah/templates/sheets/items/description.hbs',
             { features }
         );
 

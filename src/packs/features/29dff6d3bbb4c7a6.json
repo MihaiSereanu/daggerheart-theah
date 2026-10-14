@@ -1,0 +1,15 @@
+{
+  "_id": "29dff6d3bbb4c7a6",
+  "name": "Targeted Strikes",
+  "type": "feature",
+  "img": "icons/skills/ranged/target-bullseye-arrow-green.webp",
+  "system": {
+    "description": "<p>When you succeed with Fear on an attack roll, you deal additional damage equal to your unmarked Hope.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "c50fbf95523e89b3",
+  "_key": "!items!29dff6d3bbb4c7a6"
+}

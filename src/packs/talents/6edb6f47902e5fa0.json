@@ -1,0 +1,20 @@
+{
+  "_id": "6edb6f47902e5fa0",
+  "name": "Fast Guard",
+  "type": "domainCard",
+  "img": "icons/skills/melee/swords-parry-block-yellow.webp",
+  "system": {
+    "description": "<p>Gain a bonus to your Armor Thresholds equal to your Finesse.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "tactics",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "6ba62ee322f96c14",
+  "_key": "!items!6edb6f47902e5fa0"
+}

@@ -8,7 +8,7 @@
             <legend>{{localize "DAGGERHEART.ITEMS.Class.hopeFeatures"}} <a><i class="fa-solid fa-plus icon-button" data-type="hope" data-action="addFeature"></i></a></legend>
             <div class="feature-list">
                 {{#each source.system.hopeFeatures as |feature|}}
-                    {{> 'systems/daggerheart/templates/sheets/global/partials/feature-section-item.hbs' type='hope' feature=feature}}
+                    {{> 'systems/daggerheart-theah/templates/sheets/global/partials/feature-section-item.hbs' type='hope' feature=feature}}
                 {{/each}}
             </div>
         </fieldset>
@@ -17,7 +17,7 @@
             <legend>{{localize "DAGGERHEART.ITEMS.Class.classFeatures"}} <a><i class="fa-solid fa-plus icon-button" data-type="class" data-action="addFeature"></i></a></legend>
             <div class="feature-list">
                 {{#each source.system.classFeatures as |feature|}}
-                    {{> 'systems/daggerheart/templates/sheets/global/partials/feature-section-item.hbs' type='class' feature=feature}}
+                    {{> 'systems/daggerheart-theah/templates/sheets/global/partials/feature-section-item.hbs' type='class' feature=feature}}
                 {{/each}}
             </div>
         </fieldset>

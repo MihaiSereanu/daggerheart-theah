@@ -1,0 +1,27 @@
+{
+  "_id": "0b64dd500bc1fb97",
+  "name": "Thief",
+  "type": "subclass",
+  "img": "icons/equipment/back/cloak-hooded-green-gold.webp",
+  "system": {
+    "description": "<p>Play the Thief if you want to sneak and steal with acrobatics</p>\n<h4>Features</h4>\n<p><strong>Breaking &amp; Entering</strong>. Gain Advantage on rolls made to pick locks, disarm traps or steal items.</p>\n<p><strong>Second-Story Work</strong>. When you move through a dense environment, you may <strong>mark a Stress</strong> to vault, climb, or leap with sudden agility and reposition within Far range.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.7eb41ddbad48fa95",
+    "spellcastingTrait": null,
+    "features": [
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.9f021ab1b50d0a2d"
+      },
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.f550712239e5525e"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": "91242742a1803151",
+  "_key": "!items!0b64dd500bc1fb97"
+}

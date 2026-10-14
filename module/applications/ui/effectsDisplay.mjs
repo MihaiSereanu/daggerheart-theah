@@ -35,7 +35,7 @@ export default class DhEffectsDisplay extends HandlebarsApplicationMixin(Applica
     static PARTS = {
         resources: {
             root: true,
-            template: 'systems/daggerheart/templates/ui/effects-display.hbs'
+            template: 'systems/daggerheart-theah/templates/ui/effects-display.hbs'
         }
     };
 

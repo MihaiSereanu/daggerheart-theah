@@ -1,0 +1,15 @@
+{
+  "_id": "3d148ad9b3c52472",
+  "name": "Blood and Souls",
+  "type": "feature",
+  "img": "icons/sundries/books/book-symbol-skull-grey.webp",
+  "system": {
+    "description": "<p>Countdown (Loop 6). Activate the first time an attack is made within sight of the adversary. It ticks down when a PC takes a violent action. When it triggers, summon 1d4 Demon minions at Close range, using the Minion creation benchmarks.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "reaction"
+  },
+  "effects": [],
+  "_key": "!items!3d148ad9b3c52472"
+}

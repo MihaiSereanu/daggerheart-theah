@@ -1,0 +1,50 @@
+{
+  "_id": "e4b5be0450e49e2e",
+  "name": "Sorcerous Attack",
+  "type": "weapon",
+  "img": "icons/weapons/staves/staff-ornate-jeweled-blue.webp",
+  "system": {
+    "description": "<p>You have learned to harness magic for violence with an <strong>Action Roll using your Spellcasting Trait</strong>. On a success, deal <em>1d6+Trait magic damage</em> within Far range. You must describe the attack in line with your chosen Tradition.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "sorcerous": true,
+    "burden": "oneHanded",
+    "secondary": false,
+    "attack": {
+      "_id": "7590120d273574de",
+      "name": "Sorcerous Attack",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/weapons/staves/staff-ornate-jeweled-blue.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "far",
+      "roll": {
+        "type": "attack",
+        "trait": "charm",
+        "bonus": 0
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "magical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d6 + @spellcastingTrait"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "_key": "!items!e4b5be0450e49e2e"
+}

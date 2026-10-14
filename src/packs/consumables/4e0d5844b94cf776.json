@@ -1,0 +1,15 @@
+{
+  "_id": "4e0d5844b94cf776",
+  "name": "Mirror of Marigold",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Mirror of Marigold</strong>: When you take damage, you can <strong>spend a Hope</strong> to negate that damage, after which the mirror shatters.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!4e0d5844b94cf776"
+}

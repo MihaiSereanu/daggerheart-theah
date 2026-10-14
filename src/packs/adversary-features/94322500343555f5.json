@@ -1,0 +1,15 @@
+{
+  "_id": "94322500343555f5",
+  "name": "Mana Bolt",
+  "type": "feature",
+  "img": "icons/magic/symbols/runes-star-magenta.webp",
+  "system": {
+    "description": "<p>Spend a Fear to lob explosive magic at a point within Far range. All targets within Very Close range of that point must make an Finesse Reaction Roll. Targets who fail take 2d8+20 magic damage and are knocked back to Close range. Targets who succeed take half damage and aren’t knocked back.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!94322500343555f5"
+}

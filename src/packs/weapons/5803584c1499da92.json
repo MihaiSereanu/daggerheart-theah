@@ -1,0 +1,52 @@
+{
+  "_id": "5803584c1499da92",
+  "name": "Warstaff",
+  "type": "weapon",
+  "img": "icons/weapons/staves/staff-simple-wrapped.webp",
+  "system": {
+    "description": "<p><strong>Warstaff</strong></p>\n<p><strong>Vault</strong>: On a successful attack, mark 1 Stress to move within Very Close</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "blackpowder": false,
+    "reloading": false,
+    "secondary": false,
+    "burden": "twoHanded",
+    "weaponFeatures": [],
+    "attack": {
+      "_id": "5d89bf954405d9ef",
+      "name": "Warstaff",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/weapons/staves/staff-simple-wrapped.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": "finesse",
+        "bonus": 0
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d8 + @finesse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "_key": "!items!5803584c1499da92"
+}

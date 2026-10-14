@@ -1,0 +1,71 @@
+{
+  "_id": "a9f09e4360bba599",
+  "name": "Halberd",
+  "type": "weapon",
+  "img": "icons/weapons/polearms/halberd-crescent-engraved-steel.webp",
+  "system": {
+    "description": "<p><strong>Halberd</strong></p>\n<p><strong>Cumbersome</strong>: -1 to Finesse</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "blackpowder": false,
+    "reloading": false,
+    "secondary": false,
+    "burden": "twoHanded",
+    "weaponFeatures": [],
+    "attack": {
+      "_id": "2686cfcc1a76a834",
+      "name": "Halberd",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/weapons/polearms/halberd-crescent-engraved-steel.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "veryClose",
+      "roll": {
+        "type": "attack",
+        "trait": "brawn",
+        "bonus": 0
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d10 + @brawn"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "d8094870f24f4da2",
+      "name": "Halberd",
+      "type": "base",
+      "transfer": true,
+      "img": "icons/weapons/polearms/halberd-crescent-engraved-steel.webp",
+      "system": {
+        "changes": [
+          {
+            "type": "add",
+            "key": "system.traits.finesse.value",
+            "value": -1,
+            "phase": "initial"
+          }
+        ]
+      },
+      "_key": "!items.effects!a9f09e4360bba599.d8094870f24f4da2"
+    }
+  ],
+  "_key": "!items!a9f09e4360bba599"
+}

@@ -1,0 +1,100 @@
+{
+  "_id": "1fd730da0391f7dd",
+  "name": "Spectral Warrior",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A ghostly fighter with spears and swords, anchored by duty.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "champion",
+    "type": "standard",
+    "difficulty": 15,
+    "notes": "<h3>Champion | Standard</h3>\n<p><em>A ghostly fighter with spears and swords, anchored by duty.</em><br><strong>Motives &amp; Tactics:</strong> Move through solid objects, protect, fight</p>\n<p><strong>Difficulty:</strong> 15 | <strong>Thresholds:</strong> 7/15 | <strong>HP:</strong> 4 | <strong>Stress:</strong> 3</p>\n<p><strong>ATK:</strong> +1 | Weapon: Very Close | 2d8+1 physical</p>\n<hr>\n<p><strong>Experience:</strong> Ancient Knowledge +2</p>\n<h4>Features</h4>\n<p><strong>Ghost - Passive</strong>: The Guardian has resistance to physical damage. Mark a Stress to move up to Close range through solid objects.</p>\n<p><strong>Grave Blade - Action</strong>: Spend a Fear to make an attack against a target within Very Close range. On a success, deal 2d10+6 physical damage and the target must <strong>mark a Stress</strong>.</p>\n",
+    "damageThresholds": {
+      "major": 7,
+      "severe": 15
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 4
+      },
+      "stress": {
+        "value": 0,
+        "max": 3
+      }
+    },
+    "motivesAndTactics": "Move through solid objects, protect, fight",
+    "experiences": {
+      "781735df788a7960": {
+        "name": "Ancient Knowledge",
+        "value": 2
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/ranged/target-bullseye-arrow-green.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "veryClose",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 1
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "2d8+1"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "0c998c2b7cac6d22",
+      "name": "Ghost - Passive",
+      "type": "feature",
+      "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+      "system": {
+        "description": "<p>The Guardian has resistance to physical damage. Mark a Stress to move up to Close range through solid objects.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!1fd730da0391f7dd.0c998c2b7cac6d22"
+    },
+    {
+      "_id": "6fefe92d9f65b38f",
+      "name": "Grave Blade - Action",
+      "type": "feature",
+      "img": "icons/sundries/books/book-symbol-skull-grey.webp",
+      "system": {
+        "description": "<p>Spend a Fear to make an attack against a target within Very Close range. On a success, deal 2d10+6 physical damage and the target must <strong>mark a Stress</strong>.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!1fd730da0391f7dd.6fefe92d9f65b38f"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Spectral Warrior",
+    "actorLink": false
+  },
+  "_key": "!actors!1fd730da0391f7dd"
+}

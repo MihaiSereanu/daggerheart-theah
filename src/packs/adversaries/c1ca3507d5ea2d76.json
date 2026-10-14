@@ -1,0 +1,122 @@
+{
+  "_id": "c1ca3507d5ea2d76",
+  "name": "Bandit Hexer",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A staff-wielding bandit adorned with magical paraphernalia.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "support",
+    "difficulty": 14,
+    "notes": "<h3>Normal | Support</h3>\n<p><em>A staff-wielding bandit adorned with magical paraphernalia.</em><br><strong>Motives &amp; Tactics:</strong> Command, hex, profit</p>\n<p><strong>Difficulty:</strong> 14 | <strong>Thresholds:</strong> 5/9 | <strong>HP:</strong> 4 | <strong>Stress:</strong> 4</p>\n<p><strong>ATK:</strong> +2 | Magic: Far | 1d6+2 magic</p>\n<hr>\n<p><strong>Experience:</strong> Magical Knowledge +2</p>\n<h4>Features</h4>\n<p><strong>Disheartening Blast - Passive</strong>: When a PC takes damage from the Hexer, they must <strong>mark a Stress</strong> or lose a Hope.</p>\n<p><strong>Curse - Action</strong>: Choose a target within Far range and temporarily Curse them. While the target is Cursed, you can <strong>mark a Stress</strong> when that target rolls with Hope to make the roll be with Fear instead.</p>\n<p><strong>Chaotic Flux - Action</strong>: Make an attack against up to three targets within Very Close range. Mark a Stress to deal 2d6+3 magic damage to targets the Hexer succeeded against.</p>\n<p><strong>Hex Blast - Reaction</strong>: When the Hexer makes a successful attack against a Cursed target, you can <strong>mark a Stress</strong> to deal an additional 1d6 damage and knock the target back to Close range.</p>\n",
+    "damageThresholds": {
+      "major": 5,
+      "severe": 9
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 4
+      },
+      "stress": {
+        "value": 0,
+        "max": 4
+      }
+    },
+    "motivesAndTactics": "Command, hex, profit",
+    "experiences": {
+      "b3bb384d3d76c0f9": {
+        "name": "Magical Knowledge",
+        "value": 2
+      }
+    },
+    "attack": {
+      "_id": "83715232bff67a38",
+      "name": "Magic",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/magic/symbols/runes-star-magenta.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "far",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 2
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "magical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d6+2"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "eb16404a88800c4a",
+      "name": "Disheartening Blast - Passive",
+      "type": "feature",
+      "img": "icons/magic/symbols/runes-star-magenta.webp",
+      "system": {
+        "description": "<p>When a PC takes damage from the Hexer, they must <strong>mark a Stress</strong> or lose a Hope.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!c1ca3507d5ea2d76.eb16404a88800c4a"
+    },
+    {
+      "_id": "9b418f307708af5e",
+      "name": "Curse - Action",
+      "type": "feature",
+      "img": "icons/magic/symbols/runes-star-magenta.webp",
+      "system": {
+        "description": "<p>Choose a target within Far range and temporarily Curse them. While the target is Cursed, you can <strong>mark a Stress</strong> when that target rolls with Hope to make the roll be with Fear instead.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!c1ca3507d5ea2d76.9b418f307708af5e"
+    },
+    {
+      "_id": "ffeb3abacfc82f9d",
+      "name": "Chaotic Flux - Action",
+      "type": "feature",
+      "img": "icons/magic/symbols/runes-star-magenta.webp",
+      "system": {
+        "description": "<p>Make an attack against up to three targets within Very Close range. Mark a Stress to deal 2d6+3 magic damage to targets the Hexer succeeded against.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!c1ca3507d5ea2d76.ffeb3abacfc82f9d"
+    },
+    {
+      "_id": "a993784ed7348ad2",
+      "name": "Hex Blast - Reaction",
+      "type": "feature",
+      "img": "icons/magic/symbols/runes-star-magenta.webp",
+      "system": {
+        "description": "<p>When the Hexer makes a successful attack against a Cursed target, you can <strong>mark a Stress</strong> to deal an additional 1d6 damage and knock the target back to Close range.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!c1ca3507d5ea2d76.a993784ed7348ad2"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Bandit Hexer",
+    "actorLink": false
+  },
+  "_key": "!actors!c1ca3507d5ea2d76"
+}

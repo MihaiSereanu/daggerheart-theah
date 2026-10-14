@@ -1,0 +1,52 @@
+{
+  "_id": "7654aa25ba3c4d33",
+  "name": "Broadsword",
+  "type": "weapon",
+  "img": "icons/weapons/swords/shortsword-broad-engraved.webp",
+  "system": {
+    "description": "<p><strong>Broadsword</strong></p>\n<p><strong>Reliable</strong>: +1 to attack rolls</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "blackpowder": false,
+    "reloading": false,
+    "secondary": false,
+    "burden": "oneHanded",
+    "weaponFeatures": [],
+    "attack": {
+      "_id": "4339e4e491f6d75b",
+      "name": "Broadsword",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/weapons/swords/shortsword-broad-engraved.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": "brawn",
+        "bonus": 1
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d8 + @brawn"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "_key": "!items!7654aa25ba3c4d33"
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "576ab0c5078d8352",
+  "name": "Intense Conviction",
+  "type": "domainCard",
+  "img": "icons/equipment/shield/heater-steel-gold.webp",
+  "system": {
+    "description": "<p>When you make a Charm roll to intimidate, you can <strong>spend a Hope</strong> to add your Brawn to the roll. In addition, once per Rest when you would gain a <em>Condition</em>, describe how you push through and avoid gaining it.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "valour",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false,
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    }
+  },
+  "effects": [],
+  "folder": "b68f69b8dced9462",
+  "_key": "!items!576ab0c5078d8352"
+}

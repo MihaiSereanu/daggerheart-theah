@@ -1,0 +1,15 @@
+{
+  "_id": "5088e858a31c0cda",
+  "name": "Rampage",
+  "type": "feature",
+  "img": "icons/creatures/abilities/bear-roar-bite-brown-green.webp",
+  "system": {
+    "description": "<p>When you roll a 1 on a damage die, you can roll a d10 and add the result to the damage roll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "e8129b5b4c6cbd24",
+  "_key": "!items!5088e858a31c0cda"
+}

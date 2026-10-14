@@ -4,7 +4,7 @@ export default class DhScene extends Scene {
      * @returns {{ enabled: boolean; melee: number; veryClose: number; close: number; far: number }} */
     get rangeSettings() {
         const { custom, disable } = CONFIG.DH.GENERAL.sceneRangeMeasurementSetting;
-        const sceneMeasurements = this.flags.daggerheart?.rangeMeasurement;
+        const sceneMeasurements = this.flags['daggerheart-theah']?.rangeMeasurement;
         const globalMeasurements = game.system.settings.variantRules.rangeMeasurement;
         return sceneMeasurements?.setting === disable.id
             ? { ...globalMeasurements, enabled: false }
@@ -55,7 +55,7 @@ export default class DhScene extends Scene {
         super.prepareBaseData();
 
         if (this instanceof game.system.api.documents.DhScene) {
-            const system = new game.system.api.data.scenes.DHScene(this.flags.daggerheart);
+            const system = new game.system.api.data.scenes.DHScene(this.flags['daggerheart-theah']);
 
             // Register this scene to all environements
             for (const environment of system.sceneEnvironments) {
@@ -68,20 +68,20 @@ export default class DhScene extends Scene {
         const allowed = await super._preUpdate(changes, options, user);
         if (allowed === false) return false;
 
-        if (changes.flags?.daggerheart) {
-            if (this._source.flags.daggerheart) {
-                const unregisterTriggerData = (this._source.flags.daggerheart.sceneEnvironments ?? []).reduce(
+        if (changes.flags?.['daggerheart-theah']) {
+            if (this._source.flags['daggerheart-theah']) {
+                const unregisterTriggerData = (this._source.flags['daggerheart-theah'].sceneEnvironments ?? []).reduce(
                     (acc, env) => {
-                        if (!changes.flags.daggerheart.sceneEnvironments.includes(env)) acc.sceneEnvironments.push(env);
+                        if (!changes.flags['daggerheart-theah'].sceneEnvironments.includes(env)) acc.sceneEnvironments.push(env);
 
                         return acc;
                     },
-                    { ...this._source.flags.daggerheart, sceneEnvironments: [] }
+                    { ...this._source.flags['daggerheart-theah'], sceneEnvironments: [] }
                 );
                 game.system.registeredTriggers.unregisterSceneEnvironmentTriggers(unregisterTriggerData);
             }
 
-            game.system.registeredTriggers.registerSceneEnvironmentTriggers(changes.flags.daggerheart);
+            game.system.registeredTriggers.registerSceneEnvironmentTriggers(changes.flags['daggerheart-theah']);
         }
     }
 
@@ -89,7 +89,7 @@ export default class DhScene extends Scene {
         super._onDelete(options, userId);
 
         if (this instanceof game.system.api.documents.DhScene) {
-            const system = new game.system.api.data.scenes.DHScene(this.flags.daggerheart);
+            const system = new game.system.api.data.scenes.DHScene(this.flags['daggerheart-theah']);
 
             // Clear this scene from all environments that aren't deleted
             for (const environment of system.sceneEnvironments) {

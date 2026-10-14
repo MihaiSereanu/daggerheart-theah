@@ -1,0 +1,15 @@
+{
+  "_id": "e33d558c5c22bea4",
+  "name": "Featherbone Relic",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Featherbone Relic</strong>: You can use this relic-bone to control your falling speed for a number of minutes equal to your level.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!e33d558c5c22bea4"
+}

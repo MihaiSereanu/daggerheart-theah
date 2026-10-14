@@ -1,0 +1,20 @@
+{
+  "_id": "79f232be5741dc0c",
+  "name": "Steel’s Promise",
+  "type": "domainCard",
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "system": {
+    "description": "<p>When you roll your damage dice, you can reroll any 1s or 2s.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "steel",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "6aabc2e2c710379d",
+  "_key": "!items!79f232be5741dc0c"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "7f1db42648b091f4",
+  "name": "Scoundrel’s Dodge",
+  "type": "feature",
+  "img": "icons/equipment/back/cloak-hooded-green-gold.webp",
+  "system": {
+    "description": "<p>Spend 3 Hope to gain a +2 bonus to your Evasion until the next time an attack succeeds against you. If no attack succeeds, the bonus lasts until your next Rest.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "62d44ae0349560d2",
+  "_key": "!items!7f1db42648b091f4"
+}

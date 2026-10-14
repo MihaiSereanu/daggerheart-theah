@@ -1,0 +1,23 @@
+{
+  "_id": "391a5135e2e57c39",
+  "name": "Battle Ritual",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-standard-blue.webp",
+  "system": {
+    "description": "<p>Once per rest, before you attempt something incredibly dangerous or face off against a foe who clearly outmatches you, describe what ritual you perform or preparations you make. When you do, clear 2 Stress and gain 2 Hope.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    }
+  },
+  "effects": [],
+  "folder": "bdef6361b368d1ef",
+  "_key": "!items!391a5135e2e57c39"
+}

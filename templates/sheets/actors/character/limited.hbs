@@ -60,7 +60,7 @@
             <div class="domains-section">
                 {{#each document.system.domainData as |data|}}
                     <div class="domain">
-                        <img src="{{data.src}}" alt="" data-tooltip="{{data.description}}" />
+                        <img src="{{data.src}}" alt="{{data.label}}" data-tooltip="#domain#{{data.id}}" />
                         <span>{{data.label}}</span>
                     </div>
                 {{/each}}

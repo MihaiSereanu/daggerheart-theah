@@ -1,94 +1,56 @@
 import { HordeAdversaryType } from '../data/actor/adversaryTypes/_module.mjs';
 
 export const abilities = {
-    agility: {
-        id: 'agility',
-        label: 'DAGGERHEART.CONFIG.Traits.agility.name',
-        verbs: [
-            'DAGGERHEART.CONFIG.Traits.agility.verb.sprint',
-            'DAGGERHEART.CONFIG.Traits.agility.verb.leap',
-            'DAGGERHEART.CONFIG.Traits.agility.verb.maneuver'
+    "brawn": {
+        "id": "brawn",
+        "label": "Brawn",
+        "verbs": [
+            "Lift",
+            "Smash",
+            "Grapple"
         ]
     },
-    strength: {
-        id: 'strength',
-        label: 'DAGGERHEART.CONFIG.Traits.strength.name',
-        verbs: [
-            'DAGGERHEART.CONFIG.Traits.strength.verb.lift',
-            'DAGGERHEART.CONFIG.Traits.strength.verb.smash',
-            'DAGGERHEART.CONFIG.Traits.strength.verb.grapple'
+    "charm": {
+        "id": "charm",
+        "label": "Charm",
+        "verbs": [
+            "Attract",
+            "Perform",
+            "Deceive"
         ]
     },
-    finesse: {
-        id: 'finesse',
-        label: 'DAGGERHEART.CONFIG.Traits.finesse.name',
-        verbs: [
-            'DAGGERHEART.CONFIG.Traits.finesse.verb.control',
-            'DAGGERHEART.CONFIG.Traits.finesse.verb.hide',
-            'DAGGERHEART.CONFIG.Traits.finesse.verb.tinker'
+    "finesse": {
+        "id": "finesse",
+        "label": "Finesse",
+        "verbs": [
+            "Sprint",
+            "Dodge",
+            "Hide"
         ]
     },
-    instinct: {
-        id: 'instinct',
-        label: 'DAGGERHEART.CONFIG.Traits.instinct.name',
-        verbs: [
-            'DAGGERHEART.CONFIG.Traits.instinct.verb.perceive',
-            'DAGGERHEART.CONFIG.Traits.instinct.verb.sense',
-            'DAGGERHEART.CONFIG.Traits.instinct.verb.navigate'
+    "instinct": {
+        "id": "instinct",
+        "label": "Instinct",
+        "verbs": [
+            "Perceive",
+            "Sense",
+            "Navigate"
         ]
     },
-    presence: {
-        id: 'presence',
-        label: 'DAGGERHEART.CONFIG.Traits.presence.name',
-        verbs: [
-            'DAGGERHEART.CONFIG.Traits.presence.verb.charm',
-            'DAGGERHEART.CONFIG.Traits.presence.verb.perform',
-            'DAGGERHEART.CONFIG.Traits.presence.verb.deceive'
-        ]
-    },
-    knowledge: {
-        id: 'knowledge',
-        label: 'DAGGERHEART.CONFIG.Traits.knowledge.name',
-        verbs: [
-            'DAGGERHEART.CONFIG.Traits.knowledge.verb.recall',
-            'DAGGERHEART.CONFIG.Traits.knowledge.verb.analyze',
-            'DAGGERHEART.CONFIG.Traits.knowledge.verb.comprehend'
+    "wits": {
+        "id": "wits",
+        "label": "Wits",
+        "verbs": [
+            "Recall",
+            "Analyze",
+            "Comprehend"
         ]
     }
 };
 
 export const standardAttackId = '000BASEATTACK000';
 
-export const featureProperties = {
-    agility: {
-        name: 'DAGGERHEART.CONFIG.Traits.agility.name',
-        path: actor => actor.system.traits.agility.data.value
-    },
-    strength: {
-        name: 'DAGGERHEART.CONFIG.Traits.strength.name',
-        path: actor => actor.system.traits.strength.data.value
-    },
-    finesse: {
-        name: 'DAGGERHEART.CONFIG.Traits.finesse.name',
-        path: actor => actor.system.traits.finesse.data.value
-    },
-    instinct: {
-        name: 'DAGGERHEART.CONFIG.Traits.instinct.name',
-        path: actor => actor.system.traits.instinct.data.value
-    },
-    presence: {
-        name: 'DAGGERHEART.CONFIG.Traits.presence.name',
-        path: actor => actor.system.traits.presence.data.value
-    },
-    knowledge: {
-        name: 'DAGGERHEART.CONFIG.Traits.knowledge.name',
-        path: actor => actor.system.traits.knowledge.data.value
-    },
-    spellcastingTrait: {
-        name: 'DAGGERHEART.FeatureProperty.SpellcastingTrait',
-        path: actor => actor.system.traits[actor.system.class.subclass.system.spellcastingTrait].data.value
-    }
-};
+export const featureProperties = Object.fromEntries(Object.entries(abilities).map(([key, trait]) => [key, { name: trait.label, path: actor => actor.system.traits[key].value }]));
 
 export const adversaryTypes = {
     bruiser: {
@@ -239,7 +201,6 @@ export const tokenSize = {
 export const activeEffectExtraPaths = {
     adversary: [],
     character: [
-        { value: '@prof', label: 'DAGGERHEART.GENERAL.proficiency', group: 'TYPES.Actor.character' },
         { value: '@cast', label: 'DAGGERHEART.CONFIG.ActiveEffectExtraPaths.cast.label', group: 'TYPES.Actor.character' }
     ],
     companion: [],
@@ -339,430 +300,8 @@ export const levelChoices = {
     }
 };
 
-export const levelupData = {
-    tier1: {
-        id: '2_4',
-        tier: 1,
-        levels: [2, 3, 4],
-        label: 'DAGGERHEART.APPLICATIONS.Levelup.tier1.Label',
-        info: 'DAGGERHEART.APPLICATIONS.Levelup.tier1.InfoLabel',
-        pretext: 'DAGGERHEART.APPLICATIONS.Levelup.tier1.Pretext',
-        posttext: 'DAGGERHEART.APPLICATIONS.Levelup.tier1.Posttext',
-        choices: {
-            [levelChoices.attributes.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.attributes',
-                maxChoices: 3
-            },
-            [levelChoices.hitPointSlots.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.hitPointSlots',
-                maxChoices: 1
-            },
-            [levelChoices.stressSlots.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.stressSlots',
-                maxChoices: 1
-            },
-            [levelChoices.experiences.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.experiences',
-                maxChoices: 1
-            },
-            [levelChoices.proficiency.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.proficiency',
-                maxChoices: 1
-            },
-            [levelChoices.armorOrEvasionSlot.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.armorOrEvasionSlot',
-                maxChoices: 1
-            },
-            [levelChoices.majorDamageThreshold2.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.majorDamageThreshold2',
-                maxChoices: 1
-            },
-            [levelChoices.severeDamageThreshold2.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.severeDamageThreshold2',
-                maxChoices: 1
-            }
-        }
-    },
-    tier2: {
-        id: '5_7',
-        tier: 2,
-        levels: [5, 6, 7],
-        label: 'DAGGERHEART.APPLICATIONS.Levelup.tier2.Label',
-        info: 'DAGGERHEART.APPLICATIONS.Levelup.tier2.InfoLabel',
-        pretext: 'DAGGERHEART.APPLICATIONS.Levelup.tier2.Pretext',
-        posttext: 'DAGGERHEART.APPLICATIONS.Levelup.tier2.Posttext',
-        choices: {
-            [levelChoices.attributes.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.attributes',
-                maxChoices: 3
-            },
-            [levelChoices.hitPointSlots.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.hitPointSlots',
-                maxChoices: 2
-            },
-            [levelChoices.stressSlots.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.stressSlots',
-                maxChoices: 2
-            },
-            [levelChoices.experiences.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.experiences',
-                maxChoices: 1
-            },
-            [levelChoices.proficiency.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.proficiency',
-                maxChoices: 2
-            },
-            [levelChoices.armorOrEvasionSlot.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.armorOrEvasionSlot',
-                maxChoices: 2
-            },
-            [levelChoices.majorDamageThreshold2.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.majorDamageThreshold2',
-                maxChoices: 1
-            },
-            [levelChoices.severeDamageThreshold3.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.severeDamageThreshold3',
-                maxChoices: 1
-            },
-            [levelChoices.subclass.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.subclass',
-                maxChoices: 1
-            },
-            [levelChoices.multiclass.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.multiclass',
-                maxChoices: 1,
-                cost: 2
-            }
-        }
-    },
-    tier3: {
-        id: '8_10',
-        tier: 3,
-        levels: [8, 9, 10],
-        label: 'DAGGERHEART.APPLICATIONS.Levelup.tier3.Label',
-        info: 'DAGGERHEART.APPLICATIONS.Levelup.tier3.InfoLabel',
-        pretext: 'DAGGERHEART.APPLICATIONS.Levelup.tier3.Pretext',
-        posttext: 'DAGGERHEART.APPLICATIONS.Levelup.tier3.Posttext',
-        choices: {
-            [levelChoices.attributes.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.attributes',
-                maxChoices: 3
-            },
-            [levelChoices.hitPointSlots.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.hitPointSlots',
-                maxChoices: 2
-            },
-            [levelChoices.stressSlots.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.stressSlots',
-                maxChoices: 2
-            },
-            [levelChoices.experiences.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.experiences',
-                maxChoices: 1
-            },
-            [levelChoices.proficiency.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.proficiency',
-                maxChoices: 2
-            },
-            [levelChoices.armorOrEvasionSlot.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.armorOrEvasionSlot',
-                maxChoices: 2
-            },
-            [levelChoices.majorDamageThreshold2.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.majorDamageThreshold2',
-                maxChoices: 1
-            },
-            [levelChoices.severeDamageThreshold4.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.severeDamageThreshold4',
-                maxChoices: 1
-            },
-            [levelChoices.subclass.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.subclass',
-                maxChoices: 1
-            },
-            [levelChoices.multiclass.name]: {
-                description: 'DAGGERHEART.APPLICATIONS.Levelup.choiceDescriptions.multiclass',
-                maxChoices: 1,
-                cost: 2
-            }
-        }
-    }
-};
-
 export const subclassFeatureLabels = {
     1: 'DAGGERHEART.ITEMS.DomainCard.foundationTitle',
     2: 'DAGGERHEART.ITEMS.DomainCard.specializationTitle',
     3: 'DAGGERHEART.ITEMS.DomainCard.masteryTitle'
-};
-
-/**
- * @typedef {Object} TierData
- * @property {number} difficulty
- * @property {number} majorThreshold
- * @property {number} severeThreshold
- * @property {number} hp
- * @property {number} stress
- * @property {number} attack
- * @property {number[]} damage
- */
-
-/**
- * @type {Record<string, Record<2 | 3 | 4, TierData>}
- * Scaling data used to change an adversary's tier. Each rank is applied incrementally.
- */
-export const adversaryScalingData = {
-    bruiser: {
-        2: {
-            difficulty: 2,
-            majorThreshold: 5,
-            severeThreshold: 10,
-            hp: 1,
-            stress: 2,
-            attack: 2
-        },
-        3: {
-            difficulty: 2,
-            majorThreshold: 7,
-            severeThreshold: 15,
-            hp: 1,
-            stress: 0,
-            attack: 2
-        },
-        4: {
-            difficulty: 2,
-            majorThreshold: 12,
-            severeThreshold: 25,
-            hp: 1,
-            stress: 0,
-            attack: 2
-        }
-    },
-    horde: {
-        2: {
-            difficulty: 2,
-            majorThreshold: 5,
-            severeThreshold: 8,
-            hp: 2,
-            stress: 0,
-            attack: 0
-        },
-        3: {
-            difficulty: 2,
-            majorThreshold: 5,
-            severeThreshold: 12,
-            hp: 0,
-            stress: 1,
-            attack: 1
-        },
-        4: {
-            difficulty: 2,
-            majorThreshold: 10,
-            severeThreshold: 15,
-            hp: 2,
-            stress: 0,
-            attack: 0
-        }
-    },
-    leader: {
-        2: {
-            difficulty: 2,
-            majorThreshold: 6,
-            severeThreshold: 10,
-            hp: 0,
-            stress: 0,
-            attack: 1
-        },
-        3: {
-            difficulty: 2,
-            majorThreshold: 6,
-            severeThreshold: 15,
-            hp: 1,
-            stress: 0,
-            attack: 2
-        },
-        4: {
-            difficulty: 2,
-            majorThreshold: 12,
-            severeThreshold: 25,
-            hp: 1,
-            stress: 1,
-            attack: 3
-        }
-    },
-    minion: {
-        2: {
-            difficulty: 2,
-            majorThreshold: 0,
-            severeThreshold: 0,
-            hp: 0,
-            stress: 0,
-            attack: 1
-        },
-        3: {
-            difficulty: 2,
-            majorThreshold: 0,
-            severeThreshold: 0,
-            hp: 0,
-            stress: 1,
-            attack: 1
-        },
-        4: {
-            difficulty: 2,
-            majorThreshold: 0,
-            severeThreshold: 0,
-            hp: 0,
-            stress: 0,
-            attack: 1
-        }
-    },
-    ranged: {
-        2: {
-            difficulty: 2,
-            majorThreshold: 3,
-            severeThreshold: 6,
-            hp: 1,
-            stress: 0,
-            attack: 1
-        },
-        3: {
-            difficulty: 2,
-            majorThreshold: 7,
-            severeThreshold: 14,
-            hp: 1,
-            stress: 1,
-            attack: 2
-        },
-        4: {
-            difficulty: 2,
-            majorThreshold: 5,
-            severeThreshold: 10,
-            hp: 1,
-            stress: 1,
-            attack: 1
-        }
-    },
-    skulk: {
-        2: {
-            difficulty: 2,
-            majorThreshold: 3,
-            severeThreshold: 8,
-            hp: 1,
-            stress: 1,
-            attack: 1
-        },
-        3: {
-            difficulty: 2,
-            majorThreshold: 8,
-            severeThreshold: 12,
-            hp: 1,
-            stress: 1,
-            attack: 1
-        },
-        4: {
-            difficulty: 2,
-            majorThreshold: 8,
-            severeThreshold: 10,
-            hp: 1,
-            stress: 1,
-            attack: 1
-        }
-    },
-    solo: {
-        2: {
-            difficulty: 2,
-            majorThreshold: 5,
-            severeThreshold: 10,
-            hp: 0,
-            stress: 1,
-            attack: 2
-        },
-        3: {
-            difficulty: 2,
-            majorThreshold: 7,
-            severeThreshold: 15,
-            hp: 2,
-            stress: 1,
-            attack: 2
-        },
-        4: {
-            difficulty: 2,
-            majorThreshold: 12,
-            severeThreshold: 25,
-            hp: 0,
-            stress: 1,
-            attack: 3
-        }
-    },
-    standard: {
-        2: {
-            difficulty: 2,
-            majorThreshold: 3,
-            severeThreshold: 8,
-            hp: 0,
-            stress: 0,
-            attack: 1
-        },
-        3: {
-            difficulty: 2,
-            majorThreshold: 7,
-            severeThreshold: 15,
-            hp: 1,
-            stress: 1,
-            attack: 1
-        },
-        4: {
-            difficulty: 2,
-            majorThreshold: 10,
-            severeThreshold: 15,
-            hp: 0,
-            stress: 1,
-            attack: 1
-        }
-    },
-    support: {
-        2: {
-            difficulty: 2,
-            majorThreshold: 3,
-            severeThreshold: 8,
-            hp: 1,
-            stress: 1,
-            attack: 1
-        },
-        3: {
-            difficulty: 2,
-            majorThreshold: 7,
-            severeThreshold: 12,
-            hp: 0,
-            stress: 0,
-            attack: 1
-        },
-        4: {
-            difficulty: 2,
-            majorThreshold: 8,
-            severeThreshold: 10,
-            hp: 1,
-            stress: 1,
-            attack: 1
-        }
-    }
-};
-
-/**
- * Scaling data used for an adversary's damage.
- * Tier 4 is missing certain adversary types and therefore skews upwards.
- * We manually set tier 4 data to hopefully lead to better results
- */
-export const adversaryExpectedDamage = {
-    basic: {
-        1: { mean: 7.321428571428571, deviation: 1.962519002770912 },
-        2: { mean: 12.444444444444445, deviation: 2.0631069425529676 },
-        3: { mean: 15.722222222222221, deviation: 2.486565208464823 },
-        4: { mean: 26, deviation: 5.2 }
-    },
-    minion: {
-        1: { mean: 2.142857142857143, deviation: 1.0690449676496976 },
-        2: { mean: 5, deviation: 0.816496580927726 },
-        3: { mean: 6.5, deviation: 2.1213203435596424 },
-        4: { mean: 11, deviation: 1 }
-    }
 };

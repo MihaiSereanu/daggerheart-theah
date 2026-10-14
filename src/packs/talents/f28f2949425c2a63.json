@@ -1,0 +1,28 @@
+{
+  "_id": "f28f2949425c2a63",
+  "name": "Rune of Rewrite",
+  "type": "domainCard",
+  "img": "icons/magic/symbols/runes-carved-stone-purple.webp",
+  "system": {
+    "description": "<p>Once per Rest after any roll, make a <strong>Spellcast Roll</strong> against the target Difficulty or against one set by the GM. On a success, <strong>spend a Hope</strong> to change the numerical result of that roll to one of your choice instead. The result must be within the range of the dice.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "galdr",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false,
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    }
+  },
+  "effects": [],
+  "folder": "1c31d70f005aa82e",
+  "_key": "!items!f28f2949425c2a63"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "3afee68959c2c8c7",
+  "name": "Alacrity Relic",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Alacrity Relic</strong>: You gain a +1 bonus to your Evasion. You can only carry one relic.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!3afee68959c2c8c7"
+}

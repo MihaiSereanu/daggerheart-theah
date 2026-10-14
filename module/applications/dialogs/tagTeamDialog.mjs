@@ -65,19 +65,19 @@ export default class TagTeamDialog extends HandlebarsApplicationMixin(Applicatio
     static PARTS = {
         initialization: {
             id: 'initialization',
-            template: 'systems/daggerheart/templates/dialogs/tagTeamDialog/initialization.hbs'
+            template: 'systems/daggerheart-theah/templates/dialogs/tagTeamDialog/initialization.hbs'
         },
         tagTeamRoll: {
             id: 'tagTeamRoll',
-            template: 'systems/daggerheart/templates/dialogs/tagTeamDialog/tagTeamRoll.hbs'
+            template: 'systems/daggerheart-theah/templates/dialogs/tagTeamDialog/tagTeamRoll.hbs'
         },
         rollSelection: {
             id: 'rollSelection',
-            template: 'systems/daggerheart/templates/dialogs/tagTeamDialog/rollSelection.hbs'
+            template: 'systems/daggerheart-theah/templates/dialogs/tagTeamDialog/rollSelection.hbs'
         },
         result: {
             id: 'result',
-            template: 'systems/daggerheart/templates/dialogs/tagTeamDialog/result.hbs'
+            template: 'systems/daggerheart-theah/templates/dialogs/tagTeamDialog/result.hbs'
         }
     };
 
@@ -116,7 +116,7 @@ export default class TagTeamDialog extends HandlebarsApplicationMixin(Applicatio
         for (const memberKey of Object.keys(this.party.system.tagTeam.members)) {
             parts[memberKey] = {
                 id: memberKey,
-                template: 'systems/daggerheart/templates/dialogs/tagTeamDialog/tagTeamMember.hbs'
+                template: 'systems/daggerheart-theah/templates/dialogs/tagTeamDialog/tagTeamMember.hbs'
             };
         }
 
@@ -324,6 +324,12 @@ export default class TagTeamDialog extends HandlebarsApplicationMixin(Applicatio
     }
 
     checkInitiatorHopeError(initiator) {
+        const selected = this.partyMembers.filter(m => m.selected);
+        const actors = selected.map(m => game.actors.get(m.id));
+        const leader = game.actors.get(initiator.memberId);
+        if (leader?.system.stuntUsed) { ui.notifications.warn('The initiator has already used their Stunt this session.'); return true; }
+        if (actors.some(a => a.id !== initiator.memberId && a.system.resources.hope.value < 1)) { ui.notifications.warn('The joining ally needs 1 Hope.'); return true; }
+
         if (initiator.cost && initiator.memberId) {
             const actor = game.actors.get(initiator.memberId);
             if (actor.system.resources.hope.value < initiator.cost) {
@@ -792,6 +798,10 @@ export default class TagTeamDialog extends HandlebarsApplicationMixin(Applicatio
             }
         } 
 
+        const allyId = Object.keys(tagTeamData.members).find(id => id !== tagTeamData.initiator.memberId);
+        if (allyId) actorResourceMaps[allyId].addResources([{ key: 'hope', value: -1, enabled: true }]);
+        await game.actors.get(tagTeamData.initiator.memberId).update({ 'system.stuntUsed': true });
+
         /* Even with Hope/Fear automation off, the hope cost of performing the TagTeamRoll can still optionally be subtracted */
         if (tagTeamData.initiator.cost) {
             const resourceMap = actorResourceMaps[tagTeamData.initiator.memberId];
@@ -799,7 +809,7 @@ export default class TagTeamDialog extends HandlebarsApplicationMixin(Applicatio
         }
 
         for (const resourceMap of Object.values(actorResourceMaps))
-            resourceMap.updateResources();
+            await resourceMap.updateResources();
 
         /* Fin */
         this.cancelRoll({ confirm: false });

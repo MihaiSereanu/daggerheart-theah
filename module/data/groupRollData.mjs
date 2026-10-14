@@ -26,7 +26,7 @@ export class CharacterData extends foundry.abstract.DataModel {
             img: new fields.StringField({ required: true }),
             rollChoice: new fields.StringField({
                 choices: CONFIG.DH.ACTOR.abilities,
-                initial: CONFIG.DH.ACTOR.abilities.agility.id
+                initial: CONFIG.DH.ACTOR.abilities.finesse.id
             }),
             rollData: new fields.JSONField({ nullable: true, initial: null }),
             selected: new fields.BooleanField({ initial: false }),

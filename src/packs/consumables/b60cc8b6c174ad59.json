@@ -1,0 +1,15 @@
+{
+  "_id": "b60cc8b6c174ad59",
+  "name": "Oracle’s Draft",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Oracle’s Draft</strong>: You gain a +1 bonus to your next Instinct Roll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!b60cc8b6c174ad59"
+}

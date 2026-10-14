@@ -1,0 +1,15 @@
+{
+  "_id": "92d9cf6b6ce13039",
+  "name": "Surefooted",
+  "type": "feature",
+  "img": "icons/magic/symbols/mask-yellow-orange.webp",
+  "system": {
+    "description": "<p>You ignore Disadvantage on Finesse rolls.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "531d1b16518c15f0",
+  "_key": "!items!92d9cf6b6ce13039"
+}

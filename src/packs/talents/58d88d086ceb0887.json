@@ -1,0 +1,20 @@
+{
+  "_id": "58d88d086ceb0887",
+  "name": "Measured Counsel",
+  "type": "domainCard",
+  "img": "icons/sundries/books/book-embossed-jewel-gold-green.webp",
+  "system": {
+    "description": "<p>When an ally within Close range rolls with Fear, you can <strong>spend 2 Hope</strong> to steady them. If they <strong>mark a Stress</strong> to heed your words, they can reroll the Fear die.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "lore",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "12efbf11db2e768a",
+  "_key": "!items!58d88d086ceb0887"
+}

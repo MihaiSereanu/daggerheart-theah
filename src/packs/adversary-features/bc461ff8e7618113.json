@@ -1,0 +1,15 @@
+{
+  "_id": "bc461ff8e7618113",
+  "name": "Death Quake",
+  "type": "feature",
+  "img": "icons/sundries/books/book-symbol-skull-grey.webp",
+  "system": {
+    "description": "<p>When the adversary marks their last HP, the magic powering them ruptures in an explosion of force. All targets within Close range must succeed on a Wits Reaction Roll to react in time or take 2d8+2 magic damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "reaction"
+  },
+  "effects": [],
+  "_key": "!items!bc461ff8e7618113"
+}

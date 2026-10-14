@@ -1,0 +1,69 @@
+{
+  "_id": "b12620d6e93594ef",
+  "name": "The Walkway",
+  "type": "environment",
+  "img": "systems/daggerheart-theah/assets/icons/documents/actors/forest.svg",
+  "system": {
+    "description": "<p><em>A blood-red space outside the mortal world, linked by magic.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "mythic",
+    "type": "traversal",
+    "difficulty": 20,
+    "notes": "<h3>Mythic | Traversal</h3>\n<p><em>A blood-red space outside the mortal world, linked by magic.</em><br><strong>Impulses:</strong> Pull off course, tempt with shortcuts, bleed them dry</p>\n<p><strong>Difficulty:</strong> 20</p>\n<h4>Features</h4>\n<p><strong>Bleeding Steps - Passive:</strong> The air here smells of iron, and every step leaves a crimson trace. Travel requires a Progress Countdown (8) to reach the correct door. On a failure, a PC must <strong>mark a Stress</strong> in addition to the roll’s other consequences.</p>\n<p><strong>The Walkway Hungers - Action: Countdown (Loop 14</strong>). Activate the countdown. When it triggers, all PCs must succeed on a Charm Reaction Roll or temporarily lose 1d4 from their highest Trait unless they mark a number of Stress equal to its value. Lost Trait points are regained if the PC critically succeeds or exits the Walkway.</p>\n<p><strong>Dragged Off the Path - Action</strong>: The target makes a Wits (15) Reaction. On a failure, a PC takes 2d10 direct magic damage. On a success, they still <strong>mark a Stress</strong>.</p>\n<p><strong>Echoes of Blood - Reaction:</strong> On a result with Fear, ask the PC what memory or regret the Walkway forces them to relive. The PC loses a Hope. If it is their last Hope, you gain a Fear.</p>\n",
+    "impulses": "Pull off course, tempt with shortcuts, bleed them dry"
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "3bd27d6b484d0214",
+      "name": "Bleeding Steps - Passive",
+      "type": "feature",
+      "img": "icons/tools/navigation/compass-brass-blue-red.webp",
+      "system": {
+        "description": "<p>The air here smells of iron, and every step leaves a crimson trace. Travel requires a Progress Countdown (8) to reach the correct door. On a failure, a PC must <strong>mark a Stress</strong> in addition to the roll’s other consequences.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!b12620d6e93594ef.3bd27d6b484d0214"
+    },
+    {
+      "_id": "777b8df21a17352a",
+      "name": "The Walkway Hungers - Action",
+      "type": "feature",
+      "img": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+      "system": {
+        "description": "<p>Countdown (Loop 14). Activate the countdown. When it triggers, all PCs must succeed on a Charm Reaction Roll or temporarily lose 1d4 from their highest Trait unless they mark a number of Stress equal to its value. Lost Trait points are regained if the PC critically succeeds or exits the Walkway.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!b12620d6e93594ef.777b8df21a17352a"
+    },
+    {
+      "_id": "a76ba271285a6b6f",
+      "name": "Dragged Off the Path - Action",
+      "type": "feature",
+      "img": "icons/magic/control/debuff-chains-shackles-movement-purple.webp",
+      "system": {
+        "description": "<p>The target makes a Wits (15) Reaction. On a failure, a PC takes 2d10 direct magic damage. On a success, they still <strong>mark a Stress</strong>.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!b12620d6e93594ef.a76ba271285a6b6f"
+    },
+    {
+      "_id": "4566663667eaf089",
+      "name": "Echoes of Blood - Reaction",
+      "type": "feature",
+      "img": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+      "system": {
+        "description": "<p>On a result with Fear, ask the PC what memory or regret the Walkway forces them to relive. The PC loses a Hope. If it is their last Hope, you gain a Fear.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!b12620d6e93594ef.4566663667eaf089"
+    }
+  ],
+  "prototypeToken": {
+    "name": "The Walkway",
+    "actorLink": false
+  },
+  "_key": "!actors!b12620d6e93594ef"
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "2b1f414c261d4f8d",
+  "name": "Ashurite Disciple",
+  "type": "subclass",
+  "img": "icons/weapons/daggers/dagger-poisoned-curved-green.webp",
+  "system": {
+    "description": "<p>Play the Ashurite Disciple if you want to end fights before they begin.</p>\n<h4>Features</h4>\n<p><strong>Death Strike</strong>. The first attack during a scene that benefits from your Ambush feature deals double damage. In addition, the target is dead unless the GM spends a Fear.</p>\n<p><strong>Deadly Rehearsal</strong>. Once per Rest, you can <strong>mark a Stress</strong> to change an attack roll from a failure into a success with Fear.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.922ee2f235aeca23",
+    "spellcastingTrait": null,
+    "features": [
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.47569e49efd557be"
+      },
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.6bec04a1e1d3597b"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": "8fb6e3126dedbc2d",
+  "_key": "!items!2b1f414c261d4f8d"
+}

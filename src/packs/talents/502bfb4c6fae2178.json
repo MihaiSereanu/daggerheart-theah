@@ -1,0 +1,20 @@
+{
+  "_id": "502bfb4c6fae2178",
+  "name": "Keen Intuition",
+  "type": "domainCard",
+  "img": "icons/sundries/books/book-embossed-jewel-gold-green.webp",
+  "system": {
+    "description": "<p>When you fail an Action Roll, you quickly analyze your mistake. Your next roll has advantage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "lore",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "12efbf11db2e768a",
+  "_key": "!items!502bfb4c6fae2178"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "24785d1e5e2991df",
+  "name": "Feed on Followers",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-sword-blue.webp",
+  "system": {
+    "description": "<p>When the adversary is within Melee range of an ally, they can cause the ally to mark a HP. The adversary then clears a HP and rolls their next action roll with Advantage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!24785d1e5e2991df"
+}

@@ -16,7 +16,6 @@ export default class DhAppearance extends foundry.abstract.DataModel {
                 choices: CONFIG.DH.GENERAL.fearPosition,
                 initial: CONFIG.DH.GENERAL.fearPosition.topCenter.value
             }),
-            displayCountdownUI: new BooleanField({ initial: true }),
             extendCharacterDescriptions: new BooleanField(),
             extendAdversaryDescriptions: new BooleanField(),
             extendEnvironmentDescriptions: new BooleanField(),

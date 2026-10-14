@@ -1,0 +1,20 @@
+{
+  "_id": "0a9ffd852dc7b955",
+  "name": "Lean on me",
+  "type": "domainCard",
+  "img": "icons/equipment/shield/heater-steel-gold.webp",
+  "system": {
+    "description": "<p>When an ally within Close range fails a roll, you can <strong>spend 2 Hope</strong> to allow them to reroll either their Duality Die.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "valour",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "b68f69b8dced9462",
+  "_key": "!items!0a9ffd852dc7b955"
+}

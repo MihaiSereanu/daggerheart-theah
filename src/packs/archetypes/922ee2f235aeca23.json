@@ -1,0 +1,50 @@
+{
+  "_id": "922ee2f235aeca23",
+  "name": "Assassin",
+  "type": "class",
+  "img": "icons/weapons/daggers/dagger-poisoned-curved-green.webp",
+  "system": {
+    "description": "<p>Silent, precise, and merciless, these killers stalk their targets with unnerving calm. Whether shaped by war, vengeance, or contract, they strike when the moment is right and vanish just as quickly. Assassins don’t fight fair. A whisper in the dark or a flash of steel is often the last thing their foes ever notice.\nFeared and often mistrusted, they thrive in shadows, alleys, and battlefields alike. In Théah, their trade is known by many names, but all understand what it means to cross one.</p>\n<h5>STARTING EVASION: 12</h5>\n<h5>STARTING HP: 5</h5>\n<h4>Thematic Items</h4>\n<p>A vial of unfamiliar poison or a token from your first kill</p>\n<h4>Assassin’s Hope Feature</h4>\n<p><strong>Grim Resolve.</strong> Spend 3 Hope to turn a Failure with Hope into a Success with Fear while in pursuit of a target.</p>\n<h4>Archetype Feature</h4>\n<h5>Ambush</h5>\n<p>When you succeed on an attack while <em>Hidden</em>, add 2d6 to your damage total. If this attacks deal Severe damage, it deals an additional HP.</p>\n<h5>In &amp; Out</h5>\n<p><strong>Spend a Hope</strong> to ask the GM for either a quick or inconspicuous way into or out of a building or structure you can see. The next roll you make that capitalizes on this information gains Advantage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "evasion": 12,
+    "hitPoints": 5,
+    "domains": [],
+    "features": [
+      {
+        "type": "hope",
+        "item": "Compendium.daggerheart-theah.features.Item.3d5dbf0e4bfa7a2c"
+      },
+      {
+        "type": "class",
+        "item": "Compendium.daggerheart-theah.features.Item.c91643395f044b67"
+      },
+      {
+        "type": "class",
+        "item": "Compendium.daggerheart-theah.features.Item.4ec05b6c4e48a19e"
+      }
+    ],
+    "subclasses": [
+      "Compendium.daggerheart-theah.specialisations.Item.2b1f414c261d4f8d",
+      "Compendium.daggerheart-theah.specialisations.Item.c57c97a58f4b99cb"
+    ],
+    "inventory": {
+      "take": [],
+      "choiceA": [],
+      "choiceB": []
+    },
+    "backgroundQuestions": [
+      "Who taught you the value of silence?",
+      "Who was the first you chose not to kill, and why?",
+      "What code, if any, do you still follow?"
+    ],
+    "connections": [
+      "What was the first thing I said after saving your life?",
+      "Why do you believe I deserve redemption?",
+      "What secret of mine do you keep, and why?"
+    ]
+  },
+  "effects": [],
+  "_key": "!items!922ee2f235aeca23"
+}

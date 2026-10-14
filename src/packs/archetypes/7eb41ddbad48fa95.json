@@ -1,0 +1,50 @@
+{
+  "_id": "7eb41ddbad48fa95",
+  "name": "Rogue",
+  "type": "class",
+  "img": "icons/equipment/back/cloak-hooded-green-gold.webp",
+  "system": {
+    "description": "<p>Rogues are scoundrels in both word and deed. In taverns, back alleys, or noble courts, they pass as charming vagabonds, silver-tongued liars, or masked cutthroats. While the world calls them thieves, the best among them vanish before that label ever sticks. A rogue in Théah might pick locks by moonlight in Vodacce, cut purses in the streets of Charrouse, or pass whispered messages in the palace halls of Eisen. They are experts in shadows, blades, and the many ways to twist a conversation to their advantage.</p>\n<h5>STARTING EVASION: 12</h5>\n<h5>STARTING HP: 5</h5>\n<h4>Thematic Items</h4>\n<p>A set of forgery tools or a grappling hook</p>\n<h4>Rogue’s Hope Feature</h4>\n<p><strong>Scoundrel’s Dodge</strong>. Spend 3 Hope to gain a +2 bonus to your Evasion until the next time an attack succeeds against you. If no attack succeeds, the bonus lasts until your next Rest.</p>\n<h4>Archetype Feature</h4>\n<h5>Silent Steps</h5>\n<p>Any time you would become Hidden, you instead become <em>Cloaked</em>. While <em>Cloaked</em>, you remain unseen even if someone moves close, so long as you do not move or attack.</p>\n<h5>Scoundrel’s Precision</h5>\n<p>If you miss while <em>Cloaked</em> or while an ally is in Melee range of your target, you may <strong>mark a Stress</strong> to grant yourself Advantage after the roll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "evasion": 12,
+    "hitPoints": 5,
+    "domains": [],
+    "features": [
+      {
+        "type": "hope",
+        "item": "Compendium.daggerheart-theah.features.Item.7f1db42648b091f4"
+      },
+      {
+        "type": "class",
+        "item": "Compendium.daggerheart-theah.features.Item.e94b47b084167d52"
+      },
+      {
+        "type": "class",
+        "item": "Compendium.daggerheart-theah.features.Item.9e86b1290235171b"
+      }
+    ],
+    "subclasses": [
+      "Compendium.daggerheart-theah.specialisations.Item.0b64dd500bc1fb97",
+      "Compendium.daggerheart-theah.specialisations.Item.631864999053af73"
+    ],
+    "inventory": {
+      "take": [],
+      "choiceA": [],
+      "choiceB": []
+    },
+    "backgroundQuestions": [
+      "What was your first crime?",
+      "Who from your former life still chases you?",
+      "Who did you most regret leaving behind?"
+    ],
+    "connections": [
+      "What part of your past have I discovered?",
+      "What did I convince you to do that got us both in trouble?",
+      "Who from my past do you know, and how has it shaped your opinion of me?"
+    ]
+  },
+  "effects": [],
+  "_key": "!items!7eb41ddbad48fa95"
+}

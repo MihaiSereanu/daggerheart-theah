@@ -1,0 +1,15 @@
+{
+  "_id": "bfd912b266a0b2ae",
+  "name": "Rally Guards",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-sword-blue.webp",
+  "system": {
+    "description": "<p>Spend 2 Fear to spotlight the adversary and up to 2d4 allies within Far range.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!bfd912b266a0b2ae"
+}

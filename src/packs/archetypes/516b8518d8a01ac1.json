@@ -1,0 +1,50 @@
+{
+  "_id": "516b8518d8a01ac1",
+  "name": "Swashbuckler",
+  "type": "class",
+  "img": "icons/skills/melee/sword-twirl-orange.webp",
+  "system": {
+    "description": "<p>Some call them romantic; others call them reckless fools. Swashbucklers are those who stake everything on a daring move or a clever remark. They duel in the moonlight, swing from chandeliers, and gamble with a grin on their face and steel in their hand. They thrive when the stakes are high and the odds uneven. Where others see danger, they see a good time.</p>\n<h5>STARTING EVASION: 11</h5>\n<h5>STARTING HP: 6</h5>\n<h4>Thematic Items</h4>\n<p>A letter from a loved one or a mysterious pin</p>\n<h4>Rake’s Hope Feature</h4>\n<p><strong>Daring Flourish</strong>. Spend 3 Hope to use a d20 as your Fear die until you fail an action roll or the scene ends.</p>\n<h4>Archetype Feature</h4>\n<h5>Stylish Gambits</h5>\n<p>After you make an Action Roll but before the GM communicates the result, you may take a 1d4 penalty. If the roll still succeeds, you gain a <strong>D6 Style die</strong>. You may spend and roll a Style die to add its result to any roll you make. You can hold a number of Style dice up to your Finesse.</p>\n<h5>Stylish Strike</h5>\n<p>On a successful attack against an adversary, <strong>spend a Hope</strong> to halve your damage and make the target <em>Humiliated</em> by stylishly striking to wound their pride rather than their body. While <em>Humiliated</em>, the adversary deals half damage on all attacks until they successfully hit you or the scene ends.</p>\n<blockquote>\n<p>You may replace an Archetype Feature with a <strong>Duelist Style</strong>. See Appendix for <strong>Duelist Styles</strong>.</p>\n</blockquote>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "evasion": 11,
+    "hitPoints": 6,
+    "domains": [],
+    "features": [
+      {
+        "type": "hope",
+        "item": "Compendium.daggerheart-theah.features.Item.4f767813567963ae"
+      },
+      {
+        "type": "class",
+        "item": "Compendium.daggerheart-theah.features.Item.08a97e1cff5c0aa9"
+      },
+      {
+        "type": "class",
+        "item": "Compendium.daggerheart-theah.features.Item.e85ce548f79dbd8e"
+      }
+    ],
+    "subclasses": [
+      "Compendium.daggerheart-theah.specialisations.Item.4e711b3dd2e431a3",
+      "Compendium.daggerheart-theah.specialisations.Item.ed4c2361556d949f"
+    ],
+    "inventory": {
+      "take": [],
+      "choiceA": [],
+      "choiceB": []
+    },
+    "backgroundQuestions": [
+      "Why did the allure of adventure lead you astray from home?",
+      "Despite your fearless charm, what do you truly fear?",
+      "Who haunts your thoughts in both triumph and failure?"
+    ],
+    "connections": [
+      "How did I surprise you during our first confrontation?",
+      "What’s a truth about me no others know?",
+      "Why do you trust me so much despite how unreliable I can be?"
+    ]
+  },
+  "effects": [],
+  "_key": "!items!516b8518d8a01ac1"
+}

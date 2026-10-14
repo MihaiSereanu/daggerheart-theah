@@ -1,0 +1,15 @@
+{
+  "_id": "a47af17a22d83d6c",
+  "name": "Well-Read",
+  "type": "feature",
+  "img": "icons/sundries/books/book-embossed-blue.webp",
+  "system": {
+    "description": "<p>You have advantage on rolls that involve the history, culture, or politics of a prominent person or place.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "4dd8ad6bff8c8876",
+  "_key": "!items!a47af17a22d83d6c"
+}

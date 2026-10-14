@@ -1,0 +1,15 @@
+{
+  "_id": "44985a3452a97f84",
+  "name": "Masker’s Clay",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Masker’s Clay</strong>: Spend 4 Hope to alter your face until your next rest.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!44985a3452a97f84"
+}

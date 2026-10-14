@@ -1,0 +1,15 @@
+{
+  "_id": "4fdf387976fba674",
+  "name": "Lurching Lunge",
+  "type": "feature",
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "system": {
+    "description": "<p>Mark a Stress to spotlight the adversary as an additional GM move instead of spending Fear.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!4fdf387976fba674"
+}

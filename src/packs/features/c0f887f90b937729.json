@@ -1,0 +1,15 @@
+{
+  "_id": "c0f887f90b937729",
+  "name": "Not Done Yet",
+  "type": "feature",
+  "img": "icons/skills/melee/unarmed-punch-fist-yellow-red.webp",
+  "system": {
+    "description": "<p>When you mark more than one Hit Point from an attack, you may gain a Hope or clear a Stress.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "a58d9b380e272631",
+  "_key": "!items!c0f887f90b937729"
+}

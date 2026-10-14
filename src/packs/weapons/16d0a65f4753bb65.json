@@ -1,0 +1,77 @@
+{
+  "_id": "16d0a65f4753bb65",
+  "name": "Vesten War Axe",
+  "type": "weapon",
+  "img": "icons/weapons/axes/axe-double-engraved-runes.webp",
+  "system": {
+    "description": "<p><strong>Vesten War Axe</strong></p>\n<p><strong>Brutal</strong>: -1 to Evasion; when you roll max damage, roll the die again and add to total</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "blackpowder": false,
+    "reloading": false,
+    "secondary": false,
+    "burden": "twoHanded",
+    "weaponFeatures": [
+      {
+        "value": "brutal",
+        "effectIds": [],
+        "actionIds": []
+      }
+    ],
+    "attack": {
+      "_id": "ae8e4a7fd2dc4ab6",
+      "name": "Vesten War Axe",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/weapons/axes/axe-double-engraved-runes.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": "brawn",
+        "bonus": 0
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d12+1 + @brawn"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "5a2ae0b937552396",
+      "name": "Vesten War Axe",
+      "type": "base",
+      "transfer": true,
+      "img": "icons/weapons/axes/axe-double-engraved-runes.webp",
+      "system": {
+        "changes": [
+          {
+            "type": "add",
+            "key": "system.evasion",
+            "value": -1,
+            "phase": "initial"
+          }
+        ]
+      },
+      "_key": "!items.effects!16d0a65f4753bb65.5a2ae0b937552396"
+    }
+  ],
+  "_key": "!items!16d0a65f4753bb65"
+}

@@ -1,0 +1,23 @@
+{
+  "_id": "d514bdf3f71a89be",
+  "name": "Unorthodox Solution",
+  "type": "feature",
+  "img": "icons/skills/ranged/target-bullseye-arrow-green.webp",
+  "system": {
+    "description": "<p>Once per scene, you may employ outside-the-box solutions to roll a d20 as your Hope die. If you fail, you must also <strong>mark a Stress</strong>.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "scene",
+      "progression": "increasing",
+      "label": "Uses"
+    }
+  },
+  "effects": [],
+  "folder": "8eb0fece6f3617cf",
+  "_key": "!items!d514bdf3f71a89be"
+}

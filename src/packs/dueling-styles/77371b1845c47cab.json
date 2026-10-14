@@ -1,0 +1,14 @@
+{
+  "_id": "77371b1845c47cab",
+  "name": "Leegstra",
+  "type": "feature",
+  "img": "icons/skills/melee/strike-axe-blood-red.webp",
+  "system": {
+    "description": "<p><strong>Required Weapon: Dual Axes</strong>\nA Vestenmennavenjar style of relentless aggression. Though ancient in practice, it has only recently been formalized. It emphasizes overwhelming pressure and violence.</p>\n<ul>\n<li><strong>Winter&#39;s Fury</strong>. Once per Rest, <strong>spend any number of Hope</strong> to strike a target of your choice within Melee range. Roll a number of d6s equal to the Hope spent and deal that much damage to the target.</li>\n<li><strong>Promise of Death</strong>. Make a Brawn Roll against an enemy within Close range. On a success, the next time they mark HP, one enemy within Very Close range of them must mark the same amount in Stress.</li>\n<li><strong>Raider&#39;s Vitality.</strong> Once per Rest, when you would drop to 0 HP, you may <strong>mark all your Stress</strong>. If you do, you remain at 1 HP and your next roll gains Advantage.</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!77371b1845c47cab"
+}

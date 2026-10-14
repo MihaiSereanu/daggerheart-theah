@@ -1,0 +1,15 @@
+{
+  "_id": "7d4eeeeaab82f7d3",
+  "name": "Skeleton Key of Ekerila",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Skeleton Key of Ekerila</strong>: When you use this key to open a locked door, you gain advantage on the Finesse Roll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!7d4eeeeaab82f7d3"
+}

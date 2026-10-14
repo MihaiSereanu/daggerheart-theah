@@ -22,11 +22,6 @@ export default class DhAutomation extends foundry.abstract.DataModel {
                 initial: true,
                 label: 'DAGGERHEART.SETTINGS.Automation.FIELDS.vulnerableAutomation.label'
             }),
-            countdownAutomation: new fields.BooleanField({
-                required: true,
-                initial: true,
-                label: 'DAGGERHEART.SETTINGS.Automation.FIELDS.countdownAutomation.label'
-            }),
             levelupAuto: new fields.BooleanField({
                 required: true,
                 initial: true,
@@ -182,7 +177,7 @@ export default class DhAutomation extends foundry.abstract.DataModel {
             reload: new fields.StringField({
                 required: true,
                 choices: CONFIG.DH.SETTINGS.reloadChoices,
-                initial: CONFIG.DH.SETTINGS.reloadChoices.manual.id,
+                initial: CONFIG.DH.SETTINGS.reloadChoices.auto.id,
                 label: 'DAGGERHEART.SETTINGS.Automation.FIELDS.reload.label',
                 hint: 'DAGGERHEART.SETTINGS.Automation.FIELDS.reload.hint'
             }),

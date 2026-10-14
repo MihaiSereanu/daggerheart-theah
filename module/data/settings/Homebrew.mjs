@@ -67,7 +67,7 @@ export default class DhHomebrew extends foundry.abstract.DataModel {
                 label: 'DAGGERHEART.SETTINGS.Homebrew.FIELDS.maxDomains.label'
             }),
             traitArray: new fields.ArrayField(new fields.NumberField({ required: true, integer: true }), {
-                initial: () => [2, 1, 1, 0, 0, -1]
+                initial: () => [2, 1, 1, 0, -1]
             }),
             tokenSizes: new fields.SchemaField({
                 tiny: new fields.NumberField({

@@ -1,0 +1,122 @@
+{
+  "_id": "85873be54e6cb53a",
+  "name": "Demon of Jealousy",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A fickle creature of spindly limbs and insatiable desires.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "champion",
+    "type": "ranged",
+    "difficulty": 15,
+    "notes": "<h3>Champion | Ranged</h3>\n<p><em>A fickle creature of spindly limbs and insatiable desires.</em><br><strong>Motives &amp; Tactics:</strong> Take what belongs to others, hold grudges</p>\n<p><strong>Difficulty:</strong> 15 | <strong>Thresholds:</strong> 7/15 | <strong>HP:</strong> 6 | <strong>Stress:</strong> 6</p>\n<p><strong>ATK:</strong> +4 | Magic: Far | 2d8+3 direct</p>\n<hr>\n<p><strong>Experience:</strong> Manipulation +3</p>\n<h4>Features</h4>\n<p><strong>Unhinged - Passive</strong>: Their standard attack deals direct damage.</p>\n<p><strong>My Turn - Reaction</strong>: When the Demon marks HP from an attack, spend a number of Fear equal to the HP marked by the Demon to cause the attacker to mark the same number of HP.</p>\n<p><strong>Rivalry - Reaction</strong>: When a creature within Close range takes damage from a different adversary, you can <strong>mark a Stress</strong> to add a d4 to the damage roll.</p>\n<p><strong>What’s Yours Is Mine - Reaction</strong>: When a PC takes Severe damage within Very Close range of the Demon, you can spend a Fear to cause the target to make a Finesse Reaction Roll. On a failure, the Demon seizes one item of their choice from the target’s inventory.</p>\n",
+    "damageThresholds": {
+      "major": 7,
+      "severe": 15
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 6
+      },
+      "stress": {
+        "value": 0,
+        "max": 6
+      }
+    },
+    "motivesAndTactics": "Take what belongs to others, hold grudges",
+    "experiences": {
+      "311912e91ae118a3": {
+        "name": "Manipulation",
+        "value": 3
+      }
+    },
+    "attack": {
+      "_id": "83715232bff67a38",
+      "name": "Magic",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/magic/symbols/runes-star-magenta.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "far",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 4
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "2d8+3"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "4000587668877011",
+      "name": "Unhinged - Passive",
+      "type": "feature",
+      "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+      "system": {
+        "description": "<p>Their standard attack deals direct damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!85873be54e6cb53a.4000587668877011"
+    },
+    {
+      "_id": "36ce04da80f9bbc7",
+      "name": "My Turn - Reaction",
+      "type": "feature",
+      "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
+      "system": {
+        "description": "<p>When the Demon marks HP from an attack, spend a number of Fear equal to the HP marked by the Demon to cause the attacker to mark the same number of HP.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!85873be54e6cb53a.36ce04da80f9bbc7"
+    },
+    {
+      "_id": "d90902e2e31b63b9",
+      "name": "Rivalry - Reaction",
+      "type": "feature",
+      "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+      "system": {
+        "description": "<p>When a creature within Close range takes damage from a different adversary, you can <strong>mark a Stress</strong> to add a d4 to the damage roll.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!85873be54e6cb53a.d90902e2e31b63b9"
+    },
+    {
+      "_id": "9addb52b88cd05c8",
+      "name": "What’s Yours Is Mine - Reaction",
+      "type": "feature",
+      "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+      "system": {
+        "description": "<p>When a PC takes Severe damage within Very Close range of the Demon, you can spend a Fear to cause the target to make a Finesse Reaction Roll. On a failure, the Demon seizes one item of their choice from the target’s inventory.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!85873be54e6cb53a.9addb52b88cd05c8"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Demon of Jealousy",
+    "actorLink": false
+  },
+  "_key": "!actors!85873be54e6cb53a"
+}

@@ -1,0 +1,115 @@
+{
+  "_id": "809779f4cd64f6e1",
+  "name": "Head Guard",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A seasoned guard with a mace, a whistle, and a bellowing voice.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "leader",
+    "difficulty": 14,
+    "notes": "<h3>Normal | Leader</h3>\n<p><em>A seasoned guard with a mace, a whistle, and a bellowing voice.</em>  \n<strong>Motives &amp; Tactics:</strong> Arrest, close gates, pin down, seek glory</p>\n<p><strong>Difficulty:</strong> 14 | <strong>Thresholds:</strong> 7/13 | <strong>HP:</strong> 7 | <strong>Stress:</strong> 3</p>\n<p><strong>ATK:</strong> +4 | Weapon: Melee | 1d10+4 phy</p>\n<hr>\n<p><strong>Experience:</strong> Commander +2, Local Knowledge +2</p>\n<h4>Features</h4>\n<p><strong>Rally Guards - Action</strong>: Spend 2 Fear to spotlight the Head Guard and up to 2d4 allies within Far range.</p>\n<p><strong>On My Signal - Reaction</strong>: Countdown (5). The first time the Head Guard is spotlighted, activate the countdown. It ticks down when a PC makes an attack roll. When it triggers, all Archer Guards within Far range make a standard attack with advantage against the nearest target within their range. If multiple attacks hit the same target, combine their damage.</p>\n<p><strong>Momentum - Reaction</strong>: When the Head Guard makes a successful attack against a PC, you gain a Fear.</p>\n",
+    "damageThresholds": {
+      "major": 7,
+      "severe": 13
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 7
+      },
+      "stress": {
+        "value": 0,
+        "max": 3
+      }
+    },
+    "motivesAndTactics": "Arrest, close gates, pin down, seek glory",
+    "experiences": {
+      "9a2ac43a3706a4e3": {
+        "name": "Commander",
+        "value": 2
+      },
+      "98e75bac7664cc7f": {
+        "name": "Local Knowledge",
+        "value": 2
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/hand-grip-sword-orange.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 4
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d10+4"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "ad4d72886c5d86f8",
+      "name": "Rally Guards - Action",
+      "type": "feature",
+      "img": "icons/sundries/flags/banner-sword-blue.webp",
+      "system": {
+        "description": "<p>Spend 2 Fear to spotlight the Head Guard and up to 2d4 allies within Far range.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!809779f4cd64f6e1.ad4d72886c5d86f8"
+    },
+    {
+      "_id": "60188f8d00cee0b0",
+      "name": "On My Signal - Reaction",
+      "type": "feature",
+      "img": "icons/sundries/flags/banner-sword-blue.webp",
+      "system": {
+        "description": "<p>Countdown (5). The first time the Head Guard is spotlighted, activate the countdown. It ticks down when a PC makes an attack roll. When it triggers, all Archer Guards within Far range make a standard attack with advantage against the nearest target within their range. If multiple attacks hit the same target, combine their damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!809779f4cd64f6e1.60188f8d00cee0b0"
+    },
+    {
+      "_id": "7458a9ca03aa501f",
+      "name": "Momentum - Reaction",
+      "type": "feature",
+      "img": "icons/environment/creatures/horse-brown.webp",
+      "system": {
+        "description": "<p>When the Head Guard makes a successful attack against a PC, you gain a Fear.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!809779f4cd64f6e1.7458a9ca03aa501f"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Head Guard",
+    "actorLink": false
+  },
+  "_key": "!actors!809779f4cd64f6e1"
+}

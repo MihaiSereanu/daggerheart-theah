@@ -1,0 +1,69 @@
+{
+  "_id": "7bb2013c3b0896d9",
+  "name": "Castle Siege",
+  "type": "environment",
+  "img": "systems/daggerheart-theah/assets/icons/documents/actors/forest.svg",
+  "system": {
+    "description": "<p><em>An active siege with an attacking force fighting to gain entry.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "standard",
+    "type": "event",
+    "difficulty": 15,
+    "notes": "<h3>Standard | Event</h3>\n<p><em>An active siege with an attacking force fighting to gain entry.</em><br><strong>Impulses:</strong> Bleed out the will to fight, breach the walls, build tension</p>\n<p><strong>Difficulty:</strong> 15</p>\n<h4>Features</h4>\n<p><strong>Secret Entrance - Passive</strong>: A PC can find or recall a secret way into the castle with a successful Instinct or Wits Roll.</p>\n<p><strong>Siege Weapons (Environment Change)- Action</strong>: Consequence Countdown (5). The attacking force deploys siege weapons to try to raze the defenders&#39; fortifications. Activate the countdown when the siege begins (for a protracted siege, make this a long-term countdown instead). When it triggers, the defenders&#39; fortifications have been breached and the attackers flood in. You gain 2 Fear, then shift to the <strong>Pitched Battle</strong> environment and spotlight it.</p>\n<p><strong>Reinforcements - Action</strong>: Summon a <em>Veteran Knight</em>, a number of appropriate Minions equal to the number of PCs, and two adversaries of your choice within Far range of a chosen PC as reinforcements. The Knight immediately takes the spotlight.</p>\n<p><strong>Collateral Damage - Reaction</strong>: When an adversary is defeated, you can spend a Fear to have a stray attack from a siege weapon hit a point on the battlefield. All targets within Very Close range of that point must make a Finesse Reaction Roll.</p>\n",
+    "impulses": "Bleed out the will to fight, breach the walls, build tension"
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "ca158953744cf81a",
+      "name": "Secret Entrance - Passive",
+      "type": "feature",
+      "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+      "system": {
+        "description": "<p>A PC can find or recall a secret way into the castle with a successful Instinct or Wits Roll.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!7bb2013c3b0896d9.ca158953744cf81a"
+    },
+    {
+      "_id": "8e76a5a93ebe5b70",
+      "name": "Siege Weapons (Environment Change)- Action",
+      "type": "feature",
+      "img": "icons/environment/settlement/castle.webp",
+      "system": {
+        "description": "<p>Consequence Countdown (5). The attacking force deploys siege weapons to try to raze the defenders&#39; fortifications. Activate the countdown when the siege begins (for a protracted siege, make this a long-term countdown instead). When it triggers, the defenders&#39; fortifications have been breached and the attackers flood in. You gain 2 Fear, then shift to the <strong>Pitched Battle</strong> environment and spotlight it.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!7bb2013c3b0896d9.8e76a5a93ebe5b70"
+    },
+    {
+      "_id": "c1b81011ce4cc2ba",
+      "name": "Reinforcements - Action",
+      "type": "feature",
+      "img": "icons/equipment/shield/heater-steel-gold.webp",
+      "system": {
+        "description": "<p>Summon a <em>Veteran Knight</em>, a number of appropriate Minions equal to the number of PCs, and two adversaries of your choice within Far range of a chosen PC as reinforcements. The Knight immediately takes the spotlight.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!7bb2013c3b0896d9.c1b81011ce4cc2ba"
+    },
+    {
+      "_id": "866bbd4f61d08353",
+      "name": "Collateral Damage - Reaction",
+      "type": "feature",
+      "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
+      "system": {
+        "description": "<p>When an adversary is defeated, you can spend a Fear to have a stray attack from a siege weapon hit a point on the battlefield. All targets within Very Close range of that point must make a Finesse Reaction Roll.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!7bb2013c3b0896d9.866bbd4f61d08353"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Castle Siege",
+    "actorLink": false
+  },
+  "_key": "!actors!7bb2013c3b0896d9"
+}

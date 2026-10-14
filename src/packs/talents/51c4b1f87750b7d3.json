@@ -1,0 +1,20 @@
+{
+  "_id": "51c4b1f87750b7d3",
+  "name": "Takedown",
+  "type": "domainCard",
+  "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+  "system": {
+    "description": "<p>Make a Finesse roll to sprint up to an adversary within Very Close range and attempt to pin them down. On a success, the target is temporarily <em>Restrained</em> as you grab or trip them. The effect ends early if you move or take Major or greater damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "shade",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "5af6d37ce4bdfed9",
+  "_key": "!items!51c4b1f87750b7d3"
+}

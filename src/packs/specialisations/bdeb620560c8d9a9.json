@@ -1,0 +1,27 @@
+{
+  "_id": "bdeb620560c8d9a9",
+  "name": "Brute",
+  "type": "subclass",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow-teal.webp",
+  "system": {
+    "description": "<p>Play the Brute if you want to eliminate foes with overwhelming force and relentless strikes.</p>\n<h4>Features</h4>\n<p><strong>Mighty</strong>. You gain a pool of Might Dice (d6s). When you roll with Hope, you may place a d6 in your Might Dice pool instead of gaining Hope. You may hold a number of these dice equal to your Brawn, and can spend them to add their results to any physical Action Roll. At the end of each session, clear unspent Might Dice and gain 1 Hope for each.</p>\n<p><strong>Raw Force</strong>. On a successful attack roll, you may <strong>mark a Stress</strong> to put your back into your swing. On a success with Hope, add an extra d10 to your damage roll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.9636ffa6820561cb",
+    "spellcastingTrait": null,
+    "features": [
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.f42b090ff55ca88e"
+      },
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.8f5104787e49de9d"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": "9a97d5ef2539552b",
+  "_key": "!items!bdeb620560c8d9a9"
+}

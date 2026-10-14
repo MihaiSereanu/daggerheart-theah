@@ -1,0 +1,20 @@
+{
+  "_id": "196712caaf45db42",
+  "name": "The Blood Remembers",
+  "type": "domainCard",
+  "img": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+  "system": {
+    "description": "<p><strong>Spend a Hope</strong> and use a drop of the target’s blood to peer into their thoughts. If the target is within Far range, you may learn a surface-level truth about them. Make a Spellcast Roll against the target’s Difficulty to delve for deeper information.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "porte",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "abd4fb970d402f00",
+  "_key": "!items!196712caaf45db42"
+}

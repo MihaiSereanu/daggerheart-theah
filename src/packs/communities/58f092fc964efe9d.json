@@ -1,0 +1,18 @@
+{
+  "_id": "58f092fc964efe9d",
+  "name": "Highlands",
+  "type": "community",
+  "img": "icons/environment/wilderness/cave-entrance-mountain-blue.webp",
+  "system": {
+    "description": "<p>You come from a community rooted in mountain heights and steep, uncaring terrain. Life among cliffs and peaks demands resilience, and ridgeborne grow up strong, sure-footed, and fiercely self-reliant. Highlanders know how to endure, and how to use the high ground to their advantage.</p>\n<p><strong>Steady</strong>. You have advantage on rolls to navigate harsh environments and to use your survival knowledge.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "features": [
+      "Compendium.daggerheart-theah.features.Item.bd504121aab99412"
+    ],
+    "loreReference": null
+  },
+  "effects": [],
+  "_key": "!items!58f092fc964efe9d"
+}

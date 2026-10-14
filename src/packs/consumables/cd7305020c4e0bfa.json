@@ -1,0 +1,15 @@
+{
+  "_id": "cd7305020c4e0bfa",
+  "name": "Darkhound Phial",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Darkhound Phial</strong>: You can use this musk to prevent tracking by mundane or magical means until your next rest.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!cd7305020c4e0bfa"
+}

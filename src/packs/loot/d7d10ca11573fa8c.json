@@ -1,0 +1,15 @@
+{
+  "_id": "d7d10ca11573fa8c",
+  "name": "Gem of Sagacity",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Gem of Sagacity</strong>: You can attach this gem to a weapon, allowing you to use your Wits instead of the listed trait.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!d7d10ca11573fa8c"
+}

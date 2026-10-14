@@ -1,0 +1,15 @@
+{
+  "_id": "792cb822576aa0a6",
+  "name": "Draining Bite",
+  "type": "feature",
+  "img": "icons/creatures/abilities/bear-roar-bite-brown-green.webp",
+  "system": {
+    "description": "<p>Make an attack against a target within Melee range. On a success, deal 4d4 physical damage. A target who marks HP from this attack loses a Hope and must <strong>mark a Stress</strong>. The adversary then clears a HP.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!792cb822576aa0a6"
+}

@@ -1,0 +1,126 @@
+{
+  "_id": "612210b435d37395",
+  "name": "Patchwork Zombie Hulk",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A towering gestalt of corpses moving as one, with torso-sized limbs</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "solo",
+    "difficulty": 16,
+    "notes": "<h3>Normal | Solo</h3>\n<p><em>A towering gestalt of corpses moving as one, with torso-sized limbs</em>\n<strong>Motives &amp; Tactics:</strong> Absorb corpses, flail, hunger, terrify</p>\n<p><strong>Difficulty:</strong> 16 | <strong>Thresholds:</strong> 8/15 | <strong>HP:</strong> 10 | <strong>Stress:</strong> 3</p>\n<p><strong>ATK:</strong> +4 | Too Many Arms: Very Close | 1d20 physical</p>\n<hr>\n<p><strong>Experience:</strong> Intimidation +2, Tear Things Apart +2</p>\n<h4>Features</h4>\n<p><strong>Destructible - Passive</strong>: When the Zombie takes Major or greater damage, they mark an additional HP.</p>\n<p><strong>Flailing Limbs - Passive</strong>: When the Zombie makes a standard attack, they can attack all targets within Very Close range.</p>\n<p><strong>Another for the Pile - Action</strong>: When the Zombie is within Very Close range of a corpse, they can incorporate it into themselves, clearing a HP and a Stress.</p>\n<p><strong>Tormented Screams - Action</strong>: Mark a Stress to cause all PCs within Far range to make a Instinct Reaction Roll (13). Targets who fail lose a Hope and you gain a Fear for each. Targets who succeed must <strong>mark a Stress</strong>.</p>\n",
+    "damageThresholds": {
+      "major": 8,
+      "severe": 15
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 10
+      },
+      "stress": {
+        "value": 0,
+        "max": 3
+      }
+    },
+    "motivesAndTactics": "Absorb corpses, flail, hunger, terrify",
+    "experiences": {
+      "404b3cb7312d8315": {
+        "name": "Intimidation",
+        "value": 2
+      },
+      "4b94a3720b30d0b2": {
+        "name": "Tear Things Apart",
+        "value": 2
+      }
+    },
+    "attack": {
+      "_id": "e66ea4e4cb987727",
+      "name": "Too Many Arms",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/creatures/claws/claw-talons-yellow-red.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "veryClose",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 4
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d20"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "207c372230f273b2",
+      "name": "Destructible - Passive",
+      "type": "feature",
+      "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+      "system": {
+        "description": "<p>When the Zombie takes Major or greater damage, they mark an additional HP.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!612210b435d37395.207c372230f273b2"
+    },
+    {
+      "_id": "97b678e419ebf90c",
+      "name": "Flailing Limbs - Passive",
+      "type": "feature",
+      "img": "icons/creatures/claws/claw-talons-yellow-red.webp",
+      "system": {
+        "description": "<p>When the Zombie makes a standard attack, they can attack all targets within Very Close range.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!612210b435d37395.97b678e419ebf90c"
+    },
+    {
+      "_id": "5861ee5958cb64f3",
+      "name": "Another for the Pile - Action",
+      "type": "feature",
+      "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+      "system": {
+        "description": "<p>When the Zombie is within Very Close range of a corpse, they can incorporate it into themselves, clearing a HP and a Stress.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!612210b435d37395.5861ee5958cb64f3"
+    },
+    {
+      "_id": "97fcfaaccb86751f",
+      "name": "Tormented Screams - Action",
+      "type": "feature",
+      "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
+      "system": {
+        "description": "<p>Mark a Stress to cause all PCs within Far range to make a Instinct Reaction Roll (13). Targets who fail lose a Hope and you gain a Fear for each. Targets who succeed must <strong>mark a Stress</strong>.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!612210b435d37395.97fcfaaccb86751f"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Patchwork Zombie Hulk",
+    "actorLink": false
+  },
+  "_key": "!actors!612210b435d37395"
+}

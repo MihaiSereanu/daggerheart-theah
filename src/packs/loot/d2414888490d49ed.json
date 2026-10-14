@@ -1,0 +1,15 @@
+{
+  "_id": "d2414888490d49ed",
+  "name": "Whispering Sprite",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Whispering Sprite</strong>: This tiny sprite sits in the curve of your ear canal and whispers helpful advice. Once per Rest, you can gain advantage on an action roll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!d2414888490d49ed"
+}

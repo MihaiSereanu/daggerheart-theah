@@ -24,7 +24,7 @@ export default class ActionSelectionDialog extends HandlebarsApplicationMixin(Ap
 
     static PARTS = {
         actions: {
-            template: 'systems/daggerheart/templates/dialogs/actionSelect.hbs'
+            template: 'systems/daggerheart-theah/templates/dialogs/actionSelect.hbs'
         }
     };
 

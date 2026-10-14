@@ -1,0 +1,15 @@
+{
+  "_id": "4e8e95b0c9bae509",
+  "name": "Vial of Vitae",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Vial of Vitae</strong>: Clear 1d4 Hit Points.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!4e8e95b0c9bae509"
+}

@@ -23,21 +23,21 @@ export default class DHEnvironmentSettings extends DHBaseActorSettings {
     static PARTS = {
         header: {
             id: 'header',
-            template: 'systems/daggerheart/templates/sheets-settings/environment-settings/header.hbs'
+            template: 'systems/daggerheart-theah/templates/sheets-settings/environment-settings/header.hbs'
         },
-        tabs: { template: 'systems/daggerheart/templates/sheets/global/tabs/tab-navigation.hbs' },
+        tabs: { template: 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-navigation.hbs' },
         details: {
             id: 'details',
-            template: 'systems/daggerheart/templates/sheets-settings/environment-settings/details.hbs'
+            template: 'systems/daggerheart-theah/templates/sheets-settings/environment-settings/details.hbs'
         },
         features: {
             id: 'features',
-            template: 'systems/daggerheart/templates/sheets-settings/environment-settings/features.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets-settings/environment-settings/features.hbs',
             scrollable: ['']
         },
         adversaries: {
             id: 'adversaries',
-            template: 'systems/daggerheart/templates/sheets-settings/environment-settings/adversaries.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets-settings/environment-settings/adversaries.hbs',
             scrollable: ['']
         }
     };

@@ -1,5 +1,3 @@
-import { defaultLevelTiers, DhLevelTiers } from '../data/levelTier.mjs';
-import DhCountdowns from '../data/countdowns.mjs';
 import {
     DhAppearance,
     DhAutomation,
@@ -175,13 +173,6 @@ const registerNonConfigSettings = () => {
         type: String
     });
 
-    game.settings.register(CONFIG.DH.id, CONFIG.DH.SETTINGS.gameSettings.LevelTiers, {
-        scope: 'world',
-        config: false,
-        type: DhLevelTiers,
-        default: defaultLevelTiers
-    });
-
     game.settings.register(CONFIG.DH.id, CONFIG.DH.SETTINGS.gameSettings.Resources.Fear, {
         name: game.i18n.localize('DAGGERHEART.SETTINGS.Resources.fear.name'),
         hint: game.i18n.localize('DAGGERHEART.SETTINGS.Resources.fear.hint'),
@@ -198,10 +189,9 @@ const registerNonConfigSettings = () => {
     game.settings.register(CONFIG.DH.id, CONFIG.DH.SETTINGS.gameSettings.Countdowns, {
         scope: 'world',
         config: false,
-        type: DhCountdowns,
-        onChange: value => {
-            value.handleChange();
-        }
+        // Keep existing saved clocks as inert data; the fork no longer provides a countdown workflow.
+        type: Object,
+        default: { countdowns: {}, hideNewCountdowns: false }
     });
 
     game.settings.register(CONFIG.DH.id, CONFIG.DH.SETTINGS.gameSettings.CompendiumBrowserSettings, {

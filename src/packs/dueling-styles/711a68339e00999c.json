@@ -1,0 +1,14 @@
+{
+  "_id": "711a68339e00999c",
+  "name": "Drexel",
+  "type": "feature",
+  "img": "icons/skills/melee/maneuver-greatsword-yellow.webp",
+  "system": {
+    "description": "<p><strong>Required Weapon: Two-Handed Weapon</strong>\nDevised by mercenary Kristoff Drexel to adapt to unpredictable battlefields. It teaches different stances to handle diverse situations, and veteran practicioners are able to change stances fluidly, with practiced ease. You can use one Drexel stance at a time. <strong>Mark a Stress</strong> to switch between them.</p>\n<ul>\n<li><strong>Defensive.</strong> Add Brawn to Evasion while in this stance.</li>\n<li><strong>Forward</strong>. Add Finesse to damage while in this stance.</li>\n<li><strong>Risky.</strong> <strong>Mark a Stress</strong> to deal 1d12 extra damage on your next attack while in this stance. If you roll with Fear, you must mark 1 HP.</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!711a68339e00999c"
+}

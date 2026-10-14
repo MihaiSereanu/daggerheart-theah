@@ -1,0 +1,20 @@
+{
+  "_id": "20ccb14428990052",
+  "name": "Never Upstaged",
+  "type": "domainCard",
+  "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+  "system": {
+    "description": "<p>When you fail with Fear, you can <strong>mark a Stress</strong> to gain +2 to your next roll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "poise",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "872e6545268d2095",
+  "_key": "!items!20ccb14428990052"
+}

@@ -1,0 +1,69 @@
+{
+  "_id": "0f4030d75e5c7fcf",
+  "name": "Grand Feast",
+  "type": "environment",
+  "img": "systems/daggerheart-theah/assets/icons/documents/actors/forest.svg",
+  "system": {
+    "description": "<p><em>A community-wide celebration verging on hedonism.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "standard",
+    "type": "social",
+    "difficulty": 12,
+    "notes": "<h3>Standard | Social</h3>\n<p><em>A community-wide celebration verging on hedonism.</em><br><strong>Impulses:</strong> Encourage revelrous abandon, celebrate an occasion</p>\n<p><strong>Difficulty:</strong> 12</p>\n<h4>Features</h4>\n<p><strong>Loose Lips, Fast Friends - Passive:</strong> Everyone is here to have a good time. PCs have advantage on Charm rolls to socialize with other revelers until they make an unforgetabble faux-pas.</p>\n<p><strong>Begin! - Action</strong>: Spend the Spotlight to have the host of the feast kick off the entertainment portion of the evening. All PCs can make an action roll to initiate some revelry. Each PC who succeeds becomes an Honored Guest. Until the grand feast ends, an Honored Guest can claim one boon from the host, then clear the condition.</p>\n<p><strong>Why me? - Action</strong>: Spend a Fear to Trap a PC in conversation with the most unpleasant person at the party until they succeed on an action roll to extricate themself from this social black hole. A Trapped PC can’t make any other action rolls except to try and remove this condition. When a Trapped PC fails an action roll, they must <strong>mark a Stress</strong>.</p>\n<p><strong>Last Call - Reaction</strong>: WAfter a long night, the partygoers start filtering out. When the feast concludes, all PCs who participated in the festivities clear all Stress and gain a Hope. Additionally, each Honored Guest clears all HP and gains an additional Hope, then clears the condition. PCs who overindulged must succeed on a Brawn Reaction Roll or become Hungover until their next rest. Hungover PCs take a −1 penalty to all action rolls.</p>\n",
+    "impulses": "Encourage revelrous abandon, celebrate an occasion"
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "b38c92272d7499ca",
+      "name": "Loose Lips, Fast Friends - Passive",
+      "type": "feature",
+      "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+      "system": {
+        "description": "<p>Everyone is here to have a good time. PCs have advantage on Charm rolls to socialize with other revelers until they make an unforgetabble faux-pas.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!0f4030d75e5c7fcf.b38c92272d7499ca"
+    },
+    {
+      "_id": "04212fb719b180f0",
+      "name": "Begin! - Action",
+      "type": "feature",
+      "img": "icons/skills/melee/swords-parry-block-yellow.webp",
+      "system": {
+        "description": "<p>Spend the Spotlight to have the host of the feast kick off the entertainment portion of the evening. All PCs can make an action roll to initiate some revelry. Each PC who succeeds becomes an Honored Guest. Until the grand feast ends, an Honored Guest can claim one boon from the host, then clear the condition.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!0f4030d75e5c7fcf.04212fb719b180f0"
+    },
+    {
+      "_id": "b1d69fcf5f17ca65",
+      "name": "Why me? - Action",
+      "type": "feature",
+      "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
+      "system": {
+        "description": "<p>Spend a Fear to Trap a PC in conversation with the most unpleasant person at the party until they succeed on an action roll to extricate themself from this social black hole. A Trapped PC can’t make any other action rolls except to try and remove this condition. When a Trapped PC fails an action roll, they must <strong>mark a Stress</strong>.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!0f4030d75e5c7fcf.b1d69fcf5f17ca65"
+    },
+    {
+      "_id": "b8bbd3172c022e17",
+      "name": "Last Call - Reaction",
+      "type": "feature",
+      "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+      "system": {
+        "description": "<p>WAfter a long night, the partygoers start filtering out. When the feast concludes, all PCs who participated in the festivities clear all Stress and gain a Hope. Additionally, each Honored Guest clears all HP and gains an additional Hope, then clears the condition. PCs who overindulged must succeed on a Brawn Reaction Roll or become Hungover until their next rest. Hungover PCs take a −1 penalty to all action rolls.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!0f4030d75e5c7fcf.b8bbd3172c022e17"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Grand Feast",
+    "actorLink": false
+  },
+  "_key": "!actors!0f4030d75e5c7fcf"
+}

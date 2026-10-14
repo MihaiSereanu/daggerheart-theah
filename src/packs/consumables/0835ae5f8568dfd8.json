@@ -1,0 +1,15 @@
+{
+  "_id": "0835ae5f8568dfd8",
+  "name": "Bonding Honey",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Bonding Honey</strong>: This honey can be used to glue two objects together permanently.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!0835ae5f8568dfd8"
+}

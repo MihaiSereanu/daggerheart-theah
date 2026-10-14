@@ -5,10 +5,8 @@
 
     <div class="tooltip-information-section triple spaced">
         <div class="tooltip-information">
-            <label>{{localize "DAGGERHEART.GENERAL.Tiers.singular"}}</label>
-            {{#with (lookup config.GENERAL.tiers item.system.tier) as | tier |}}
-                <div>{{localize tier.label}}</div>
-            {{/with}}
+            <label>Classification</label>
+            <div>{{item.system.classification}}</div>
         </div>
         <div class="tooltip-information">
             <label>{{localize "DAGGERHEART.GENERAL.type"}}</label>

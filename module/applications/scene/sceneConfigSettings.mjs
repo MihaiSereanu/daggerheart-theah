@@ -20,9 +20,9 @@ export default class DhSceneConfigSettings extends foundry.applications.sheets.S
     static buildParts() {
         const { footer, tabs, ...parts } = super.PARTS;
         const tmpParts = {
-            tabs: { template: 'systems/daggerheart/templates/scene/tabs.hbs' },
+            tabs: { template: 'systems/daggerheart-theah/templates/scene/tabs.hbs' },
             ...parts,
-            dh: { template: 'systems/daggerheart/templates/scene/dh-config.hbs' },
+            dh: { template: 'systems/daggerheart-theah/templates/scene/dh-config.hbs' },
             footer
         };
         return tmpParts;
@@ -31,7 +31,7 @@ export default class DhSceneConfigSettings extends foundry.applications.sheets.S
     static PARTS = DhSceneConfigSettings.buildParts();
 
     static buildTabs() {
-        super.TABS.sheet.tabs.push({ id: 'dh', src: 'systems/daggerheart/assets/logos/FoundryBorneLogoWhite.svg' });
+        super.TABS.sheet.tabs.push({ id: 'dh', src: 'systems/daggerheart-theah/assets/logos/FoundryBorneLogoWhite.svg' });
         return super.TABS;
     }
 
@@ -41,7 +41,7 @@ export default class DhSceneConfigSettings extends foundry.applications.sheets.S
         await super._preFirstRender(context, options);
 
         if (!options.internalRefresh)
-            this.daggerheartFlag = new game.system.api.data.scenes.DHScene(this.document.flags.daggerheart);
+            this.daggerheartFlag = new game.system.api.data.scenes.DHScene(this.document.flags['daggerheart-theah']);
     }
 
     _attachPartListeners(partId, htmlElement, options) {
@@ -112,11 +112,11 @@ export default class DhSceneConfigSettings extends foundry.applications.sheets.S
     /** @override */
     async _processSubmitData(event, form, submitData, options) {
         if (!submitData.flags) submitData.flags = {};
-        submitData.flags.daggerheart = foundry.utils.mergeObject(
+        submitData.flags['daggerheart-theah'] = foundry.utils.mergeObject(
             this.daggerheartFlag.toObject(),
-            submitData.flags.daggerheart
+            submitData.flags['daggerheart-theah']
         );
-        submitData.flags.daggerheart.sceneEnvironments = submitData.flags.daggerheart.sceneEnvironments.filter(x =>
+        submitData.flags['daggerheart-theah'].sceneEnvironments = submitData.flags['daggerheart-theah'].sceneEnvironments.filter(x =>
             foundry.utils.fromUuidSync(x)
         );
 

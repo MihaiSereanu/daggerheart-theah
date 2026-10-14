@@ -1,0 +1,15 @@
+{
+  "_id": "7a802123fc6ecb05",
+  "name": "Amulet of the Brotherhood",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Amulet of the Brotherhood</strong>: Once per Rest, you can activate this amulet to become Hidden until you move. While Hidden in this way, you remain unseen even if an adversary moves to where they would normally see you.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!7a802123fc6ecb05"
+}

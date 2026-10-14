@@ -48,7 +48,7 @@ export default class DHGroupedField extends fields.SchemaField {
                 rolls: [roll],
                 title: this.item.name,
                 speaker: cls.getSpeaker(),
-                flags: { daggerheart: { noButtons: true } }
+                flags: { 'daggerheart-theah': { noButtons: true } }
             });
 
             if (game.dice3d) {

@@ -1,0 +1,28 @@
+{
+  "_id": "cd5cc0e409ec317d",
+  "name": "Sound Judgement",
+  "type": "domainCard",
+  "img": "icons/sundries/books/book-embossed-jewel-gold-green.webp",
+  "system": {
+    "description": "<p>Once per Rest, describe how you apply careful study, preparation, or lore to adjust an item or method. <strong>Spend a Hope</strong> to grant yourself or an ally one of the following effects until next rest:</p>\n<ul>\n<li>Gain a +1 bonus to Evasion</li>\n<li>Gain an Armour slot</li>\n<li>Gain a Stress slot</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "lore",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false,
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    }
+  },
+  "effects": [],
+  "folder": "12efbf11db2e768a",
+  "_key": "!items!cd5cc0e409ec317d"
+}

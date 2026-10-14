@@ -1,0 +1,15 @@
+{
+  "_id": "621ae63f21a97030",
+  "name": "Hobbling Strike",
+  "type": "feature",
+  "img": "icons/creatures/abilities/wolf-howl-moon-purple.webp",
+  "system": {
+    "description": "<p>When you succeed on an attack against a target within Melee range, you can <strong>mark a Stress</strong> to make the target temporarily Vulnerable.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "4cffe85f2cf5597c",
+  "_key": "!items!621ae63f21a97030"
+}

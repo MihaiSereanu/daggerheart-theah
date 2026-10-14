@@ -1,0 +1,15 @@
+{
+  "_id": "b88b02ce74d5f182",
+  "name": "Counterpunch",
+  "type": "feature",
+  "img": "icons/skills/melee/unarmed-punch-fist-yellow-red.webp",
+  "system": {
+    "description": "<p>Before an enemy rolls to hit you, you may <strong>mark a Stress</strong> to counterpunch. If they miss, deal 2d20 physical damage to them, and you may <strong>mark an additional Stress</strong> to leave them staggered and <em>Vulnerable</em>. If they hit you, the damage they deal is one threshold higher.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "20c405c41df4c94d",
+  "_key": "!items!b88b02ce74d5f182"
+}

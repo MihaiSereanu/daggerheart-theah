@@ -1,0 +1,15 @@
+{
+  "_id": "4ec05b6c4e48a19e",
+  "name": "In & Out",
+  "type": "feature",
+  "img": "icons/weapons/daggers/dagger-poisoned-curved-green.webp",
+  "system": {
+    "description": "<p><strong>Spend a Hope</strong> to ask the GM for either a quick or inconspicuous way into or out of a building or structure you can see. The next roll you make that capitalizes on this information gains Advantage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "9a3a9bdef4f83d9a",
+  "_key": "!items!4ec05b6c4e48a19e"
+}

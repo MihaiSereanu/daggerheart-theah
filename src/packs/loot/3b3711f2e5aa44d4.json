@@ -1,0 +1,15 @@
+{
+  "_id": "3b3711f2e5aa44d4",
+  "name": "Memory Shard",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Memory Shard</strong>: Once per rest, you can spend 2 Hope to gain access to a memory of someone the Shard is touching.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!3b3711f2e5aa44d4"
+}

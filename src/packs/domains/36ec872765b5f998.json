@@ -1,0 +1,14 @@
+{
+  "_id": "36ec872765b5f998",
+  "name": "Glamour",
+  "type": "feature",
+  "img": "icons/magic/control/buff-luck-fortune-rainbow.webp",
+  "system": {
+    "description": "<h2>Glamour</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.6d836f2d859de4b4]{Knightly Embodiment}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.7a94661df82e6a05]{Heroes of Legend}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.2b1325152cd8e6c7]{Sidhe Charisma}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.ad771166e6aca101]{Hypnotic Shimmer}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.110c61e4780762d9]{Mirrorwalk}</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!36ec872765b5f998"
+}

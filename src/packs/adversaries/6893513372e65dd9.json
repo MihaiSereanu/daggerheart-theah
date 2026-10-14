@@ -1,0 +1,100 @@
+{
+  "_id": "6893513372e65dd9",
+  "name": "Vampire",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>An undead with blood-stained lips and a predator’s smile.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "champion",
+    "type": "standard",
+    "difficulty": 17,
+    "notes": "<h3>Champion | Standard</h3>\n<p><em>An undead with blood-stained lips and a predator’s smile.</em><br><strong>Motives &amp; Tactics:</strong> Bite, charm, deceive, feed, intimidate</p>\n<p><strong>Difficulty:</strong> 17 | <strong>Thresholds:</strong> 13/24 | <strong>HP:</strong> 5 | <strong>Stress:</strong> 4</p>\n<p><strong>ATK:</strong> +3 | Weapon: Melee | 2d6+7 physical</p>\n<hr>\n<p><strong>Experience:</strong> Nocturnal Hunter +3</p>\n<h4>Features</h4>\n<p><strong>Draining Bite - Action</strong>: Make an attack against a target within Melee range. On a success, deal 4d4 physical damage. A target who marks HP from this attack loses a Hope and must <strong>mark a Stress</strong>. The Vampire then clears a HP.</p>\n<p><strong>Mistform - Reaction</strong>: When the Vampire takes physical damage, you can spend a Fear to take half damage.</p>\n",
+    "damageThresholds": {
+      "major": 13,
+      "severe": 24
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 5
+      },
+      "stress": {
+        "value": 0,
+        "max": 4
+      }
+    },
+    "motivesAndTactics": "Bite, charm, deceive, feed, intimidate",
+    "experiences": {
+      "9fc8e56c76db47da": {
+        "name": "Nocturnal Hunter",
+        "value": 3
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/hand-grip-sword-orange.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 3
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "2d6+7"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "f2eefeffed4844d8",
+      "name": "Draining Bite - Action",
+      "type": "feature",
+      "img": "icons/creatures/abilities/bear-roar-bite-brown-green.webp",
+      "system": {
+        "description": "<p>Make an attack against a target within Melee range. On a success, deal 4d4 physical damage. A target who marks HP from this attack loses a Hope and must <strong>mark a Stress</strong>. The Vampire then clears a HP.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!6893513372e65dd9.f2eefeffed4844d8"
+    },
+    {
+      "_id": "39622284c7d788e8",
+      "name": "Mistform - Reaction",
+      "type": "feature",
+      "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+      "system": {
+        "description": "<p>When the Vampire takes physical damage, you can spend a Fear to take half damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!6893513372e65dd9.39622284c7d788e8"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Vampire",
+    "actorLink": false
+  },
+  "_key": "!actors!6893513372e65dd9"
+}

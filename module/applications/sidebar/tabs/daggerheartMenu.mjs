@@ -43,7 +43,7 @@ export default class DaggerheartMenu extends HandlebarsApplicationMixin(Abstract
 
     /** @override */
     static PARTS = {
-        main: { template: 'systems/daggerheart/templates/sidebar/daggerheart-menu/main.hbs' }
+        main: { template: 'systems/daggerheart-theah/templates/sidebar/daggerheart-menu/main.hbs' }
     };
 
     /* -------------------------------------------- */
@@ -118,10 +118,10 @@ export default class DaggerheartMenu extends HandlebarsApplicationMixin(Abstract
             title: _loc('DAGGERHEART.APPLICATIONS.DaggerheartMenu.chatMessageTitle'),
             flavor: `<span>${_loc('DAGGERHEART.APPLICATIONS.DaggerheartMenu.chatMessageText')}</span>`,
             rolls: [fearRoll],
-            flags: { daggerheart: { noButtons: true } }
+            flags: { 'daggerheart-theah': { noButtons: true } }
         });
 
-        await game.dice3d.waitFor3DAnimationByMessageID(message.id);
+        await game.dice3d?.waitFor3DAnimationByMessageID(message.id);
 
         const automation = game.system.settings.automation.hopeFear;
         if (automation.gm) {

@@ -1,0 +1,91 @@
+{
+  "_id": "799db8079252c8cb",
+  "name": "Round Shield",
+  "type": "weapon",
+  "img": "icons/equipment/shield/round-wooden-boss-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Round Shield</strong></p>\n<p><strong>Barrier</strong>: +2 to Armor Score; -1 to Evasion</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "blackpowder": false,
+    "reloading": false,
+    "secondary": true,
+    "burden": "oneHanded",
+    "weaponFeatures": [],
+    "attack": {
+      "_id": "02638e9caf9cf6f4",
+      "name": "Round Shield",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/equipment/shield/round-wooden-boss-steel-brown.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": "brawn",
+        "bonus": 0
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d6 + @brawn"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "7a81fe122a8850f0",
+      "name": "Round Shield",
+      "type": "base",
+      "transfer": true,
+      "img": "icons/equipment/shield/round-wooden-boss-steel-brown.webp",
+      "system": {
+        "changes": [
+          {
+            "type": "add",
+            "key": "system.evasion",
+            "value": -1,
+            "phase": "initial"
+          }
+        ]
+      },
+      "_key": "!items.effects!799db8079252c8cb.7a81fe122a8850f0"
+    },
+    {
+      "_id": "11b7ee739a84e73a",
+      "name": "Round Shield",
+      "type": "base",
+      "transfer": true,
+      "img": "icons/equipment/shield/round-wooden-boss-steel-brown.webp",
+      "system": {
+        "changes": [
+          {
+            "type": "armor",
+            "phase": "initial",
+            "value": {
+              "current": 0,
+              "max": 2
+            }
+          }
+        ]
+      },
+      "_key": "!items.effects!799db8079252c8cb.11b7ee739a84e73a"
+    }
+  ],
+  "_key": "!items!799db8079252c8cb"
+}

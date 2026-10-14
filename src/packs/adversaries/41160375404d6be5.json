@@ -1,0 +1,126 @@
+{
+  "_id": "41160375404d6be5",
+  "name": "Master Assassin",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A seasoned killer with a threatening voice and a deadly blade.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "leader",
+    "difficulty": 14,
+    "notes": "<h3>Normal | Leader</h3>\n<p><em>A seasoned killer with a threatening voice and a deadly blade.</em><br><strong>Motives &amp; Tactics:</strong> Ambush, get out, kill, prepare for all scenarios</p>\n<p><strong>Difficulty:</strong> 14 | <strong>Thresholds:</strong> 12/25 | <strong>HP:</strong> 6 | <strong>Stress:</strong> 4</p>\n<p><strong>ATK:</strong> +4 | Weapon: Close | 1d10+2 phy</p>\n<hr>\n<p><strong>Experience:</strong> Command +3, Intrusion +3</p>\n<h4>Features</h4>\n<p><strong>Won’t See It Coming - Passive</strong>: The Assassin deals direct damage while they’re Hidden.</p>\n<p><strong>Strike as One - Action</strong>: Mark a Stress to spotlight a number of other Assassins equal to the Assassin’s unmarked Stress.</p>\n<p><strong>The Subtle Blade - Reaction</strong>: When the Assassin successfully makes a standard attack against a Vulnerable target, you can spend a Fear to deal Severe damage instead of their standard damage.</p>\n<p><strong>Momentum - Reaction</strong>: When the Assassin makes a successful attack against a PC, you gain a Fear.</p>\n",
+    "damageThresholds": {
+      "major": 12,
+      "severe": 25
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 6
+      },
+      "stress": {
+        "value": 0,
+        "max": 4
+      }
+    },
+    "motivesAndTactics": "Ambush, get out, kill, prepare for all scenarios",
+    "experiences": {
+      "c3dbd9ab08d0e54d": {
+        "name": "Command",
+        "value": 3
+      },
+      "375783b838393dcb": {
+        "name": "Intrusion",
+        "value": 3
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/ranged/target-bullseye-arrow-green.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "close",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 4
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d10+2"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "a927d4de5ef1ca92",
+      "name": "Won’t See It Coming - Passive",
+      "type": "feature",
+      "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+      "system": {
+        "description": "<p>The Assassin deals direct damage while they’re Hidden.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!41160375404d6be5.a927d4de5ef1ca92"
+    },
+    {
+      "_id": "fd665619c0459848",
+      "name": "Strike as One - Action",
+      "type": "feature",
+      "img": "icons/sundries/flags/banner-sword-blue.webp",
+      "system": {
+        "description": "<p>Mark a Stress to spotlight a number of other Assassins equal to the Assassin’s unmarked Stress.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!41160375404d6be5.fd665619c0459848"
+    },
+    {
+      "_id": "7af987ba5e54f787",
+      "name": "The Subtle Blade - Reaction",
+      "type": "feature",
+      "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+      "system": {
+        "description": "<p>When the Assassin successfully makes a standard attack against a Vulnerable target, you can spend a Fear to deal Severe damage instead of their standard damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!41160375404d6be5.7af987ba5e54f787"
+    },
+    {
+      "_id": "78b5635d35778dac",
+      "name": "Momentum - Reaction",
+      "type": "feature",
+      "img": "icons/environment/creatures/horse-brown.webp",
+      "system": {
+        "description": "<p>When the Assassin makes a successful attack against a PC, you gain a Fear.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!41160375404d6be5.78b5635d35778dac"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Master Assassin",
+    "actorLink": false
+  },
+  "_key": "!actors!41160375404d6be5"
+}

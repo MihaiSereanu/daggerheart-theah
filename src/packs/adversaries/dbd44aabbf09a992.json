@@ -1,0 +1,111 @@
+{
+  "_id": "dbd44aabbf09a992",
+  "name": "Assassin Poisoner",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A cunning scoundrel skilled in both poisons and ambushing.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "skulk",
+    "difficulty": 12,
+    "notes": "<h3>Normal | Skulk</h3>\n<p><em>A cunning scoundrel skilled in both poisons and ambushing.</em><br><strong>Motives &amp; Tactics:</strong> Anticipate, get paid, kill, taint food and water</p>\n<p><strong>Difficulty:</strong> 12 | <strong>Thresholds:</strong> 4/9 | <strong>HP:</strong> 4 | <strong>Stress:</strong> 4</p>\n<p><strong>ATK:</strong> +3 | <strong>Weapon:</strong> Poisoned Dagger: Close | 1d4+1 physical</p>\n<hr>\n<p><strong>Experience:</strong> Intrusion +2</p>\n<h4>Features</h4>\n<p><strong>Deadly Venom - Passive</strong>: Targets who mark HP from the Assassin&#39;s attacks are Vulnerable until they clear an HP.</p>\n<p><strong>Precision - Passive</strong>: The Assassin has Advantage if they are Cloaked.</p>\n<p><strong>Fumigation - Action</strong>: Drop a smoke bomb that fills the air within Close range with smoke, Dizzying all targets in this area. Dizzied targets have Disadvantage on their next action roll.</p>\n",
+    "damageThresholds": {
+      "major": 4,
+      "severe": 9
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 4
+      },
+      "stress": {
+        "value": 0,
+        "max": 4
+      }
+    },
+    "motivesAndTactics": "Anticipate, get paid, kill, taint food and water",
+    "experiences": {
+      "06e35c65a0b90f32": {
+        "name": "Intrusion",
+        "value": 2
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/ranged/target-bullseye-arrow-green.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "close",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 3
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d4+1"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "77bd380b4de252a7",
+      "name": "Deadly Venom - Passive",
+      "type": "feature",
+      "img": "icons/weapons/daggers/dagger-poisoned-curved-green.webp",
+      "system": {
+        "description": "<p>Targets who mark HP from the Assassin&#39;s attacks are Vulnerable until they clear an HP.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!dbd44aabbf09a992.77bd380b4de252a7"
+    },
+    {
+      "_id": "431775e25b8bfc6a",
+      "name": "Precision - Passive",
+      "type": "feature",
+      "img": "icons/creatures/eyes/humanoid-single-purple-blue.webp",
+      "system": {
+        "description": "<p>The Assassin has Advantage if they are Cloaked.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!dbd44aabbf09a992.431775e25b8bfc6a"
+    },
+    {
+      "_id": "48be9e71e06be66e",
+      "name": "Fumigation - Action",
+      "type": "feature",
+      "img": "icons/weapons/daggers/dagger-poisoned-curved-green.webp",
+      "system": {
+        "description": "<p>Drop a smoke bomb that fills the air within Close range with smoke, Dizzying all targets in this area. Dizzied targets have Disadvantage on their next action roll.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!dbd44aabbf09a992.48be9e71e06be66e"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Assassin Poisoner",
+    "actorLink": false
+  },
+  "_key": "!actors!dbd44aabbf09a992"
+}

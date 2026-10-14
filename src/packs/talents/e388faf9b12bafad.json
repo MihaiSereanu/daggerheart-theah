@@ -1,0 +1,20 @@
+{
+  "_id": "e388faf9b12bafad",
+  "name": "Vicious Entangle",
+  "type": "domainCard",
+  "img": "icons/sundries/books/book-symbol-leaf-gold-green.webp",
+  "system": {
+    "description": "<p>Make a <strong>Spellcast Roll</strong> against a target within Far range. On a success, roots and vines reach out from the ground, dealing 2d8 physical damage and temporarily Restraining the target and another target of your choice within Very Close of them.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "druidism",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "7f26513e087dfe71",
+  "_key": "!items!e388faf9b12bafad"
+}

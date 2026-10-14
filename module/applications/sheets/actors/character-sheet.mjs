@@ -1,7 +1,5 @@
 import DHBaseActorSheet from '../api/base-actor.mjs';
 import DhDeathMove from '../../dialogs/deathMove.mjs';
-import { CharacterLevelup, LevelupViewMode } from '../../levelup/_module.mjs';
-import DhCharacterCreation from '../../characterCreation/characterCreation.mjs';
 import FilterMenu from '../../ux/filter-menu.mjs';
 import { getArmorSources, getDocFromElement, getDocFromElementSync, itemAbleRollParse } from '../../../helpers/utils.mjs';
 import { sortBy } from '../../../helpers/functional.mjs';
@@ -114,41 +112,41 @@ export default class CharacterSheet extends DHBaseActorSheet {
         limited: {
             id: 'limited',
             scrollable: ['.limited-container'],
-            template: 'systems/daggerheart/templates/sheets/actors/character/limited.hbs'
+            template: 'systems/daggerheart-theah/templates/sheets/actors/character/limited.hbs'
         },
         sidebar: {
             id: 'sidebar',
             scrollable: ['.shortcut-items-section'],
-            template: 'systems/daggerheart/templates/sheets/actors/character/sidebar.hbs'
+            template: 'systems/daggerheart-theah/templates/sheets/actors/character/sidebar.hbs'
         },
         header: {
             id: 'header',
-            template: 'systems/daggerheart/templates/sheets/actors/character/header.hbs'
+            template: 'systems/daggerheart-theah/templates/sheets/actors/character/header.hbs'
         },
         features: {
             id: 'features',
             scrollable: ['.features-sections'],
-            template: 'systems/daggerheart/templates/sheets/actors/character/features.hbs'
+            template: 'systems/daggerheart-theah/templates/sheets/actors/character/features.hbs'
         },
         loadout: {
             id: 'loadout',
             scrollable: ['.items-section'],
-            template: 'systems/daggerheart/templates/sheets/actors/character/loadout.hbs'
+            template: 'systems/daggerheart-theah/templates/sheets/actors/character/loadout.hbs'
         },
         inventory: {
             id: 'inventory',
             scrollable: ['.items-section'],
-            template: 'systems/daggerheart/templates/sheets/actors/character/inventory.hbs'
+            template: 'systems/daggerheart-theah/templates/sheets/actors/character/inventory.hbs'
         },
         biography: {
             id: 'biography',
             scrollable: ['.items-section'],
-            template: 'systems/daggerheart/templates/sheets/actors/character/biography.hbs'
+            template: 'systems/daggerheart-theah/templates/sheets/actors/character/biography.hbs'
         },
         effects: {
             id: 'effects',
             scrollable: ['.effects-sections'],
-            template: 'systems/daggerheart/templates/sheets/global/tabs/tab-effects.hbs'
+            template: 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-effects.hbs'
         }
     };
 
@@ -301,7 +299,7 @@ export default class CharacterSheet extends DHBaseActorSheet {
         const { value: classItem, subclass } = actor.system.class ?? {};
         const { value: multiclass, subclass: multiSubclass } = actor.system.multiclass ?? {};
         const anchorItems = [
-            ...actor.itemTypes.transformation,
+            ...(actor.itemTypes.transformation ?? []),
             actor.system.ancestry,
             actor.system.community,
             classItem,
@@ -463,48 +461,7 @@ export default class CharacterSheet extends DHBaseActorSheet {
      */
     static #getDomainCardContextOptions() {
         /**@type {import('@client/applications/ux/context-menu.mjs').ContextMenuEntry[]} */
-        const options = [
-            {
-                label: 'toLoadout',
-                icon: 'fa-solid fa-arrow-up',
-                visible: target => {
-                    const doc = getDocFromElementSync(target);
-                    return doc?.isOwner && doc.system.inVault;
-                },
-                onClick: async (event, target) => {
-                    const doc = await getDocFromElement(target);
-                    await doc.system.toggleVault(event, false);
-                }
-            },
-            {
-                label: 'recall',
-                icon: 'fa-solid fa-bolt-lightning',
-                visible: target => {
-                    const doc = getDocFromElementSync(target);
-                    return doc?.isOwner && doc.system.inVault;
-                },
-                onClick: async (event, target) => {
-                    const doc = await getDocFromElement(target);
-                    await doc.system.toggleVault(event, false, true);
-                }
-            },
-            {
-                label: 'toVault',
-                icon: 'fa-solid fa-arrow-down',
-                visible: target => {
-                    const doc = getDocFromElementSync(target);
-                    return doc?.isOwner && !doc.system.inVault;
-                },
-                onClick: async (event, target) => {
-                    const doc = await getDocFromElement(target);
-                    await doc.system.toggleVault(event, true);
-                }
-            }
-        ].map(option => ({
-            ...option,
-            label: `DAGGERHEART.APPLICATIONS.ContextMenu.${option.label}`,
-            icon: `<i class="${option.icon}"></i>`
-        }));
+        const options = [];
 
         return [...options, ...this._getContextMenuCommonOptions.call(this, { usable: true, toChat: true })];
     }
@@ -668,8 +625,9 @@ export default class CharacterSheet extends DHBaseActorSheet {
             const item = await getDocFromElement(li);
             const matchesSearch = !query || foundry.applications.ux.SearchFilter.testQuery(rgx, item.name);
             if (matchesSearch) this.#filteredItems.loadout.search.add(item.id);
-            const { menu } = this.#filteredItems.loadout;
-            li.hidden = !(menu.has(item.id) && matchesSearch);
+            // Talents have no loadout/vault filter menu. An empty legacy menu
+            // must not hide every Talent when the search filter initializes.
+            li.hidden = !matchesSearch;
         }
     }
 
@@ -687,14 +645,6 @@ export default class CharacterSheet extends DHBaseActorSheet {
                 callback: this._onMenuFilterInventory.bind(this),
                 target: '.filter-button',
                 filters: FilterMenu.invetoryFilters
-            },
-            {
-                key: 'loadout',
-                container: '[data-application-part="loadout"]',
-                content: '.items-section',
-                callback: this._onMenuFilterLoadout.bind(this),
-                target: '.filter-button',
-                filters: FilterMenu.cardsFilters
             }
         ];
 
@@ -753,11 +703,13 @@ export default class CharacterSheet extends DHBaseActorSheet {
     /* -------------------------------------------- */
 
     async updateItemResource(event) {
-        const item = await getDocFromElement(event.currentTarget);
-        if (!item) return;
+        // currentTarget is cleared when the DOM event dispatch finishes.
+        const input = event.currentTarget;
+        const item = await getDocFromElement(input);
+        if (!item || !this.isEditable) return;
 
-        const max = event.currentTarget.max ? Number(event.currentTarget.max) : null;
-        const value = max ? Math.min(Number(event.currentTarget.value), max) : event.currentTarget.value;
+        const max = input.max === '' ? Infinity : Number(input.max);
+        const value = Math.clamp(Number(input.value) || 0, 0, max);
         await item.update({ 'system.resource.value': value });
         this.render();
     }
@@ -781,25 +733,9 @@ export default class CharacterSheet extends DHBaseActorSheet {
      * If class or subclass is missing, shows an error notification.
      * @type {ApplicationClickAction}
      */
-    static #levelManagement() {
-        if (this.document.system.needsCharacterSetup)
-            return new DhCharacterCreation(this.document).render({ force: true });
+    static #levelManagement() { return this.setupCharacter?.() ?? this.advanceCharacter?.(); }
 
-        const { value, subclass } = this.document.system.class;
-        if (!value || !subclass)
-            return ui.notifications.error(game.i18n.localize('DAGGERHEART.UI.Notifications.missingClassOrSubclass'));
-
-        new CharacterLevelup(this.document).render({ force: true });
-    }
-
-    /**
-     * Opens the charater level management window in viewMode.
-     * @type {ApplicationClickAction}
-     * @this {CharacterSheet}
-     */
-    static #onViewLevelups() {
-        new LevelupViewMode(this.document).render({ force: true });
-    }
+    static #onViewLevelups() { return this.configureCharacter?.(); }
 
     /**
      * Resets the character data and removes all embedded documents.
@@ -1122,7 +1058,7 @@ export default class CharacterSheet extends DHBaseActorSheet {
         ).useResourcePips;
         const html = document.createElement('div');
         html.innerHTML = await foundry.applications.handlebars.renderTemplate(
-            `systems/daggerheart/templates/ui/tooltip/armorManagement.hbs`,
+            `systems/daggerheart-theah/templates/ui/tooltip/armorManagement.hbs`,
             {
                 sources: armorSources,
                 useResourcePips
@@ -1221,7 +1157,7 @@ export default class CharacterSheet extends DHBaseActorSheet {
 
         const html = document.createElement('div');
         html.innerHTML = await foundry.applications.handlebars.renderTemplate(
-            `systems/daggerheart/templates/ui/tooltip/resourceManagement.hbs`,
+            `systems/daggerheart-theah/templates/ui/tooltip/resourceManagement.hbs`,
             {
                 resources: extraResources
             }

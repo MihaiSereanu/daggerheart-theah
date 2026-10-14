@@ -1,0 +1,18 @@
+{
+  "_id": "180979331c2958af",
+  "name": "Academic",
+  "type": "community",
+  "img": "icons/sundries/books/book-embossed-blue.webp",
+  "system": {
+    "description": "<p>You come from a background that prizes intellect, learning, and mastery of knowledge. Whether trained in great universities, hidden archives, or private guilds, your people believe understanding is power. Academic characters pursue truth through history, science, or political theory.</p>\n<p><strong>Well-Read</strong>. You have advantage on rolls that involve the history, culture, or politics of a prominent person or place.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "features": [
+      "Compendium.daggerheart-theah.features.Item.a47af17a22d83d6c"
+    ],
+    "loreReference": null
+  },
+  "effects": [],
+  "_key": "!items!180979331c2958af"
+}

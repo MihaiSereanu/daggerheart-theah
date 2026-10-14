@@ -1,0 +1,20 @@
+{
+  "_id": "673356132db52646",
+  "name": "Study Mark",
+  "type": "domainCard",
+  "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+  "system": {
+    "description": "<p>You attempt to study a target, making a Wits roll against their Difficulty. On a success, <strong>spend a Hope</strong> to expose a weakness or gap in their defense, temporarily reducing their Difficulty by your Wits. The effect ends if they are struck again or can take any action to defend.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "shade",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "5af6d37ce4bdfed9",
+  "_key": "!items!673356132db52646"
+}

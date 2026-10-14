@@ -1,0 +1,15 @@
+{
+  "_id": "7f3e1eaab5c22e7d",
+  "name": "Quick-Thinking",
+  "type": "feature",
+  "img": "icons/skills/ranged/target-bullseye-arrow-green.webp",
+  "system": {
+    "description": "<p>When a trap or environmental hazard is triggered, you may <strong>mark a Stress</strong> to act immediately against it. You may <strong>mark 2 Stress</strong> instead to roll with Advantage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "8eb0fece6f3617cf",
+  "_key": "!items!7f3e1eaab5c22e7d"
+}

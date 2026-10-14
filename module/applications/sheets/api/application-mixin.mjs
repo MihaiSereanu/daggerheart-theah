@@ -772,7 +772,7 @@ export default function DHApplicationMixin(Base) {
         }
 
         static async #configureLevelUpOptions() {
-            new game.system.api.applications.dialogs.LevelupOptionsDialog(this.document).render({ force: true });
+            ui.notifications.info('Advancements are configured on the character sheet.');
         }
 
         /**

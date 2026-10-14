@@ -1,0 +1,81 @@
+{
+  "_id": "39fac49d84ebd4bf",
+  "name": "Pouncing Predator",
+  "type": "beastform",
+  "img": "icons/creatures/claws/claw-talons-yellow-red.webp",
+  "system": {
+    "description": "<p><em>(Cheetah, Lion, Panther, etc)</em><br><strong>Instinct</strong> +1 <strong>Evasion</strong> +3</p>\n<p><strong>ATK:</strong> Melee Instinct d8+4 phy</p>\n<hr>\n<p><strong>Gain Advantage on</strong>: attack, climb, sneak</p>\n<h4>Features</h4>\n<p><strong>Fleet</strong>: Spend a Hope to move up to Far range without rolling.</p>\n<p><strong>Takedown</strong>: Mark a Stress to move into Melee range of a target and make an attack roll against them. On a success, deal an additional 2d8 damage with this attack and the target marks a Stress.</p>\n<p><strong>Sturdy</strong>: When you take Severe+ damage, you drop out of Beastform.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "mainTrait": "instinct",
+    "tokenSize": {
+      "size": "custom",
+      "width": 1,
+      "height": 1,
+      "depth": 1,
+      "scale": 1
+    },
+    "features": [
+      "Compendium.daggerheart-theah.features.Item.bc45caddbdc74cda",
+      "Compendium.daggerheart-theah.features.Item.840aa7ee8c946f30",
+      "Compendium.daggerheart-theah.features.Item.a3ed2419aab3b3d5"
+    ],
+    "examples": "Cheetah, Lion, Panther, etc",
+    "advantageOn": {
+      "5029ef46eb1c2c30": {
+        "value": "attack"
+      },
+      "9abd4e1bcadac820": {
+        "value": "climb"
+      },
+      "110c3870c18d6de0": {
+        "value": "sneak"
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "f537ee1f9085b035",
+      "name": "Pouncing Predator",
+      "type": "beastform",
+      "transfer": true,
+      "img": "icons/creatures/claws/claw-talons-yellow-red.webp",
+      "system": {
+        "changes": [
+          {
+            "type": "add",
+            "key": "system.traits.instinct.value",
+            "value": 1,
+            "phase": "initial"
+          },
+          {
+            "type": "add",
+            "key": "system.evasion",
+            "value": 3,
+            "phase": "initial"
+          },
+          {
+            "type": "standardAttack",
+            "phase": "initial",
+            "value": {
+              "name": "Pouncing Predator Attack",
+              "damageTypes": [
+                "physical"
+              ],
+              "attackRange": "melee",
+              "trait": "instinct",
+              "damageFormula": "1d8+4 + @instinct",
+              "img": "icons/creatures/claws/claw-straight-brown.webp"
+            }
+          }
+        ],
+        "duration": {
+          "type": "shortRest"
+        }
+      },
+      "_key": "!items.effects!39fac49d84ebd4bf.f537ee1f9085b035"
+    }
+  ],
+  "_key": "!items!39fac49d84ebd4bf"
+}

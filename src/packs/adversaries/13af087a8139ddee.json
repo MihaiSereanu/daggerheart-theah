@@ -1,0 +1,111 @@
+{
+  "_id": "13af087a8139ddee",
+  "name": "Bandit Shadow",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A nimble scoundrel bearing a wicked knife.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "skulk",
+    "difficulty": 13,
+    "notes": "<h3>Normal | Skulk</h3>\n<p><em>A nimble scoundrel bearing a wicked knife.</em><br><strong>Motives &amp; Tactics:</strong> Ambush, conceal, divide, profit</p>\n<p><strong>Difficulty:</strong> 13 | <strong>Thresholds:</strong> 5/9 | <strong>HP:</strong> 3 | <strong>Stress:</strong> 3</p>\n<p><strong>ATK:</strong> +1 | Weapon: Melee | 1d6+4 physical</p>\n<hr>\n<p><strong>Experience:</strong> Intrusion +3</p>\n<h4>Features</h4>\n<p><strong>Backstab - Passive</strong>: When the Shadow succeeds on an attack that has Advantage, they deal 1d6+6 physical damage instead.</p>\n<p><strong>Cloak of Shadow - Action</strong>: Become Cloaked until after the Shadow&#39;s next attack. Attacks made while Cloaked have Advantage.</p>\n<p><strong>Pick Off the Straggler - Action</strong>: <strong>Mark a Stress</strong> to cause a target within Melee range to make an Instinct Reaction Roll. On a failure, the target must <strong>mark 2 Stress</strong> and become emporarily Vulnerable. On a success, the target must <strong>mark a Stress</strong>.</p>\n",
+    "damageThresholds": {
+      "major": 5,
+      "severe": 9
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 3
+      },
+      "stress": {
+        "value": 0,
+        "max": 3
+      }
+    },
+    "motivesAndTactics": "Ambush, conceal, divide, profit",
+    "experiences": {
+      "64652d011ba9bf7a": {
+        "name": "Intrusion",
+        "value": 3
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/hand-grip-sword-orange.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 1
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d6+4"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "21f15afa851f40af",
+      "name": "Backstab - Passive",
+      "type": "feature",
+      "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+      "system": {
+        "description": "<p>When the Shadow succeeds on an attack that has Advantage, they deal 1d6+6 physical damage instead.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!13af087a8139ddee.21f15afa851f40af"
+    },
+    {
+      "_id": "080f05d60e52964e",
+      "name": "Cloak of Shadow - Action",
+      "type": "feature",
+      "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+      "system": {
+        "description": "<p>Become Cloaked until after the Shadow&#39;s next attack. Attacks made while Cloaked have Advantage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!13af087a8139ddee.080f05d60e52964e"
+    },
+    {
+      "_id": "681059b6929d138e",
+      "name": "Pick Off the Straggler - Action",
+      "type": "feature",
+      "img": "icons/skills/ranged/target-bullseye-arrow-green.webp",
+      "system": {
+        "description": "<p><strong>Mark a Stress</strong> to cause a target within Melee range to make an Instinct Reaction Roll. On a failure, the target must <strong>mark 2 Stress</strong> and become emporarily Vulnerable. On a success, the target must <strong>mark a Stress</strong>.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!13af087a8139ddee.681059b6929d138e"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Bandit Shadow",
+    "actorLink": false
+  },
+  "_key": "!actors!13af087a8139ddee"
+}

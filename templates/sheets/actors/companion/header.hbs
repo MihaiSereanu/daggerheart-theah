@@ -12,7 +12,7 @@
     </h1>
     {{#if useResourcePips}}
         <div class="resource-section">
-            {{> "systems/daggerheart/templates/sheets/global/partials/resource-bar.hbs" resource=document.system.resources.stress label="DAGGERHEART.GENERAL.stress" key="system.resources.stress.value" action="toggleStress" largePips=true }}
+            {{> "systems/daggerheart-theah/templates/sheets/global/partials/resource-bar.hbs" resource=document.system.resources.stress label="DAGGERHEART.GENERAL.stress" key="system.resources.stress.value" action="toggleStress" largePips=true }}
         </div>
     {{/if}}
     <div class="status-section {{#if useResourcePips}}pip-display{{/if}}">
@@ -26,7 +26,7 @@
         </div>
         {{#unless useResourcePips}}
             <div class="resource-section">
-                {{> "systems/daggerheart/templates/sheets/global/partials/resource-bar.hbs" resource=document.system.resources.stress label="DAGGERHEART.GENERAL.stress" key="system.resources.stress.value" action="toggleStress" }}
+                {{> "systems/daggerheart-theah/templates/sheets/global/partials/resource-bar.hbs" resource=document.system.resources.stress label="DAGGERHEART.GENERAL.stress" key="system.resources.stress.value" action="toggleStress" }}
             </div>
         {{/unless}}
         <div class='level-div'>
@@ -50,10 +50,10 @@
         </div>
     </div>
     <div class="companion-navigation">
-        {{#> 'systems/daggerheart/templates/sheets/global/tabs/tab-navigation.hbs'}}
+        {{#> 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-navigation.hbs'}}
             <button type="button" data-action="openSettings" data-tooltip-text="{{localize "DAGGERHEART.UI.Tooltip.openSheetSettings"}}">
                 <i class="fa-solid fa-wrench"></i>
             </button>
-        {{/ 'systems/daggerheart/templates/sheets/global/tabs/tab-navigation.hbs'}}
+        {{/ 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-navigation.hbs'}}
     </div>
 </header>

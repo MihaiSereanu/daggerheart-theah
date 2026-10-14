@@ -1,0 +1,23 @@
+{
+  "_id": "7e483076da9e2d03",
+  "name": "Courage",
+  "type": "feature",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow-teal.webp",
+  "system": {
+    "description": "<p>When you fail a roll with Fear, you gain a Hope. Once per Rest, before facing overwhelming odds, describe how you steady yourself - clear 1 Stress and gain 1 Hope.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    }
+  },
+  "effects": [],
+  "folder": "d8e031aec4068609",
+  "_key": "!items!7e483076da9e2d03"
+}

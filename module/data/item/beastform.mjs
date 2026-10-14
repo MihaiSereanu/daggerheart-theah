@@ -10,7 +10,7 @@ export default class DHBeastform extends BaseDataItem {
         return foundry.utils.mergeObject(super.metadata, {
             label: 'TYPES.Item.beastform',
             type: 'beastform',
-            hasDescription: false
+            hasDescription: true
         });
     }
 
@@ -21,14 +21,8 @@ export default class DHBeastform extends BaseDataItem {
             ...super.defineSchema(),
             beastformType: new fields.StringField({
                 required: true,
-                choices: CONFIG.DH.ITEM.beastformTypes,
+                choices: () => ({ normal: CONFIG.DH.ITEM.beastformTypes.normal }),
                 initial: CONFIG.DH.ITEM.beastformTypes.normal.id
-            }),
-            tier: new fields.NumberField({
-                required: true,
-                integer: true,
-                choices: CONFIG.DH.GENERAL.tiers,
-                initial: CONFIG.DH.GENERAL.tiers[1].id
             }),
             tokenImg: new fields.FilePathField({
                 initial: 'icons/svg/mystery-man.svg',
@@ -57,7 +51,7 @@ export default class DHBeastform extends BaseDataItem {
             mainTrait: new fields.StringField({
                 required: true,
                 choices: CONFIG.DH.ACTOR.abilities,
-                initial: CONFIG.DH.ACTOR.abilities.agility.id
+                initial: CONFIG.DH.ACTOR.abilities.finesse.id
             }),
             examples: new fields.StringField(),
             advantageOn: new fields.TypedObjectField(
@@ -67,10 +61,6 @@ export default class DHBeastform extends BaseDataItem {
             ),
             features: new ForeignDocumentUUIDArrayField({ type: 'Item' }),
             evolved: new fields.SchemaField({
-                maximumTier: new fields.NumberField({
-                    integer: true,
-                    choices: CONFIG.DH.GENERAL.tiers
-                }),
                 mainTraitBonus: new fields.NumberField({
                     required: true,
                     integer: true,
@@ -97,11 +87,6 @@ export default class DHBeastform extends BaseDataItem {
                 })
             }),
             hybrid: new fields.SchemaField({
-                maximumTier: new fields.NumberField({
-                    integer: true,
-                    choices: CONFIG.DH.GENERAL.tiers,
-                    label: 'DAGGERHEART.ITEMS.Beastform.FIELDS.evolved.maximumTier.label'
-                }),
                 beastformOptions: new fields.NumberField({ required: true, integer: true, initial: 2, min: 2 }),
                 advantages: new fields.NumberField({ required: true, integer: true, initial: 2, min: 2 }),
                 features: new fields.NumberField({ required: true, integer: true, initial: 2, min: 2 })
@@ -112,7 +97,7 @@ export default class DHBeastform extends BaseDataItem {
     /* -------------------------------------------- */
 
     /**@override */
-    static DEFAULT_ICON = 'systems/daggerheart/assets/icons/documents/items/wolf-head.svg';
+    static DEFAULT_ICON = 'systems/daggerheart-theah/assets/icons/documents/items/wolf-head.svg';
 
     /* -------------------------------------------- */
 
@@ -179,7 +164,8 @@ export default class DHBeastform extends BaseDataItem {
                     ...beastformEffect.system.changes,
                     {
                         key: 'system.advantageSources',
-                        mode: 2,
+                        type: 'add',
+                        phase: 'initial',
                         value: Object.values(this.advantageOn)
                             .map(x => x.value)
                             .join(', ')
@@ -247,7 +233,7 @@ export default class DHBeastform extends BaseDataItem {
                 x,
                 y,
                 flags: {
-                    daggerheart: {
+                    'daggerheart-theah': {
                         beastformTokenImg: token.texture.src,
                         beastformSubjectTexture: token.ring.subject.texture
                     }
@@ -320,7 +306,7 @@ export default class DHBeastform extends BaseDataItem {
             
             const damageDice = damageDieChange?.value !== undefined ? 
                 CONFIG.DH.GENERAL.dieFaces[damageDieChange.value] : null;
-            const damageFormula = damageDice ? `@profd${damageDice}${damageBonusChange?.value ? ` + ${damageBonusChange.value}` : ''}` : null;
+            const damageFormula = damageDice ? `1d${damageDice}${damageBonusChange?.value ? ` + ${damageBonusChange.value}` : ''}` : null;
             beastformEffect.system.changes.push({
                 type: 'standardAttack',
                 phase: 'initial',

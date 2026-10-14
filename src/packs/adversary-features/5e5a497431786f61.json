@@ -1,0 +1,15 @@
+{
+  "_id": "5e5a497431786f61",
+  "name": "Weak Structure",
+  "type": "feature",
+  "img": "icons/environment/settlement/castle.webp",
+  "system": {
+    "description": "<p>When the adversary marks HP from physical damage, they must mark an additional HP.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!5e5a497431786f61"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "31debae9cf95e270",
+  "name": "Vial of Spiritus",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Vial of Spiritus</strong>: Clear 1d4 Stress.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!31debae9cf95e270"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "94a6f44beef7dd3c",
+  "name": "Mockery",
+  "type": "feature",
+  "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+  "system": {
+    "description": "<p>Mark a Stress to say something mocking and force a target to make a Charm Reaction Roll (14). On a failure, the target must <strong>mark 2 Stress</strong> and is Vulnerable until the scene ends.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!94a6f44beef7dd3c"
+}

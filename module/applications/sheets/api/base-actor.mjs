@@ -297,12 +297,12 @@ export default class DHBaseActorSheet extends DHApplicationMixin(ActorSheetV2) {
         const msg = {
             user: game.user.id,
             content: await foundry.applications.handlebars.renderTemplate(
-                'systems/daggerheart/templates/ui/chat/action.hbs',
+                'systems/daggerheart-theah/templates/ui/chat/action.hbs',
                 systemData
             ),
             speaker: cls.getSpeaker(),
             flags: {
-                daggerheart: {
+                'daggerheart-theah': {
                     cssClass: 'dh-chat-message dh-style'
                 }
             }

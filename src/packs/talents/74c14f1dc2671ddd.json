@@ -1,0 +1,20 @@
+{
+  "_id": "74c14f1dc2671ddd",
+  "name": "Rune of Ekerila",
+  "type": "domainCard",
+  "img": "icons/magic/symbols/runes-carved-stone-purple.webp",
+  "system": {
+    "description": "<p>When you encounter a situation where a specific Experience would apply, you may speak this word onto a willing target by <strong>marking a Stress</strong>, allowing them to add that Experience as if they had it. Describe how your magic guides their action.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "galdr",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "1c31d70f005aa82e",
+  "_key": "!items!74c14f1dc2671ddd"
+}

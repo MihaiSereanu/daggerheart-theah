@@ -1,0 +1,23 @@
+{
+  "_id": "4f9ac0b41df4e562",
+  "name": "Zombies",
+  "type": "feature",
+  "img": "icons/sundries/books/book-symbol-skull-grey.webp",
+  "system": {
+    "description": "<p>Once per scene, when the adversary marks 2 or more HP, you can <strong>mark a Stress</strong> to summon a Zombie Pack at Close range and immediately spotlight it.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "scene",
+      "progression": "increasing",
+      "label": "Uses"
+    },
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "reaction"
+  },
+  "effects": [],
+  "_key": "!items!4f9ac0b41df4e562"
+}

@@ -1,0 +1,69 @@
+{
+  "_id": "07dac3349ec83830",
+  "name": "Pitched Battle",
+  "type": "environment",
+  "img": "systems/daggerheart-theah/assets/icons/documents/actors/forest.svg",
+  "system": {
+    "description": "<p><em>A massive combat between two large groups of armed combatants.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "standard",
+    "type": "event",
+    "difficulty": 15,
+    "notes": "<h3>Standard | Event</h3>\n<p><em>A massive combat between two large groups of armed combatants.</em><br><strong>Impulses:</strong> Seize land and wealth, spill blood for greed and glory</p>\n<p><strong>Difficulty:</strong> 15</p>\n<h4>Features</h4>\n<p><strong>Adrift on a Sea of Steel - Passive</strong>: Traversing a battlefield during an active combat requires a successful Finesse Roll to move at all, and PCs can only go up to Close range on a success. If an adversary is within Melee of them, they must <strong>mark a Stress</strong> to make the roll.</p>\n<p><strong>Raze and Pillage- Action</strong>: The attacking force raises the stakes by lighting a fire, stealing a valuable asset, kidnapping an important person, or killing the populace.</p>\n<p><strong>Cannon Volley - Action</strong>: Spend a Fear as the enemy battery fires a coordinated broadside. Pick a point on the battlefield within Very Far range. All targets within Close range of it must make a Finesse Reaction Roll. On a failure, they take 2d10 physical damage from the blast and shrapnel and must <strong>mark a Stress</strong>.</p>\n<p><strong>Reinforcements - Action</strong>: Summon a <em>Veteran Knight</em>, a number of appropriate Minions equal to the number of PCs, and two adversaries of your choice within Far range of a chosen PC as reinforcements. The Knight immediately takes the spotlight.</p>\n",
+    "impulses": "Seize land and wealth, spill blood for greed and glory"
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "188e10a2c56a59fc",
+      "name": "Adrift on a Sea of Steel - Passive",
+      "type": "feature",
+      "img": "icons/environment/settlement/ship.webp",
+      "system": {
+        "description": "<p>Traversing a battlefield during an active combat requires a successful Finesse Roll to move at all, and PCs can only go up to Close range on a success. If an adversary is within Melee of them, they must <strong>mark a Stress</strong> to make the roll.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!07dac3349ec83830.188e10a2c56a59fc"
+    },
+    {
+      "_id": "7dde2868f0ef44f9",
+      "name": "Raze and Pillage- Action",
+      "type": "feature",
+      "img": "icons/magic/fire/explosion-fireball-medium-orange.webp",
+      "system": {
+        "description": "<p>The attacking force raises the stakes by lighting a fire, stealing a valuable asset, kidnapping an important person, or killing the populace.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!07dac3349ec83830.7dde2868f0ef44f9"
+    },
+    {
+      "_id": "49c3920d1ba5c2b0",
+      "name": "Cannon Volley - Action",
+      "type": "feature",
+      "img": "icons/magic/fire/explosion-fireball-medium-orange.webp",
+      "system": {
+        "description": "<p>Spend a Fear as the enemy battery fires a coordinated broadside. Pick a point on the battlefield within Very Far range. All targets within Close range of it must make a Finesse Reaction Roll. On a failure, they take 2d10 physical damage from the blast and shrapnel and must <strong>mark a Stress</strong>.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!07dac3349ec83830.49c3920d1ba5c2b0"
+    },
+    {
+      "_id": "afdb5b579f302c04",
+      "name": "Reinforcements - Action",
+      "type": "feature",
+      "img": "icons/equipment/shield/heater-steel-gold.webp",
+      "system": {
+        "description": "<p>Summon a <em>Veteran Knight</em>, a number of appropriate Minions equal to the number of PCs, and two adversaries of your choice within Far range of a chosen PC as reinforcements. The Knight immediately takes the spotlight.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!07dac3349ec83830.afdb5b579f302c04"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Pitched Battle",
+    "actorLink": false
+  },
+  "_key": "!actors!07dac3349ec83830"
+}

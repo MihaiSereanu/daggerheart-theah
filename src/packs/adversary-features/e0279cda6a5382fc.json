@@ -1,0 +1,15 @@
+{
+  "_id": "e0279cda6a5382fc",
+  "name": "The Hunt Is On",
+  "type": "feature",
+  "img": "icons/creatures/eyes/humanoid-single-purple-blue.webp",
+  "system": {
+    "description": "<p>Spend 2 Fear to summon 1d4 Vampires, who appear at Far range and immediately take the spotlight.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!e0279cda6a5382fc"
+}

@@ -1,0 +1,100 @@
+{
+  "_id": "60798871ab156ff8",
+  "name": "Sellsword",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>An armed mercenary testing their luck.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "minion",
+    "difficulty": 10,
+    "notes": "<h3>Normal | Minion</h3>\n<p><em>An armed mercenary testing their luck.</em><br><strong>Motives &amp; Tactics:</strong> Charge, lacerate, overwhelm, profit</p>\n<p><strong>Difficulty:</strong> 10 | <strong>Thresholds:</strong> None | <strong>HP:</strong> 1 | <strong>Stress:</strong> 1</p>\n<p><strong>ATK:</strong> +3 | Weapon: Melee | 3 phy</p>\n<hr>\n<p><strong>Experience:</strong> Raider +2</p>\n<h4>Features</h4>\n<p><strong>Minion (4 - Passive)</strong>: The Sellsword is defeated by any damage. For every 4 damage a PC deals to a Sellsword, defeat one additional Minion within any range the same attack would have hit.</p>\n<p><strong>Group Attack - Action</strong>: Spend 1 Fear to choose a target and spotlight all Sellswords within Close range. Those Minions move into Melee with the target and make one shared attack roll. On a success, each deals 3 physical damage. Combine the damage.</p>\n",
+    "damageThresholds": {
+      "major": 0,
+      "severe": 0
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 1
+      },
+      "stress": {
+        "value": 0,
+        "max": 1
+      }
+    },
+    "motivesAndTactics": "Charge, lacerate, overwhelm, profit",
+    "experiences": {
+      "a372027382008ac0": {
+        "name": "Raider",
+        "value": 2
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/hand-grip-sword-orange.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 3
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "0"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "439a6e97728c02cb",
+      "name": "Minion (4 - Passive)",
+      "type": "feature",
+      "img": "icons/sundries/flags/banner-sword-blue.webp",
+      "system": {
+        "description": "<p>The Sellsword is defeated by any damage. For every 4 damage a PC deals to a Sellsword, defeat one additional Minion within any range the same attack would have hit.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!60798871ab156ff8.439a6e97728c02cb"
+    },
+    {
+      "_id": "46445db643baa474",
+      "name": "Group Attack - Action",
+      "type": "feature",
+      "img": "icons/sundries/flags/banner-sword-blue.webp",
+      "system": {
+        "description": "<p>Spend 1 Fear to choose a target and spotlight all Sellswords within Close range. Those Minions move into Melee with the target and make one shared attack roll. On a success, each deals 3 physical damage. Combine the damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!60798871ab156ff8.46445db643baa474"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Sellsword",
+    "actorLink": false
+  },
+  "_key": "!actors!60798871ab156ff8"
+}

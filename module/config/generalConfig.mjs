@@ -1,5 +1,5 @@
 export const compendiumJournals = {
-    welcome: 'Compendium.daggerheart.journals.JournalEntry.g7NhKvwltwafmMyR'
+    welcome: 'Compendium.daggerheart-theah.journals.JournalEntry.g7NhKvwltwafmMyR'
 };
 
 export const ruleChoice = {
@@ -41,21 +41,21 @@ export const templateRanges = {
         short: 'vc',
         label: 'DAGGERHEART.CONFIG.Range.veryClose.name',
         description: 'DAGGERHEART.CONFIG.Range.veryClose.description',
-        distance: 3
+        distance: 0
     },
     close: {
         id: 'close',
         short: 'c',
         label: 'DAGGERHEART.CONFIG.Range.close.name',
         description: 'DAGGERHEART.CONFIG.Range.close.description',
-        distance: 10
+        distance: 1
     },
     far: {
         id: 'far',
         short: 'f',
         label: 'DAGGERHEART.CONFIG.Range.far.name',
         description: 'DAGGERHEART.CONFIG.Range.far.description',
-        distance: 20
+        distance: 2
     }
 };
 
@@ -66,7 +66,7 @@ export const range = {
         short: 'vf',
         label: 'DAGGERHEART.CONFIG.Range.veryFar.name',
         description: 'DAGGERHEART.CONFIG.Range.veryFar.description',
-        distance: 30
+        distance: 3
     }
 };
 
@@ -285,7 +285,7 @@ export const defaultRestOptions = {
                                 value: {
                                     custom: {
                                         enabled: true,
-                                        formula: '1d4 + @tier'
+                                        formula: '1d6'
                                     }
                                 }
                             }
@@ -320,7 +320,7 @@ export const defaultRestOptions = {
                                 value: {
                                     custom: {
                                         enabled: true,
-                                        formula: '1d4 + @tier'
+                                        formula: '1d6'
                                     }
                                 }
                             }
@@ -356,7 +356,7 @@ export const defaultRestOptions = {
                                 value: {
                                     custom: {
                                         enabled: true,
-                                        formula: '1d4 + @tier'
+                                        formula: '1d6'
                                     }
                                 }
                             }
@@ -631,25 +631,6 @@ export const deathMoves = {
     }
 };
 
-export const tiers = {
-    1: {
-        id: 1,
-        label: 'DAGGERHEART.GENERAL.Tiers.1'
-    },
-    2: {
-        id: 2,
-        label: 'DAGGERHEART.GENERAL.Tiers.2'
-    },
-    3: {
-        id: 3,
-        label: 'DAGGERHEART.GENERAL.Tiers.3'
-    },
-    4: {
-        id: 4,
-        label: 'DAGGERHEART.GENERAL.Tiers.4'
-    }
-};
-
 export const diceTypes = {
     d4: 'd4',
     d6: 'd6',
@@ -662,16 +643,13 @@ export const diceTypes = {
 export const dieFaces = [4, 6, 8, 10, 12, 20];
 
 export const multiplierTypes = {
-    prof: 'Proficiency',
     cast: 'Spellcast',
     scale: 'Cost Scaling',
     result: 'Roll Result',
-    flat: 'Flat',
-    tier: 'Tier'
+    flat: 'Flat'
 };
 
 export const diceSetNumbers = {
-    prof: 'Proficiency',
     cast: 'Spellcast',
     scale: 'Cost Scaling',
     flat: 'Flat'
@@ -801,7 +779,7 @@ export const rollTypes = {
 };
 
 export const attributionSources = {
-    daggerheart: {
+    'daggerheart-theah': {
         label: 'Daggerheart',
         values: [{ label: 'Daggerheart SRD' }]
     }
@@ -907,19 +885,19 @@ export const fallAndCollisionDamage = {
         id: 'veryClose',
         label: 'DAGGERHEART.CONFIG.fallAndCollision.veryClose.label',
         chatTitle: 'DAGGERHEART.CONFIG.fallAndCollision.veryClose.chatTitle',
-        damageFormula: '1d10 + 3'
+        damageFormula: '1d10 + 5'
     },
     close: {
         id: 'veryClose',
         label: 'DAGGERHEART.CONFIG.fallAndCollision.close.label',
         chatTitle: 'DAGGERHEART.CONFIG.fallAndCollision.close.chatTitle',
-        damageFormula: '1d20 + 5'
+        damageFormula: '1d12 + 5'
     },
     far: {
         id: 'veryClose',
         label: 'DAGGERHEART.CONFIG.fallAndCollision.far.label',
         chatTitle: 'DAGGERHEART.CONFIG.fallAndCollision.far.chatTitle',
-        damageFormula: '1d100 + 15'
+        damageFormula: '1d20 + 5'
     },
     collision: {
         id: 'veryClose',

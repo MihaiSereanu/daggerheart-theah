@@ -35,17 +35,14 @@ export default class DhpChatMessage extends foundry.documents.ChatMessage {
         /* We can change to fully implementing the renderHTML function if needed, instead of augmenting it. */
         const html = await super.renderHTML({ actor: actorData, author: this.author });
 
-        if (this.flags.core?.RollTable || this.flags.daggerheart?.noButtons) {
+        if (this.flags.core?.RollTable || this.flags['daggerheart-theah']?.noButtons) {
             html.querySelector('.roll-buttons.apply-buttons')?.remove();
         }
 
         this.enrichChatMessage(html);
         this.addChatListeners(html);
         
-        // todo: move to system renderHTML once implemented
-        if (['adversaryRoll', 'damageRoll', 'dualityRoll', 'fateRoll'].includes(this.type)) {
-            html.classList.add('themed', 'theme-dark');
-        }
+        // Roll cards inherit the interface theme, including chat notifications and popouts.
 
         return html;
     }

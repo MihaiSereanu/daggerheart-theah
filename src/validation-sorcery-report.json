@@ -1,0 +1,67 @@
+{
+  "cancelledCreation": "No items or resources changed before the starting Talent is confirmed.",
+  "sorcerer": {
+    "archetype": "Sorcerer",
+    "tradition": "porte",
+    "talents": [
+      "Blood Portal"
+    ],
+    "weapon": {
+      "name": "Sorcerous Attack",
+      "type": "weapon",
+      "equipped": true,
+      "trait": "instinct",
+      "range": "far",
+      "damage": "1d6 + 0",
+      "magical": true
+    }
+  },
+  "learnTalentPlacement": "Talents heading only; Domain filter and linked rules preview work.",
+  "tooltip": {
+    "rawMarkup": false,
+    "links": 5,
+    "broken": 0,
+    "scheme": "light",
+    "background": "rgb(242, 239, 231)",
+    "linkColor": "rgb(36, 35, 51)",
+    "linkBackground": "rgb(227, 222, 209)",
+    "linkOpensTalent": true
+  },
+  "rite": {
+    "stress": 2,
+    "totalMessages": 160,
+    "minorMessages": 0
+  },
+  "dynamicWeapon": {
+    "trait": "wits",
+    "damage": "1d6 + 2",
+    "count": 1
+  },
+  "attack": {
+    "title": "Sorcerous Attack",
+    "type": "dualityRoll",
+    "damageButton": true,
+    "rolls": 1
+  },
+  "beastform": {
+    "active": true,
+    "available": false,
+    "messages": 0,
+    "dialogs": 0
+  },
+  "commander": {
+    "archetype": "Commander",
+    "domain": "lore",
+    "granted": true,
+    "weapon": false
+  },
+  "existingSorcererGrant": "passed",
+  "dragSorcerer": {
+    "id": "2GCLYbCwFV6cZ4mc",
+    "primary": "Rapier",
+    "grants": 1,
+    "equipped": false
+  },
+  "multipleClientGrant": "One weapon on both clients.",
+  "browserErrors": []
+}

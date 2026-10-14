@@ -1,0 +1,15 @@
+{
+  "_id": "c4d332ebd2ff46f6",
+  "name": "Careful Steps",
+  "type": "feature",
+  "img": "icons/environment/wilderness/tree-oak.webp",
+  "system": {
+    "description": "<p>Your movement is naturally silent. You have advantage on rolls to move without being heard.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "614beb0a636883d4",
+  "_key": "!items!c4d332ebd2ff46f6"
+}

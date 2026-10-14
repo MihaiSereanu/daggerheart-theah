@@ -1,0 +1,15 @@
+{
+  "_id": "6cbfeec53b226fdf",
+  "name": "Dreadful Riposte",
+  "type": "feature",
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "system": {
+    "description": "<p>When a PC misses the adversary with Fear, the adversary may make an attack roll against them. On a hit, this attack deals direct damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "reaction"
+  },
+  "effects": [],
+  "_key": "!items!6cbfeec53b226fdf"
+}

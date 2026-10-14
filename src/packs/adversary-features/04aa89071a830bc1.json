@@ -1,0 +1,15 @@
+{
+  "_id": "04aa89071a830bc1",
+  "name": "Pick Off the Straggler",
+  "type": "feature",
+  "img": "icons/skills/ranged/target-bullseye-arrow-green.webp",
+  "system": {
+    "description": "<p><strong>Mark a Stress</strong> to cause a target within Melee range to make an Instinct Reaction Roll. On a failure, the target must <strong>mark 2 Stress</strong> and become emporarily Vulnerable. On a success, the target must <strong>mark a Stress</strong>.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!04aa89071a830bc1"
+}

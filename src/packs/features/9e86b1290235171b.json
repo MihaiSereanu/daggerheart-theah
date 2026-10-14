@@ -1,0 +1,15 @@
+{
+  "_id": "9e86b1290235171b",
+  "name": "Scoundrel’s Precision",
+  "type": "feature",
+  "img": "icons/equipment/back/cloak-hooded-green-gold.webp",
+  "system": {
+    "description": "<p>If you miss while <em>Cloaked</em> or while an ally is in Melee range of your target, you may <strong>mark a Stress</strong> to grant yourself Advantage after the roll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "62d44ae0349560d2",
+  "_key": "!items!9e86b1290235171b"
+}

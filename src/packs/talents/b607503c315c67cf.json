@@ -1,0 +1,20 @@
+{
+  "_id": "b607503c315c67cf",
+  "name": "Seize the Moment",
+  "type": "domainCard",
+  "img": "icons/sundries/flags/banner-sword-blue.webp",
+  "system": {
+    "description": "<p>When an ally within Close range attacks a target with advantage, you may <strong>mark a Stress</strong> to advantage on your next attack against this target.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "anchor",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "9aaa1110e6898797",
+  "_key": "!items!b607503c315c67cf"
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "7417cb04bb7faa6e",
+  "name": "Priest",
+  "type": "subclass",
+  "img": "icons/sundries/books/book-red-cross.webp",
+  "system": {
+    "description": "<p>Play the Priest if you want to inspire and protect your allies through unwavering conviction.</p>\n<h4>Features</h4>\n<p><strong>Zealous Indictment</strong>. You may make a Charm action roll against an adversary. On a success, you create an opening or distraction. The next time an ally strikes them before the end of the scene, they deal an additional 1d8 damage.</p>\n<p><strong>Steadfast Presence</strong>. Once per Rest, you can spend a Creed die to clear a number of HP or Stress equal to its value to yourself and all allies within Close range.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.c860b8e784f62fb8",
+    "spellcastingTrait": null,
+    "features": [
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.9e9cfc30563174b5"
+      },
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.d220ca8cccf9a4eb"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": "068cbf5fc4ab8d9f",
+  "_key": "!items!7417cb04bb7faa6e"
+}

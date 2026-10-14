@@ -1,0 +1,20 @@
+{
+  "_id": "af06a65be44e7923",
+  "name": "Soothing Speech",
+  "type": "domainCard",
+  "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+  "system": {
+    "description": "<p>During a Rest, when you take the time to comfort another character while using the <em>Tend to Wounds</em> downtime move, clear an additional HP on that character. When you do, clear 2 Stress.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "poise",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "872e6545268d2095",
+  "_key": "!items!af06a65be44e7923"
+}

@@ -1,0 +1,42 @@
+{
+  "_id": "4c22db6b8d3c7126",
+  "name": "Chainmail Armor",
+  "type": "armor",
+  "img": "icons/equipment/chest/breastplate-metal-scaled-grey.webp",
+  "system": {
+    "description": "<p><strong>Heavy</strong>: -1 to Evasion</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "armor": {
+      "max": 4,
+      "current": 0
+    },
+    "baseThresholds": {
+      "major": 7,
+      "severe": 15
+    },
+    "armorFeatures": []
+  },
+  "effects": [
+    {
+      "_id": "6ab958e9f5d7c3c8",
+      "name": "Chainmail Armor",
+      "type": "base",
+      "transfer": true,
+      "img": "icons/equipment/chest/breastplate-metal-scaled-grey.webp",
+      "system": {
+        "changes": [
+          {
+            "type": "add",
+            "key": "system.evasion",
+            "value": -1,
+            "phase": "initial"
+          }
+        ]
+      },
+      "_key": "!items.effects!4c22db6b8d3c7126.6ab958e9f5d7c3c8"
+    }
+  ],
+  "_key": "!items!4c22db6b8d3c7126"
+}

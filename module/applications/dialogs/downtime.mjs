@@ -46,7 +46,7 @@ export default class DhpDowntime extends HandlebarsApplicationMixin(ApplicationV
     static PARTS = {
         application: {
             id: 'downtime',
-            template: 'systems/daggerheart/templates/dialogs/downtime/downtime.hbs'
+            template: 'systems/daggerheart-theah/templates/dialogs/downtime/downtime.hbs'
         }
     };
 
@@ -206,7 +206,7 @@ export default class DhpDowntime extends HandlebarsApplicationMixin(ApplicationV
                 `DAGGERHEART.APPLICATIONS.Downtime.${this.shortrest ? 'shortRest' : 'longRest'}.title`
             ),
             content: await foundry.applications.handlebars.renderTemplate(
-                'systems/daggerheart/templates/ui/chat/downtime.hbs',
+                'systems/daggerheart-theah/templates/ui/chat/downtime.hbs',
                 {
                     title: game.i18n.localize(
                         `DAGGERHEART.APPLICATIONS.Downtime.${this.shortrest ? 'shortRest' : 'longRest'}.title`
@@ -218,7 +218,7 @@ export default class DhpDowntime extends HandlebarsApplicationMixin(ApplicationV
                 }
             ),
             flags: {
-                daggerheart: {
+                'daggerheart-theah': {
                     cssClass: 'dh-chat-message dh-style'
                 }
             }

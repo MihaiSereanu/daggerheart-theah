@@ -1,0 +1,15 @@
+{
+  "_id": "6285289c7151dfac",
+  "name": "Refined Edge",
+  "type": "feature",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow-teal.webp",
+  "system": {
+    "description": "<p>Choose the style of swordplay you use and gain its effect:</p>\n<ul>\n<li><strong>Fencer’s Temper</strong>. When you deal physical damage, you may add your Instinct to the damage roll.</li>\n<li><strong>Prudent Guard</strong>. When you take physical damage, you may reduce it by your WIts.</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "6a57a9300575c5b7",
+  "_key": "!items!6285289c7151dfac"
+}

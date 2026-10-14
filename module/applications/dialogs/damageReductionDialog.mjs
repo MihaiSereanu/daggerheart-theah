@@ -107,7 +107,7 @@ export default class DamageReductionDialog extends HandlebarsApplicationMixin(Ap
     static PARTS = {
         damageSelection: {
             id: 'damageReduction',
-            template: 'systems/daggerheart/templates/dialogs/damageReduction.hbs'
+            template: 'systems/daggerheart-theah/templates/dialogs/damageReduction.hbs'
         }
     };
 

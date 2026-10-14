@@ -1,0 +1,15 @@
+{
+  "_id": "7cbd6373ec898eb6",
+  "name": "Sea’s Resolve",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-symbol-axe-red.webp",
+  "system": {
+    "description": "<p>When you would be forced to retreat, drop a weapon, or fall prone, you can <strong>mark a Stress</strong> to resist these consequences.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "b437823bd1c4738b",
+  "_key": "!items!7cbd6373ec898eb6"
+}

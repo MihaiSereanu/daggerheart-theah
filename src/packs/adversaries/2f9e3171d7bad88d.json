@@ -1,0 +1,122 @@
+{
+  "_id": "2f9e3171d7bad88d",
+  "name": "Spectral Captain",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A ghostly commander leading their troops beyond death.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "champion",
+    "type": "leader",
+    "difficulty": 17,
+    "notes": "<h3>Champion | Leader</h3>\n<p><em>A ghostly commander leading their troops beyond death.</em><br><strong>Motives &amp; Tactics:</strong> Move through solid objects, rally troops, fight</p>\n<p><strong>Difficulty:</strong> 17 | <strong>Thresholds:</strong> 13/26 | <strong>HP:</strong> 6 | <strong>Stress:</strong> 4</p>\n<p><strong>ATK:</strong> +3 | Weapon: Melee | 2d8+3 physical</p>\n<hr>\n<p><strong>Experience:</strong> Ancient Knowledge +3</p>\n<h4>Features</h4>\n<p><strong>Ghost - Passive</strong>: The Captain has resistance to physical damage. Mark a Stress to move up to Close range through solid objects.</p>\n<p><strong>Unending Battle - Action</strong>: Spend 2 Fear to return up to 1d4+1 defeated Spectral allies to the battle at the points where they first appeared (with no marked HP or Stress).</p>\n<p><strong>Hold Fast - Reaction</strong>: When the Captain’s Spectral allies are forced to make a reaction roll, you can <strong>mark a Stress</strong> to give those allies a +2 bonus to the roll.</p>\n<p><strong>Momentum - Reaction</strong>: When the Captain makes a successful attack against a PC, you gain a Fear.</p>\n",
+    "damageThresholds": {
+      "major": 13,
+      "severe": 26
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 6
+      },
+      "stress": {
+        "value": 0,
+        "max": 4
+      }
+    },
+    "motivesAndTactics": "Move through solid objects, rally troops, fight",
+    "experiences": {
+      "f336ca9fce9a1c4a": {
+        "name": "Ancient Knowledge",
+        "value": 3
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/hand-grip-sword-orange.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 3
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "2d8+3"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "566ebff992f22145",
+      "name": "Ghost - Passive",
+      "type": "feature",
+      "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+      "system": {
+        "description": "<p>The Captain has resistance to physical damage. Mark a Stress to move up to Close range through solid objects.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!2f9e3171d7bad88d.566ebff992f22145"
+    },
+    {
+      "_id": "4b504f91da281418",
+      "name": "Unending Battle - Action",
+      "type": "feature",
+      "img": "icons/equipment/shield/heater-steel-gold.webp",
+      "system": {
+        "description": "<p>Spend 2 Fear to return up to 1d4+1 defeated Spectral allies to the battle at the points where they first appeared (with no marked HP or Stress).</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!2f9e3171d7bad88d.4b504f91da281418"
+    },
+    {
+      "_id": "d43963c6b9e60555",
+      "name": "Hold Fast - Reaction",
+      "type": "feature",
+      "img": "icons/equipment/shield/heater-steel-gold.webp",
+      "system": {
+        "description": "<p>When the Captain’s Spectral allies are forced to make a reaction roll, you can <strong>mark a Stress</strong> to give those allies a +2 bonus to the roll.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!2f9e3171d7bad88d.d43963c6b9e60555"
+    },
+    {
+      "_id": "c5412749679678f4",
+      "name": "Momentum - Reaction",
+      "type": "feature",
+      "img": "icons/environment/creatures/horse-brown.webp",
+      "system": {
+        "description": "<p>When the Captain makes a successful attack against a PC, you gain a Fear.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!2f9e3171d7bad88d.c5412749679678f4"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Spectral Captain",
+    "actorLink": false
+  },
+  "_key": "!actors!2f9e3171d7bad88d"
+}

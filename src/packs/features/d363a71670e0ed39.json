@@ -1,0 +1,23 @@
+{
+  "_id": "d363a71670e0ed39",
+  "name": "No Loose Ends",
+  "type": "feature",
+  "img": "icons/weapons/daggers/dagger-poisoned-curved-green.webp",
+  "system": {
+    "description": "<p>Once per Rest, you may immediately perform an Ambush against a <em>Compromised</em> target. This attack deals damage even on a miss, but on a hit, it becomes a critical hit.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    }
+  },
+  "effects": [],
+  "folder": "38907600a91ae498",
+  "_key": "!items!d363a71670e0ed39"
+}

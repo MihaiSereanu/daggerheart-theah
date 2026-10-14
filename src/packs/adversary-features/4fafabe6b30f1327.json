@@ -1,0 +1,15 @@
+{
+  "_id": "4fafabe6b30f1327",
+  "name": "Scapegoat",
+  "type": "feature",
+  "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+  "system": {
+    "description": "<p>Spend a Fear and target a PC. The adversary convinces a crowd or prominent individual that the target is the cause of their current conflict or misfortune.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!4fafabe6b30f1327"
+}

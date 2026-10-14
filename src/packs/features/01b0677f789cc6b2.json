@@ -1,0 +1,15 @@
+{
+  "_id": "01b0677f789cc6b2",
+  "name": "Shake it Off",
+  "type": "feature",
+  "img": "icons/tools/instruments/lute-gold-brown.webp",
+  "system": {
+    "description": "<p>After you roll with Fear, fail an Action Roll, or get hit with an attack, you may <strong>spend a Hope</strong> to clear a Stress. At level 5, you may clear 2 Stress.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "89e7d79a69a54b43",
+  "_key": "!items!01b0677f789cc6b2"
+}

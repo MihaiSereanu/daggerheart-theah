@@ -1,0 +1,15 @@
+{
+  "_id": "e8d324e8ec089889",
+  "name": "Focused Reprisal",
+  "type": "feature",
+  "img": "icons/skills/melee/shield-block-bash-blue.webp",
+  "system": {
+    "description": "<p>When an adversary damages an ally within Melee range, gain an extra d6 damage bonus on your next successful attack against them.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "a52796eaa3cab727",
+  "_key": "!items!e8d324e8ec089889"
+}

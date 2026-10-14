@@ -1,0 +1,15 @@
+{
+  "_id": "0a27390b65df1f46",
+  "name": "Rite of Undoing",
+  "type": "feature",
+  "img": "icons/magic/symbols/runes-star-magenta.webp",
+  "system": {
+    "description": "<p>Spend 3 Hope to end an ongoing magical or supernatural effect that you can see. If the effect is actively maintained, roll with your Spellcasting Trait vs the caster’s Difficulty.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "bad69822cb6a96d8",
+  "_key": "!items!0a27390b65df1f46"
+}

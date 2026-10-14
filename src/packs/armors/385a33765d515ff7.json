@@ -1,0 +1,42 @@
+{
+  "_id": "385a33765d515ff7",
+  "name": "Gambeson Armor",
+  "type": "armor",
+  "img": "icons/equipment/chest/breastplate-quilted-brown.webp",
+  "system": {
+    "description": "<p><strong>Flexible</strong>: +1 to Evasion</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "armor": {
+      "max": 3,
+      "current": 0
+    },
+    "baseThresholds": {
+      "major": 5,
+      "severe": 11
+    },
+    "armorFeatures": []
+  },
+  "effects": [
+    {
+      "_id": "6dfc2d259bc01e89",
+      "name": "Gambeson Armor",
+      "type": "base",
+      "transfer": true,
+      "img": "icons/equipment/chest/breastplate-quilted-brown.webp",
+      "system": {
+        "changes": [
+          {
+            "type": "add",
+            "key": "system.evasion",
+            "value": 1,
+            "phase": "initial"
+          }
+        ]
+      },
+      "_key": "!items.effects!385a33765d515ff7.6dfc2d259bc01e89"
+    }
+  ],
+  "_key": "!items!385a33765d515ff7"
+}

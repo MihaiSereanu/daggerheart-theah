@@ -1,0 +1,52 @@
+{
+  "_id": "de1b98bf71e6122d",
+  "name": "Shortsword",
+  "type": "weapon",
+  "img": "icons/weapons/swords/shortsword-guard-silver.webp",
+  "system": {
+    "description": "<p><strong>Shortsword</strong></p>\n<p><strong>Paired</strong>: +2 to primary weapon damage to targets within Melee</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "blackpowder": false,
+    "reloading": false,
+    "secondary": true,
+    "burden": "oneHanded",
+    "weaponFeatures": [],
+    "attack": {
+      "_id": "08c623e34fab3bfd",
+      "name": "Shortsword",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/weapons/swords/shortsword-guard-silver.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": "finesse",
+        "bonus": 0
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d6 + @finesse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "_key": "!items!de1b98bf71e6122d"
+}

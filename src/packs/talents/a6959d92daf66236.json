@@ -1,0 +1,20 @@
+{
+  "_id": "a6959d92daf66236",
+  "name": "Fortified",
+  "type": "domainCard",
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "system": {
+    "description": "<p>While wearing Chainmail or Full Plate armour, gain a +2 bonus to your damage thresholds.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "steel",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "6aabc2e2c710379d",
+  "_key": "!items!a6959d92daf66236"
+}

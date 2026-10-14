@@ -5,7 +5,7 @@ export default function DHTokenConfigMixin(Base) {
             tabs: super.PARTS.tabs,
             identity: super.PARTS.identity,
             appearance: {
-                template: 'systems/daggerheart/templates/sheets-settings/token-config/appearance.hbs',
+                template: 'systems/daggerheart-theah/templates/sheets-settings/token-config/appearance.hbs',
                 scrollable: ['']
             },
             vision: super.PARTS.vision,

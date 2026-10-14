@@ -1,0 +1,20 @@
+{
+  "_id": "39651f0fcfedff51",
+  "name": "Wildtouch",
+  "type": "domainCard",
+  "img": "icons/sundries/books/book-symbol-leaf-gold-green.webp",
+  "system": {
+    "description": "<p>Touch a target and <strong>spend 3 Hope</strong> to accelerate their body’s natural healing. The target clears 2 HP at the cost of 1 Stress.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "druidism",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "7f26513e087dfe71",
+  "_key": "!items!39651f0fcfedff51"
+}

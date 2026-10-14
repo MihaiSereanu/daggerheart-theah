@@ -1,0 +1,15 @@
+{
+  "_id": "99e5ac8ad36ce217",
+  "name": "Major Stamina Draught",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Major Stamina Draught</strong>: Clear 1d4+2 Stress.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!99e5ac8ad36ce217"
+}

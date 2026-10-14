@@ -1,0 +1,27 @@
+{
+  "_id": "20a33e39766f0c74",
+  "name": "Radical",
+  "type": "subclass",
+  "img": "icons/sundries/books/book-red-cross.webp",
+  "system": {
+    "description": "<p>Play the Radical if you want to uncover truth and confront deception with ruthless clarity.</p>\n<h4>Features</h4>\n<p><strong>Interrogating Gaze.</strong> Once per Rest, when you engage directly with someone, you may spend up to 3 Hope to ask the GM one question about them per Hope spent:</p>\n<ul>\n<li>What do they fear?</li>\n<li>What do they desire?</li>\n<li>What are they hiding?</li>\n</ul>\n<p><strong>Wrathful Candor</strong>. When you speak your interpretation of the truth after using <em>Interrogating Gaze</em>, <strong>spend a Hope</strong> to force each adversary within Far range to make a Reaction Roll (15). On a failure, they become temporarily <em>Vulnerable</em>.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.c860b8e784f62fb8",
+    "spellcastingTrait": null,
+    "features": [
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.9f39ef0748487a0f"
+      },
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.eaa46396db343641"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": "068cbf5fc4ab8d9f",
+  "_key": "!items!20a33e39766f0c74"
+}

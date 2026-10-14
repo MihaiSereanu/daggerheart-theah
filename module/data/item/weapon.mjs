@@ -20,13 +20,11 @@ export default class DHWeapon extends BaseDataItem {
         const fields = foundry.data.fields;
         return {
             ...super.defineSchema(),
-            tier: new fields.NumberField({
-                required: true,
-                integer: true,
-                initial: 1,
-                min: 1,
-                label: 'DAGGERHEART.GENERAL.Tiers.singular'
-            }),
+            ironforged: new fields.BooleanField({ initial: false }),
+            sorcerous: new fields.BooleanField({ initial: false }),
+            blackpowder: new fields.BooleanField({ initial: false }),
+            reloading: new fields.BooleanField({ initial: false }),
+            reloadRequired: new fields.BooleanField({ initial: false }),
             equipped: new fields.BooleanField({ initial: false }),
 
             //SETTINGS
@@ -65,15 +63,16 @@ export default class DHWeapon extends BaseDataItem {
                         amount: 1
                     },
                     roll: {
-                        trait: 'agility',
+                        trait: 'finesse',
                         type: 'attack'
                     },
                     damage: {
                         main: {
                             type: ['physical'],
                             value: {
-                                multiplier: 'prof',
-                                dice: 'd8'
+                                multiplier: 'flat',
+                                dice: 'd8',
+                                custom: { enabled: true, formula: '1d8 + @finesse' }
                             }
                         }
                     }
@@ -98,7 +97,14 @@ export default class DHWeapon extends BaseDataItem {
     /* -------------------------------------------- */
 
     /**@override */
-    static DEFAULT_ICON = 'systems/daggerheart/assets/icons/documents/items/battered-axe.svg';
+    static DEFAULT_ICON = 'icons/weapons/swords/sword-guard-engraved.webp';
+
+    prepareDerivedData() {
+        super.prepareDerivedData();
+        if (this.sorcerous && this.actor?.type === 'character') {
+            this.attack.roll.trait = this.actor.system.spellcastModifierTrait?.key ?? this.attack.roll.trait;
+        }
+    }
 
     /* -------------------------------------------- */
 
@@ -119,12 +125,14 @@ export default class DHWeapon extends BaseDataItem {
     }
 
     get hasReload() {
-        return Boolean(this.weaponFeatures.find(x => x.value === 'reloading'));
+        return this.reloading || this.blackpowder || Boolean(this.weaponFeatures.find(x => x.value === 'reloading'));
     }
 
     get needsReload() {
-        return this.hasReload && this.resource.value === 0;
+        return this.hasReload && this.reloadRequired;
     }
+
+    get reloadCheckFailed() { return this.reloadRequired; }
 
     /**@inheritdoc */
     async getDescriptionData() {
@@ -134,7 +142,7 @@ export default class DHWeapon extends BaseDataItem {
         const features = this.weaponFeatures.map(x => allFeatures[x.value]).filter(x => x);
 
         const prefix = await foundry.applications.handlebars.renderTemplate(
-            'systems/daggerheart/templates/sheets/items/description.hbs',
+            'systems/daggerheart-theah/templates/sheets/items/description.hbs',
             { features }
         );
 

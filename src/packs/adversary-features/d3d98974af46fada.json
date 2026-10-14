@@ -1,0 +1,15 @@
+{
+  "_id": "d3d98974af46fada",
+  "name": "Relentless (2)",
+  "type": "feature",
+  "img": "icons/equipment/shield/heater-steel-gold.webp",
+  "system": {
+    "description": "<p>The adversary can be spotlighted up to two times per GM turn. Spend Fear as usual to spotlight them.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!d3d98974af46fada"
+}

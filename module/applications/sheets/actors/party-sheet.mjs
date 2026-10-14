@@ -49,17 +49,17 @@ export default class PartySheet extends DHBaseActorSheet {
 
     /**@override */
     static PARTS = {
-        header: { template: 'systems/daggerheart/templates/sheets/actors/party/header.hbs' },
-        tabs: { template: 'systems/daggerheart/templates/sheets/global/tabs/tab-navigation.hbs' },
+        header: { template: 'systems/daggerheart-theah/templates/sheets/actors/party/header.hbs' },
+        tabs: { template: 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-navigation.hbs' },
         partyMembers: {
-            template: 'systems/daggerheart/templates/sheets/actors/party/party-members.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets/actors/party/party-members.hbs',
             scrollable: ['']
         },
         inventory: {
-            template: 'systems/daggerheart/templates/sheets/actors/party/inventory.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets/actors/party/inventory.hbs',
             scrollable: ['.tab.inventory .items-section']
         },
-        notes: { template: 'systems/daggerheart/templates/sheets/actors/party/notes.hbs' }
+        notes: { template: 'systems/daggerheart-theah/templates/sheets/actors/party/notes.hbs' }
     };
 
     /** @inheritdoc */
@@ -145,7 +145,7 @@ export default class PartySheet extends DHBaseActorSheet {
 
     async _prepareMembersContext(context, _options) {
         context.partyMembers = [];
-        const traits = ['agility', 'strength', 'finesse', 'instinct', 'presence', 'knowledge'];
+        const traits = ['finesse', 'brawn', 'finesse', 'instinct', 'charm', 'wits'];
         for (const actor of this.document.system.partyMembers) {
             const weapons = [];
             if (actor.type === 'character') {
@@ -314,7 +314,7 @@ export default class PartySheet extends DHBaseActorSheet {
                 icon: 'fa-solid fa-campground'
             },
             content: await foundry.applications.handlebars.renderTemplate(
-                'systems/daggerheart/templates/sidebar/daggerheart-menu/main.hbs',
+                'systems/daggerheart-theah/templates/sidebar/daggerheart-menu/main.hbs',
                 {
                     refreshables: DaggerheartMenu.defaultRefreshSelections()
                 }

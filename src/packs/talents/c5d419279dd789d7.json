@@ -1,0 +1,20 @@
+{
+  "_id": "c5d419279dd789d7",
+  "name": "Thieves’ Cant",
+  "type": "domainCard",
+  "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+  "system": {
+    "description": "<p>You can speak to anyone you&#39;ve had contact with using a discreet cipher, hand gesture, or message drop. Once you&#39;ve opened a channel, they can reply the same way. Additionally, <strong>mark a Stress</strong> to make a Wits roll against them. On a success, ask the GM one:</p>\n<ul>\n<li>What was their last known drop point or contact location?</li>\n<li>What message or item did they recently pass or receive?</li>\n<li>Who are they secretly working for or reporting to?</li>\n<li>What operation or scheme are they currently involved in?</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "shade",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "5af6d37ce4bdfed9",
+  "_key": "!items!c5d419279dd789d7"
+}

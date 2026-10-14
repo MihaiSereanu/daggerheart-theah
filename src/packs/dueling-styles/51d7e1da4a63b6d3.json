@@ -1,0 +1,14 @@
+{
+  "_id": "51d7e1da4a63b6d3",
+  "name": "Boucher",
+  "type": "feature",
+  "img": "icons/skills/melee/maneuver-daggers-paired-orange.webp",
+  "system": {
+    "description": "<p><strong>Required Weapon: Dual Daggers</strong>\nA Montaigne street-fighting style focused on speed and confusion. Duellists wield a long knife in each hand and overwhelm with relentless attacks.</p>\n<ul>\n<li><strong>Boucher’s Step</strong>. By pressing your enemy into a corner with a flash of small, persistent cuts, you can <strong>mark a Stress</strong> to make the target temporarily <em>Exhausted</em> - while in this state, they have Disadvantage on all physical rolls.</li>\n<li><strong>Violent Thrusts.</strong> You add your Brawn to weapon damage.</li>\n<li><strong>Relentless Attacks.</strong> When an adversary makes a damage roll, you may <strong>mark a Stress</strong> to force them to deal minimum damage instead.</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!51d7e1da4a63b6d3"
+}

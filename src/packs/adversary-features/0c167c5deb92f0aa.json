@@ -1,0 +1,15 @@
+{
+  "_id": "0c167c5deb92f0aa",
+  "name": "Too Many to Handle",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-sword-blue.webp",
+  "system": {
+    "description": "<p>When the adversary is within Melee range of a creature and at least one other adversary with this feature is within Close range, all attacks against that creature have Advantage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!0c167c5deb92f0aa"
+}

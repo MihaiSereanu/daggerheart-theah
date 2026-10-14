@@ -1,0 +1,15 @@
+{
+  "_id": "3d091ee2a7e70912",
+  "name": "Charging Bull",
+  "type": "feature",
+  "img": "icons/environment/creatures/horse-brown.webp",
+  "system": {
+    "description": "<p>Mark a Stress to charge through a group within Close range and make an attack against all targets in the adversary’s path. Targets the adversary succeeds against take 2d6+8 physical damage and are knocked back to Very Far range. If a target is knocked into a solid object or another creature, they take an extra 1d6 damage (combine the damage).</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!3d091ee2a7e70912"
+}

@@ -1,0 +1,122 @@
+{
+  "_id": "8d2e70f4a35b9934",
+  "name": "Bandit Lieutenant",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A seasoned bandit in quality leathers with a strong voice.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "leader",
+    "difficulty": 13,
+    "notes": "<h3>Normal | Leader</h3>\n<p><em>A seasoned bandit in quality leathers with a strong voice.</em><br><strong>Motives &amp; Tactics:</strong> Bully, command, profit, reinforce</p>\n<p><strong>Difficulty:</strong> 13 | <strong>Thresholds:</strong> 7/14 | <strong>HP:</strong> 6 | <strong>Stress:</strong> 3</p>\n<p><strong>ATK:</strong> +2 | Weapon: Melee | 1d8+3 phy</p>\n<hr>\n<p><strong>Experience:</strong> Local Knowledge +2</p>\n<h4>Features</h4>\n<p><strong>Tactician - Action</strong>: When you spotlight the Lieutenant, <strong>mark a Stress</strong> to also spotlight two allies within Close range.</p>\n<p><strong>More Where That Came From - Action</strong>: Summon three Bandit Lackeys at Far range.</p>\n<p><strong>Coup de Grace - Action</strong>: Spend 1 Fear to attack a Vulnerable target within Close. On a success, deal 2d6+12 physical damage and the target marks a Stress.</p>\n<p><strong>Momentum - Reaction</strong>: When the Lieutenant hits a PC with an attack, you gain 1 Fear.</p>\n",
+    "damageThresholds": {
+      "major": 7,
+      "severe": 14
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 6
+      },
+      "stress": {
+        "value": 0,
+        "max": 3
+      }
+    },
+    "motivesAndTactics": "Bully, command, profit, reinforce",
+    "experiences": {
+      "29689e02b232bad2": {
+        "name": "Local Knowledge",
+        "value": 2
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/hand-grip-sword-orange.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 2
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d8+3"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "4d7e16befae91da9",
+      "name": "Tactician - Action",
+      "type": "feature",
+      "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+      "system": {
+        "description": "<p>When you spotlight the Lieutenant, <strong>mark a Stress</strong> to also spotlight two allies within Close range.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!8d2e70f4a35b9934.4d7e16befae91da9"
+    },
+    {
+      "_id": "e9d7fbcd0ad55fc4",
+      "name": "More Where That Came From - Action",
+      "type": "feature",
+      "img": "icons/magic/symbols/runes-star-magenta.webp",
+      "system": {
+        "description": "<p>Summon three Bandit Lackeys at Far range.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!8d2e70f4a35b9934.e9d7fbcd0ad55fc4"
+    },
+    {
+      "_id": "569d535dcd9bc25e",
+      "name": "Coup de Grace - Action",
+      "type": "feature",
+      "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+      "system": {
+        "description": "<p>Spend 1 Fear to attack a Vulnerable target within Close. On a success, deal 2d6+12 physical damage and the target marks a Stress.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!8d2e70f4a35b9934.569d535dcd9bc25e"
+    },
+    {
+      "_id": "394b1ec897ac9691",
+      "name": "Momentum - Reaction",
+      "type": "feature",
+      "img": "icons/environment/creatures/horse-brown.webp",
+      "system": {
+        "description": "<p>When the Lieutenant hits a PC with an attack, you gain 1 Fear.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!8d2e70f4a35b9934.394b1ec897ac9691"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Bandit Lieutenant",
+    "actorLink": false
+  },
+  "_key": "!actors!8d2e70f4a35b9934"
+}

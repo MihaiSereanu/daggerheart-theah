@@ -3,7 +3,7 @@ const fields = foundry.data.fields;
 const attributeField = label =>
     new fields.SchemaField({
         value: new fields.NumberField({ initial: 0, integer: true, label }),
-        tierMarked: new fields.BooleanField({ initial: false })
+        advancementMarked: new fields.BooleanField({ initial: false })
     });
 
 const stressDamageReductionRule = localizationPath =>
@@ -49,7 +49,7 @@ class ResourcesField extends fields.TypedObjectField {
     }
 
     _validateKey(key) {
-        return key in CONFIG.DH.RESOURCE[this.actorType].all;
+        return key in CONFIG.DH.RESOURCE[this.actorType].all || key in CONFIG.DH.RESOURCE.optionalResources;
     }
 
     _cleanType(value, options, _state) {

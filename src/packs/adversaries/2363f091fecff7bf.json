@@ -1,0 +1,123 @@
+{
+  "_id": "2363f091fecff7bf",
+  "name": "Merchant Baron",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>An accomplished merchant with a large operation.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "social",
+    "difficulty": 13,
+    "notes": "<h3>Normal | Social</h3>\n<p><em>An accomplished merchant with a large operation.</em><br><strong>Motives &amp; Tactics:</strong> Abuse power, gather resources, mobilize minions</p>\n<p><strong>Difficulty:</strong> 13 | <strong>Thresholds:</strong> 5/9 | <strong>HP:</strong> 5 | <strong>Stress:</strong> 3</p>\n<p><strong>ATK:</strong> -2 | Weapon: Melee | 1d6+2 physical</p>\n<hr>\n<p><strong>Experience:</strong> Contracts +2, Trade +2</p>\n<h4>Features</h4>\n<p><strong>The Runaround - Passive</strong>: When a PC rolls a 14 or lower on a Charm Roll made against the Merchant, they must <strong>mark a Stress</strong>.</p>\n<p><strong>Art of the Deal - Action</strong>: Spend a Fear to offer a PC a dangerous bargain for something they need - Charm Reaction Roll (17). On a failure, they must <strong>mark 2 Stress</strong> or take the deal.</p>\n<p><strong>The Best Muscle Money Can Buy - Action</strong>: Once per scene, <strong>mark a Stress</strong> to summon 1d4+1 Guards, who appear at Far range.</p>\n",
+    "damageThresholds": {
+      "major": 5,
+      "severe": 9
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 5
+      },
+      "stress": {
+        "value": 0,
+        "max": 3
+      }
+    },
+    "motivesAndTactics": "Abuse power, gather resources, mobilize minions",
+    "experiences": {
+      "3fd842824f4d40e4": {
+        "name": "Contracts",
+        "value": 2
+      },
+      "4c8873ea82af4d18": {
+        "name": "Trade",
+        "value": 2
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/hand-grip-sword-orange.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": -2
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d6+2"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "20aa80292edf43b2",
+      "name": "The Runaround - Passive",
+      "type": "feature",
+      "img": "icons/tools/navigation/compass-brass-blue-red.webp",
+      "system": {
+        "description": "<p>When a PC rolls a 14 or lower on a Charm Roll made against the Merchant, they must <strong>mark a Stress</strong>.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!2363f091fecff7bf.20aa80292edf43b2"
+    },
+    {
+      "_id": "2e4bbd4c24c8fb56",
+      "name": "Art of the Deal - Action",
+      "type": "feature",
+      "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+      "system": {
+        "description": "<p>Spend a Fear to offer a PC a dangerous bargain for something they need - Charm Reaction Roll (17). On a failure, they must <strong>mark 2 Stress</strong> or take the deal.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!2363f091fecff7bf.2e4bbd4c24c8fb56"
+    },
+    {
+      "_id": "7258d878a32db69d",
+      "name": "The Best Muscle Money Can Buy - Action",
+      "type": "feature",
+      "img": "icons/sundries/flags/banner-sword-blue.webp",
+      "system": {
+        "description": "<p>Once per scene, <strong>mark a Stress</strong> to summon 1d4+1 Guards, who appear at Far range.</p>\n",
+        "resource": {
+          "type": "simple",
+          "value": 0,
+          "max": "1",
+          "recovery": "scene",
+          "progression": "increasing",
+          "label": "Uses"
+        }
+      },
+      "effects": [],
+      "_key": "!actors.items!2363f091fecff7bf.7258d878a32db69d"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Merchant Baron",
+    "actorLink": false
+  },
+  "_key": "!actors!2363f091fecff7bf"
+}

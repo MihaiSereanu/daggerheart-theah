@@ -25,25 +25,25 @@ export default class DhVariantRules extends foundry.abstract.DataModel {
             rangeMeasurement: new fields.SchemaField({
                 enabled: new fields.BooleanField({
                     required: true,
-                    initial: true,
+                    initial: false,
                     label: 'DAGGERHEART.GENERAL.enabled'
                 }),
                 melee: new fields.NumberField({
                     required: true,
-                    initial: 5,
+                    initial: 0,
                     label: 'DAGGERHEART.CONFIG.Range.melee.name'
                 }),
                 veryClose: new fields.NumberField({
                     required: true,
-                    initial: 15,
+                    initial: 0,
                     label: 'DAGGERHEART.CONFIG.Range.veryClose.name'
                 }),
                 close: new fields.NumberField({
                     required: true,
-                    initial: 30,
+                    initial: 1,
                     label: 'DAGGERHEART.CONFIG.Range.close.name'
                 }),
-                far: new fields.NumberField({ required: true, initial: 60, label: 'DAGGERHEART.CONFIG.Range.far.name' })
+                far: new fields.NumberField({ required: true, initial: 2, label: 'DAGGERHEART.CONFIG.Range.far.name' })
             }),
             massiveDamage: new fields.SchemaField({
                 enabled: new fields.BooleanField({

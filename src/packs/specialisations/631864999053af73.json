@@ -1,0 +1,27 @@
+{
+  "_id": "631864999053af73",
+  "name": "Agent",
+  "type": "subclass",
+  "img": "icons/equipment/back/cloak-hooded-green-gold.webp",
+  "system": {
+    "description": "<p>Play the Agent if you want to manage webs of contacts</p>\n<h4>Features</h4>\n<p><strong>Well-Connected.</strong> So long as you are in a civilized place, you always know someone that can help you. Spend a Hope to mark them as a <em>Contact</em>: name them, note how they&#39;ll be useful, and choose one:</p>\n<ul>\n<li>They owe you a favour, but they’ll be hard to find</li>\n<li>They’ll ask for something in return</li>\n<li>They’re in trouble, as always</li>\n<li>You were lovers once. It’s complicated</li>\n<li>You didn’t part on good terms</li>\n</ul>\n<p>You can have a number of Contacts equal to your level.</p>\n<p><strong>Fixer.</strong> Once per session, you may call in an established contact. Describe how they aid you, choosing from below:</p>\n<ul>\n<li>They deliver gold, a rare tool, or a needed object</li>\n<li>They assist, adding +4 to a Duality Die on your next roll</li>\n<li>They ambush, adding 2d8 to your next damage roll</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.7eb41ddbad48fa95",
+    "spellcastingTrait": null,
+    "features": [
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.046cdfdac6567b3b"
+      },
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.74cdc279a2393993"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": "91242742a1803151",
+  "_key": "!items!631864999053af73"
+}

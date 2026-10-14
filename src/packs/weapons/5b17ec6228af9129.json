@@ -1,0 +1,73 @@
+{
+  "_id": "5b17ec6228af9129",
+  "name": "Buckler",
+  "type": "weapon",
+  "img": "icons/equipment/shield/buckler-iron-cross-gray.webp",
+  "system": {
+    "description": "<p><strong>Buckler</strong></p>\n<p><strong>Protective</strong>: +1 to Armor Score</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "blackpowder": false,
+    "reloading": false,
+    "secondary": true,
+    "burden": "oneHanded",
+    "weaponFeatures": [],
+    "attack": {
+      "_id": "ddd5ae31d68ab907",
+      "name": "Buckler",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/equipment/shield/buckler-iron-cross-gray.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": "finesse",
+        "bonus": 0
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d4 + @finesse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "fc99a8515c768591",
+      "name": "Buckler",
+      "type": "base",
+      "transfer": true,
+      "img": "icons/equipment/shield/buckler-iron-cross-gray.webp",
+      "system": {
+        "changes": [
+          {
+            "type": "armor",
+            "phase": "initial",
+            "value": {
+              "current": 0,
+              "max": 1
+            }
+          }
+        ]
+      },
+      "_key": "!items.effects!5b17ec6228af9129.fc99a8515c768591"
+    }
+  ],
+  "_key": "!items!5b17ec6228af9129"
+}

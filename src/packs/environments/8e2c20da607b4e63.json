@@ -1,0 +1,69 @@
+{
+  "_id": "8e2c20da607b4e63",
+  "name": "Noble Court",
+  "type": "environment",
+  "img": "systems/daggerheart-theah/assets/icons/documents/actors/forest.svg",
+  "system": {
+    "description": "<p><em>The dazzling mansion of a powerful noble, lavishly decorated.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "standard",
+    "type": "social",
+    "difficulty": 15,
+    "notes": "<h3>Standard | Social</h3>\n<p><em>The dazzling mansion of a powerful noble, lavishly decorated.</em><br><strong>Impulses:</strong> Justify and perpetuate their rule, seduce rivals with promises of power and comfort</p>\n<p><strong>Difficulty:</strong> 15</p>\n<h4>Features</h4>\n<p><strong>All Roads Lead here - Passive</strong>: While in the Noble Court, a PC has disadvantage on Charm Rolls made to take actions that don&#39;t fit the nobble way of life or support the Noble&#39;s dominance.</p>\n<p><strong>The Gravity of Nobility - Action:</strong> Spend a Fear to present a PC with an offer to satisfy a major goal in exchange for obeying or supporting the noble. The target must make a Charm Reaction Roll. On a failure, they must mark all their Stress or accept the offer. If they have already marked all their Stress, they must reduce their Stress track by the result until after a Rest. On a success, they must mark 1d4 Stress.</p>\n<p><strong>Noble Decree - Action</strong>: Spend a Fear to tick down a long-term countdown related to the noble&#39;s agenda by 1d4. If this triggers the countdown, a proclamation is announced at court when it begins.</p>\n<p><strong>Eyes Everywhere - Reaction</strong>: On a result with Fear, you can spend a Fear to have someone loyal to the noble overhear the PCs seditious talk. A PC must pass an Instinct Reaction Roll to notice they’re being overheard and intercept the witness before being exposed.</p>\n",
+    "impulses": "Justify and perpetuate their rule, seduce rivals with promises of power and comfort"
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "e714dbb1923a67bd",
+      "name": "All Roads Lead here - Passive",
+      "type": "feature",
+      "img": "icons/tools/navigation/compass-brass-blue-red.webp",
+      "system": {
+        "description": "<p>While in the Noble Court, a PC has disadvantage on Charm Rolls made to take actions that don&#39;t fit the nobble way of life or support the Noble&#39;s dominance.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!8e2c20da607b4e63.e714dbb1923a67bd"
+    },
+    {
+      "_id": "b3b90fda6f365586",
+      "name": "The Gravity of Nobility - Action",
+      "type": "feature",
+      "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+      "system": {
+        "description": "<p>Spend a Fear to present a PC with an offer to satisfy a major goal in exchange for obeying or supporting the noble. The target must make a Charm Reaction Roll. On a failure, they must mark all their Stress or accept the offer. If they have already marked all their Stress, they must reduce their Stress track by the result until after a Rest. On a success, they must mark 1d4 Stress.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!8e2c20da607b4e63.b3b90fda6f365586"
+    },
+    {
+      "_id": "06f92d4a36d49a88",
+      "name": "Noble Decree - Action",
+      "type": "feature",
+      "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+      "system": {
+        "description": "<p>Spend a Fear to tick down a long-term countdown related to the noble&#39;s agenda by 1d4. If this triggers the countdown, a proclamation is announced at court when it begins.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!8e2c20da607b4e63.06f92d4a36d49a88"
+    },
+    {
+      "_id": "8ead5d0aefaf371d",
+      "name": "Eyes Everywhere - Reaction",
+      "type": "feature",
+      "img": "icons/creatures/eyes/humanoid-single-purple-blue.webp",
+      "system": {
+        "description": "<p>On a result with Fear, you can spend a Fear to have someone loyal to the noble overhear the PCs seditious talk. A PC must pass an Instinct Reaction Roll to notice they’re being overheard and intercept the witness before being exposed.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!8e2c20da607b4e63.8ead5d0aefaf371d"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Noble Court",
+    "actorLink": false
+  },
+  "_key": "!actors!8e2c20da607b4e63"
+}

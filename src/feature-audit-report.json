@@ -1,0 +1,1397 @@
+{
+  "sourceHash": "97613fcf9a440ed07fa053e352917c5608d78e3001e0290791d1133f4b2b2905",
+  "contexts": 162,
+  "features": 393,
+  "directSourceFeatures": [
+    "The Contract",
+    "Aldana",
+    "Ambrogia",
+    "Boucher",
+    "Donovan",
+    "Drexel",
+    "Eisenfaust",
+    "Leegstra",
+    "Mantovani",
+    "Mireli",
+    "Sabat",
+    "Torres",
+    "Valroux",
+    "Anchor",
+    "Flair",
+    "Lore",
+    "Poise",
+    "Shade",
+    "Steel",
+    "Tactics",
+    "Valour",
+    "Druidism",
+    "Dar Matushki",
+    "Galdr",
+    "Fire Within",
+    "Glamour",
+    "Hexenwerk",
+    "Porte",
+    "Sorte",
+    "Sanderis",
+    "Art of the Second Prophet"
+  ],
+  "totalFeatureDocuments": 598,
+  "verified": [
+    {
+      "source": "Assassin: Hope Feature",
+      "verified": true,
+      "features": [
+        "Grim Resolve"
+      ]
+    },
+    {
+      "source": "Assassin: Archetype Features",
+      "verified": true,
+      "features": [
+        "Ambush",
+        "In & Out"
+      ]
+    },
+    {
+      "source": "Assassin / Ashurite Disciple",
+      "verified": true,
+      "features": [
+        "Death Strike",
+        "Deadly Rehearsal"
+      ]
+    },
+    {
+      "source": "Assassin / Spy",
+      "verified": true,
+      "features": [
+        "Pull the Strings",
+        "No Loose Ends"
+      ]
+    },
+    {
+      "source": "Brawler: Hope Feature",
+      "verified": true,
+      "features": [
+        "Staggering Blow"
+      ]
+    },
+    {
+      "source": "Brawler: Archetype Features",
+      "verified": true,
+      "features": [
+        "Living Weapon",
+        "Just You & Me"
+      ]
+    },
+    {
+      "source": "Brawler / Pit Fighter",
+      "verified": true,
+      "features": [
+        "Powerhouse",
+        "Not Done Yet"
+      ]
+    },
+    {
+      "source": "Brawler / Pugilist",
+      "verified": true,
+      "features": [
+        "Fighting Guard",
+        "Counterpunch"
+      ]
+    },
+    {
+      "source": "Commander: Hope Feature",
+      "verified": true,
+      "features": [
+        "Issued Orders"
+      ]
+    },
+    {
+      "source": "Commander: Archetype Features",
+      "verified": true,
+      "features": [
+        "Veteran of Many Fields",
+        "Battle Ritual"
+      ]
+    },
+    {
+      "source": "Commander / Tactician",
+      "verified": true,
+      "features": [
+        "Battlefield Orders",
+        "Follow My Lead"
+      ]
+    },
+    {
+      "source": "Commander / Mastermind",
+      "verified": true,
+      "features": [
+        "Exploit",
+        "Press the Advantage"
+      ]
+    },
+    {
+      "source": "Fanatic: Hope Feature",
+      "verified": true,
+      "features": [
+        "Unshaken Resolve"
+      ]
+    },
+    {
+      "source": "Fanatic: Archetype Features",
+      "verified": true,
+      "features": [
+        "Creed",
+        "Conviction"
+      ]
+    },
+    {
+      "source": "Fanatic / Priest",
+      "verified": true,
+      "features": [
+        "Zealous Indictment",
+        "Steadfast Presence"
+      ]
+    },
+    {
+      "source": "Fanatic / Radical",
+      "verified": true,
+      "features": [
+        "Interrogating Gaze",
+        "Wrathful Candor"
+      ]
+    },
+    {
+      "source": "Minstrel: Hope Feature",
+      "verified": true,
+      "features": [
+        "Make a Scene"
+      ]
+    },
+    {
+      "source": "Minstrel: Archetype Features",
+      "verified": true,
+      "features": [
+        "Rally",
+        "Shake it Off"
+      ]
+    },
+    {
+      "source": "Minstrel / Troubadour",
+      "verified": true,
+      "features": [
+        "Gifted Performance",
+        "Maestro"
+      ]
+    },
+    {
+      "source": "Minstrel / Raconteur",
+      "verified": true,
+      "features": [
+        "Rousing Speech",
+        "Heart of a Poet"
+      ]
+    },
+    {
+      "source": "Hunter: Hope Feature",
+      "verified": true,
+      "features": [
+        "Piercing Insight"
+      ]
+    },
+    {
+      "source": "Hunter: Archetype Features",
+      "verified": true,
+      "features": [
+        "Singular Focus",
+        "Targeted Strikes"
+      ]
+    },
+    {
+      "source": "Hunter / Bounty Hunter",
+      "verified": true,
+      "features": [
+        "Ruthless Precision",
+        "Elusive Predator"
+      ]
+    },
+    {
+      "source": "Hunter / Field Archaeologist",
+      "verified": true,
+      "features": [
+        "Quick-Thinking",
+        "Unorthodox Solution"
+      ]
+    },
+    {
+      "source": "Rogue: Hope Feature",
+      "verified": true,
+      "features": [
+        "Scoundrel’s Dodge"
+      ]
+    },
+    {
+      "source": "Rogue: Archetype Features",
+      "verified": true,
+      "features": [
+        "Silent Steps",
+        "Scoundrel’s Precision"
+      ]
+    },
+    {
+      "source": "Rogue / Thief",
+      "verified": true,
+      "features": [
+        "Breaking & Entering",
+        "Second-Story Work"
+      ]
+    },
+    {
+      "source": "Rogue / Agent",
+      "verified": true,
+      "features": [
+        "Well-Connected",
+        "Fixer"
+      ]
+    },
+    {
+      "source": "Scholar: Hope Feature",
+      "verified": true,
+      "features": [
+        "According to Plan"
+      ]
+    },
+    {
+      "source": "Scholar: Archetype Features",
+      "verified": true,
+      "features": [
+        "Academic Insight",
+        "Wordly Insight"
+      ]
+    },
+    {
+      "source": "Scholar / Chronicler",
+      "verified": true,
+      "features": [
+        "Adept",
+        "Learned Application"
+      ]
+    },
+    {
+      "source": "Scholar / Inventor",
+      "verified": true,
+      "features": [
+        "Jury Rig",
+        "Resourceful"
+      ]
+    },
+    {
+      "source": "Soldier: Hope Feature",
+      "verified": true,
+      "features": [
+        "Bulwark"
+      ]
+    },
+    {
+      "source": "Soldier: Archetype Features",
+      "verified": true,
+      "features": [
+        "Unstoppable",
+        "Combat Discipline"
+      ]
+    },
+    {
+      "source": "Soldier / Bodyguard",
+      "verified": true,
+      "features": [
+        "Unwavering",
+        "Loyal Protector"
+      ]
+    },
+    {
+      "source": "Soldier / Mercenary",
+      "verified": true,
+      "features": [
+        "Revenge",
+        "Focused Reprisal"
+      ]
+    },
+    {
+      "source": "Sorcerer: Hope Feature",
+      "verified": true,
+      "features": [
+        "Rite of Undoing"
+      ]
+    },
+    {
+      "source": "Sorcerer: Archetype Features",
+      "verified": true,
+      "features": [
+        "Sorcerous Lineage",
+        "Sorcerous Aptitude"
+      ]
+    },
+    {
+      "source": "Sorcerer / Druidism",
+      "verified": true,
+      "features": []
+    },
+    {
+      "source": "Sorcerer / Dar Matushki",
+      "verified": true,
+      "features": []
+    },
+    {
+      "source": "Sorcerer / Galdr",
+      "verified": true,
+      "features": []
+    },
+    {
+      "source": "Sorcerer / Glamour",
+      "verified": true,
+      "features": []
+    },
+    {
+      "source": "Sorcerer / Hexenwerk",
+      "verified": true,
+      "features": []
+    },
+    {
+      "source": "Sorcerer / Porte",
+      "verified": true,
+      "features": []
+    },
+    {
+      "source": "Sorcerer / Sorte",
+      "verified": true,
+      "features": []
+    },
+    {
+      "source": "Sorcerer / Sanderis",
+      "verified": true,
+      "features": []
+    },
+    {
+      "source": "Sorcerer / Fire Within",
+      "verified": true,
+      "features": []
+    },
+    {
+      "source": "Swashbuckler: Hope Feature",
+      "verified": true,
+      "features": [
+        "Daring Flourish"
+      ]
+    },
+    {
+      "source": "Swashbuckler: Archetype Features",
+      "verified": true,
+      "features": [
+        "Stylish Gambits",
+        "Stylish Strike"
+      ]
+    },
+    {
+      "source": "Swashbuckler / Dashing Duelist",
+      "verified": true,
+      "features": [
+        "Flourish",
+        "Never Fear"
+      ]
+    },
+    {
+      "source": "Swashbuckler / Honour Guard",
+      "verified": true,
+      "features": [
+        "All for One",
+        "One for All"
+      ]
+    },
+    {
+      "source": "Warrior: Hope Feature",
+      "verified": true,
+      "features": [
+        "Practiced Swings"
+      ]
+    },
+    {
+      "source": "Warrior: Archetype Features",
+      "verified": true,
+      "features": [
+        "Refined Edge",
+        "Flow of Battle"
+      ]
+    },
+    {
+      "source": "Warrior / Bravo",
+      "verified": true,
+      "features": [
+        "Courage",
+        "Rise to the Challenge"
+      ]
+    },
+    {
+      "source": "Warrior / Brute",
+      "verified": true,
+      "features": [
+        "Mighty",
+        "Raw Force"
+      ]
+    },
+    {
+      "source": "origins: Avalon",
+      "verified": true,
+      "features": [
+        "Lionhearted",
+        "Steadfast"
+      ]
+    },
+    {
+      "source": "origins: Inismore",
+      "verified": true,
+      "features": [
+        "Luck of the Emerald Isle",
+        "Turn of the Wind"
+      ]
+    },
+    {
+      "source": "origins: Highland Marches",
+      "verified": true,
+      "features": [
+        "Thick Blood",
+        "Enduring Might"
+      ]
+    },
+    {
+      "source": "origins: Castille",
+      "verified": true,
+      "features": [
+        "Graceful",
+        "Instinct for Trouble"
+      ]
+    },
+    {
+      "source": "origins: Eisen",
+      "verified": true,
+      "features": [
+        "Iron Defense",
+        "Brutal Beatdown"
+      ]
+    },
+    {
+      "source": "origins: Montaigne",
+      "verified": true,
+      "features": [
+        "Unshakable Resolve",
+        "Flair for the Dramatic"
+      ]
+    },
+    {
+      "source": "origins: Sarmatia",
+      "verified": true,
+      "features": [
+        "Enlightened",
+        "Resilient"
+      ]
+    },
+    {
+      "source": "origins: Ussura",
+      "verified": true,
+      "features": [
+        "Bitter Reflexes",
+        "Hard Habit"
+      ]
+    },
+    {
+      "source": "origins: Vesten",
+      "verified": true,
+      "features": [
+        "Sea’s Resolve",
+        "Brutal Momentum"
+      ]
+    },
+    {
+      "source": "origins: Vodacce",
+      "verified": true,
+      "features": [
+        "Sly",
+        "Surefooted"
+      ]
+    },
+    {
+      "source": "communities: Rural North",
+      "verified": true,
+      "features": [
+        "Hardy"
+      ]
+    },
+    {
+      "source": "communities: Village",
+      "verified": true,
+      "features": [
+        "Close-Knit"
+      ]
+    },
+    {
+      "source": "communities: Nobility",
+      "verified": true,
+      "features": [
+        "Privilege"
+      ]
+    },
+    {
+      "source": "communities: Academic",
+      "verified": true,
+      "features": [
+        "Well-Read"
+      ]
+    },
+    {
+      "source": "communities: Highlands",
+      "verified": true,
+      "features": [
+        "Steady"
+      ]
+    },
+    {
+      "source": "communities: Order",
+      "verified": true,
+      "features": [
+        "Dedicated"
+      ]
+    },
+    {
+      "source": "communities: Coastal",
+      "verified": true,
+      "features": [
+        "Know the Tide"
+      ]
+    },
+    {
+      "source": "communities: Criminal",
+      "verified": true,
+      "features": [
+        "Scoundrel"
+      ]
+    },
+    {
+      "source": "communities: Traveler",
+      "verified": true,
+      "features": [
+        "Nomadic Preparedness"
+      ]
+    },
+    {
+      "source": "communities: Wildborne",
+      "verified": true,
+      "features": [
+        "Careful Steps"
+      ]
+    },
+    {
+      "source": "adversaries: Bandit Kneebreaker",
+      "verified": true,
+      "features": [
+        "I've Got 'Em - Passive",
+        "Hold Them Down - Action"
+      ]
+    },
+    {
+      "source": "adversaries: Bear",
+      "verified": true,
+      "features": [
+        "Overwhelming Force - Passive",
+        "Bite - Action",
+        "Momentum - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Tough Pirate",
+      "verified": true,
+      "features": [
+        "Swashbuckler - Passive",
+        "Clear the Decks - Action"
+      ]
+    },
+    {
+      "source": "adversaries: Tough Zombie",
+      "verified": true,
+      "features": []
+    },
+    {
+      "source": "adversaries: Shark",
+      "verified": true,
+      "features": [
+        "Terrifying - Passive",
+        "Rending Bite - Passive",
+        "Blood in the Water - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Skeletal Knight",
+      "verified": true,
+      "features": [
+        "Terrifying - Passive",
+        "Cut to the Bone - Action",
+        "Dig Two Graves - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Pirate Raiders",
+      "verified": true,
+      "features": [
+        "Horde (1d4+1) - Passive",
+        "Swashbuckler - Passive"
+      ]
+    },
+    {
+      "source": "adversaries: Zombie Pack",
+      "verified": true,
+      "features": [
+        "Horde (1d4+2) - Passive",
+        "Overwhelm - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Wolf Pack",
+      "verified": true,
+      "features": [
+        "Horde (1d6+2) - Passive",
+        "Frenzy - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Bandit Lackey",
+      "verified": true,
+      "features": [
+        "Minion (3) - Passive",
+        "Group Attack - Action"
+      ]
+    },
+    {
+      "source": "adversaries: Rotted Zombie",
+      "verified": true,
+      "features": [
+        "Minion (2) - Passive",
+        "Group Attack - Action"
+      ]
+    },
+    {
+      "source": "adversaries: Sellsword",
+      "verified": true,
+      "features": [
+        "Minion (4 - Passive)",
+        "Group Attack - Action"
+      ]
+    },
+    {
+      "source": "adversaries: Bandit Lieutenant",
+      "verified": true,
+      "features": [
+        "Tactician - Action",
+        "More Where That Came From - Action",
+        "Coup de Grace - Action",
+        "Momentum - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Cultist Leader",
+      "verified": true,
+      "features": [
+        "Seize The Moment - Action",
+        "Our Master’s Will - Reaction",
+        "Summoning Ritual - Reaction",
+        "Zombies - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Head Guard",
+      "verified": true,
+      "features": [
+        "Rally Guards - Action",
+        "On My Signal - Reaction",
+        "Momentum - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Veteran Knight",
+      "verified": true,
+      "features": [
+        "Shield Wall - Passive",
+        "Heavily Armored - Passive",
+        "Bash - Action",
+        "For the Realm! - Action"
+      ]
+    },
+    {
+      "source": "adversaries: Master Assassin",
+      "verified": true,
+      "features": [
+        "Won’t See It Coming - Passive",
+        "Strike as One - Action",
+        "The Subtle Blade - Reaction",
+        "Momentum - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Pirate Captain",
+      "verified": true,
+      "features": [
+        "Swashbuckler - Passive",
+        "Reinforcements - Action",
+        "No Quarter - Action",
+        "Momentum - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Marksman Duelist",
+      "verified": true,
+      "features": [
+        "Holster - Passive",
+        "Blunderbuss - Action",
+        "Reinforce - Reaction",
+        "Momentum - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Sidhe Noble",
+      "verified": true,
+      "features": [
+        "Voice of the Fae - Action",
+        "Sidhe Cage - Action",
+        "Momentum - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Archer Guard",
+      "verified": true,
+      "features": [
+        "Hobbling Shot - Action"
+      ]
+    },
+    {
+      "source": "adversaries: Bandit Archer",
+      "verified": true,
+      "features": [
+        "Unseen Strike - Passive"
+      ]
+    },
+    {
+      "source": "adversaries: Skeleton Archer",
+      "verified": true,
+      "features": [
+        "Opportunist - Passive",
+        "Deadly Shot - Action"
+      ]
+    },
+    {
+      "source": "adversaries: Sorcerer",
+      "verified": true,
+      "features": [
+        "Battle Teleport - Passive",
+        "Refresh - Action",
+        "Eruption - Action",
+        "Arcane Artillery - Action",
+        "Arcane Shield - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Assassin Poisoner",
+      "verified": true,
+      "features": [
+        "Deadly Venom - Passive",
+        "Precision - Passive",
+        "Fumigation - Action"
+      ]
+    },
+    {
+      "source": "adversaries: Bandit Shadow",
+      "verified": true,
+      "features": [
+        "Backstab - Passive",
+        "Cloak of Shadow - Action",
+        "Pick Off the Straggler - Action"
+      ]
+    },
+    {
+      "source": "adversaries: Dire Wolf",
+      "verified": true,
+      "features": [
+        "Pack Tactics - Passive",
+        "Hobbling Strike - Action"
+      ]
+    },
+    {
+      "source": "adversaries: Master Thief",
+      "verified": true,
+      "features": [
+        "Quick Hands - Action",
+        "Escape Plan - Action"
+      ]
+    },
+    {
+      "source": "adversaries: Courtesan",
+      "verified": true,
+      "features": [
+        "Searing Glance - Reaction",
+        "Mockery - Action"
+      ]
+    },
+    {
+      "source": "adversaries: Courtier",
+      "verified": true,
+      "features": [
+        "Scapegoat - Action",
+        "Devastating Retort - Passive",
+        "Bend Ears - Action"
+      ]
+    },
+    {
+      "source": "adversaries: Spy",
+      "verified": true,
+      "features": [
+        "Gathering Secrets - Action",
+        "Fly on the Wall - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Noble",
+      "verified": true,
+      "features": [
+        "My Land, My Rules - Passive",
+        "Guards, Seize Them! - Action",
+        "Exile - Action",
+        "Execute Them! - Action"
+      ]
+    },
+    {
+      "source": "adversaries: Merchant Baron",
+      "verified": true,
+      "features": [
+        "The Runaround - Passive",
+        "Art of the Deal - Action",
+        "The Best Muscle Money Can Buy - Action"
+      ]
+    },
+    {
+      "source": "adversaries: Bandit",
+      "verified": true,
+      "features": [
+        "Climber - Passive",
+        "From Above - Passive"
+      ]
+    },
+    {
+      "source": "adversaries: Bladed Guard",
+      "verified": true,
+      "features": [
+        "Shield Wall - Passive",
+        "Detain - Action"
+      ]
+    },
+    {
+      "source": "adversaries: Elite Soldier",
+      "verified": true,
+      "features": [
+        "Reinforce - Action",
+        "Veteran’s Loyalty - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Shambling Zombie",
+      "verified": true,
+      "features": [
+        "Too Many to Handle - Passive",
+        "Horrifying - Passive"
+      ]
+    },
+    {
+      "source": "adversaries: Skeleton Warrior",
+      "verified": true,
+      "features": [
+        "Only Bones - Passive",
+        "Won't Stay Dead - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Sidhe Soldier",
+      "verified": true,
+      "features": [
+        "Pack Tactics - Passive",
+        "Fae Control - Action",
+        "Blend In - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Walkway Demon",
+      "verified": true,
+      "features": [
+        "Relentless (2) - Passive",
+        "All Must Fall - Passive",
+        "Hellfire - Action",
+        "Reaper - Reaction",
+        "Momentum - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Patchwork Zombie Hulk",
+      "verified": true,
+      "features": [
+        "Destructible - Passive",
+        "Flailing Limbs - Passive",
+        "Another for the Pile - Action",
+        "Tormented Screams - Action"
+      ]
+    },
+    {
+      "source": "adversaries: Musclebound Brute",
+      "verified": true,
+      "features": [
+        "Ramp Up - Passive",
+        "Bone Breaker - Passive",
+        "Flip Table - Action",
+        "Rampaging Fury - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Syrneth Construct",
+      "verified": true,
+      "features": [
+        "Relentless (2) - Passive",
+        "Weak Structure - Passive",
+        "Trample - Action",
+        "Overload - Reaction",
+        "Death Quake - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Bandit Hexer",
+      "verified": true,
+      "features": [
+        "Disheartening Blast - Passive",
+        "Curse - Action",
+        "Chaotic Flux - Action",
+        "Hex Blast - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Cult Adept",
+      "verified": true,
+      "features": [
+        "Enervating Blast - Action",
+        "Shroud of the Fallen - Action",
+        "Shadow Shackles - Action",
+        "Fear Is Fuel - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Demon of Wrath",
+      "verified": true,
+      "features": [
+        "Unrelenting - Passive",
+        "Battle Lust - Action",
+        "Retaliation - Reaction",
+        "Blood and Souls - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: The Minotaur",
+      "verified": true,
+      "features": [
+        "Ramp Up - Passive",
+        "Charging Bull - Action",
+        "Gore - Action"
+      ]
+    },
+    {
+      "source": "adversaries: Syrneth Vault Sentinel",
+      "verified": true,
+      "features": [
+        "Kinetic Slam - Passive",
+        "Box In - Action",
+        "Mana Bolt - Action",
+        "Momentum - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Sidhe Queen",
+      "verified": true,
+      "features": [
+        "Sidhe Labyrinth - Action",
+        "We Are All One - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Vampire Count",
+      "verified": true,
+      "features": [
+        "Terrifying - Passive",
+        "Look into My Eyes - Passive",
+        "Feed on Followers - Action",
+        "The Hunt Is On - Action",
+        "Dreadful Riposte - Reaction",
+        "Mistform - Reaction",
+        "Blood Rain - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Spectral Captain",
+      "verified": true,
+      "features": [
+        "Ghost - Passive",
+        "Unending Battle - Action",
+        "Hold Fast - Reaction",
+        "Momentum - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Demon of Jealousy",
+      "verified": true,
+      "features": [
+        "Unhinged - Passive",
+        "My Turn - Reaction",
+        "Rivalry - Reaction",
+        "What’s Yours Is Mine - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Syrneth Guardian Turret",
+      "verified": true,
+      "features": [
+        "Slow Firing - Passive",
+        "Mark Target - Action",
+        "Concentrate Fire - Reaction",
+        "Detonation - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Spectral Archer",
+      "verified": true,
+      "features": [
+        "Ghost - Passive",
+        "Pick Your Target - Action"
+      ]
+    },
+    {
+      "source": "adversaries: Demon of Despair",
+      "verified": true,
+      "features": [
+        "Despair - Passive",
+        "Your Struggle Is Pointless - Action",
+        "Your Friends Will Fail You - Reaction",
+        "Momentum - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Giant Eagle",
+      "verified": true,
+      "features": [
+        "Dive & Drop - Action"
+      ]
+    },
+    {
+      "source": "adversaries: Ghoul",
+      "verified": true,
+      "features": [
+        "Unnatural - Passive",
+        "Overwhelm - Passive",
+        "Lurching Lunge - Action"
+      ]
+    },
+    {
+      "source": "adversaries: Spectral Warrior",
+      "verified": true,
+      "features": [
+        "Ghost - Passive",
+        "Grave Blade - Action"
+      ]
+    },
+    {
+      "source": "adversaries: Vampire",
+      "verified": true,
+      "features": [
+        "Draining Bite - Action",
+        "Mistform - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Drachen",
+      "verified": true,
+      "features": [
+        "Relentless (3) - Passive",
+        "Rend and Crush - Passive",
+        "No Hope - Passive",
+        "Tempest Wings - Action",
+        "Dragon's Breath - Action",
+        "Flaming - Reaction",
+        "Momentum - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Gorgon",
+      "verified": true,
+      "features": [
+        "Relentless (2) - Passive",
+        "Sunsear - Passive",
+        "Crown of Serpents - Action",
+        "Petrifying Gaze - Reaction",
+        "Momentum - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Hydra",
+      "verified": true,
+      "features": [
+        "Many-Headed Menace - Passive",
+        "Many Headed Reach — Passive",
+        "Relentless (X) - Passive",
+        "Regeneration - Action",
+        "Terrifying Chorus - Action",
+        "Magical Weakness - Reaction"
+      ]
+    },
+    {
+      "source": "adversaries: Syrneth Puzzlebox",
+      "verified": true,
+      "features": [
+        "Relentless (2) - Passive",
+        "Randomized Tactics - Action",
+        "Overcharge - Reaction",
+        "Death Quake - Reaction"
+      ]
+    },
+    {
+      "source": "environments: Dense Forest",
+      "verified": true,
+      "features": [
+        "Signs of Trouble - Passive",
+        "Falling Branches - Action",
+        "Bandit Ambush - Action",
+        "Call for Reinforcements - Action"
+      ]
+    },
+    {
+      "source": "environments: Syrneth Ruins",
+      "verified": true,
+      "features": [
+        "Forgotten Architecture - Passive",
+        "Residual Power - Passive",
+        "Shifting Streets - Action",
+        "Awakening the Past - Action"
+      ]
+    },
+    {
+      "source": "environments: Eisen Forest",
+      "verified": true,
+      "features": [
+        "Omens of Danger - Passive",
+        "Closing Paths - Action",
+        "Ghostly Onslaught - Action",
+        "Unseen Stalker - Reaction"
+      ]
+    },
+    {
+      "source": "environments: Villain's Lair",
+      "verified": true,
+      "features": [
+        "Unsafe - Passive",
+        "Villain's Office - Passive",
+        "Grand Hall - Passive",
+        "Hidden Vault - Passive",
+        "Barracks - Passive",
+        "Escape Tunnel - Passive",
+        "Booby-Trapped Hallways - Action",
+        "Rallying Cry - Action",
+        "Reinforcements - Action"
+      ]
+    },
+    {
+      "source": "environments: Outpost Town",
+      "verified": true,
+      "features": [
+        "Rumors Abound - Passive",
+        "Rival Party - Passive",
+        "It'd Be a Shame If... - Action",
+        "Wrong Place - Reaction"
+      ]
+    },
+    {
+      "source": "environments: Bustling Marketplace",
+      "verified": true,
+      "features": [
+        "Tip the Scales - Passive",
+        "Unexpected Find - Action",
+        "Sticky Fingers - Action",
+        "Crowd Control - Reaction"
+      ]
+    },
+    {
+      "source": "environments: Grand Feast",
+      "verified": true,
+      "features": [
+        "Loose Lips, Fast Friends - Passive",
+        "Begin! - Action",
+        "Why me? - Action",
+        "Last Call - Reaction"
+      ]
+    },
+    {
+      "source": "environments: Noble Court",
+      "verified": true,
+      "features": [
+        "All Roads Lead here - Passive",
+        "The Gravity of Nobility - Action",
+        "Noble Decree - Action",
+        "Eyes Everywhere - Reaction"
+      ]
+    },
+    {
+      "source": "environments: Cliffside Ascend",
+      "verified": true,
+      "features": [
+        "The Climb - Passive",
+        "Pitons Left Behind - Passive",
+        "Fall - Action"
+      ]
+    },
+    {
+      "source": "environments: Raging River",
+      "verified": true,
+      "features": [
+        "Dangerous Crossing - Passive",
+        "Undertow - Action",
+        "Patient Hunter - Action"
+      ]
+    },
+    {
+      "source": "environments: Mountain Pass",
+      "verified": true,
+      "features": [
+        "Wind Patterns - Passive",
+        "Avalanche - Action",
+        "Eagle Nest - Reaction",
+        "Icy Winds - Reaction"
+      ]
+    },
+    {
+      "source": "environments: The Walkway",
+      "verified": true,
+      "features": [
+        "Bleeding Steps - Passive",
+        "The Walkway Hungers - Action",
+        "Dragged Off the Path - Action",
+        "Echoes of Blood - Reaction"
+      ]
+    },
+    {
+      "source": "environments: AMBUSHED",
+      "verified": true,
+      "features": [
+        "Relative Strength - Passive",
+        "Surprise! - Action"
+      ]
+    },
+    {
+      "source": "environments: AMBUSHERS",
+      "verified": true,
+      "features": [
+        "Relative Strength - Passive",
+        "Where Did They Come From? - Reaction"
+      ]
+    },
+    {
+      "source": "environments: HERETICAL CONVOCATION",
+      "verified": true,
+      "features": [
+        "Blasphemed Ground - Passive",
+        "Ecstatic Fervor - Action",
+        "Unveiling the Secret – Reaction",
+        "Shield of Devotion - Reaction"
+      ]
+    },
+    {
+      "source": "environments: Heist",
+      "verified": true,
+      "features": [
+        "Infiltration - Passive",
+        "Prep Work - Passive",
+        "Saw This Coming - Passive",
+        "Exfiltration - Reaction",
+        "Sound the Alarm - Reaction"
+      ]
+    },
+    {
+      "source": "environments: CASTLE SIEGE",
+      "verified": true,
+      "features": [
+        "Secret Entrance - Passive",
+        "Siege Weapons (Environment Change)- Action",
+        "Reinforcements - Action",
+        "Collateral Damage - Reaction"
+      ]
+    },
+    {
+      "source": "environments: Pitched Battle",
+      "verified": true,
+      "features": [
+        "Adrift on a Sea of Steel - Passive",
+        "Raze and Pillage- Action",
+        "Cannon Volley - Action",
+        "Reinforcements - Action"
+      ]
+    },
+    {
+      "source": "beastforms: Agile Scout",
+      "verified": true,
+      "features": [
+        "Agile",
+        "Fragile"
+      ]
+    },
+    {
+      "source": "beastforms: Household Friend",
+      "verified": true,
+      "features": [
+        "Companion",
+        "Fragile"
+      ]
+    },
+    {
+      "source": "beastforms: Pack Predator",
+      "verified": true,
+      "features": [
+        "Hobbling Strike",
+        "Pack Hunting",
+        "Sturdy"
+      ]
+    },
+    {
+      "source": "beastforms: Powerful Beast",
+      "verified": true,
+      "features": [
+        "Rampage",
+        "Thick Hide",
+        "Sturdy"
+      ]
+    },
+    {
+      "source": "beastforms: Pouncing Predator",
+      "verified": true,
+      "features": [
+        "Fleet",
+        "Takedown",
+        "Sturdy"
+      ]
+    },
+    {
+      "source": "beastforms: Mighty Strider",
+      "verified": true,
+      "features": [
+        "Carrier",
+        "Trample",
+        "Fragile"
+      ]
+    }
+  ],
+  "derivedFeatureDocuments": 174
+}

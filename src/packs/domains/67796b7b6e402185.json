@@ -1,0 +1,14 @@
+{
+  "_id": "67796b7b6e402185",
+  "name": "Art of the Second Prophet",
+  "type": "feature",
+  "img": "icons/sundries/books/book-symbol-canterbury-cross.webp",
+  "system": {
+    "description": "<h2>Art of the Second Prophet</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.1389585af94789d2]{Path of the Devout}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.4ee2cef891141aab]{Path of the Humble}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.298915daeda4bd03]{Path of the Just}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.a7d22629849abf03]{Path of the Merciful}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.127b71ab816c1661]{path of the Pariah}</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!67796b7b6e402185"
+}

@@ -1,0 +1,18 @@
+{
+  "_id": "8c7901ccc1c91356",
+  "name": "Druidism",
+  "type": "subclass",
+  "img": "icons/magic/symbols/runes-star-magenta.webp",
+  "system": {
+    "description": "<p>Play a Druid if you want to embody the old power of nature and walk in the shape of beasts.</p>\n<h4>SPELLCASTING TRAIT: INSTINCT</h4>\n<blockquote>\n<p>The traditional religion of Avalon, it forwards that one can watch the world and predict the course of events. It has no gods, only the Sidhe who are spirits of nature. To be a druid means to be in tune with nature itself.\n:\nDruids in rural areas can act as de facto judges, making decisions in civil disputes and legal issues in small villages with no formal courts. The religion is not outlawed in Avalon, though it is officially discouraged by Queen Elaine and seen as primitive by the city populace, though remains popular in the rural areas of the three islands.</p>\n</blockquote>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.619fbc2f6e310fa4",
+    "spellcastingTrait": "instinct",
+    "features": []
+  },
+  "effects": [],
+  "folder": "1adde1032a0a00cf",
+  "_key": "!items!8c7901ccc1c91356"
+}

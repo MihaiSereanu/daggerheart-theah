@@ -1,0 +1,20 @@
+{
+  "_id": "be4b98d1aedd4fdd",
+  "name": "Wrathful Flames",
+  "type": "domainCard",
+  "img": "icons/magic/fire/explosion-fireball-medium-orange.webp",
+  "system": {
+    "description": "<p>You gather flames in your palm and let them loose. Make a Spellcast Roll against a target within Very Far range. On a success, <strong>mark 3 Stress</strong> to hurl a sphere of fire toward them that explodes on impact. The target and all creatures within Very Close range of them must make a Reaction Roll (15). Targets who fail take 1d20+5 magic damage. Targets who succeed take half damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "firewithin",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "95f4956bfe177487",
+  "_key": "!items!be4b98d1aedd4fdd"
+}

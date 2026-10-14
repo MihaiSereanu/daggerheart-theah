@@ -1,0 +1,20 @@
+{
+  "_id": "b5c86b530f66a9b4",
+  "name": "Chokehold",
+  "type": "domainCard",
+  "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+  "system": {
+    "description": "<p>While <em>Hidden</em>, when you position yourself behind a target of comparable size, you can <strong>mark a Stress</strong> to pull them into a chokehold, either dealing 2d6 physical damage or forcing them to <strong>mark a Stress</strong> or fall unconscious.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "shade",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "5af6d37ce4bdfed9",
+  "_key": "!items!b5c86b530f66a9b4"
+}

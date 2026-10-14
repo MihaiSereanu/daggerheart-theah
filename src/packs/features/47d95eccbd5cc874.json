@@ -1,0 +1,15 @@
+{
+  "_id": "47d95eccbd5cc874",
+  "name": "Just You & Me",
+  "type": "feature",
+  "img": "icons/skills/melee/unarmed-punch-fist-yellow-red.webp",
+  "system": {
+    "description": "<p>While there are no other adversaries within Very Close of your target, you gain a +2 bonus to your attack and damage rolls against them. In addition, you ignore the target&#39;s damage redunction effects, if any.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "c761d07e14c2e789",
+  "_key": "!items!47d95eccbd5cc874"
+}

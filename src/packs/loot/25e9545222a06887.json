@@ -1,0 +1,15 @@
+{
+  "_id": "25e9545222a06887",
+  "name": "Bloodstone",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Bloodstone</strong>: You can attach this stone to a weapon that doesn&#39;t already have a feature. The weapon gains the following feature. <strong>Brutal</strong>: When you roll the maximum value on a damage die, roll an additional damage die.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!25e9545222a06887"
+}

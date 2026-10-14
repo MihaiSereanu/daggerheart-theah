@@ -1,0 +1,15 @@
+{
+  "_id": "f67a74aa7d5ad23f",
+  "name": "Compass Pair of the Lost",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Compass Pair of the Lost</strong>: These two compasses point toward each other no matter how far apart they are.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!f67a74aa7d5ad23f"
+}

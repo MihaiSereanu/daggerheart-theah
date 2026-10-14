@@ -1,0 +1,15 @@
+{
+  "_id": "cbb62d5e1ac539bc",
+  "name": "Mercury Tonic",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Mercury Tonic</strong>: You gain a +1 bonus to your next Finesse Roll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!cbb62d5e1ac539bc"
+}

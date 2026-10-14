@@ -9,9 +9,9 @@
                 <legend>{{localize "DAGGERHEART.APPLICATIONS.CharacterCreation.suggestedArmor"}}</legend>
 
                 <div class="selections-container armor-card">
-                    {{#> "systems/daggerheart/templates/components/card-preview.hbs" armor }}
+                    {{#> "systems/daggerheart-theah/templates/components/card-preview.hbs" armor }}
                         {{localize "DAGGERHEART.APPLICATIONS.CharacterCreation.selectArmor"}}
-                    {{/"systems/daggerheart/templates/components/card-preview.hbs"}}
+                    {{/"systems/daggerheart-theah/templates/components/card-preview.hbs"}}
                 </div>
                 {{#if armor.suggestion.name}}
                     <fieldset class="suggestion-container">
@@ -29,9 +29,9 @@
                 <div class="equipment-subsection">
                     <div class="equipment-wrapper">
                         <div class="selections-container primary-weapon-card">
-                            {{#> "systems/daggerheart/templates/components/card-preview.hbs" primaryWeapon }}
+                            {{#> "systems/daggerheart-theah/templates/components/card-preview.hbs" primaryWeapon }}
                                 {{localize "DAGGERHEART.APPLICATIONS.CharacterCreation.selectPrimaryWeapon"}}
-                            {{/"systems/daggerheart/templates/components/card-preview.hbs"}}
+                            {{/"systems/daggerheart-theah/templates/components/card-preview.hbs"}}
                         </div>
                         {{#if primaryWeapon.suggestion.name}}
                             <fieldset class="suggestion-container">
@@ -44,9 +44,9 @@
                     </div>
                     <div class="equipment-wrapper">
                         <div class="selections-container secondary-weapon-card">
-                            {{#> "systems/daggerheart/templates/components/card-preview.hbs" secondaryWeapon }}
+                            {{#> "systems/daggerheart-theah/templates/components/card-preview.hbs" secondaryWeapon }}
                                 {{localize "DAGGERHEART.APPLICATIONS.CharacterCreation.selectSecondaryWeapon"}}
-                            {{/"systems/daggerheart/templates/components/card-preview.hbs"}}
+                            {{/"systems/daggerheart-theah/templates/components/card-preview.hbs"}}
                         </div>
                         {{#if secondaryWeapon.suggestion.name}}
                             <fieldset class="suggestion-container">

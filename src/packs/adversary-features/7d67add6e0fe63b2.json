@@ -1,0 +1,15 @@
+{
+  "_id": "7d67add6e0fe63b2",
+  "name": "My Land, My Rules",
+  "type": "feature",
+  "img": "icons/environment/wilderness/tree-oak.webp",
+  "system": {
+    "description": "<p>All social actions made against the adversary on their land have Disadvantage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!7d67add6e0fe63b2"
+}

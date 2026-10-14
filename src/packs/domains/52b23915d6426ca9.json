@@ -1,0 +1,14 @@
+{
+  "_id": "52b23915d6426ca9",
+  "name": "Hexenwerk",
+  "type": "feature",
+  "img": "icons/consumables/potions/round-decorated-snake-green.webp",
+  "system": {
+    "description": "<h2>Hexenwerk</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.9cb33dc99e49a67a]{Banish Horror}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.57cb81e5c1d909d3]{Create Horror}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.f05e1174c16faf78]{Hexen’s Potions}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.c9e0dee81bb0b86e]{Hexen’s Unguents}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.97fa93effaddfecf]{Hexen’s Talismans}</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!52b23915d6426ca9"
+}

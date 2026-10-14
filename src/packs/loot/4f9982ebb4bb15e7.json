@@ -1,0 +1,15 @@
+{
+  "_id": "4f9982ebb4bb15e7",
+  "name": "Honing Relic",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Honing Relic</strong>: You gain a +2 bonus to an Experience of your choice. You can only carry one relic.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!4f9982ebb4bb15e7"
+}

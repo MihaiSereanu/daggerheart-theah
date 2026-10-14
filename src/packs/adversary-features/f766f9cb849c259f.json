@@ -1,0 +1,15 @@
+{
+  "_id": "f766f9cb849c259f",
+  "name": "Blunderbuss",
+  "type": "feature",
+  "img": "icons/magic/fire/explosion-fireball-medium-orange.webp",
+  "system": {
+    "description": "<p><strong>Mark a Stress</strong> and target a group within Far. Each target makes a Finesse Reaction Roll or takes 1d8+2 physical damage. You gain a Fear for each target who marked HP.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!f766f9cb849c259f"
+}

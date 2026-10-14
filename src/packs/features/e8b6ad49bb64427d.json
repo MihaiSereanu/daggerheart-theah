@@ -1,0 +1,24 @@
+{
+  "_id": "e8b6ad49bb64427d",
+  "name": "Creed",
+  "type": "feature",
+  "img": "icons/sundries/books/book-red-cross.webp",
+  "system": {
+    "description": "<p>At the beginning of each session, roll a number of d4s equal to your Instinct and place them on your character sheet. These are your Creed Dice. You can spend any number of Creed Dice to aid yourself or an ally within Far range. You can use a spent die’s value to reduce incoming damage, add to a roll’s result after the roll is made, or gain Hope equal to the result. At the end of each session, clear all unspent dice.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "resource": {
+      "type": "diceValue",
+      "value": 0,
+      "max": "@instinctCount",
+      "recovery": "session",
+      "progression": "increasing",
+      "dieFaces": "d4",
+      "diceStates": {}
+    }
+  },
+  "effects": [],
+  "folder": "0cf46745a38c78fa",
+  "_key": "!items!e8b6ad49bb64427d"
+}

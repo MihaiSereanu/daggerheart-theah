@@ -1,0 +1,15 @@
+{
+  "_id": "233e13cc123f4877",
+  "name": "No Hope",
+  "type": "feature",
+  "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
+  "system": {
+    "description": "<p>When a PC rolls with Fear while within Far range of the adversary, they lose a Hope.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!233e13cc123f4877"
+}

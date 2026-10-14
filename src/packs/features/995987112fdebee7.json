@@ -1,0 +1,15 @@
+{
+  "_id": "995987112fdebee7",
+  "name": "Lionhearted",
+  "type": "feature",
+  "img": "icons/creatures/abilities/lion-roar-yellow.webp",
+  "system": {
+    "description": "<p>When you roll with Fear, you can <strong>mark 2 Stress</strong> to change it into a roll with Hope instead.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "03dbe8149d7c33f1",
+  "_key": "!items!995987112fdebee7"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "1b0e8ab7c2a255d9",
+  "name": "Brutal Beatdown",
+  "type": "feature",
+  "img": "icons/equipment/shield/heater-steel-boss-red.webp",
+  "system": {
+    "description": "<p>When you succeed on an attack against a target within Melee, you can <strong>mark a Stress</strong> to slam into them with sheer force, dealing an extra 1d6 damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "1e2db0968045dd20",
+  "_key": "!items!1b0e8ab7c2a255d9"
+}

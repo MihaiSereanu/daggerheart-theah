@@ -1,0 +1,20 @@
+{
+  "_id": "1ac278dfe638653e",
+  "name": "Casual Side-Step",
+  "type": "domainCard",
+  "img": "icons/skills/melee/strike-blade-scimitar-orange-blue.webp",
+  "system": {
+    "description": "<p>When you&#39;re targeted by an attack, you can <strong>spend a Hope</strong> to add your Charm to your Evasion.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "flair",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "4c13446263efc38b",
+  "_key": "!items!1ac278dfe638653e"
+}

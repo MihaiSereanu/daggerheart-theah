@@ -1,0 +1,20 @@
+{
+  "_id": "5c769438fd3c92da",
+  "name": "Blood Portal",
+  "type": "domainCard",
+  "img": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+  "system": {
+    "description": "<p><strong>Make a Spellcast Roll (10)</strong>. On a success, <strong>mark a Stress</strong> to create a portal from where you are to a point within Far range you can see. It closes once a living creature has passed through it, or when the scene ends.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "porte",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "abd4fb970d402f00",
+  "_key": "!items!5c769438fd3c92da"
+}

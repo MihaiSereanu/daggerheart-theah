@@ -1,0 +1,20 @@
+{
+  "_id": "9aa372bab87142bf",
+  "name": "Embers Yet Burn",
+  "type": "domainCard",
+  "img": "icons/magic/fire/explosion-fireball-medium-orange.webp",
+  "system": {
+    "description": "<p>After an ally declares a <em>Blaze of Glory</em>, you may attempt to reignite their soul from the brink by <strong>spending 3 Hope</strong> and making a Spellcast Roll (15). On a success, the fire within them is kindled; they survive, unconscious or broken, but alive. You must then pass an Instinct (25) or immediately lose access to the Fire Within. You must embark on a journey that reignites your purpose to gain it again.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "firewithin",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "95f4956bfe177487",
+  "_key": "!items!9aa372bab87142bf"
+}

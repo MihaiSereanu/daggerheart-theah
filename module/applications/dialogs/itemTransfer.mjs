@@ -21,7 +21,7 @@ export default class ItemTransferDialog extends HandlebarsApplicationMixin(Appli
     };
 
     static PARTS = {
-        main: { template: 'systems/daggerheart/templates/dialogs/item-transfer.hbs', root: true }
+        main: { template: 'systems/daggerheart-theah/templates/dialogs/item-transfer.hbs', root: true }
     };
 
     async _prepareContext(_options) {

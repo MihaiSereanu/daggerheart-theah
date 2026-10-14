@@ -1,0 +1,15 @@
+{
+  "_id": "14a80a29a4f6484f",
+  "name": "Your Friends Will Fail You",
+  "type": "feature",
+  "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+  "system": {
+    "description": "<p>When a PC fails with Fear, you can <strong>mark a Stress</strong> to cause other PCs within Close to lose a Hope.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "reaction"
+  },
+  "effects": [],
+  "_key": "!items!14a80a29a4f6484f"
+}

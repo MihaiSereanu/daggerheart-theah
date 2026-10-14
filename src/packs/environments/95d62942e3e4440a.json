@@ -1,0 +1,69 @@
+{
+  "_id": "95d62942e3e4440a",
+  "name": "Eisen Forest",
+  "type": "environment",
+  "img": "systems/daggerheart-theah/assets/icons/documents/actors/forest.svg",
+  "system": {
+    "description": "<p><em>A deep, oppressive forest where the light barely reaches the ground. Old battlegrounds and abandoned villages lie within, and predatory creatures stalk the shadows.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "mythic",
+    "type": "exploration",
+    "difficulty": 16,
+    "notes": "<h3>Mythic | Exploration</h3>\n<p><em>A deep, oppressive forest where the light barely reaches the ground. Old battlegrounds and abandoned villages lie within, and predatory creatures stalk the shadows.</em><br><strong>Impulses:</strong> Harass intruders, drive them off the paths, kill and feed</p>\n<p><strong>Difficulty:</strong> 16</p>\n<h4>Features</h4>\n<p><strong>Omens of Danger - Passive</strong>: The forest feels wrong, completely devoid of birdsong and wind. When a PC takes time to search for signs of danger, they can make an Instinct or Wits Roll.</p>\n<ul>\n<li><strong>Success</strong>: Learn three Detais.</li>\n<li><strong>Success with Fear</strong>: Learn two Details.</li>\n<li><strong>Any Failure</strong>: Mark a Stress to learn a Detail and gain Advantage on the next roll within this environment.</li>\n</ul>\n<blockquote>\n<p><strong>Details</strong>: Broken branches and claw marks on trees suggest something large has been hunting here. A mass grave or battlefield lies nearby, attracting scavengers and worse. Strange tracks (humanoid, but twisted) lead toward a cave or abandoned ruin deeper in the woods.</p>\n</blockquote>\n<p><strong>Closing Paths - Action</strong>: Hidden watchers or triggered deadfalls block the route behind the PCs. They must make a Progress Countdown (4) to find another way through before being boxed in. On a failure, they encounter hostile creatures or trigger a trap.</p>\n<p><strong>Ghostly Onslaught - Action</strong>: Spend a Fear to unleash a surge of spectral energy as shapes of long-dead soldiers and villagers lash out from the trees. All PCs within Very Close range must make an Instinct Reaction Roll. On a failure, they take 2d10 direct magic damage as the phantoms tear at their spirit and resolve.</p>\n<p><strong>Unseen Stalker - Reaction</strong>: Countdown (Loop 6). When the PCs enter the forest, activate the countdown. When it triggers, they are ambushed by a powerful predator. Spotlight them immediately.</p>\n",
+    "impulses": "Harass intruders, drive them off the paths, kill and feed"
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "c9e8d5fb158b0b7a",
+      "name": "Omens of Danger - Passive",
+      "type": "feature",
+      "img": "icons/magic/symbols/runes-star-magenta.webp",
+      "system": {
+        "description": "<p>The forest feels wrong, completely devoid of birdsong and wind. When a PC takes time to search for signs of danger, they can make an Instinct or Wits Roll.</p>\n<ul>\n<li><strong>Success</strong>: Learn three Detais.</li>\n<li><strong>Success with Fear</strong>: Learn two Details.</li>\n<li><strong>Any Failure</strong>: Mark a Stress to learn a Detail and gain Advantage on the next roll within this environment.</li>\n</ul>\n<blockquote>\n<p><strong>Details</strong>: Broken branches and claw marks on trees suggest something large has been hunting here. A mass grave or battlefield lies nearby, attracting scavengers and worse. Strange tracks (humanoid, but twisted) lead toward a cave or abandoned ruin deeper in the woods.</p>\n</blockquote>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!95d62942e3e4440a.c9e8d5fb158b0b7a"
+    },
+    {
+      "_id": "076653f4911d8fd5",
+      "name": "Closing Paths - Action",
+      "type": "feature",
+      "img": "icons/tools/navigation/compass-brass-blue-red.webp",
+      "system": {
+        "description": "<p>Hidden watchers or triggered deadfalls block the route behind the PCs. They must make a Progress Countdown (4) to find another way through before being boxed in. On a failure, they encounter hostile creatures or trigger a trap.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!95d62942e3e4440a.076653f4911d8fd5"
+    },
+    {
+      "_id": "8fb4504942bf1fee",
+      "name": "Ghostly Onslaught - Action",
+      "type": "feature",
+      "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+      "system": {
+        "description": "<p>Spend a Fear to unleash a surge of spectral energy as shapes of long-dead soldiers and villagers lash out from the trees. All PCs within Very Close range must make an Instinct Reaction Roll. On a failure, they take 2d10 direct magic damage as the phantoms tear at their spirit and resolve.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!95d62942e3e4440a.8fb4504942bf1fee"
+    },
+    {
+      "_id": "96dfffbc52aa0f84",
+      "name": "Unseen Stalker - Reaction",
+      "type": "feature",
+      "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+      "system": {
+        "description": "<p>Countdown (Loop 6). When the PCs enter the forest, activate the countdown. When it triggers, they are ambushed by a powerful predator. Spotlight them immediately.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!95d62942e3e4440a.96dfffbc52aa0f84"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Eisen Forest",
+    "actorLink": false
+  },
+  "_key": "!actors!95d62942e3e4440a"
+}

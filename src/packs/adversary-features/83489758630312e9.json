@@ -1,0 +1,15 @@
+{
+  "_id": "83489758630312e9",
+  "name": "Bone Breaker",
+  "type": "feature",
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "system": {
+    "description": "<p>The adversary's attacks deal direct damage. In addition, while spotlighted, they can make their standard attack against all targets within range.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!83489758630312e9"
+}

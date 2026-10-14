@@ -1,0 +1,20 @@
+{
+  "_id": "3b985db4a1159b83",
+  "name": "Weaponmaster",
+  "type": "domainCard",
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "system": {
+    "description": "<p>If you have 4 or more Steel Talents, gain the following:</p>\n<ul>\n<li>+2 bonus to your attack rolls</li>\n<li>+4 bonus to your Severe damage threshold</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "steel",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "6aabc2e2c710379d",
+  "_key": "!items!3b985db4a1159b83"
+}

@@ -1,0 +1,104 @@
+{
+  "_id": "af25525114088db8",
+  "name": "Sidhe Queen",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>Ancient, dreadful and beautiful. All shall love her and despair!</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "champion",
+    "type": "leader",
+    "difficulty": 19,
+    "notes": "<h3>Champion | Leader</h3>\n<p><em>Ancient, dreadful and beautiful. All shall love her and despair!</em><br><strong>Motives &amp; Tactics:</strong> Command, cultivate, drive out, preserve</p>\n<p><strong>Difficulty:</strong> 19 | <strong>Thresholds:</strong> 14/27 | <strong>HP:</strong> 8 | <strong>Stress:</strong> 5</p>\n<p><strong>ATK:</strong> +4 | Shortbow: Far | 2d10+1 physical</p>\n<hr>\n<p><strong>Experience:</strong> The Occult &amp; Obscure +4, Forest Knowledge +4</p>\n<h4>Features</h4>\n<p><strong>Sidhe Labyrinth - Action</strong>: <strong>Mark a Stress</strong> to target a point within Far range. Create a area that covers an area within Close of that point. All targets within that area take 2d6+2 physical damage when they act. A target must succeed on a Finesse Roll or deal more than 20 damage to the Queen with an attack to leave the area.</p>\n<p><strong>We Are All One - Reaction</strong>: When an ally dies within Close range, you can spend a Fear to clear 2 HP and 2 Stress as the fallen ally’s life force is returned to Bryn Bresail.</p>\n",
+    "damageThresholds": {
+      "major": 14,
+      "severe": 27
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 8
+      },
+      "stress": {
+        "value": 0,
+        "max": 5
+      }
+    },
+    "motivesAndTactics": "Command, cultivate, drive out, preserve",
+    "experiences": {
+      "d410dd56837ad024": {
+        "name": "The Occult & Obscure",
+        "value": 4
+      },
+      "d6a05e00e5770aaa": {
+        "name": "Forest Knowledge",
+        "value": 4
+      }
+    },
+    "attack": {
+      "_id": "4993d603f5c75332",
+      "name": "Shortbow",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/weapons/bows/longbow-recurve-leather-brown.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "far",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 4
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "2d10+1"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "8a16a58ff81cbf94",
+      "name": "Sidhe Labyrinth - Action",
+      "type": "feature",
+      "img": "icons/magic/symbols/runes-star-magenta.webp",
+      "system": {
+        "description": "<p><strong>Mark a Stress</strong> to target a point within Far range. Create a area that covers an area within Close of that point. All targets within that area take 2d6+2 physical damage when they act. A target must succeed on a Finesse Roll or deal more than 20 damage to the Queen with an attack to leave the area.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!af25525114088db8.8a16a58ff81cbf94"
+    },
+    {
+      "_id": "0c65f7cb515b5e4e",
+      "name": "We Are All One - Reaction",
+      "type": "feature",
+      "img": "icons/sundries/flags/banner-sword-blue.webp",
+      "system": {
+        "description": "<p>When an ally dies within Close range, you can spend a Fear to clear 2 HP and 2 Stress as the fallen ally’s life force is returned to Bryn Bresail.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!af25525114088db8.0c65f7cb515b5e4e"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Sidhe Queen",
+    "actorLink": false
+  },
+  "_key": "!actors!af25525114088db8"
+}

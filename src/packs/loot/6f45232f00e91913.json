@@ -1,0 +1,15 @@
+{
+  "_id": "6f45232f00e91913",
+  "name": "Ring of The Unwritten Law",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Ring of The Unwritten Law</strong>: Once per session, when the GM spends a Fear, you can spend 4 Hope to cancel its effects.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!6f45232f00e91913"
+}

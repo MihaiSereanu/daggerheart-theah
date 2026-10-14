@@ -1,0 +1,100 @@
+{
+  "_id": "dda21fde03ba3f8e",
+  "name": "Wolf Pack",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A ravenous pack of hungry wolves, ready to hunt down their pray.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "horde",
+    "difficulty": 10,
+    "notes": "<h3>Normal | Horde, 2 / HP</h3>\n<p><em>A ravenous pack of hungry wolves, ready to hunt down their pray.</em><br><strong>Motives &amp; Tactics:</strong></p>\n<p><strong>Difficulty:</strong> 10 | <strong>Thresholds:</strong> 6/12 | <strong>HP:</strong> 4 | <strong>Stress:</strong> 3</p>\n<p><strong>ATK:</strong> +1 | Bite &amp; Claw: Melee | 1d10+2 phy</p>\n<hr>\n<p><strong>Experience:</strong> Sense of Smell +3</p>\n<h4>Features</h4>\n<p><strong>Horde (1d6+2) - Passive</strong>: When the Wolves have marked half or more of their HP, their standard attack deals 1d6+2 physical damage instead.</p>\n<p><strong>Frenzy - Reaction</strong>: When the Wolf Pack marks HP from an attack within Melee range, you can <strong>mark a Stress</strong> to make a standard attack against the attacker. On a hit, deal an extra 1d6 damage.</p>\n",
+    "damageThresholds": {
+      "major": 6,
+      "severe": 12
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 4
+      },
+      "stress": {
+        "value": 0,
+        "max": 3
+      }
+    },
+    "motivesAndTactics": "{{descriptive",
+    "experiences": {
+      "0784894a7dda3068": {
+        "name": "Sense of Smell",
+        "value": 3
+      }
+    },
+    "attack": {
+      "_id": "a692acff4c00f451",
+      "name": "Bite & Claw",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/creatures/claws/claw-talons-yellow-red.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 1
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d10+2"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "cb6c163112de51dc",
+      "name": "Horde (1d6+2) - Passive",
+      "type": "feature",
+      "img": "icons/sundries/flags/banner-sword-blue.webp",
+      "system": {
+        "description": "<p>When the Wolves have marked half or more of their HP, their standard attack deals 1d6+2 physical damage instead.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!dda21fde03ba3f8e.cb6c163112de51dc"
+    },
+    {
+      "_id": "416ae3f6fd0fe543",
+      "name": "Frenzy - Reaction",
+      "type": "feature",
+      "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+      "system": {
+        "description": "<p>When the Wolf Pack marks HP from an attack within Melee range, you can <strong>mark a Stress</strong> to make a standard attack against the attacker. On a hit, deal an extra 1d6 damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!dda21fde03ba3f8e.416ae3f6fd0fe543"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Wolf Pack",
+    "actorLink": false
+  },
+  "_key": "!actors!dda21fde03ba3f8e"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "4b701ad805c582ff",
+  "name": "Mother's Bargain",
+  "type": "domainCard",
+  "img": "icons/creatures/abilities/bear-roar-bite-brown-green.webp",
+  "system": {
+    "description": "<p>When you or an ally within Far range rolls a failure, you can <strong>mark 3 Stress</strong> to change into a success with Fear instead.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "darmatushki",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "afc4243e401cd19b",
+  "_key": "!items!4b701ad805c582ff"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "1eae22a9b9d46327",
+  "name": "Twin-Chamber Flask",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Twin-Chamber Flask</strong>: This flask can hold two different liquids. You can swap between them by flipping a small switch.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!1eae22a9b9d46327"
+}

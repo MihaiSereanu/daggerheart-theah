@@ -1,0 +1,18 @@
+{
+  "_id": "3e72f5829be0b34c",
+  "name": "Hexenwerk",
+  "type": "subclass",
+  "img": "icons/magic/symbols/runes-star-magenta.webp",
+  "system": {
+    "description": "<p>Play a Hexenwerker if you want to use cursed knowledge.</p>\n<h4>SPELLCASTING TRAIT: WITS</h4>\n<blockquote>\n<p>Hexenwerk is a sorcery practised almost exclusively in Eisen. In many parts of the country, it is illegal, punishable by death. In others, it is seen as a necessary tool to fight the horrors of the night. A hexen is one who practises this forbidden art. Some use it to fight undead and others use it for more nefarious ends. They use this forbidden knowledge to craft and effectively bottle up magic - their magic works as potions, unguents and talismans.</p>\n</blockquote>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.619fbc2f6e310fa4",
+    "spellcastingTrait": "wits",
+    "features": []
+  },
+  "effects": [],
+  "folder": "1adde1032a0a00cf",
+  "_key": "!items!3e72f5829be0b34c"
+}

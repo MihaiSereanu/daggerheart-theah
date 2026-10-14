@@ -1,0 +1,15 @@
+{
+  "_id": "5cb9382afcecf0d4",
+  "name": "Tormented Screams",
+  "type": "feature",
+  "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
+  "system": {
+    "description": "<p>Mark a Stress to cause all PCs within Far range to make a Instinct Reaction Roll (13). Targets who fail lose a Hope and you gain a Fear for each. Targets who succeed must <strong>mark a Stress</strong>.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!5cb9382afcecf0d4"
+}

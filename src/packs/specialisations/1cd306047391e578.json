@@ -1,0 +1,27 @@
+{
+  "_id": "1cd306047391e578",
+  "name": "Bodyguard",
+  "type": "subclass",
+  "img": "icons/skills/melee/shield-block-bash-blue.webp",
+  "system": {
+    "description": "<p>Play the Bodyguard if you want to take heavy blows and keep fighting for your team.</p>\n<h4>Features</h4>\n<p><strong>Unwavering</strong>. Gain a +2 bonus to your damage thresholds.</p>\n<p><strong>Loyal Protector</strong>. When an ally within Close range has 2 or fewer HP and would take damage, you may <strong>mark a Stress</strong> to rush to their side and take the damage instead.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.a0f9c2617d466398",
+    "spellcastingTrait": null,
+    "features": [
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.97ce589781e72b38"
+      },
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.ebb69e47a7b5c2c6"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": "c740b103d1776d80",
+  "_key": "!items!1cd306047391e578"
+}

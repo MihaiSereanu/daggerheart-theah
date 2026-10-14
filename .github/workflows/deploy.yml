@@ -1,57 +1,82 @@
-name: Release Creation
+name: Deploy Latest Build
 
-on: 
-  release:
-    types: [published]
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deploy-latest
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-    - name: Install Dependencies
-      run: npm ci
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
 
-    - name: Build Packs
-      run: |
-        npm run pullYMLtoLDBBuild
-        mv --force src/packs/LICENSE packs/LICENSE
+      - name: Install dependencies
+        run: npm ci
 
-    - name: Build daggerheart.js
-      run: npm run build
+      - name: Run tests
+        run: npm test
 
-    # get part of the tag after the `v`
-    - name: Extract tag version number
-      id: get_version
-      uses: battila7/get-version-action@v2
+      - name: Validate content and syntax
+        run: npm run validate
 
-    # Substitute the Manifest and Download URLs in the system.json
-    - name: Substitute Manifest and Download Links For Versioned Ones
-      id: sub_manifest_link_version
-      uses: microsoft/variable-substitution@v1
-      with:
-        files: 'system.json'
-      env:
-        version: ${{steps.get_version.outputs.version-without-v}}
-        url: https://github.com/${{github.repository}}
-        manifest: https://raw.githubusercontent.com/${{github.repository}}/v14/system.json
-        download: https://github.com/${{github.repository}}/releases/download/${{github.event.release.tag_name}}/system.zip
-        flags.hotReload: false
+      - name: Build packs
+        run: |
+          node tools/build-packs.mjs --stage
+          mv dist/staged-packs packs
 
-    # Create a zip file with all files required by the module to add to the release
-    - run: zip -r ./system.zip system.json README.md LICENSE build/daggerheart.js build/daggerheart.js.map build/tagify.css styles/daggerheart.css assets/ templates/ packs/ lang/
+      - name: Build system
+        run: npm run build
 
-    # Create a release for this specific version
-    - name: Update Release with Files
-      id: create_version_release
-      uses: ncipollo/release-action@v1
-      with:
-        allowUpdates: true # Set this to false if you want to prevent updating existing releases
-        name: ${{ github.event.release.name }}
-        draft: ${{ github.event.release.unpublished }}
-        prerelease: ${{ github.event.release.prerelease }}
-        token: ${{ secrets.GITHUB_TOKEN }}
-        artifacts: './system.json, ./system.zip'
-        tag: ${{ github.event.release.tag_name }}
-        body: ${{ github.event.release.body }}
+      - name: Prepare rolling manifest
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFile, writeFile } from 'node:fs/promises';
+
+          const path = 'system.json';
+          const manifest = JSON.parse(await readFile(path, 'utf8'));
+          const [major, minor] = manifest.version.split('.');
+          const release = `https://github.com/${process.env.GITHUB_REPOSITORY}/releases/download/latest`;
+
+          manifest.version = `${major}.${minor}.${process.env.GITHUB_RUN_NUMBER}`;
+          manifest.url = `https://github.com/${process.env.GITHUB_REPOSITORY}`;
+          manifest.manifest = `${release}/system.json`;
+          manifest.download = `${release}/system.zip`;
+          manifest.flags ??= {};
+          manifest.flags.hotReload = false;
+
+          await writeFile(path, `${JSON.stringify(manifest, null, 4)}\n`);
+          NODE
+
+      - name: Create system archive
+        run: zip -r ./system.zip system.json README.md LICENSE build/daggerheart.js build/daggerheart.js.map build/tagify.css styles/daggerheart.css styles/heart-dagger.css assets/ templates/ packs/ lang/
+
+      - name: Move rolling tag to this build
+        run: |
+          git tag --force latest "$GITHUB_SHA"
+          git push --force origin refs/tags/latest
+
+      - name: Publish rolling release
+        uses: ncipollo/release-action@v1
+        with:
+          allowUpdates: true
+          artifactErrorsFailBuild: true
+          artifacts: ./system.json,./system.zip
+          body: Automatically built from the latest push to `main`.
+          commit: ${{ github.sha }}
+          name: Latest Build
+          replacesArtifacts: true
+          tag: latest
+          token: ${{ secrets.GITHUB_TOKEN }}

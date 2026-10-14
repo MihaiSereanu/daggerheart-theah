@@ -1,3 +1,4 @@
+import { armourThresholds } from '../../heart-dagger/rules.mjs';
 import { burden } from '../../config/generalConfig.mjs';
 import ForeignDocumentUUIDField from '../fields/foreignDocumentUUIDField.mjs';
 import DhLevelData from '../levelData.mjs';
@@ -31,18 +32,21 @@ export default class DhCharacter extends DhCreature {
         return {
             ...super.defineSchema(),
             traits: new fields.SchemaField({
-                agility: attributeField('DAGGERHEART.CONFIG.Traits.agility.name'),
-                strength: attributeField('DAGGERHEART.CONFIG.Traits.strength.name'),
+                brawn: attributeField('DAGGERHEART.CONFIG.Traits.brawn.name'),
+                charm: attributeField('DAGGERHEART.CONFIG.Traits.charm.name'),
                 finesse: attributeField('DAGGERHEART.CONFIG.Traits.finesse.name'),
                 instinct: attributeField('DAGGERHEART.CONFIG.Traits.instinct.name'),
-                presence: attributeField('DAGGERHEART.CONFIG.Traits.presence.name'),
-                knowledge: attributeField('DAGGERHEART.CONFIG.Traits.knowledge.name')
+                wits: attributeField('DAGGERHEART.CONFIG.Traits.wits.name')
             }),
-            proficiency: new fields.NumberField({
-                initial: 1,
-                integer: true,
-                label: 'DAGGERHEART.GENERAL.proficiency'
-            }),
+            xp: new fields.NumberField({ initial: 0, min: 0, integer: true }),
+            supply: new fields.NumberField({ initial: 6, choices: [0, 4, 6, 8, 10, 12], integer: true }),
+            tradition: new fields.StringField({ initial: '', blank: true }),
+            spellcastingTrait: new fields.StringField({ initial: 'instinct', choices: CONFIG.DH.ACTOR.abilities }),
+            languages: new fields.StringField({ initial: 'Théan' }),
+            advancementHistory: new fields.ArrayField(new fields.ObjectField()),
+            stuntUsed: new fields.BooleanField({ initial: false }),
+            unarmedTrait: new fields.StringField({ initial: 'brawn', choices: CONFIG.DH.ACTOR.abilities }),
+            dievaTaskPending: new fields.BooleanField({ initial: false }),
             evasion: new fields.NumberField({ initial: 0, integer: true, label: 'DAGGERHEART.GENERAL.evasion' }),
             damageThresholds: new fields.SchemaField({
                 major: new fields.NumberField({
@@ -103,7 +107,7 @@ export default class DhCharacter extends DhCreature {
                     },
                     roll: {
                         type: 'attack',
-                        trait: 'strength'
+                        trait: 'brawn'
                     },
                     damage: {
                         main: {
@@ -112,7 +116,7 @@ export default class DhCharacter extends DhCreature {
                             value: {
                                 custom: {
                                     enabled: true,
-                                    formula: '@profd4'
+                                    formula: '1d4 + @brawn'
                                 }
                             }
                         }
@@ -322,14 +326,6 @@ export default class DhCharacter extends DhCreature {
 
     /* -------------------------------------------- */
 
-    get tier() {
-        const currentLevel = this.levelData.level.current;
-        return currentLevel === 1
-            ? 1
-            : Object.values(game.settings.get(CONFIG.DH.id, CONFIG.DH.SETTINGS.gameSettings.LevelTiers).tiers).find(
-                tier => currentLevel >= tier.levels.start && currentLevel <= tier.levels.end
-            ).tier;
-    }
 
     get ancestry() {
         return this.parent.items.find(x => x.type === 'ancestry') ?? null;
@@ -375,11 +371,9 @@ export default class DhCharacter extends DhCreature {
     }
 
     get spellcastModifierTrait() {
-        const subClasses = this.parent.items.filter(x => x.type === 'subclass') ?? [];
-        const modifiers = subClasses
-            ?.map(sc => ({ ...this.traits[sc.system.spellcastingTrait], key: sc.system.spellcastingTrait }))
-            .filter(x => x);
-        return modifiers.sort((a, b) => (b.value ?? 0) - (a.value ?? 0))[0];
+        if (!this.tradition && !this.class.subclass?.system.spellcastingTrait) return null;
+        const key = CONFIG.DH.DOMAIN.allDomains()[this.tradition]?.spellcastingTrait ?? this.class.subclass?.system.spellcastingTrait ?? this.spellcastingTrait;
+        return { ...this.traits[key], key };
     }
 
     get spellcastModifier() {
@@ -393,12 +387,7 @@ export default class DhCharacter extends DhCreature {
         };
     }
 
-    get domains() {
-        const classDomains = this.class.value ? this.class.value.system.domains : [];
-        const multiclass = this.multiclass.value;
-        const multiclassDomains = multiclass ? multiclass.system.domains : [];
-        return [...classDomains, ...multiclassDomains];
-    }
+    get domains() { return [...new Set(this.parent.items.filter(i => i.type === 'domainCard' && !i.system.granted).map(i => i.system.domain))]; }
 
     get domainData() {
         const allDomainData = CONFIG.DH.DOMAIN.allDomains();
@@ -412,28 +401,9 @@ export default class DhCharacter extends DhCreature {
         });
     }
 
-    get domainCards() {
-        const domainCards = this.parent.items.filter(x => x.type === 'domainCard');
-        const loadout = domainCards.filter(x => !x.system.inVault).sort((a, b) => a.sort - b.sort);
-        const vault = domainCards.filter(x => x.system.inVault).sort((a, b) => a.sort - b.sort);
+    get domainCards() { const total = this.parent.items.filter(i => i.type === 'domainCard').sort((a,b) => a.sort-b.sort); return { loadout: total, vault: [], total }; }
 
-        return {
-            loadout: loadout,
-            vault: vault,
-            total: [...loadout, ...vault]
-        };
-    }
-
-    get loadoutSlot() {
-        const loadoutCount = this.domainCards.loadout?.length ?? 0;
-        const worldSetting = game.system.settings.homebrew.maxLoadout;
-        const limit = worldSetting + this.bonuses.maxLoadout;
-
-        return {
-            current: loadoutCount,
-            available: loadoutCount < limit
-        };
-    }
+    get loadoutSlot() { return { current: this.domainCards.total.length, available: true }; }
 
     get armor() {
         return this.parent.items.find(x => x.type === 'armor' && x.system.equipped);
@@ -454,64 +424,18 @@ export default class DhCharacter extends DhCreature {
         return !(this.primaryWeapon?.system?.equipped || this.secondaryWeapon?.system?.equipped);
     }
 
-    get levelupTiers() {
-        const tierData = game.settings.get(CONFIG.DH.id, CONFIG.DH.SETTINGS.gameSettings.LevelTiers);
-        const setTierData = levelupOptionTiers => {
-            for (const tierKey of Object.keys(levelupOptionTiers ?? {})) {
-                const tier = levelupOptionTiers[tierKey];
-                for (const optionKey of Object.keys(tier)) {
-                    const option = tier[optionKey];
-                    tierData.tiers[tierKey].options[optionKey] = option;
-                }
-            }
-        }
-
-        setTierData(this.class?.value?.system.levelupOptionTiers);
-        setTierData(this.multiclass?.value?.system.levelupOptionTiers);
-
-        return tierData;
-    }
-
     /* All items are valid on characters */
-    isItemValid() {
-        return true;
-    }
+    isItemValid(source) { return source.type !== 'transformation'; }
 
-    /** @inheritDoc */
     isItemAvailable(item) {
-        if (!super.isItemAvailable(this)) return false;
-        /**
-         * Preventing subclass features from being available if the chacaracter does not
-         * have the right subclass advancement
-         */
-        if (item.system.granter?.type !== CONFIG.DH.ITEM.featureTypes.subclass.id) {
-            return true;
-        }
-        if (!this.class.subclass) return false;
-
-        const prop = item.system.granter?.multiclass ? 'multiclass' : 'class';
-        const subclassState = this[prop].subclass?.system?.featureState;
-        if (!subclassState) return false;
-
-        if (
-            item.system.granter?.identifier === CONFIG.DH.ITEM.featureSubTypes.foundation ||
-            (item.system.granter?.identifier === CONFIG.DH.ITEM.featureSubTypes.specialization && subclassState >= 2) ||
-            (item.system.granter?.identifier === CONFIG.DH.ITEM.featureSubTypes.mastery && subclassState >= 3)
-        ) {
-            return true;
-        } else {
-            return false;
-        }
+        if (item.system.sorcerous && (this.activeBeastform || this.class.value?.name !== 'Sorcerer' || !this.tradition)) return false;
+        if (this.activeBeastform && item.type === 'domainCard' && CONFIG.DH.DOMAIN.allDomains()[item.system.domain]?.tradition) return false;
+        return super.isItemAvailable(item);
     }
 
-    /** 
-     * Given a trait from the rollTypes collections, resolves what trait that is for this actor.
-     * For most actors, it is null, and only has a value for characters
-     * @param {keyof typeof CONFIG.DH.ACTIONS.rollTypeTraits} trait
-     */
     resolveTrait(trait) {
         if (trait === 'highest') {
-            let highest = 'strength';
+            let highest = 'brawn';
             for (const [key, value] of Object.entries(this.traits)) {
                 highest = value.value > this.traits[highest].value ? key : highest;
             }
@@ -685,73 +609,7 @@ export default class DhCharacter extends DhCreature {
         };
         this.evasion += this.class.value?.system?.evasion ?? 0;
 
-        const currentLevel = this.levelData.level.current;
-        const currentTier =
-            currentLevel === 1
-                ? null
-                : Object.values(game.settings.get(CONFIG.DH.id, CONFIG.DH.SETTINGS.gameSettings.LevelTiers).tiers).find(
-                    tier => currentLevel >= tier.levels.start && currentLevel <= tier.levels.end
-                ).tier;
-        if (game.system.settings.automation.levelupAuto) {
-            for (let levelKey in this.levelData.levelups) {
-                const level = this.levelData.levelups[levelKey];
-
-                this.proficiency += level.achievements.proficiency;
-
-                for (let selection of level.selections) {
-                    switch (selection.type) {
-                        case 'trait':
-                            selection.data.forEach(data => {
-                                this.traits[data].value += 1;
-                                this.traits[data].tierMarked = selection.tier === currentTier;
-                            });
-                            break;
-                        case 'hitPoint':
-                            this.resources.hitPoints.max += selection.value;
-                            break;
-                        case 'stress':
-                            this.resources.stress.max += selection.value;
-                            break;
-                        case 'evasion':
-                            this.evasion += selection.value;
-                            break;
-                        case 'proficiency':
-                            this.proficiency += selection.value;
-                            break;
-                        case 'experience':
-                            selection.data.forEach(id => {
-                                const experience = this.experiences[id];
-                                if (experience) {
-                                    experience.value += selection.value;
-                                    experience.leveledUp = true;
-                                }
-                            });
-                            break;
-                        case 'dice':
-                            this.rules.roll[selection.subType] += 1;
-                            break;
-                    }
-                }
-            }
-        }
-
-        /* Armor and ArmorEffects can set a Base Damage Threshold. Characters only gain level*2 bonus to severe if this is not present */
-        const severeThresholdMulitplier =
-            this.armor ||
-            this.parent.appliedEffects.some(x =>
-                x.system.changes.some(x => x.type === 'armor' && x.value.damageThresholds)
-            )
-                ? 1
-                : 2;
-
-        this.damageThresholds = {
-            major: this.armor
-                ? this.armor.system.baseThresholds.major + this.levelData.level.current
-                : this.levelData.level.current,
-            severe: this.armor
-                ? this.armor.system.baseThresholds.severe + this.levelData.level.current
-                : this.levelData.level.current * severeThresholdMulitplier
-        };
+        this.damageThresholds = armourThresholds(this.armor?.system);
 
         const globalHopeMax = game.system.settings.homebrew.maxHope;
         this.resources.hope.max = globalHopeMax;
@@ -765,6 +623,16 @@ export default class DhCharacter extends DhCreature {
 
     prepareDerivedData() {
         super.prepareDerivedData();
+
+        if (!this.activeBeastform) {
+            this.attack.roll.trait = this.unarmedTrait;
+            let formula = '1d4';
+            if (this.class.value?.name === 'Brawler') {
+                formula = this.class.subclass?.name.startsWith('Pit Fighter') ? '1d10 + 1d8' : '1d8 + 1d6';
+                if (this.usesUnarmed) this.evasion += 1;
+            }
+            this.attack.damage.main.value.custom = { enabled: true, formula: `${formula} + @${this.unarmedTrait}` };
+        }
 
         this.resources.hope.max -= this.scars;
         if (this.companion) {
@@ -803,7 +671,6 @@ export default class DhCharacter extends DhCreature {
 
         return {
             ...data,
-            tier: this.tier,
             level: this.levelData.level.current
         };
     }
@@ -811,6 +678,14 @@ export default class DhCharacter extends DhCreature {
     async _preUpdate(changes, options, userId) {
         const allowed = await super._preUpdate(changes, options, userId);
         if (allowed === false) return;
+
+        const favour = changes.system?.resources?.favor?.value;
+        if (this.tradition === 'sanderis' && favour !== undefined) {
+            if (this.dievaTaskPending && changes.system?.dievaTaskPending !== false && favour > (this.resources.favor?.value ?? 0)) {
+                ui.notifications.warn('The dieva refuses power until its required task is fulfilled.'); return false;
+            }
+            if (favour === 0) changes.system.dievaTaskPending = true;
+        }
 
         /* The first two experiences are always marked as core */
         if (changes.system?.experiences && Object.keys(this.experiences).length < 2) {
@@ -866,6 +741,14 @@ export default class DhCharacter extends DhCreature {
     }
 
     static migrateData(source) {
+        for (const trait of Object.values(source.traits ?? {})) {
+            trait.advancementMarked ??= trait.tierMarked ?? false;
+            delete trait.tierMarked;
+        }
+        for (const level of source.advancementHistory ?? []) for (const choice of level.choices ?? []) {
+            choice.phase ??= choice.tier;
+            delete choice.tier;
+        }
         if (typeof source.scars === 'object') source.scars = 0;
 
         return super.migrateData(source);

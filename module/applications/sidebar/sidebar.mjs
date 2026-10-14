@@ -5,7 +5,7 @@ export default class DhSidebar extends foundry.applications.sidebar.Sidebar {
             ...tabs,
             daggerheartMenu: {
                 tooltip: 'DAGGERHEART.UI.Sidebar.daggerheartMenu.title',
-                img: 'systems/daggerheart/assets/logos/FoundryBorneLogoWhite.svg',
+                img: 'systems/daggerheart-theah/assets/logos/FoundryBorneLogoWhite.svg',
                 gmOnly: true
             },
             settings
@@ -19,7 +19,7 @@ export default class DhSidebar extends foundry.applications.sidebar.Sidebar {
     static PARTS = {
         tabs: {
             id: 'tabs',
-            template: 'systems/daggerheart/templates/sidebar/tabs.hbs'
+            template: 'systems/daggerheart-theah/templates/sidebar/tabs.hbs'
         }
     };
 

@@ -1,0 +1,15 @@
+{
+  "_id": "1e952912d272c3ec",
+  "name": "Scriptor’s Ink",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Scriptor’s Ink</strong>: You gain a +1 bonus to your next Wits Roll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!1e952912d272c3ec"
+}

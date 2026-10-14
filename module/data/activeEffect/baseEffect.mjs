@@ -9,7 +9,7 @@
  *
  *  - Changes Value Priorities -
  *  Standard: +0
- *  "Anything that uses another data model value as its value": +1 - Effects that increase traits have to be calculated first at Base priority. (EX: Raise evasion by half your agility)
+ *  "Anything that uses another data model value as its value": +1 - Effects that increase traits have to be calculated first at Base priority. (EX: Raise evasion by half your finesse)
  */
 
 import { getScrollTextData } from '../../helpers/utils.mjs';

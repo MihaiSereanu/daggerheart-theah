@@ -1,0 +1,20 @@
+{
+  "_id": "f711fd169cf289c0",
+  "name": "Radiate",
+  "type": "domainCard",
+  "img": "icons/magic/fire/explosion-fireball-medium-orange.webp",
+  "system": {
+    "description": "<p><strong>Mark a Stress</strong> and describe how you draw upon the burning force of your inner flame to push past your limits. Gain a +2 bonus to your next Action Roll, or a +4 bonus to your next damage roll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "firewithin",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "95f4956bfe177487",
+  "_key": "!items!f711fd169cf289c0"
+}

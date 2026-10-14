@@ -1,0 +1,26 @@
+{
+  "sourceHash": "97613fcf9a440ed07fa053e352917c5608d78e3001e0290791d1133f4b2b2905",
+  "packs": {
+    "features": 127,
+    "archetypes": 12,
+    "specialisations": 31,
+    "origins": 10,
+    "communities": 10,
+    "domains": 18,
+    "talents": 130,
+    "dueling-styles": 12,
+    "weapons": 55,
+    "armors": 8,
+    "loot": 60,
+    "consumables": 60,
+    "adversaries": 63,
+    "environments": 18,
+    "beastforms": 6,
+    "adversary-features": 174
+  },
+  "folders": {
+    "features": 61,
+    "specialisations": 12,
+    "talents": 18
+  }
+}

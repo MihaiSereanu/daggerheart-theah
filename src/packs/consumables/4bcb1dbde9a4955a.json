@@ -1,0 +1,15 @@
+{
+  "_id": "4bcb1dbde9a4955a",
+  "name": "Major Health Draught",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Major Health Draught</strong>: Clear 1d4+2 Hit Points.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!4bcb1dbde9a4955a"
+}

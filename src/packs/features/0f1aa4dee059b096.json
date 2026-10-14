@@ -1,0 +1,15 @@
+{
+  "_id": "0f1aa4dee059b096",
+  "name": "Unshaken Resolve",
+  "type": "feature",
+  "img": "icons/sundries/books/book-red-cross.webp",
+  "system": {
+    "description": "<p>Spend 3 Hope to embolden an ally within Close range. They become Invigorated. The next time they roll with Fear, they regain 1 Hope and add d6 to their roll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "0cf46745a38c78fa",
+  "_key": "!items!0f1aa4dee059b096"
+}

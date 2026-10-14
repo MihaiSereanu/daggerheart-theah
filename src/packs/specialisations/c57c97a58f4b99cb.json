@@ -1,0 +1,27 @@
+{
+  "_id": "c57c97a58f4b99cb",
+  "name": "Spy",
+  "type": "subclass",
+  "img": "icons/weapons/daggers/dagger-poisoned-curved-green.webp",
+  "system": {
+    "description": "<p>Play the Spy if you want to manipulate and strike when your enemies least expect it.</p>\n<h4>Features</h4>\n<p><strong>Pull the Strings.</strong> When you reveal a secret about someone or blackmail them during a scene, they must pass a Reaction Roll (15) or become <em>Compromised</em> until the end of the scene. While <em>Compromised</em>, they are <em>Vulnerable</em> and must <strong>mark a Stress</strong> when they take the spotlight.</p>\n<p><strong>No Loose Ends</strong>. Once per Rest, you may immediately perform an Ambush against a <em>Compromised</em> target. This attack deals damage even on a miss, but on a hit, it becomes a critical hit.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.922ee2f235aeca23",
+    "spellcastingTrait": null,
+    "features": [
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.ade004fbf5c7512f"
+      },
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.d363a71670e0ed39"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": "8fb6e3126dedbc2d",
+  "_key": "!items!c57c97a58f4b99cb"
+}

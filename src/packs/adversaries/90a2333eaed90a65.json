@@ -1,0 +1,100 @@
+{
+  "_id": "90a2333eaed90a65",
+  "name": "Dire Wolf",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A large wolf with menacing teeth, seldom encountered alone.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "skulk",
+    "difficulty": 12,
+    "notes": "<h3>Normal | Skulk</h3>\n<p><em>A large wolf with menacing teeth, seldom encountered alone.</em><br><strong>Motives &amp; Tactics:</strong> Defend territory, protect pack, surround, trail</p>\n<p><strong>Difficulty:</strong> 12 | <strong>Thresholds:</strong> 5/9 | <strong>HP:</strong> 4 | <strong>Stress:</strong> 3</p>\n<p><strong>ATK:</strong> +2 | Bite &amp; Claws: Melee | 1d6+2 physical</p>\n<hr>\n<p><strong>Experience:</strong> Keen Senses +3</p>\n<h4>Features</h4>\n<p><strong>Pack Tactics - Passive</strong>: If the Wolf makes a successful standard attack and another ally is within Melee range of the target, their damage becomes 1d6+5 physical and you gain a Fear.</p>\n<p><strong>Hobbling Strike - Action</strong>: <strong>Mark a Stress</strong> to make an attack against a target within Melee range. On a success, deal 3d4+10 physical damage and make them Vulnerable until they clear at least 1 HP.</p>\n",
+    "damageThresholds": {
+      "major": 5,
+      "severe": 9
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 4
+      },
+      "stress": {
+        "value": 0,
+        "max": 3
+      }
+    },
+    "motivesAndTactics": "Defend territory, protect pack, surround, trail",
+    "experiences": {
+      "e215e8495d0f33d2": {
+        "name": "Keen Senses",
+        "value": 3
+      }
+    },
+    "attack": {
+      "_id": "5e236792f6370be9",
+      "name": "Bite & Claws",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/creatures/claws/claw-talons-yellow-red.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 2
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d6+2"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "2cb6a43098379d6d",
+      "name": "Pack Tactics - Passive",
+      "type": "feature",
+      "img": "icons/sundries/flags/banner-sword-blue.webp",
+      "system": {
+        "description": "<p>If the Wolf makes a successful standard attack and another ally is within Melee range of the target, their damage becomes 1d6+5 physical and you gain a Fear.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!90a2333eaed90a65.2cb6a43098379d6d"
+    },
+    {
+      "_id": "ccaff493900e0258",
+      "name": "Hobbling Strike - Action",
+      "type": "feature",
+      "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+      "system": {
+        "description": "<p><strong>Mark a Stress</strong> to make an attack against a target within Melee range. On a success, deal 3d4+10 physical damage and make them Vulnerable until they clear at least 1 HP.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!90a2333eaed90a65.ccaff493900e0258"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Dire Wolf",
+    "actorLink": false
+  },
+  "_key": "!actors!90a2333eaed90a65"
+}

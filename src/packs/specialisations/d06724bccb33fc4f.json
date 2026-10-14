@@ -1,0 +1,27 @@
+{
+  "_id": "d06724bccb33fc4f",
+  "name": "Pit Fighter",
+  "type": "subclass",
+  "img": "icons/skills/melee/unarmed-punch-fist-yellow-red.webp",
+  "system": {
+    "description": "<p>Play the Pit Fighter if you want to be an unstoppable bruiser who thrives in the thick of the melee.</p>\n<h4>Features</h4>\n<p><strong>Powerhouse.</strong> Increase your unarmed attack dies by 1 step. Additionally, you can <strong>mark a Stress</strong> to swing wildly, targeting two creatures within Melee range with a single attack roll.</p>\n<p><strong>Not Done Yet.</strong> When you mark more than one Hit Point from an attack, you may gain a Hope or clear a Stress.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.10ae179d33e75bfb",
+    "spellcastingTrait": null,
+    "features": [
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.309188cc96c5e33c"
+      },
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.c0f887f90b937729"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": "42ae4b5c3ec0b703",
+  "_key": "!items!d06724bccb33fc4f"
+}

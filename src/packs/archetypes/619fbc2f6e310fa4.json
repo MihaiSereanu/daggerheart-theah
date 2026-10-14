@@ -1,0 +1,57 @@
+{
+  "_id": "619fbc2f6e310fa4",
+  "name": "Sorcerer",
+  "type": "class",
+  "img": "icons/magic/symbols/runes-star-magenta.webp",
+  "system": {
+    "description": "<p>Not all who wield power are born equal, and not all who touch magic understand its cost. Sorcerers are the inheritors of secret traditions: some born of blood, others etched into their bones through trial, pact, or divine fate. Each Sorcerous Tradition bends the world in its own way. Magic is not studied like science; it is mysterious and inherited, invoked or bargained. To be a Sorcerer is not an easy calling.</p>\n<h5>STARTING EVASION: 10</h5>\n<h5>STARTING HP: 5</h5>\n<h4>Thematic Items</h4>\n<p>A relic of your magical lineage, or a text you cannot destroy.</p>\n<h4>Sorcerer&#39;s Hope Feature</h4>\n<p><strong>Rite of Undoing</strong>. Spend 3 Hope to end an ongoing magical or supernatural effect that you can see. If the effect is actively maintained, roll with your Spellcasting Trait vs the caster’s Difficulty.</p>\n<h4>Archetype Feature</h4>\n<h5>Sorcerous Lineage</h5>\n<p>When you gain this feature, select a <strong>Sorcerous Tradition</strong> and choose a Talent from its list. This chosen Tradition does not count towards your standard Domain limit, and you can learn further Sorcerous Talents via Advancement. You also gain <strong>Ritual Casting</strong>, with its effects informed by your chosen Tradition.</p>\n<blockquote>\n<p>See Appendix for <strong>Sorcerous Talents</strong> and <strong>Ritual Casting</strong> rules.</p>\n</blockquote>\n<h5>Sorcerous Aptitude</h5>\n<p>You have learned to harness magic for violence with an <strong>Action Roll using your Spellcasting Trait</strong>. On a success, deal <em>1d6+Trait magic damage</em> within Far range. You must describe the attack in line with your chosen Tradition.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "evasion": 10,
+    "hitPoints": 5,
+    "domains": [],
+    "features": [
+      {
+        "type": "hope",
+        "item": "Compendium.daggerheart-theah.features.Item.0a27390b65df1f46"
+      },
+      {
+        "type": "class",
+        "item": "Compendium.daggerheart-theah.features.Item.0f0c865fce16649a"
+      },
+      {
+        "type": "class",
+        "item": "Compendium.daggerheart-theah.features.Item.873c168facee464f"
+      }
+    ],
+    "subclasses": [
+      "Compendium.daggerheart-theah.specialisations.Item.8c7901ccc1c91356",
+      "Compendium.daggerheart-theah.specialisations.Item.6742737458da584d",
+      "Compendium.daggerheart-theah.specialisations.Item.199709b4a04a6f5e",
+      "Compendium.daggerheart-theah.specialisations.Item.43c111580576f3c8",
+      "Compendium.daggerheart-theah.specialisations.Item.3e72f5829be0b34c",
+      "Compendium.daggerheart-theah.specialisations.Item.5e729eaa591db5cc",
+      "Compendium.daggerheart-theah.specialisations.Item.9b0c2c27ce11f3e1",
+      "Compendium.daggerheart-theah.specialisations.Item.53dc21fb02714f1b",
+      "Compendium.daggerheart-theah.specialisations.Item.839be8321512212c"
+    ],
+    "inventory": {
+      "take": [],
+      "choiceA": [],
+      "choiceB": []
+    },
+    "backgroundQuestions": [
+      "What did you do that made the people in your community wary of you?",
+      "You have a powerful rival. Who are they, and why are you so determined to defeat them?",
+      "You have a deep fear you hide from everyone. What is it, and why does it scare you?"
+    ],
+    "connections": [
+      "Why do you trust me so deeply?",
+      "What did I do that makes you cautious around me?",
+      "What do you believe I am destined to do or achieve?"
+    ]
+  },
+  "effects": [],
+  "_key": "!items!619fbc2f6e310fa4"
+}

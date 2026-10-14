@@ -31,9 +31,9 @@ export default class DhMetagamingSettings extends HandlebarsApplicationMixin(App
     };
 
     static PARTS = {
-        header: { template: 'systems/daggerheart/templates/settings/metagaming-settings/header.hbs' },
-        general: { template: 'systems/daggerheart/templates/settings/metagaming-settings/general.hbs' },
-        footer: { template: 'systems/daggerheart/templates/settings/metagaming-settings/footer.hbs' }
+        header: { template: 'systems/daggerheart-theah/templates/settings/metagaming-settings/header.hbs' },
+        general: { template: 'systems/daggerheart-theah/templates/settings/metagaming-settings/general.hbs' },
+        footer: { template: 'systems/daggerheart-theah/templates/settings/metagaming-settings/footer.hbs' }
     };
 
     async _prepareContext(_options) {

@@ -9,13 +9,13 @@
 
         {{#each document.system.conditionals as | conditional |}}
             {{#if (eq conditional.type 'dataCompare')}}
-                {{> "systems/daggerheart/templates/sheets/activeEffect/conditionals/dataCompareConditional.hbs" model=(lookup ../systemFields.conditionals.element.types conditional.type) }}
+                {{> "systems/daggerheart-theah/templates/sheets/activeEffect/conditionals/dataCompareConditional.hbs" model=(lookup ../systemFields.conditionals.element.types conditional.type) }}
             {{else if (eq conditional.type 'weaponRestriction')}}
-                {{> "systems/daggerheart/templates/sheets/activeEffect/conditionals/weaponRestrictionConditional.hbs" model=(lookup ../systemFields.conditionals.element.types conditional.type) }}
+                {{> "systems/daggerheart-theah/templates/sheets/activeEffect/conditionals/weaponRestrictionConditional.hbs" model=(lookup ../systemFields.conditionals.element.types conditional.type) }}
             {{else if (eq conditional.type 'actionType')}}
-                {{> "systems/daggerheart/templates/sheets/activeEffect/conditionals/actionTypeConditional.hbs" model=(lookup ../systemFields.conditionals.element.types conditional.type) }}
+                {{> "systems/daggerheart-theah/templates/sheets/activeEffect/conditionals/actionTypeConditional.hbs" model=(lookup ../systemFields.conditionals.element.types conditional.type) }}
             {{else if (eq conditional.type 'damageType')}}
-                {{> "systems/daggerheart/templates/sheets/activeEffect/conditionals/damageTypeConditional.hbs" model=(lookup ../systemFields.conditionals.element.types conditional.type) }}
+                {{> "systems/daggerheart-theah/templates/sheets/activeEffect/conditionals/damageTypeConditional.hbs" model=(lookup ../systemFields.conditionals.element.types conditional.type) }}
             {{/if}}
         {{/each}}
     </fieldset>

@@ -8,13 +8,13 @@ export default class DHHeritageSheet extends DHBaseItemSheet {
 
     /**@override */
     static PARTS = {
-        tabs: { template: 'systems/daggerheart/templates/sheets/global/tabs/tab-navigation.hbs' },
+        tabs: { template: 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-navigation.hbs' },
         description: { 
-            template: 'systems/daggerheart/templates/sheets/global/tabs/tab-description.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-description.hbs',
             scrollable: ['.description-section']
         },
         effects: {
-            template: 'systems/daggerheart/templates/sheets/global/tabs/tab-effects.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-effects.hbs',
             scrollable: ['.effects']
         }
     };

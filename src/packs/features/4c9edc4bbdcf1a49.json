@@ -1,0 +1,15 @@
+{
+  "_id": "4c9edc4bbdcf1a49",
+  "name": "All for One",
+  "type": "feature",
+  "img": "icons/skills/melee/sword-twirl-orange.webp",
+  "system": {
+    "description": "<p>When you gain a Style die, you may <strong>spend a Hope</strong> to give it to an ally instead. When the scene ends, an ally&#39;s unspent Style dice are lost.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "d0a3423f609de751",
+  "_key": "!items!4c9edc4bbdcf1a49"
+}

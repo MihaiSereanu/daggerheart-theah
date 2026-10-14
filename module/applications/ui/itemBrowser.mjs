@@ -20,6 +20,8 @@ export class ItemBrowser extends HandlebarsApplicationMixin(ApplicationV2) {
         this.selectedMenu = { path: [], data: null };
         this.config = CONFIG.DH.ITEMBROWSER.compendiumConfig;
         this.presets = {};
+        this.searchTerm = '';
+        this.loadRevision = 0;
         this.compendiumBrowserTypeKey = 'compendiumBrowserDefault';
 
         this.setupHooks = Hooks.on(socketEvent.Refresh, ({ refreshType }) => {
@@ -62,10 +64,10 @@ export class ItemBrowser extends HandlebarsApplicationMixin(ApplicationV2) {
     /** @override */
     static PARTS = {
         sidebar: {
-            template: 'systems/daggerheart/templates/ui/itemBrowser/sidebar.hbs'
+            template: 'systems/daggerheart-theah/templates/ui/itemBrowser/sidebar.hbs'
         },
         list: {
-            template: 'systems/daggerheart/templates/ui/itemBrowser/itemBrowser.hbs'
+            template: 'systems/daggerheart-theah/templates/ui/itemBrowser/itemBrowser.hbs'
         }
     };
 
@@ -99,7 +101,7 @@ export class ItemBrowser extends HandlebarsApplicationMixin(ApplicationV2) {
 
     /** @inheritDoc */
     async _preRender(context, options) {
-        this.presets = options.presets ?? {};
+        this.presets = options.presets ?? this.presets;
         const noFolder = this.presets?.render?.noFolder;
         if (noFolder === true) {
             this.compendiumBrowserTypeKey = 'compendiumBrowserNoFolder';
@@ -173,13 +175,15 @@ export class ItemBrowser extends HandlebarsApplicationMixin(ApplicationV2) {
         context.items = this.items;
         context.presets = this.presets;
         context.isGM = game.user.isGM;
+        context.searchTerm = this.searchTerm;
 
         return context;
     }
 
     open(presets = {}) {
         this.presets = presets;
-        ItemBrowser.selectFolder.call(this);
+        this.searchTerm = '';
+        return ItemBrowser.selectFolder.call(this);
     }
 
     getCompendiumFolders(config, parent = null, depth = 0) {
@@ -201,8 +205,11 @@ export class ItemBrowser extends HandlebarsApplicationMixin(ApplicationV2) {
     }
 
     static async selectFolder(_, target) {
-        const folderId = target?.dataset?.folderId ?? this.presets.folder,
-            folderData = foundry.utils.getProperty(this.config, folderId) ?? {};
+        const clicked = target?.dataset?.folderId;
+        const folderId = clicked === this.selectedMenu.path.join('.') ? undefined : clicked ?? this.presets.folder;
+        const folderData = folderId ? foundry.utils.getProperty(this.config, folderId) ?? {} : {
+            columns: [{ key: 'type', label: 'DAGGERHEART.GENERAL.type', format: type => `TYPES.${['character', 'adversary', 'environment', 'party'].includes(type) ? 'Actor' : 'Item'}.${type}` }]
+        };
 
         const columns = ItemBrowser.getFolderConfig(folderData).map(col => ({
             ...col,
@@ -234,7 +241,7 @@ export class ItemBrowser extends HandlebarsApplicationMixin(ApplicationV2) {
 
         await this.render({ force: true, presets: this.presets });
 
-        if (this.selectedMenu?.data?.type?.length) this.loadItems();
+        return this.loadItems();
     }
 
     _replaceHTML(result, content, options) {
@@ -242,16 +249,19 @@ export class ItemBrowser extends HandlebarsApplicationMixin(ApplicationV2) {
         super._replaceHTML(result, content, options);
     }
 
-    loadItems() {
+    async loadItems() {
+        const revision = ++this.loadRevision;
         let loadTimeout = this.toggleLoader(true);
 
         const browserSettings = game.settings.get(
             CONFIG.DH.id,
             CONFIG.DH.SETTINGS.gameSettings.CompendiumBrowserSettings
         );
-        const promises = game.packs.map(pack => pack.getDocuments({ type__in: this.selectedMenu?.data?.type }));
+        const types = this.selectedMenu?.data?.type;
+        const promises = game.packs.filter(pack => ['Actor', 'Item'].includes(pack.documentName) && pack.testUserPermission(game.user, 'OBSERVER')).map(pack => pack.getDocuments(types?.length ? { type__in: types } : {}));
 
-        Promise.all(promises).then(async result => {
+        return Promise.all(promises).then(async result => {
+            if (revision !== this.loadRevision) { clearTimeout(loadTimeout); return; }
             this.items = ItemBrowser.sortBy(
                 result.flatMap(r => r).filter(r => !browserSettings.isEntryExcluded.bind(browserSettings)(r)),
                 'name'
@@ -261,7 +271,7 @@ export class ItemBrowser extends HandlebarsApplicationMixin(ApplicationV2) {
             for (const item of this.items) {
                 if (['weapon', 'armor'].includes(item.type)) {
                     item.system.enrichedTags = await foundry.applications.handlebars.renderTemplate(
-                        'systems/daggerheart/templates/ui/itemBrowser/item-tags.hbs',
+                        'systems/daggerheart-theah/templates/ui/itemBrowser/item-tags.hbs',
                         { item: item.system }
                     );
                 }
@@ -281,7 +291,7 @@ export class ItemBrowser extends HandlebarsApplicationMixin(ApplicationV2) {
             }
 
             const filterList = await foundry.applications.handlebars.renderTemplate(
-                'systems/daggerheart/templates/ui/itemBrowser/filterContainer.hbs',
+                'systems/daggerheart-theah/templates/ui/itemBrowser/filterContainer.hbs',
                 {
                     fieldFilter: this.fieldFilter,
                     presets: this.presets,
@@ -289,13 +299,14 @@ export class ItemBrowser extends HandlebarsApplicationMixin(ApplicationV2) {
                 }
             );
 
+            if (revision !== this.loadRevision || !this.rendered) { clearTimeout(loadTimeout); return; }
             this.element.querySelector('.filter-content .wrapper').innerHTML = filterList;
             const filterContainer = this.element.querySelector('.filter-header > [data-action="expandContent"]');
             if (this.fieldFilter.length === 0) filterContainer.setAttribute('disabled', '');
             else filterContainer.removeAttribute('disabled');
 
             const itemList = await foundry.applications.handlebars.renderTemplate(
-                'systems/daggerheart/templates/ui/itemBrowser/itemContainer.hbs',
+                'systems/daggerheart-theah/templates/ui/itemBrowser/itemContainer.hbs',
                 {
                     items: this.items,
                     tooltipType: this.items[0] instanceof Item ? 'item' : ['environment', 'adversary'].includes(this.items[0]?.type) ? 'actor' : null,
@@ -305,10 +316,12 @@ export class ItemBrowser extends HandlebarsApplicationMixin(ApplicationV2) {
                 }
             );
 
+            if (revision !== this.loadRevision || !this.rendered) { clearTimeout(loadTimeout); return; }
             this.element.querySelector('.item-list').innerHTML = itemList;
 
             this._createFilterInputs();
             await this._onInputFilterBrowser();
+            this.#search.browser.filter(null, this.searchTerm);
             this._createDragProcess();
 
             clearTimeout(loadTimeout);
@@ -398,6 +411,7 @@ export class ItemBrowser extends HandlebarsApplicationMixin(ApplicationV2) {
             });
             filter.bind(this.element);
             this.#search[key] = filter;
+            this.element.querySelector(input).value = this.searchTerm;
         }
     }
 
@@ -436,6 +450,7 @@ export class ItemBrowser extends HandlebarsApplicationMixin(ApplicationV2) {
      * @protected
      */
     async _onSearchFilterBrowser(event, query, rgx, html) {
+        this.searchTerm = query;
         this.#filteredItems.browser.search.clear();
 
         for (const li of html.querySelectorAll('.item-container')) {
@@ -511,6 +526,8 @@ export class ItemBrowser extends HandlebarsApplicationMixin(ApplicationV2) {
     }
 
     static resetFilters() {
+        this.searchTerm = '';
+        this.presets.filter = {};
         this.render({ force: true });
         this.loadItems();
     }
@@ -595,23 +612,12 @@ export class ItemBrowser extends HandlebarsApplicationMixin(ApplicationV2) {
 
     static injectSidebarButton(html) {
         const config = CONFIG.DH.ITEMBROWSER.compendiumConfig;
-        const actorFolders = Object.values(config).filter(c => c.documentName === 'Actor').map(c => c.id);
         const itemFolders = Object.values(config).filter(c => c.documentName === 'Item').map(c => c.id);
 
         const sectionId = html.dataset.tab;
         const menus = {
-            actors: game.user.isGM ? {
-                folder: 'adversaries',
-                render: {
-                    folders: actorFolders
-                }
-            } : null,
-            items: {
-                folder: 'equipments',
-                render: {
-                    folders: itemFolders.filter(i => i !== 'features')
-                }
-            },
+            actors: game.user.isGM ? {} : null,
+            items: {},
             compendium: {
                 render: {
                     folders: game.user.isGM ? null : itemFolders

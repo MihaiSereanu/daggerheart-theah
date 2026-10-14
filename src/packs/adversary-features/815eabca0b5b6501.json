@@ -1,0 +1,15 @@
+{
+  "_id": "815eabca0b5b6501",
+  "name": "Heavily Armored",
+  "type": "feature",
+  "img": "icons/equipment/shield/heater-steel-gold.webp",
+  "system": {
+    "description": "<p>Reduce physical damage the adversary takes by 3.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!815eabca0b5b6501"
+}

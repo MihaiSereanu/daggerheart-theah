@@ -5,7 +5,7 @@
     <a class="entry-name ellipsis" data-action="activateEntry">
         <span>{{name}}</span>
         {{#if (or (eq type "adversary") (eq type "environment"))}}
-            <span class="entry-subtitle">{{localize "DAGGERHEART.UI.Sidebar.actorDirectory.tier" tier=system.tier type=(@root.getTypeLabel this)}}</span>
+            <span class="entry-subtitle">{{system.classification}} / {{@root.getTypeLabel this}}</span>
         {{else if (eq type "npc")}}
             <span class="entry-subtitle">{{localize "TYPES.Actor.npc"}}</span>
         {{else if (eq type "character")}}

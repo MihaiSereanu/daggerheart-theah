@@ -1,0 +1,28 @@
+{
+  "_id": "357d5c8c90a105ac",
+  "name": "Mother's Gift",
+  "type": "domainCard",
+  "img": "icons/creatures/abilities/bear-roar-bite-brown-green.webp",
+  "system": {
+    "description": "<p>Once per Rest, you can imbue a small item with protective essence and give it to someone else. When the person holding the talisman takes damage, you can <strong>mark a Stress</strong> to reduce the number of HP they mark by one. Then, roll a d6; on a 5 or 6, the talisman shatters. At the end of the day, the talisman loses its potency.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "darmatushki",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false,
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    }
+  },
+  "effects": [],
+  "folder": "afc4243e401cd19b",
+  "_key": "!items!357d5c8c90a105ac"
+}

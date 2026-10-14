@@ -1,0 +1,15 @@
+{
+  "_id": "5f79f4363d4bee00",
+  "name": "Iron Defense",
+  "type": "feature",
+  "img": "icons/equipment/shield/heater-steel-boss-red.webp",
+  "system": {
+    "description": "<p>When you have 1 HP remaining, all attacks against you have Disadvantage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "1e2db0968045dd20",
+  "_key": "!items!5f79f4363d4bee00"
+}

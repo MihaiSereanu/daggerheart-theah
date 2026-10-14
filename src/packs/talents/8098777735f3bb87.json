@@ -1,0 +1,20 @@
+{
+  "_id": "8098777735f3bb87",
+  "name": "Vanish",
+  "type": "domainCard",
+  "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+  "system": {
+    "description": "<p>When an adversary misses you, you can <strong>spend a Hope</strong> to drop from sight - describe how. You are <em>Hidden</em> until you make an Action Roll, and may reposition within Close range of them.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "shade",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "5af6d37ce4bdfed9",
+  "_key": "!items!8098777735f3bb87"
+}

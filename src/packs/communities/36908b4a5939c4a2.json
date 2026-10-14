@@ -1,0 +1,18 @@
+{
+  "_id": "36908b4a5939c4a2",
+  "name": "Rural North",
+  "type": "community",
+  "img": "icons/environment/wilderness/tree-spruce-green.webp",
+  "system": {
+    "description": "<p>You come from a land of snow-covered forests, frozen tundra, or windswept coasts where the cold tests endurance and sharpens resolve. These communities are shaped by harsh winters, scarce resources, and long nights. Survival depends on preparation, grit, and mutual reliance.</p>\n<p><strong>Hardy</strong>. Once per Rest, you can Help an Ally traverse difficult terain without spending a Hope.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "features": [
+      "Compendium.daggerheart-theah.features.Item.71d33e4bc7eb6c07"
+    ],
+    "loreReference": null
+  },
+  "effects": [],
+  "_key": "!items!36908b4a5939c4a2"
+}

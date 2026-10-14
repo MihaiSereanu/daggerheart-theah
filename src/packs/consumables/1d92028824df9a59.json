@@ -1,0 +1,15 @@
+{
+  "_id": "1d92028824df9a59",
+  "name": "Shattered Relic Shard",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Shattered Relic Shard</strong>: Make a Finesse Roll to throw this shard at a group within Far range. Targets you succeed against take 1d20 magic damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!1d92028824df9a59"
+}

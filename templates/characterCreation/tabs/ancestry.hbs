@@ -21,7 +21,7 @@
 
             <div class="selections-outer-container enlarged">
                 <div class="selections-container primary-ancestry-card">
-                    {{#> "systems/daggerheart/templates/components/card-preview.hbs" primaryAncestry altPartialBlock=true secondaryDisabled=secondaryAncestry.system mixedAncestry=mixedAncestry }}
+                    {{#> "systems/daggerheart-theah/templates/components/card-preview.hbs" primaryAncestry altPartialBlock=true secondaryDisabled=secondaryAncestry.system mixedAncestry=mixedAncestry }}
                         {{#if system}} 
                             <div class="ancestry-preview-info-container">
                                 <div class="ancestry-preview-label">{{name}}</div>
@@ -37,12 +37,12 @@
                                 {{localize "DAGGERHEART.APPLICATIONS.CharacterCreation.selectAncestry"}}
                             {{/if}}
                         {{/if}}
-                    {{/"systems/daggerheart/templates/components/card-preview.hbs"}}
+                    {{/"systems/daggerheart-theah/templates/components/card-preview.hbs"}}
                 </div>
 
                 {{#if mixedAncestry}}
                     <div class="selections-container secondary-ancestry-card">
-                            {{#> "systems/daggerheart/templates/components/card-preview.hbs" secondaryAncestry altPartialBlock=true }}
+                            {{#> "systems/daggerheart-theah/templates/components/card-preview.hbs" secondaryAncestry altPartialBlock=true }}
                                 {{#if system}}
                                     <div class="ancestry-preview-info-container">
                                         <div class="ancestry-preview-label">{{name}}</div>
@@ -54,7 +54,7 @@
                                 {{else}}
                                     {{localize "DAGGERHEART.APPLICATIONS.CharacterCreation.selectSecondaryAncestry"}}
                                 {{/if}}
-                            {{/"systems/daggerheart/templates/components/card-preview.hbs"}}
+                            {{/"systems/daggerheart-theah/templates/components/card-preview.hbs"}}
                     </div>
                 {{/if}}
             </div>

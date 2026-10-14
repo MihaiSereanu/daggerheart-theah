@@ -1,0 +1,15 @@
+{
+  "_id": "ce29f0c984beb0f2",
+  "name": "Swashbuckler",
+  "type": "feature",
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "system": {
+    "description": "<p>When the adversary marks 2 or fewer HP from an attack in Melee, the attacker must <strong>mark a Stress</strong>.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!ce29f0c984beb0f2"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "1e44e01436b504d6",
+  "name": "Won’t See It Coming",
+  "type": "feature",
+  "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+  "system": {
+    "description": "<p>The adversary deals direct damage while they’re Hidden.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!1e44e01436b504d6"
+}

@@ -1,0 +1,50 @@
+{
+  "_id": "83e9b56f8a253e65",
+  "name": "Hunter",
+  "type": "class",
+  "img": "icons/skills/ranged/target-bullseye-arrow-green.webp",
+  "system": {
+    "description": "<p>Hunters are patient and practiced scouts and explorers. They rarely wear uniforms or swear allegiance to a flag. Instead, they master their craft deep in the borderlands and deep forests, across coastal cliffs and ruined strongholds. Their expertise lies in marking trails, detecting traps, and tracking their target. In Théah, a Hunter might be a famous investigator, a veteran of skirmishes in Eisen’s haunted woods, or a scholar of ancient ruins that prefers to get their hands dirty.</p>\n<h5>STARTING EVASION: 11</h5>\n<h5>STARTING HP: 6</h5>\n<h4>Thematic Items</h4>\n<p>A trophy from your first kill or a seemingly broken compass</p>\n<h4>Hunter&#39;s Hope Feature</h4>\n<p><strong>Piercing Insight</strong>. Spend 3 Hope to replace your Hope die with a d20 when rolling against your <em>Focus</em>.</p>\n<h4>Archetype Feature</h4>\n<h5>Singular Focus</h5>\n<p><strong>Mark a Stress</strong> and make an attack against a target. On a success, the target becomes your <em>Focus</em>. Until you choose a new Focus or the next Rest, you gain the following:</p>\n<ul>\n<li>You always know their general whereabouts</li>\n<li>When you attack them, they must also mark a Stress</li>\n<li>If you fail an attack against them, you may end your <em>Focus</em> to reroll your Duality Dice</li>\n</ul>\n<h5>Targeted Strikes</h5>\n<p>When you succeed with Fear on an attack roll, you deal additional damage equal to your unmarked Hope.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "evasion": 11,
+    "hitPoints": 6,
+    "domains": [],
+    "features": [
+      {
+        "type": "hope",
+        "item": "Compendium.daggerheart-theah.features.Item.241f7011506cd04a"
+      },
+      {
+        "type": "class",
+        "item": "Compendium.daggerheart-theah.features.Item.2932cae6984759d6"
+      },
+      {
+        "type": "class",
+        "item": "Compendium.daggerheart-theah.features.Item.29dff6d3bbb4c7a6"
+      }
+    ],
+    "subclasses": [
+      "Compendium.daggerheart-theah.specialisations.Item.041682da131c4b26",
+      "Compendium.daggerheart-theah.specialisations.Item.f4ed2b495b567836"
+    ],
+    "inventory": {
+      "take": [],
+      "choiceA": [],
+      "choiceB": []
+    },
+    "backgroundQuestions": [
+      "A terrible creature once struck the heart of your community. What was it?",
+      "Your first kill nearly ended you. What happened, and what has never healed, physically or otherwise?",
+      "You’ve traveled through many dangerous places. What’s the one site you refuse to return to, and why?"
+    ],
+    "connections": [
+      "What friendly competition do we have that keeps us sharp?",
+      "Why do you act differently when we’re alone than when others are around?",
+      "What threat have you asked me to watch for, and why are you so worried about it?"
+    ]
+  },
+  "effects": [],
+  "_key": "!items!83e9b56f8a253e65"
+}

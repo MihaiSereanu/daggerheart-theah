@@ -1,0 +1,727 @@
+{
+  "Compendium.daggerheart-theah.features.Item.09da84128694020c": {
+    "current": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+    "previous": [
+      "icons/skills/social/diplomacy-writing-letter.webp"
+    ],
+    "previousAttack": []
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.5e729eaa591db5cc": {
+    "current": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+    "previous": [
+      "icons/magic/symbols/runes-star-magenta.webp"
+    ],
+    "previousAttack": []
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.53dc21fb02714f1b": {
+    "current": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+    "previous": [
+      "icons/magic/symbols/runes-star-magenta.webp"
+    ],
+    "previousAttack": []
+  },
+  "Compendium.daggerheart-theah.domains.Item.596b31b66a8af132": {
+    "current": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+    "previous": [
+      "icons/skills/movement/portal-silhouette-pink.webp"
+    ],
+    "previousAttack": []
+  },
+  "Compendium.daggerheart-theah.domains.Item.598bee2be24412a0": {
+    "current": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+    "previous": [
+      "icons/skills/social/diplomacy-writing-letter.webp"
+    ],
+    "previousAttack": []
+  },
+  "Compendium.daggerheart-theah.talents.Item.5c769438fd3c92da": {
+    "current": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+    "previous": [
+      "icons/skills/movement/portal-silhouette-pink.webp"
+    ],
+    "previousAttack": []
+  },
+  "Compendium.daggerheart-theah.talents.Item.b3c59e5387bb0cb7": {
+    "current": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+    "previous": [
+      "icons/skills/movement/portal-silhouette-pink.webp"
+    ],
+    "previousAttack": []
+  },
+  "Compendium.daggerheart-theah.talents.Item.adda83b26538ce35": {
+    "current": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+    "previous": [
+      "icons/skills/movement/portal-silhouette-pink.webp"
+    ],
+    "previousAttack": []
+  },
+  "Compendium.daggerheart-theah.talents.Item.f3615ac5cc179497": {
+    "current": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+    "previous": [
+      "icons/skills/movement/portal-silhouette-pink.webp"
+    ],
+    "previousAttack": []
+  },
+  "Compendium.daggerheart-theah.talents.Item.196712caaf45db42": {
+    "current": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+    "previous": [
+      "icons/skills/movement/portal-silhouette-pink.webp"
+    ],
+    "previousAttack": []
+  },
+  "Compendium.daggerheart-theah.talents.Item.64dc6e63daaaafde": {
+    "current": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+    "previous": [
+      "icons/skills/social/diplomacy-writing-letter.webp"
+    ],
+    "previousAttack": []
+  },
+  "Compendium.daggerheart-theah.talents.Item.65abe998d72355fb": {
+    "current": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+    "previous": [
+      "icons/skills/social/diplomacy-writing-letter.webp"
+    ],
+    "previousAttack": []
+  },
+  "Compendium.daggerheart-theah.talents.Item.8fbd592ef12ee4d8": {
+    "current": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+    "previous": [
+      "icons/skills/social/diplomacy-writing-letter.webp"
+    ],
+    "previousAttack": []
+  },
+  "Compendium.daggerheart-theah.talents.Item.5d9f1e3141b0e174": {
+    "current": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+    "previous": [
+      "icons/skills/social/diplomacy-writing-letter.webp"
+    ],
+    "previousAttack": []
+  },
+  "Compendium.daggerheart-theah.talents.Item.ca35bb468819687c": {
+    "current": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+    "previous": [
+      "icons/skills/social/diplomacy-writing-letter.webp"
+    ],
+    "previousAttack": []
+  },
+  "Compendium.daggerheart-theah.weapons.Item.bcb871d8c1c92cea": {
+    "current": "icons/equipment/hand/gauntlet-armored-leather-steel-blue.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/hand-grip-sword-orange.webp",
+      "icons/equipment/hand/gauntlet-armored-leather-steel-blue.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.7654aa25ba3c4d33": {
+    "current": "icons/weapons/swords/shortsword-broad-engraved.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/hand-grip-sword-orange.webp",
+      "icons/weapons/swords/shortsword-broad-engraved.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.4fae5ebc77cc48d3": {
+    "current": "icons/weapons/axes/axe-battle-simple.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/strike-axe-blood-red.webp",
+      "icons/weapons/axes/axe-battle-simple.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.3408f93e1ed60644": {
+    "current": "icons/weapons/maces/mace-flanged-steel.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/hand-grip-sword-orange.webp",
+      "icons/weapons/maces/mace-flanged-steel.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.a9f09e4360bba599": {
+    "current": "icons/weapons/polearms/halberd-crescent-engraved-steel.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/ranged/target-bullseye-arrow-green.webp",
+      "icons/weapons/polearms/halberd-crescent-engraved-steel.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.d4d60a9ed46c5e66": {
+    "current": "icons/weapons/hammers/hammer-war-spiked.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/hand-grip-sword-orange.webp",
+      "icons/weapons/hammers/hammer-war-spiked.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.16d0a65f4753bb65": {
+    "current": "icons/weapons/axes/axe-double-engraved-runes.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/strike-axe-blood-red.webp",
+      "icons/weapons/axes/axe-double-engraved-runes.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.b2f19ce00283c002": {
+    "current": "icons/weapons/swords/greatsword-crossguard-steel.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/hand-grip-sword-orange.webp",
+      "icons/weapons/swords/greatsword-crossguard-steel.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.b58af58860a13dd0": {
+    "current": "icons/weapons/daggers/dagger-simple-blue.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/weapons/daggers/dagger-simple-blue.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.5803584c1499da92": {
+    "current": "icons/weapons/staves/staff-simple-wrapped.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/hand-grip-sword-orange.webp",
+      "icons/weapons/staves/staff-simple-wrapped.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.b0f850472c65744a": {
+    "current": "icons/weapons/swords/sword-guard-brown.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/hand-grip-sword-orange.webp",
+      "icons/weapons/swords/sword-guard-brown.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.3e7f5ac90608901d": {
+    "current": "icons/weapons/swords/sword-guard-brass-worn.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/hand-grip-sword-orange.webp",
+      "icons/weapons/swords/sword-guard-brass-worn.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.f1ef187c9feffad5": {
+    "current": "icons/weapons/swords/sword-guard-engraved.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/hand-grip-sword-orange.webp",
+      "icons/weapons/swords/sword-guard-engraved.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.cb8121d1ff975921": {
+    "current": "icons/weapons/misc/whip-leather.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/ranged/target-bullseye-arrow-green.webp",
+      "icons/weapons/misc/whip-leather.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.93b01b7d8597077b": {
+    "current": "icons/weapons/polearms/spear-flared-wrapped.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/ranged/target-bullseye-arrow-green.webp",
+      "icons/weapons/polearms/spear-flared-wrapped.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.de1b98bf71e6122d": {
+    "current": "icons/weapons/swords/shortsword-guard-silver.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/hand-grip-sword-orange.webp",
+      "icons/weapons/swords/shortsword-guard-silver.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.5b17ec6228af9129": {
+    "current": "icons/equipment/shield/buckler-iron-cross-gray.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/hand-grip-sword-orange.webp",
+      "icons/equipment/shield/buckler-iron-cross-gray.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.799db8079252c8cb": {
+    "current": "icons/equipment/shield/round-wooden-boss-steel-brown.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/hand-grip-sword-orange.webp",
+      "icons/equipment/shield/round-wooden-boss-steel-brown.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.74bc6f469e788331": {
+    "current": "icons/weapons/daggers/dagger-curved-guard-blue.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/weapons/daggers/dagger-simple-blue.webp",
+      "icons/weapons/daggers/dagger-curved-guard-blue.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.f097833382368556": {
+    "current": "icons/equipment/hand/gauntlet-armored-heavy-steel.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/hand-grip-sword-orange.webp",
+      "icons/equipment/hand/gauntlet-armored-heavy-steel.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.856c4707524db522": {
+    "current": "icons/weapons/bows/shortbow-recurve-leather.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/weapons/bows/longbow-recurve-leather-brown.webp",
+      "icons/weapons/bows/shortbow-recurve-leather.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.f829ff47cc390417": {
+    "current": "icons/weapons/crossbows/crossbow-long-brown.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/weapons/bows/longbow-recurve-leather-brown.webp",
+      "icons/weapons/crossbows/crossbow-long-brown.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.b5dad0c21514de04": {
+    "current": "icons/weapons/guns/gun-pistol-flintlock.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/weapons/guns/gun-blunderbuss-gold.webp",
+      "icons/weapons/guns/gun-pistol-flintlock.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.8761d8c9d7d216c3": {
+    "current": "icons/weapons/bows/longbow-recurve-leather-brown.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/weapons/bows/longbow-recurve-leather-brown.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.b0ea183e1526c867": {
+    "current": "icons/weapons/guns/gun-wood.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/weapons/guns/gun-blunderbuss-gold.webp",
+      "icons/weapons/guns/gun-wood.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.5657c866b638c8c7": {
+    "current": "icons/weapons/axes/axe-tomahawk-engraved.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/strike-axe-blood-red.webp",
+      "icons/weapons/axes/axe-tomahawk-engraved.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.c959a16d3ab44702": {
+    "current": "icons/weapons/guns/gun-blunderbuss-bronze.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/weapons/guns/gun-blunderbuss-gold.webp",
+      "icons/weapons/guns/gun-blunderbuss-bronze.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.288e9197b4785c04": {
+    "current": "icons/equipment/hand/gauntlet-armored-leather-steel-blue.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/hand-grip-sword-orange.webp",
+      "icons/equipment/hand/gauntlet-armored-leather-steel-blue.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.c6bdac8d6bd6924b": {
+    "current": "icons/weapons/swords/shortsword-broad-engraved.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/hand-grip-sword-orange.webp",
+      "icons/weapons/swords/shortsword-broad-engraved.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.0b229a8559c7d78d": {
+    "current": "icons/weapons/axes/axe-battle-simple.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/strike-axe-blood-red.webp",
+      "icons/weapons/axes/axe-battle-simple.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.03895f2462dec7fa": {
+    "current": "icons/weapons/maces/mace-flanged-steel.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/hand-grip-sword-orange.webp",
+      "icons/weapons/maces/mace-flanged-steel.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.48400978f4132f85": {
+    "current": "icons/weapons/polearms/halberd-crescent-engraved-steel.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/ranged/target-bullseye-arrow-green.webp",
+      "icons/weapons/polearms/halberd-crescent-engraved-steel.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.aa5f06f6ae9022fd": {
+    "current": "icons/weapons/hammers/hammer-war-spiked.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/hand-grip-sword-orange.webp",
+      "icons/weapons/hammers/hammer-war-spiked.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.2a0d33f74af7b87b": {
+    "current": "icons/weapons/axes/axe-double-engraved-runes.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/strike-axe-blood-red.webp",
+      "icons/weapons/axes/axe-double-engraved-runes.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.c8e6974bb02a1de8": {
+    "current": "icons/weapons/swords/greatsword-crossguard-steel.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/hand-grip-sword-orange.webp",
+      "icons/weapons/swords/greatsword-crossguard-steel.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.b30399d226160d31": {
+    "current": "icons/weapons/daggers/dagger-simple-blue.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/weapons/daggers/dagger-simple-blue.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.e1a02a311c35647d": {
+    "current": "icons/weapons/staves/staff-simple-wrapped.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/hand-grip-sword-orange.webp",
+      "icons/weapons/staves/staff-simple-wrapped.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.ec92586d022da5d5": {
+    "current": "icons/weapons/swords/sword-guard-brown.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/hand-grip-sword-orange.webp",
+      "icons/weapons/swords/sword-guard-brown.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.18076d545e6ef1a2": {
+    "current": "icons/weapons/swords/sword-guard-brass-worn.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/hand-grip-sword-orange.webp",
+      "icons/weapons/swords/sword-guard-brass-worn.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.9da664409d865d02": {
+    "current": "icons/weapons/swords/sword-guard-engraved.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/hand-grip-sword-orange.webp",
+      "icons/weapons/swords/sword-guard-engraved.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.d114c8f16f0a4594": {
+    "current": "icons/weapons/misc/whip-leather.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/ranged/target-bullseye-arrow-green.webp",
+      "icons/weapons/misc/whip-leather.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.178af3537b8756eb": {
+    "current": "icons/weapons/polearms/spear-flared-wrapped.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/ranged/target-bullseye-arrow-green.webp",
+      "icons/weapons/polearms/spear-flared-wrapped.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.d55ca6db55d8d18b": {
+    "current": "icons/weapons/swords/shortsword-guard-silver.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/hand-grip-sword-orange.webp",
+      "icons/weapons/swords/shortsword-guard-silver.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.16c09d15d751d0be": {
+    "current": "icons/equipment/shield/buckler-iron-cross-gray.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/hand-grip-sword-orange.webp",
+      "icons/equipment/shield/buckler-iron-cross-gray.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.9a27859fd4fe5717": {
+    "current": "icons/equipment/shield/round-wooden-boss-steel-brown.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/hand-grip-sword-orange.webp",
+      "icons/equipment/shield/round-wooden-boss-steel-brown.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.d2514a5c42bdeb4c": {
+    "current": "icons/weapons/daggers/dagger-curved-guard-blue.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/weapons/daggers/dagger-simple-blue.webp",
+      "icons/weapons/daggers/dagger-curved-guard-blue.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.ae04be510951442d": {
+    "current": "icons/equipment/hand/gauntlet-armored-heavy-steel.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/hand-grip-sword-orange.webp",
+      "icons/equipment/hand/gauntlet-armored-heavy-steel.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.5a984d07dd67a4f1": {
+    "current": "icons/weapons/bows/shortbow-recurve-leather.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/weapons/bows/longbow-recurve-leather-brown.webp",
+      "icons/weapons/bows/shortbow-recurve-leather.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.e2252f990974096a": {
+    "current": "icons/weapons/crossbows/crossbow-long-brown.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/weapons/bows/longbow-recurve-leather-brown.webp",
+      "icons/weapons/crossbows/crossbow-long-brown.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.0c1bec39a669a70e": {
+    "current": "icons/weapons/guns/gun-pistol-flintlock.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/weapons/guns/gun-blunderbuss-gold.webp",
+      "icons/weapons/guns/gun-pistol-flintlock.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.eb7c366c223c52f5": {
+    "current": "icons/weapons/bows/longbow-recurve-leather-brown.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/weapons/bows/longbow-recurve-leather-brown.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.3f5ee8e72e3e488e": {
+    "current": "icons/weapons/guns/gun-wood.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/weapons/guns/gun-blunderbuss-gold.webp",
+      "icons/weapons/guns/gun-wood.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.e231a20ccd08ed47": {
+    "current": "icons/weapons/axes/axe-tomahawk-engraved.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/skills/melee/strike-axe-blood-red.webp",
+      "icons/weapons/axes/axe-tomahawk-engraved.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.weapons.Item.136f1cdcf8e69ef8": {
+    "current": "icons/weapons/guns/gun-blunderbuss-bronze.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/battered-axe.svg"
+    ],
+    "previousAttack": [
+      "icons/weapons/guns/gun-blunderbuss-gold.webp",
+      "icons/weapons/guns/gun-blunderbuss-bronze.webp"
+    ]
+  },
+  "Compendium.daggerheart-theah.armors.Item.385a33765d515ff7": {
+    "current": "icons/equipment/chest/breastplate-quilted-brown.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/chest-armor.svg"
+    ],
+    "previousAttack": []
+  },
+  "Compendium.daggerheart-theah.armors.Item.10c8c6c80ffe79a2": {
+    "current": "icons/equipment/chest/breastplate-layered-leather-brown.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/chest-armor.svg"
+    ],
+    "previousAttack": []
+  },
+  "Compendium.daggerheart-theah.armors.Item.4c22db6b8d3c7126": {
+    "current": "icons/equipment/chest/breastplate-metal-scaled-grey.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/chest-armor.svg"
+    ],
+    "previousAttack": []
+  },
+  "Compendium.daggerheart-theah.armors.Item.6781bc9e90027c45": {
+    "current": "icons/equipment/chest/breastplate-cuirass-steel-grey.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/chest-armor.svg"
+    ],
+    "previousAttack": []
+  },
+  "Compendium.daggerheart-theah.armors.Item.0347d78905213c80": {
+    "current": "icons/equipment/chest/breastplate-quilted-brown.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/chest-armor.svg"
+    ],
+    "previousAttack": []
+  },
+  "Compendium.daggerheart-theah.armors.Item.e0ff110d99978a88": {
+    "current": "icons/equipment/chest/breastplate-layered-leather-brown.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/chest-armor.svg"
+    ],
+    "previousAttack": []
+  },
+  "Compendium.daggerheart-theah.armors.Item.e57303425fe63937": {
+    "current": "icons/equipment/chest/breastplate-metal-scaled-grey.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/chest-armor.svg"
+    ],
+    "previousAttack": []
+  },
+  "Compendium.daggerheart-theah.armors.Item.bdd56c5552ee450b": {
+    "current": "icons/equipment/chest/breastplate-cuirass-steel-grey.webp",
+    "previous": [
+      "systems/daggerheart-theah/assets/icons/documents/items/chest-armor.svg"
+    ],
+    "previousAttack": []
+  },
+  "Compendium.daggerheart-theah.adversaries.Actor.b8dd985cfdc21b9d.Item.66b1229ed20d840a": {
+    "current": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+    "previous": [
+      "icons/skills/movement/portal-silhouette-pink.webp"
+    ],
+    "previousAttack": []
+  },
+  "Compendium.daggerheart-theah.adversaries.Actor.9f435cc60c31add6.Item.f06d10b0ef66fe2d": {
+    "current": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+    "previous": [
+      "icons/skills/movement/portal-silhouette-pink.webp"
+    ],
+    "previousAttack": []
+  },
+  "Compendium.daggerheart-theah.environments.Actor.b12620d6e93594ef.Item.777b8df21a17352a": {
+    "current": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+    "previous": [
+      "icons/skills/movement/portal-silhouette-pink.webp"
+    ],
+    "previousAttack": []
+  },
+  "Compendium.daggerheart-theah.environments.Actor.b12620d6e93594ef.Item.4566663667eaf089": {
+    "current": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+    "previous": [
+      "icons/skills/movement/portal-silhouette-pink.webp"
+    ],
+    "previousAttack": []
+  }
+}

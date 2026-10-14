@@ -1,0 +1,15 @@
+{
+  "_id": "2d49ebc08ae60a35",
+  "name": "Many-Headed Menace",
+  "type": "feature",
+  "img": "icons/creatures/claws/claw-talons-yellow-red.webp",
+  "system": {
+    "description": "<p>The adversary begins with three heads and can have up to five. When the adversary takes Major or greater damage, they lose a head, becoming inert when it has 0.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!2d49ebc08ae60a35"
+}

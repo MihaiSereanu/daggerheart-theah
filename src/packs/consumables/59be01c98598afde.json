@@ -1,0 +1,15 @@
+{
+  "_id": "59be01c98598afde",
+  "name": "Wingsprout Growth",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Wingsprout Growth</strong>: You gain spectral wings that allow you to fly for a number of minutes equal to your level.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!59be01c98598afde"
+}

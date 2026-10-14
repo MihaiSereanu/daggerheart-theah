@@ -1,0 +1,15 @@
+{
+  "_id": "b20fc7e872e76cd6",
+  "name": "Slow Firing",
+  "type": "feature",
+  "img": "icons/skills/ranged/target-bullseye-arrow-green.webp",
+  "system": {
+    "description": "<p>When you spotlight the adversary and they don’t have a token on their stat block, they can’t make a standard attack. Place a token on their stat block and describe what they’re preparing to do. When you spotlight the adversary and they have a token on their stat block, clear the token and they can attack.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!b20fc7e872e76cd6"
+}

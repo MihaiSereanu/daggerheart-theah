@@ -1,0 +1,100 @@
+{
+  "_id": "efd4f99be59dd362",
+  "name": "Pirate Raiders",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>Seafaring scoundrels moving in a ravaging pack.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "horde",
+    "difficulty": 12,
+    "notes": "<h3>Normal | Horde, 3 / HP</h3>\n<p><em>Seafaring scoundrels moving in a ravaging pack.</em><br><strong>Motives &amp; Tactics:</strong> Gang up, plunder, raid</p>\n<p><strong>Difficulty:</strong> 12 | <strong>Thresholds:</strong> 5/11 | <strong>HP:</strong> 4 | <strong>Stress:</strong> 3</p>\n<p><strong>ATK:</strong> +1 | Weapon: Melee | 1d8+2 phy</p>\n<hr>\n<p><strong>Experience:</strong> Sailor +3</p>\n<h4>Features</h4>\n<p><strong>Horde (1d4+1) - Passive</strong>: When the Raiders have marked half or more of their HP, their standard attack deals 1d4+1 physical damage instead.</p>\n<p><strong>Swashbuckler - Passive</strong>: When the Raiders mark 2 or fewer HP from an attack within Melee, the attacker must <strong>mark a Stress</strong>.</p>\n",
+    "damageThresholds": {
+      "major": 5,
+      "severe": 11
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 4
+      },
+      "stress": {
+        "value": 0,
+        "max": 3
+      }
+    },
+    "motivesAndTactics": "Gang up, plunder, raid",
+    "experiences": {
+      "f9e33852e1678d4e": {
+        "name": "Sailor",
+        "value": 3
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/hand-grip-sword-orange.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 1
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d8+2"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "70e200be9669c728",
+      "name": "Horde (1d4+1) - Passive",
+      "type": "feature",
+      "img": "icons/sundries/flags/banner-sword-blue.webp",
+      "system": {
+        "description": "<p>When the Raiders have marked half or more of their HP, their standard attack deals 1d4+1 physical damage instead.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!efd4f99be59dd362.70e200be9669c728"
+    },
+    {
+      "_id": "b1c6bad468c78a91",
+      "name": "Swashbuckler - Passive",
+      "type": "feature",
+      "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+      "system": {
+        "description": "<p>When the Raiders mark 2 or fewer HP from an attack within Melee, the attacker must <strong>mark a Stress</strong>.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!efd4f99be59dd362.b1c6bad468c78a91"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Pirate Raiders",
+    "actorLink": false
+  },
+  "_key": "!actors!efd4f99be59dd362"
+}

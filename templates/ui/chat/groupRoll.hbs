@@ -19,7 +19,7 @@
                 </div>
                 {{#unless system.leader.result}}   
                     <div class="group-roll-rolling">
-                        <a class="group-roll-button" data-path="leader"><img class="dice-icon normal" src="{{concat 'systems/daggerheart/assets/icons/dice/default/d20.svg'}}" alt=""></a>
+                        <a class="group-roll-button" data-path="leader"><img class="dice-icon normal" src="{{concat 'systems/daggerheart-theah/assets/icons/dice/default/d20.svg'}}" alt=""></a>
                     </div>
                 {{else}}
                     <div class="roll-results {{#if system.leader.result}}finished{{/if}}">
@@ -30,7 +30,7 @@
                             </div>
                             
                             <a class="group-roll-reroll" data-path="leader" data-tooltip="{{localize "DAGGERHEART.UI.Chat.groupRoll.rerollTooltip"}}">
-                                <img class="dice-icon normal" src="{{concat 'systems/daggerheart/assets/icons/dice/default/d20.svg'}}" alt=""></img>
+                                <img class="dice-icon normal" src="{{concat 'systems/daggerheart-theah/assets/icons/dice/default/d20.svg'}}" alt=""></img>
                                 <i class="fa-solid fa-arrow-rotate-left reroll-icon"></i>
                             </a>
                         {{else}}
@@ -89,7 +89,7 @@
                     </div>
                     {{#unless member.result}}
                         <div class="group-roll-rolling">
-                            <a class="group-roll-button" data-path="{{concat "members." index}}"><img class="dice-icon normal" src="{{concat 'systems/daggerheart/assets/icons/dice/default/d20.svg'}}" alt=""></a>
+                            <a class="group-roll-button" data-path="{{concat "members." index}}"><img class="dice-icon normal" src="{{concat 'systems/daggerheart-theah/assets/icons/dice/default/d20.svg'}}" alt=""></a>
                         </div>
                     {{else}}
                         <div class="roll-results">
@@ -102,7 +102,7 @@
                                 </div>
                                 
                                 <a class="group-roll-reroll" data-path="{{concat "members." index}}" data-tooltip="{{localize "DAGGERHEART.UI.Chat.groupRoll.rerollTooltip"}}">
-                                    <img class="dice-icon normal" src="{{concat 'systems/daggerheart/assets/icons/dice/default/d20.svg'}}" alt=""></img>
+                                    <img class="dice-icon normal" src="{{concat 'systems/daggerheart-theah/assets/icons/dice/default/d20.svg'}}" alt=""></img>
                                     <i class="fa-solid fa-arrow-rotate-left reroll-icon"></i>
                                 </a>
                             {{else}}

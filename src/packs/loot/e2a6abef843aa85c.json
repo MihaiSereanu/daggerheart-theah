@@ -1,0 +1,15 @@
+{
+  "_id": "e2a6abef843aa85c",
+  "name": "Torch of Alistair’s Vault",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Torch of Alistair’s Vault</strong>: You can light this magic torch at will. The flame&#39;s light fills a much larger space than it should, enough to illuminate a cave bright as day.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!e2a6abef843aa85c"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "3089d50955b316ce",
+  "name": "Root of Leaps",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Root of Leaps</strong>: Eat to leap up to Far range once without rolling.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!3089d50955b316ce"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "f745a788af2b6f3b",
+  "name": "Elixir of the Colossus",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Elixir of the Colossus</strong>: Gain +1 Brawn until your next rest.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!f745a788af2b6f3b"
+}

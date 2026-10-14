@@ -1,0 +1,15 @@
+{
+  "_id": "17d78a4cd4744fcb",
+  "name": "Destructible",
+  "type": "feature",
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "system": {
+    "description": "<p>When the adversary takes Major or greater damage, they mark an additional HP.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!17d78a4cd4744fcb"
+}

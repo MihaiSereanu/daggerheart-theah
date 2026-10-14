@@ -1,0 +1,15 @@
+{
+  "_id": "238275a20d15c813",
+  "name": "I've Got 'Em",
+  "type": "feature",
+  "img": "icons/magic/control/debuff-chains-shackles-movement-purple.webp",
+  "system": {
+    "description": "<p>Creatures Restrained by the adversary take double damage from attacks by other adversaries.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!238275a20d15c813"
+}

@@ -1,0 +1,52 @@
+{
+  "_id": "8761d8c9d7d216c3",
+  "name": "Longbow",
+  "type": "weapon",
+  "img": "icons/weapons/bows/longbow-recurve-leather-brown.webp",
+  "system": {
+    "description": "<p><strong>Longbow</strong></p>\n<p><strong>Accurate</strong>: +1 to attack rolls</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "blackpowder": false,
+    "reloading": false,
+    "secondary": false,
+    "burden": "twoHanded",
+    "weaponFeatures": [],
+    "attack": {
+      "_id": "100b2f17c75b446f",
+      "name": "Longbow",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/weapons/bows/longbow-recurve-leather-brown.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "veryFar",
+      "roll": {
+        "type": "attack",
+        "trait": "finesse",
+        "bonus": 1
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d8+1 + @finesse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "_key": "!items!8761d8c9d7d216c3"
+}

@@ -1,0 +1,18 @@
+{
+  "_id": "d8f20ba8e0a8e5a5",
+  "name": "Order",
+  "type": "community",
+  "img": "icons/sundries/flags/banner-standard-purple.webp",
+  "system": {
+    "description": "<p>You come from a community shaped by structure, doctrine, or devotion. Whether bound by faith, duty, or shared purpose, your people value discipline and unity above all. Some serve a cause; others uphold a code. From monastic to military brotherhoods, orderborne societies reinforce strength through their ideals.</p>\n<p><strong>Dedicated</strong>. Record three sayings or values your upbringing instilled in you. Once per rest, when you describe how you’re embodying one of these principles through your current action, you can roll a d20 as your Hope Die.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "features": [
+      "Compendium.daggerheart-theah.features.Item.23cb857f40994f10"
+    ],
+    "loreReference": null
+  },
+  "effects": [],
+  "_key": "!items!d8f20ba8e0a8e5a5"
+}

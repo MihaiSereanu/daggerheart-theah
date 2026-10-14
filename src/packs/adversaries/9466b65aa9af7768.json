@@ -1,0 +1,122 @@
+{
+  "_id": "9466b65aa9af7768",
+  "name": "Syrneth Puzzlebox",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A cube-shaped construct with a different rune on each of their six sides.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "champion",
+    "type": "solo",
+    "difficulty": 18,
+    "notes": "<h3>Champion | Solo</h3>\n<p><em>A cube-shaped construct with a different rune on each of their six sides.</em></p>\n<p><strong>Motives &amp; Tactics:</strong> Change tactics, trample foes, wait in disguise</p>\n<p><strong>Difficulty:</strong> 18 | <strong>Thresholds:</strong> 10/20 | <strong>HP:</strong> 8 | <strong>Stress:</strong> 6</p>\n<p><strong>ATK:</strong> +4 | Slam: Melee | 2d6+3 physical</p>\n<hr>\n<p><strong>Experience:</strong> Hide in Plain Sight +2</p>\n<h4>Features</h4>\n<p><strong>Relentless (2) - Passive</strong>: The Box can be spotlighted up to two times per GM turn. Spend Fear as usual to spotlight them.</p>\n<p><strong>Randomized Tactics - Action</strong>: Mark a Stress and roll a d6. The Box uses the corresponding move:</p>\n<blockquote>\n<p><strong>1. Mana Beam:</strong> Make an attack against a target within Far range. On a success, deal 2d10+2 magic damage.</p>\n<p><strong>2. Fire Jets:</strong> Make an attack against all targets within Close range. Targets the Box succeeds against take 2d8 physical damage.</p>\n<p><strong>3. Dizzying Charge:</strong> Make an attack against all PCs within Close range. Targets the Box succeeds against take 1d6+5 physical damage and are Vulnerable until their next roll with Hope.</p>\n<p><strong>4. Shocking Gas:</strong> All targets within Close range must succeed on a Finesse Reaction Roll or mark 3 Stress.</p>\n<p><strong>5. Stunning Clap:</strong> All targets within Very Close range must succeed on a Brawn Reaction Roll or become Vulnerable until the cube is defeated.</p>\n<p><strong>6. Psionic Whine:</strong> All targets within Close range must succeed on a Charm Reaction Roll or take 2d4+9 direct magic damage.</p>\n</blockquote>\n<p><strong>Overcharge - Reaction</strong>: Before rolling damage, you can <strong>mark a Stress</strong> to add a d6 to the damage roll. Additionally, you gain a Fear.</p>\n<p><strong>Death Quake - Reaction</strong>: When the Box marks their last HP, the magic powering them ruptures in an explosion of force. All targets within Close range must succeed on a Wits Reaction Roll to react in time or take 2d8+2 magic damage.</p>\n",
+    "damageThresholds": {
+      "major": 10,
+      "severe": 20
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 8
+      },
+      "stress": {
+        "value": 0,
+        "max": 6
+      }
+    },
+    "motivesAndTactics": "Change tactics, trample foes, wait in disguise",
+    "experiences": {
+      "f62345a7acfe6a9a": {
+        "name": "Hide in Plain Sight",
+        "value": 2
+      }
+    },
+    "attack": {
+      "_id": "4caf003ad1aeaadc",
+      "name": "Slam",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/unarmed-punch-fist-yellow-red.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 4
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "2d6+3"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "c084b378c2af4b53",
+      "name": "Relentless (2) - Passive",
+      "type": "feature",
+      "img": "icons/equipment/shield/heater-steel-gold.webp",
+      "system": {
+        "description": "<p>The Box can be spotlighted up to two times per GM turn. Spend Fear as usual to spotlight them.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!9466b65aa9af7768.c084b378c2af4b53"
+    },
+    {
+      "_id": "5f77803b7d539538",
+      "name": "Randomized Tactics - Action",
+      "type": "feature",
+      "img": "icons/sundries/flags/banner-sword-blue.webp",
+      "system": {
+        "description": "<p>Mark a Stress and roll a d6. The Box uses the corresponding move:</p>\n<blockquote>\n<p><strong>1. Mana Beam:</strong> Make an attack against a target within Far range. On a success, deal 2d10+2 magic damage.</p>\n<p><strong>2. Fire Jets:</strong> Make an attack against all targets within Close range. Targets the Box succeeds against take 2d8 physical damage.</p>\n<p><strong>3. Dizzying Charge:</strong> Make an attack against all PCs within Close range. Targets the Box succeeds against take 1d6+5 physical damage and are Vulnerable until their next roll with Hope.</p>\n<p><strong>4. Shocking Gas:</strong> All targets within Close range must succeed on a Finesse Reaction Roll or mark 3 Stress.</p>\n<p><strong>5. Stunning Clap:</strong> All targets within Very Close range must succeed on a Brawn Reaction Roll or become Vulnerable until the cube is defeated.</p>\n<p><strong>6. Psionic Whine:</strong> All targets within Close range must succeed on a Charm Reaction Roll or take 2d4+9 direct magic damage.</p>\n</blockquote>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!9466b65aa9af7768.5f77803b7d539538"
+    },
+    {
+      "_id": "f7711f785e1d6d51",
+      "name": "Overcharge - Reaction",
+      "type": "feature",
+      "img": "icons/environment/creatures/horse-brown.webp",
+      "system": {
+        "description": "<p>Before rolling damage, you can <strong>mark a Stress</strong> to add a d6 to the damage roll. Additionally, you gain a Fear.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!9466b65aa9af7768.f7711f785e1d6d51"
+    },
+    {
+      "_id": "ee85fc7b51e90e7e",
+      "name": "Death Quake - Reaction",
+      "type": "feature",
+      "img": "icons/sundries/books/book-symbol-skull-grey.webp",
+      "system": {
+        "description": "<p>When the Box marks their last HP, the magic powering them ruptures in an explosion of force. All targets within Close range must succeed on a Wits Reaction Roll to react in time or take 2d8+2 magic damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!9466b65aa9af7768.ee85fc7b51e90e7e"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Syrneth Puzzlebox",
+    "actorLink": false
+  },
+  "_key": "!actors!9466b65aa9af7768"
+}

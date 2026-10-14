@@ -1,0 +1,24 @@
+{
+  "_id": "8a6951182b214a26",
+  "name": "Arcane Shield",
+  "type": "feature",
+  "img": "icons/equipment/shield/heater-steel-gold.webp",
+  "system": {
+    "description": "<p>When the adversary takes damage from an attack within Close range, the damage is reduced by one threshold and the attacker takes 2d4 magic damage. This reaction can’t be used again until the adversary uses the &quot;Refresh&quot; action.</p>\n",
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": null,
+      "progression": "increasing",
+      "label": "Unavailable (0 / 1)"
+    },
+    "usageNote": "Set to 1 after reacting; reset to 0 after Refresh.",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "reaction"
+  },
+  "effects": [],
+  "_key": "!items!8a6951182b214a26"
+}

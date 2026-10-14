@@ -1,0 +1,28 @@
+{
+  "_id": "127b71ab816c1661",
+  "name": "path of the Pariah",
+  "type": "domainCard",
+  "img": "icons/sundries/books/book-symbol-canterbury-cross.webp",
+  "system": {
+    "description": "<p>The Path of the Pariah teaches that Terra is beautiful and full of wonder, regardless of one&#39;s circumstances. This lightness in both body and spirit can manifest as a presence impossible to detect. Once per Rest, <strong>spend 3 Hope</strong> to make a Spellcast Roll (15). On a success, you become Hidden and remain Hidden while moving, even in plain sight, for a number of scenes equal to your Instinct. The effect ends early if you take actions that explicitly reveal your position.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "artofthesecondprophet",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false,
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    }
+  },
+  "effects": [],
+  "folder": "5b8c67f9d145528b",
+  "_key": "!items!127b71ab816c1661"
+}

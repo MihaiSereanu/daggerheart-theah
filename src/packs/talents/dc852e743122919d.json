@@ -1,0 +1,20 @@
+{
+  "_id": "dc852e743122919d",
+  "name": "Raw Magnetism",
+  "type": "domainCard",
+  "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+  "system": {
+    "description": "<p>After making an Action Roll to influence someone with words or gestures, you can <strong>spend a Hope</strong> to reroll a Duality Die.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "poise",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "872e6545268d2095",
+  "_key": "!items!dc852e743122919d"
+}

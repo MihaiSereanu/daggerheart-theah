@@ -1,0 +1,28 @@
+{
+  "_id": "26188adfd9118fea",
+  "name": "Gentle Words",
+  "type": "domainCard",
+  "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+  "system": {
+    "description": "<p>After a Rest, gain a number of uses equal to your Charm. These uses reset after a Rest. Spend your uses to assist your allies. Describe how:</p>\n<ul>\n<li><strong>Relax</strong>. Help your ally clear 1 Stress.</li>\n<li><strong>Tend</strong>. Help your ally clear 1 HP.</li>\n<li><strong>Inspire</strong>. Help your ally gain 1 Hope.</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "poise",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false,
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "@charmCount",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    }
+  },
+  "effects": [],
+  "folder": "872e6545268d2095",
+  "_key": "!items!26188adfd9118fea"
+}

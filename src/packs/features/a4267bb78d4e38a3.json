@@ -1,0 +1,15 @@
+{
+  "_id": "a4267bb78d4e38a3",
+  "name": "Sturdy",
+  "type": "feature",
+  "img": "icons/creatures/abilities/bear-roar-bite-brown-green.webp",
+  "system": {
+    "description": "<p>When you take Severe+ damage, you drop out of Beastform.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "e8129b5b4c6cbd24",
+  "_key": "!items!a4267bb78d4e38a3"
+}

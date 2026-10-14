@@ -1,0 +1,27 @@
+{
+  "_id": "e59a15cb7b584d57",
+  "name": "Raconteur",
+  "type": "subclass",
+  "img": "icons/tools/instruments/lute-gold-brown.webp",
+  "system": {
+    "description": "<p>Play the Raconteur if you want to use clever wordplay and captivate hearts and crowds.</p>\n<h4>Features</h4>\n<p><strong>Rousing Speech</strong>. Once per Rest, you may deliver a stirring call to action. Allies who can hear you feel their burdens lifting, clearing 2 Stress.</p>\n<p><strong>Heart of a Poet</strong>. After attempting to impress, persuade, or scandalize someone with an Action Roll, but before the GM shares the result, you may <strong>spend a Hope</strong> to add an extra flourish, adding 1d4 to the result.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.90f54b69d80225e2",
+    "spellcastingTrait": null,
+    "features": [
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.608f8659296426c7"
+      },
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.33402cd27cd392c4"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": "3574f65753c1326d",
+  "_key": "!items!e59a15cb7b584d57"
+}

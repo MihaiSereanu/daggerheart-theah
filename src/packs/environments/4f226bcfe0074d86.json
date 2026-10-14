@@ -1,0 +1,132 @@
+{
+  "_id": "4f226bcfe0074d86",
+  "name": "Villain's Lair",
+  "type": "environment",
+  "img": "systems/daggerheart-theah/assets/icons/documents/actors/forest.svg",
+  "system": {
+    "description": "<p><em>A fortified hideout with twisting corridors and layers of defenses</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "standard",
+    "type": "exploration",
+    "difficulty": 15,
+    "notes": "<h3>Standard | Exploration</h3>\n<p><em>A fortified hideout with twisting corridors and layers of defenses</em><br><strong>Impulses:</strong> Slow intruders down, exhaust, strike, trap them inside</p>\n<p><strong>Difficulty:</strong> 15</p>\n<h4>Features</h4>\n<p><strong>Unsafe - Passive</strong>: Any action or feature used to recover HP or Stress costs a Hope to use. If it already costs Hope, it requires one extra.</p>\n<p><strong>Villain&#39;s Office - Passive</strong>: A PC can investigate the stronghold’s war table, maps, or notes and make a Wits Roll to learn information about the villain’s operations, supply routes, or next planned strike.</p>\n<p><strong>Grand Hall - Passive</strong>: PCs who make a successful Instinct or Wits Roll can spot a way to use the environment - <em>toppling a table, cutting a chandelier, or overturning a cauldron</em> - dealing 2d8 physical damage to enemies within Close of a chosen point..</p>\n<p><strong>Hidden Vault - Passive</strong>: PCs who search carefully can make a Wits or Instinct Roll to find a hidden vault of goods and gear.</p>\n<p><strong>Barracks - Passive</strong>: If the alarm has been raised, this room is full of hostile NPCs preparing to join the fight. PCs who sneak through undetected can sabotage weapons or prevent reinforcements.</p>\n<p><strong>Escape Tunnel - Passive</strong>: PCs who investigate carefully can discover a concealed exit from the stronghold. On a success, they find the route; on a critical success, they learn where it leads.</p>\n<p><strong>Booby-Trapped Hallways - Action</strong>: All targets within Close range of a chosen point must succeed on a Finesse Reaction Roll or take 1d10+2 physical damage.</p>\n<p><strong>Rallying Cry - Action</strong>: Once per scene, roll a d4. Each ally of the villain within Far range of them clears HP and Stress equal to the result. The villain can decide how to split the result for each ally.</p>\n<p><strong>Reinforcements - Action</strong>: Spend a Fear to summon 1d6 of the villain&#39;s forces of various types, who arrive within Close.</p>\n",
+    "impulses": "Slow intruders down, exhaust, strike, trap them inside"
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "beaceb47d4417a6b",
+      "name": "Unsafe - Passive",
+      "type": "feature",
+      "img": "icons/tools/navigation/compass-brass-blue-red.webp",
+      "system": {
+        "description": "<p>Any action or feature used to recover HP or Stress costs a Hope to use. If it already costs Hope, it requires one extra.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!4f226bcfe0074d86.beaceb47d4417a6b"
+    },
+    {
+      "_id": "549a8807126ac11d",
+      "name": "Villain's Office - Passive",
+      "type": "feature",
+      "img": "icons/environment/settlement/castle.webp",
+      "system": {
+        "description": "<p>A PC can investigate the stronghold’s war table, maps, or notes and make a Wits Roll to learn information about the villain’s operations, supply routes, or next planned strike.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!4f226bcfe0074d86.549a8807126ac11d"
+    },
+    {
+      "_id": "858c8ff94a8993b9",
+      "name": "Grand Hall - Passive",
+      "type": "feature",
+      "img": "icons/environment/settlement/castle.webp",
+      "system": {
+        "description": "<p>PCs who make a successful Instinct or Wits Roll can spot a way to use the environment - <em>toppling a table, cutting a chandelier, or overturning a cauldron</em> - dealing 2d8 physical damage to enemies within Close of a chosen point..</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!4f226bcfe0074d86.858c8ff94a8993b9"
+    },
+    {
+      "_id": "a08e50d4f6551294",
+      "name": "Hidden Vault - Passive",
+      "type": "feature",
+      "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+      "system": {
+        "description": "<p>PCs who search carefully can make a Wits or Instinct Roll to find a hidden vault of goods and gear.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!4f226bcfe0074d86.a08e50d4f6551294"
+    },
+    {
+      "_id": "9047a0da069eb028",
+      "name": "Barracks - Passive",
+      "type": "feature",
+      "img": "icons/environment/settlement/castle.webp",
+      "system": {
+        "description": "<p>If the alarm has been raised, this room is full of hostile NPCs preparing to join the fight. PCs who sneak through undetected can sabotage weapons or prevent reinforcements.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!4f226bcfe0074d86.9047a0da069eb028"
+    },
+    {
+      "_id": "e6d1ce7660d39f10",
+      "name": "Escape Tunnel - Passive",
+      "type": "feature",
+      "img": "icons/tools/navigation/compass-brass-blue-red.webp",
+      "system": {
+        "description": "<p>PCs who investigate carefully can discover a concealed exit from the stronghold. On a success, they find the route; on a critical success, they learn where it leads.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!4f226bcfe0074d86.e6d1ce7660d39f10"
+    },
+    {
+      "_id": "ed4dd6b9b8afebe7",
+      "name": "Booby-Trapped Hallways - Action",
+      "type": "feature",
+      "img": "icons/environment/settlement/castle.webp",
+      "system": {
+        "description": "<p>All targets within Close range of a chosen point must succeed on a Finesse Reaction Roll or take 1d10+2 physical damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!4f226bcfe0074d86.ed4dd6b9b8afebe7"
+    },
+    {
+      "_id": "4b9a27432dace463",
+      "name": "Rallying Cry - Action",
+      "type": "feature",
+      "img": "icons/sundries/flags/banner-sword-blue.webp",
+      "system": {
+        "description": "<p>Once per scene, roll a d4. Each ally of the villain within Far range of them clears HP and Stress equal to the result. The villain can decide how to split the result for each ally.</p>\n",
+        "resource": {
+          "type": "simple",
+          "value": 0,
+          "max": "1",
+          "recovery": "scene",
+          "progression": "increasing",
+          "label": "Uses"
+        }
+      },
+      "effects": [],
+      "_key": "!actors.items!4f226bcfe0074d86.4b9a27432dace463"
+    },
+    {
+      "_id": "df99a3bc63c67287",
+      "name": "Reinforcements - Action",
+      "type": "feature",
+      "img": "icons/equipment/shield/heater-steel-gold.webp",
+      "system": {
+        "description": "<p>Spend a Fear to summon 1d6 of the villain&#39;s forces of various types, who arrive within Close.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!4f226bcfe0074d86.df99a3bc63c67287"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Villain's Lair",
+    "actorLink": false
+  },
+  "_key": "!actors!4f226bcfe0074d86"
+}

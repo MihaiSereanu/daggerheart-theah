@@ -1,0 +1,14 @@
+{
+  "_id": "c013ad4ad7ed0853",
+  "name": "Galdr",
+  "type": "feature",
+  "img": "icons/magic/symbols/runes-carved-stone-purple.webp",
+  "system": {
+    "description": "<h2>Galdr</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.2bb76e9196c59e93]{Rune of the First Word}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.74c14f1dc2671ddd]{Rune of Ekerila}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.f28f2949425c2a63]{Rune of Rewrite}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.7c08cf9820c5feb9]{Rune of Binding}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.e246c2f08bb82fac]{Rune of Retribution}</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!c013ad4ad7ed0853"
+}

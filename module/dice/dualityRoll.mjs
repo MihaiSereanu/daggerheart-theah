@@ -316,20 +316,6 @@ export default class DualityRoll extends D20Roll {
     }
 
     static async dualityUpdate(config) {
-        const countdownAutomation = game.system.settings.automation.countdownAutomation;
-        if (countdownAutomation && config.actionType !== 'reaction' && !config.skips?.updateCountdowns) {
-            const { updateCountdowns } = game.system.api.applications.ui.DhCountdowns;
-
-            if (config.roll.result.duality === -1) {
-                await updateCountdowns(
-                    CONFIG.DH.GENERAL.countdownProgressionTypes.actionRoll.id,
-                    CONFIG.DH.GENERAL.countdownProgressionTypes.fear.id
-                );
-            } else {
-                await updateCountdowns(CONFIG.DH.GENERAL.countdownProgressionTypes.actionRoll.id);
-            }
-        }
-
         await DualityRoll.addDualityResourceUpdates(config);
     }
 

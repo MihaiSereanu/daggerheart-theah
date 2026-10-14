@@ -1,0 +1,15 @@
+{
+  "_id": "7db76518efaa1783",
+  "name": "Enduring Might",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-flag-white-mountain.webp",
+  "system": {
+    "description": "<p>Spend 3 Hope to halve incoming physical damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "63c8a76e4bad4cbc",
+  "_key": "!items!7db76518efaa1783"
+}

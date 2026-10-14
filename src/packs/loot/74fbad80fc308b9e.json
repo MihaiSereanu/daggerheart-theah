@@ -1,0 +1,15 @@
+{
+  "_id": "74fbad80fc308b9e",
+  "name": "Gem of Alacrity",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Gem of Alacrity</strong>: You can attach this gem to a weapon, allowing you to add half your Charm trait to Finesse weapons.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!74fbad80fc308b9e"
+}

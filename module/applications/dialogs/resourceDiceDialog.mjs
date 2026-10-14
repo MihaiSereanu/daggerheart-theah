@@ -32,7 +32,7 @@ export default class ResourceDiceDialog extends HandlebarsApplicationMixin(Appli
     static PARTS = {
         resourceDice: {
             id: 'resourceDice',
-            template: 'systems/daggerheart/templates/dialogs/dice-roll/resourceDice.hbs'
+            template: 'systems/daggerheart-theah/templates/dialogs/dice-roll/resourceDice.hbs'
         }
     };
 
@@ -77,7 +77,7 @@ export default class ResourceDiceDialog extends HandlebarsApplicationMixin(Appli
         const msg = {
             user: game.user.id,
             content: await foundry.applications.handlebars.renderTemplate(
-                'systems/daggerheart/templates/ui/chat/resource-roll.hbs',
+                'systems/daggerheart-theah/templates/ui/chat/resource-roll.hbs',
                 {
                     user: this.actor.name,
                     name: this.item.name

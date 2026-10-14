@@ -1,0 +1,15 @@
+{
+  "_id": "f6c2f3bb5bfe1fd6",
+  "name": "Flair for the Dramatic",
+  "type": "feature",
+  "img": "icons/magic/symbols/fleur-de-lis-yellow.webp",
+  "system": {
+    "description": "<p>When you make a Finesse roll, you can <strong>spend 2 Hope</strong> to reroll your Hope Die.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "9b92736b7c8dd2ca",
+  "_key": "!items!f6c2f3bb5bfe1fd6"
+}

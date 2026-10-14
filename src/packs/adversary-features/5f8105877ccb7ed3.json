@@ -1,0 +1,15 @@
+{
+  "_id": "5f8105877ccb7ed3",
+  "name": "Climber",
+  "type": "feature",
+  "img": "icons/creatures/claws/claw-talons-yellow-red.webp",
+  "system": {
+    "description": "<p>The adversary climbs just as easily as they run.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!5f8105877ccb7ed3"
+}

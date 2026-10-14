@@ -56,23 +56,23 @@ export default class GroupRollDialog extends HandlebarsApplicationMixin(Applicat
     static PARTS = {
         initialization: {
             id: 'initialization',
-            template: 'systems/daggerheart/templates/dialogs/groupRollDialog/initialization.hbs'
+            template: 'systems/daggerheart-theah/templates/dialogs/groupRollDialog/initialization.hbs'
         },
         main: {
             id: 'main',
-            template: 'systems/daggerheart/templates/dialogs/groupRollDialog/main.hbs'
+            template: 'systems/daggerheart-theah/templates/dialogs/groupRollDialog/main.hbs'
         },
         leader: {
             id: 'leader',
-            template: 'systems/daggerheart/templates/dialogs/groupRollDialog/parts/member.hbs'
+            template: 'systems/daggerheart-theah/templates/dialogs/groupRollDialog/parts/member.hbs'
         },
         result: {
             id: 'result',
-            template: 'systems/daggerheart/templates/dialogs/groupRollDialog/parts/result.hbs'
+            template: 'systems/daggerheart-theah/templates/dialogs/groupRollDialog/parts/result.hbs'
         },
         footer: {
             id: 'footer',
-            template: 'systems/daggerheart/templates/dialogs/groupRollDialog/parts/footer.hbs'
+            template: 'systems/daggerheart-theah/templates/dialogs/groupRollDialog/parts/footer.hbs'
         }
     };
 
@@ -96,7 +96,7 @@ export default class GroupRollDialog extends HandlebarsApplicationMixin(Applicat
         for (const memberKey of Object.keys(this.party.system.groupRoll.aidingCharacters)) {
             parts[memberKey] = {
                 id: memberKey,
-                template: 'systems/daggerheart/templates/dialogs/groupRollDialog/parts/member.hbs'
+                template: 'systems/daggerheart-theah/templates/dialogs/groupRollDialog/parts/member.hbs'
             };
         }
         return parts;

@@ -1,0 +1,20 @@
+{
+  "_id": "34f2ea72c9c0c3a8",
+  "name": "Veteran’s Rest",
+  "type": "domainCard",
+  "img": "icons/skills/melee/swords-parry-block-yellow.webp",
+  "system": {
+    "description": "<p>During a Rest, maximize the die on a Recovery move. You may <strong>spend a Hope</strong> to let an ally do the same.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "tactics",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "6ba62ee322f96c14",
+  "_key": "!items!34f2ea72c9c0c3a8"
+}

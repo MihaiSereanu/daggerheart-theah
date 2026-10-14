@@ -9,7 +9,6 @@
         <fieldset class="two-columns even">
             <legend>{{localize "DAGGERHEART.CONFIG.BeastformType.evolved"}}</legend>
 
-            {{formGroup systemFields.evolved.fields.maximumTier value=source.system.evolved.maximumTier localize=true blank=false}}
             {{formGroup systemFields.evolved.fields.mainTraitBonus value=source.system.evolved.mainTraitBonus localize=true}}
             {{formGroup systemFields.evolved.fields.damageBonus value=source.system.evolved.damageBonus localize=true}}
             {{formGroup systemFields.evolved.fields.evasionBonus value=source.system.evolved.evasionBonus localize=true}}
@@ -21,7 +20,6 @@
         <fieldset class="one-column">
             <legend>{{localize "DAGGERHEART.CONFIG.BeastformType.hybrid"}}</legend>
 
-            {{formGroup systemFields.hybrid.fields.maximumTier value=source.system.hybrid.maximumTier localize=true blank=false}}
             <div class="nest-inputs">
                 {{formGroup systemFields.hybrid.fields.beastformOptions value=source.system.hybrid.beastformOptions localize=true}}
                 {{formGroup systemFields.hybrid.fields.advantages value=source.system.hybrid.advantages localize=true}}

@@ -1,12 +1,12 @@
 {
     "TYPES": {
         "Item": {
-            "ancestry": "Ancestry",
+            "ancestry": "Origin",
             "community": "Community",
-            "class": "Class",
-            "subclass": "Subclass",
+            "class": "Archetype",
+            "subclass": "Specialisation",
             "feature": "Feature",
-            "domainCard": "Domain Card",
+            "domainCard": "Talent",
             "consumable": "Consumable",
             "loot": "Item",
             "weapon": "Weapon",
@@ -34,7 +34,7 @@
     "SCENE": {
         "TABS": {
             "SHEET": {
-                "dh": "Daggerheart"
+                "dh": "Heart & Dagger"
             }
         }
     },
@@ -109,17 +109,18 @@
                 "grouped": {
                     "name": "Group",
                     "tooltip": "Groups many actions under one button. Individual actions either selected or randomized.",
-                    "selectionType": { "label": "Action Selection Type" }, 
-                    "groupedActions": { "label": "Grouped Actions" },
+                    "selectionType": {
+                        "label": "Action Selection Type"
+                    },
+                    "groupedActions": {
+                        "label": "Grouped Actions"
+                    },
                     "missingGroupedActions": "This action has no grouped actions attached to it"
                 }
             },
             "Config": {
                 "beastform": {
-                    "exact": {
-                        "label": "Beastform Max Tier",
-                        "hint": "The Character's Tier is used if empty"
-                    },
+                    "exact": {},
                     "modifications": {
                         "traitBonuses": {
                             "label": {
@@ -309,11 +310,11 @@
                             }
                         }
                     },
-                    "tier": {
-                        "label": "Tier"
-                    },
                     "type": {
                         "label": "Type"
+                    },
+                    "classification": {
+                        "label": "Classification"
                     }
                 },
                 "confirmDeleteAttack": "Are you sure you want to delete this adversary's attack?",
@@ -357,7 +358,7 @@
                     "consume": "Consume Item",
                     "equip": "Equip",
                     "sendToChat": "Send To Chat",
-                    "toLoadout": "Send to Loadout",
+                    "toLoadout": "Send to Talents",
                     "toVault": "Send to Vault",
                     "unequip": "Unequip",
                     "useItem": "Use Item"
@@ -395,7 +396,7 @@
                     "text": "Do you want to add this class as your multiclass?"
                 },
                 "manualMulticlassSubclass": {
-                    "title": "Multiclass Subclass",
+                    "title": "Multiclass Specialisation",
                     "text": "Do you want to add this subclass as your multiclass subclass?"
                 },
                 "cannotRemoveCoreExperience": "You are using Levelup Auto. You cannot remove an experience given to you by the rule progression.",
@@ -454,11 +455,11 @@
                     "impulses": {
                         "label": "Impulses"
                     },
-                    "tier": {
-                        "label": "Tier"
-                    },
                     "type": {
                         "label": "Type"
+                    },
+                    "classification": {
+                        "label": "Classification"
                     }
                 },
                 "newAdversary": "New Adversary",
@@ -477,7 +478,7 @@
             },
             "Party": {
                 "Subtitle": {
-                    "character": "{community} {ancestry} | {subclass} {class}",
+                    "character": "{community} {Origin} | {subclass} {class}",
                     "companion": "Companion of {partner}"
                 },
                 "RemoveConfirmation": {
@@ -505,32 +506,32 @@
             },
             "CharacterCreation": {
                 "tabs": {
-                    "ancestry": "Ancestry",
+                    "ancestry": "Origin",
                     "community": "Community",
-                    "class": "Class",
+                    "class": "Archetype",
                     "experience": "Experience",
                     "traits": "Traits",
-                    "domainCards": "Domain Cards",
+                    "domainCards": "Talents",
                     "equipment": "Equipment",
                     "story": "Story"
                 },
-                "ancestryNamePlaceholder": "Your ancestry's name",
+                "ancestryNamePlaceholder": "Your Origin's name",
                 "buttonTitle": "Character Setup",
                 "choice": "Choice",
                 "finishCreation": "Finish Character Setup",
                 "heritage": "Heritage",
                 "initialExperiences": "Initial Experiences",
-                "mixedAncestry": "Mixed Ancestry",
+                "mixedAncestry": "Mixed Origin",
                 "newExperience": "New Experience..",
-                "selectAncestry": "Select Ancestry",
-                "selectPrimaryAncestry": "Select Primary Ancestry",
-                "selectSecondaryAncestry": "Select Secondary Ancestry",
+                "selectAncestry": "Select Origin",
+                "selectPrimaryAncestry": "Select Primary Origin",
+                "selectSecondaryAncestry": "Select Secondary Origin",
                 "selectArmor": "Select Armor",
-                "selectClass": "Select Class",
+                "selectClass": "Select Archetype",
                 "selectCommunity": "Select Community",
                 "selectPrimaryWeapon": "Select Primary Weapon",
                 "selectSecondaryWeapon": "Select Secondary Weapon",
-                "selectSubclass": "Select Subclass",
+                "selectSubclass": "Select Specialisation",
                 "setupSkipTitle": "Skipping Character Setup",
                 "setupSkipContent": "You are skipping the Character Setup by adding this manually. The character setup is the blinking button in the top-right. Are you sure you want to continue?",
                 "startingItems": "Starting Items",
@@ -572,7 +573,7 @@
                 "enableEffect": "Enable Effect",
                 "equip": "Equip",
                 "sendToChat": "Send To Chat",
-                "toLoadout": "Send to Loadout",
+                "toLoadout": "Send to Talents",
                 "recall": "Recall",
                 "toVault": "Send to Vault",
                 "unequip": "Unequip",
@@ -666,10 +667,10 @@
                     "inputLabel": "Party Size",
                     "title": "Determine Party Size",
                     "text": "There is no active Party actor in the world or it's empty. Manually input the number of player characters."
-                 },
-                 "chatMessageTitle": "GM Consequences",
-                 "chatMessageText": "The GM gains fear",
-                 "activeEffectPathViewer": "Active Effect Path Viewer"
+                },
+                "chatMessageTitle": "GM Consequences",
+                "chatMessageText": "The GM gains fear",
+                "activeEffectPathViewer": "Active Effect Path Viewer"
             },
             "DeleteConfirmation": {
                 "title": "Delete {type} - {name}",
@@ -693,8 +694,8 @@
             },
             "Downtime": {
                 "longRest": {
-                    "title": "Long Rest",
-                    "moves": "Long Rest Moves ({current}/{max})",
+                    "title": "Extended Rest",
+                    "moves": "Extended Rest Moves ({current}/{max})",
                     "clearStress": {
                         "description": "Describe how you blow off steam or pull yourself together, and clear all marked Stress.",
                         "name": "Clear Stress"
@@ -721,19 +722,19 @@
                     }
                 },
                 "shortRest": {
-                    "title": "Short Rest",
-                    "moves": "Short Rest Moves ({current}/{max})",
+                    "title": "Rest",
+                    "moves": "Rest Moves ({current}/{max})",
                     "tendToWounds": {
                         "name": "Tend to Wounds",
-                        "description": "Describe how you hastily patch yourself up, then clear a number of Hit Points equal to 1d4 + your tier. You can do this to an ally instead."
+                        "description": "Describe how you hastily patch yourself up, then clear a number of Hit Points equal to 1d6. You can do this to an ally instead."
                     },
                     "clearStress": {
                         "name": "Clear Stress",
-                        "description": "Describe how you blow off steam or pull yourself together, then clear a number of Stress equal to 1d4 + your tier."
+                        "description": "Describe how you blow off steam or pull yourself together, then clear a number of Stress equal to 1d6."
                     },
                     "repairArmor": {
                         "name": "Repair Armor",
-                        "description": "Describe how you quickly repair your armor, then clear a number of Armor Slots equal to 1d4 + your tier. You can do this to an ally's armor instead."
+                        "description": "Describe how you quickly repair your armor, then clear a number of Armor Slots equal to 1d6. You can do this to an ally's armor instead."
                     },
                     "prepare": {
                         "name": "Prepare",
@@ -791,10 +792,9 @@
                     "hitPointSlots": "Permanently gain one Hit Point slot.",
                     "stressSlots": "Permanently gain one Stress slot.",
                     "experiences": "Permanently gain a +1 bonus to two experiences.",
-                    "domainCard": "Choose an additional domain card of your level or lower from a domain you have access to (up to level {maxLevel})",
+                    "domainCard": "Choose an additional Talent of your level or lower from a domain you have access to (up to level {maxLevel})",
                     "evasion": "Permanently gain a +1 bonus to your Evasion.",
                     "proficiency": "Increase your Proficiency by +1.",
-                    "subclass": "Take an upgraded subclass card. Then cross out the multiclass option for this tier.",
                     "multiclass": "Multiclass: Choose an additional class for your character, then cross out an unused “Take an upgraded subclass card” and the other multiclass option on this sheet."
                 },
                 "delevel": {
@@ -810,9 +810,8 @@
                     "hitPoint": "Permanently gain one Hit Point slot.",
                     "stress": "Permanently gain one Stress slot.",
                     "experience": "Permanently gain a +1 bonus to two experiences.",
-                    "domainCard": "Choose an additional domain card of your level or lower from a domain you have access to (up to level {maxLevel})",
+                    "domainCard": "Choose an additional Talent of your level or lower from a domain you have access to (up to level {maxLevel})",
                     "evasion": "Permanently gain a +1 bonus to your Evasion.",
-                    "subclass": "Take an upgraded subclass card. Then cross out the multiclass option for this tier.",
                     "proficiency": "Increase your Proficiency by +1.",
                     "multiclass": "Multiclass: Choose an additional class for your character, then cross out an unused “Take an upgraded subclass card” and the other multiclass option on this sheet.",
                     "intelligent": "Your companion gains a permanent +1 bonus to a Companion Experience of your choice.",
@@ -840,8 +839,8 @@
                     "damageThresholdSevereIncrease": "Severe: {threshold}",
                     "newExperiences": "New Experiences",
                     "experiencePlaceholder": "A new experience..",
-                    "domainCards": "Domain Cards",
-                    "subclass": "Subclass",
+                    "domainCards": "Talents",
+                    "subclass": "Specialisation",
                     "multiclass": "Multiclass",
                     "traits": "Increased Traits",
                     "experienceIncreases": "Experience Increases",
@@ -852,27 +851,6 @@
                     "simpleFeature": "Feature: {feature}"
                 },
                 "takeLevelUp": "Finish Level Up",
-                "tier2": {
-                    "name": "Tier 2",
-                    "label": "Levels 2-4",
-                    "infoLabel": "At Level 2, gain an additional Experience at +2 and gain a +1 bonus to your Proficiency.",
-                    "pretext": "Choose two options from the list below",
-                    "posttext": "Take an additional domain card of your level or lower from a domain you have access to."
-                },
-                "tier3": {
-                    "name": "Tier 3",
-                    "label": "Levels 5-7",
-                    "infoLabel": "At Level 5, take an additional Experience and clear all marks on Character Traits.",
-                    "pretext": "When you level up, record it on your character sheet, then choose two from the list below or any unmarked from the previous tier.",
-                    "posttext": "Take an additional domain card of your level or lower from a domain you have access to."
-                },
-                "tier4": {
-                    "name": "Tier 4",
-                    "label": "Levels 8-10",
-                    "infoLabel": "At Level 8, take an additional Experience and clear all marks on Character Traits.",
-                    "pretext": "When you level up, record it on your character sheet, then choose two from the list below or any unmarked from the previous tier.",
-                    "posttext": "Take an additional domain card of your level or lower from a domain you have access to."
-                },
                 "title": "{actor} Level Up",
                 "viewModeTitle": "{actor} Level Up (View Mode)"
             },
@@ -915,7 +893,7 @@
                 "finalTitle": "Final Character Resources"
             },
             "TagTeamSelect": {
-                "title": "Tag Team Roll",
+                "title": "Stunt Roll",
                 "FIELDS": {
                     "initiator": {
                         "memberId": {
@@ -932,22 +910,22 @@
                 "hopeCost": "Hope Cost",
                 "initiatingCharacter": "Initiating Character",
                 "selectParticipants": "Select the two participants",
-                "startTagTeamRoll": "Start Tag Team Roll",
+                "startTagTeamRoll": "Start Stunt Roll",
                 "openDialogForAll": "Open Dialog For All",
                 "rollType": "Roll Type",
                 "makeYourRoll": "Make your roll",
-                "cancelTagTeamRoll": "Cancel Tag Team Roll",
-                "finishTagTeamRoll": "Finish Tag Team Roll",
-                "linkMessageHint": "Make a roll from your character sheet to link it to the Tag Team Roll",
+                "cancelTagTeamRoll": "Cancel Stunt Roll",
+                "finishTagTeamRoll": "Finish Stunt Roll",
+                "linkMessageHint": "Make a roll from your character sheet to link it to the Stunt Roll",
                 "damageNotRolled": "Damage not rolled in chat message yet",
                 "insufficientHope": "The initiating character doesn't have enough hope",
-                "createTagTeam": "Create Tag Team Roll",
+                "createTagTeam": "Create Stunt Roll",
                 "chatMessageRollTitle": "Roll",
-                "cancelConfirmTitle": "Cancel Tag Team Roll",
-                "cancelConfirmText": "Are you sure you want to cancel the Tag Team Roll? This will close it for all other players too.",
+                "cancelConfirmTitle": "Cancel Stunt Roll",
+                "cancelConfirmText": "Are you sure you want to cancel the Stunt Roll? This will close it for all other players too.",
                 "hints": {
                     "completeRolls": "Set up and complete the rolls for the characters",
-                    "selectRoll": "Select which roll value to be used for the Tag Team"
+                    "selectRoll": "Select which roll value to be used for the Stunt"
                 }
             },
             "GroupRollSelect": {
@@ -976,9 +954,7 @@
             },
             "SettingsSidebar": {
                 "systemLabel": "Game System",
-                "versionLabel": "Version {version}",
-                "wikiLink": "Wiki",
-                "discordLink": "Discord"
+                "versionLabel": "Version {version}"
             }
         },
         "CLASS": {
@@ -993,15 +969,21 @@
                 "act": "Next Spotlight",
                 "scene": "Next Scene",
                 "shortRest": "Next Rest",
-                "longRest": "Next Long Rest",
+                "longRest": "Next Extended Rest",
                 "session": "Next Session",
                 "custom": "Custom"
             },
             "ActiveEffectExtraPaths": {
                 "allCategory": "All Actors",
-                "cast": { "label": "Spellcasting Modifier" },
-                "fear": { "label": "Fear Amount" },
-                "partySize": { "label": "Party Size" }
+                "cast": {
+                    "label": "Spellcasting Modifier"
+                },
+                "fear": {
+                    "label": "Fear Amount"
+                },
+                "partySize": {
+                    "label": "Party Size"
+                }
             },
             "ActionAutomationChoices": {
                 "never": "Never",
@@ -1127,21 +1109,19 @@
                 },
                 "attuned": {
                     "name": "Attuned",
-                    "description": "The maximum number of domain cards in your loadout is reduced by one, but you gain a bonus to your damage thresholds equal to your tier.",
                     "effects": {
                         "attuned": {
-                            "name": "Attuned",
-                            "description": "The maximum number of domain cards in your loadout is reduced by one, but you gain a bonus to your damage thresholds equal to your tier."
+                            "name": "Attuned"
                         }
                     }
                 },
                 "blessed": {
                     "name": "Blessed",
-                    "description": "Once per long rest, you can spend any number of Hope before you make the Risk It All death move. You gain a bonus to the result of your Hope Die equal to the number of Hope spent.",
+                    "description": "Once per Extended Rest, you can spend any number of Hope before you make the Risk It All death move. You gain a bonus to the result of your Hope Die equal to the number of Hope spent.",
                     "actions": {
                         "blessed": {
                             "name": "Blessed",
-                            "description": "Once per long rest, you can spend any number of Hope before you make the Risk It All death move. You gain a bonus to the result of your Hope Die equal to the number of Hope spent."
+                            "description": "Once per Extended Rest, you can spend any number of Hope before you make the Risk It All death move. You gain a bonus to the result of your Hope Die equal to the number of Hope spent."
                         }
                     }
                 },
@@ -1307,11 +1287,11 @@
                 },
                 "impenetrable": {
                     "name": "Impenetrable",
-                    "description": "Once per short rest, when you would mark your last Hit Point, you can instead mark a Stress.",
+                    "description": "Once per Rest, when you would mark your last Hit Point, you can instead mark a Stress.",
                     "actions": {
                         "impenetrable": {
                             "name": "Impenetrable",
-                            "description": "Once per short rest, when you would mark your last Hit Point, you can instead mark a Stress."
+                            "description": "Once per Rest, when you would mark your last Hit Point, you can instead mark a Stress."
                         }
                     }
                 },
@@ -1347,11 +1327,11 @@
                 },
                 "mnemonic": {
                     "name": "Mnemonic",
-                    "description": "Once per scene, you can recall a domain card from your vault without paying its Recall Cost.",
+                    "description": "Once per scene, you can recall a Talent from your vault without paying its Recall Cost.",
                     "actions": {
                         "mnemonic": {
                             "name": "Mnemonic",
-                            "description": "Once per scene, you can recall a domain card from your vault without paying its Recall Cost."
+                            "description": "Once per scene, you can recall a Talent from your vault without paying its Recall Cost."
                         }
                     }
                 },
@@ -1564,9 +1544,6 @@
                 "lessDifficult": {
                     "description": "if the fight should be less difficult or shorter."
                 },
-                "lowerTier": {
-                    "description": "if you choose an adversary from a lower tier."
-                },
                 "manySolos": {
                     "description": "if you're using 2 or more Solo adversaries."
                 },
@@ -1674,10 +1651,18 @@
                 }
             },
             "DamageOnSave": {
-                "none": { "name": "None On Success" },
-                "half": { "name": "Half On Success" },
-                "full": { "name": "Full On Success" },
-                "doubleOnFail": { "name": "Double On Fail" }
+                "none": {
+                    "name": "None On Success"
+                },
+                "half": {
+                    "name": "Half On Success"
+                },
+                "full": {
+                    "name": "Full On Success"
+                },
+                "doubleOnFail": {
+                    "name": "Double On Fail"
+                }
             },
             "DamageType": {
                 "physical": {
@@ -1699,7 +1684,7 @@
             "DeathMoves": {
                 "avoidDeath": {
                     "name": "Avoid Death",
-                    "description": "Your character avoids death and faces the consequences. They temporarily drop unconscious, and then you work with the GM to describe how the situation worsens. While unconscious, your character can't move or act, and they can't be targeted by an attack. They return to consciousness when an ally clears 1 or more of their marked Hit Points or when the party finishes a long rest. After your character falls unconscious, roll your Hope Die. If its value is equal to or less than your character's level, they gain a scar: permanently cross out a Hope slot and work with the GM to determine its lasting narrative impact and how, if possible, it can be restored. If you ever cross out your last Hope slot, your character's journey ends."
+                    "description": "Your character avoids death and faces the consequences. They temporarily drop unconscious, and then you work with the GM to describe how the situation worsens. While unconscious, your character can't move or act, and they can't be targeted by an attack. They return to consciousness when an ally clears 1 or more of their marked Hit Points or when the party finishes a Extended Rest. After your character falls unconscious, roll your Hope Die. If its value is equal to or less than your character's level, they gain a scar: permanently cross out a Hope slot and work with the GM to determine its lasting narrative impact and how, if possible, it can be restored. If you ever cross out your last Hope slot, your character's journey ends."
                 },
                 "riskItAll": {
                     "name": "Risk It All",
@@ -1724,15 +1709,15 @@
                     "disadvantage": "Disadvantage Dice"
                 },
                 "triggers": {
-                    "dualityRoll": { 
+                    "dualityRoll": {
                         "label": "Duality Roll",
                         "results": {
                             "hope": "With Hope",
                             "fear": "With Fear",
                             "critical": "Critical"
-                        } 
+                        }
                     },
-                    "gmRoll": {  
+                    "gmRoll": {
                         "label": "GM Roll",
                         "results": {
                             "critical": "Critical"
@@ -1741,8 +1726,8 @@
                 }
             },
             "DomainCardTypes": {
-                "ability": "Ability",
-                "spell": "Spell",
+                "ability": "Talent",
+                "spell": "Talent",
                 "grimoire": "Grimoire"
             },
             "EnvironmentType": {
@@ -1889,7 +1874,7 @@
             },
             "Resources": {
                 "optionalResources": {
-                    "favor": "Favor",
+                    "favor": "Favour",
                     "focus": "Focus"
                 }
             },
@@ -1917,7 +1902,7 @@
                 "onWithToggle": "On With Toggle"
             },
             "SceneRangeMeasurementTypes": {
-                "disable": "Disable Daggerheart Range Measurement",
+                "disable": "Disable Heart & Dagger Range Measurement",
                 "default": "Default",
                 "custom": "Custom"
             },
@@ -1958,24 +1943,6 @@
                 "gargantuan": "Gargantuan"
             },
             "Traits": {
-                "agility": {
-                    "name": "Agility",
-                    "short": "AGI",
-                    "verb": {
-                        "sprint": "Sprint",
-                        "leap": "Leap",
-                        "maneuver": "Maneuver"
-                    }
-                },
-                "strength": {
-                    "name": "Strength",
-                    "short": "STR",
-                    "verb": {
-                        "lift": "Lift",
-                        "smash": "Smash",
-                        "grapple": "Grapple"
-                    }
-                },
                 "finesse": {
                     "name": "Finesse",
                     "short": "FIN",
@@ -1983,6 +1950,15 @@
                         "control": "Control",
                         "hide": "Hide",
                         "tinker": "Tinker"
+                    }
+                },
+                "brawn": {
+                    "name": "Brawn",
+                    "short": "BRA",
+                    "verb": {
+                        "lift": "Lift",
+                        "smash": "Smash",
+                        "grapple": "Grapple"
                     }
                 },
                 "instinct": {
@@ -1994,18 +1970,18 @@
                         "navigate": "Navigate"
                     }
                 },
-                "presence": {
-                    "name": "Presence",
-                    "short": "PRE",
+                "charm": {
+                    "name": "Charm",
+                    "short": "CHA",
                     "verb": {
                         "charm": "Charm",
                         "perform": "Perform",
                         "deceive": "Deceive"
                     }
                 },
-                "knowledge": {
-                    "name": "Knowledge",
-                    "short": "KNO",
+                "wits": {
+                    "name": "Wits",
+                    "short": "WIT",
                     "verb": {
                         "recall": "Recall",
                         "analyze": "Analyze",
@@ -2070,11 +2046,9 @@
                 },
                 "barrier": {
                     "name": "Barrier",
-                    "description": "@Resolve[@item.tier + 1|sign]{Gain Weapon Tier + 1} to Armor Score; -1 to Evasion",
                     "effects": {
                         "barrier": {
-                            "name": "Barrier",
-                            "description": "Gain Weapon Tier + 1 to Armor Score; -1 to Evasion"
+                            "name": "Barrier"
                         }
                     }
                 },
@@ -2120,11 +2094,9 @@
                 },
                 "brave": {
                     "name": "Brave",
-                    "description": "-1 to Evasion; + Weapon Tier to Severe damage threshold",
                     "effects": {
                         "brave": {
-                            "name": "Brave",
-                            "description": "-1 to Evasion; + Weapon Tier to Severe damage threshold"
+                            "name": "Brave"
                         }
                     }
                 },
@@ -2236,7 +2208,7 @@
                         }
                     },
                     "effects": {
-                        "agility": {
+                        "finesse": {
                             "name": "Destructive",
                             "description": "-1 to Agility"
                         }
@@ -2560,11 +2532,9 @@
                 },
                 "padded": {
                     "name": "Padded",
-                    "description": "Gain this weapon's tier + 1 to damage thresholds.",
                     "effects": {
                         "padded": {
-                            "name": "Padded",
-                            "description": "Gain this weapon's tier + 1 to damage thresholds."
+                            "name": "Padded"
                         }
                     }
                 },
@@ -2580,17 +2550,14 @@
                 },
                 "paired": {
                     "name": "Paired",
-                    "description": "@Resolve[@item.tier + 1|sign]{Add this Secondary Weapon's tier + 1} to primary weapon damage to targets within Melee range",
                     "actions": {
                         "paired": {
-                            "name": "Paired",
-                            "description": "Add this Secondary Weapon's tier + 1 to your primary weapon against targets within Melee range"
+                            "name": "Paired"
                         }
                     },
                     "effects": {
                         "paired": {
-                            "name": "Paired",
-                            "description": "Add this Secondary Weapon's tier + 1 to your primary weapon against targets within Melee range"
+                            "name": "Paired"
                         }
                     }
                 },
@@ -2656,11 +2623,9 @@
                 },
                 "protective": {
                     "name": "Protective",
-                    "description": "@Resolve[@item.tier|sign]{Add the item's Tier} to Armor Score",
                     "effects": {
                         "protective": {
-                            "name": "Protective",
-                            "description": "Add the item's Tier to your Armor Score"
+                            "name": "Protective"
                         }
                     }
                 },
@@ -2970,29 +2935,29 @@
                     "downtimeAction": "Downtime Action",
                     "shortRest": {
                         "shortRestMoves": {
-                            "label": "Short Rest: Bonus Short Rest Moves",
-                            "hint": "The number of extra Short Rest Moves the character can take during a Short Rest."
+                            "label": "Rest: Bonus Rest Moves",
+                            "hint": "The number of extra Rest Moves the character can take during a Rest."
                         },
                         "longRestMoves": {
-                            "label": "Short Rest: Bonus Long Rest Moves",
-                            "hint": "The number of extra Long Rest Moves the character can take during a Short Rest."
+                            "label": "Rest: Bonus Extended Rest Moves",
+                            "hint": "The number of extra Extended Rest Moves the character can take during a Rest."
                         }
                     },
                     "longRest": {
                         "shortRestMoves": {
-                            "label": "Long Rest: Bonus Short Rest Moves",
-                            "hint": "The number of extra Short Rest Moves the character can take during a Long Rest."
+                            "label": "Extended Rest: Bonus Rest Moves",
+                            "hint": "The number of extra Rest Moves the character can take during a Extended Rest."
                         },
                         "longRestMoves": {
-                            "label": "Long Rest: Bonus Long Rest Moves",
-                            "hint": "The number of extra Long Rest Moves the character can take during a Long Rest."
+                            "label": "Extended Rest: Bonus Extended Rest Moves",
+                            "hint": "The number of extra Extended Rest Moves the character can take during a Extended Rest."
                         }
                     },
                     "target": "Target",
                     "targetSelf": "Self"
                 },
                 "maxLoadout": {
-                    "label": "Max Loadout Cards Bonus"
+                    "label": "Max Talents Cards Bonus"
                 }
             },
             "Character": {
@@ -3080,7 +3045,7 @@
                 },
                 "codex": {
                     "label": "Codex",
-                    "description": "Codex is the domain of intensive magical study. Those who seek magical knowledge turn to the equations of power recorded in books, written on scrolls, etched into walls, or tattooed on bodies. Codex offers a commanding and versatile understanding of magic to devotees who pursue knowledge beyond the boundaries of common wisdom."
+                    "description": "Codex is the domain of intensive magical study. Those who seek magical wits turn to the equations of power recorded in books, written on scrolls, etched into walls, or tattooed on bodies. Codex offers a commanding and versatile understanding of magic to devotees who pursue wits beyond the boundaries of common wisdom."
                 },
                 "dread": {
                     "label": "Dread",
@@ -3104,7 +3069,7 @@
                 },
                 "valor": {
                     "label": "Valor",
-                    "description": "Valor is the domain of protection. Whether through attack or defense, those who choose this discipline channel formidable strength to protect their allies in battle. Valor offers great power to those who raise their shields in defense of others."
+                    "description": "Valor is the domain of protection. Whether through attack or defense, those who choose this discipline channel formidable brawn to protect their allies in battle. Valor offers great power to those who raise their shields in defense of others."
                 }
             },
             "Effect": {
@@ -3134,8 +3099,8 @@
             "RefreshType": {
                 "scene": "Scene",
                 "session": "Session",
-                "shortrest": "Short Rest",
-                "longrest": "Long Rest"
+                "shortrest": "Rest",
+                "longrest": "Extended Rest"
             },
             "Resource": {
                 "single": "Resource",
@@ -3256,14 +3221,14 @@
                 "itemFeatures": "Item Features",
                 "notes": "Notes",
                 "inventory": "Inventory",
-                "loadout": "Loadout",
-                "vault": "Vault",
+                "loadout": "Talents",
+                "vault": "",
                 "heritage": "Heritage",
                 "story": "Story",
                 "biography": "Biography",
                 "general": "General",
                 "resources": "Resources",
-                "foundation": "Foundation",
+                "foundation": "Features",
                 "specialization": "Specialization",
                 "mastery": "Mastery",
                 "optional": "Optional",
@@ -3272,10 +3237,6 @@
                 "equipment": "Equipment",
                 "attachments": "Attachments",
                 "advanced": "Advanced",
-                "tier1": "Tier 1",
-                "tier2": "Tier 2",
-                "tier3": "Tier 3",
-                "tier4": "tier 4",
                 "domains": "Domains",
                 "downtime": "Downtime",
                 "roll": "Roll",
@@ -3291,14 +3252,6 @@
                 "sources": "Sources",
                 "packs": "Packs",
                 "conditionals": "Conditionals"
-            },
-            "Tiers": {
-                "singular": "Tier",
-                "typed": "Tier {tier} {type}",
-                "1": "Tier 1",
-                "2": "Tier 2",
-                "3": "Tier 3",
-                "4": "Tier 4"
             },
             "Trait": {
                 "single": "Trait",
@@ -3386,7 +3339,7 @@
             "level": "Level",
             "levelShort": "Lv",
             "levelUp": "Level Up",
-            "loadout": "Loadout",
+            "loadout": "Talents",
             "max": "Max",
             "miss": {
                 "single": "Miss",
@@ -3440,7 +3393,7 @@
             "spent": "Spent",
             "step": "Step",
             "stress": "Stress",
-            "subclasses": "Subclasses",
+            "subclasses": "Specialisations",
             "subType": "Subtype",
             "success": "Success",
             "summon": {
@@ -3524,7 +3477,7 @@
             "Ancestry": {
                 "primaryFeature": "Primary Feature",
                 "secondaryFeature": "Secondary Feature",
-                "featuresLabel": "Ancestry Features"
+                "featuresLabel": "Origin Features"
             },
             "Armor": {
                 "baseScore": "Base Score",
@@ -3542,7 +3495,6 @@
                     "AreYouSure": "Are you sure you want to refresh this item with new contents?",
                     "Error": {
                         "doesNotExist": "This document does not have a copy in the compendium",
-                        "invalidTier": "This document is of a different tier than the source, and was likely re-tiered",
                         "invalidType": "The source document is the incorrect type"
                     }
                 }
@@ -3551,9 +3503,6 @@
                 "FIELDS": {
                     "beastformType": {
                         "label": "Beastform Type"
-                    },
-                    "tier": {
-                        "label": "Tier"
                     },
                     "mainTrait": {
                         "label": "Main Trait"
@@ -3587,9 +3536,6 @@
                         }
                     },
                     "evolved": {
-                        "maximumTier": {
-                            "label": "Maximum Tier"
-                        },
                         "mainTraitBonus": {
                             "label": "Main Trait Bonus"
                         },
@@ -3634,11 +3580,11 @@
             "Class": {
                 "startingEvasionScore": "Starting Evasion Score",
                 "startingHitPoints": "Starting Hit Points",
-                "classItems": "Class Items",
+                "classItems": "Archetype Items",
                 "hopeFeatureLabel": "{class}'s Hope Feature",
                 "hopeFeatures": "Hope Features",
-                "classFeature": "Class Feature",
-                "classFeatures": "Class Features",
+                "classFeature": "Archetype Feature",
+                "classFeatures": "Archetype Features",
                 "guide": {
                     "suggestedEquipment": "Suggested Equipments",
                     "suggestedPrimaryWeaponTitle": "Primary Weapon",
@@ -3660,7 +3606,7 @@
                 "type": "Type",
                 "recallCost": "Recall Cost",
                 "vaultActive": "Active In Vault",
-                "loadoutIgnore": "Ignores Loadout Limits",
+                "loadoutIgnore": "Ignores Talents Limits",
                 "domainTouched": "Domain Touched",
                 "foundationTitle": "Foundation",
                 "specializationTitle": "Specialization",
@@ -3765,7 +3711,7 @@
                         "label": "Pip Display For Resources"
                     },
                     "tooltipCardTheme": {
-                        "label":"Tooltip Card Theme"
+                        "label": "Tooltip Card Theme"
                     }
                 },
                 "fearDisplay": {
@@ -3936,8 +3882,8 @@
                 "deleteResourceText": "Are you sure you want to delete the resource?",
                 "FIELDS": {
                     "domains": {
-                        "color": { 
-                            "label": "Banner Color" 
+                        "color": {
+                            "label": "Banner Color"
                         },
                         "invertText": {
                             "label": "Invert Text Color"
@@ -3953,7 +3899,7 @@
                         "label": "Initial Trait Modifiers"
                     },
                     "maxLoadout": {
-                        "label": "Max Cards in Loadout",
+                        "label": "Max Cards in Talents",
                         "hint": "Set to blank or 0 for unlimited maximum"
                     },
                     "resources": {
@@ -3970,7 +3916,7 @@
                         }
                     },
                     "maxDomains": {
-                        "label": "Max Class Domains",
+                        "label": "Max Archetype Domains",
                         "hint": "Max domains you can set on a class"
                     },
                     "tokenSizes": {
@@ -4025,7 +3971,7 @@
                 }
             },
             "Menu": {
-                "title": "Daggerheart Game Settings",
+                "title": "Heart & Dagger Game Settings",
                 "automation": {
                     "name": "Automation Settings",
                     "label": "Configure Automation",
@@ -4044,7 +3990,7 @@
                 "range": {
                     "name": "Range Settings",
                     "label": "Configure Range Handling",
-                    "hint": "System ruler setup for displaying ranges in Daggerheart"
+                    "hint": "System ruler setup for displaying ranges in Heart & Dagger"
                 },
                 "appearance": {
                     "label": "Appearance Settings",
@@ -4054,7 +4000,7 @@
                 "variantRules": {
                     "title": "Variant Rules",
                     "label": "Variant Rules",
-                    "hint": "Apply variant rules from the Daggerheart system",
+                    "hint": "Apply variant rules from the Heart & Dagger system",
                     "name": "Variant Rules",
                     "actionTokens": "Action Tokens"
                 },
@@ -4104,7 +4050,7 @@
                         }
                     }
                 },
-                "disabledText": "Daggerheart Measurements are disabled in System Settings - Variant Rules",
+                "disabledText": "Heart & Dagger Measurements are disabled in System Settings - Variant Rules",
                 "rangeMeasurement": "Range Measurement",
                 "sceneEnvironments": "Scene Environments",
                 "dragEnvironmentHere": "Drag environments here"
@@ -4160,7 +4106,7 @@
                     "title": "Dice Pool"
                 },
                 "domainCard": {
-                    "title": "Domain Card"
+                    "title": "Talent"
                 },
                 "dualityRoll": {
                     "abilityCheckTitle": "{ability} Roll"
@@ -4169,7 +4115,7 @@
                     "title": "Effects Applied",
                     "immunityTo": "Immunity: {immunities}"
                 },
-                "featureTitle": "Class Feature",
+                "featureTitle": "Archetype Feature",
                 "healingRoll": {
                     "title": "Heal - {damage}",
                     "heal": "Heal",
@@ -4193,7 +4139,7 @@
                     "reactionRollAllTargets": "Reaction Roll All Targets"
                 },
                 "tagTeam": {
-                    "title": "Tag Team",
+                    "title": "Stunt",
                     "membersTitle": "Members"
                 }
             },
@@ -4224,7 +4170,7 @@
                 "appliedBy": "Applied By: {by}"
             },
             "ItemBrowser": {
-                "title": "Daggerheart Compendium Browser",
+                "title": "Heart & Dagger Compendium Browser",
                 "windowTitle": "Compendium Browser",
                 "hint": "Select a Folder in sidebar to start browsing through the compendium",
                 "browserSettings": "Browser Settings",
@@ -4250,11 +4196,11 @@
                 "folders": {
                     "characters": "Characters",
                     "adversaries": "Adversaries",
-                    "ancestries": "Ancestries",
+                    "ancestries": "Origins",
                     "equipment": "Equipment",
-                    "classes": "Classes",
-                    "subclasses": "Subclasses",
-                    "domainCards": "Domain Cards",
+                    "classes": "Archetypes",
+                    "subclasses": "Specialisations",
+                    "domainCards": "Talents",
                     "communities": "Communities",
                     "environments": "Environments",
                     "beastforms": "Beastforms",
@@ -4283,15 +4229,15 @@
                 "fateTypeParsing": "Fate roll not properly formatted, bad fate type. Valid types are 'Hope' and 'Fear'",
                 "attributeFaulty": "The supplied Attribute doesn't exist",
                 "domainCardWrongDomain": "You don't have access to that Domain",
-                "domainCardToHighLevel": "The Domain Card is too high level to be selected",
-                "domainCardDuplicate": "You already have that domain card!",
+                "domainCardToHighLevel": "The Talent is too high level to be selected",
+                "domainCardDuplicate": "You already have that Talent!",
                 "noSelectionsLeft": "Nothing more to select!",
                 "alreadySelectedClass": "You already have that class!",
                 "classAlreadySelected": "The character already has a class",
                 "subclassAlreadySelected": "The character already has a subclass for that class.",
                 "noClassSelected": "Your character has no class selected!",
                 "lacksDomain": "Your character doesn't have the domain of the card!",
-                "duplicateDomainCard": "You already have a domain card with that name!",
+                "duplicateDomainCard": "You already have a Talent with that name!",
                 "missingClassOrSubclass": "The character doesn't have a class and subclass",
                 "tooHighLevel": "You cannot raise the character level past the maximum",
                 "tooLowLevel": "You cannot lower the character level below starting level",
@@ -4306,7 +4252,6 @@
                 "limitedActorsInPartySheet": "You can only drag actors of type {allowedTypes} to the party sheet.",
                 "notPrimary": "The weapon is not a primary weapon!",
                 "notSecondary": "The weapon is not a secondary weapon!",
-                "itemTooHighTier": "The item must be from Tier1",
                 "primaryIsTwoHanded": "Cannot select a secondary weapon with a two-handed primary!",
                 "noMoreMoves": "You cannot select any more downtime moves",
                 "damageAlreadyNone": "The damage has already been reduced to none",
@@ -4319,7 +4264,7 @@
                 "unownedActionMacro": "Cannot make a Use macro for an Action not on your character",
                 "unownedAttackMacro": "Cannot make a Use macro for an Attack that doesn't belong to one of your characters",
                 "featureNotHope": "This feature is used as something else than a Hope feature and cannot be used here.",
-                "featureNotClass": "This feature is used as something else than a Class feature and cannot be used here.",
+                "featureNotClass": "This feature is used as something else than a Archetype feature and cannot be used here.",
                 "featureNotPrimary": "This feature is used as something else than a Primary feature and cannot be used here.",
                 "featureNotSecondary": "This feature is used as something else than a Secondary feature and cannot be used here.",
                 "featureNotFoundation": "This feature is used as something else than a Foundation feature and cannot be used here.",
@@ -4329,7 +4274,7 @@
                 "beastformToManyAdvantages": "You cannot select any more advantages.",
                 "beastformToManyFeatures": "You cannot select any more features.",
                 "beastformEquipWeapon": "You cannot use weapons while in a Beastform.",
-                "loadoutMaxReached": "You've reached the maximum loadout size. To add more, move at least one domain card to the vault.",
+                "loadoutMaxReached": "You've reached the maximum Talents size. To add more, move at least one Talent to the vault.",
                 "domainMaxReached": "You've reached the maximum domains for the class. Increase the limit in homebrew settings if desired.",
                 "insufficientResources": "You don't have enough resources to use that action.",
                 "actionNoUsesRemaining": "That action doesn't have remaining uses.",
@@ -4343,7 +4288,7 @@
                 "documentIsMissing": "The {documentType} is missing from the world.",
                 "tokenActorMissing": "{name} is missing an Actor",
                 "tokenActorsMissing": "[{names}] missing Actors",
-                "domainTouchRequirement": "This domain card requires {nr} {domain} cards in the loadout to be used",
+                "domainTouchRequirement": "This Talent requires {nr} {domain} cards in the Talents to be used",
                 "knowTheTide": "Know The Tide gained a token",
                 "lackingItemTransferPermission": "User {user} lacks owner permission needed to transfer items to {target}",
                 "noTokenTargeted": "No token is targeted",
@@ -4358,18 +4303,15 @@
             },
             "Sidebar": {
                 "actorDirectory": {
-                    "tier": "Tier {tier} {type}",
                     "character": "Level {level} Character",
                     "companion": "Level {level} - {partner}",
                     "companionNoPartner": "No Partner",
-                    "duplicateToNewTier": "Duplicate to New Tier",
                     "activateParty": "Make Active Party",
                     "partyIsActive": "Active",
-                    "createAdversary": "Create Adversary",
-                    "pickTierTitle": "Pick a new tier for this adversary"
+                    "createAdversary": "Create Adversary"
                 },
                 "daggerheartMenu": {
-                    "title": "Daggerheart Menu",
+                    "title": "Heart & Dagger Menu",
                     "startSession": "Start Session",
                     "startScene": "Start Scene"
                 }
@@ -4387,7 +4329,7 @@
                 "equip": "Equip",
                 "unequip": "Unequip",
                 "sendToVault": "Send to Vault",
-                "sendToLoadout": "Send to Loadout",
+                "sendToLoadout": "Send to Talents",
                 "makeDeathMove": "Make a Death Move",
                 "rangeAndTarget": "Range & Target",
                 "dragApplyEffect": "Drag effect to apply it to an actor",

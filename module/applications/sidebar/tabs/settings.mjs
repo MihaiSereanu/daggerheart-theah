@@ -22,7 +22,7 @@ export default class DhSettings extends foundry.applications.sidebar.tabs.Settin
             : null;
 
         const element = await foundry.applications.handlebars.renderTemplate(
-            'systems/daggerheart/templates/sidebar/settings/info-insert.hbs',
+            'systems/daggerheart-theah/templates/sidebar/settings/info-insert.hbs',
             { version: game.system.version, systemUpdate }
         );
         infoSection.insertAdjacentHTML('afterend', element);

@@ -1,0 +1,15 @@
+{
+  "_id": "382694de9a6c0cdf",
+  "name": "Stitch of Aegis",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Stitch of Aegis</strong>: Spend any amount of Hope to clear that many Armor Slots.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!382694de9a6c0cdf"
+}

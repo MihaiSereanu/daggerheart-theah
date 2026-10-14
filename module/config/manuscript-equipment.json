@@ -1,0 +1,168 @@
+{
+  "armor": {
+    "feature": {
+      "label": "Feature",
+      "description": "",
+      "effects": [],
+      "actions": []
+    },
+    "flexible": {
+      "label": "Flexible",
+      "description": "<p>+1 to Evasion</p>\n",
+      "effects": [],
+      "actions": []
+    },
+    "heavy": {
+      "label": "Heavy",
+      "description": "<p>-1 to Evasion</p>\n",
+      "effects": [],
+      "actions": []
+    },
+    "veryheavy": {
+      "label": "Very Heavy",
+      "description": "<p>-2 to Evasion; -1 to Finesse</p>\n",
+      "effects": [],
+      "actions": []
+    }
+  },
+  "weapon": {
+    "feature": {
+      "label": "Feature",
+      "description": "",
+      "effects": [],
+      "actions": []
+    },
+    "concussive": {
+      "label": "Concussive",
+      "description": "<p>On a successful attack, spend 1 Hope to knock target to Very Close</p>\n",
+      "effects": [],
+      "actions": []
+    },
+    "reliable": {
+      "label": "Reliable",
+      "description": "<p>+1 to attack rolls</p>\n",
+      "effects": [],
+      "actions": []
+    },
+    "savage": {
+      "label": "Savage",
+      "description": "<p>When you deal Major+ damage, the target marks 1 Stress</p>\n",
+      "effects": [],
+      "actions": []
+    },
+    "crushing": {
+      "label": "Crushing",
+      "description": "<p>Against armoured targets, roll two damage dice and take the highest</p>\n",
+      "effects": [],
+      "actions": []
+    },
+    "cumbersome": {
+      "label": "Cumbersome",
+      "description": "<p>-1 to Finesse</p>\n",
+      "effects": [],
+      "actions": []
+    },
+    "powerful": {
+      "label": "Powerful",
+      "description": "<p>-1 to Evasion; on success, roll two damage dice and take the highest</p>\n",
+      "effects": [],
+      "actions": []
+    },
+    "brutal": {
+      "label": "Brutal",
+      "description": "<p>-1 to Evasion; when you roll max damage, roll the die again and add to total</p>\n",
+      "effects": [],
+      "actions": []
+    },
+    "massive": {
+      "label": "Massive",
+      "description": "<p>-1 to Evasion; roll an extra damage die and drop the lowest on hit</p>\n",
+      "effects": [],
+      "actions": []
+    },
+    "thrown": {
+      "label": "Thrown",
+      "description": "<p>Mark 1 Stress to throw up to Close with ADV</p>\n",
+      "effects": [],
+      "actions": []
+    },
+    "vault": {
+      "label": "Vault",
+      "description": "<p>On a successful attack, mark 1 Stress to move within Very Close</p>\n",
+      "effects": [],
+      "actions": []
+    },
+    "quick": {
+      "label": "Quick",
+      "description": "<p>Mark 1 Stress to target another creature within range</p>\n",
+      "effects": [],
+      "actions": []
+    },
+    "dueling": {
+      "label": "Dueling",
+      "description": "<p>Gain ADV on the attack if none of the target&#39;s allies are within Close</p>\n",
+      "effects": [],
+      "actions": []
+    },
+    "startling": {
+      "label": "Startling",
+      "description": "<p>Mark 1 Stress to force all adversaries in Melee back to Very Close</p>\n",
+      "effects": [],
+      "actions": []
+    },
+    "paired": {
+      "label": "Paired",
+      "description": "<p>+2 to primary weapon damage to targets within Melee</p>\n",
+      "effects": [],
+      "actions": []
+    },
+    "protective": {
+      "label": "Protective",
+      "description": "<p>+1 to Armor Score</p>\n",
+      "effects": [],
+      "actions": []
+    },
+    "barrier": {
+      "label": "Barrier",
+      "description": "<p>+2 to Armor Score; -1 to Evasion. </p>\n",
+      "effects": [],
+      "actions": []
+    },
+    "parry": {
+      "label": "Parry",
+      "description": "<p>When you’re hit, you may </p>\n",
+      "effects": [],
+      "actions": []
+    },
+    "mark1stress": {
+      "label": "mark 1 Stress",
+      "description": "<p> to roll 1d6. If your roll matches one of the attacker’s damage dice, cancel one matching die before damage is totaled.</p>\n",
+      "effects": [],
+      "actions": []
+    },
+    "reloading": {
+      "label": "Reloading",
+      "description": "<p>After you attack, roll a d6; on a 1, mark 1 Stress to reload</p>\n",
+      "effects": [],
+      "actions": []
+    },
+    "blackpowder": {
+      "label": "Blackpowder",
+      "description": "<p>Blackpowder weapons share the feature <strong>Blackpowder</strong>.</p>\n<ul>\n<li><strong>Deadly</strong>: When you deal Severe damage, the target marks 1 extra HP.</li>\n<li><strong>Loud</strong>: The shot is noisy and attracts attention.</li>\n<li><strong>Reloading</strong>: After you attack, roll a d6. On a 1, mark 1 Stress to reload before firing again.</li>\n</ul>\n",
+      "effects": [],
+      "actions": []
+    },
+    "accurate": {
+      "label": "Accurate",
+      "description": "<p>+1 to attack rolls</p>\n",
+      "effects": [],
+      "actions": []
+    },
+    "destructive": {
+      "label": "Destructive",
+      "description": "<p>Mark 1 Stress to force all targets within Very Close to make a Finesse Reaction Roll (15) or take half damage</p>\n",
+      "effects": [],
+      "actions": []
+    }
+  }
+}

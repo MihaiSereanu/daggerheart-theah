@@ -30,7 +30,7 @@ export class CountdownPermissionsDialog extends HandlebarsApplicationMixin(Appli
 
     static PARTS = {
         selection: {
-            template: 'systems/daggerheart/templates/dialogs/countdownPermissions.hbs'
+            template: 'systems/daggerheart-theah/templates/dialogs/countdownPermissions.hbs'
         }
     };
 

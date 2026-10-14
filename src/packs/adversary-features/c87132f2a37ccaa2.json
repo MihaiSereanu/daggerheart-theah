@@ -1,0 +1,15 @@
+{
+  "_id": "c87132f2a37ccaa2",
+  "name": "Hobbling Shot",
+  "type": "feature",
+  "img": "icons/skills/ranged/target-bullseye-arrow-green.webp",
+  "system": {
+    "description": "<p>Make an attack against a target within Far range. On a success, <strong>mark a Stress</strong> to deal 1d12+3 physical damage. If the target marks HP from this attack, they have Disadvantage on Finesse Rolls until they clear at least 1 HP.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!c87132f2a37ccaa2"
+}

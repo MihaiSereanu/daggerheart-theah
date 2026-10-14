@@ -1,0 +1,96 @@
+{
+  "Compendium.daggerheart-theah.features.Item.046cdfdac6567b3b": {
+    "name": "Well-Connected",
+    "previousNames": [
+      "Well-Connected"
+    ],
+    "description": "<p>So long as you are in a civilized place, you always know someone that can help you. Spend a Hope to mark them as a <em>Contact</em>: name them, note how they&#39;ll be useful, and choose one:</p>\n<ul>\n<li>They owe you a favour, but they’ll be hard to find</li>\n<li>They’ll ask for something in return</li>\n<li>They’re in trouble, as always</li>\n<li>You were lovers once. It’s complicated</li>\n<li>You didn’t part on good terms</li>\n</ul>\n<p>You can have a number of Contacts equal to your level.</p>\n",
+    "previousDescriptions": [
+      "<p>So long as you are in a civilized place, you always know someone that can help you. Spend a Hope to mark them as a <em>Contact</em>: name them, note how they&#39;ll be useful, and choose one:</p>\n<ul>\n<li>They owe you a favour, but they’ll be hard to find</li>\n<li>They’ll ask for something in return</li>\n<li>They’re in trouble, as always</li>\n<li>You were lovers once. It’s complicated</li>\n<li>You didn’t part on good terms\nYou can have a number of Contacts equal to your level.</li>\n</ul>\n"
+    ],
+    "target": "Compendium.daggerheart-theah.features.Item.046cdfdac6567b3b"
+  },
+  "Compendium.daggerheart-theah.features.Item.09da84128694020c": {
+    "name": "The Contract",
+    "previousNames": [
+      "The Contract"
+    ],
+    "description": "<p><strong>When you take this Sorcerous Tradition, you also gain this feature for free</strong>. You made a contract with an otherworldly daemon, jailing it inside you in exchange for power and the possibility of release. <strong>You begin with 3 Favour, to a maximum of 7.</strong></p>\n<p>During a Rest, you may <strong>use a Downtime Action</strong> to parley with your dieva. If you do, gain Favour equal to your Charm. If you do not parley, the GM gains Fear equal to 7 minus your current Favour.</p>\n<ul>\n<li>When your Favour reaches 7, roll Wits (15). On a failure, your Dieva seizes control briefly but to devastating effect; the GM will describes the consequences of your actions.</li>\n<li>If your Favour drops to 0, your Dieva withholds its power. Until you fulfil a horrendous task it demands, you cannot regain Favour or make use of its magic.</li>\n<li>If you die without the Dieva playing a direct part in the events, <strong>it escapes and is loosed upon the world.</strong></li>\n</ul>\n",
+    "previousDescriptions": [
+      "<p><strong>When you take this Sorcerous Tradition, you also gain this feature for free</strong>. You made a contract with an otherworldly daemon, jailing it inside you in exchange for power and the possibility of release. <strong>You begin with 3 Favour, to a maximum of 7.</strong>\nDuring a Rest, you may <strong>use a Downtime Action</strong> to parley with your dieva. If you do, gain Favour equal to your Charm. If you do not parley, the GM gains Fear equal to 7 minus your current Favour.</p>\n<ul>\n<li>When your Favour reaches 7, roll Wits (15). On a failure, your Dieva seizes control briefly but to devastating effect; the GM will describes the consequences of your actions.</li>\n<li>If your Favour drops to 0, your Dieva withholds its power. Until you fulfil a horrendous task it demands, you cannot regain Favour or make use of its magic.</li>\n<li>If you die without the Dieva playing a direct part in the events, <strong>it escapes and is loosed upon the world.</strong></li>\n</ul>\n"
+    ],
+    "target": "Compendium.daggerheart-theah.features.Item.09da84128694020c"
+  },
+  "Compendium.daggerheart-theah.features.Item.2932cae6984759d6": {
+    "name": "Singular Focus",
+    "previousNames": [
+      "Singular Focus",
+      "Hunter: Singular Focus"
+    ],
+    "description": "<p><strong>Mark a Stress</strong> and make an attack against a target. On a success, the target becomes your <em>Focus</em>. Until you choose a new Focus or the next Rest, you gain the following:</p>\n<ul>\n<li>You always know their general whereabouts</li>\n<li>When you attack them, they must also mark a Stress</li>\n<li>If you fail an attack against them, you may end your <em>Focus</em> to reroll your Duality Dice</li>\n</ul>\n",
+    "previousDescriptions": [
+      ""
+    ],
+    "target": "Compendium.daggerheart-theah.features.Item.2932cae6984759d6"
+  },
+  "Compendium.daggerheart-theah.features.Item.4ec05b6c4e48a19e": {
+    "name": "In & Out",
+    "previousNames": [
+      "In & Out",
+      "Assassin: In & Out"
+    ],
+    "description": "<p><strong>Spend a Hope</strong> to ask the GM for either a quick or inconspicuous way into or out of a building or structure you can see. The next roll you make that capitalizes on this information gains Advantage.</p>\n",
+    "previousDescriptions": [
+      ""
+    ],
+    "target": "Compendium.daggerheart-theah.features.Item.4ec05b6c4e48a19e"
+  },
+  "Compendium.daggerheart-theah.environments.Actor.57f62fc25f2713c4.Item.433eb4f3fb5f98c2": {
+    "name": "The Climb - Passive",
+    "previousNames": [
+      "The Climb - Passive"
+    ],
+    "description": "<p>Climbing up the cliffside uses a Progress Countdown (12). It ticks down according to the following criteria when the PCs make an action roll to climb:</p>\n<ul>\n<li><strong>Critical Succes</strong>s: Tick down 3</li>\n<li><strong>Success with Hope</strong>: Tick down 2</li>\n<li><strong>Success with Fear</strong>: Tick down 1</li>\n<li><strong>Failure with Hope</strong>: No advancement</li>\n<li><strong>Failure with Fear</strong>: Tick up 1</li>\n</ul>\n<p>When the countdown triggers, the party has made it to the top of the cliff.</p>\n",
+    "previousDescriptions": [
+      "<p>Climbing up the cliffside uses a Progress Countdown (12). It ticks down according to the following criteria when the PCs make an action roll to climb:</p>\n<ul>\n<li><strong>Critical Succes</strong>s: Tick down 3</li>\n<li><strong>Success with Hope</strong>: Tick down 2</li>\n<li><strong>Success with Fear</strong>: Tick down 1</li>\n<li><strong>Failure with Hope</strong>: No advancement</li>\n<li><strong>Failure with Fear</strong>: Tick up 1\nWhen the countdown triggers, the party has made it to the top of the cliff.</li>\n</ul>\n"
+    ],
+    "target": "Compendium.daggerheart-theah.environments.Actor.57f62fc25f2713c4.Item.433eb4f3fb5f98c2"
+  },
+  "Compendium.daggerheart-theah.environments.Actor.b12620d6e93594ef.Item.777b8df21a17352a": {
+    "name": "The Walkway Hungers - Action",
+    "previousNames": [
+      "The Walkway Hungers - Action: Countdown (Loop 14"
+    ],
+    "description": "<p>Countdown (Loop 14). Activate the countdown. When it triggers, all PCs must succeed on a Charm Reaction Roll or temporarily lose 1d4 from their highest Trait unless they mark a number of Stress equal to its value. Lost Trait points are regained if the PC critically succeeds or exits the Walkway.</p>\n",
+    "previousDescriptions": [
+      "<p>). Activate the countdown. When it triggers, all PCs must succeed on a Charm Reaction Roll or temporarily lose 1d4 from their highest Trait unless they mark a number of Stress equal to its value. Lost Trait points are regained if the PC critically succeeds or exits the Walkway.</p>\n"
+    ],
+    "target": "Compendium.daggerheart-theah.environments.Actor.b12620d6e93594ef.Item.777b8df21a17352a"
+  },
+  "Compendium.daggerheart-theah.features.Item.4be70c5d9babd50e": {
+    "name": "In & Out",
+    "previousNames": [
+      "Spend a Hope",
+      "Assassin: Spend a Hope"
+    ],
+    "description": "<p><strong>Spend a Hope</strong> to ask the GM for either a quick or inconspicuous way into or out of a building or structure you can see. The next roll you make that capitalizes on this information gains Advantage.</p>\n",
+    "previousDescriptions": [
+      "<p>to ask the GM for either a quick or inconspicuous way into or out of a building or structure you can see. The next roll you make that capitalizes on this information gains Advantage.</p>\n"
+    ],
+    "target": "Compendium.daggerheart-theah.features.Item.4ec05b6c4e48a19e",
+    "fragment": true
+  },
+  "Compendium.daggerheart-theah.features.Item.2391e828cade7ee0": {
+    "name": "Singular Focus",
+    "previousNames": [
+      "Mark a Stress",
+      "Hunter: Mark a Stress"
+    ],
+    "description": "<p><strong>Mark a Stress</strong> and make an attack against a target. On a success, the target becomes your <em>Focus</em>. Until you choose a new Focus or the next Rest, you gain the following:</p>\n<ul>\n<li>You always know their general whereabouts</li>\n<li>When you attack them, they must also mark a Stress</li>\n<li>If you fail an attack against them, you may end your <em>Focus</em> to reroll your Duality Dice</li>\n</ul>\n",
+    "previousDescriptions": [
+      "<p>and make an attack against a target. On a success, the target becomes your <em>Focus</em>. Until you choose a new Focus or the next Rest, you gain the following:</p>\n<ul>\n<li>You always know their general whereabouts</li>\n<li>When you attack them, they must also mark a Stress</li>\n<li>If you fail an attack against them, you may end your <em>Focus</em> to reroll your Duality Dice</li>\n</ul>\n"
+    ],
+    "target": "Compendium.daggerheart-theah.features.Item.2932cae6984759d6",
+    "fragment": true
+  }
+}

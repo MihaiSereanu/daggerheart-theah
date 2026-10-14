@@ -1,0 +1,1154 @@
+{
+  "Compendium.daggerheart-theah.features.Item.3d5dbf0e4bfa7a2c": {
+    "previous": "Assassin: Grim Resolve",
+    "current": "Grim Resolve"
+  },
+  "Compendium.daggerheart-theah.features.Item.c91643395f044b67": {
+    "previous": "Assassin: Ambush",
+    "current": "Ambush"
+  },
+  "Compendium.daggerheart-theah.features.Item.4ec05b6c4e48a19e": {
+    "previous": "Assassin: In & Out",
+    "current": "In & Out"
+  },
+  "Compendium.daggerheart-theah.features.Item.47569e49efd557be": {
+    "previous": "Assassin / Ashurite Disciple: Death Strike",
+    "current": "Death Strike"
+  },
+  "Compendium.daggerheart-theah.features.Item.6bec04a1e1d3597b": {
+    "previous": "Assassin / Ashurite Disciple: Deadly Rehearsal",
+    "current": "Deadly Rehearsal"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.2b1f414c261d4f8d": {
+    "previous": "Ashurite Disciple (Assassin)",
+    "current": "Ashurite Disciple"
+  },
+  "Compendium.daggerheart-theah.features.Item.ade004fbf5c7512f": {
+    "previous": "Assassin / Spy: Pull the Strings",
+    "current": "Pull the Strings"
+  },
+  "Compendium.daggerheart-theah.features.Item.d363a71670e0ed39": {
+    "previous": "Assassin / Spy: No Loose Ends",
+    "current": "No Loose Ends"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.c57c97a58f4b99cb": {
+    "previous": "Spy (Assassin)",
+    "current": "Spy"
+  },
+  "Compendium.daggerheart-theah.features.Item.fc35714db5f82cce": {
+    "previous": "Brawler: Staggering Blow",
+    "current": "Staggering Blow"
+  },
+  "Compendium.daggerheart-theah.features.Item.290b6c06d473fe97": {
+    "previous": "Brawler: Living Weapon",
+    "current": "Living Weapon"
+  },
+  "Compendium.daggerheart-theah.features.Item.47d95eccbd5cc874": {
+    "previous": "Brawler: Just You & Me",
+    "current": "Just You & Me"
+  },
+  "Compendium.daggerheart-theah.features.Item.309188cc96c5e33c": {
+    "previous": "Brawler / Pit Fighter: Powerhouse",
+    "current": "Powerhouse"
+  },
+  "Compendium.daggerheart-theah.features.Item.c0f887f90b937729": {
+    "previous": "Brawler / Pit Fighter: Not Done Yet",
+    "current": "Not Done Yet"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.d06724bccb33fc4f": {
+    "previous": "Pit Fighter (Brawler)",
+    "current": "Pit Fighter"
+  },
+  "Compendium.daggerheart-theah.features.Item.5f43f59b65f31068": {
+    "previous": "Brawler / Pugilist: Fighting Guard",
+    "current": "Fighting Guard"
+  },
+  "Compendium.daggerheart-theah.features.Item.b88b02ce74d5f182": {
+    "previous": "Brawler / Pugilist: Counterpunch",
+    "current": "Counterpunch"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.cc9b63b4e779c99b": {
+    "previous": "Pugilist (Brawler)",
+    "current": "Pugilist"
+  },
+  "Compendium.daggerheart-theah.features.Item.b6e7672d0a175c79": {
+    "previous": "Commander: Issued Orders",
+    "current": "Issued Orders"
+  },
+  "Compendium.daggerheart-theah.features.Item.9887a4bf7f32e950": {
+    "previous": "Commander: Veteran of Many Fields",
+    "current": "Veteran of Many Fields"
+  },
+  "Compendium.daggerheart-theah.features.Item.391a5135e2e57c39": {
+    "previous": "Commander: Battle Ritual",
+    "current": "Battle Ritual"
+  },
+  "Compendium.daggerheart-theah.features.Item.3ded37ece0c9fae2": {
+    "previous": "Commander / Tactician: Battlefield Orders",
+    "current": "Battlefield Orders"
+  },
+  "Compendium.daggerheart-theah.features.Item.dba548d41c360968": {
+    "previous": "Commander / Tactician: Follow My Lead",
+    "current": "Follow My Lead"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.72d3ca39f218762c": {
+    "previous": "Tactician (Commander)",
+    "current": "Tactician"
+  },
+  "Compendium.daggerheart-theah.features.Item.aa2ae225ee4141a0": {
+    "previous": "Commander / Mastermind: Exploit",
+    "current": "Exploit"
+  },
+  "Compendium.daggerheart-theah.features.Item.faabe0047513f1e6": {
+    "previous": "Commander / Mastermind: Press the Advantage",
+    "current": "Press the Advantage"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.c520e406ac6977d3": {
+    "previous": "Mastermind (Commander)",
+    "current": "Mastermind"
+  },
+  "Compendium.daggerheart-theah.features.Item.0f1aa4dee059b096": {
+    "previous": "Fanatic: Unshaken Resolve",
+    "current": "Unshaken Resolve"
+  },
+  "Compendium.daggerheart-theah.features.Item.e8b6ad49bb64427d": {
+    "previous": "Fanatic: Creed",
+    "current": "Creed"
+  },
+  "Compendium.daggerheart-theah.features.Item.040f65b32854df66": {
+    "previous": "Fanatic: Conviction",
+    "current": "Conviction"
+  },
+  "Compendium.daggerheart-theah.features.Item.9e9cfc30563174b5": {
+    "previous": "Fanatic / Priest: Zealous Indictment",
+    "current": "Zealous Indictment"
+  },
+  "Compendium.daggerheart-theah.features.Item.d220ca8cccf9a4eb": {
+    "previous": "Fanatic / Priest: Steadfast Presence",
+    "current": "Steadfast Presence"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.7417cb04bb7faa6e": {
+    "previous": "Priest (Fanatic)",
+    "current": "Priest"
+  },
+  "Compendium.daggerheart-theah.features.Item.9f39ef0748487a0f": {
+    "previous": "Fanatic / Radical: Interrogating Gaze",
+    "current": "Interrogating Gaze"
+  },
+  "Compendium.daggerheart-theah.features.Item.eaa46396db343641": {
+    "previous": "Fanatic / Radical: Wrathful Candor",
+    "current": "Wrathful Candor"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.20a33e39766f0c74": {
+    "previous": "Radical (Fanatic)",
+    "current": "Radical"
+  },
+  "Compendium.daggerheart-theah.features.Item.af621143c978fedc": {
+    "previous": "Minstrel: Make a Scene",
+    "current": "Make a Scene"
+  },
+  "Compendium.daggerheart-theah.features.Item.7825a6ab092ec950": {
+    "previous": "Minstrel: Rally",
+    "current": "Rally"
+  },
+  "Compendium.daggerheart-theah.features.Item.01b0677f789cc6b2": {
+    "previous": "Minstrel: Shake it Off",
+    "current": "Shake it Off"
+  },
+  "Compendium.daggerheart-theah.features.Item.2c3c3dfd0192216b": {
+    "previous": "Minstrel / Troubadour: Gifted Performance",
+    "current": "Gifted Performance"
+  },
+  "Compendium.daggerheart-theah.features.Item.e5e5a9a5934effdb": {
+    "previous": "Minstrel / Troubadour: Maestro",
+    "current": "Maestro"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.3d5a82efab646dc7": {
+    "previous": "Troubadour (Minstrel)",
+    "current": "Troubadour"
+  },
+  "Compendium.daggerheart-theah.features.Item.608f8659296426c7": {
+    "previous": "Minstrel / Raconteur: Rousing Speech",
+    "current": "Rousing Speech"
+  },
+  "Compendium.daggerheart-theah.features.Item.33402cd27cd392c4": {
+    "previous": "Minstrel / Raconteur: Heart of a Poet",
+    "current": "Heart of a Poet"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.e59a15cb7b584d57": {
+    "previous": "Raconteur (Minstrel)",
+    "current": "Raconteur"
+  },
+  "Compendium.daggerheart-theah.features.Item.241f7011506cd04a": {
+    "previous": "Hunter: Piercing Insight",
+    "current": "Piercing Insight"
+  },
+  "Compendium.daggerheart-theah.features.Item.2932cae6984759d6": {
+    "previous": "Hunter: Singular Focus",
+    "current": "Singular Focus"
+  },
+  "Compendium.daggerheart-theah.features.Item.29dff6d3bbb4c7a6": {
+    "previous": "Hunter: Targeted Strikes",
+    "current": "Targeted Strikes"
+  },
+  "Compendium.daggerheart-theah.features.Item.a337860f1bd6de70": {
+    "previous": "Hunter / Bounty Hunter: Ruthless Precision",
+    "current": "Ruthless Precision"
+  },
+  "Compendium.daggerheart-theah.features.Item.40488bec5834b901": {
+    "previous": "Hunter / Bounty Hunter: Elusive Predator",
+    "current": "Elusive Predator"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.041682da131c4b26": {
+    "previous": "Bounty Hunter (Hunter)",
+    "current": "Bounty Hunter"
+  },
+  "Compendium.daggerheart-theah.features.Item.7f3e1eaab5c22e7d": {
+    "previous": "Hunter / Field Archaeologist: Quick-Thinking",
+    "current": "Quick-Thinking"
+  },
+  "Compendium.daggerheart-theah.features.Item.d514bdf3f71a89be": {
+    "previous": "Hunter / Field Archaeologist: Unorthodox Solution",
+    "current": "Unorthodox Solution"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.f4ed2b495b567836": {
+    "previous": "Field Archaeologist (Hunter)",
+    "current": "Field Archaeologist"
+  },
+  "Compendium.daggerheart-theah.features.Item.7f1db42648b091f4": {
+    "previous": "Rogue: Scoundrel’s Dodge",
+    "current": "Scoundrel’s Dodge"
+  },
+  "Compendium.daggerheart-theah.features.Item.e94b47b084167d52": {
+    "previous": "Rogue: Silent Steps",
+    "current": "Silent Steps"
+  },
+  "Compendium.daggerheart-theah.features.Item.9e86b1290235171b": {
+    "previous": "Rogue: Scoundrel’s Precision",
+    "current": "Scoundrel’s Precision"
+  },
+  "Compendium.daggerheart-theah.features.Item.9f021ab1b50d0a2d": {
+    "previous": "Rogue / Thief: Breaking & Entering",
+    "current": "Breaking & Entering"
+  },
+  "Compendium.daggerheart-theah.features.Item.f550712239e5525e": {
+    "previous": "Rogue / Thief: Second-Story Work",
+    "current": "Second-Story Work"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.0b64dd500bc1fb97": {
+    "previous": "Thief (Rogue)",
+    "current": "Thief"
+  },
+  "Compendium.daggerheart-theah.features.Item.046cdfdac6567b3b": {
+    "previous": "Rogue / Agent: Well-Connected",
+    "current": "Well-Connected"
+  },
+  "Compendium.daggerheart-theah.features.Item.74cdc279a2393993": {
+    "previous": "Rogue / Agent: Fixer",
+    "current": "Fixer"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.631864999053af73": {
+    "previous": "Agent (Rogue)",
+    "current": "Agent"
+  },
+  "Compendium.daggerheart-theah.features.Item.7ce718a99ee62ed3": {
+    "previous": "Scholar: According to Plan",
+    "current": "According to Plan"
+  },
+  "Compendium.daggerheart-theah.features.Item.576a0e06df064876": {
+    "previous": "Scholar: Academic Insight",
+    "current": "Academic Insight"
+  },
+  "Compendium.daggerheart-theah.features.Item.590abf77171f6f8c": {
+    "previous": "Scholar: Wordly Insight",
+    "current": "Wordly Insight"
+  },
+  "Compendium.daggerheart-theah.features.Item.7c8ccff76acc8e47": {
+    "previous": "Scholar / Chronicler: Adept",
+    "current": "Adept"
+  },
+  "Compendium.daggerheart-theah.features.Item.cd6a31688f89b657": {
+    "previous": "Scholar / Chronicler: Learned Application",
+    "current": "Learned Application"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.676950e5b31bcf32": {
+    "previous": "Chronicler (Scholar)",
+    "current": "Chronicler"
+  },
+  "Compendium.daggerheart-theah.features.Item.311bd80a4f2190cb": {
+    "previous": "Scholar / Inventor: Jury Rig",
+    "current": "Jury Rig"
+  },
+  "Compendium.daggerheart-theah.features.Item.98bdcd22270a4463": {
+    "previous": "Scholar / Inventor: Resourceful",
+    "current": "Resourceful"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.a69bdad14f5d8b8d": {
+    "previous": "Inventor (Scholar)",
+    "current": "Inventor"
+  },
+  "Compendium.daggerheart-theah.features.Item.0ec042045da6b580": {
+    "previous": "Soldier: Bulwark",
+    "current": "Bulwark"
+  },
+  "Compendium.daggerheart-theah.features.Item.375752c666dd2bf6": {
+    "previous": "Soldier: Unstoppable",
+    "current": "Unstoppable"
+  },
+  "Compendium.daggerheart-theah.features.Item.34d6a72e5cfaaade": {
+    "previous": "Soldier: Combat Discipline",
+    "current": "Combat Discipline"
+  },
+  "Compendium.daggerheart-theah.features.Item.97ce589781e72b38": {
+    "previous": "Soldier / Bodyguard: Unwavering",
+    "current": "Unwavering"
+  },
+  "Compendium.daggerheart-theah.features.Item.ebb69e47a7b5c2c6": {
+    "previous": "Soldier / Bodyguard: Loyal Protector",
+    "current": "Loyal Protector"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.1cd306047391e578": {
+    "previous": "Bodyguard (Soldier)",
+    "current": "Bodyguard"
+  },
+  "Compendium.daggerheart-theah.features.Item.0edc38c445cce8be": {
+    "previous": "Soldier / Mercenary: Revenge",
+    "current": "Revenge"
+  },
+  "Compendium.daggerheart-theah.features.Item.e8d324e8ec089889": {
+    "previous": "Soldier / Mercenary: Focused Reprisal",
+    "current": "Focused Reprisal"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.4a2577d6abe4be00": {
+    "previous": "Mercenary (Soldier)",
+    "current": "Mercenary"
+  },
+  "Compendium.daggerheart-theah.features.Item.0a27390b65df1f46": {
+    "previous": "Sorcerer: Rite of Undoing",
+    "current": "Rite of Undoing"
+  },
+  "Compendium.daggerheart-theah.features.Item.0f0c865fce16649a": {
+    "previous": "Sorcerer: Sorcerous Lineage",
+    "current": "Sorcerous Lineage"
+  },
+  "Compendium.daggerheart-theah.features.Item.873c168facee464f": {
+    "previous": "Sorcerer: Sorcerous Aptitude",
+    "current": "Sorcerous Aptitude"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.8c7901ccc1c91356": {
+    "previous": "Druidism (Sorcerer)",
+    "current": "Druidism"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.6742737458da584d": {
+    "previous": "Dar Matushki (Sorcerer)",
+    "current": "Dar Matushki"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.199709b4a04a6f5e": {
+    "previous": "Galdr (Sorcerer)",
+    "current": "Galdr"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.43c111580576f3c8": {
+    "previous": "Glamour (Sorcerer)",
+    "current": "Glamour"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.3e72f5829be0b34c": {
+    "previous": "Hexenwerk (Sorcerer)",
+    "current": "Hexenwerk"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.5e729eaa591db5cc": {
+    "previous": "Porte (Sorcerer)",
+    "current": "Porte"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.9b0c2c27ce11f3e1": {
+    "previous": "Sorte (Sorcerer)",
+    "current": "Sorte"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.53dc21fb02714f1b": {
+    "previous": "Sanderis (Sorcerer)",
+    "current": "Sanderis"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.839be8321512212c": {
+    "previous": "Fire Within (Sorcerer)",
+    "current": "Fire Within"
+  },
+  "Compendium.daggerheart-theah.features.Item.4f767813567963ae": {
+    "previous": "Swashbuckler: Daring Flourish",
+    "current": "Daring Flourish"
+  },
+  "Compendium.daggerheart-theah.features.Item.08a97e1cff5c0aa9": {
+    "previous": "Swashbuckler: Stylish Gambits",
+    "current": "Stylish Gambits"
+  },
+  "Compendium.daggerheart-theah.features.Item.e85ce548f79dbd8e": {
+    "previous": "Swashbuckler: Stylish Strike",
+    "current": "Stylish Strike"
+  },
+  "Compendium.daggerheart-theah.features.Item.2f4d9e6941d2c650": {
+    "previous": "Swashbuckler / Dashing Duelist: Flourish",
+    "current": "Flourish"
+  },
+  "Compendium.daggerheart-theah.features.Item.cb70df80ddf14477": {
+    "previous": "Swashbuckler / Dashing Duelist: Never Fear",
+    "current": "Never Fear"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.4e711b3dd2e431a3": {
+    "previous": "Dashing Duelist (Swashbuckler)",
+    "current": "Dashing Duelist"
+  },
+  "Compendium.daggerheart-theah.features.Item.4c9edc4bbdcf1a49": {
+    "previous": "Swashbuckler / Honour Guard: All for One",
+    "current": "All for One"
+  },
+  "Compendium.daggerheart-theah.features.Item.35d436b8f8d252d2": {
+    "previous": "Swashbuckler / Honour Guard: One for All",
+    "current": "One for All"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.ed4c2361556d949f": {
+    "previous": "Honour Guard (Swashbuckler)",
+    "current": "Honour Guard"
+  },
+  "Compendium.daggerheart-theah.features.Item.b7e15afd238bc118": {
+    "previous": "Warrior: Practiced Swings",
+    "current": "Practiced Swings"
+  },
+  "Compendium.daggerheart-theah.features.Item.6285289c7151dfac": {
+    "previous": "Warrior: Refined Edge",
+    "current": "Refined Edge"
+  },
+  "Compendium.daggerheart-theah.features.Item.f0d3094d01b3e9b7": {
+    "previous": "Warrior: Flow of Battle",
+    "current": "Flow of Battle"
+  },
+  "Compendium.daggerheart-theah.features.Item.7e483076da9e2d03": {
+    "previous": "Warrior / Bravo: Courage",
+    "current": "Courage"
+  },
+  "Compendium.daggerheart-theah.features.Item.70cbc58aae86c471": {
+    "previous": "Warrior / Bravo: Rise to the Challenge",
+    "current": "Rise to the Challenge"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.7166a24b4b227777": {
+    "previous": "Bravo (Warrior)",
+    "current": "Bravo"
+  },
+  "Compendium.daggerheart-theah.features.Item.f42b090ff55ca88e": {
+    "previous": "Warrior / Brute: Mighty",
+    "current": "Mighty"
+  },
+  "Compendium.daggerheart-theah.features.Item.8f5104787e49de9d": {
+    "previous": "Warrior / Brute: Raw Force",
+    "current": "Raw Force"
+  },
+  "Compendium.daggerheart-theah.specialisations.Item.bdeb620560c8d9a9": {
+    "previous": "Brute (Warrior)",
+    "current": "Brute"
+  },
+  "Compendium.daggerheart-theah.features.Item.995987112fdebee7": {
+    "previous": "Avalon: Lionhearted",
+    "current": "Lionhearted"
+  },
+  "Compendium.daggerheart-theah.features.Item.4963cd5961754663": {
+    "previous": "Avalon: Steadfast",
+    "current": "Steadfast"
+  },
+  "Compendium.daggerheart-theah.features.Item.493b716ccc5cab35": {
+    "previous": "Inismore: Luck of the Emerald Isle",
+    "current": "Luck of the Emerald Isle"
+  },
+  "Compendium.daggerheart-theah.features.Item.67fe189e87fe120d": {
+    "previous": "Inismore: Turn of the Wind",
+    "current": "Turn of the Wind"
+  },
+  "Compendium.daggerheart-theah.features.Item.ce7ddf0ed49c02bb": {
+    "previous": "Highland Marches: Thick Blood",
+    "current": "Thick Blood"
+  },
+  "Compendium.daggerheart-theah.features.Item.7db76518efaa1783": {
+    "previous": "Highland Marches: Enduring Might",
+    "current": "Enduring Might"
+  },
+  "Compendium.daggerheart-theah.features.Item.b866212a2a710b17": {
+    "previous": "Castille: Graceful",
+    "current": "Graceful"
+  },
+  "Compendium.daggerheart-theah.features.Item.00ee46bc4914dd1e": {
+    "previous": "Castille: Instinct for Trouble",
+    "current": "Instinct for Trouble"
+  },
+  "Compendium.daggerheart-theah.features.Item.5f79f4363d4bee00": {
+    "previous": "Eisen: Iron Defense",
+    "current": "Iron Defense"
+  },
+  "Compendium.daggerheart-theah.features.Item.1b0e8ab7c2a255d9": {
+    "previous": "Eisen: Brutal Beatdown",
+    "current": "Brutal Beatdown"
+  },
+  "Compendium.daggerheart-theah.features.Item.e0bd416991477df7": {
+    "previous": "Montaigne: Unshakable Resolve",
+    "current": "Unshakable Resolve"
+  },
+  "Compendium.daggerheart-theah.features.Item.f6c2f3bb5bfe1fd6": {
+    "previous": "Montaigne: Flair for the Dramatic",
+    "current": "Flair for the Dramatic"
+  },
+  "Compendium.daggerheart-theah.features.Item.ad3dff64fe45c6ba": {
+    "previous": "Sarmatia: Enlightened",
+    "current": "Enlightened"
+  },
+  "Compendium.daggerheart-theah.features.Item.271606c46492c05a": {
+    "previous": "Sarmatia: Resilient",
+    "current": "Resilient"
+  },
+  "Compendium.daggerheart-theah.features.Item.c2d09ac52911a3cc": {
+    "previous": "Ussura: Bitter Reflexes",
+    "current": "Bitter Reflexes"
+  },
+  "Compendium.daggerheart-theah.features.Item.d4faf9f07a037f56": {
+    "previous": "Ussura: Hard Habit",
+    "current": "Hard Habit"
+  },
+  "Compendium.daggerheart-theah.features.Item.7cbd6373ec898eb6": {
+    "previous": "Vesten: Sea’s Resolve",
+    "current": "Sea’s Resolve"
+  },
+  "Compendium.daggerheart-theah.features.Item.77d321fdd26baa4b": {
+    "previous": "Vesten: Brutal Momentum",
+    "current": "Brutal Momentum"
+  },
+  "Compendium.daggerheart-theah.features.Item.54278abf5040276f": {
+    "previous": "Vodacce: Sly",
+    "current": "Sly"
+  },
+  "Compendium.daggerheart-theah.features.Item.92d9cf6b6ce13039": {
+    "previous": "Vodacce: Surefooted",
+    "current": "Surefooted"
+  },
+  "Compendium.daggerheart-theah.features.Item.71d33e4bc7eb6c07": {
+    "previous": "Rural North: Hardy",
+    "current": "Hardy"
+  },
+  "Compendium.daggerheart-theah.features.Item.b3262e0d49407f96": {
+    "previous": "Village: Close-Knit",
+    "current": "Close-Knit"
+  },
+  "Compendium.daggerheart-theah.features.Item.95b8038db91eba51": {
+    "previous": "Nobility: Privilege",
+    "current": "Privilege"
+  },
+  "Compendium.daggerheart-theah.features.Item.a47af17a22d83d6c": {
+    "previous": "Academic: Well-Read",
+    "current": "Well-Read"
+  },
+  "Compendium.daggerheart-theah.features.Item.bd504121aab99412": {
+    "previous": "Highlands: Steady",
+    "current": "Steady"
+  },
+  "Compendium.daggerheart-theah.features.Item.23cb857f40994f10": {
+    "previous": "Order: Dedicated",
+    "current": "Dedicated"
+  },
+  "Compendium.daggerheart-theah.features.Item.a07cccbc994f7b3f": {
+    "previous": "Coastal: Know the Tide",
+    "current": "Know the Tide"
+  },
+  "Compendium.daggerheart-theah.features.Item.5f3327596578f7f4": {
+    "previous": "Criminal: Scoundrel",
+    "current": "Scoundrel"
+  },
+  "Compendium.daggerheart-theah.features.Item.c7338312c09f3d49": {
+    "previous": "Traveler: Nomadic Preparedness",
+    "current": "Nomadic Preparedness"
+  },
+  "Compendium.daggerheart-theah.features.Item.c4d332ebd2ff46f6": {
+    "previous": "Wildborne: Careful Steps",
+    "current": "Careful Steps"
+  },
+  "Compendium.daggerheart-theah.talents.Item.b030916d9f44faf5": {
+    "previous": "Adaptable Tactics (Anchor)",
+    "current": "Adaptable Tactics"
+  },
+  "Compendium.daggerheart-theah.talents.Item.ddd17416289a8beb": {
+    "previous": "Covering Withdrawal (Anchor)",
+    "current": "Covering Withdrawal"
+  },
+  "Compendium.daggerheart-theah.talents.Item.5b0bad937bfb24f4": {
+    "previous": "Exploit Weakness (Anchor)",
+    "current": "Exploit Weakness"
+  },
+  "Compendium.daggerheart-theah.talents.Item.d1ab330e543c4a38": {
+    "previous": "Keep the Momentum (Anchor)",
+    "current": "Keep the Momentum"
+  },
+  "Compendium.daggerheart-theah.talents.Item.24a8b1d7ab9ff658": {
+    "previous": "Keen Instincts (Anchor)",
+    "current": "Keen Instincts"
+  },
+  "Compendium.daggerheart-theah.talents.Item.b607503c315c67cf": {
+    "previous": "Seize the Moment (Anchor)",
+    "current": "Seize the Moment"
+  },
+  "Compendium.daggerheart-theah.talents.Item.62e73af9b2f5bdd5": {
+    "previous": "Sharp as a Tack (Anchor)",
+    "current": "Sharp as a Tack"
+  },
+  "Compendium.daggerheart-theah.talents.Item.32dbf94eadb0a1c7": {
+    "previous": "Shared Tactics (Anchor)",
+    "current": "Shared Tactics"
+  },
+  "Compendium.daggerheart-theah.talents.Item.1772586668407b89": {
+    "previous": "Trust me, it'll work (Anchor)",
+    "current": "Trust me, it'll work"
+  },
+  "Compendium.daggerheart-theah.talents.Item.caf3ac911bcda93b": {
+    "previous": "Their Anchor (Anchor)",
+    "current": "Their Anchor"
+  },
+  "Compendium.daggerheart-theah.talents.Item.1ac278dfe638653e": {
+    "previous": "Casual Side-Step (Flair)",
+    "current": "Casual Side-Step"
+  },
+  "Compendium.daggerheart-theah.talents.Item.dfdab5107a9c54c3": {
+    "previous": "Daring Stunt (Flair)",
+    "current": "Daring Stunt"
+  },
+  "Compendium.daggerheart-theah.talents.Item.f08e0b4d34206e98": {
+    "previous": "Deadly Draw (Flair)",
+    "current": "Deadly Draw"
+  },
+  "Compendium.daggerheart-theah.talents.Item.eb271b63b5878e46": {
+    "previous": "Deadly One-Liner (Flair)",
+    "current": "Deadly One-Liner"
+  },
+  "Compendium.daggerheart-theah.talents.Item.32ed2828ab9ecf1a": {
+    "previous": "False Opening (Flair)",
+    "current": "False Opening"
+  },
+  "Compendium.daggerheart-theah.talents.Item.af29e41937b489e4": {
+    "previous": "No Time for Henchmen (Flair)",
+    "current": "No Time for Henchmen"
+  },
+  "Compendium.daggerheart-theah.talents.Item.f2fc6239e934bf0c": {
+    "previous": "Not Left-Handed (Flair)",
+    "current": "Not Left-Handed"
+  },
+  "Compendium.daggerheart-theah.talents.Item.0bafbca43ca48795": {
+    "previous": "Showman (Flair)",
+    "current": "Showman"
+  },
+  "Compendium.daggerheart-theah.talents.Item.ff74e559f2bab2c5": {
+    "previous": "Tempt the Odds (Flair)",
+    "current": "Tempt the Odds"
+  },
+  "Compendium.daggerheart-theah.talents.Item.43eed949e042ad94": {
+    "previous": "Trick up my sleeve (Flair)",
+    "current": "Trick up my sleeve"
+  },
+  "Compendium.daggerheart-theah.talents.Item.efb4204df8654b3f": {
+    "previous": "Herbal Remedies (Lore)",
+    "current": "Herbal Remedies"
+  },
+  "Compendium.daggerheart-theah.talents.Item.502bfb4c6fae2178": {
+    "previous": "Keen Intuition (Lore)",
+    "current": "Keen Intuition"
+  },
+  "Compendium.daggerheart-theah.talents.Item.795f3e0e914114b3": {
+    "previous": "Lorekeeper (Lore)",
+    "current": "Lorekeeper"
+  },
+  "Compendium.daggerheart-theah.talents.Item.58d88d086ceb0887": {
+    "previous": "Measured Counsel (Lore)",
+    "current": "Measured Counsel"
+  },
+  "Compendium.daggerheart-theah.talents.Item.4fc29bf21dd33d63": {
+    "previous": "Physician Training (Lore)",
+    "current": "Physician Training"
+  },
+  "Compendium.daggerheart-theah.talents.Item.6395314dc60581f6": {
+    "previous": "Principia Ascendant (Lore)",
+    "current": "Principia Ascendant"
+  },
+  "Compendium.daggerheart-theah.talents.Item.d622d894f0df2cb2": {
+    "previous": "Quick Assist (Lore)",
+    "current": "Quick Assist"
+  },
+  "Compendium.daggerheart-theah.talents.Item.956b313fc8e9135f": {
+    "previous": "Scholar’s Eye (Lore)",
+    "current": "Scholar’s Eye"
+  },
+  "Compendium.daggerheart-theah.talents.Item.cd5cc0e409ec317d": {
+    "previous": "Sound Judgement (Lore)",
+    "current": "Sound Judgement"
+  },
+  "Compendium.daggerheart-theah.talents.Item.e5d4dc8271c42cc6": {
+    "previous": "Steady Hands (Lore)",
+    "current": "Steady Hands"
+  },
+  "Compendium.daggerheart-theah.talents.Item.9961b8bf45295f6b": {
+    "previous": "Deft Deceiver (Poise)",
+    "current": "Deft Deceiver"
+  },
+  "Compendium.daggerheart-theah.talents.Item.26188adfd9118fea": {
+    "previous": "Gentle Words (Poise)",
+    "current": "Gentle Words"
+  },
+  "Compendium.daggerheart-theah.talents.Item.58771b177439a089": {
+    "previous": "Menacing Quip (Poise)",
+    "current": "Menacing Quip"
+  },
+  "Compendium.daggerheart-theah.talents.Item.20ccb14428990052": {
+    "previous": "Never Upstaged (Poise)",
+    "current": "Never Upstaged"
+  },
+  "Compendium.daggerheart-theah.talents.Item.dc852e743122919d": {
+    "previous": "Raw Magnetism (Poise)",
+    "current": "Raw Magnetism"
+  },
+  "Compendium.daggerheart-theah.talents.Item.29b2d8d181ec67cd": {
+    "previous": "Share the Burden (Poise)",
+    "current": "Share the Burden"
+  },
+  "Compendium.daggerheart-theah.talents.Item.ca18586ddc9a0f6e": {
+    "previous": "Shoulder to Shoulder (Poise)",
+    "current": "Shoulder to Shoulder"
+  },
+  "Compendium.daggerheart-theah.talents.Item.af06a65be44e7923": {
+    "previous": "Soothing Speech (Poise)",
+    "current": "Soothing Speech"
+  },
+  "Compendium.daggerheart-theah.talents.Item.45cc22b791dbb53c": {
+    "previous": "Troublemaker (Poise)",
+    "current": "Troublemaker"
+  },
+  "Compendium.daggerheart-theah.talents.Item.fc93d1a8263f59ef": {
+    "previous": "Unnatural Charisma (Poise)",
+    "current": "Unnatural Charisma"
+  },
+  "Compendium.daggerheart-theah.talents.Item.b5c86b530f66a9b4": {
+    "previous": "Chokehold (Shade)",
+    "current": "Chokehold"
+  },
+  "Compendium.daggerheart-theah.talents.Item.e8c22b8956397c2c": {
+    "previous": "Escape Route (Shade)",
+    "current": "Escape Route"
+  },
+  "Compendium.daggerheart-theah.talents.Item.9598b412f5df84fe": {
+    "previous": "Interrogation Tactics (Shade)",
+    "current": "Interrogation Tactics"
+  },
+  "Compendium.daggerheart-theah.talents.Item.0f8de6ca971a58ea": {
+    "previous": "Secrets Abound (Shade)",
+    "current": "Secrets Abound"
+  },
+  "Compendium.daggerheart-theah.talents.Item.30a59bef829aeb31": {
+    "previous": "Stealth Expertise (Shade)",
+    "current": "Stealth Expertise"
+  },
+  "Compendium.daggerheart-theah.talents.Item.673356132db52646": {
+    "previous": "Study Mark (Shade)",
+    "current": "Study Mark"
+  },
+  "Compendium.daggerheart-theah.talents.Item.51c4b1f87750b7d3": {
+    "previous": "Takedown (Shade)",
+    "current": "Takedown"
+  },
+  "Compendium.daggerheart-theah.talents.Item.c5d419279dd789d7": {
+    "previous": "Thieves’ Cant (Shade)",
+    "current": "Thieves’ Cant"
+  },
+  "Compendium.daggerheart-theah.talents.Item.f2179cfd117333a5": {
+    "previous": "Uncanny Disguise (Shade)",
+    "current": "Uncanny Disguise"
+  },
+  "Compendium.daggerheart-theah.talents.Item.8098777735f3bb87": {
+    "previous": "Vanish (Shade)",
+    "current": "Vanish"
+  },
+  "Compendium.daggerheart-theah.talents.Item.6483637cd8e69453": {
+    "previous": "Battle-Hardened (Steel)",
+    "current": "Battle-Hardened"
+  },
+  "Compendium.daggerheart-theah.talents.Item.b8d07e2657a419f5": {
+    "previous": "Deadly Gambit (Steel)",
+    "current": "Deadly Gambit"
+  },
+  "Compendium.daggerheart-theah.talents.Item.a6959d92daf66236": {
+    "previous": "Fortified (Steel)",
+    "current": "Fortified"
+  },
+  "Compendium.daggerheart-theah.talents.Item.7543415716504c9f": {
+    "previous": "Get Back Up (Steel)",
+    "current": "Get Back Up"
+  },
+  "Compendium.daggerheart-theah.talents.Item.5837e7fcd29779b1": {
+    "previous": "Moulinet (Steel)",
+    "current": "Moulinet"
+  },
+  "Compendium.daggerheart-theah.talents.Item.f3bf950b5cf2c6c6": {
+    "previous": "Reckless (Steel)",
+    "current": "Reckless"
+  },
+  "Compendium.daggerheart-theah.talents.Item.98561ea613d4cfaf": {
+    "previous": "Scramble (Steel)",
+    "current": "Scramble"
+  },
+  "Compendium.daggerheart-theah.talents.Item.79f232be5741dc0c": {
+    "previous": "Steel’s Promise (Steel)",
+    "current": "Steel’s Promise"
+  },
+  "Compendium.daggerheart-theah.talents.Item.86f359481ac308f8": {
+    "previous": "Vicious (Steel)",
+    "current": "Vicious"
+  },
+  "Compendium.daggerheart-theah.talents.Item.3b985db4a1159b83": {
+    "previous": "Weaponmaster (Steel)",
+    "current": "Weaponmaster"
+  },
+  "Compendium.daggerheart-theah.talents.Item.7a5a0b2f35f24ad9": {
+    "previous": "A Hero’s Bond (Tactics)",
+    "current": "A Hero’s Bond"
+  },
+  "Compendium.daggerheart-theah.talents.Item.fb6c40d1e9814547": {
+    "previous": "Brace (Tactics)",
+    "current": "Brace"
+  },
+  "Compendium.daggerheart-theah.talents.Item.a78027596aaa6384": {
+    "previous": "Dueling Style (Tactics)",
+    "current": "Dueling Style"
+  },
+  "Compendium.daggerheart-theah.talents.Item.6edb6f47902e5fa0": {
+    "previous": "Fast Guard (Tactics)",
+    "current": "Fast Guard"
+  },
+  "Compendium.daggerheart-theah.talents.Item.b9b3569f141879c1": {
+    "previous": "Redirect (Tactics)",
+    "current": "Redirect"
+  },
+  "Compendium.daggerheart-theah.talents.Item.90a64afaa789dd16": {
+    "previous": "Rapid Riposte (Tactics)",
+    "current": "Rapid Riposte"
+  },
+  "Compendium.daggerheart-theah.talents.Item.cf1570da0df7634e": {
+    "previous": "Swift Defense (Tactics)",
+    "current": "Swift Defense"
+  },
+  "Compendium.daggerheart-theah.talents.Item.d11960bca93f37b9": {
+    "previous": "Tactician’s Reflexes (Tactics)",
+    "current": "Tactician’s Reflexes"
+  },
+  "Compendium.daggerheart-theah.talents.Item.76b6b994c543eee5": {
+    "previous": "Turning Tide (Tactics)",
+    "current": "Turning Tide"
+  },
+  "Compendium.daggerheart-theah.talents.Item.34f2ea72c9c0c3a8": {
+    "previous": "Veteran’s Rest (Tactics)",
+    "current": "Veteran’s Rest"
+  },
+  "Compendium.daggerheart-theah.talents.Item.5d51a8315d3d45c3": {
+    "previous": "All or Nothing (Valour)",
+    "current": "All or Nothing"
+  },
+  "Compendium.daggerheart-theah.talents.Item.1f26828e75e1b40b": {
+    "previous": "Avatar (Valour)",
+    "current": "Avatar"
+  },
+  "Compendium.daggerheart-theah.talents.Item.b3d5e328b6c672ba": {
+    "previous": "Flash of Courage (Valour)",
+    "current": "Flash of Courage"
+  },
+  "Compendium.daggerheart-theah.talents.Item.756b2404282af4d4": {
+    "previous": "I Am Your Shield (Valour)",
+    "current": "I Am Your Shield"
+  },
+  "Compendium.daggerheart-theah.talents.Item.576ab0c5078d8352": {
+    "previous": "Intense Conviction (Valour)",
+    "current": "Intense Conviction"
+  },
+  "Compendium.daggerheart-theah.talents.Item.0a9ffd852dc7b955": {
+    "previous": "Lean on me (Valour)",
+    "current": "Lean on me"
+  },
+  "Compendium.daggerheart-theah.talents.Item.f56dcaa9ea23a59f": {
+    "previous": "Rallying Blow (Valour)",
+    "current": "Rallying Blow"
+  },
+  "Compendium.daggerheart-theah.talents.Item.98a2dffda63d0ff0": {
+    "previous": "Second Wind (Valour)",
+    "current": "Second Wind"
+  },
+  "Compendium.daggerheart-theah.talents.Item.5c32448a45f68494": {
+    "previous": "Shrug It Off (Valour)",
+    "current": "Shrug It Off"
+  },
+  "Compendium.daggerheart-theah.talents.Item.8fd54a909f215e01": {
+    "previous": "Unbowed (Valour)",
+    "current": "Unbowed"
+  },
+  "Compendium.daggerheart-theah.talents.Item.6fda6463d5eb8541": {
+    "previous": "Geas (Druidism)",
+    "current": "Geas"
+  },
+  "Compendium.daggerheart-theah.talents.Item.3cab72510992cbb6": {
+    "previous": "Beastform (Druidism)",
+    "current": "Beastform"
+  },
+  "Compendium.daggerheart-theah.talents.Item.39651f0fcfedff51": {
+    "previous": "Wildtouch (Druidism)",
+    "current": "Wildtouch"
+  },
+  "Compendium.daggerheart-theah.talents.Item.cf433c2d5f63d2dc": {
+    "previous": "Nature's Tongue (Druidism)",
+    "current": "Nature's Tongue"
+  },
+  "Compendium.daggerheart-theah.talents.Item.e388faf9b12bafad": {
+    "previous": "Vicious Entangle (Druidism)",
+    "current": "Vicious Entangle"
+  },
+  "Compendium.daggerheart-theah.talents.Item.aa6d916cf7ff37a9": {
+    "previous": "Beseech (Dar Matushki)",
+    "current": "Beseech"
+  },
+  "Compendium.daggerheart-theah.talents.Item.df15c7d24be26f6c": {
+    "previous": "Mother's Lesson (Dar Matushki)",
+    "current": "Mother's Lesson"
+  },
+  "Compendium.daggerheart-theah.talents.Item.357d5c8c90a105ac": {
+    "previous": "Mother's Gift (Dar Matushki)",
+    "current": "Mother's Gift"
+  },
+  "Compendium.daggerheart-theah.talents.Item.4b701ad805c582ff": {
+    "previous": "Mother's Bargain (Dar Matushki)",
+    "current": "Mother's Bargain"
+  },
+  "Compendium.daggerheart-theah.talents.Item.20e72c8c4f5b77a3": {
+    "previous": "Walk Between Worlds (Dar Matushki)",
+    "current": "Walk Between Worlds"
+  },
+  "Compendium.daggerheart-theah.talents.Item.2bb76e9196c59e93": {
+    "previous": "Rune of the First Word (Galdr)",
+    "current": "Rune of the First Word"
+  },
+  "Compendium.daggerheart-theah.talents.Item.74c14f1dc2671ddd": {
+    "previous": "Rune of Ekerila (Galdr)",
+    "current": "Rune of Ekerila"
+  },
+  "Compendium.daggerheart-theah.talents.Item.f28f2949425c2a63": {
+    "previous": "Rune of Rewrite (Galdr)",
+    "current": "Rune of Rewrite"
+  },
+  "Compendium.daggerheart-theah.talents.Item.7c08cf9820c5feb9": {
+    "previous": "Rune of Binding (Galdr)",
+    "current": "Rune of Binding"
+  },
+  "Compendium.daggerheart-theah.talents.Item.e246c2f08bb82fac": {
+    "previous": "Rune of Retribution (Galdr)",
+    "current": "Rune of Retribution"
+  },
+  "Compendium.daggerheart-theah.talents.Item.f711fd169cf289c0": {
+    "previous": "Radiate (Fire Within)",
+    "current": "Radiate"
+  },
+  "Compendium.daggerheart-theah.talents.Item.8f5157ad4c20226e": {
+    "previous": "Heartflare (Fire Within)",
+    "current": "Heartflare"
+  },
+  "Compendium.daggerheart-theah.talents.Item.be4b98d1aedd4fdd": {
+    "previous": "Wrathful Flames (Fire Within)",
+    "current": "Wrathful Flames"
+  },
+  "Compendium.daggerheart-theah.talents.Item.bcd383f50872caf9": {
+    "previous": "Cleansing Flames (Fire Within)",
+    "current": "Cleansing Flames"
+  },
+  "Compendium.daggerheart-theah.talents.Item.9aa372bab87142bf": {
+    "previous": "Embers Yet Burn (Fire Within)",
+    "current": "Embers Yet Burn"
+  },
+  "Compendium.daggerheart-theah.talents.Item.6d836f2d859de4b4": {
+    "previous": "Knightly Embodiment (Glamour)",
+    "current": "Knightly Embodiment"
+  },
+  "Compendium.daggerheart-theah.talents.Item.7a94661df82e6a05": {
+    "previous": "Heroes of Legend (Glamour)",
+    "current": "Heroes of Legend"
+  },
+  "Compendium.daggerheart-theah.talents.Item.2b1325152cd8e6c7": {
+    "previous": "Sidhe Charisma (Glamour)",
+    "current": "Sidhe Charisma"
+  },
+  "Compendium.daggerheart-theah.talents.Item.ad771166e6aca101": {
+    "previous": "Hypnotic Shimmer (Glamour)",
+    "current": "Hypnotic Shimmer"
+  },
+  "Compendium.daggerheart-theah.talents.Item.110c61e4780762d9": {
+    "previous": "Mirrorwalk (Glamour)",
+    "current": "Mirrorwalk"
+  },
+  "Compendium.daggerheart-theah.talents.Item.9cb33dc99e49a67a": {
+    "previous": "Banish Horror (Hexenwerk)",
+    "current": "Banish Horror"
+  },
+  "Compendium.daggerheart-theah.talents.Item.57cb81e5c1d909d3": {
+    "previous": "Create Horror (Hexenwerk)",
+    "current": "Create Horror"
+  },
+  "Compendium.daggerheart-theah.talents.Item.f05e1174c16faf78": {
+    "previous": "Hexen’s Potions (Hexenwerk)",
+    "current": "Hexen’s Potions"
+  },
+  "Compendium.daggerheart-theah.talents.Item.c9e0dee81bb0b86e": {
+    "previous": "Hexen’s Unguents (Hexenwerk)",
+    "current": "Hexen’s Unguents"
+  },
+  "Compendium.daggerheart-theah.talents.Item.97fa93effaddfecf": {
+    "previous": "Hexen’s Talismans (Hexenwerk)",
+    "current": "Hexen’s Talismans"
+  },
+  "Compendium.daggerheart-theah.talents.Item.5c769438fd3c92da": {
+    "previous": "Blood Portal (Porte)",
+    "current": "Blood Portal"
+  },
+  "Compendium.daggerheart-theah.talents.Item.b3c59e5387bb0cb7": {
+    "previous": "Blood Walkway (Porte)",
+    "current": "Blood Walkway"
+  },
+  "Compendium.daggerheart-theah.talents.Item.adda83b26538ce35": {
+    "previous": "Bloodboil (Porte)",
+    "current": "Bloodboil"
+  },
+  "Compendium.daggerheart-theah.talents.Item.f3615ac5cc179497": {
+    "previous": "Blood Puppet (Porte)",
+    "current": "Blood Puppet"
+  },
+  "Compendium.daggerheart-theah.talents.Item.196712caaf45db42": {
+    "previous": "The Blood Remembers (Porte)",
+    "current": "The Blood Remembers"
+  },
+  "Compendium.daggerheart-theah.talents.Item.e080022f6fa46921": {
+    "previous": "Alter Fate (Sorte)",
+    "current": "Alter Fate"
+  },
+  "Compendium.daggerheart-theah.talents.Item.172a70e3cc1db7f1": {
+    "previous": "Strange Patterns (Sorte)",
+    "current": "Strange Patterns"
+  },
+  "Compendium.daggerheart-theah.talents.Item.85b932f5bf116095": {
+    "previous": "Pull the Strands (Sorte)",
+    "current": "Pull the Strands"
+  },
+  "Compendium.daggerheart-theah.talents.Item.309d0c28b02f0ebb": {
+    "previous": "Threads of Misfortune (Sorte)",
+    "current": "Threads of Misfortune"
+  },
+  "Compendium.daggerheart-theah.talents.Item.dddb52483969a9a6": {
+    "previous": "Threads of Memory (Sorte)",
+    "current": "Threads of Memory"
+  },
+  "Compendium.daggerheart-theah.features.Item.09da84128694020c": {
+    "previous": "Sanderis: The Contract",
+    "current": "The Contract"
+  },
+  "Compendium.daggerheart-theah.talents.Item.64dc6e63daaaafde": {
+    "previous": "Bargain of Borrowed Flesh (Sanderis)",
+    "current": "Bargain of Borrowed Flesh"
+  },
+  "Compendium.daggerheart-theah.talents.Item.65abe998d72355fb": {
+    "previous": "Bargain of the Borrowed Breath (Sanderis)",
+    "current": "Bargain of the Borrowed Breath"
+  },
+  "Compendium.daggerheart-theah.talents.Item.8fbd592ef12ee4d8": {
+    "previous": "Bargain of Waning Fortune (Sanderis)",
+    "current": "Bargain of Waning Fortune"
+  },
+  "Compendium.daggerheart-theah.talents.Item.5d9f1e3141b0e174": {
+    "previous": "Bargain of Fading Might (Sanderis)",
+    "current": "Bargain of Fading Might"
+  },
+  "Compendium.daggerheart-theah.talents.Item.ca35bb468819687c": {
+    "previous": "Bargain of the Hungry Flame (Sanderis)",
+    "current": "Bargain of the Hungry Flame"
+  },
+  "Compendium.daggerheart-theah.talents.Item.1389585af94789d2": {
+    "previous": "Path of the Devout (Art of the Second Prophet)",
+    "current": "Path of the Devout"
+  },
+  "Compendium.daggerheart-theah.talents.Item.4ee2cef891141aab": {
+    "previous": "Path of the Humble (Art of the Second Prophet)",
+    "current": "Path of the Humble"
+  },
+  "Compendium.daggerheart-theah.talents.Item.298915daeda4bd03": {
+    "previous": "Path of the Just (Art of the Second Prophet)",
+    "current": "Path of the Just"
+  },
+  "Compendium.daggerheart-theah.talents.Item.a7d22629849abf03": {
+    "previous": "Path of the Merciful (Art of the Second Prophet)",
+    "current": "Path of the Merciful"
+  },
+  "Compendium.daggerheart-theah.talents.Item.127b71ab816c1661": {
+    "previous": "path of the Pariah (Art of the Second Prophet)",
+    "current": "path of the Pariah"
+  },
+  "Compendium.daggerheart-theah.features.Item.cdca5584882740d9": {
+    "previous": "Agile Scout: Agile",
+    "current": "Agile"
+  },
+  "Compendium.daggerheart-theah.features.Item.a709661ef364714f": {
+    "previous": "Agile Scout: Fragile",
+    "current": "Fragile"
+  },
+  "Compendium.daggerheart-theah.features.Item.0270c2b72aef94f7": {
+    "previous": "Household Friend: Companion",
+    "current": "Companion"
+  },
+  "Compendium.daggerheart-theah.features.Item.237677b446ca8385": {
+    "previous": "Household Friend: Fragile",
+    "current": "Fragile"
+  },
+  "Compendium.daggerheart-theah.features.Item.621ae63f21a97030": {
+    "previous": "Pack Predator: Hobbling Strike",
+    "current": "Hobbling Strike"
+  },
+  "Compendium.daggerheart-theah.features.Item.7bf0355f9fdcd9aa": {
+    "previous": "Pack Predator: Pack Hunting",
+    "current": "Pack Hunting"
+  },
+  "Compendium.daggerheart-theah.features.Item.d0f492506228771d": {
+    "previous": "Pack Predator: Sturdy",
+    "current": "Sturdy"
+  },
+  "Compendium.daggerheart-theah.features.Item.5088e858a31c0cda": {
+    "previous": "Powerful Beast: Rampage",
+    "current": "Rampage"
+  },
+  "Compendium.daggerheart-theah.features.Item.0b12219046d9bd42": {
+    "previous": "Powerful Beast: Thick Hide",
+    "current": "Thick Hide"
+  },
+  "Compendium.daggerheart-theah.features.Item.a4267bb78d4e38a3": {
+    "previous": "Powerful Beast: Sturdy",
+    "current": "Sturdy"
+  },
+  "Compendium.daggerheart-theah.features.Item.bc45caddbdc74cda": {
+    "previous": "Pouncing Predator: Fleet",
+    "current": "Fleet"
+  },
+  "Compendium.daggerheart-theah.features.Item.840aa7ee8c946f30": {
+    "previous": "Pouncing Predator: Takedown",
+    "current": "Takedown"
+  },
+  "Compendium.daggerheart-theah.features.Item.a3ed2419aab3b3d5": {
+    "previous": "Pouncing Predator: Sturdy",
+    "current": "Sturdy"
+  },
+  "Compendium.daggerheart-theah.features.Item.2f3b8f0ccd048c05": {
+    "previous": "Mighty Strider: Carrier",
+    "current": "Carrier"
+  },
+  "Compendium.daggerheart-theah.features.Item.24cb12d431a3c710": {
+    "previous": "Mighty Strider: Trample",
+    "current": "Trample"
+  },
+  "Compendium.daggerheart-theah.features.Item.5da168939d43f8a7": {
+    "previous": "Mighty Strider: Fragile",
+    "current": "Fragile"
+  }
+}

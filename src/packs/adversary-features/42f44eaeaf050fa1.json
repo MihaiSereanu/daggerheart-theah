@@ -1,0 +1,15 @@
+{
+  "_id": "42f44eaeaf050fa1",
+  "name": "Crown of Serpents",
+  "type": "feature",
+  "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+  "system": {
+    "description": "<p>Make an attack roll against a target within Melee using her snakes. On a success, <strong>mark a Stress</strong> to deal 2d10+4 physical damage and the target must <strong>mark a Stress</strong>.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!42f44eaeaf050fa1"
+}

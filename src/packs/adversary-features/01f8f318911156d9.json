@@ -1,0 +1,15 @@
+{
+  "_id": "01f8f318911156d9",
+  "name": "Tactician",
+  "type": "feature",
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "system": {
+    "description": "<p>When you spotlight the adversary, <strong>mark a Stress</strong> to also spotlight two allies within Close range.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!01f8f318911156d9"
+}

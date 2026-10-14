@@ -1,0 +1,15 @@
+{
+  "_id": "a869ab133b909b92",
+  "name": "Hopehold Flare",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Hopehold Flare</strong>: When you use this flare, allies within Close range roll a d6 when they <strong>spend a Hope</strong>. On a result of 6, they gain the effect of that Hope without spending it. The flare lasts until the end of the scene.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!a869ab133b909b92"
+}

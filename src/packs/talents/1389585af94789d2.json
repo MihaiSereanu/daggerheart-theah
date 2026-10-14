@@ -1,0 +1,20 @@
+{
+  "_id": "1389585af94789d2",
+  "name": "Path of the Devout",
+  "type": "domainCard",
+  "img": "icons/sundries/books/book-symbol-canterbury-cross.webp",
+  "system": {
+    "description": "<p>The Path of the Devout shows you how to protect yourself and others against foul Sorcery. When you would be affected by magic, you can <strong>spend any number of Hope</strong> to roll that many d6s. If any roll is a 6, the magic is nullified.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "artofthesecondprophet",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "5b8c67f9d145528b",
+  "_key": "!items!1389585af94789d2"
+}

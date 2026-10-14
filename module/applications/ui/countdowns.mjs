@@ -50,7 +50,7 @@ export default class DhCountdowns extends HandlebarsApplicationMixin(Application
     static PARTS = {
         resources: {
             root: true,
-            template: 'systems/daggerheart/templates/ui/countdowns/countdowns-view.hbs',
+            template: 'systems/daggerheart-theah/templates/ui/countdowns/countdowns-view.hbs',
             scrollable: ['.countdowns-container']
         }
     };

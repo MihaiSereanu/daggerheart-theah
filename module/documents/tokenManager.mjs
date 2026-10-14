@@ -52,7 +52,7 @@ export default class DhTokenManager {
                 name: tokenData.tokenPreviewName,
                 level: game.user.viewedLevel,
                 elevation: createElevation,
-                flags: { daggerheart: { createPlacement: true } }
+                flags: { 'daggerheart-theah': { createPlacement: true } }
             });
             if (!previewToken) return null;
 

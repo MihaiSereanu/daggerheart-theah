@@ -1,0 +1,15 @@
+{
+  "_id": "08a97e1cff5c0aa9",
+  "name": "Stylish Gambits",
+  "type": "feature",
+  "img": "icons/skills/melee/sword-twirl-orange.webp",
+  "system": {
+    "description": "<p>After you make an Action Roll but before the GM communicates the result, you may take a 1d4 penalty. If the roll still succeeds, you gain a <strong>D6 Style die</strong>. You may spend and roll a Style die to add its result to any roll you make. You can hold a number of Style dice up to your Finesse.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "9e9b9043142f4705",
+  "_key": "!items!08a97e1cff5c0aa9"
+}

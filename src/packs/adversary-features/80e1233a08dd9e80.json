@@ -1,0 +1,15 @@
+{
+  "_id": "80e1233a08dd9e80",
+  "name": "Pick Your Target",
+  "type": "feature",
+  "img": "icons/creatures/eyes/humanoid-single-purple-blue.webp",
+  "system": {
+    "description": "<p>Spend a Fear to make an attack within Far range against a PC who is within Very Close range of at least two other PCs. On a success, the target takes 2d8+12 physical damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!80e1233a08dd9e80"
+}

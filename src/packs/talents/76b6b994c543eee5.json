@@ -1,0 +1,20 @@
+{
+  "_id": "76b6b994c543eee5",
+  "name": "Turning Tide",
+  "type": "domainCard",
+  "img": "icons/skills/melee/swords-parry-block-yellow.webp",
+  "system": {
+    "description": "<p>When you cause an adversary to mark 2 or more HP, you can spend a Hope to make the GM lose 2 Fear.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "tactics",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "6ba62ee322f96c14",
+  "_key": "!items!76b6b994c543eee5"
+}

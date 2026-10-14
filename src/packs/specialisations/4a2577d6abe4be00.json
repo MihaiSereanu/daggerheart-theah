@@ -1,0 +1,27 @@
+{
+  "_id": "4a2577d6abe4be00",
+  "name": "Mercenary",
+  "type": "subclass",
+  "img": "icons/skills/melee/shield-block-bash-blue.webp",
+  "system": {
+    "description": "<p>Play the Mercenary if you want to strike down enemies who harm you or your allies.</p>\n<h4>Features</h4>\n<p><strong>Revenge</strong>. When an adversary within Melee deals damage to you, you may <strong>mark a Stress</strong> to force them to mark a HP.</p>\n<p><strong>Focused Reprisal</strong>. When an adversary damages an ally within Melee range, gain an extra d6 damage bonus on your next successful attack against them.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.a0f9c2617d466398",
+    "spellcastingTrait": null,
+    "features": [
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.0edc38c445cce8be"
+      },
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.e8d324e8ec089889"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": "c740b103d1776d80",
+  "_key": "!items!4a2577d6abe4be00"
+}

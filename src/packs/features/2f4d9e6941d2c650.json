@@ -1,0 +1,15 @@
+{
+  "_id": "2f4d9e6941d2c650",
+  "name": "Flourish",
+  "type": "feature",
+  "img": "icons/skills/melee/sword-twirl-orange.webp",
+  "system": {
+    "description": "<p>During a combat scene, you may spend Style Dice to gain a number of Flourishes equal to its rolled value. Unspent Flourishes are lost when the combat scene ends. A Flourish can be spent on the following options:</p>\n<ul>\n<li><strong>Bind</strong>. When you make a successful attack against an adversary, making them Restrained until they pass a Brawn (15) Reaction Roll</li>\n<li><strong>Parry</strong>. When an adversary makes an attack roll against you, increase your Evasion by your Finesse.</li>\n<li><strong>Riposte</strong>. When an enemy misses you with an attack within Melee, make an attack against them. If this attack deals Severe damage, the enemy must mark an additional Hit Point.</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "fabc53f3d627635a",
+  "_key": "!items!2f4d9e6941d2c650"
+}

@@ -1,0 +1,25 @@
+{
+  "_id": "e75681956236832a",
+  "name": "Sarmatia",
+  "type": "ancestry",
+  "img": "icons/environment/creatures/horse-white.webp",
+  "system": {
+    "description": "<p><strong>Enlightened</strong>. Choose one of your Experiences that best aligns with your purpose and gain a permanent +1 bonus to it.</p>\n<p><strong>Resilient</strong>. When you take a Recovery Move during a rest, you always recover the maximum amount.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "features": [
+      {
+        "type": "primary",
+        "item": "Compendium.daggerheart-theah.features.Item.ad3dff64fe45c6ba"
+      },
+      {
+        "type": "secondary",
+        "item": "Compendium.daggerheart-theah.features.Item.271606c46492c05a"
+      }
+    ],
+    "loreReference": null
+  },
+  "effects": [],
+  "_key": "!items!e75681956236832a"
+}

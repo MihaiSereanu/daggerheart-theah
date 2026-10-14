@@ -1,0 +1,28 @@
+{
+  "_id": "20e72c8c4f5b77a3",
+  "name": "Walk Between Worlds",
+  "type": "domainCard",
+  "img": "icons/creatures/abilities/bear-roar-bite-brown-green.webp",
+  "system": {
+    "description": "<p>Make a <strong>Spellcast Roll (15)</strong> to step beyond the mortal veil and converse with nearby spirits. You gain a number of Uses equal to your Charm, which can be spent to seek answers from the spirits. Each time they answer, spend one Use. You return to the mortal realm when the last use is expended.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "darmatushki",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false,
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "@charmCount",
+      "recovery": null,
+      "progression": "increasing",
+      "label": "Uses"
+    }
+  },
+  "effects": [],
+  "folder": "afc4243e401cd19b",
+  "_key": "!items!20e72c8c4f5b77a3"
+}

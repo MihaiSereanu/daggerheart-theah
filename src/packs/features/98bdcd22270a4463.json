@@ -1,0 +1,15 @@
+{
+  "_id": "98bdcd22270a4463",
+  "name": "Resourceful",
+  "type": "feature",
+  "img": "icons/sundries/books/book-open-turquoise.webp",
+  "system": {
+    "description": "<p>When you spend Supply to pull a device or implement from your backpack to solve a problem, you may <strong>spend a Hope</strong> to gain Advantage on rolls that make use of it. In addition, your Supply only deteriorates on a roll of 1.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "0f8f9e321cf3957a",
+  "_key": "!items!98bdcd22270a4463"
+}

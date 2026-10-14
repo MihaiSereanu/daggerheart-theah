@@ -1,0 +1,15 @@
+{
+  "_id": "3e81ff16e1be4e46",
+  "name": "Gem of Insight",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Gem of Insight</strong>: You can attach this gem to a weapon, allowing you to use your Instinct instead of the listed traitn.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!3e81ff16e1be4e46"
+}

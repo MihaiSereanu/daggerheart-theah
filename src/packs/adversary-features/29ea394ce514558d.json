@@ -1,0 +1,15 @@
+{
+  "_id": "29ea394ce514558d",
+  "name": "Minion (4)",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-sword-blue.webp",
+  "system": {
+    "description": "<p>The adversary is defeated by any damage. For every 4 damage a PC deals to an adversary with this feature, defeat one additional Minion within any range the same attack would have hit.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!29ea394ce514558d"
+}

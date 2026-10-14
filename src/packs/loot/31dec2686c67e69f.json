@@ -1,0 +1,15 @@
+{
+  "_id": "31dec2686c67e69f",
+  "name": "Recipe: Draught of Endurance",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Recipe: Draught of Endurance</strong>: As a downtime move, you can use the bone of a creature to craft a Vial of Spiritus.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!31dec2686c67e69f"
+}

@@ -1,0 +1,14 @@
+{
+  "_id": "c15b9aed6bfd5809",
+  "name": "Valour",
+  "type": "feature",
+  "img": "icons/equipment/shield/heater-steel-gold.webp",
+  "system": {
+    "description": "<h2>Valour</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.5d51a8315d3d45c3]{All or Nothing}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.1f26828e75e1b40b]{Avatar}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.b3d5e328b6c672ba]{Flash of Courage}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.756b2404282af4d4]{I Am Your Shield}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.576ab0c5078d8352]{Intense Conviction}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.0a9ffd852dc7b955]{Lean on me}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.f56dcaa9ea23a59f]{Rallying Blow}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.98a2dffda63d0ff0]{Second Wind}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.5c32448a45f68494]{Shrug It Off}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.8fd54a909f215e01]{Unbowed}</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!c15b9aed6bfd5809"
+}

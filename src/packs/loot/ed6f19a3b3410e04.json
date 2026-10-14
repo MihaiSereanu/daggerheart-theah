@@ -1,0 +1,15 @@
+{
+  "_id": "ed6f19a3b3410e04",
+  "name": "Echo Orbs",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Echo Orbs</strong>: This pair of orbs allows any creatures holding them to communicate with each other across any distance.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!ed6f19a3b3410e04"
+}

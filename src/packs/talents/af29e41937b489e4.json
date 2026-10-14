@@ -1,0 +1,20 @@
+{
+  "_id": "af29e41937b489e4",
+  "name": "No Time for Henchmen",
+  "type": "domainCard",
+  "img": "icons/skills/melee/strike-blade-scimitar-orange-blue.webp",
+  "system": {
+    "description": "<p>When attacking a Minion or a Standard enemy, if you succeed with Fear, you may treat it as a success with Hope instead. If you fail, you must <strong>mark a Stress</strong>.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "flair",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "4c13446263efc38b",
+  "_key": "!items!af29e41937b489e4"
+}

@@ -1,0 +1,47 @@
+{
+  "_id": "fed6aa238e5808e9",
+  "name": "Ambushed",
+  "type": "environment",
+  "img": "systems/daggerheart-theah/assets/icons/documents/actors/forest.svg",
+  "system": {
+    "description": "<p><em>An ambush is set to catch an unsuspecting party off-guard.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "standard",
+    "type": "event",
+    "difficulty": 10,
+    "notes": "<h3>Standard | Event</h3>\n<p><em>An ambush is set to catch an unsuspecting party off-guard.</em><br><strong>Impulses:</strong> Overwhelm, scatter, surround</p>\n<p><strong>Difficulty:</strong> Special - see <strong>Relative Strength</strong></p>\n<h4>Features</h4>\n<p><strong>Relative Strength - Passive:</strong> The Difficulty of this environment equals that of the adversary with the highest Difficulty.</p>\n<p><strong>Surprise! - Action:</strong> The ambushers reveal themselves to the party, you gain 2 Fear, and the spotlight immediately shifts to one of the ambushing adversaries</p>\n",
+    "impulses": "Overwhelm, scatter, surround"
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "9a96079ac3f12d09",
+      "name": "Relative Strength - Passive",
+      "type": "feature",
+      "img": "icons/tools/navigation/compass-brass-blue-red.webp",
+      "system": {
+        "description": "<p>The Difficulty of this environment equals that of the adversary with the highest Difficulty.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!fed6aa238e5808e9.9a96079ac3f12d09"
+    },
+    {
+      "_id": "dde5ccfc67a91b58",
+      "name": "Surprise! - Action",
+      "type": "feature",
+      "img": "icons/skills/melee/swords-parry-block-yellow.webp",
+      "system": {
+        "description": "<p>The ambushers reveal themselves to the party, you gain 2 Fear, and the spotlight immediately shifts to one of the ambushing adversaries</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!fed6aa238e5808e9.dde5ccfc67a91b58"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Ambushed",
+    "actorLink": false
+  },
+  "_key": "!actors!fed6aa238e5808e9"
+}

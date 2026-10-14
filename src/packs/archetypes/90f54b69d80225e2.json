@@ -1,0 +1,50 @@
+{
+  "_id": "90f54b69d80225e2",
+  "name": "Minstrel",
+  "type": "class",
+  "img": "icons/tools/instruments/lute-gold-brown.webp",
+  "system": {
+    "description": "<p>Minstrels are the glittering heart of any salon, tavern, or court gathering. They are charismatic figures who command attention with voice, verse, and presence. They specialize in every form of performance: song, storytelling, satire, and stagecraft, spinning charm into currency and words into weapons. Many are trained in academies or theatrical guilds, while others rise from the streets with nothing but talent and audacity. Though they are often the glue that binds a group together, a bard&#39;s vanity or sharp tongue can just as easily turn allies into rivals. In Théah, a well-placed lyric can often shift loyalties just as often as spark heated rivalries.</p>\n<h5>STARTING EVASION: 10</h5>\n<h5>STARTING HP: 5</h5>\n<h4>Thematic Items</h4>\n<p>A romance novel or a letter never opened</p>\n<h4>Minstrel’s Hope Feature</h4>\n<p><strong>Make a Scene</strong>. Spend 3 Hope to temporarily <em>Distract</em> a target within Close range, reducing their Difficulty by 2.</p>\n<h4>Archetype Feature</h4>\n<h5>Rally</h5>\n<p>Once per session, describe how you rally the party and give yourself and each of your allies a 1d8 Rally Die. A PC can spend their Rally Die to add its result to an roll, or to clear an amount of Stress equal to its result. At the end of each session, clear all unspent Rally dice.</p>\n<h5>Shake it Off</h5>\n<p>After you roll with Fear, fail an Action Roll, or get hit with an attack, you may <strong>spend a Hope</strong> to clear a Stress. At level 5, you may clear 2 Stress.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "evasion": 10,
+    "hitPoints": 5,
+    "domains": [],
+    "features": [
+      {
+        "type": "hope",
+        "item": "Compendium.daggerheart-theah.features.Item.af621143c978fedc"
+      },
+      {
+        "type": "class",
+        "item": "Compendium.daggerheart-theah.features.Item.7825a6ab092ec950"
+      },
+      {
+        "type": "class",
+        "item": "Compendium.daggerheart-theah.features.Item.01b0677f789cc6b2"
+      }
+    ],
+    "subclasses": [
+      "Compendium.daggerheart-theah.specialisations.Item.3d5a82efab646dc7",
+      "Compendium.daggerheart-theah.specialisations.Item.e59a15cb7b584d57"
+    ],
+    "inventory": {
+      "take": [],
+      "choiceA": [],
+      "choiceB": []
+    },
+    "backgroundQuestions": [
+      "Who from your homeland taught you to speak with such fire?",
+      "You once loved someone deeply. Who were they, and what broke you?",
+      "You idolized a performer or playwright growing up. Who were they, and what do they mean to you?"
+    ],
+    "connections": [
+      "What made you realize we were destined to be close companions?",
+      "What is it I do that gets under your skin?",
+      "Why do you reach for my hand when we are alone?"
+    ]
+  },
+  "effects": [],
+  "_key": "!items!90f54b69d80225e2"
+}

@@ -2,13 +2,13 @@
     <div class="roll-container">
         <div class="roll-part-title"><span>{{title}}</span></div>
 
-        {{#if actionDescription}}{{> 'systems/daggerheart/templates/ui/chat/parts/description-part.hbs'}}{{/if}}
+        {{#if actionDescription}}{{> 'systems/daggerheart-theah/templates/ui/chat/parts/description-part.hbs'}}{{/if}}
         {{#if hasRoll}}
             <div class="roll-part-header"><span>{{localize "DAGGERHEART.GENERAL.result.single"}}</span></div>
-            {{> 'systems/daggerheart/templates/ui/chat/parts/roll-part.hbs'}}
+            {{> 'systems/daggerheart-theah/templates/ui/chat/parts/roll-part.hbs'}}
         {{/if}}
-        {{#if (or hasDamage hasHealing)}}{{> 'systems/daggerheart/templates/ui/chat/parts/damage-part.hbs'}}{{/if}}
+        {{#if (or hasDamage hasHealing)}}{{> 'systems/daggerheart-theah/templates/ui/chat/parts/damage-part.hbs'}}{{/if}}
     </div>
-    {{#if (and hasTarget (or isGM (not parent.system.targeting.usingSelect)))}}{{> 'systems/daggerheart/templates/ui/chat/parts/target-part.hbs'}}{{/if}}
+    {{#if (and hasTarget (or isGM (not parent.system.targeting.usingSelect)))}}{{> 'systems/daggerheart-theah/templates/ui/chat/parts/target-part.hbs'}}{{/if}}
 </div>
-{{#if (or parent.isAuthor canButtonApply)}}{{> 'systems/daggerheart/templates/ui/chat/parts/button-part.hbs'}}{{/if}}
+{{#if (or parent.isAuthor canButtonApply)}}{{> 'systems/daggerheart-theah/templates/ui/chat/parts/button-part.hbs'}}{{/if}}

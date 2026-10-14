@@ -1,0 +1,15 @@
+{
+  "_id": "493b716ccc5cab35",
+  "name": "Luck of the Emerald Isle",
+  "type": "feature",
+  "img": "icons/magic/symbols/clover-luck-white-green.webp",
+  "system": {
+    "description": "<p>At the start of each session, everyone in your party gains a Hope.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "564e04346ce35af7",
+  "_key": "!items!493b716ccc5cab35"
+}

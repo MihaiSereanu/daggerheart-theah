@@ -1,0 +1,50 @@
+{
+  "_id": "c860b8e784f62fb8",
+  "name": "Fanatic",
+  "type": "class",
+  "img": "icons/sundries/books/book-red-cross.webp",
+  "system": {
+    "description": "<p>Fanatics are driven by belief; not always in gods, but in causes, symbols, or the fire of their own unshakable conviction. They are orators, field chaplains, priests of the Vaticine Church and zealous visionaries who stand firm when others falter. Their presence can be calming or strike guilt into wicked hearts.</p>\n<h5>STARTING EVASION: 10</h5>\n<h5>STARTING HP: 5</h5>\n<h4>Thematic Items</h4>\n<p>An item given in gift, or a scroll that you cannot decipher</p>\n<h4>Fanatic&#39;s Hope Feature</h4>\n<p><strong>Unshaken Resolve</strong>. Spend 3 Hope to embolden an ally within Close range. They become Invigorated. The next time they roll with Fear, they regain 1 Hope and add d6 to their roll.</p>\n<h4>Archetype Feature</h4>\n<h5>Creed</h5>\n<p>At the beginning of each session, roll a number of d4s equal to your Instinct and place them on your character sheet. These are your Creed Dice. You can spend any number of Creed Dice to aid yourself or an ally within Far range. You can use a spent die’s value to reduce incoming damage, add to a roll’s result after the roll is made, or gain Hope equal to the result. At the end of each session, clear all unspent dice.</p>\n<h5>Conviction</h5>\n<p>Whenever you fail an Action Roll, you may <strong>mark a Stress</strong> to give yourself advantage after the roll is made. If this causes the roll to succeed, gain a Hope.</p>\n<blockquote>\n<p>You may replace an Archetype feature with a Talent from <strong>the Art of the Second Prophet</strong> - see <em>Appendix</em>. This is a Sorcerous Tradition. You learn further Art Talents via Advancement.</p>\n</blockquote>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "evasion": 10,
+    "hitPoints": 5,
+    "domains": [],
+    "features": [
+      {
+        "type": "hope",
+        "item": "Compendium.daggerheart-theah.features.Item.0f1aa4dee059b096"
+      },
+      {
+        "type": "class",
+        "item": "Compendium.daggerheart-theah.features.Item.e8b6ad49bb64427d"
+      },
+      {
+        "type": "class",
+        "item": "Compendium.daggerheart-theah.features.Item.040f65b32854df66"
+      }
+    ],
+    "subclasses": [
+      "Compendium.daggerheart-theah.specialisations.Item.7417cb04bb7faa6e",
+      "Compendium.daggerheart-theah.specialisations.Item.20a33e39766f0c74"
+    ],
+    "inventory": {
+      "take": [],
+      "choiceA": [],
+      "choiceB": []
+    },
+    "backgroundQuestions": [
+      "What moment proved to you that your beliefs were stronger than fear?",
+      "Were you classically trained in rhetoric and ritual, or shaped by personal revelation?",
+      "Who was the first person you saved, and do they still believe in you?"
+    ],
+    "connections": [
+      "When was the last time I came to your aid?",
+      "Do you believe my strength comes from something greater, or is it all me?",
+      "What chaos did we cause together in the name of a common belief?"
+    ]
+  },
+  "effects": [],
+  "_key": "!items!c860b8e784f62fb8"
+}

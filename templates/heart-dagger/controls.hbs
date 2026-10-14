@@ -1,0 +1,26 @@
+<fieldset class="heart-controls">
+    <legend>Heart &amp; Dagger</legend>
+    <div class="heart-resource-row">
+        <div class="heart-xp-control">
+            <label for="heart-xp-{{document.id}}">XP</label>
+            <input id="heart-xp-{{document.id}}" type="number" min="0" name="system.xp" value="{{source.system.xp}}">
+            {{#if (and heartCanAdvance (not document.system.needsCharacterSetup))}}
+                <button type="button" class="heart-advance" data-action="levelManagement" data-tooltip="Advance">
+                    <i class="fa-solid fa-angles-up" inert></i>
+                </button>
+            {{/if}}
+        </div>
+        <span>Next level: {{heartNextXP}} XP</span>
+        <span>Supply: {{heartSupply}}</span>
+    </div>
+    <div class="heart-actions">
+        {{#if document.system.needsCharacterSetup}}<button type="button" data-action="levelManagement">Create Character</button>{{/if}}
+        <button type="button" data-action="configureCharacter">Character Options</button>
+        <button type="button" data-action="heartSupply">Supply</button>
+        <button type="button" data-action="heartStunt" {{disabled document.system.stuntUsed}}>Stunt</button>
+        {{#if document.system.tradition}}
+            <button type="button" data-action="heartRite">Sorcerous Rite</button>
+        {{/if}}
+        <button type="button" data-action="newSession">Refresh Session</button>
+    </div>
+</fieldset>

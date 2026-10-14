@@ -1,0 +1,15 @@
+{
+  "_id": "e4e574b6324cff34",
+  "name": "Veteran’s Loyalty",
+  "type": "feature",
+  "img": "icons/equipment/shield/heater-steel-gold.webp",
+  "system": {
+    "description": "<p>When the adversary is within Very Close range of an ally who would take damage, you can <strong>mark a Stress</strong> to move into Melee range of them and take the damage instead.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "reaction"
+  },
+  "effects": [],
+  "_key": "!items!e4e574b6324cff34"
+}

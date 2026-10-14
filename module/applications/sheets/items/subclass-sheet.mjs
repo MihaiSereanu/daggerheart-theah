@@ -13,19 +13,19 @@ export default class SubclassSheet extends DHBaseItemSheet {
 
     /**@override */
     static PARTS = {
-        header: { template: 'systems/daggerheart/templates/sheets/items/subclass/header.hbs' },
-        tabs: { template: 'systems/daggerheart/templates/sheets/global/tabs/tab-navigation.hbs' },
-        description: { template: 'systems/daggerheart/templates/sheets/global/tabs/tab-description.hbs' },
+        header: { template: 'systems/daggerheart-theah/templates/sheets/items/subclass/header.hbs' },
+        tabs: { template: 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-navigation.hbs' },
+        description: { template: 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-description.hbs' },
         features: {
-            template: 'systems/daggerheart/templates/sheets/items/subclass/features.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets/items/subclass/features.hbs',
             scrollable: ['.features']
         },
         settings: {
-            template: 'systems/daggerheart/templates/sheets/items/subclass/settings.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets/items/subclass/settings.hbs',
             scrollable: ['.settings']
         },
         effects: {
-            template: 'systems/daggerheart/templates/sheets/global/tabs/tab-effects.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-effects.hbs',
             scrollable: ['.effects']
         }
     };

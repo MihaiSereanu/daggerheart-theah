@@ -1,0 +1,81 @@
+{
+  "_id": "2e886d5b14ff2d18",
+  "name": "Pack Predator",
+  "type": "beastform",
+  "img": "icons/creatures/abilities/wolf-howl-moon-purple.webp",
+  "system": {
+    "description": "<p><em>(Coyote, Hyena, Wolf, etc)</em><br><strong>Brawn</strong> +2 <strong>Evasion</strong> +1</p>\n<p><strong>ATK:</strong> Melee Brawn d8+2 phy</p>\n<hr>\n<p><strong>Gain Advantage on</strong>: attack, sprint, track</p>\n<h4>Features</h4>\n<p><strong>Hobbling Strike</strong>: When you succeed on an attack against a target within Melee range, you can <strong>mark a Stress</strong> to make the target temporarily Vulnerable.</p>\n<p><strong>Pack Hunting</strong>: When you succeed on an attack against the same target as an ally who has hit the target immediately before you, add a d8 to your damage roll.</p>\n<p><strong>Sturdy</strong>: When you take Severe+ damage, you drop out of Beastform.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "mainTrait": "brawn",
+    "tokenSize": {
+      "size": "custom",
+      "width": 1,
+      "height": 1,
+      "depth": 1,
+      "scale": 1
+    },
+    "features": [
+      "Compendium.daggerheart-theah.features.Item.621ae63f21a97030",
+      "Compendium.daggerheart-theah.features.Item.7bf0355f9fdcd9aa",
+      "Compendium.daggerheart-theah.features.Item.d0f492506228771d"
+    ],
+    "examples": "Coyote, Hyena, Wolf, etc",
+    "advantageOn": {
+      "27a4241236091ae8": {
+        "value": "attack"
+      },
+      "337f058577f2874d": {
+        "value": "sprint"
+      },
+      "f465a05f3dd1b84a": {
+        "value": "track"
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "1910513f2ea97189",
+      "name": "Pack Predator",
+      "type": "beastform",
+      "transfer": true,
+      "img": "icons/creatures/abilities/wolf-howl-moon-purple.webp",
+      "system": {
+        "changes": [
+          {
+            "type": "add",
+            "key": "system.traits.brawn.value",
+            "value": 2,
+            "phase": "initial"
+          },
+          {
+            "type": "add",
+            "key": "system.evasion",
+            "value": 1,
+            "phase": "initial"
+          },
+          {
+            "type": "standardAttack",
+            "phase": "initial",
+            "value": {
+              "name": "Pack Predator Attack",
+              "damageTypes": [
+                "physical"
+              ],
+              "attackRange": "melee",
+              "trait": "brawn",
+              "damageFormula": "1d8+2 + @brawn",
+              "img": "icons/creatures/claws/claw-straight-brown.webp"
+            }
+          }
+        ],
+        "duration": {
+          "type": "shortRest"
+        }
+      },
+      "_key": "!items.effects!2e886d5b14ff2d18.1910513f2ea97189"
+    }
+  ],
+  "_key": "!items!2e886d5b14ff2d18"
+}

@@ -1,0 +1,56 @@
+.daggerheart .heart-controls { margin: 8px 0; padding: 8px; }
+#tooltip:has(.heart-domain-tooltip), .locked-tooltip:has(.heart-domain-tooltip) {
+    color-scheme: var(--heart-tooltip-scheme, light dark);
+    background: light-dark(#f2efe7, #181720);
+    color: light-dark(#242333, #eee8d8);
+    border: 1px solid light-dark(#77717f, #aaa0bc);
+    text-align: left;
+    max-width: 420px;
+}
+body:has(#interface.theme-light) { --heart-tooltip-scheme: light; }
+body:has(#interface.theme-dark) { --heart-tooltip-scheme: dark; }
+.heart-domain-tooltip h2 { color: inherit; margin: 0 0 8px; }
+.heart-domain-tooltip ul { margin: 0; padding-left: 20px; }
+.heart-domain-tooltip li { margin: 4px 0; }
+#tooltip .heart-domain-tooltip .content-link, .locked-tooltip .heart-domain-tooltip .content-link {
+    color: light-dark(#242333, #eee8d8);
+    background: light-dark(#e3ded1, #34303d);
+    border-color: light-dark(#aaa18d, #807789);
+    white-space: normal;
+}
+#tooltip .heart-domain-tooltip .content-link i, .locked-tooltip .heart-domain-tooltip .content-link i { color: inherit; }
+.daggerheart .heart-learn-talent { display: inline-flex; width: auto; height: auto; min-height: 0; padding: 0 6px; margin: 0 4px; font-size: 12px; }
+.daggerheart .heart-actions { display: flex; flex-wrap: wrap; gap: 4px; }
+.daggerheart .heart-actions button { flex: 1 0 100px; font-size: 11px; min-height: 25px; }
+.daggerheart .heart-resource-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 7px; font-size: 12px; }
+.daggerheart .heart-xp-control { display: inline-flex; align-items: center; gap: 4px; }
+.daggerheart .heart-xp-control label { display: inline-flex; align-items: center; align-self: stretch; margin: 0; font-size: 14px; font-weight: 600; }
+.daggerheart .heart-xp-control input { width: 42px; height: 24px; padding: 1px 4px; }
+.daggerheart .heart-xp-control .heart-advance { flex: 0 0 24px; width: 24px; min-width: 24px; height: 24px; min-height: 24px; padding: 0; }
+.application.sheet.daggerheart.actor.dh-style.character .character-header-sheet .character-row .domains-section .domain img,
+.application.sheet.daggerheart.actor.dh-style.limited.character .limited-container .domains-section .domain img {
+    filter: none !important;
+    object-fit: cover;
+    border-radius: 3px;
+}
+.dh-card-header .domain-card-banner .details .domain-icon {
+    filter: none !important;
+    border-radius: 3px;
+}
+.daggerheart .character-header-sheet .character-traits { grid-template-columns: repeat(5, 1fr); }
+.heart-dialog .heart-choice-preview { margin: 4px 0 14px; padding: 8px; border: 1px solid var(--color-border-light-tertiary); border-radius: 4px; }
+.heart-dialog .heart-choice-preview:empty { display: none; }
+.heart-dialog .heart-choice-preview .heart-choice-link { margin: 0 0 6px; }
+.heart-dialog .heart-choice-preview ul { margin: 4px 0; padding-left: 22px; }
+.heart-dialog .heart-choice-preview li { margin-bottom: 4px; }
+.heart-dialog .heart-equipment-reminder { margin: 10px 0 14px; padding: 10px 12px; border: 1px solid var(--color-border-light-tertiary); border-radius: 4px; background: light-dark(rgba(255, 255, 255, 0.32), rgba(0, 0, 0, 0.2)); }
+.heart-dialog .dialog-content { max-height: calc(100vh - 190px); overflow-y: auto; padding-right: 6px; }
+.heart-dialog select option:disabled { font-style: italic; font-weight: 600; }
+.heart-dialog .form-footer { flex: none; }
+.usage-counter { display: flex; align-items: center; gap: 0.5rem; padding: 0.25rem 0.5rem; }
+.usage-counter label { flex: 1; }
+.usage-counter input { width: 3rem; text-align: center; }
+.usage-label, .usage-max { font-size: 0.8rem; white-space: nowrap; }
+.usage-note { margin: 0.25rem 0.5rem; }
+.daggerheart .item-resource:has(.usage-label) { gap: 0.25rem; }
+.daggerheart .item-resource:has(.usage-label) input { min-width: 2rem; text-align: center; }

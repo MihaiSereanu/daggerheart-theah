@@ -1,0 +1,15 @@
+{
+  "_id": "abe2bf60a4192427",
+  "name": "Parchment of the Scribes",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Parchment of the Scribes</strong>: Copy another parchment perfectly; becomes mundane once used.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!abe2bf60a4192427"
+}

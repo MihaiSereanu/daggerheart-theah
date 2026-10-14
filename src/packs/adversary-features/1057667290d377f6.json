@@ -1,0 +1,15 @@
+{
+  "_id": "1057667290d377f6",
+  "name": "Look into My Eyes",
+  "type": "feature",
+  "img": "icons/creatures/eyes/humanoid-single-purple-blue.webp",
+  "system": {
+    "description": "<p>A creature who moves into Melee range of the adversary must make an Instinct Reaction Roll. On a failure, you gain 1d4 Fear.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!1057667290d377f6"
+}

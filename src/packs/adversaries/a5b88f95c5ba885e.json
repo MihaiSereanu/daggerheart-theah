@@ -1,0 +1,89 @@
+{
+  "_id": "a5b88f95c5ba885e",
+  "name": "Bandit Archer",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A lanky bandit striking from cover with a shortbow.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "ranged",
+    "difficulty": 13,
+    "notes": "<h3>Normal | Ranged</h3>\n<p><em>A lanky bandit striking from cover with a shortbow.</em><br><strong>Motives &amp; Tactics:</strong> Ambush, hide, profit, reposition</p>\n<p><strong>Difficulty:</strong> 13 | <strong>Thresholds:</strong> 4/7 | <strong>HP:</strong> 3 | <strong>Stress:</strong> 2</p>\n<p><strong>ATK:</strong> -1 | Shortbow: Far | 1d10+2 physical</p>\n<hr>\n<p><strong>Experience:</strong> Stealth +2</p>\n<h4>Features</h4>\n<p><strong>Unseen Strike - Passive</strong>: If the Sniper is Cloaked when they make a successful standard attack against a target, they deal 1d10+4 physical damage instead of their standard damage.</p>\n",
+    "damageThresholds": {
+      "major": 4,
+      "severe": 7
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 3
+      },
+      "stress": {
+        "value": 0,
+        "max": 2
+      }
+    },
+    "motivesAndTactics": "Ambush, hide, profit, reposition",
+    "experiences": {
+      "cb101dfba1393db7": {
+        "name": "Stealth",
+        "value": 2
+      }
+    },
+    "attack": {
+      "_id": "4993d603f5c75332",
+      "name": "Shortbow",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/weapons/bows/longbow-recurve-leather-brown.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "far",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": -1
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d10+2"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "da3918fed24be5a6",
+      "name": "Unseen Strike - Passive",
+      "type": "feature",
+      "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+      "system": {
+        "description": "<p>If the Sniper is Cloaked when they make a successful standard attack against a target, they deal 1d10+4 physical damage instead of their standard damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!a5b88f95c5ba885e.da3918fed24be5a6"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Bandit Archer",
+    "actorLink": false
+  },
+  "_key": "!actors!a5b88f95c5ba885e"
+}

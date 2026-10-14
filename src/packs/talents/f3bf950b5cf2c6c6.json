@@ -1,0 +1,20 @@
+{
+  "_id": "f3bf950b5cf2c6c6",
+  "name": "Reckless",
+  "type": "domainCard",
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "system": {
+    "description": "<p><strong>Mark a Stress</strong> to gain advantage on an attack roll. If you miss, mark an additional HP the next time you are hit.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "steel",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "6aabc2e2c710379d",
+  "_key": "!items!f3bf950b5cf2c6c6"
+}

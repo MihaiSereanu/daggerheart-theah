@@ -1,0 +1,15 @@
+{
+  "_id": "40ee1e41278111dd",
+  "name": "Holster",
+  "type": "feature",
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "system": {
+    "description": "<p>The duelist can attack within Far with his gun.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!40ee1e41278111dd"
+}

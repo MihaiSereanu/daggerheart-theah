@@ -1,0 +1,15 @@
+{
+  "_id": "f34bfaf282cac7e9",
+  "name": "Dragonbloom Tea",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Dragonbloom Tea</strong>: You can drink this tea to unleash a fiery breath attack. Make an Instinct Roll against all adversaries in front of you within Close range. Targets you succeed against take 2d20 physical damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!f34bfaf282cac7e9"
+}

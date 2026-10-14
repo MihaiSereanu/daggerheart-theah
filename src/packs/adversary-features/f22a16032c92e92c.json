@@ -1,0 +1,15 @@
+{
+  "_id": "f22a16032c92e92c",
+  "name": "Blood Rain",
+  "type": "feature",
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "system": {
+    "description": "<p>When the adversary is spotlighted, roll a d8. On a result of 6 or higher, all targets within Very Close range must mark a HP and roll their next action roll with Disadvantage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "reaction"
+  },
+  "effects": [],
+  "_key": "!items!f22a16032c92e92c"
+}

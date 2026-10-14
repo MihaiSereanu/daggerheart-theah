@@ -1,0 +1,81 @@
+{
+  "_id": "afc78e8f057b4be3",
+  "name": "Powerful Beast",
+  "type": "beastform",
+  "img": "icons/creatures/abilities/bear-roar-bite-brown-green.webp",
+  "system": {
+    "description": "<p><em>(Boar, Bear, Moose, etc)</em><br><strong>Brawn</strong> +3 <strong>Evasion</strong> +1</p>\n<p><strong>ATK:</strong> Melee Brawn d10+6 phy</p>\n<hr>\n<p><strong>Gain Advantage on</strong>: navigate, protect, scare</p>\n<h4>Features</h4>\n<p><strong>Rampage</strong>: When you roll a 1 on a damage die, you can roll a d10 and add the result to the damage roll.</p>\n<p><strong>Thick Hide:</strong> You gain a +2 bonus to your damage thresholds.</p>\n<p><strong>Sturdy</strong>: When you take Severe+ damage, you drop out of Beastform.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "mainTrait": "brawn",
+    "tokenSize": {
+      "size": "custom",
+      "width": 1,
+      "height": 1,
+      "depth": 1,
+      "scale": 1
+    },
+    "features": [
+      "Compendium.daggerheart-theah.features.Item.5088e858a31c0cda",
+      "Compendium.daggerheart-theah.features.Item.0b12219046d9bd42",
+      "Compendium.daggerheart-theah.features.Item.a4267bb78d4e38a3"
+    ],
+    "examples": "Boar, Bear, Moose, etc",
+    "advantageOn": {
+      "1d34805e66610fd9": {
+        "value": "navigate"
+      },
+      "520c7623318ee5a0": {
+        "value": "protect"
+      },
+      "2f5ee4e71e0b206e": {
+        "value": "scare"
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "e096794da9a308c3",
+      "name": "Powerful Beast",
+      "type": "beastform",
+      "transfer": true,
+      "img": "icons/creatures/abilities/bear-roar-bite-brown-green.webp",
+      "system": {
+        "changes": [
+          {
+            "type": "add",
+            "key": "system.traits.brawn.value",
+            "value": 3,
+            "phase": "initial"
+          },
+          {
+            "type": "add",
+            "key": "system.evasion",
+            "value": 1,
+            "phase": "initial"
+          },
+          {
+            "type": "standardAttack",
+            "phase": "initial",
+            "value": {
+              "name": "Powerful Beast Attack",
+              "damageTypes": [
+                "physical"
+              ],
+              "attackRange": "melee",
+              "trait": "brawn",
+              "damageFormula": "1d10+6 + @brawn",
+              "img": "icons/creatures/claws/claw-straight-brown.webp"
+            }
+          }
+        ],
+        "duration": {
+          "type": "shortRest"
+        }
+      },
+      "_key": "!items.effects!afc78e8f057b4be3.e096794da9a308c3"
+    }
+  ],
+  "_key": "!items!afc78e8f057b4be3"
+}

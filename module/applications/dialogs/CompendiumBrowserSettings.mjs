@@ -29,9 +29,9 @@ export default class CompendiumBrowserSettings extends HandlebarsApplicationMixi
     static PARTS = {
         packs: {
             id: 'packs',
-            template: 'systems/daggerheart/templates/dialogs/compendiumBrowserSettingsDialog/packs.hbs'
+            template: 'systems/daggerheart-theah/templates/dialogs/compendiumBrowserSettingsDialog/packs.hbs'
         },
-        footer: { template: 'systems/daggerheart/templates/dialogs/compendiumBrowserSettingsDialog/footer.hbs' }
+        footer: { template: 'systems/daggerheart-theah/templates/dialogs/compendiumBrowserSettingsDialog/footer.hbs' }
     };
 
     static #browserPackTypes = ['Actor', 'Item'];

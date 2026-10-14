@@ -1,0 +1,20 @@
+{
+  "_id": "ca35bb468819687c",
+  "name": "Bargain of the Hungry Flame",
+  "type": "domainCard",
+  "img": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+  "system": {
+    "description": "<p>Make a Spellcast Roll against a target within Close range. On a success, <strong>spend a Favour</strong> and hurl a spear of dark fire toward them. They must make a Reaction Roll (15), taking 2d12 magic damage on a failure and half if they succeed. You may <strong>spend a Favour</strong> to power the spell further, choose one:</p>\n<ul>\n<li>The target is Blinded by smoke until they succeed on a Reaction Roll (10)</li>\n<li>The flames burn unnaturally cold, dealing Stress instead of HP</li>\n<li>The flame leaves a lingering mark; the next time the target takes damage, add +1d12</li>\n<li>The flame disrupts magic; the target must <strong>mark a Stress</strong> to use magical features</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "sanderis",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "83fcfb9315a1e619",
+  "_key": "!items!ca35bb468819687c"
+}

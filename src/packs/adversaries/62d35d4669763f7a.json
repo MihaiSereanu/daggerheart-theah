@@ -1,0 +1,122 @@
+{
+  "_id": "62d35d4669763f7a",
+  "name": "Musclebound Brute",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A massive human that wields their weapon with crushing strength.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "solo",
+    "difficulty": 15,
+    "notes": "<h3>Normal | Solo</h3>\n<p><em>A massive human that wields their weapon with crushing strength.</em>\n<strong>Motives &amp; Tactics:</strong> Break, overpower and end the fight fast</p>\n<p><strong>Difficulty:</strong> 15 | <strong>Thresholds:</strong> 8/15 | <strong>HP:</strong> 8 | <strong>Stress:</strong> 3</p>\n<p><strong>ATK:</strong> +1 | Weapon: Very Close | 1d10+2 physical</p>\n<hr>\n<p><strong>Experience:</strong> Strength +2</p>\n<h4>Features</h4>\n<p><strong>Ramp Up - Passive</strong>: You must spend a Fear to spotlight the Brute.</p>\n<p><strong>Bone Breaker - Passive</strong>: The Brute&#39;s attacks deal direct damage. In addition, while spotlighted, they can make their standard attack against all targets within range.</p>\n<p><strong>Flip Table - Action</strong>: Mark a Stress to pick up a heavy object and throw it at targets in front of the Brute within Far range. Make an attack against these targets. Targets the Brute succeeds against take 1d10+2 physical damage. If they succeed against more than one target, you gain a Fear.</p>\n<p><strong>Rampaging Fury - Reaction</strong>: When the Brute marks 2 or more HP, they can rampage. Move the Brute to a point within Close range and deal 2d6+3 direct physical damage to all targets in their path.</p>\n",
+    "damageThresholds": {
+      "major": 8,
+      "severe": 15
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 8
+      },
+      "stress": {
+        "value": 0,
+        "max": 3
+      }
+    },
+    "motivesAndTactics": "Break, overpower and end the fight fast",
+    "experiences": {
+      "dfad6b2e77a3bfeb": {
+        "name": "Strength",
+        "value": 2
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/ranged/target-bullseye-arrow-green.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "veryClose",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 1
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d10+2"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "f26147820df77d4f",
+      "name": "Ramp Up - Passive",
+      "type": "feature",
+      "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
+      "system": {
+        "description": "<p>You must spend a Fear to spotlight the Brute.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!62d35d4669763f7a.f26147820df77d4f"
+    },
+    {
+      "_id": "db6cff80250793ec",
+      "name": "Bone Breaker - Passive",
+      "type": "feature",
+      "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+      "system": {
+        "description": "<p>The Brute&#39;s attacks deal direct damage. In addition, while spotlighted, they can make their standard attack against all targets within range.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!62d35d4669763f7a.db6cff80250793ec"
+    },
+    {
+      "_id": "a3d1337648837881",
+      "name": "Flip Table - Action",
+      "type": "feature",
+      "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
+      "system": {
+        "description": "<p>Mark a Stress to pick up a heavy object and throw it at targets in front of the Brute within Far range. Make an attack against these targets. Targets the Brute succeeds against take 1d10+2 physical damage. If they succeed against more than one target, you gain a Fear.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!62d35d4669763f7a.a3d1337648837881"
+    },
+    {
+      "_id": "fdf651dad5a9fe1d",
+      "name": "Rampaging Fury - Reaction",
+      "type": "feature",
+      "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+      "system": {
+        "description": "<p>When the Brute marks 2 or more HP, they can rampage. Move the Brute to a point within Close range and deal 2d6+3 direct physical damage to all targets in their path.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!62d35d4669763f7a.fdf651dad5a9fe1d"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Musclebound Brute",
+    "actorLink": false
+  },
+  "_key": "!actors!62d35d4669763f7a"
+}

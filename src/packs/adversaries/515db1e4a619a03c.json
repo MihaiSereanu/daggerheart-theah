@@ -1,0 +1,134 @@
+{
+  "_id": "515db1e4a619a03c",
+  "name": "Cultist Leader",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A clandestine leader with a direct channel to Dark Powers.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "leader",
+    "difficulty": 12,
+    "notes": "<h3>Normal | Leader</h3>\n<p><em>A clandestine leader with a direct channel to Dark Powers.</em><br><strong>Motives &amp; Tactics:</strong> Amass power, plot, take command</p>\n<p><strong>Difficulty:</strong> 12 | <strong>Thresholds:</strong> 6/12 | <strong>HP:</strong> 6 | <strong>Stress:</strong> 3</p>\n<p><strong>ATK:</strong> +3 | Magic: Far | 1d12+1 phy</p>\n<hr>\n<p><strong>Experience:</strong> Coercion +2, Fallen Lore +2</p>\n<h4>Features</h4>\n<p><strong>Seize The Moment - Action</strong>: Spend 2 Fear to spotlight 1d4 allies. Attacks they make while spotlighted in this way deal half damage.</p>\n<p><strong>Our Master’s Will - Reaction</strong>: When you spotlight an ally within Far range, <strong>mark a Stress</strong> to gain a Fear.</p>\n<p><strong>Summoning Ritual - Reaction</strong>: Countdown (6). The first time the Leader is spotlighted, activate the countdown. Whenever the Leader marks HP, tick the countdown up by that amount. When it triggers, summon a Demon at Close range.</p>\n<p><strong>Zombies - Reaction</strong>: Once per scene, when the Leader marks 2 or more HP, you can <strong>mark a Stress</strong> to summon a Zombie Pack at Close range and immediately spotlight it.</p>\n",
+    "damageThresholds": {
+      "major": 6,
+      "severe": 12
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 6
+      },
+      "stress": {
+        "value": 0,
+        "max": 3
+      }
+    },
+    "motivesAndTactics": "Amass power, plot, take command",
+    "experiences": {
+      "71d551100ac5147f": {
+        "name": "Coercion",
+        "value": 2
+      },
+      "971a859adbf57ded": {
+        "name": "Fallen Lore",
+        "value": 2
+      }
+    },
+    "attack": {
+      "_id": "83715232bff67a38",
+      "name": "Magic",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/magic/symbols/runes-star-magenta.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "far",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 3
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d12+1"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "16f139021a6e89ae",
+      "name": "Seize The Moment - Action",
+      "type": "feature",
+      "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
+      "system": {
+        "description": "<p>Spend 2 Fear to spotlight 1d4 allies. Attacks they make while spotlighted in this way deal half damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!515db1e4a619a03c.16f139021a6e89ae"
+    },
+    {
+      "_id": "8b43d0e7720047f9",
+      "name": "Our Master’s Will - Reaction",
+      "type": "feature",
+      "img": "icons/sundries/flags/banner-sword-blue.webp",
+      "system": {
+        "description": "<p>When you spotlight an ally within Far range, <strong>mark a Stress</strong> to gain a Fear.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!515db1e4a619a03c.8b43d0e7720047f9"
+    },
+    {
+      "_id": "f7ef205b447b6187",
+      "name": "Summoning Ritual - Reaction",
+      "type": "feature",
+      "img": "icons/magic/symbols/runes-star-magenta.webp",
+      "system": {
+        "description": "<p>Countdown (6). The first time the Leader is spotlighted, activate the countdown. Whenever the Leader marks HP, tick the countdown up by that amount. When it triggers, summon a Demon at Close range.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!515db1e4a619a03c.f7ef205b447b6187"
+    },
+    {
+      "_id": "bc820af9299dcda7",
+      "name": "Zombies - Reaction",
+      "type": "feature",
+      "img": "icons/sundries/books/book-symbol-skull-grey.webp",
+      "system": {
+        "description": "<p>Once per scene, when the Leader marks 2 or more HP, you can <strong>mark a Stress</strong> to summon a Zombie Pack at Close range and immediately spotlight it.</p>\n",
+        "resource": {
+          "type": "simple",
+          "value": 0,
+          "max": "1",
+          "recovery": "scene",
+          "progression": "increasing",
+          "label": "Uses"
+        }
+      },
+      "effects": [],
+      "_key": "!actors.items!515db1e4a619a03c.bc820af9299dcda7"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Cultist Leader",
+    "actorLink": false
+  },
+  "_key": "!actors!515db1e4a619a03c"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "0fe7c45f4619a09b",
+  "name": "Airblade Charm",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Airblade Charm</strong>: You can attach this charm to a weapon with a Melee range. Three times per rest, you can activate the charm and attack a target within Close range.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!0fe7c45f4619a09b"
+}

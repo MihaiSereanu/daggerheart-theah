@@ -1,0 +1,20 @@
+{
+  "_id": "1f26828e75e1b40b",
+  "name": "Avatar",
+  "type": "domainCard",
+  "img": "icons/equipment/shield/heater-steel-gold.webp",
+  "system": {
+    "description": "<p>If you have 4 or more Valour Talents, gain the following:</p>\n<ul>\n<li>+1 bonus to your Armor Score</li>\n<li>When you mark 1 or more HP without marking an Armor Slot, clear an Armor Slot.</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "valour",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "b68f69b8dced9462",
+  "_key": "!items!1f26828e75e1b40b"
+}

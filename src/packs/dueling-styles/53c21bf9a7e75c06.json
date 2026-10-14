@@ -1,0 +1,14 @@
+{
+  "_id": "53c21bf9a7e75c06",
+  "name": "Sabat",
+  "type": "feature",
+  "img": "icons/environment/people/cavalry.webp",
+  "system": {
+    "description": "<p><strong>Required Weapon: Sabre &amp; Dagger</strong>\nThe Sabat school of fencing favors a defensive Style that allows opponents to attack tirelessly to exhaust themselves.</p>\n<ul>\n<li><strong>Keen Insight</strong>. During a combat scene, you may <strong>spend any amount of Hope</strong> to discern how your target fights. For each Hope spent, gain a +1 bonus to your rolls against the target. The bonus lasts until you fail or attack someone else.</li>\n<li><strong>The Gambit</strong>. Waiting for the perfect strike, you may <strong>mark a Stress</strong> to roll a d20 as your Hope die for your next attack. If it succeeds, the attack deals an additional 1d8 damage.</li>\n<li><strong>Practiced Precautions.</strong> You add your Wits to your Evasion.</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!53c21bf9a7e75c06"
+}

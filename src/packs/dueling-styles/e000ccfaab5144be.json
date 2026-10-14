@@ -1,0 +1,14 @@
+{
+  "_id": "e000ccfaab5144be",
+  "name": "Ambrogia",
+  "type": "feature",
+  "img": "icons/weapons/daggers/dagger-poisoned-curved-green.webp",
+  "system": {
+    "description": "<p><strong>Required Weapon: Sword &amp; Main Gauche</strong>\nA Vodacce style created by the famed courtesan Veronica Ambrogia. Fought with the sword in the left hand and main gauche in the right, it emphasizes using any means to win.</p>\n<ul>\n<li><strong>Temptress’s Guile</strong>. You add your Charm to damage rolls.</li>\n<li><strong>Choice Words.</strong> During a combat scene, you may <strong>mark any amount of Stress</strong> to force your adversary to mark 2 Stress for every Stress you marked.</li>\n<li><strong>Kiss of Death</strong>. If your foe is infatuated with you or made jealous, clear a Stress after successfully attacking them.</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!e000ccfaab5144be"
+}

@@ -1,0 +1,122 @@
+{
+  "_id": "edc0f7e6500b57d6",
+  "name": "Demon of Despair",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A cloaked demon-creature with long limbs, seeping shadows.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "champion",
+    "type": "skulk",
+    "difficulty": 16,
+    "notes": "<h3>Champion | Skulk</h3>\n<p><em>A cloaked demon-creature with long limbs, seeping shadows.</em><br><strong>Motives &amp; Tactics:</strong> Make fear contagious, undermine resolve</p>\n<p><strong>Difficulty:</strong> 16 | <strong>Thresholds:</strong> 8/15 | <strong>HP:</strong> 6 | <strong>Stress:</strong> 5</p>\n<p><strong>ATK:</strong> +3 | Magic: Far | 2d6+1 physical</p>\n<hr>\n<p><strong>Experience:</strong> Manipulation +3</p>\n<h4>Features</h4>\n<p><strong>Despair - Passive</strong>: Deals double damage to PCs with 0 Hope.</p>\n<p><strong>Your Struggle Is Pointless - Action</strong>: Spend a Fear to affect all PCs within Far. All targets affected replace their Hope Die with a d8 until they roll a success with Hope.</p>\n<p><strong>Your Friends Will Fail You - Reaction</strong>: When a PC fails with Fear, you can <strong>mark a Stress</strong> to cause other PCs within Close to lose a Hope.</p>\n<p><strong>Momentum - Reaction</strong>: When the Demon makes a successful attack against a PC, you gain a Fear.</p>\n",
+    "damageThresholds": {
+      "major": 8,
+      "severe": 15
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 6
+      },
+      "stress": {
+        "value": 0,
+        "max": 5
+      }
+    },
+    "motivesAndTactics": "Make fear contagious, undermine resolve",
+    "experiences": {
+      "28a58ec7406e6264": {
+        "name": "Manipulation",
+        "value": 3
+      }
+    },
+    "attack": {
+      "_id": "83715232bff67a38",
+      "name": "Magic",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/magic/symbols/runes-star-magenta.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "far",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 3
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "2d6+1"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "c23164f9c0f2c743",
+      "name": "Despair - Passive",
+      "type": "feature",
+      "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
+      "system": {
+        "description": "<p>Deals double damage to PCs with 0 Hope.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!edc0f7e6500b57d6.c23164f9c0f2c743"
+    },
+    {
+      "_id": "6a8fb868f718e26c",
+      "name": "Your Struggle Is Pointless - Action",
+      "type": "feature",
+      "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
+      "system": {
+        "description": "<p>Spend a Fear to affect all PCs within Far. All targets affected replace their Hope Die with a d8 until they roll a success with Hope.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!edc0f7e6500b57d6.6a8fb868f718e26c"
+    },
+    {
+      "_id": "5e5cef3ea8e49692",
+      "name": "Your Friends Will Fail You - Reaction",
+      "type": "feature",
+      "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+      "system": {
+        "description": "<p>When a PC fails with Fear, you can <strong>mark a Stress</strong> to cause other PCs within Close to lose a Hope.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!edc0f7e6500b57d6.5e5cef3ea8e49692"
+    },
+    {
+      "_id": "94ff8a16627aef68",
+      "name": "Momentum - Reaction",
+      "type": "feature",
+      "img": "icons/environment/creatures/horse-brown.webp",
+      "system": {
+        "description": "<p>When the Demon makes a successful attack against a PC, you gain a Fear.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!edc0f7e6500b57d6.94ff8a16627aef68"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Demon of Despair",
+    "actorLink": false
+  },
+  "_key": "!actors!edc0f7e6500b57d6"
+}

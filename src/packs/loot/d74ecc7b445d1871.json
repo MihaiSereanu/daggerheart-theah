@@ -1,0 +1,15 @@
+{
+  "_id": "d74ecc7b445d1871",
+  "name": "Chain of Ideals",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Chain of Ideals</strong>: As a downtime move, you can meditate on an ideal or principle you hold dear and focus your will into this chain. Once per Rest, you can <strong>spend a Hope</strong> to roll a d20 as your Hope Die for rolls that directly align with that principle.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!d74ecc7b445d1871"
+}

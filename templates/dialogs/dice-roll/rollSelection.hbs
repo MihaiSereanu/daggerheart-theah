@@ -5,7 +5,7 @@
                 <div class="dices-section">
                     {{#if (eq @root.rollType 'D20Roll')}}
                         <div class="dice-option">
-                            <img class="dice-icon normal" src="{{concat 'systems/daggerheart/assets/icons/dice/default/' @root.roll.d20.denomination '.svg'}}" alt="">
+                            <img class="dice-icon normal" src="{{concat 'systems/daggerheart-theah/assets/icons/dice/default/' @root.roll.d20.denomination '.svg'}}" alt="">
                             <div class="dice-select">
                                 <select name="roll.dice.d20">
                                     {{selectOptions diceOptions selected=@root.roll.d20.denomination}}
@@ -15,14 +15,14 @@
                         {{#if @root.advantage}}
                             {{#if (eq @root.advantage 1)}}
                                 <div class="dice-option">
-                                    <img class="dice-icon" src="{{concat 'systems/daggerheart/assets/icons/dice/adv/' @root.roll.d20.denomination '.svg'}}" alt="">
+                                    <img class="dice-icon" src="{{concat 'systems/daggerheart-theah/assets/icons/dice/adv/' @root.roll.d20.denomination '.svg'}}" alt="">
                                     <div class="dice-select">
                                         <span class="label">{{localize "DAGGERHEART.GENERAL.Advantage.full"}}</span>
                                     </div>
                                 </div>
                             {{else if (eq @root.advantage -1)}}
                                 <div class="dice-option">
-                                    <img class="dice-icon" src="{{concat 'systems/daggerheart/assets/icons/dice/disadv/' @root.roll.d20.denomination '.svg'}}" alt="">
+                                    <img class="dice-icon" src="{{concat 'systems/daggerheart-theah/assets/icons/dice/disadv/' @root.roll.d20.denomination '.svg'}}" alt="">
                                     <div class="dice-select">
                                         <span class="label">{{localize "DAGGERHEART.GENERAL.Disadvantage.full"}}</span>
                                     </div>
@@ -32,7 +32,7 @@
                     {{/if}}
                     {{#if (eq @root.rollType 'DualityRoll')}}
                         <div class="dice-option">
-                            <img class="dice-icon" src="{{concat 'systems/daggerheart/assets/icons/dice/hope/' @root.roll.dHope.denomination '.svg'}}" alt="">
+                            <img class="dice-icon" src="{{concat 'systems/daggerheart-theah/assets/icons/dice/hope/' @root.roll.dHope.denomination '.svg'}}" alt="">
                             <div class="dice-select">
                                 <span class="label">{{localize "DAGGERHEART.GENERAL.hope"}}</span>
                                 <select name="roll.dice.dHope">
@@ -42,7 +42,7 @@
                         </div>
 
                         <div class="dice-option">
-                            <img class="dice-icon" src="{{concat 'systems/daggerheart/assets/icons/dice/fear/' @root.roll.dFear.denomination '.svg'}}" alt="">
+                            <img class="dice-icon" src="{{concat 'systems/daggerheart-theah/assets/icons/dice/fear/' @root.roll.dFear.denomination '.svg'}}" alt="">
                             <div class="dice-select">
                                 <span class="label">{{localize "DAGGERHEART.GENERAL.fear"}}</span>
                                 <select name="roll.dice.dFear">
@@ -53,14 +53,14 @@
                         {{#if @root.advantage}}
                             {{#if (eq @root.advantage 1)}}
                                 <div class="dice-option">
-                                    <img class="dice-icon" src="{{concat 'systems/daggerheart/assets/icons/dice/adv/d' @root.roll.advantageFaces '.svg'}}" alt="">
+                                    <img class="dice-icon" src="{{concat 'systems/daggerheart-theah/assets/icons/dice/adv/d' @root.roll.advantageFaces '.svg'}}" alt="">
                                     <div class="dice-select">
                                         <span class="label">{{localize "DAGGERHEART.GENERAL.Advantage.full"}}</span>
                                     </div>
                                 </div>
                             {{else if (eq @root.advantage -1)}}
                                 <div class="dice-option">
-                                    <img class="dice-icon" src="{{concat 'systems/daggerheart/assets/icons/dice/disadv/d' @root.roll.advantageFaces '.svg'}}" alt="">
+                                    <img class="dice-icon" src="{{concat 'systems/daggerheart-theah/assets/icons/dice/disadv/d' @root.roll.advantageFaces '.svg'}}" alt="">
                                     <div class="dice-select">
                                         <span class="label">{{localize "DAGGERHEART.GENERAL.Disadvantage.full"}}</span>
                                     </div>
@@ -72,7 +72,7 @@
                         {{#if (eq @root.roll.fateDie 'Hope')}}
 
                         <div class="dice-option">
-                            <img class="dice-icon" src="{{concat 'systems/daggerheart/assets/icons/dice/hope/' @root.roll.dHope.denomination '.svg'}}" alt="">
+                            <img class="dice-icon" src="{{concat 'systems/daggerheart-theah/assets/icons/dice/hope/' @root.roll.dHope.denomination '.svg'}}" alt="">
                             <div class="dice-select">
                                 <span class="label">{{localize "DAGGERHEART.GENERAL.hope"}}</span>
                                 <select name="roll.dice.dHope">
@@ -84,7 +84,7 @@
 
                         {{#if (eq @root.roll.fateDie 'Fear')}}
                         <div class="dice-option">
-                            <img class="dice-icon" src="{{concat 'systems/daggerheart/assets/icons/dice/fear/' @root.roll.dFear.denomination '.svg'}}" alt="">
+                            <img class="dice-icon" src="{{concat 'systems/daggerheart-theah/assets/icons/dice/fear/' @root.roll.dFear.denomination '.svg'}}" alt="">
                             <div class="dice-select">
                                 <span class="label">{{localize "DAGGERHEART.GENERAL.fear"}}</span>
                                 <select name="roll.dice.dFear">
@@ -181,7 +181,7 @@
             {{/unless}}
 
             {{#if (or costs uses)}}
-                {{> 'systems/daggerheart/templates/dialogs/dice-roll/costSelection.hbs'}}
+                {{> 'systems/daggerheart-theah/templates/dialogs/dice-roll/costSelection.hbs'}}
             {{/if}}
 
             {{#if (ne @root.rollType 'FateRoll')}}
@@ -205,7 +205,7 @@
             </div>
     {{else}}
         {{#if (or costs uses)}}
-            {{> 'systems/daggerheart/templates/dialogs/dice-roll/costSelection.hbs'}}
+            {{> 'systems/daggerheart-theah/templates/dialogs/dice-roll/costSelection.hbs'}}
         {{/if}}
         <div class="roll-dialog-controls">
             <button class="submit-btn" data-action="submitRoll"{{#unless canRoll}} disabled{{/unless}}>

@@ -1,0 +1,52 @@
+{
+  "_id": "bcb871d8c1c92cea",
+  "name": "Gauntlets",
+  "type": "weapon",
+  "img": "icons/equipment/hand/gauntlet-armored-leather-steel-blue.webp",
+  "system": {
+    "description": "<p><strong>Gauntlets</strong></p>\n<p><strong>Concussive</strong>: On a successful attack, spend 1 Hope to knock target to Very Close</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "blackpowder": false,
+    "reloading": false,
+    "secondary": false,
+    "burden": "twoHanded",
+    "weaponFeatures": [],
+    "attack": {
+      "_id": "6e3f7f102acf42aa",
+      "name": "Gauntlets",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/equipment/hand/gauntlet-armored-leather-steel-blue.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": "brawn",
+        "bonus": 0
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d6 + @brawn"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "_key": "!items!bcb871d8c1c92cea"
+}

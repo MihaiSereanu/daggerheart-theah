@@ -1,0 +1,18 @@
+{
+  "_id": "199709b4a04a6f5e",
+  "name": "Galdr",
+  "type": "subclass",
+  "img": "icons/magic/symbols/runes-star-magenta.webp",
+  "system": {
+    "description": "<p>Play a Galdr-Speaker if you want to invoke runes and the words of Ekerila to alter reality.</p>\n<h4>SPELLCASTING TRAIT: WITS</h4>\n<blockquote>\n<p>The ancient art of Galdr is not precisely lost, but it is definitely hard to find. The mythological Vesten Hero, Ekerila, is the individual responsible for discovering (or rediscovering) the ancient futhark, the language of the gods. But Ekerila made a terrible mistake. She trusted the wrong people with this gift, and power fell into the hands of those who misused it. She struggled the rest of her life to try to right this error, to ensure that only those proven worthy could be trusted to wield the power of the Galdr.\n:\nA practicioner weaves runes and works their will into them, rewriting reality according to the Language of the Gods.</p>\n</blockquote>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.619fbc2f6e310fa4",
+    "spellcastingTrait": "wits",
+    "features": []
+  },
+  "effects": [],
+  "folder": "1adde1032a0a00cf",
+  "_key": "!items!199709b4a04a6f5e"
+}

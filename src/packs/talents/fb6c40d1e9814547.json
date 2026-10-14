@@ -1,0 +1,20 @@
+{
+  "_id": "fb6c40d1e9814547",
+  "name": "Brace",
+  "type": "domainCard",
+  "img": "icons/skills/melee/swords-parry-block-yellow.webp",
+  "system": {
+    "description": "<p>When you mark an Armor Slot to reduce damage, <strong>mark a Stress</strong> to reduce damage by an additional threshold.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "tactics",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "6ba62ee322f96c14",
+  "_key": "!items!fb6c40d1e9814547"
+}

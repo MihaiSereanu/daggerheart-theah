@@ -19,17 +19,17 @@ export default class DhActiveEffectConfig extends foundry.applications.sheets.Ac
     };
 
     static PARTS = {
-        header: { template: 'systems/daggerheart/templates/sheets/activeEffect/header.hbs' },
+        header: { template: 'systems/daggerheart-theah/templates/sheets/activeEffect/header.hbs' },
         tabs: { template: 'templates/generic/tab-navigation.hbs' },
-        details: { template: 'systems/daggerheart/templates/sheets/activeEffect/details.hbs', scrollable: [''] },
-        conditionals: { template: 'systems/daggerheart/templates/sheets/activeEffect/conditionals.hbs' },
-        settings: { template: 'systems/daggerheart/templates/sheets/activeEffect/settings.hbs' },
+        details: { template: 'systems/daggerheart-theah/templates/sheets/activeEffect/details.hbs', scrollable: [''] },
+        conditionals: { template: 'systems/daggerheart-theah/templates/sheets/activeEffect/conditionals.hbs' },
+        settings: { template: 'systems/daggerheart-theah/templates/sheets/activeEffect/settings.hbs' },
         changes: {
-            template: 'systems/daggerheart/templates/sheets/activeEffect/changes.hbs',
-            templates: ['systems/daggerheart/templates/sheets/activeEffect/change.hbs'],
+            template: 'systems/daggerheart-theah/templates/sheets/activeEffect/changes.hbs',
+            templates: ['systems/daggerheart-theah/templates/sheets/activeEffect/change.hbs'],
             scrollable: ['ol[data-changes]']
         },
-        footer: { template: 'systems/daggerheart/templates/sheets/global/tabs/tab-form-footer.hbs' }
+        footer: { template: 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-form-footer.hbs' }
     };
 
     static TABS = {
@@ -313,7 +313,7 @@ export default class DhActiveEffectConfig extends foundry.applications.sheets.Ac
                 defaultPriority
             ) ??
             foundry.applications.handlebars.renderTemplate(
-                'systems/daggerheart/templates/sheets/activeEffect/change.hbs',
+                'systems/daggerheart-theah/templates/sheets/activeEffect/change.hbs',
                 {
                     change,
                     index,

@@ -22,7 +22,7 @@
             
             <div class="settings-items">
                 {{#each settingFields._source.restMoves.longRest.moves as |move id|}}
-                    {{> "systems/daggerheart/templates/settings/components/settings-item-line.hbs" this type="longRest" id=id }}
+                    {{> "systems/daggerheart-theah/templates/settings/components/settings-item-line.hbs" this type="longRest" id=id }}
                 {{/each}}
             </div>
         </fieldset>
@@ -43,7 +43,7 @@
 
             <div class="settings-items">
                 {{#each settingFields._source.restMoves.shortRest.moves as |move id|}}
-                    {{> "systems/daggerheart/templates/settings/components/settings-item-line.hbs" this type="shortRest" id=id }}
+                    {{> "systems/daggerheart-theah/templates/settings/components/settings-item-line.hbs" this type="shortRest" id=id }}
                 {{/each}}
             </div>
         </fieldset>

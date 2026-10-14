@@ -1,0 +1,20 @@
+{
+  "_id": "24a8b1d7ab9ff658",
+  "name": "Keen Instincts",
+  "type": "domainCard",
+  "img": "icons/sundries/flags/banner-sword-blue.webp",
+  "system": {
+    "description": "<p>After you make an action roll to analyze, strategize, or lead into battle, you can <strong>spend a Hope</strong> to reroll either Duality die.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "anchor",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "9aaa1110e6898797",
+  "_key": "!items!24a8b1d7ab9ff658"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "4ee2cef891141aab",
+  "name": "Path of the Humble",
+  "type": "domainCard",
+  "img": "icons/sundries/books/book-symbol-canterbury-cross.webp",
+  "system": {
+    "description": "<p>The Path of the Humble shows you that there are many things more important than you, and that is wonderful. This calming aura makes it easy to pacify those around you. <strong>Spend any number of Hope</strong> to make a Spellcast Roll against that many targets within Close range. On a success, they become temporarily <em>Pacified</em>. While Pacified, a target must <strong>mark a Stress</strong> to commit violence near you.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "artofthesecondprophet",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "5b8c67f9d145528b",
+  "_key": "!items!4ee2cef891141aab"
+}

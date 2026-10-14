@@ -1,0 +1,77 @@
+{
+  "_id": "d4d60a9ed46c5e66",
+  "name": "Warhammer",
+  "type": "weapon",
+  "img": "icons/weapons/hammers/hammer-war-spiked.webp",
+  "system": {
+    "description": "<p><strong>Warhammer</strong></p>\n<p><strong>Powerful</strong>: -1 to Evasion; on success, roll two damage dice and take the highest</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "blackpowder": false,
+    "reloading": false,
+    "secondary": false,
+    "burden": "twoHanded",
+    "weaponFeatures": [
+      {
+        "value": "powerful",
+        "effectIds": [],
+        "actionIds": []
+      }
+    ],
+    "attack": {
+      "_id": "e79726f7c07ff42b",
+      "name": "Warhammer",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/weapons/hammers/hammer-war-spiked.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": "brawn",
+        "bonus": 0
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d12+1 + @brawn"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "9e77d2f23defa1b3",
+      "name": "Warhammer",
+      "type": "base",
+      "transfer": true,
+      "img": "icons/weapons/hammers/hammer-war-spiked.webp",
+      "system": {
+        "changes": [
+          {
+            "type": "add",
+            "key": "system.evasion",
+            "value": -1,
+            "phase": "initial"
+          }
+        ]
+      },
+      "_key": "!items.effects!d4d60a9ed46c5e66.9e77d2f23defa1b3"
+    }
+  ],
+  "_key": "!items!d4d60a9ed46c5e66"
+}

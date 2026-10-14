@@ -1,0 +1,20 @@
+{
+  "_id": "b8d07e2657a419f5",
+  "name": "Deadly Gambit",
+  "type": "domainCard",
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "system": {
+    "description": "<p>When you make a successful attack against an adversary, instead of rolling for damage, you can <strong>mark up to 4 HP</strong> to force the target to mark an equal number of HP.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "steel",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "6aabc2e2c710379d",
+  "_key": "!items!b8d07e2657a419f5"
+}

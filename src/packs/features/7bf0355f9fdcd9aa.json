@@ -1,0 +1,15 @@
+{
+  "_id": "7bf0355f9fdcd9aa",
+  "name": "Pack Hunting",
+  "type": "feature",
+  "img": "icons/creatures/abilities/wolf-howl-moon-purple.webp",
+  "system": {
+    "description": "<p>When you succeed on an attack against the same target as an ally who has hit the target immediately before you, add a d8 to your damage roll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "4cffe85f2cf5597c",
+  "_key": "!items!7bf0355f9fdcd9aa"
+}

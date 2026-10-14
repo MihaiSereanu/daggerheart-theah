@@ -1,0 +1,15 @@
+{
+  "_id": "cf8af545c38434c5",
+  "name": "Another for the Pile",
+  "type": "feature",
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "system": {
+    "description": "<p>When the adversary is within Very Close range of a corpse, they can incorporate it into themselves, clearing a HP and a Stress.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!cf8af545c38434c5"
+}

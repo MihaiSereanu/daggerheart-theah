@@ -1,8 +1,6 @@
 import { emitGMUpdate, GMUpdateEvent, socketEvent } from '../systemRegistration/socket.mjs';
-import { LevelOptionType } from '../data/levelTier.mjs';
 import DHFeature from '../data/item/feature.mjs';
 import { createScrollText, damageKeyToNumber, getDamageKey, createShallowProxy, pick, itemIsIdentical } from '../helpers/utils.mjs';
-import DhCompanionLevelUp from '../applications/levelup/companionLevelup.mjs';
 import { ResourceUpdateMap } from '../data/actor/resource-update-map.mjs';
 import { abilities } from '../config/actorConfig.mjs';
 import { DHDamageData } from '../data/fields/action/damageField.mjs';
@@ -255,7 +253,8 @@ export default class DhActor extends Actor {
 
         const resourceKeys = Object.keys(this.system._source.resources); 
         const keysToDelete = resourceKeys.filter(key => 
-            !((key in CONFIG.DH.RESOURCE[this.type].base) 
+            !((key in CONFIG.DH.RESOURCE[this.type].base)
+                || (key === 'favor' && this.system.tradition === 'sanderis')
                 || featureProvidedResources.includes(key)
                 || (key in applicableHomebrewResources))
         );
@@ -293,375 +292,11 @@ export default class DhActor extends Actor {
     }
 
     async updateLevel(newLevel) {
-        if (!['character', 'companion'].includes(this.type) || newLevel === this.system.levelData.level.changed) return;
-
-        const tiers = Object.values(game.settings.get(CONFIG.DH.id, CONFIG.DH.SETTINGS.gameSettings.LevelTiers).tiers);
-        const maxLevel = tiers.reduce((acc, tier) => Math.max(acc, tier.levels.end), 0);
-        const multiclassMinLevel = Math.min(
-            maxLevel,
-            ...tiers.filter(t => t.options.multiclass).map(t => t.levels.start)
-        );
-        if (newLevel > this.system.levelData.level.current) {
-            if (newLevel > maxLevel) {
-                ui.notifications.warn(game.i18n.localize('DAGGERHEART.UI.Notifications.tooHighLevel'));
-            }
-
-            await this.update({ 'system.levelData.level.changed': Math.min(newLevel, maxLevel) });
-        } else {
-            const levelupAuto = game.system.settings.automation.levelupAuto;
-
-            const usedLevel = Math.max(newLevel, 1);
-            if (newLevel < 1) {
-                ui.notifications.warn(game.i18n.localize('DAGGERHEART.UI.Notifications.tooLowLevel'));
-            }
-
-            const updatedLevelups = Object.keys(this.system.levelData.levelups).reduce((acc, level) => {
-                if (Number(level) > usedLevel) acc[level] = _del;
-
-                return acc;
-            }, {});
-
-            if (levelupAuto) {
-                const features = [];
-                const domainCards = [];
-                const experiences = [];
-                const subclassFeatureState = { class: null, multiclass: null };
-                let multiclass = null;
-                Object.keys(this.system.levelData.levelups)
-                    .filter(x => x > usedLevel)
-                    .forEach(levelKey => {
-                        const level = this.system.levelData.levelups[levelKey];
-                        const achievementCards = level.achievements.domainCards.map(x => x.itemUuid);
-                        const advancementCards = level.selections
-                            .filter(x => x.type === 'domainCard')
-                            .map(x => x.itemUuid);
-                        domainCards.push(...achievementCards, ...advancementCards);
-                        experiences.push(...Object.keys(level.achievements.experiences));
-                        features.push(...level.selections.flatMap(x => x.features));
-
-                        const subclass = level.selections.find(x => x.type === 'subclass');
-                        if (subclass) {
-                            const path = subclass.secondaryData.isMulticlass === 'true' ? 'multiclass' : 'class';
-                            const subclassState = Number(subclass.secondaryData.featureState) - 1;
-                            subclassFeatureState[path] = subclassFeatureState[path]
-                                ? Math.min(subclassState, subclassFeatureState[path])
-                                : subclassState;
-                        }
-
-                        multiclass = level.selections.find(x => x.type === 'multiclass');
-                    });
-
-                for (let feature of features) {
-                    if (feature.onPartner && !this.system.partner) continue;
-
-                    const document = feature.onPartner ? this.system.partner : this;
-                    document.items.get(feature.id)?.delete();
-                }
-
-                if (experiences.length > 0) {
-                    const getUpdate = () => ({
-                        'system.experiences': experiences.reduce((acc, key) => {
-                            acc[key] = _del;
-                            return acc;
-                        }, {})
-                    });
-                    this.update(getUpdate());
-                }
-
-                if (subclassFeatureState.class) {
-                    this.system.class.subclass.update({ 'system.featureState': subclassFeatureState.class });
-                }
-
-                if (subclassFeatureState.multiclass) {
-                    this.system.multiclass.subclass.update({ 'system.featureState': subclassFeatureState.multiclass });
-                }
-
-                // Remove multiclass if we're removing a multiclass feature or if we're below the multiclass minimum level
-                // Multclasses cannot be manually removed on the sheet, so this allows recovering in the case of errors
-                if (multiclass || newLevel < multiclassMinLevel) {
-                    const multiclassItems = this.items.filter(
-                        x =>
-                            x.uuid === multiclass?.itemUuid ||
-                            x.system.isMulticlass ||
-                            (['class', 'subclass'].includes(x.system.granter?.type) && x.system.granter?.multiclass)
-                    );
-
-                    this.deleteEmbeddedDocuments(
-                        'Item',
-                        multiclassItems.map(x => x.id)
-                    );
-
-                    this.update({
-                        'system.multiclass': {
-                            value: null,
-                            subclass: null
-                        }
-                    });
-                }
-
-                for (let domainCard of domainCards) {
-                    const itemCard = this.items.find(x => x.uuid === domainCard);
-                    itemCard?.delete();
-                }
-            }
-
-            await this.update({
-                system: {
-                    levelData: {
-                        level: {
-                            current: usedLevel,
-                            changed: usedLevel
-                        },
-                        levelups: updatedLevelups
-                    }
-                }
-            });
-
-            if (this.system.companion) {
-                this.system.companion.updateLevel(usedLevel);
-            }
-
-            this.sheet.render();
-        }
+        if (this.type !== 'character') return;
+        const level = Math.clamp(Number(newLevel) || 1, 1, 10);
+        await this.update({ 'system.levelData.level.changed': level });
     }
 
-    async levelUp(levelupData) {
-        const levelupAuto = game.system.settings.automation.levelupAuto;
-        const getStatsWithSource = document => ({ ...(document._stats ?? {}), compendiumSource: document.uuid });
-
-        const levelups = {};
-        for (var levelKey of Object.keys(levelupData)) {
-            const level = levelupData[levelKey];
-
-            if (levelupAuto) {
-                for (var experienceKey in level.achievements.experiences) {
-                    const experience = level.achievements.experiences[experienceKey];
-                    await this.update({
-                        [`system.experiences.${experienceKey}`]: {
-                            name: experience.name,
-                            value: experience.modifier,
-                            core: true
-                        }
-                    });
-                }
-            }
-
-            let multiclass = null;
-            const featureAdditions = [];
-            const domainCards = [];
-            const subclassFeatureState = { class: null, multiclass: null };
-            const selections = [];
-            for (var optionKey of Object.keys(level.choices)) {
-                const selection = level.choices[optionKey];
-                for (var checkboxNr of Object.keys(selection)) {
-                    const checkbox = selection[checkboxNr];
-
-                    const tierOption = LevelOptionType[checkbox.type];
-                    if (tierOption.features?.length > 0) {
-                        featureAdditions.push({
-                            checkbox: {
-                                ...checkbox,
-                                level: Number(levelKey),
-                                optionKey: optionKey,
-                                checkboxNr: Number(checkboxNr)
-                            },
-                            features: tierOption.features
-                        });
-                    } else if (checkbox.type === 'multiclass') {
-                        multiclass = {
-                            ...checkbox,
-                            level: Number(levelKey),
-                            optionKey: optionKey,
-                            checkboxNr: Number(checkboxNr)
-                        };
-                    } else if (checkbox.type === 'domainCard') {
-                        domainCards.push({
-                            ...checkbox,
-                            level: Number(levelKey),
-                            optionKey: optionKey,
-                            checkboxNr: Number(checkboxNr)
-                        });
-                    } else {
-                        if (checkbox.type === 'subclass') {
-                            const path = checkbox.secondaryData.isMulticlass === 'true' ? 'multiclass' : 'class';
-                            subclassFeatureState[path] = Math.max(
-                                Number(checkbox.secondaryData.featureState),
-                                subclassFeatureState[path]
-                            );
-                        }
-
-                        selections.push({
-                            ...checkbox,
-                            level: Number(levelKey),
-                            optionKey: optionKey,
-                            checkboxNr: Number(checkboxNr)
-                        });
-                    }
-                }
-            }
-
-            for (var addition of featureAdditions) {
-                if (levelupAuto) {
-                    for (var featureData of addition.features) {
-                        const feature = new DHFeature({
-                            ...featureData,
-                            description: game.i18n.localize(featureData.description)
-                        });
-
-                        const document = featureData.toPartner && this.system.partner ? this.system.partner : this;
-                        const embeddedItem = await document.createEmbeddedDocuments('Item', [
-                            {
-                                ...featureData,
-                                name: game.i18n.localize(featureData.name),
-                                type: 'feature',
-                                system: feature
-                            }
-                        ]);
-                        const newFeature = {
-                            onPartner: Boolean(featureData.toPartner && this.system.partner),
-                            id: embeddedItem[0].id
-                        };
-                        addition.checkbox.features = !addition.checkbox.features
-                            ? [newFeature]
-                            : [...addition.checkbox.features, newFeature];
-                    }
-                }
-
-                selections.push(addition.checkbox);
-            }
-
-            if (multiclass) {
-                if (levelupAuto) {
-                    const subclassItem = await foundry.utils.fromUuid(multiclass.secondaryData.subclass);
-                    const subclassData = subclassItem.toObject();
-                    const multiclassItem = await foundry.utils.fromUuid(multiclass.data[0]);
-                    const multiclassData = multiclassItem.toObject();
-
-                    const embeddedItem = await this.createEmbeddedDocuments('Item', [
-                        {
-                            ...multiclassData,
-                            uuid: multiclassItem.uuid, // todo: replace with setting an id and using keepId
-                            _stats: getStatsWithSource(multiclassItem),
-                            system: {
-                                ...multiclassData.system,
-                                features: multiclassData.system.features.filter(x => x.type !== 'hope'),
-                                domains: [multiclass.secondaryData.domain],
-                                isMulticlass: true
-                            }
-                        }
-                    ]);
-
-                    await this.createEmbeddedDocuments('Item', [
-                        {
-                            ...subclassData,
-                            uuid: subclassItem.uuid, // todo: replace with setting an id and using keepId
-                            _stats: getStatsWithSource(subclassItem),
-                            system: {
-                                ...subclassData.system,
-                                isMulticlass: true
-                            }
-                        }
-                    ]);
-                    selections.push({ ...multiclass, itemUuid: embeddedItem[0].uuid });
-                } else {
-                    selections.push({ ...multiclass });
-                }
-            }
-
-            for (var domainCard of domainCards) {
-                if (levelupAuto) {
-                    const cardItem = await foundry.utils.fromUuid(domainCard.data[0]);
-                    const cardData = cardItem.toObject();
-                    const embeddedItem = await this.createEmbeddedDocuments('Item', [
-                        {
-                            ...cardData,
-                            uuid: cardItem.uuid, // todo: replace with setting an id and using keepId
-                            _stats: getStatsWithSource(cardItem),
-                            system: {
-                                ...cardData.system,
-                                inVault: true
-                            }
-                        }
-                    ]);
-                    selections.push({ ...domainCard, itemUuid: embeddedItem[0].uuid });
-                } else {
-                    selections.push({ ...domainCard });
-                }
-            }
-
-            const achievementDomainCards = [];
-            if (levelupAuto) {
-                for (var card of Object.values(level.achievements.domainCards)) {
-                    const cardItem = await foundry.utils.fromUuid(card.uuid);
-                    const cardData = cardItem.toObject();
-                    const embeddedItem = await this.createEmbeddedDocuments('Item', [
-                        {
-                            ...cardData,
-                            _stats: getStatsWithSource(cardItem),
-                            system: {
-                                ...cardData.system,
-                                inVault: true
-                            }
-                        }
-                    ]);
-                    card.itemUuid = embeddedItem[0].uuid;
-                    achievementDomainCards.push(card);
-                }
-            }
-
-            if (subclassFeatureState.class) {
-                await this.system.class.subclass.update({ 'system.featureState': subclassFeatureState.class });
-            }
-
-            if (subclassFeatureState.multiclass) {
-                await this.system.multiclass.subclass.update({
-                    'system.featureState': subclassFeatureState.multiclass
-                });
-            }
-
-            levelups[levelKey] = {
-                achievements: {
-                    ...level.achievements,
-                    domainCards: achievementDomainCards
-                },
-                selections: selections
-            };
-        }
-
-        const levelChange = this.system.levelData.level.changed - this.system.levelData.level.current;
-        await this.update({
-            system: {
-                levelData: {
-                    level: {
-                        current: this.system.levelData.level.changed
-                    },
-                    levelups: levelups
-                }
-            }
-        });
-        this.sheet.render();
-
-        if (this.system.companion && !this.system.companion.system.levelData.canLevelUp) {
-            const confirmed = await foundry.applications.api.DialogV2.confirm({
-                window: {
-                    title: game.i18n.localize('DAGGERHEART.ACTORS.Character.companionLevelup.confirmTitle')
-                },
-                content: game.i18n.format('DAGGERHEART.ACTORS.Character.companionLevelup.confirmText', {
-                    name: this.system.companion.name,
-                    levelChange: levelChange
-                })
-            });
-
-            if (!confirmed) return;
-
-            await this.system.companion.updateLevel(this.system.companion.system.levelData.level.current + levelChange);
-            new DhCompanionLevelUp(this.system.companion).render({ force: true });
-        }
-    }
-
-    /**
-     * @param {Partial<RollConfig>} config
-     */
     async diceRoll(config) {
         config.source = { ...(config.source ?? {}), actor: this.uuid };
         config.data = this.getRollData();
@@ -737,8 +372,13 @@ export default class DhActor extends Actor {
         rollData.id = this.id;
         rollData.name = this.name;
         rollData.system = this.system.getRollData();
-        rollData.prof = this.system.proficiency ?? 1;
-        rollData.cast = this.system.spellcastModifier ?? 1;
+        for (const [key, trait] of Object.entries(this.system.traits ?? {})) {
+            rollData[key] = trait.value;
+            rollData[key + 'Count'] = trait.value < 0 ? 1 : trait.value;
+        }
+        rollData.spellcastingTrait = this.system.spellcastModifier ?? 0;
+        const cast = this.system.spellcastModifier ?? 0;
+        rollData.cast = cast < 0 ? 1 : cast;
         rollData.fear = game.settings.get(CONFIG.DH.id, CONFIG.DH.SETTINGS.gameSettings.Resources.Fear);
 
         return rollData;
@@ -850,7 +490,7 @@ export default class DhActor extends Actor {
         return canUseArmor || canUseStress || hasReduceSeverity || hasThresholdImmunity;
     }
 
-    async takeDamage(args, isDirect = false) {
+    async takeDamage(args, isDirect = false, options = {}) {
         args = this.#parseDamageArgs(args);
         if (Hooks.call(`${CONFIG.DH.id}.preTakeDamage`, this, args) === false) return null;
 
@@ -862,7 +502,7 @@ export default class DhActor extends Actor {
         const updates = args.resourceUpdates;
         if (args.main) {
             // todo: avoid side effects, but hook currently requires it
-            args.main.value = this.calculateDamage(args.main.value, args.main.damageTypes);
+            args.main.value = this.calculateDamage(args.main.value, args.main.damageTypes, options);
         }
 
         if (Hooks.call(`${CONFIG.DH.id}.postCalculateDamage`, this, args) === false) return null;
@@ -910,6 +550,7 @@ export default class DhActor extends Actor {
                 }
             }
 
+            if (hpDamage.value >= 3) hpDamage.value += options.extraSevereHP ?? 0;
             // Merge existing hitPoint deduction with finalised damage deduction
             const existing = updates.find(u => u.key === CONFIG.DH.GENERAL.healingTypes.hitPoints.id);
             if (existing) {
@@ -986,13 +627,14 @@ export default class DhActor extends Actor {
         return { main, resourceUpdates };
     }
 
-    calculateDamage(baseDamage, type) {
+    calculateDamage(baseDamage, type, options = {}) {
         const { resistant, immune } = this.getResistanceStatus(type);
         if (immune) baseDamage = 0;
-        else if (resistant) baseDamage = Math.ceil(baseDamage / 2);
+        else if (resistant && !options.bypassResistance) baseDamage = Math.ceil(baseDamage / 2);
 
         const flatReduction = this.getDamageTypeReduction(type);
-        const damage = Math.max(baseDamage - (flatReduction ?? 0), 0);
+        const warded = this.type === 'character' && this.system.armor?.system.ironbound ? this.system.armorScore.max : 0;
+        const damage = Math.max(baseDamage - (flatReduction ?? 0) - warded, 0);
 
         return damage;
     }
@@ -1204,7 +846,7 @@ export default class DhActor extends Actor {
             .reduce((acc, effect) => {
                 /* Could be generalized if needed. Currently just related to Vulnerable */
                 const isAutoVulnerableEffect =
-                    effect.flags.daggerheart?.autoApplyFlagId === conditions.vulnerable.autoApplyFlagId;
+                    effect.flags['daggerheart-theah']?.autoApplyFlagId === conditions.vulnerable.autoApplyFlagId;
                 if (isAutoVulnerableEffect) {
                     if (!autoVulnerableActive) return acc;
 
@@ -1301,9 +943,9 @@ export default class DhActor extends Actor {
         if (latest.type !== this.type) {
             return ui.notifications.error(_loc('DAGGERHEART.ITEMS.Base.Refresh.Error.invalidType'));
         }
-        if (latest.system.tier !== this.system.tier) {
-            // An adversary that has been re-tiered is not eligible for refresh
-            return ui.notifications.error(_loc('DAGGERHEART.ITEMS.Base.Refresh.Error.invalidTier'));
+        if (latest.system.classification !== this.system.classification) {
+            // An adversary with a different classification is not eligible for refresh
+            return ui.notifications.error('This adversary has a different classification from its compendium source.');
         }
 
         const currentSource = this.toObject(true);

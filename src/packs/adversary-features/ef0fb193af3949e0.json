@@ -1,0 +1,15 @@
+{
+  "_id": "ef0fb193af3949e0",
+  "name": "From Above",
+  "type": "feature",
+  "img": "icons/magic/control/buff-flight-wings-blue.webp",
+  "system": {
+    "description": "<p>When the adversary succeeds on a standard attack from above a target, they deal 1d10+1 physical damage instead of their standard damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!ef0fb193af3949e0"
+}

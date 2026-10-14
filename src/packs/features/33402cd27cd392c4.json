@@ -1,0 +1,15 @@
+{
+  "_id": "33402cd27cd392c4",
+  "name": "Heart of a Poet",
+  "type": "feature",
+  "img": "icons/tools/instruments/lute-gold-brown.webp",
+  "system": {
+    "description": "<p>After attempting to impress, persuade, or scandalize someone with an Action Roll, but before the GM shares the result, you may <strong>spend a Hope</strong> to add an extra flourish, adding 1d4 to the result.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "247bd13055de6d61",
+  "_key": "!items!33402cd27cd392c4"
+}

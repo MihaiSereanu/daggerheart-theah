@@ -1,0 +1,15 @@
+{
+  "_id": "2830bce364df71bb",
+  "name": "Net of the Dread Pirate",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Net of the Dread Pirate</strong>: You can make a Finesse Roll using this net to trap a creature. A trapped target can break free with a successful Attack Roll (16).</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!2830bce364df71bb"
+}

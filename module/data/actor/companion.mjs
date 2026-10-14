@@ -104,7 +104,7 @@ export default class DhCompanion extends DhCreature {
                             applyTo: 'hitPoints',
                             value: {
                                 dice: 'd6',
-                                multiplier: 'prof'
+                                multiplier: 'flat'
                             }
                         }
                     }
@@ -120,7 +120,7 @@ export default class DhCompanion extends DhCreature {
     /* -------------------------------------------- */
 
     /**@inheritdoc */
-    static DEFAULT_ICON = 'systems/daggerheart/assets/icons/documents/actors/capybara.svg';
+    static DEFAULT_ICON = 'systems/daggerheart-theah/assets/icons/documents/actors/capybara.svg';
 
     /* -------------------------------------------- */
 

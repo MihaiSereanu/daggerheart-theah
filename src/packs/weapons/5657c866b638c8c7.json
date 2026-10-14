@@ -1,0 +1,52 @@
+{
+  "_id": "5657c866b638c8c7",
+  "name": "Throwing Axe",
+  "type": "weapon",
+  "img": "icons/weapons/axes/axe-tomahawk-engraved.webp",
+  "system": {
+    "description": "<p><strong>Throwing Axe</strong></p>\n<p><strong>Savage</strong>: When you deal Major+ damage, the target marks 1 Stress</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "blackpowder": false,
+    "reloading": false,
+    "secondary": false,
+    "burden": "oneHanded",
+    "weaponFeatures": [],
+    "attack": {
+      "_id": "13bb0b0e29206fdd",
+      "name": "Throwing Axe",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/weapons/axes/axe-tomahawk-engraved.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "close",
+      "roll": {
+        "type": "attack",
+        "trait": "brawn",
+        "bonus": 0
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d6 + @brawn"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "_key": "!items!5657c866b638c8c7"
+}

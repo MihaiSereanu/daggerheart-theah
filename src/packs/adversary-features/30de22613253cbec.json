@@ -1,0 +1,15 @@
+{
+  "_id": "30de22613253cbec",
+  "name": "Grave Blade",
+  "type": "feature",
+  "img": "icons/sundries/books/book-symbol-skull-grey.webp",
+  "system": {
+    "description": "<p>Spend a Fear to make an attack against a target within Very Close range. On a success, deal 2d10+6 physical damage and the target must <strong>mark a Stress</strong>.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!30de22613253cbec"
+}

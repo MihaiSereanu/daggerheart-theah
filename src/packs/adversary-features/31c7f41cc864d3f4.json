@@ -1,0 +1,15 @@
+{
+  "_id": "31c7f41cc864d3f4",
+  "name": "Refresh",
+  "type": "feature",
+  "img": "icons/magic/life/heart-cross-strong-green.webp",
+  "system": {
+    "description": "<p><strong>Mark a Stress</strong> to refresh “Arcane Shield”.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!31c7f41cc864d3f4"
+}

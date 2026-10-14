@@ -1,0 +1,15 @@
+{
+  "_id": "c703dd2543f86bd9",
+  "name": "Gem of Precision",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Gem of Precision</strong>: You can attach this gem to a weapon, allowing you to use your Finesse whinstead of the listed traitn.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!c703dd2543f86bd9"
+}

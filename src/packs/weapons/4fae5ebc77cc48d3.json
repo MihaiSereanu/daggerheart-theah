@@ -1,0 +1,52 @@
+{
+  "_id": "4fae5ebc77cc48d3",
+  "name": "Axe",
+  "type": "weapon",
+  "img": "icons/weapons/axes/axe-battle-simple.webp",
+  "system": {
+    "description": "<p><strong>Axe</strong></p>\n<p><strong>Savage</strong>: When you deal Major+ damage, the target marks 1 Stress</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "blackpowder": false,
+    "reloading": false,
+    "secondary": false,
+    "burden": "oneHanded",
+    "weaponFeatures": [],
+    "attack": {
+      "_id": "c2ae242e2438fb0c",
+      "name": "Axe",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/weapons/axes/axe-battle-simple.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": "brawn",
+        "bonus": 0
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d8 + @brawn"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "_key": "!items!4fae5ebc77cc48d3"
+}

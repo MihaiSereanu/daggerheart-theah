@@ -1,0 +1,20 @@
+{
+  "_id": "fc93d1a8263f59ef",
+  "name": "Unnatural Charisma",
+  "type": "domainCard",
+  "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+  "system": {
+    "description": "<p>If you have 4 or more Poise Talents, gain the following:</p>\n<ul>\n<li>You ignore Disadvantage on Charm.</li>\n<li>When you would force a target to mark HP, you can choose instead to have them mark Stress instead.</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "poise",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "872e6545268d2095",
+  "_key": "!items!fc93d1a8263f59ef"
+}

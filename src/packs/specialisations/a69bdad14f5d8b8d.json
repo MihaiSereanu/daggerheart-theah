@@ -1,0 +1,27 @@
+{
+  "_id": "a69bdad14f5d8b8d",
+  "name": "Inventor",
+  "type": "subclass",
+  "img": "icons/sundries/books/book-open-turquoise.webp",
+  "system": {
+    "description": "<p>Play the Inventor if you want to solve problems through tinkering and ingenuity.</p>\n<h4>Features</h4>\n<p><strong>Jury Rig</strong>. You may <em>Work on a Project</em> to tinker during Rests instead of Extended Rests. You may also perform the <em>Repair Armor</em> Downtime Move by spending an hour and 1 Handful.</p>\n<p><strong>Resourceful.</strong> When you spend Supply to pull a device or implement from your backpack to solve a problem, you may <strong>spend a Hope</strong> to gain Advantage on rolls that make use of it. In addition, your Supply only deteriorates on a roll of 1.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.62ed690fa19d812c",
+    "spellcastingTrait": null,
+    "features": [
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.311bd80a4f2190cb"
+      },
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.98bdcd22270a4463"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": "347bd4a2733ebebd",
+  "_key": "!items!a69bdad14f5d8b8d"
+}

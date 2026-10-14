@@ -1,0 +1,28 @@
+{
+  "_id": "29b2d8d181ec67cd",
+  "name": "Share the Burden",
+  "type": "domainCard",
+  "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+  "system": {
+    "description": "<p>Once per Rest, take on the stress of a willing ally. You may transfer any number of their marked Stress to you, then gain a Hope for each Stress transferred.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "poise",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false,
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    }
+  },
+  "effects": [],
+  "folder": "872e6545268d2095",
+  "_key": "!items!29b2d8d181ec67cd"
+}

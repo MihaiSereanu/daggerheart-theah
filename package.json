@@ -20,12 +20,19 @@
     "createSymlink": "node ./tools/create-symlink.mjs",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
-    "prepare": "husky"
+    "prepare": "husky",
+    "packs:import": "node tools/import-manuscript.mjs",
+    "packs:build": "node tools/build-packs.mjs",
+    "packs:extract-adversary-features": "node tools/extract-adversary-features.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "validate": "node tools/validate-content.mjs && node tools/check-syntax.mjs",
+    "package": "py -3 tools/package-system.py"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@foundryvtt/foundryvtt-cli": "^1.0.2",
     "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@stylistic/eslint-plugin": "^5.10.0",
     "concurrently": "^8.2.2",
@@ -33,6 +40,8 @@
     "globals": "^17.5.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.4.0",
+    "marked": "^18.1.0",
+    "playwright": "^1.64.0",
     "postcss": "^8.4.32",
     "rollup-plugin-postcss": "^4.0.2",
     "typescript": "^6.0.3",
@@ -40,5 +49,8 @@
   },
   "lint-staged": {
     "**/*": "eslint --fix"
-  }
+  },
+  "name": "daggerheart-theah",
+  "version": "0.1.0",
+  "private": true
 }

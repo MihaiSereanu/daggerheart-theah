@@ -1,0 +1,15 @@
+{
+  "_id": "d5a80a4444f1f4cb",
+  "name": "For the Realm!",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-sword-blue.webp",
+  "system": {
+    "description": "<p>Mark a Stress to spotlight 1d4+1 allies. While spotlighted this way, their attacks deal half damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!d5a80a4444f1f4cb"
+}

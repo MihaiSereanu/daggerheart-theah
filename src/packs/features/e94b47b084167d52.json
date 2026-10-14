@@ -1,0 +1,15 @@
+{
+  "_id": "e94b47b084167d52",
+  "name": "Silent Steps",
+  "type": "feature",
+  "img": "icons/equipment/back/cloak-hooded-green-gold.webp",
+  "system": {
+    "description": "<p>Any time you would become Hidden, you instead become <em>Cloaked</em>. While <em>Cloaked</em>, you remain unseen even if someone moves close, so long as you do not move or attack.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "62d44ae0349560d2",
+  "_key": "!items!e94b47b084167d52"
+}

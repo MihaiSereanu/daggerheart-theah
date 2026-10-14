@@ -1,0 +1,15 @@
+{
+  "_id": "c2f33c1c59bb0a95",
+  "name": "Redthorn Ichor",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Redthorn Ichor</strong>: You can apply this ichor to a weapon that deals physical damage to add a d12 to your next damage roll with that weapon.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!c2f33c1c59bb0a95"
+}

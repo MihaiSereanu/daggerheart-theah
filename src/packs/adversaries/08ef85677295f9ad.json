@@ -1,0 +1,139 @@
+{
+  "_id": "08ef85677295f9ad",
+  "name": "Hydra",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A scaled beast with multiple long-necked fanged heads.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "champion",
+    "type": "solo",
+    "difficulty": 20,
+    "notes": "<h3>Champion | Solo</h3>\n<p><em>A scaled beast with multiple long-necked fanged heads.</em><br><strong>Motives &amp; Tactics:</strong> Devour, regenerate, terrify</p>\n<p><strong>Difficulty:</strong> 20 | <strong>Thresholds:</strong> 15/25 | <strong>HP:</strong> 10 | <strong>Stress:</strong> 5</p>\n<p><strong>ATK:</strong> +4 | Bite: Close | 2d6+2 physical</p>\n<hr>\n<p><strong>Experience:</strong> —</p>\n<h4>Features</h4>\n<p><strong>Many-Headed Menace - Passive</strong>: The Hydra begins with three heads and can have up to five. When the Hydra takes Major or greater damage, they lose a head, becoming inert when it has 0.</p>\n<p><strong>Many Headed Reach — Passive</strong>: While the Hydra has more than 3 heads remaining, they can make their standard attack against two targets within range.</p>\n<p><strong>Relentless (X) - Passive</strong>: The Hydra can be spotlighted X times per GM turn, where X is the Hydra’s number of heads. Spend Fear as usual to spotlight them.</p>\n<p><strong>Regeneration - Action</strong>: If the Hydra has any marked HP, spend a Fear to clear a HP and grow two heads.</p>\n<p><strong>Terrifying Chorus - Action</strong>: All PCs within Far range lose 2 Hope. If a PC does not have that much Hope to lose, they instead mark an equal number of Stress.</p>\n<p><strong>Magical Weakness - Reaction</strong>: When the Hydra takes magic damage, they become Dazed until the next roll with Fear. While Dazed, they can’t use their Regeneration action but are immune to magic damage.</p>\n",
+    "damageThresholds": {
+      "major": 15,
+      "severe": 25
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 10
+      },
+      "stress": {
+        "value": 0,
+        "max": 5
+      }
+    },
+    "motivesAndTactics": "Devour, regenerate, terrify",
+    "experiences": {},
+    "attack": {
+      "_id": "991ee448fb2adfcf",
+      "name": "Bite",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/creatures/abilities/bear-roar-bite-brown-green.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "close",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 4
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "2d6+2"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "014935270476f04d",
+      "name": "Many-Headed Menace - Passive",
+      "type": "feature",
+      "img": "icons/creatures/claws/claw-talons-yellow-red.webp",
+      "system": {
+        "description": "<p>The Hydra begins with three heads and can have up to five. When the Hydra takes Major or greater damage, they lose a head, becoming inert when it has 0.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!08ef85677295f9ad.014935270476f04d"
+    },
+    {
+      "_id": "2a032f6859019ac7",
+      "name": "Many Headed Reach — Passive",
+      "type": "feature",
+      "img": "icons/creatures/claws/claw-talons-yellow-red.webp",
+      "system": {
+        "description": "<p>While the Hydra has more than 3 heads remaining, they can make their standard attack against two targets within range.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!08ef85677295f9ad.2a032f6859019ac7"
+    },
+    {
+      "_id": "cd45ecb92e38b4b9",
+      "name": "Relentless (X) - Passive",
+      "type": "feature",
+      "img": "icons/equipment/shield/heater-steel-gold.webp",
+      "system": {
+        "description": "<p>The Hydra can be spotlighted X times per GM turn, where X is the Hydra’s number of heads. Spend Fear as usual to spotlight them.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!08ef85677295f9ad.cd45ecb92e38b4b9"
+    },
+    {
+      "_id": "bda96e2ea2ac5bbb",
+      "name": "Regeneration - Action",
+      "type": "feature",
+      "img": "icons/magic/life/heart-cross-strong-green.webp",
+      "system": {
+        "description": "<p>If the Hydra has any marked HP, spend a Fear to clear a HP and grow two heads.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!08ef85677295f9ad.bda96e2ea2ac5bbb"
+    },
+    {
+      "_id": "d579251b404b5c0c",
+      "name": "Terrifying Chorus - Action",
+      "type": "feature",
+      "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
+      "system": {
+        "description": "<p>All PCs within Far range lose 2 Hope. If a PC does not have that much Hope to lose, they instead mark an equal number of Stress.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!08ef85677295f9ad.d579251b404b5c0c"
+    },
+    {
+      "_id": "753ee5898bbb6941",
+      "name": "Magical Weakness - Reaction",
+      "type": "feature",
+      "img": "icons/magic/symbols/runes-star-magenta.webp",
+      "system": {
+        "description": "<p>When the Hydra takes magic damage, they become Dazed until the next roll with Fear. While Dazed, they can’t use their Regeneration action but are immune to magic damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!08ef85677295f9ad.753ee5898bbb6941"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Hydra",
+    "actorLink": false
+  },
+  "_key": "!actors!08ef85677295f9ad"
+}

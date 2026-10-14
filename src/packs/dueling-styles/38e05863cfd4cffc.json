@@ -1,0 +1,14 @@
+{
+  "_id": "38e05863cfd4cffc",
+  "name": "Donovan",
+  "type": "feature",
+  "img": "icons/skills/melee/shield-block-bash-blue.webp",
+  "system": {
+    "description": "<p><strong>Required Weapon: Claymore</strong>\nCreated by Donovan Durant, legendary Avalonian bodyguard. This style focuses on defense and protecting others, with a rigid entry standard at the Donovan Academy.</p>\n<ul>\n<li><strong>The Durant Guarantee</strong>. You gain the “I am Your Shield” Talent, but must <strong>spend 3 Hope</strong> instead of <em>1 Stress</em> to use it.</li>\n<li><strong>Bulkwark&#39;s Defense.</strong> Add your Brawn Modifier to your damage thresholds and gain an additional Armor Slot.</li>\n<li><strong>Bulwark&#39;s Advance</strong>. Make a Brawn roll against a target within Melee. On a success, they are knocked Prone and take 1d10+Brawn damage. While Prone, they are Vulnerable and your attacks deal an additional 1d10 damage.</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!38e05863cfd4cffc"
+}

@@ -1,0 +1,50 @@
+{
+  "_id": "9636ffa6820561cb",
+  "name": "Warrior",
+  "type": "class",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow-teal.webp",
+  "system": {
+    "description": "<p>Warriors are forged through years of relentless training and lived violence. Their bodies are weapons, their minds hardened to conflict. They come from all walks of life, and could be anything between royal knights, mercenary captains, dueling champions, or soldiers of fortune. No matter their origin, a true Warrior never ceases to refine their craft.</p>\n<h5>STARTING EVASION: 11</h5>\n<h5>STARTING HP: 6</h5>\n<h4>Thematic Items</h4>\n<p>The drawing of a lover or a sharpening stone</p>\n<h4>Warrior&#39;s Hope Feature</h4>\n<p><strong>Practiced Swings</strong>. Spend 3 Hope to gain a +1 bonus to attack and damage rolls until your next Rest.</p>\n<h4>Archetype Feature</h4>\n<h5>Refined Edge</h5>\n<p>Choose the style of swordplay you use and gain its effect:</p>\n<ul>\n<li><strong>Fencer’s Temper</strong>. When you deal physical damage, you may add your Instinct to the damage roll.</li>\n<li><strong>Prudent Guard</strong>. When you take physical damage, you may reduce it by your WIts.</li>\n</ul>\n<h5>Flow of Battle</h5>\n<p>If an adversary within Melee range shifts their focus away from you, describe how you impede them and make a Reaction Roll using an appropriate Trait against theim. Choose an effect on a success, or two on a critical:</p>\n<ul>\n<li>They can&#39;t move, or you move with them.</li>\n<li>You deal your weapon damage to them.</li>\n<li>You set them up, making them <em>Vulnerable</em>.</li>\n</ul>\n<blockquote>\n<p>You may replace an Archetype Feature with a <strong>Duelist Style</strong>. See Appendix for <strong>Duelist Styles</strong>.</p>\n</blockquote>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "evasion": 11,
+    "hitPoints": 6,
+    "domains": [],
+    "features": [
+      {
+        "type": "hope",
+        "item": "Compendium.daggerheart-theah.features.Item.b7e15afd238bc118"
+      },
+      {
+        "type": "class",
+        "item": "Compendium.daggerheart-theah.features.Item.6285289c7151dfac"
+      },
+      {
+        "type": "class",
+        "item": "Compendium.daggerheart-theah.features.Item.f0d3094d01b3e9b7"
+      }
+    ],
+    "subclasses": [
+      "Compendium.daggerheart-theah.specialisations.Item.7166a24b4b227777",
+      "Compendium.daggerheart-theah.specialisations.Item.bdeb620560c8d9a9"
+    ],
+    "inventory": {
+      "take": [],
+      "choiceA": [],
+      "choiceB": []
+    },
+    "backgroundQuestions": [
+      "Who taught you to fight, and why did they remain behind when you left home?",
+      "Someone bested you once and left you to die. Who were they, and what betrayal followed?",
+      "What promise did you make to yourself the first time you lost?"
+    ],
+    "connections": [
+      "We knew each other long before this party came together. How?",
+      "What mundane task do you usually help me with off the battlefield?",
+      "What fear am I helping you overcome?"
+    ]
+  },
+  "effects": [],
+  "_key": "!items!9636ffa6820561cb"
+}

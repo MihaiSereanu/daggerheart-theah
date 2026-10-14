@@ -22,7 +22,7 @@ export default class DHLoot extends BaseDataItem {
     /* -------------------------------------------- */
 
     /**@override */
-    static DEFAULT_ICON = 'systems/daggerheart/assets/icons/documents/items/open-treasure-chest.svg';
+    static DEFAULT_ICON = 'systems/daggerheart-theah/assets/icons/documents/items/open-treasure-chest.svg';
 
     /* -------------------------------------------- */
 }

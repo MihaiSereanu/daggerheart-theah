@@ -1,0 +1,15 @@
+{
+  "_id": "6377a8b7e6927745",
+  "name": "Draught of Poise",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Draught of Poise</strong>: Drink to choose one additional downtime move.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!6377a8b7e6927745"
+}

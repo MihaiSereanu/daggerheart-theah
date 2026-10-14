@@ -1,0 +1,15 @@
+{
+  "_id": "1997b90db3c1b8da",
+  "name": "Voice Relic",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Voice Relic</strong>: You gain a +1 bonus to your Charm. You can only carry one relic.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!1997b90db3c1b8da"
+}

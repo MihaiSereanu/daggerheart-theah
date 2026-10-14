@@ -1,0 +1,15 @@
+{
+  "_id": "679af711a62ebd20",
+  "name": "Recipe: Mythic Dust",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Recipe: Mythic Dust</strong>: As a downtime move, you can use a handful of fine gold dust to craft Mythic Dust.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!679af711a62ebd20"
+}

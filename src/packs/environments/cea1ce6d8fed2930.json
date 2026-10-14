@@ -1,0 +1,47 @@
+{
+  "_id": "cea1ce6d8fed2930",
+  "name": "Ambushers",
+  "type": "environment",
+  "img": "systems/daggerheart-theah/assets/icons/documents/actors/forest.svg",
+  "system": {
+    "description": "<p><em>An ambush is set by the PCs to catch their quarry off-guard.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "standard",
+    "type": "event",
+    "difficulty": 10,
+    "notes": "<h3>Standard | Event</h3>\n<p><em>An ambush is set by the PCs to catch their quarry off-guard.</em><br><strong>Impulses:</strong> Escape, group up, protect the most Vulnerable</p>\n<p><strong>Difficulty:</strong> Special - see <strong>Relative Strength</strong></p>\n<h4>Features</h4>\n<p><strong>Relative Strength - Passive:</strong> The Difficulty of this environment equals that of the adversary with the highest Difficulty.</p>\n<p><strong>Where Did They Come From? - Reaction</strong>: When a PC starts the ambush on unsuspecting adversaries, you lose 2 Fear and the first attack roll a PC makes has advantage.</p>\n",
+    "impulses": "Escape, group up, protect the most Vulnerable"
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "c5355b116b33648d",
+      "name": "Relative Strength - Passive",
+      "type": "feature",
+      "img": "icons/tools/navigation/compass-brass-blue-red.webp",
+      "system": {
+        "description": "<p>The Difficulty of this environment equals that of the adversary with the highest Difficulty.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!cea1ce6d8fed2930.c5355b116b33648d"
+    },
+    {
+      "_id": "99a3bf6d1f188051",
+      "name": "Where Did They Come From? - Reaction",
+      "type": "feature",
+      "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
+      "system": {
+        "description": "<p>When a PC starts the ambush on unsuspecting adversaries, you lose 2 Fear and the first attack roll a PC makes has advantage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!cea1ce6d8fed2930.99a3bf6d1f188051"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Ambushers",
+    "actorLink": false
+  },
+  "_key": "!actors!cea1ce6d8fed2930"
+}

@@ -9,9 +9,9 @@
             <div class="selections-outer-container">
                 {{#each domainCards as |domainCard id|}}
                     <div class="selections-container domain-card" data-card="{{id}}"> 
-                        {{#> "systems/daggerheart/templates/components/card-preview.hbs" domainCard }}
+                        {{#> "systems/daggerheart-theah/templates/components/card-preview.hbs" domainCard }}
                             {{#each @root.classDomains }}<div>{{this}}</div>{{/each}}
-                        {{/"systems/daggerheart/templates/components/card-preview.hbs"}}
+                        {{/"systems/daggerheart-theah/templates/components/card-preview.hbs"}}
                     </div>
                 {{/each}}
             </div>

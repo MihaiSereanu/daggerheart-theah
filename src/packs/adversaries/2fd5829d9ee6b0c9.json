@@ -1,0 +1,111 @@
+{
+  "_id": "2fd5829d9ee6b0c9",
+  "name": "Sidhe Soldier",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A fae warrior adorned in armor made of leaves and bark.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "standard",
+    "difficulty": 13,
+    "notes": "<h3>Normal | Standard</h3>\n<p><em>A fae warrior adorned in armor made of leaves and bark.</em><br><strong>Motives &amp; Tactics:</strong> Ambush, hide, overwhelm, protect, trail</p>\n<p><strong>Difficulty:</strong> 13 | <strong>Thresholds:</strong> 6/11 | <strong>HP:</strong> 4 | <strong>Stress:</strong> 2</p>\n<p><strong>ATK:</strong> +0 | Weapon: Melee | 1d8+1 physical</p>\n<hr>\n<p><strong>Experience:</strong> Tracker +2</p>\n<h4>Features</h4>\n<p><strong>Pack Tactics - Passive</strong>: If the Soldier makes a standard attack and another Sidhe Soldier is within Melee range of the target, deal 1d8+5 physical damage instead of their standard damage.</p>\n<p><strong>Fae Control - Action</strong>: Spend a Fear to disorient a target within Close range. The target must succeed on a Finesse Reaction Roll (15) or take 1d10 physical damage as they trip and fall.</p>\n<p><strong>Blend In - Reaction</strong>: When the Soldier makes a successful attack, you can <strong>mark a Stress</strong> to become Cloaked until the Soldier&#39;s next attack or a PC succeeds on an Instinct Roll (14) to find them.</p>\n",
+    "damageThresholds": {
+      "major": 6,
+      "severe": 11
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 4
+      },
+      "stress": {
+        "value": 0,
+        "max": 2
+      }
+    },
+    "motivesAndTactics": "Ambush, hide, overwhelm, protect, trail",
+    "experiences": {
+      "c11788ea9719b556": {
+        "name": "Tracker",
+        "value": 2
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/hand-grip-sword-orange.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 0
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d8+1"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "19f5fd8947705923",
+      "name": "Pack Tactics - Passive",
+      "type": "feature",
+      "img": "icons/sundries/flags/banner-sword-blue.webp",
+      "system": {
+        "description": "<p>If the Soldier makes a standard attack and another Sidhe Soldier is within Melee range of the target, deal 1d8+5 physical damage instead of their standard damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!2fd5829d9ee6b0c9.19f5fd8947705923"
+    },
+    {
+      "_id": "f6fba95a83910a8a",
+      "name": "Fae Control - Action",
+      "type": "feature",
+      "img": "icons/magic/symbols/runes-star-magenta.webp",
+      "system": {
+        "description": "<p>Spend a Fear to disorient a target within Close range. The target must succeed on a Finesse Reaction Roll (15) or take 1d10 physical damage as they trip and fall.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!2fd5829d9ee6b0c9.f6fba95a83910a8a"
+    },
+    {
+      "_id": "d0c110e253b8de82",
+      "name": "Blend In - Reaction",
+      "type": "feature",
+      "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+      "system": {
+        "description": "<p>When the Soldier makes a successful attack, you can <strong>mark a Stress</strong> to become Cloaked until the Soldier&#39;s next attack or a PC succeeds on an Instinct Roll (14) to find them.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!2fd5829d9ee6b0c9.d0c110e253b8de82"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Sidhe Soldier",
+    "actorLink": false
+  },
+  "_key": "!actors!2fd5829d9ee6b0c9"
+}

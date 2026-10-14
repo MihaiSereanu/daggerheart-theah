@@ -1,0 +1,14 @@
+{
+  "_id": "d2976b15a27ffa7a",
+  "name": "Druidism",
+  "type": "feature",
+  "img": "icons/sundries/books/book-symbol-leaf-gold-green.webp",
+  "system": {
+    "description": "<h2>Druidism</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.6fda6463d5eb8541]{Geas}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.3cab72510992cbb6]{Beastform}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.39651f0fcfedff51]{Wildtouch}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.cf433c2d5f63d2dc]{Nature&#39;s Tongue}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.e388faf9b12bafad]{Vicious Entangle}</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!d2976b15a27ffa7a"
+}

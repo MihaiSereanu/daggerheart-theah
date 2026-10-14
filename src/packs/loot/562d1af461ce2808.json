@@ -1,0 +1,15 @@
+{
+  "_id": "562d1af461ce2808",
+  "name": "Gem of Audacity",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Gem of Audacity</strong>: You can attach this gem to a weapon, allowing you to use your Charm instead of the listed trait.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!562d1af461ce2808"
+}

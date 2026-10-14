@@ -1,0 +1,14 @@
+{
+  "_id": "9126c66320fec0eb",
+  "name": "Dar Matushki",
+  "type": "feature",
+  "img": "icons/creatures/abilities/bear-roar-bite-brown-green.webp",
+  "system": {
+    "description": "<h2>Dar Matushki</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.aa6d916cf7ff37a9]{Beseech}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.df15c7d24be26f6c]{Mother&#39;s Lesson}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.357d5c8c90a105ac]{Mother&#39;s Gift}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.4b701ad805c582ff]{Mother&#39;s Bargain}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.20e72c8c4f5b77a3]{Walk Between Worlds}</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!9126c66320fec0eb"
+}

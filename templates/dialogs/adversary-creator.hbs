@@ -1,0 +1,155 @@
+<div class="adversary-creator-part">
+{{#if selectingType}}
+    <section class="adversary-type-step">
+        <p>Choose the adversary type whose benchmark ranges you want to use.</p>
+        <div class="form-group stacked">
+            <label for="adversary-creator-type">Adversary Type</label>
+            <select id="adversary-creator-type" name="adversaryType">
+                {{#each types as |type|}}
+                    <option value="{{type.id}}" {{#if type.selected}}selected{{/if}}>{{type.label}}</option>
+                {{/each}}
+            </select>
+        </div>
+    </section>
+
+    <footer class="form-footer">
+        <button type="button" data-action="close"><i class="fa-solid fa-xmark"></i> Cancel</button>
+        <button type="button" data-action="chooseType"><i class="fa-solid fa-arrow-right"></i> Continue</button>
+    </footer>
+{{else}}
+    <div class="adversary-creator-content">
+        <header class="adversary-creator-heading">
+            <div>
+                <span>Adversary Type</span>
+                <strong>{{typeLabel}}</strong>
+            </div>
+            <button type="button" data-action="changeType"><i class="fa-solid fa-repeat"></i> Change Type</button>
+        </header>
+
+        <section class="adversary-identity-grid">
+            <div class="form-group stacked adversary-name-field">
+                <label for="adversary-creator-name">Name</label>
+                <input id="adversary-creator-name" type="text" name="name" required autofocus>
+            </div>
+            <label class="adversary-champion-toggle">
+                <input type="checkbox" name="champion">
+                <span>
+                    <strong>Champion</strong>
+                    <small>+2 HP and Stress; +5 to other numbers</small>
+                </span>
+            </label>
+        </section>
+
+        <fieldset class="adversary-stat-grid">
+            <legend>Statistics</legend>
+            {{#each fields as |field|}}
+                <div class="adversary-stat-control">
+                    <label for="adversary-stat-{{field.key}}">{{field.label}}</label>
+                    {{#if field.unavailable}}
+                        <input id="adversary-stat-{{field.key}}" type="hidden" value="0"
+                            data-stat-key="{{field.key}}" data-unavailable="true">
+                        <output data-stat-output="{{field.key}}">None</output>
+                    {{else if field.ranged}}
+                        <div class="adversary-slider-row">
+                            <span data-range-min="{{field.key}}">{{field.min}}</span>
+                            <input id="adversary-stat-{{field.key}}" type="range" min="{{field.min}}" max="{{field.max}}"
+                                value="{{field.value}}" step="1" data-stat-key="{{field.key}}"
+                                {{#if field.signed}}data-signed="true"{{/if}}>
+                            <span data-range-max="{{field.key}}">{{field.max}}</span>
+                            <output data-stat-output="{{field.key}}">{{field.value}}</output>
+                        </div>
+                    {{else}}
+                        <input id="adversary-stat-{{field.key}}" type="hidden" value="{{field.value}}"
+                            data-stat-key="{{field.key}}" {{#if field.signed}}data-signed="true"{{/if}}>
+                        <output data-stat-output="{{field.key}}">{{field.value}}</output>
+                    {{/if}}
+                </div>
+            {{/each}}
+
+            <div class="adversary-stat-control adversary-damage-control">
+                <label for="adversary-stat-damage">Damage</label>
+                {{#if damage.ranged}}
+                    <div class="adversary-slider-row">
+                        <span data-damage-min>{{damage.min}}</span>
+                        <input id="adversary-stat-damage" type="range" min="{{damage.min}}" max="{{damage.max}}"
+                            value="{{damage.value}}" step="1" data-damage-range>
+                        <span data-damage-max>{{damage.max}}</span>
+                        <output data-damage-output>{{damage.value}}</output>
+                    </div>
+                {{else}}
+                    <output data-damage-output>{{damage.formula}}</output>
+                {{/if}}
+            </div>
+        </fieldset>
+
+        <section class="adversary-text-fields">
+            <div class="form-group stacked">
+                <label for="adversary-creator-description">Description</label>
+                <textarea id="adversary-creator-description" name="description" rows="3"></textarea>
+            </div>
+            <div class="form-group stacked">
+                <label for="adversary-creator-motives">Motives &amp; Tactics</label>
+                <textarea id="adversary-creator-motives" name="motivesAndTactics" rows="3"></textarea>
+            </div>
+        </section>
+
+        <fieldset class="adversary-experiences">
+            <legend>Experiences</legend>
+            <div data-experience-list>
+                <div class="adversary-experience-row">
+                    <input type="text" name="experience" placeholder="Experience">
+                    <button type="button" data-action="removeExperience" aria-label="Remove experience"
+                        data-tooltip="Remove experience"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+            <button type="button" class="adversary-add-row" data-action="addExperience">
+                <i class="fa-solid fa-plus"></i> Add Experience
+            </button>
+        </fieldset>
+
+        <fieldset class="adversary-feature-section">
+            <legend>Features</legend>
+            <div class="adversary-feature-toolbar">
+                <button type="button" data-action="toggleFeaturePicker" aria-expanded="false">
+                    <i class="fa-solid fa-list-check"></i> Add Features
+                </button>
+                <div class="adversary-selected-features" data-selected-features></div>
+            </div>
+
+            <section class="adversary-feature-picker" data-feature-picker hidden>
+                <input type="search" data-feature-search placeholder="Search adversary features…"
+                    aria-label="Search adversary features">
+                <div class="adversary-feature-results">
+                    {{#each features as |feature|}}
+                        <article class="adversary-feature-result" data-feature-result data-feature-uuid="{{feature.uuid}}"
+                            data-search-text="{{feature.searchText}}">
+                            <header>
+                                <div>
+                                    <strong>{{feature.name}}</strong>
+                                    <span>{{feature.featureForm}}</span>
+                                </div>
+                                <div class="adversary-feature-actions">
+                                    <button type="button" data-action="toggleFeaturePreview" aria-expanded="false">
+                                        <i class="fa-solid fa-eye"></i> Preview
+                                    </button>
+                                    <button type="button" data-action="selectFeature" aria-pressed="false">
+                                        <i class="fa-solid fa-plus"></i> Add
+                                    </button>
+                                </div>
+                            </header>
+                            <div class="adversary-feature-preview" hidden>{{{feature.description}}}</div>
+                        </article>
+                    {{else}}
+                        <p>No adversary features are available.</p>
+                    {{/each}}
+                </div>
+            </section>
+        </fieldset>
+    </div>
+
+    <footer class="form-footer">
+        <button type="button" data-action="close"><i class="fa-solid fa-xmark"></i> Cancel</button>
+        <button type="submit"><i class="fa-solid fa-dragon"></i> Create Adversary</button>
+    </footer>
+{{/if}}
+</div>

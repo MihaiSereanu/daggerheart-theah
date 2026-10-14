@@ -1,0 +1,20 @@
+{
+  "_id": "efb4204df8654b3f",
+  "name": "Herbal Remedies",
+  "type": "domainCard",
+  "img": "icons/sundries/books/book-embossed-jewel-gold-green.webp",
+  "system": {
+    "description": "<p>As an additional Downtime move you can choose, roll a Wits (10) to prepare a herbal poultice (clears 1 HP) or a calming draught (clears 1 Stress) for the cost of 3 Handfuls.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "lore",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "12efbf11db2e768a",
+  "_key": "!items!efb4204df8654b3f"
+}

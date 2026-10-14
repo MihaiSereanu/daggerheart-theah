@@ -1,0 +1,15 @@
+{
+  "_id": "377eabfec57996b6",
+  "name": "Gloves of the Brotherhood",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Gloves of the Brotherhood</strong>: You can climb up vertical surfaces and across ceilings.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!377eabfec57996b6"
+}

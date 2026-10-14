@@ -1,0 +1,15 @@
+{
+  "_id": "7c8ccff76acc8e47",
+  "name": "Adept",
+  "type": "feature",
+  "img": "icons/sundries/books/book-open-turquoise.webp",
+  "system": {
+    "description": "<p>When you rely on an Experience, you may <strong>mark a Stress</strong> instead of spending Hope. If you do, double the Experience’s modifier for that roll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "55fa48bd3c1e99d5",
+  "_key": "!items!7c8ccff76acc8e47"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "e85ce548f79dbd8e",
+  "name": "Stylish Strike",
+  "type": "feature",
+  "img": "icons/skills/melee/sword-twirl-orange.webp",
+  "system": {
+    "description": "<p>On a successful attack against an adversary, <strong>spend a Hope</strong> to halve your damage and make the target <em>Humiliated</em> by stylishly striking to wound their pride rather than their body. While <em>Humiliated</em>, the adversary deals half damage on all attacks until they successfully hit you or the scene ends.</p>\n<blockquote>\n<p>You may replace an Archetype Feature with a <strong>Duelist Style</strong>. See Appendix for <strong>Duelist Styles</strong>.</p>\n</blockquote>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "9e9b9043142f4705",
+  "_key": "!items!e85ce548f79dbd8e"
+}

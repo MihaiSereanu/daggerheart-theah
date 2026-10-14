@@ -36,23 +36,23 @@ export default class ClassSheet extends DHBaseItemSheet {
 
     /**@override */
     static PARTS = {
-        header: { template: 'systems/daggerheart/templates/sheets/items/class/header.hbs' },
-        tabs: { template: 'systems/daggerheart/templates/sheets/global/tabs/tab-navigation.hbs' },
-        description: { template: 'systems/daggerheart/templates/sheets/global/tabs/tab-description.hbs' },
+        header: { template: 'systems/daggerheart-theah/templates/sheets/items/class/header.hbs' },
+        tabs: { template: 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-navigation.hbs' },
+        description: { template: 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-description.hbs' },
         features: {
-            template: 'systems/daggerheart/templates/sheets/items/class/features.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets/items/class/features.hbs',
             scrollable: ['.features']
         },
         settings: {
-            template: 'systems/daggerheart/templates/sheets/items/class/settings.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets/items/class/settings.hbs',
             scrollable: ['.settings']
         },
         questions: {
-            template: 'systems/daggerheart/templates/sheets/items/class/questions.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets/items/class/questions.hbs',
             scrollable: ['.questions']
         },
         effects: {
-            template: 'systems/daggerheart/templates/sheets/global/tabs/tab-effects.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-effects.hbs',
             scrollable: ['.effects']
         }
     };

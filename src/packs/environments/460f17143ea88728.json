@@ -1,0 +1,81 @@
+{
+  "_id": "460f17143ea88728",
+  "name": "Heist",
+  "type": "environment",
+  "img": "systems/daggerheart-theah/assets/icons/documents/actors/forest.svg",
+  "system": {
+    "description": "<p><em>The party must gain access to a hidden or well-protected location to acquire the information or items secured within</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "standard",
+    "type": "event",
+    "difficulty": 10,
+    "notes": "<h3>Standard | Event</h3>\n<p><em>The party must gain access to a hidden or well-protected location to acquire the information or items secured within</em><br><strong>Impulses:</strong> Make the party prepare, split them up, throw up obstacles, trap them inside, use up their resources</p>\n<p><strong>Difficulty:</strong> 10-15</p>\n<h4>Features</h4>\n<p><strong>Infiltration - Passive</strong>: Establish the goal of the Heist and start two dynamic countdowns: a Progress Countdown (12) to represent the party’s work toward their goal and a Consequence Countdown (10) to represent the rising risk of discovery and capture. Advance both according to the Dynamic Countdown Advancement table.</p>\n<p><strong>Prep Work - Passive</strong>: Prior to the Heist, each PC has the opportunity to gather a key piece of information, surveil the location, or acquire a helpful asset. Have each player describe one obstacle they expect to encounter and how they set themselves up for success, then have them make an action roll. On a success, they get the advantage or asset they sought. On a success with Fear, it’s less useful than they expected.</p>\n<p><strong>Saw This Coming - Passive</strong>: Once per session, a PC can <strong>spend a Hope</strong> to explain how they prepared for the current situation and reveal a key piece of information or produce a helpful item.</p>\n<p><strong>Exfiltration - Reaction</strong>: When the Progress Countdown triggers, the party acquires the object of the Heist and must succeed on a group action roll to escape without being caught. On a failure, each PC marks a Stress and takes 2d6 direct physical damage.</p>\n<p><strong>Sound the Alarm - Reaction</strong>: When the Consequence Countdown triggers, the party is discovered and the location enters High Alert. Immediately summon a number of adversaries equal to the number of PCs in the scene and spotlight one. While this environment is on High Alert, the PCs are Vulnerable.</p>\n",
+    "impulses": "Make the party prepare, split them up, throw up obstacles, trap them inside, use up their resources"
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "0b85298806167041",
+      "name": "Infiltration - Passive",
+      "type": "feature",
+      "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+      "system": {
+        "description": "<p>Establish the goal of the Heist and start two dynamic countdowns: a Progress Countdown (12) to represent the party’s work toward their goal and a Consequence Countdown (10) to represent the rising risk of discovery and capture. Advance both according to the Dynamic Countdown Advancement table.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!460f17143ea88728.0b85298806167041"
+    },
+    {
+      "_id": "b10cd0269ba4b9db",
+      "name": "Prep Work - Passive",
+      "type": "feature",
+      "img": "icons/skills/melee/swords-parry-block-yellow.webp",
+      "system": {
+        "description": "<p>Prior to the Heist, each PC has the opportunity to gather a key piece of information, surveil the location, or acquire a helpful asset. Have each player describe one obstacle they expect to encounter and how they set themselves up for success, then have them make an action roll. On a success, they get the advantage or asset they sought. On a success with Fear, it’s less useful than they expected.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!460f17143ea88728.b10cd0269ba4b9db"
+    },
+    {
+      "_id": "5d4671fffa4402f9",
+      "name": "Saw This Coming - Passive",
+      "type": "feature",
+      "img": "icons/skills/melee/swords-parry-block-yellow.webp",
+      "system": {
+        "description": "<p>Once per session, a PC can <strong>spend a Hope</strong> to explain how they prepared for the current situation and reveal a key piece of information or produce a helpful item.</p>\n",
+        "usageNote": "Once per PC per session. Track participating PCs in Notes."
+      },
+      "effects": [],
+      "_key": "!actors.items!460f17143ea88728.5d4671fffa4402f9"
+    },
+    {
+      "_id": "771afda686da7a11",
+      "name": "Exfiltration - Reaction",
+      "type": "feature",
+      "img": "icons/tools/navigation/compass-brass-blue-red.webp",
+      "system": {
+        "description": "<p>When the Progress Countdown triggers, the party acquires the object of the Heist and must succeed on a group action roll to escape without being caught. On a failure, each PC marks a Stress and takes 2d6 direct physical damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!460f17143ea88728.771afda686da7a11"
+    },
+    {
+      "_id": "4db10a51abd7d076",
+      "name": "Sound the Alarm - Reaction",
+      "type": "feature",
+      "img": "icons/skills/melee/swords-parry-block-yellow.webp",
+      "system": {
+        "description": "<p>When the Consequence Countdown triggers, the party is discovered and the location enters High Alert. Immediately summon a number of adversaries equal to the number of PCs in the scene and spotlight one. While this environment is on High Alert, the PCs are Vulnerable.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!460f17143ea88728.4db10a51abd7d076"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Heist",
+    "actorLink": false
+  },
+  "_key": "!actors!460f17143ea88728"
+}

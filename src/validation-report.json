@@ -1,0 +1,222 @@
+{
+  "foundry": "14.367",
+  "system": "daggerheart-theah",
+  "packs": {
+    "features": {
+      "count": 127,
+      "invalid": []
+    },
+    "archetypes": {
+      "count": 12,
+      "invalid": []
+    },
+    "specialisations": {
+      "count": 31,
+      "invalid": []
+    },
+    "origins": {
+      "count": 10,
+      "invalid": []
+    },
+    "communities": {
+      "count": 10,
+      "invalid": []
+    },
+    "domains": {
+      "count": 18,
+      "invalid": []
+    },
+    "talents": {
+      "count": 130,
+      "invalid": []
+    },
+    "dueling-styles": {
+      "count": 12,
+      "invalid": []
+    },
+    "weapons": {
+      "count": 55,
+      "invalid": []
+    },
+    "armors": {
+      "count": 8,
+      "invalid": []
+    },
+    "loot": {
+      "count": 60,
+      "invalid": []
+    },
+    "consumables": {
+      "count": 60,
+      "invalid": []
+    },
+    "adversaries": {
+      "count": 63,
+      "invalid": []
+    },
+    "environments": {
+      "count": 18,
+      "invalid": []
+    },
+    "beastforms": {
+      "count": 6,
+      "invalid": []
+    }
+  },
+  "organization": {
+    "noJournalPack": true,
+    "folderCount": 18,
+    "everyTalentGrouped": true,
+    "loreTalentCount": 10,
+    "domainLists": true,
+    "loreSheet": "FeatureSheet-Compendium-daggerheart-theah-domains-Item-1420c22d14c3e306",
+    "talentDirectory": "Compendium-daggerheart-theah_talents"
+  },
+  "presentation": {
+    "noUnarmouredItem": true,
+    "normalizedNames": true,
+    "shortDescriptions": true,
+    "banditDescription": "<p><em>A lanky bandit striking from cover with a shortbow.</em></p>",
+    "attackIcons": true,
+    "banditSheet": "AdversarySheet-Compendium-daggerheart-theah-adversaries-Actor-a5b88f95c5ba885e",
+    "banditAttackIcon": "icons/weapons/bows/longbow-recurve-leather-brown.webp"
+  },
+  "mechanics": {
+    "sixAvailable": 7,
+    "thirdDomainBlocked": true,
+    "thresholdsAtLevel10": {
+      "major": 6,
+      "severe": 13
+    },
+    "noArmor": {
+      "thresholds": {
+        "major": 4,
+        "severe": 8
+      },
+      "armorScore": 0
+    },
+    "damageAtLevel10": "1d8 + 2",
+    "evasionWithCastille": 10,
+    "sheets": [
+      "Brawler",
+      "Bounty Hunter",
+      "Lean on me",
+      "Dracheneisen Mace",
+      "Dracheneisen Gambeson Armor",
+      "Hydra",
+      "Pitched Battle",
+      "Agile Scout"
+    ]
+  },
+  "resourceRules": {
+    "cannotPay": true,
+    "maxFavour": 7,
+    "refused": true,
+    "reloadConsistent": true,
+    "reloadPaid": true,
+    "damageAfterWarding": 12,
+    "activeBeastform": true,
+    "beastformAttack": "1d6 + 2"
+  },
+  "uiRules": {
+    "noCountdownUI": true,
+    "plainFeatures": true,
+    "plainSpecialisations": true,
+    "sheet": "HeartDaggerCharacterSheet-Actor-Vxc7z9rwnVgPjM69",
+    "messagesBefore": 157
+  },
+  "supplyRules": {
+    "messageId": "PXwAwtEqWlCsfhhn",
+    "stress": 1,
+    "die": 6,
+    "total": 3,
+    "outcome": "<div class=\"dice-roll\" data-action=\"expandRoll\">\n    <div class=\"dice-result\">\n        <div class=\"dice-formula\">1d6</div>\n            <div class=\"dice-tooltip\">\n        <div class=\"wrapper\">\n            <fieldset>\n                <legend>\n                    Dice Pool\n                </legend>\n                <div class=\"roll-dice\">\n                            <div class=\"roll-die\">\n                                <div class=\"dice basedie d6\">3</div>\n                            </div>\n                </div>\n        </fieldset></div>\n    </div>\n\n        <h4 class=\"dice-total\">3</h4>\n    </div>\n</div>\n    <div class=\"roll-buttons apply-buttons\">\n        <button class=\"simple-roll-button\">Deal Damage</button>\n        <button class=\"simple-roll-button\" data-type=\"healing\">Apply Healing</button>\n    </div>\n<p class=\"supply-outcome\">Supply remains d6.</p>",
+    "noSupplyDialog": true
+  },
+  "stuntRules": {
+    "spent": true,
+    "hope": 2,
+    "chosenMessages": 1,
+    "messageId": "sJMsYWO46XVSyNCc",
+    "outcome": "Fear"
+  },
+  "domainIcons": [
+    {
+      "src": "icons/sundries/flags/banner-sword-blue.webp",
+      "filter": "none"
+    },
+    {
+      "src": "icons/skills/melee/strike-blade-scimitar-orange-blue.webp",
+      "filter": "none"
+    },
+    {
+      "src": "icons/sundries/books/book-embossed-jewel-gold-green.webp",
+      "filter": "none"
+    },
+    {
+      "src": "icons/skills/social/diplomacy-handshake-yellow.webp",
+      "filter": "none"
+    },
+    {
+      "src": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+      "filter": "none"
+    },
+    {
+      "src": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+      "filter": "none"
+    },
+    {
+      "src": "icons/skills/melee/swords-parry-block-yellow.webp",
+      "filter": "none"
+    },
+    {
+      "src": "icons/equipment/shield/heater-steel-gold.webp",
+      "filter": "none"
+    },
+    {
+      "src": "icons/sundries/books/book-symbol-leaf-gold-green.webp",
+      "filter": "none"
+    },
+    {
+      "src": "icons/creatures/abilities/bear-roar-bite-brown-green.webp",
+      "filter": "none"
+    },
+    {
+      "src": "icons/magic/symbols/runes-carved-stone-purple.webp",
+      "filter": "none"
+    },
+    {
+      "src": "icons/magic/fire/explosion-fireball-medium-orange.webp",
+      "filter": "none"
+    },
+    {
+      "src": "icons/magic/control/buff-luck-fortune-rainbow.webp",
+      "filter": "none"
+    },
+    {
+      "src": "icons/consumables/potions/round-decorated-snake-green.webp",
+      "filter": "none"
+    },
+    {
+      "src": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+      "filter": "none"
+    },
+    {
+      "src": "icons/commodities/cloth/thread-and-needle.webp",
+      "filter": "none"
+    },
+    {
+      "src": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+      "filter": "none"
+    },
+    {
+      "src": "icons/sundries/books/book-symbol-canterbury-cross.webp",
+      "filter": "none"
+    }
+  ],
+  "browserErrors": [],
+  "legacyNames": "passed",
+  "guidedCreation": "passed",
+  "level2And3": "passed",
+  "ordinaryAndExtendedRest": "passed"
+}

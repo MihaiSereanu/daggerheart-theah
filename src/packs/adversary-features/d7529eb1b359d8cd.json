@@ -1,0 +1,15 @@
+{
+  "_id": "d7529eb1b359d8cd",
+  "name": "Fly on the Wall",
+  "type": "feature",
+  "img": "icons/magic/control/buff-flight-wings-blue.webp",
+  "system": {
+    "description": "<p>When a PC or group is discussing something sensitive, you can <strong>mark a Stress</strong> to reveal that the adversary had heard them. If the adversary escapes the scene, you gain 1d4 Fear.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "reaction"
+  },
+  "effects": [],
+  "_key": "!items!d7529eb1b359d8cd"
+}

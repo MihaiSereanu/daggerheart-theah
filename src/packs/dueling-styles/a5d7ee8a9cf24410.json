@@ -1,0 +1,14 @@
+{
+  "_id": "a5d7ee8a9cf24410",
+  "name": "Torres",
+  "type": "feature",
+  "img": "icons/skills/melee/swords-parry-block-blue.webp",
+  "system": {
+    "description": "<p><strong>Required Weapon: Rapier &amp; Cape</strong>\nOriginally a bullfighting style, Torres uses the cape for distraction and defense while the rapier lands precise attacks.</p>\n<ul>\n<li><strong>Matador&#39;s Flourish</strong>. You may <strong>spend a Hope</strong> to adopt a stance focused on avoiding lethal harm while waiting for an opportunity. Until the end of the scene or you take Major ir higher damage, you may <strong>mark any number of Stress</strong> to gain a bonus to Evasion equal to the amount spent. While in this stance, your attacks deal 1d4 extra damage.</li>\n<li><strong>Olé, Not Today</strong>. Once per Rest, <strong>spend a Hope</strong> to negate the damage of an attack targeting you or an ally within Melee.</li>\n<li><strong>The Crowd’s Roar.</strong> When you would fail a Reaction Roll during a combat scene, you may reroll and use the new result. If the reroll still fails, the GM gains a Fear.</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!a5d7ee8a9cf24410"
+}

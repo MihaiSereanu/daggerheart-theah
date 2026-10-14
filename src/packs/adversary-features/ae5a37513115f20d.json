@@ -1,0 +1,15 @@
+{
+  "_id": "ae5a37513115f20d",
+  "name": "Rampaging Fury",
+  "type": "feature",
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "system": {
+    "description": "<p>When the adversary marks 2 or more HP, they can rampage. Move the adversary to a point within Close range and deal 2d6+3 direct physical damage to all targets in their path.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "reaction"
+  },
+  "effects": [],
+  "_key": "!items!ae5a37513115f20d"
+}

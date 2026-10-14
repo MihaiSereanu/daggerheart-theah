@@ -1,0 +1,15 @@
+{
+  "_id": "747e85705eff19f3",
+  "name": "Belt of Unity",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Belt of Unity</strong>: Once per session, you can swap Hope with a trusted companion.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!747e85705eff19f3"
+}

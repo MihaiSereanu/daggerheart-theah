@@ -1,0 +1,20 @@
+{
+  "_id": "a78027596aaa6384",
+  "name": "Dueling Style",
+  "type": "domainCard",
+  "img": "icons/skills/melee/swords-parry-block-yellow.webp",
+  "system": {
+    "description": "<p>Gain access to a <strong>Thean Dueling Style</strong> - see <em>Appendix</em>.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "tactics",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "6ba62ee322f96c14",
+  "_key": "!items!a78027596aaa6384"
+}

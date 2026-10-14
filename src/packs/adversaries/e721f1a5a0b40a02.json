@@ -1,0 +1,111 @@
+{
+  "_id": "e721f1a5a0b40a02",
+  "name": "The Minotaur",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A massive bull-headed man with a quick temper and a bigger axe.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "champion",
+    "type": "bruiser",
+    "difficulty": 18,
+    "notes": "<h3>Champion | Bruiser</h3>\n<p><em>A massive bull-headed man with a quick temper and a bigger axe.</em><br><strong>Motives &amp; Tactics:</strong> Consume, gore, navigate, overpower, pursue</p>\n<p><strong>Difficulty:</strong> 18 | <strong>Thresholds:</strong> 14/27 | <strong>HP:</strong> 7 | <strong>Stress:</strong> 5</p>\n<p><strong>ATK:</strong> +2 | Greataxe: Very Close | 2d8+5 physical</p>\n<hr>\n<p><strong>Experience:</strong> Navigation +2</p>\n<h4>Features</h4>\n<p><strong>Ramp Up - Passive</strong>: You must spend a Fear to spotlight the Minotaur. While spotlighted, they can make their standard attack against all targets within range.</p>\n<p><strong>Charging Bull - Action</strong>: Mark a Stress to charge through a group within Close range and make an attack against all targets in the Minotaur’s path. Targets the Minotaur succeeds against take 2d6+8 physical damage and are knocked back to Very Far range. If a target is knocked into a solid object or another creature, they take an extra 1d6 damage (combine the damage).</p>\n<p><strong>Gore - Action</strong>: Make an attack against a target within Very Close range, moving the Minotaur into Melee range of them. On a success, deal 2d8 direct physical damage.</p>\n",
+    "damageThresholds": {
+      "major": 14,
+      "severe": 27
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 7
+      },
+      "stress": {
+        "value": 0,
+        "max": 5
+      }
+    },
+    "motivesAndTactics": "Consume, gore, navigate, overpower, pursue",
+    "experiences": {
+      "c592abc757a1eeb5": {
+        "name": "Navigation",
+        "value": 2
+      }
+    },
+    "attack": {
+      "_id": "ec52c41e7919bd88",
+      "name": "Greataxe",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/strike-axe-blood-red.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "veryClose",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 2
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "2d8+5"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "50b96ab49d0f0b28",
+      "name": "Ramp Up - Passive",
+      "type": "feature",
+      "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
+      "system": {
+        "description": "<p>You must spend a Fear to spotlight the Minotaur. While spotlighted, they can make their standard attack against all targets within range.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!e721f1a5a0b40a02.50b96ab49d0f0b28"
+    },
+    {
+      "_id": "0126871766f164fb",
+      "name": "Charging Bull - Action",
+      "type": "feature",
+      "img": "icons/environment/creatures/horse-brown.webp",
+      "system": {
+        "description": "<p>Mark a Stress to charge through a group within Close range and make an attack against all targets in the Minotaur’s path. Targets the Minotaur succeeds against take 2d6+8 physical damage and are knocked back to Very Far range. If a target is knocked into a solid object or another creature, they take an extra 1d6 damage (combine the damage).</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!e721f1a5a0b40a02.0126871766f164fb"
+    },
+    {
+      "_id": "e3c700256d33078e",
+      "name": "Gore - Action",
+      "type": "feature",
+      "img": "icons/environment/creatures/horse-brown.webp",
+      "system": {
+        "description": "<p>Make an attack against a target within Very Close range, moving the Minotaur into Melee range of them. On a success, deal 2d8 direct physical damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!e721f1a5a0b40a02.e3c700256d33078e"
+    }
+  ],
+  "prototypeToken": {
+    "name": "The Minotaur",
+    "actorLink": false
+  },
+  "_key": "!actors!e721f1a5a0b40a02"
+}

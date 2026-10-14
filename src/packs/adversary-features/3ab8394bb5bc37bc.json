@@ -1,0 +1,15 @@
+{
+  "_id": "3ab8394bb5bc37bc",
+  "name": "Precision",
+  "type": "feature",
+  "img": "icons/creatures/eyes/humanoid-single-purple-blue.webp",
+  "system": {
+    "description": "<p>The adversary has Advantage if they are Cloaked.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!3ab8394bb5bc37bc"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "0235b262fc03e0be",
+  "name": "Stone of Valor",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Stone of Valor</strong>: You can attach this stone to armor that doesn&#39;t already have a feature. The armor gains the following feature. <strong>Resilient</strong>: Before you mark your last Armor Slot, roll a d6. On a result of 6, reduce the severity by one threshold without marking an Armor Slot.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!0235b262fc03e0be"
+}

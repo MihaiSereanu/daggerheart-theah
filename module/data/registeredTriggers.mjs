@@ -80,7 +80,7 @@ export default class RegisteredTriggers extends Map {
     }
 
     unregisterSceneTriggers(scene) {
-        this.unregisterSceneEnvironmentTriggers(scene.flags.daggerheart);
+        this.unregisterSceneEnvironmentTriggers(scene.flags['daggerheart-theah']);
 
         for (const triggerKey of Object.keys(CONFIG.DH.TRIGGER.triggers)) {
             const existingTrigger = this.get(triggerKey);
@@ -104,7 +104,7 @@ export default class RegisteredTriggers extends Map {
     }
 
     registerSceneTriggers(scene) {
-        this.registerSceneEnvironmentTriggers(scene.flags.daggerheart);
+        this.registerSceneEnvironmentTriggers(scene.flags['daggerheart-theah']);
 
         for (const actor of scene.tokens.filter(x => x.actor).map(x => x.actor)) {
             if (actor.prototypeToken.actorLink) continue;

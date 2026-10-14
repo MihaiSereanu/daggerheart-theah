@@ -1,0 +1,15 @@
+{
+  "_id": "7c4714aa850716d3",
+  "name": "Mark Target",
+  "type": "feature",
+  "img": "icons/creatures/eyes/humanoid-single-purple-blue.webp",
+  "system": {
+    "description": "<p>Spend a Fear to Mark a target within Far range until the adversary is destroyed or the Marked target becomes Cloaked. While the target is Marked, their Evasion is halved.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!7c4714aa850716d3"
+}

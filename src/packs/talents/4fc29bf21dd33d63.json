@@ -1,0 +1,20 @@
+{
+  "_id": "4fc29bf21dd33d63",
+  "name": "Physician Training",
+  "type": "domainCard",
+  "img": "icons/sundries/books/book-embossed-jewel-gold-green.webp",
+  "system": {
+    "description": "<p>When you take a few minutes to tend to an injured person, you can <strong>spend 3 Hope</strong> to clear a HP or a Stress on them.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "lore",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "12efbf11db2e768a",
+  "_key": "!items!4fc29bf21dd33d63"
+}

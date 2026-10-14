@@ -1,0 +1,28 @@
+{
+  "_id": "98561ea613d4cfaf",
+  "name": "Scramble",
+  "type": "domainCard",
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "system": {
+    "description": "<p>Once per Rest, when an adversary within Melee range would deal damage to you, you can avoid the attack and safely move out of their range.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "steel",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false,
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    }
+  },
+  "effects": [],
+  "folder": "6aabc2e2c710379d",
+  "_key": "!items!98561ea613d4cfaf"
+}

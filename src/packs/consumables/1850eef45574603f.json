@@ -1,0 +1,15 @@
+{
+  "_id": "1850eef45574603f",
+  "name": "Serpentfang Venin",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Serpentfang Venin</strong>: Apply this venom to a weapon that deals physical damage to add a d6 to your next damage roll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!1850eef45574603f"
+}

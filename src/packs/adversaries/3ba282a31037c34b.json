@@ -1,0 +1,128 @@
+{
+  "_id": "3ba282a31037c34b",
+  "name": "Walkway Demon",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A crimson-hued creature from the Circles Below.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "solo",
+    "difficulty": 15,
+    "notes": "<h3>Normal | Solo</h3>\n<p><em>A crimson-hued creature from the Circles Below.</em><br><strong>Motives &amp; Tactics:</strong> Act erratically, corral targets, relish pain, torment</p>\n<p><strong>Difficulty:</strong> 15 | <strong>Thresholds:</strong> 8/15 | <strong>HP:</strong> 8 | <strong>Stress:</strong> 4</p>\n<p><strong>ATK:</strong> +3 | Weapon: Melee | 1d8+6 physical</p>\n<hr>\n<p><strong>Experience:</strong> —</p>\n<h4>Features</h4>\n<p><strong>Relentless (2) - Passive</strong>: The Demon can be spotlighted up to two times per GM turn. Spend Fear as usual to spotlight them.</p>\n<p><strong>All Must Fall - Passive</strong>: When a PC rolls a failure with Fear while within Close range of the Demon, they lose a Hope.</p>\n<p><strong>Hellfire - Action</strong>: Spend a Fear to rain hellfire within Far range. All targets within the area must make a Finesse Reaction Roll. Targets who fail take 1d20+3 magic damage, half damage on success.</p>\n<p><strong>Reaper - Reaction</strong>: Before rolling damage for the Demon&#39;s attack, you can <strong>mark a Stress</strong> to gain a bonus to the damage roll equal to the Demon&#39;s current number of marked HP.</p>\n<p><strong>Momentum - Reaction</strong>: When the Demon makes a successful attack against a PC, you gain a Fear.</p>\n",
+    "damageThresholds": {
+      "major": 8,
+      "severe": 15
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 8
+      },
+      "stress": {
+        "value": 0,
+        "max": 4
+      }
+    },
+    "motivesAndTactics": "Act erratically, corral targets, relish pain, torment",
+    "experiences": {},
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/hand-grip-sword-orange.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 3
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d8+6"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "e1af49ffd8ed8e0c",
+      "name": "Relentless (2) - Passive",
+      "type": "feature",
+      "img": "icons/equipment/shield/heater-steel-gold.webp",
+      "system": {
+        "description": "<p>The Demon can be spotlighted up to two times per GM turn. Spend Fear as usual to spotlight them.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!3ba282a31037c34b.e1af49ffd8ed8e0c"
+    },
+    {
+      "_id": "59145dab217b1ee2",
+      "name": "All Must Fall - Passive",
+      "type": "feature",
+      "img": "icons/tools/navigation/compass-brass-blue-red.webp",
+      "system": {
+        "description": "<p>When a PC rolls a failure with Fear while within Close range of the Demon, they lose a Hope.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!3ba282a31037c34b.59145dab217b1ee2"
+    },
+    {
+      "_id": "7de81d32ac0122d0",
+      "name": "Hellfire - Action",
+      "type": "feature",
+      "img": "icons/magic/fire/explosion-fireball-medium-orange.webp",
+      "system": {
+        "description": "<p>Spend a Fear to rain hellfire within Far range. All targets within the area must make a Finesse Reaction Roll. Targets who fail take 1d20+3 magic damage, half damage on success.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!3ba282a31037c34b.7de81d32ac0122d0"
+    },
+    {
+      "_id": "0d635e7af015ec20",
+      "name": "Reaper - Reaction",
+      "type": "feature",
+      "img": "icons/sundries/books/book-symbol-skull-grey.webp",
+      "system": {
+        "description": "<p>Before rolling damage for the Demon&#39;s attack, you can <strong>mark a Stress</strong> to gain a bonus to the damage roll equal to the Demon&#39;s current number of marked HP.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!3ba282a31037c34b.0d635e7af015ec20"
+    },
+    {
+      "_id": "d1fdfa2e14402b85",
+      "name": "Momentum - Reaction",
+      "type": "feature",
+      "img": "icons/environment/creatures/horse-brown.webp",
+      "system": {
+        "description": "<p>When the Demon makes a successful attack against a PC, you gain a Fear.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!3ba282a31037c34b.d1fdfa2e14402b85"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Walkway Demon",
+    "actorLink": false
+  },
+  "_key": "!actors!3ba282a31037c34b"
+}

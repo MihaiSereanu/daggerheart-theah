@@ -1,0 +1,27 @@
+{
+  "_id": "041682da131c4b26",
+  "name": "Bounty Hunter",
+  "type": "subclass",
+  "img": "icons/skills/ranged/target-bullseye-arrow-green.webp",
+  "system": {
+    "description": "<p>Play the Bounty Hunter if you want to hunt enemies and navigate hostile terrain with lethal precision.</p>\n<h4>Features</h4>\n<p><strong>Ruthless Precision</strong>. When you make a damage roll against your Focus, you may <strong>mark a Stress</strong> to deal 1d6 extra damage.</p>\n<p><strong>Elusive Predator</strong>. When your Focus makes an attack against you, gain +2 Evasion against the attack.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.83e9b56f8a253e65",
+    "spellcastingTrait": null,
+    "features": [
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.a337860f1bd6de70"
+      },
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.40488bec5834b901"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": "3c099081da6eb145",
+  "_key": "!items!041682da131c4b26"
+}

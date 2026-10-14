@@ -1,0 +1,15 @@
+{
+  "_id": "d0f837ada844feff",
+  "name": "Execute Them!",
+  "type": "feature",
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "system": {
+    "description": "<p>Spend a Fear per PC to have the group condemned for crimes real or imagined. A successful Charm roll can demand trial by combat or another special form of trial.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!d0f837ada844feff"
+}

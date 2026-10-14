@@ -1,0 +1,25 @@
+{
+  "_id": "45970d1f5f476c70",
+  "name": "Highland Marches",
+  "type": "ancestry",
+  "img": "icons/sundries/flags/banner-flag-white-mountain.webp",
+  "system": {
+    "description": "<p><strong>Thick Blood.</strong> When you take Minor damage, you can <strong>mark a Stress</strong> instead of marking a HP.</p>\n<p><strong>Enduring Might.</strong> Spend 3 Hope to halve incoming physical damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "features": [
+      {
+        "type": "primary",
+        "item": "Compendium.daggerheart-theah.features.Item.ce7ddf0ed49c02bb"
+      },
+      {
+        "type": "secondary",
+        "item": "Compendium.daggerheart-theah.features.Item.7db76518efaa1783"
+      }
+    ],
+    "loreReference": null
+  },
+  "effects": [],
+  "_key": "!items!45970d1f5f476c70"
+}

@@ -1,0 +1,14 @@
+{
+  "_id": "6c38e276f1eadf2a",
+  "name": "Anchor",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-sword-blue.webp",
+  "system": {
+    "description": "<h2>Anchor</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.b030916d9f44faf5]{Adaptable Tactics}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.ddd17416289a8beb]{Covering Withdrawal}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.5b0bad937bfb24f4]{Exploit Weakness}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.d1ab330e543c4a38]{Keep the Momentum}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.24a8b1d7ab9ff658]{Keen Instincts}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.b607503c315c67cf]{Seize the Moment}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.62e73af9b2f5bdd5]{Sharp as a Tack}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.32dbf94eadb0a1c7]{Shared Tactics}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.1772586668407b89]{Trust me, it&#39;ll work}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.caf3ac911bcda93b]{Their Anchor}</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!6c38e276f1eadf2a"
+}

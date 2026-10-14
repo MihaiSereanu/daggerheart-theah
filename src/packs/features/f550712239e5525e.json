@@ -1,0 +1,15 @@
+{
+  "_id": "f550712239e5525e",
+  "name": "Second-Story Work",
+  "type": "feature",
+  "img": "icons/equipment/back/cloak-hooded-green-gold.webp",
+  "system": {
+    "description": "<p>When you move through a dense environment, you may <strong>mark a Stress</strong> to vault, climb, or leap with sudden agility and reposition within Far range.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "40f9e55b2210e6ff",
+  "_key": "!items!f550712239e5525e"
+}

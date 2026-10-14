@@ -1,0 +1,15 @@
+{
+  "_id": "bd383b3bfa84a08e",
+  "name": "Elixir of the Seer",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Elixir of the Seer</strong>: Gain +1 Instinct until your next rest.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!bd383b3bfa84a08e"
+}

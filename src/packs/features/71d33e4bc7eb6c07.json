@@ -1,0 +1,23 @@
+{
+  "_id": "71d33e4bc7eb6c07",
+  "name": "Hardy",
+  "type": "feature",
+  "img": "icons/environment/wilderness/tree-spruce-green.webp",
+  "system": {
+    "description": "<p>Once per Rest, you can Help an Ally traverse difficult terain without spending a Hope.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    }
+  },
+  "effects": [],
+  "folder": "a7d2470d3397a204",
+  "_key": "!items!71d33e4bc7eb6c07"
+}

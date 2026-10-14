@@ -1,0 +1,18 @@
+{
+  "_id": "9b0c2c27ce11f3e1",
+  "name": "Sorte",
+  "type": "subclass",
+  "img": "icons/magic/symbols/runes-star-magenta.webp",
+  "system": {
+    "description": "<p>Play a Sorte Strega to read and manipulate the fate of others.</p>\n<h4>SPELLCASTING TRAIT: CHARM</h4>\n<blockquote>\n<p>Sorte is among the rarest sorceries in Théah, found only in Vodacce and passed through the blood of its women. The Strega see the vast web of fate and the strands that bind all things, weaving them to alter the fortunes of others. Vodacce men are famed for their luck, while Vodacce women are renowned for their blessings and curses. It is tradition for a dying mother to offer her child one final blessing, just as new mothers bless their children at birth.</p>\n</blockquote>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.619fbc2f6e310fa4",
+    "spellcastingTrait": "charm",
+    "features": []
+  },
+  "effects": [],
+  "folder": "1adde1032a0a00cf",
+  "_key": "!items!9b0c2c27ce11f3e1"
+}

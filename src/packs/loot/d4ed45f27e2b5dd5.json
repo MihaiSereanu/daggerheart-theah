@@ -1,0 +1,15 @@
+{
+  "_id": "d4ed45f27e2b5dd5",
+  "name": "Leonardo's Glider",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Leonardo&#39;s Glider</strong>: While falling, you can <strong>mark a Stress</strong> to deploy this small parachute and glide safely to the ground.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!d4ed45f27e2b5dd5"
+}

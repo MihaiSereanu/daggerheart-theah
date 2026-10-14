@@ -9,34 +9,9 @@
             autocomplete="off"
             spellcheck="false"
         >{{source.name}}</h1>
-        <div class='level-div'>
-            <h3 class='label'>
-                {{#if @root.editable}}
-                    {{#if document.system.needsCharacterSetup}}
-                        <button
-                            type="button"
-                            class="level-button glow"
-                            data-action="levelManagement"
-                        >
-                            {{localize "DAGGERHEART.APPLICATIONS.CharacterCreation.buttonTitle"}}
-                        </button>
-                    {{else if document.system.levelData.canLevelUp}}
-                        <button
-                            type="button"
-                            class="level-button glow" data-tooltip="{{localize "DAGGERHEART.ACTORS.Character.levelUp"}}"
-                            data-action="levelManagement"
-                        >
-                            <i class="fa-solid fa-angles-up"></i>
-                        </button>
-                    {{/if}}
-                {{/if}}
-                {{#unless document.system.needsCharacterSetup}}
-                    {{localize 'DAGGERHEART.GENERAL.level'}}
-                    <input type="text" data-dtype="Number" class="level-value" value={{#if document.system.needsCharacterSetup}}0{{else}}{{document.system.levelData.level.changed}}{{/if}} {{#if document.system.needsCharacterSetup}}disabled{{/if}} />
-                {{/unless}}
-            </h3>
-        </div>
+        <div class='level-div'><h3>Level {{document.system.levelData.level.current}}</h3></div>
     </div>
+    {{> "systems/daggerheart-theah/templates/heart-dagger/controls.hbs"}}
     <div class="character-details">
         <div>
             {{> classHeritage item=document.system.class.value key="classes" label=(localize "TYPES.Item.class")}}
@@ -82,7 +57,7 @@
             <div class="domains-section">
                 {{#each document.system.domainData as |data|}}
                     <div class="domain">
-                        <img src="{{data.src}}" alt="" data-tooltip="{{data.description}}" />
+                        <img src="{{data.src}}" alt="{{data.label}}" data-tooltip="#domain#{{data.id}}" />
                     </div>
                 {{/each}}
             </div>
@@ -108,7 +83,7 @@
         {{#each this.attributes as |attribute key|}} 
             <div class="trait {{#if isSpellcasting}}with-spellcasting{{/if}}" data-tooltip="<b>{{attribute.label}}:</b><br>{{#each attribute.verbs}}{{this}}<br>{{/each}}" data-action="rollAttribute" data-attribute="{{key}}" data-value="{{attribute.value}}">
                 <div class="trait-name">
-                    <div class="tier-mark {{#if attribute.tierMarked}}marked{{/if}}"></div>
+                    <div class="advancement-mark {{#if attribute.advancementMarked}}marked{{/if}}"></div>
                     <span>{{attribute.label}}</span>
                 </div>
                 <div class="trait-value-area">
@@ -133,9 +108,9 @@
         {{/each}}
     </div>
 
-    {{#> 'systems/daggerheart/templates/sheets/global/tabs/tab-navigation.hbs' }}
+    {{#> 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-navigation.hbs' }}
         <button type="button" data-action="openSettings" data-tooltip-text="{{localize "DAGGERHEART.UI.Tooltip.openSheetSettings"}}"><i class="fa-solid fa-wrench"></i></button>
-    {{/'systems/daggerheart/templates/sheets/global/tabs/tab-navigation.hbs'}}
+    {{/'systems/daggerheart-theah/templates/sheets/global/tabs/tab-navigation.hbs'}}
 </header>
 
 {{#*inline "classHeritage"}}

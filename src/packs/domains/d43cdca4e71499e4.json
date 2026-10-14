@@ -1,0 +1,14 @@
+{
+  "_id": "d43cdca4e71499e4",
+  "name": "Poise",
+  "type": "feature",
+  "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+  "system": {
+    "description": "<h2>Poise</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.9961b8bf45295f6b]{Deft Deceiver}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.26188adfd9118fea]{Gentle Words}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.58771b177439a089]{Menacing Quip}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.20ccb14428990052]{Never Upstaged}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.dc852e743122919d]{Raw Magnetism}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.29b2d8d181ec67cd]{Share the Burden}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.ca18586ddc9a0f6e]{Shoulder to Shoulder}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.af06a65be44e7923]{Soothing Speech}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.45cc22b791dbb53c]{Troublemaker}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.fc93d1a8263f59ef]{Unnatural Charisma}</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!d43cdca4e71499e4"
+}

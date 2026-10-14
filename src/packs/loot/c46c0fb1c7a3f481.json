@@ -1,0 +1,15 @@
+{
+  "_id": "c46c0fb1c7a3f481",
+  "name": "Boots of the Prophet",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Boots of the Prophet</strong>: You can walk on the surface of water as if it were soft ground.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!c46c0fb1c7a3f481"
+}

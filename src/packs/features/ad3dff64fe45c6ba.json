@@ -1,0 +1,15 @@
+{
+  "_id": "ad3dff64fe45c6ba",
+  "name": "Enlightened",
+  "type": "feature",
+  "img": "icons/environment/creatures/horse-white.webp",
+  "system": {
+    "description": "<p>Choose one of your Experiences that best aligns with your purpose and gain a permanent +1 bonus to it.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "47efdd5a27976b38",
+  "_key": "!items!ad3dff64fe45c6ba"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "5d9f1e3141b0e174",
+  "name": "Bargain of Fading Might",
+  "type": "domainCard",
+  "img": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+  "system": {
+    "description": "<p>Make a Spellcasting Roll on a target within Far range. On a success, <strong>spend a Favour</strong> to make the target temporarily <em>Weakened</em>. While Weakened, the damage they deal is reduced by one threshold. You can only hold this spell on one creature at a time.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "sanderis",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "83fcfb9315a1e619",
+  "_key": "!items!5d9f1e3141b0e174"
+}

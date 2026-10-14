@@ -1,0 +1,34 @@
+{
+  "_id": "54278abf5040276f",
+  "name": "Sly",
+  "type": "feature",
+  "img": "icons/magic/symbols/mask-yellow-orange.webp",
+  "system": {
+    "description": "<p>Gain an additional Stress at character creation.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [
+    {
+      "_id": "9ca4a1456b60ae35",
+      "name": "Sly",
+      "type": "base",
+      "transfer": true,
+      "img": "icons/magic/symbols/mask-yellow-orange.webp",
+      "system": {
+        "changes": [
+          {
+            "type": "add",
+            "key": "system.resources.stress.max",
+            "value": 1,
+            "phase": "initial"
+          }
+        ]
+      },
+      "_key": "!items.effects!54278abf5040276f.9ca4a1456b60ae35"
+    }
+  ],
+  "folder": "531d1b16518c15f0",
+  "_key": "!items!54278abf5040276f"
+}

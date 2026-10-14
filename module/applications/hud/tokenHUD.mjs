@@ -14,7 +14,7 @@ export default class DHTokenHUD extends foundry.applications.hud.TokenHUD {
     static PARTS = {
         hud: {
             root: true,
-            template: 'systems/daggerheart/templates/hud/tokenHUD.hbs'
+            template: 'systems/daggerheart-theah/templates/hud/tokenHUD.hbs'
         }
     };
 
@@ -27,7 +27,7 @@ export default class DHTokenHUD extends foundry.applications.hud.TokenHUD {
         context.partyOnCanvas =
             this.actor.type === 'party' &&
             this.actor.system.partyMembers.some(member => member.getActiveTokens().length > 0);
-        context.icons.toggleClowncar = 'systems/daggerheart/assets/icons/arrow-dunk.png';
+        context.icons.toggleClowncar = 'systems/daggerheart-theah/assets/icons/arrow-dunk.png';
         context.actorType = this.actor.type;
         context.usesEffects = this.actor.type !== 'party';
         context.canToggleCombat = DHTokenHUD.#nonCombatTypes.includes(this.actor.type)

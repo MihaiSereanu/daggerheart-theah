@@ -1,0 +1,18 @@
+{
+  "_id": "839be8321512212c",
+  "name": "Fire Within",
+  "type": "subclass",
+  "img": "icons/magic/symbols/runes-star-magenta.webp",
+  "system": {
+    "description": "<p>Play a Sorcerer of the Fire Within if you want to balance passion and destructive power.</p>\n<h4>SPELLCASTING TRAIT: INSTINCT</h4>\n<blockquote>\n<p>The Fire Within, or <em>El Fuego Adentro,</em> is the ability to control and manipulate fire to the users will. Those who walk with the Fire Within are ruled by passion and intensity. The tradition is thought to be extinct after years of persecution by the Church. However, the <em>Fire Within</em> can be stirred in any worthy soul, so it can never be truly wiped out.</p>\n</blockquote>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.619fbc2f6e310fa4",
+    "spellcastingTrait": "instinct",
+    "features": []
+  },
+  "effects": [],
+  "folder": "1adde1032a0a00cf",
+  "_key": "!items!839be8321512212c"
+}

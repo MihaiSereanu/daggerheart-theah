@@ -1,0 +1,28 @@
+{
+  "_id": "d622d894f0df2cb2",
+  "name": "Quick Assist",
+  "type": "domainCard",
+  "img": "icons/sundries/books/book-embossed-jewel-gold-green.webp",
+  "system": {
+    "description": "<p>After a Rest, gain a number of uses equal to your Wits. When an ally within Close fails a roll with Hope, spend a use and describe how you add a d8 to the roll. You regain uses after a rest.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "lore",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false,
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "@witsCount",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    }
+  },
+  "effects": [],
+  "folder": "12efbf11db2e768a",
+  "_key": "!items!d622d894f0df2cb2"
+}

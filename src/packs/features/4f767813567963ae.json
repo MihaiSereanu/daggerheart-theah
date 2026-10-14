@@ -1,0 +1,15 @@
+{
+  "_id": "4f767813567963ae",
+  "name": "Daring Flourish",
+  "type": "feature",
+  "img": "icons/skills/melee/sword-twirl-orange.webp",
+  "system": {
+    "description": "<p>Spend 3 Hope to use a d20 as your Fear die until you fail an action roll or the scene ends.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "9e9b9043142f4705",
+  "_key": "!items!4f767813567963ae"
+}

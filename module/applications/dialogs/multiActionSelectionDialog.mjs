@@ -34,7 +34,7 @@ export default class MultiActionSelectionDialog extends HandlebarsApplicationMix
 
     static PARTS = {
         actions: {
-            template: 'systems/daggerheart/templates/dialogs/multiActionSelect.hbs'
+            template: 'systems/daggerheart-theah/templates/dialogs/multiActionSelect.hbs'
         }
     };
 

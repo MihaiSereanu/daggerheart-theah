@@ -5,8 +5,10 @@
                 <i class="fa-solid fa-gun {{#if item.system.needsReload}}unloaded{{/if}}"></i>
             </a>
         {{else}}
+            {{#if item.system.resource.label}}<span class="usage-label">{{item.system.resource.label}}</span>{{/if}}
             <i class="{{#if item.system.resource.icon}}{{item.system.resource.icon}}{{else}}fa-solid fa-hashtag{{/if}}"></i>
             <input type="number" id="{{item.uuid}}-resource" class="inventory-item-resource" value="{{item.system.resource.value}}" min="0" max="{{rollParsed item.system.resource.max item.actor item true}}" />
+            {{#if item.system.resource.label}}<span class="usage-max">/ {{rollParsed item.system.resource.max item.actor item true}}</span>{{/if}}
         {{/if}}
     </div>
 {{else if (eq item.system.resource.type 'diceValue')}}
@@ -16,7 +18,7 @@
                 <a class="item-resource" data-action="toggleResourceDice" data-dice="{{#if ../../this}}{{../this}}{{else}}{{state}}{{/if}}">
                     <div class="item-dice-resource">
                         <label>{{ifThen state.value state.value '?'}}</label>
-                        <img src="{{concat "systems/daggerheart/assets/icons/dice/hope/" (ifThen ../../item.system.resource.dieFaces ../../item.system.resource.dieFaces ../item.system.resource.dieFaces) ".svg"}}" />
+                        <img src="{{concat "systems/daggerheart-theah/assets/icons/dice/hope/" (ifThen ../../item.system.resource.dieFaces ../../item.system.resource.dieFaces ../item.system.resource.dieFaces) ".svg"}}" />
                         {{#if state.used}}<i class="fa-solid fa-x"></i>{{/if}}
                     </div>
                 </a>
@@ -28,7 +30,7 @@
     <a class="item-resource die" data-action="advanceResourceDie">
         <div class="item-dice-resource">
             <label>{{#if item.system.resource.value}}{{item.system.resource.value}}{{/if}}</label>
-            <img src="{{concat "systems/daggerheart/assets/icons/dice/hope/" item.system.resource.dieFaces ".svg"}}" />
+            <img src="{{concat "systems/daggerheart-theah/assets/icons/dice/hope/" item.system.resource.dieFaces ".svg"}}" />
         </div>
     </a>
 {{/if}}

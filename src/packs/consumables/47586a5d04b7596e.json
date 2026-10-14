@@ -1,0 +1,15 @@
+{
+  "_id": "47586a5d04b7596e",
+  "name": "Leaves of Elysium",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Leaves of Elysium</strong>: Eat these paired leaves to immediately gain 2 Hope.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!47586a5d04b7596e"
+}

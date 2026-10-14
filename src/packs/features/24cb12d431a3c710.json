@@ -1,0 +1,15 @@
+{
+  "_id": "24cb12d431a3c710",
+  "name": "Trample",
+  "type": "feature",
+  "img": "icons/environment/creatures/horse-brown.webp",
+  "system": {
+    "description": "<p>Mark a Stress to move up to Close range in a straight line and make an attack against all targets within Melee range of the line. Targets you succeed against take 2d8 physical damage and are temporarily Vulnerable.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "3b7c9291e9e0d05a",
+  "_key": "!items!24cb12d431a3c710"
+}

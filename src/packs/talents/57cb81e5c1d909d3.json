@@ -1,0 +1,20 @@
+{
+  "_id": "57cb81e5c1d909d3",
+  "name": "Create Horror",
+  "type": "domainCard",
+  "img": "icons/consumables/potions/round-decorated-snake-green.webp",
+  "system": {
+    "description": "<p>Spend a Hope to imbue corpse parts, loose bones and grave-litter into a shambling monstrosity that obeys basic commands. Make a Spellcast Roll to command it to take action. When necessary, it shares your Evasion and traits and its attacks deal 1d10+5 physical damage. You can only maintain one Horror at a time, and it falls apart when it takes more damage than your Severe Threshold in a single blow.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "hexenwerk",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "a29c13e0edf57b40",
+  "_key": "!items!57cb81e5c1d909d3"
+}

@@ -18,6 +18,7 @@ export default class DhpNPC extends BaseDataActor {
         const fields = foundry.data.fields;
         return {
             ...super.defineSchema(),
+            intrigueStress: new fields.NumberField({ initial: 4, min: 1, integer: true, label: 'Intrigue Stress' }),
             difficulty: new fields.NumberField({
                 nullable: true,
                 initial: null,
@@ -31,7 +32,7 @@ export default class DhpNPC extends BaseDataActor {
     }
 
     /**@inheritdoc */
-    static DEFAULT_ICON = 'systems/daggerheart/assets/icons/documents/actors/drama-masks.svg';
+    static DEFAULT_ICON = 'systems/daggerheart-theah/assets/icons/documents/actors/drama-masks.svg';
 
     get features() {
         return this.parent.items.filter(x => x.type === 'feature');

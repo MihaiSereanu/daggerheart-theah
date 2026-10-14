@@ -1,0 +1,15 @@
+{
+  "_id": "9c5c91867d78ff3b",
+  "name": "Battle Teleport",
+  "type": "feature",
+  "img": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+  "system": {
+    "description": "<p>Before or after making a standard attack, you can <strong>mark a Stress</strong> to teleport to a location within Far range.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!9c5c91867d78ff3b"
+}

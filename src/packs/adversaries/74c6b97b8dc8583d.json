@@ -1,0 +1,100 @@
+{
+  "_id": "74c6b97b8dc8583d",
+  "name": "Tough Pirate",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A thickly muscled and tattooed pirate with melon-sized fists.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "bruiser",
+    "difficulty": 13,
+    "notes": "<h3>Normal | Bruiser</h3>\n<p><em>A thickly muscled and tattooed pirate with melon-sized fists.</em>\n<strong>Motives &amp; Tactics:</strong> Plunder, raid, smash, terrorize</p>\n<p><strong>Difficulty:</strong> 13 | <strong>Thresholds:</strong> 8/15 | <strong>HP:</strong> 5 | <strong>Stress:</strong> 3</p>\n<p><strong>ATK:</strong> +1 | Weapon: Melee | 2d6 physical</p>\n<hr>\n<p><strong>Experience:</strong> Sailor +2</p>\n<h4>Features</h4>\n<p><strong>Swashbuckler - Passive</strong>: When the Tough marks 2 or fewer HP from an attack within Melee, the attacker must <strong>mark a Stress</strong>.</p>\n<p><strong>Clear the Decks - Action</strong>: Make an attack against a target within Very Close. On success, <strong>mark a Stress</strong> to move into Melee with the target, deal 3d4 physical damage, and knock the target to Close.</p>\n",
+    "damageThresholds": {
+      "major": 8,
+      "severe": 15
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 5
+      },
+      "stress": {
+        "value": 0,
+        "max": 3
+      }
+    },
+    "motivesAndTactics": "Plunder, raid, smash, terrorize",
+    "experiences": {
+      "e06e85283732975c": {
+        "name": "Sailor",
+        "value": 2
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/hand-grip-sword-orange.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 1
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "2d6"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "b782efe072830910",
+      "name": "Swashbuckler - Passive",
+      "type": "feature",
+      "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+      "system": {
+        "description": "<p>When the Tough marks 2 or fewer HP from an attack within Melee, the attacker must <strong>mark a Stress</strong>.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!74c6b97b8dc8583d.b782efe072830910"
+    },
+    {
+      "_id": "471fbbce0a02e1d7",
+      "name": "Clear the Decks - Action",
+      "type": "feature",
+      "img": "icons/environment/settlement/ship.webp",
+      "system": {
+        "description": "<p>Make an attack against a target within Very Close. On success, <strong>mark a Stress</strong> to move into Melee with the target, deal 3d4 physical damage, and knock the target to Close.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!74c6b97b8dc8583d.471fbbce0a02e1d7"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Tough Pirate",
+    "actorLink": false
+  },
+  "_key": "!actors!74c6b97b8dc8583d"
+}

@@ -1,15 +1,15 @@
 {{#each items}}
     <div class="item-container" data-item-uuid="{{uuid}}" draggable="true">
         <div class="item-header">
-            <div class="item-info" {{#if @root.viewSheet}}data-action="viewSheet"{{else}}data-action="expandContent"{{/if}}>
-                <img src="{{img}}" data-item-key="img" class="item-list-img" {{#if (and uuid @root.tooltipType)}}data-tooltip="#{{@root.tooltipType}}#{{uuid}}"{{/if}}>
+            <div class="item-info" {{#if (eq documentName 'Actor')}}data-action="viewSheet"{{else}}data-action="expandContent"{{/if}}>
+                <img src="{{img}}" data-item-key="img" class="item-list-img" {{#if uuid}}data-tooltip="#{{ifThen (eq documentName 'Actor') 'actor' 'item'}}#{{uuid}}"{{/if}}>
                 <span data-item-key="name" class="item-list-name">{{name}}</span>
                 {{#each ../menu.data.columns}}
                     <span data-item-key="{{key}}">{{#with (@root.formatLabel ../this this) as | label |}}{{{label}}}{{/with}}</span>
                 {{/each}}
             </div>
         </div>
-        {{#unless viewSheet}}
+        {{#unless (eq documentName 'Actor')}}
             <div class="item-desc extensible">
                 <span class="wrapper">
                     {{{system.enrichedTags}}}

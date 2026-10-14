@@ -1,0 +1,15 @@
+{
+  "_id": "0edc38c445cce8be",
+  "name": "Revenge",
+  "type": "feature",
+  "img": "icons/skills/melee/shield-block-bash-blue.webp",
+  "system": {
+    "description": "<p>When an adversary within Melee deals damage to you, you may <strong>mark a Stress</strong> to force them to mark a HP.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "a52796eaa3cab727",
+  "_key": "!items!0edc38c445cce8be"
+}

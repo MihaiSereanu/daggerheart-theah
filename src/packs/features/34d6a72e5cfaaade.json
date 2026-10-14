@@ -1,0 +1,23 @@
+{
+  "_id": "34d6a72e5cfaaade",
+  "name": "Combat Discipline",
+  "type": "feature",
+  "img": "icons/skills/melee/shield-block-bash-blue.webp",
+  "system": {
+    "description": "<p>Once per combat scene, when you fail with Fear, you may <strong>mark a Stres</strong>s to reroll your Hope die.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "scene",
+      "progression": "increasing",
+      "label": "Uses"
+    }
+  },
+  "effects": [],
+  "folder": "4afee21a6e76de31",
+  "_key": "!items!34d6a72e5cfaaade"
+}

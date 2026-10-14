@@ -1,0 +1,15 @@
+{
+  "_id": "260104ba21762280",
+  "name": "Relic Shard, Potent",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Relic Shard, Potent</strong>: Throw this shard at a group within Far range; targets take 2d20 magic damage on success.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!260104ba21762280"
+}

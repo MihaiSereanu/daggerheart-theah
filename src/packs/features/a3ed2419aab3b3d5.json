@@ -1,0 +1,15 @@
+{
+  "_id": "a3ed2419aab3b3d5",
+  "name": "Sturdy",
+  "type": "feature",
+  "img": "icons/creatures/claws/claw-talons-yellow-red.webp",
+  "system": {
+    "description": "<p>When you take Severe+ damage, you drop out of Beastform.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "474463d3fe7493e7",
+  "_key": "!items!a3ed2419aab3b3d5"
+}

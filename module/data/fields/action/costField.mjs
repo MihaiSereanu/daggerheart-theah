@@ -148,10 +148,10 @@ export default class CostField extends fields.ArrayField {
         return realCosts.reduce(
             (a, c) =>
                 !resources[c.key]
-                    ? a
-                    : a && resources[c.key].isReversed
+                    ? false
+                    : a && (resources[c.key].isReversed
                         ? resources[c.key].value + (c.total ?? c.value) <= resources[c.key].max
-                        : resources[c.key]?.value >= (c.total ?? c.value),
+                        : resources[c.key]?.value >= (c.total ?? c.value)),
             true
         );
     }

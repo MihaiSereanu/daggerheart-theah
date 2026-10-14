@@ -1,0 +1,15 @@
+{
+  "_id": "d91a61a9005c70ae",
+  "name": "Petrifying Gaze",
+  "type": "feature",
+  "img": "icons/creatures/eyes/humanoid-single-purple-blue.webp",
+  "system": {
+    "description": "<p>When the adversary takes damage from an attack within Close range, you can spend a Fear to force the attacker to make an Instinct Reaction Roll. On a failure, they begin to turn to stone, marking a HP and starting a Petrification Countdown (4). This countdown ticks down when the adversary is attacked. When it triggers, the target must make a death move. If the adversary is defeated, all petrification countdowns end.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "reaction"
+  },
+  "effects": [],
+  "_key": "!items!d91a61a9005c70ae"
+}

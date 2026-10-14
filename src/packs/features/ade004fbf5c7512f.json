@@ -1,0 +1,15 @@
+{
+  "_id": "ade004fbf5c7512f",
+  "name": "Pull the Strings",
+  "type": "feature",
+  "img": "icons/weapons/daggers/dagger-poisoned-curved-green.webp",
+  "system": {
+    "description": "<p>When you reveal a secret about someone or blackmail them during a scene, they must pass a Reaction Roll (15) or become <em>Compromised</em> until the end of the scene. While <em>Compromised</em>, they are <em>Vulnerable</em> and must <strong>mark a Stress</strong> when they take the spotlight.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "38907600a91ae498",
+  "_key": "!items!ade004fbf5c7512f"
+}

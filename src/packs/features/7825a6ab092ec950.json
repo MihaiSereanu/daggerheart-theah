@@ -1,0 +1,23 @@
+{
+  "_id": "7825a6ab092ec950",
+  "name": "Rally",
+  "type": "feature",
+  "img": "icons/tools/instruments/lute-gold-brown.webp",
+  "system": {
+    "description": "<p>Once per session, describe how you rally the party and give yourself and each of your allies a 1d8 Rally Die. A PC can spend their Rally Die to add its result to an roll, or to clear an amount of Stress equal to its result. At the end of each session, clear all unspent Rally dice.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "session",
+      "progression": "increasing",
+      "label": "Uses"
+    }
+  },
+  "effects": [],
+  "folder": "89e7d79a69a54b43",
+  "_key": "!items!7825a6ab092ec950"
+}

@@ -1,0 +1,111 @@
+{
+  "_id": "476f624b20e1d4ac",
+  "name": "Sidhe Noble",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>An imperious fae, leading their realm’s defenses.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "leader",
+    "difficulty": 11,
+    "notes": "<h3>Normal | Leader</h3>\n<p><em>An imperious fae, leading their realm’s defenses.</em><br><strong>Motives &amp; Tactics:</strong> Command, nurture, prune the unwelcome</p>\n<p><strong>Difficulty:</strong> 11 | <strong>Thresholds:</strong> 6/11 | <strong>HP:</strong> 6 | <strong>Stress:</strong> 2</p>\n<p><strong>ATK:</strong> +1 | Weapon: Melee | 1d8+5 physical</p>\n<hr>\n<p><strong>Experience:</strong> Leadership +3</p>\n<h4>Features</h4>\n<p><strong>Voice of the Fae - Action</strong>: Mark a Stress to spotlight 1d4 allies within range of a target they can attack without moving. On a success, their attacks deal half damage.</p>\n<p><strong>Sidhe Cage - Action</strong>: Spend a Fear to form a cage around a target within Very Close range and Restrain them until they are freed with a successful Brawn Roll. When a creature makes an action roll against the cage, they must <strong>mark a Stress</strong>.</p>\n<p><strong>Momentum - Reaction</strong>: When the Sidhe Noble makes a successful attack against a PC, you gain a Fear.</p>\n",
+    "damageThresholds": {
+      "major": 6,
+      "severe": 11
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 6
+      },
+      "stress": {
+        "value": 0,
+        "max": 2
+      }
+    },
+    "motivesAndTactics": "Command, nurture, prune the unwelcome",
+    "experiences": {
+      "bc3f48154091c61b": {
+        "name": "Leadership",
+        "value": 3
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/hand-grip-sword-orange.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 1
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d8+5"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "7529acad3e047150",
+      "name": "Voice of the Fae - Action",
+      "type": "feature",
+      "img": "icons/magic/symbols/runes-star-magenta.webp",
+      "system": {
+        "description": "<p>Mark a Stress to spotlight 1d4 allies within range of a target they can attack without moving. On a success, their attacks deal half damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!476f624b20e1d4ac.7529acad3e047150"
+    },
+    {
+      "_id": "bb7e5dd54d433bda",
+      "name": "Sidhe Cage - Action",
+      "type": "feature",
+      "img": "icons/magic/control/debuff-chains-shackles-movement-purple.webp",
+      "system": {
+        "description": "<p>Spend a Fear to form a cage around a target within Very Close range and Restrain them until they are freed with a successful Brawn Roll. When a creature makes an action roll against the cage, they must <strong>mark a Stress</strong>.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!476f624b20e1d4ac.bb7e5dd54d433bda"
+    },
+    {
+      "_id": "5052792d8b080250",
+      "name": "Momentum - Reaction",
+      "type": "feature",
+      "img": "icons/environment/creatures/horse-brown.webp",
+      "system": {
+        "description": "<p>When the Sidhe Noble makes a successful attack against a PC, you gain a Fear.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!476f624b20e1d4ac.5052792d8b080250"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Sidhe Noble",
+    "actorLink": false
+  },
+  "_key": "!actors!476f624b20e1d4ac"
+}

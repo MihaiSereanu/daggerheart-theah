@@ -1,0 +1,15 @@
+{
+  "_id": "9e9cfc30563174b5",
+  "name": "Zealous Indictment",
+  "type": "feature",
+  "img": "icons/sundries/books/book-red-cross.webp",
+  "system": {
+    "description": "<p>You may make a Charm action roll against an adversary. On a success, you create an opening or distraction. The next time an ally strikes them before the end of the scene, they deal an additional 1d8 damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "d2c4238189e9c5df",
+  "_key": "!items!9e9cfc30563174b5"
+}

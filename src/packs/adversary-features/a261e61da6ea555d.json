@@ -1,0 +1,15 @@
+{
+  "_id": "a261e61da6ea555d",
+  "name": "Overcharge",
+  "type": "feature",
+  "img": "icons/environment/creatures/horse-brown.webp",
+  "system": {
+    "description": "<p>Before rolling damage, you can <strong>mark a Stress</strong> to add a d6 to the damage roll. Additionally, you gain a Fear.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "reaction"
+  },
+  "effects": [],
+  "_key": "!items!a261e61da6ea555d"
+}

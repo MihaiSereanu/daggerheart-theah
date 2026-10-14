@@ -673,14 +673,14 @@ export function parseRallyDice(value, effect) {
  * Refreshes character and/or adversary resources.
  * @param { string[] } refreshTypes Which type of features to refresh using IDs from CONFIG.DH.GENERAL.refreshTypes
  * @param { string[] = ['character', 'adversary'] } actorTypes Which actor types should refresh their features. Defaults to character and adversary.
- * @param { boolean = true } sendRefreshMessage If a chat message should be created detailing the refresh
+ * @param { boolean = false } sendRefreshMessage If a chat message should be created detailing the refresh
  * @return { Actor[] } The actors that had their features refreshed
  */
 export async function RefreshFeatures(
     refreshTypes = [],
     actorTypes = ['character', 'adversary'],
     sendNotificationMessage = true,
-    sendRefreshMessage = true
+    sendRefreshMessage = false
 ) {
     const refreshedActors = {};
     for (let actor of game.actors) {
@@ -689,6 +689,14 @@ export async function RefreshFeatures(
 
             const updates = {};
             for (const item of actor.items) {
+                for (const [key, counter] of Object.entries(item.system.usageCounters ?? {})) {
+                    if (refreshIsAllowed(refreshTypes, counter.recovery)) {
+                        updates[item.id] ??= { system: {} };
+                        updates[item.id].system[`usageCounters.${key}.value`] = 0;
+                        refreshedActors[actor.id] ??= { name: actor.name, img: actor.img, refreshed: new Set() };
+                        refreshedActors[actor.id].refreshed.add(game.i18n.localize(CONFIG.DH.GENERAL.refreshTypes[counter.recovery].label));
+                    }
+                }
                 if (item.metadata?.hasResource && refreshIsAllowed(refreshTypes, item.system.resource?.recovery)) {
                     if (!refreshedActors[actor.id])
                         refreshedActors[actor.id] = { name: actor.name, img: actor.img, refreshed: new Set() };
@@ -708,6 +716,7 @@ export async function RefreshFeatures(
                                 Roll.replaceFormulaData(item.system.resource.max, actor.getRollData())
                             )
                     };
+                    for (const key of Object.keys(item.system.resource.diceStates ?? {})) updates[item.id].system[`resource.diceStates.-=${key}`] = null;
                 }
                 if (item.metadata?.hasActions) {
                     const usedTypes = new Set();
@@ -764,7 +773,7 @@ export async function RefreshFeatures(
         const msg = {
             user: game.user.id,
             content: await foundry.applications.handlebars.renderTemplate(
-                'systems/daggerheart/templates/ui/chat/refreshMessage.hbs',
+                'systems/daggerheart-theah/templates/ui/chat/refreshMessage.hbs',
                 {
                     types: types
                 }

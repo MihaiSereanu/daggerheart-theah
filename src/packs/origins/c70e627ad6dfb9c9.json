@@ -1,0 +1,25 @@
+{
+  "_id": "c70e627ad6dfb9c9",
+  "name": "Inismore",
+  "type": "ancestry",
+  "img": "icons/magic/symbols/clover-luck-white-green.webp",
+  "system": {
+    "description": "<p><strong>Luck of the Emerald Isle.</strong> At the start of each session, everyone in your party gains a Hope.</p>\n<p><strong>Turn of the Wind</strong>. When you roll a 1 on your Hope Die, you can reroll it once.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "features": [
+      {
+        "type": "primary",
+        "item": "Compendium.daggerheart-theah.features.Item.493b716ccc5cab35"
+      },
+      {
+        "type": "secondary",
+        "item": "Compendium.daggerheart-theah.features.Item.67fe189e87fe120d"
+      }
+    ],
+    "loreReference": null
+  },
+  "effects": [],
+  "_key": "!items!c70e627ad6dfb9c9"
+}

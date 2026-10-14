@@ -1,0 +1,27 @@
+{
+  "_id": "f4ed2b495b567836",
+  "name": "Field Archaeologist",
+  "type": "subclass",
+  "img": "icons/skills/ranged/target-bullseye-arrow-green.webp",
+  "system": {
+    "description": "<p>Play the Field Archaeologist if you want to put yourself at risk to uncover forgotten knowledge.</p>\n<h4>Features</h4>\n<p><strong>Quick-Thinking</strong>. When a trap or environmental hazard is triggered, you may <strong>mark a Stress</strong> to act immediately against it. You may <strong>mark 2 Stress</strong> instead to roll with Advantage.</p>\n<p><strong>Unorthodox Solution</strong>. Once per scene, you may employ outside-the-box solutions to roll a d20 as your Hope die. If you fail, you must also <strong>mark a Stress</strong>.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.83e9b56f8a253e65",
+    "spellcastingTrait": null,
+    "features": [
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.7f3e1eaab5c22e7d"
+      },
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.d514bdf3f71a89be"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": "3c099081da6eb145",
+  "_key": "!items!f4ed2b495b567836"
+}

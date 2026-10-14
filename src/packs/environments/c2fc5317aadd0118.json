@@ -1,0 +1,69 @@
+{
+  "_id": "c2fc5317aadd0118",
+  "name": "Mountain Pass",
+  "type": "environment",
+  "img": "systems/daggerheart-theah/assets/icons/documents/actors/forest.svg",
+  "system": {
+    "description": "<p><em>Stony peaks that pierce the clouds, with a twisting path winding its way up and over through many switchbacks.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "standard",
+    "type": "traversal",
+    "difficulty": 15,
+    "notes": "<h3>Standard | Traversal</h3>\n<p><em>Stony peaks that pierce the clouds, with a twisting path winding its way up and over through many switchbacks.</em><br><strong>Impulses:</strong> Exact a chilling toll in supplies and stamina, reveal magical tampering, slow down travel</p>\n<p><strong>Difficulty:</strong> 15</p>\n<h4>Features</h4>\n<p><strong>Wind Patterns - Passive</strong>: The shape of the cliffs and snowdrifts reveals dangerous wind tunnels in the pass. A PC with a relevant background or Experience can read the signs of shifting weather. A PC who succeeds on a Wits Roll can predict when the worst gusts will hit and find safer paths through the area. On a critical success, they gain Advantage on furtherr rolls to cross safely.</p>\n<p><strong>Avalanche - Action</strong>: Spend a Fear to carve the mountain with an icy torrent, causing an avalanche. All PCs in its path must succeed on a Finesse or Brawn Reaction Roll or be bowled over and carried down the mountain. A PC using rope, pitons, or other climbing gear gains advantage on this roll. Targets who fail are knocked down the mountain to Far range, take 2d6 physical damage, and must <strong>mark a Stress</strong>. Targets who succeed must <strong>mark a Stress</strong>.</p>\n<p><strong>Eagle Nest - Reaction</strong>: When the PCs enter the eagles&#39; hunting grounds, two Giant Eagles appear at Very Far range of a chosen PC, identifying the PCs as likely prey.</p>\n<p><strong>Icy Winds - Reaction</strong>: Countdown (Loop 4). When the PCs enter the mountain pass, activate the countdown. When it triggers, all characters traveling through the pass must succeed on a Brawn Reaction Roll or <strong>mark a Stress</strong>. A PC wearing clothes appropriate for extreme cold gains Advantage on these rolls.</p>\n",
+    "impulses": "Exact a chilling toll in supplies and stamina, reveal magical tampering, slow down travel"
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "193ba80f139bcf5f",
+      "name": "Wind Patterns - Passive",
+      "type": "feature",
+      "img": "icons/magic/control/buff-flight-wings-blue.webp",
+      "system": {
+        "description": "<p>The shape of the cliffs and snowdrifts reveals dangerous wind tunnels in the pass. A PC with a relevant background or Experience can read the signs of shifting weather. A PC who succeeds on a Wits Roll can predict when the worst gusts will hit and find safer paths through the area. On a critical success, they gain Advantage on furtherr rolls to cross safely.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!c2fc5317aadd0118.193ba80f139bcf5f"
+    },
+    {
+      "_id": "0f4563736938d933",
+      "name": "Avalanche - Action",
+      "type": "feature",
+      "img": "icons/magic/water/snowflake-ice-blue.webp",
+      "system": {
+        "description": "<p>Spend a Fear to carve the mountain with an icy torrent, causing an avalanche. All PCs in its path must succeed on a Finesse or Brawn Reaction Roll or be bowled over and carried down the mountain. A PC using rope, pitons, or other climbing gear gains advantage on this roll. Targets who fail are knocked down the mountain to Far range, take 2d6 physical damage, and must <strong>mark a Stress</strong>. Targets who succeed must <strong>mark a Stress</strong>.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!c2fc5317aadd0118.0f4563736938d933"
+    },
+    {
+      "_id": "7a172545f3ddbba9",
+      "name": "Eagle Nest - Reaction",
+      "type": "feature",
+      "img": "icons/magic/control/buff-flight-wings-blue.webp",
+      "system": {
+        "description": "<p>When the PCs enter the eagles&#39; hunting grounds, two Giant Eagles appear at Very Far range of a chosen PC, identifying the PCs as likely prey.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!c2fc5317aadd0118.7a172545f3ddbba9"
+    },
+    {
+      "_id": "053ddea6cac5a573",
+      "name": "Icy Winds - Reaction",
+      "type": "feature",
+      "img": "icons/magic/water/snowflake-ice-blue.webp",
+      "system": {
+        "description": "<p>Countdown (Loop 4). When the PCs enter the mountain pass, activate the countdown. When it triggers, all characters traveling through the pass must succeed on a Brawn Reaction Roll or <strong>mark a Stress</strong>. A PC wearing clothes appropriate for extreme cold gains Advantage on these rolls.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!c2fc5317aadd0118.053ddea6cac5a573"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Mountain Pass",
+    "actorLink": false
+  },
+  "_key": "!actors!c2fc5317aadd0118"
+}

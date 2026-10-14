@@ -13,13 +13,13 @@ export default class DhCombatTracker extends foundry.applications.sidebar.tabs.C
 
     static PARTS = {
         header: {
-            template: 'systems/daggerheart/templates/ui/combatTracker/combatTrackerHeader.hbs'
+            template: 'systems/daggerheart-theah/templates/ui/combatTracker/combatTrackerHeader.hbs'
         },
         tracker: {
-            template: 'systems/daggerheart/templates/ui/combatTracker/combatTracker.hbs'
+            template: 'systems/daggerheart-theah/templates/ui/combatTracker/combatTracker.hbs'
         },
         footer: {
-            template: 'systems/daggerheart/templates/ui/combatTracker/combatTrackerFooter.hbs'
+            template: 'systems/daggerheart-theah/templates/ui/combatTracker/combatTrackerFooter.hbs'
         }
     };
 
@@ -204,16 +204,6 @@ export default class DhCombatTracker extends foundry.applications.sidebar.tabs.C
             .indexOf(combatantId);
 
         if (this.viewed.turn !== toggleTurn) {
-            const { updateCountdowns } = game.system.api.applications.ui.DhCountdowns;
-            if (combatant.actor?.type === 'character') {
-                await updateCountdowns(
-                    CONFIG.DH.GENERAL.countdownProgressionTypes.spotlight.id,
-                    CONFIG.DH.GENERAL.countdownProgressionTypes.characterSpotlight.id
-                );
-            } else {
-                await updateCountdowns(CONFIG.DH.GENERAL.countdownProgressionTypes.spotlight.id);
-            }
-
             const autoPoints = 
                 game.settings.get(CONFIG.DH.id, CONFIG.DH.SETTINGS.gameSettings.variantRules).actionTokens.automation;
             if (autoPoints) {

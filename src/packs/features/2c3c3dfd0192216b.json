@@ -1,0 +1,29 @@
+{
+  "_id": "2c3c3dfd0192216b",
+  "name": "Gifted Performance",
+  "type": "feature",
+  "img": "icons/tools/instruments/lute-gold-brown.webp",
+  "system": {
+    "description": "<p>Describe how you perform for others. You and all allies that can hear you gain its effect. You can play each song once per Rest:</p>\n<ul>\n<li><strong>Relaxing Song</strong>: Clear 1 HP.</li>\n<li><strong>Inspiring Song</strong>: Gain 1 Hope.</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "usageCounters": {
+      "3112f9ca5c2932c8": {
+        "label": "Relaxing Song",
+        "value": 0,
+        "max": "1",
+        "recovery": "shortRest"
+      },
+      "2345b0ccff3c0074": {
+        "label": "Inspiring Song",
+        "value": 0,
+        "max": "1",
+        "recovery": "shortRest"
+      }
+    }
+  },
+  "effects": [],
+  "folder": "700e38c3de159271",
+  "_key": "!items!2c3c3dfd0192216b"
+}

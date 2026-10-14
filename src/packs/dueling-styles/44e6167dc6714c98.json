@@ -1,0 +1,14 @@
+{
+  "_id": "44e6167dc6714c98",
+  "name": "Aldana",
+  "type": "feature",
+  "img": "icons/skills/melee/sword-twirl-orange.webp",
+  "system": {
+    "description": "<p><strong>Required Weapon: Fencing Swords</strong>\nA Castillian style that forgoes an off-hand weapon entirely. The duelist tucks one arm behind their back and narrows their profile, moving to an internal rhythm like a dance.</p>\n<ul>\n<li><strong>Aldana Ruse.</strong> After an enemy misses you, you may <strong>mark a Stress</strong> to make an attack roll. If it hits, roll a number of d6 equal to your Finesse modifier - minimum 1. You may add all the 6s rolled to your weapon damage.</li>\n<li><strong>Aldana Dance</strong>. You can <strong>mark a Stress</strong> when being hit to add your Charm to your Evasion. If this causes the attack to miss, your opponent becomes <em>Vulnerable</em> until they succed on a Reaction Roll (15) to redress themselves.</li>\n<li><strong>Aldana Precision</strong>. When you make an attack roll, you can <strong>mark a Stress</strong> to gain a bonus to the roll equal to your Wits.</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!44e6167dc6714c98"
+}

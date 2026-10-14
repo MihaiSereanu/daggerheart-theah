@@ -1,0 +1,15 @@
+{
+  "_id": "a0330148fa12b122",
+  "name": "Salve of Neptune",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Salve of Neptune</strong>: Apply to your neck to breathe underwater for minutes equal to your level.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!a0330148fa12b122"
+}

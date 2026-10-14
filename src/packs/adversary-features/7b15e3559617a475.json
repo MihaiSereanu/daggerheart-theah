@@ -1,0 +1,15 @@
+{
+  "_id": "7b15e3559617a475",
+  "name": "Exile",
+  "type": "feature",
+  "img": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+  "system": {
+    "description": "<p>Spend a Fear and target a PC. The adversary exiles the target and their allies, giving them Disadvantage in social situations within their domain.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!7b15e3559617a475"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "5f3327596578f7f4",
+  "name": "Scoundrel",
+  "type": "feature",
+  "img": "icons/skills/social/theft-pickpocket-bribery-brown.webp",
+  "system": {
+    "description": "<p>You have advantage on rolls to negotiate with criminals, detect lies, or find a safe place to hide.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "3be543b0676b4f45",
+  "_key": "!items!5f3327596578f7f4"
+}

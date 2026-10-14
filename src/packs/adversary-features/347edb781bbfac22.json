@@ -1,0 +1,15 @@
+{
+  "_id": "347edb781bbfac22",
+  "name": "Box In",
+  "type": "feature",
+  "img": "icons/magic/control/debuff-chains-shackles-movement-purple.webp",
+  "system": {
+    "description": "<p>Mark a Stress to choose a target within Very Close range to focus on. That target has Disadvantage on attack rolls when they’re within Very Close range of the adversary. The adversary can only focus on one target at a time.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!347edb781bbfac22"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "e0931ddbfec6f223",
+  "name": "Only Bones",
+  "type": "feature",
+  "img": "icons/sundries/books/book-symbol-skull-grey.webp",
+  "system": {
+    "description": "<p>The adversary is resistant to physical damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!e0931ddbfec6f223"
+}

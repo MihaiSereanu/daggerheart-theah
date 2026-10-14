@@ -1,0 +1,122 @@
+{
+  "_id": "b7bb9f7cfdcc7830",
+  "name": "Demon of Wrath",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A hulking demon with boulder-sized fists, driven by endless rage.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "champion",
+    "type": "bruiser",
+    "difficulty": 19,
+    "notes": "<h3>Champion | Bruiser</h3>\n<p><em>A hulking demon with boulder-sized fists, driven by endless rage.</em><br><strong>Motives &amp; Tactics:</strong> Fuel anger, impress rivals, wreak havoc</p>\n<p><strong>Difficulty:</strong> 19 | <strong>Thresholds:</strong> 15/28 | <strong>HP:</strong> 7 | <strong>Stress:</strong> 5</p>\n<p><strong>ATK:</strong> +3 | Weapon: Very Close | 2d8+1 physical (direct)</p>\n<hr>\n<p><strong>Experience:</strong> Intimidation +2</p>\n<h4>Features</h4>\n<p><strong>Unrelenting - Passive</strong>: The Demon’s attacks deal direct damage.</p>\n<p><strong>Battle Lust - Action</strong>: Spend a Fear to boil the blood of all PCs within Far range. They use a d20 as their Fear Die until end of the scene.</p>\n<p><strong>Retaliation - Reaction</strong>: When the Demon takes damage from an attack within Close range, you can <strong>mark a Stress</strong> to make a standard attack against the attacker.</p>\n<p><strong>Blood and Souls - Reaction</strong>: Countdown (Loop 6). Activate the first time an attack is made within sight of the Demon. It ticks down when a PC takes a violent action. When it triggers, summon 1d4 Demon minions at Close range, using the Minion creation benchmarks.</p>\n",
+    "damageThresholds": {
+      "major": 15,
+      "severe": 28
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 7
+      },
+      "stress": {
+        "value": 0,
+        "max": 5
+      }
+    },
+    "motivesAndTactics": "Fuel anger, impress rivals, wreak havoc",
+    "experiences": {
+      "8cd666e025542504": {
+        "name": "Intimidation",
+        "value": 2
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/ranged/target-bullseye-arrow-green.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "veryClose",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 3
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "2d8+1"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "bc9478e24a2c66f0",
+      "name": "Unrelenting - Passive",
+      "type": "feature",
+      "img": "icons/equipment/shield/heater-steel-gold.webp",
+      "system": {
+        "description": "<p>The Demon’s attacks deal direct damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!b7bb9f7cfdcc7830.bc9478e24a2c66f0"
+    },
+    {
+      "_id": "c005160fc758d75d",
+      "name": "Battle Lust - Action",
+      "type": "feature",
+      "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+      "system": {
+        "description": "<p>Spend a Fear to boil the blood of all PCs within Far range. They use a d20 as their Fear Die until end of the scene.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!b7bb9f7cfdcc7830.c005160fc758d75d"
+    },
+    {
+      "_id": "87fb212af7fc8d98",
+      "name": "Retaliation - Reaction",
+      "type": "feature",
+      "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+      "system": {
+        "description": "<p>When the Demon takes damage from an attack within Close range, you can <strong>mark a Stress</strong> to make a standard attack against the attacker.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!b7bb9f7cfdcc7830.87fb212af7fc8d98"
+    },
+    {
+      "_id": "0cc47f0088b1baa6",
+      "name": "Blood and Souls - Reaction",
+      "type": "feature",
+      "img": "icons/sundries/books/book-symbol-skull-grey.webp",
+      "system": {
+        "description": "<p>Countdown (Loop 6). Activate the first time an attack is made within sight of the Demon. It ticks down when a PC takes a violent action. When it triggers, summon 1d4 Demon minions at Close range, using the Minion creation benchmarks.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!b7bb9f7cfdcc7830.0cc47f0088b1baa6"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Demon of Wrath",
+    "actorLink": false
+  },
+  "_key": "!actors!b7bb9f7cfdcc7830"
+}

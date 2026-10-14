@@ -1,0 +1,15 @@
+{
+  "_id": "47569e49efd557be",
+  "name": "Death Strike",
+  "type": "feature",
+  "img": "icons/weapons/daggers/dagger-poisoned-curved-green.webp",
+  "system": {
+    "description": "<p>The first attack during a scene that benefits from your Ambush feature deals double damage. In addition, the target is dead unless the GM spends a Fear.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "f4255369d39b92ce",
+  "_key": "!items!47569e49efd557be"
+}

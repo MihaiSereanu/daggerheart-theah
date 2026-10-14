@@ -1,0 +1,53 @@
+{
+  "_id": "d55ca6db55d8d18b",
+  "name": "Dracheneisen Shortsword",
+  "type": "weapon",
+  "img": "icons/weapons/swords/shortsword-guard-silver.webp",
+  "system": {
+    "description": "<p><strong>Shortsword</strong></p>\n<p><strong>Paired</strong>: +2 to primary weapon damage to targets within Melee</p>\n<p><strong><em>Dracheneisen</em></strong> is a rare, legendary alloy unique to Eisen. Dark and heavy with a faint metallic sheen, it is said to be forged with the remnants of ancient dragons. No new Dracheneisen items have been made in generations. All known pieces are heirlooms, trophies, or war relics sought by many factions. The secrets of their forging have been lost to time, or are kept very closely guarded.</p>\n<h4>Ironforged Weapons</h4>\n<p>Dracheneisen Weapons are <strong>Ironforged</strong>. These weapons have the following features:</p>\n<ul>\n<li><strong>Warforged.</strong> Increase the weapon’s damage by a static +5.</li>\n<li><strong>Mastercrafted.</strong> If the weapon is <strong>Reliable</strong>, increase that bonus by a further +1. If it is not <strong>Reliable</strong>, it gains <strong>Reliable</strong>.</li>\n<li><strong>Magical.</strong> The weapon bypasses supernatural resistances unless otherwise specified.</li>\n</ul>\n<h4>Ironbound Armours</h4>\n<p>Dracheneisen Armours are <strong>Ironbound</strong>. These pieces have the following features:</p>\n<ul>\n<li><strong>Resilient.</strong> Increase the armour’s base thresholds by +3.</li>\n<li><strong>Warded.</strong> Reduce incoming damage by the Armor Score before applying it to Thresholds.</li>\n<li><strong>Light.</strong> If the armour is <strong>Very Heavy</strong>, treat it as <strong>Heavy</strong>. If it is <strong>Heavy</strong>, ignore the trait.</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "blackpowder": false,
+    "reloading": false,
+    "secondary": true,
+    "burden": "oneHanded",
+    "weaponFeatures": [],
+    "attack": {
+      "_id": "21dca0c8d2d32de7",
+      "name": "Shortsword",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/weapons/swords/shortsword-guard-silver.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": "finesse",
+        "bonus": 1
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d6 + @finesse + 5"
+            }
+          }
+        }
+      }
+    },
+    "ironforged": true
+  },
+  "effects": [],
+  "_key": "!items!d55ca6db55d8d18b"
+}

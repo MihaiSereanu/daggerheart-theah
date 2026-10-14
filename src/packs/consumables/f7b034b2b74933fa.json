@@ -1,0 +1,15 @@
+{
+  "_id": "f7b034b2b74933fa",
+  "name": "Blood of the Yorgi",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Blood of the Yorgi</strong>: You can drink this blood to disappear from where you are and immediately reappear at a point you can see within Very Far range.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!f7b034b2b74933fa"
+}

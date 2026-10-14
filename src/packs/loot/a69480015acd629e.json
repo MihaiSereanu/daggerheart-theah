@@ -1,0 +1,15 @@
+{
+  "_id": "a69480015acd629e",
+  "name": "Bag of Ficklesand",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Bag of Ficklesand</strong>: This bag can alter its properties to be much heavier or lighter, seeminglly at random. Additionally, on a successful Finesse Roll (10), you can blow a bit of sand into a target&#39;s face to make them temporarily Vulnerable.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!a69480015acd629e"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "d27badcfe72a5e13",
+  "name": "Jar of Numan Fire",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Jar of Numan Fire</strong>: You can pour out the strange liquid contents of this jar to instantly produce fire. The contents regenerate when you take a rest.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!d27badcfe72a5e13"
+}

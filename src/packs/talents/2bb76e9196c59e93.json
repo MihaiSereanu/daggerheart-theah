@@ -1,0 +1,20 @@
+{
+  "_id": "2bb76e9196c59e93",
+  "name": "Rune of the First Word",
+  "type": "domainCard",
+  "img": "icons/magic/symbols/runes-carved-stone-purple.webp",
+  "system": {
+    "description": "<p>By correlating a text with the Language of the Gods, you may attempt to translate it by making a <strong>Spellcast Roll (15)</strong>. On a success with Hope, you understand the text entirely. Otherwise, your understanding of it is limited.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "galdr",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "1c31d70f005aa82e",
+  "_key": "!items!2bb76e9196c59e93"
+}

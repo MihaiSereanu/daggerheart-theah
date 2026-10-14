@@ -1,9 +1,9 @@
 export default class DhActorDirectory extends foundry.applications.sidebar.tabs.ActorDirectory {
     static DEFAULT_OPTIONS = {
-        renderUpdateKeys: ['system.levelData.level.current', 'system.partner', 'system.tier', 'system.type']
+        renderUpdateKeys: ['system.levelData.level.current', 'system.partner', 'system.classification', 'system.type']
     };
 
-    static _entryPartial = 'systems/daggerheart/templates/ui/sidebar/actor-document-partial.hbs';
+    static _entryPartial = 'systems/daggerheart-theah/templates/ui/sidebar/actor-document-partial.hbs';
 
     async _prepareDirectoryContext(context, options) {
         await super._prepareDirectoryContext(context, options);
@@ -47,50 +47,6 @@ export default class DhActorDirectory extends foundry.applications.sidebar.tabs.
     _getEntryContextOptions() {
         const options = super._getEntryContextOptions();
         options.push(
-            {
-                label: 'DAGGERHEART.UI.Sidebar.actorDirectory.duplicateToNewTier',
-                icon: `<i class="fa-solid fa-arrow-trend-up" inert></i>`,
-                visible: li => {
-                    const actor = game.actors.get(li.dataset.entryId);
-                    return actor?.type === 'adversary' && actor.system.type !== 'social';
-                },
-                callback: async li => {
-                    const actor = game.actors.get(li.dataset.entryId);
-                    if (!actor) throw new Error('Unexpected missing actor');
-
-                    const tiers = [1, 2, 3, 4].filter(t => t !== actor.system.tier);
-                    const content = document.createElement('div');
-                    const select = document.createElement('select');
-                    select.name = 'tier';
-                    select.append(
-                        ...tiers.map(t => {
-                            const option = document.createElement('option');
-                            option.value = t;
-                            option.textContent = game.i18n.localize(`DAGGERHEART.GENERAL.Tiers.${t}`);
-                            return option;
-                        })
-                    );
-                    content.append(select);
-
-                    const tier = await foundry.applications.api.Dialog.input({
-                        classes: ['dh-style', 'dialog'],
-                        window: { title: 'DAGGERHEART.UI.Sidebar.actorDirectory.pickTierTitle' },
-                        content,
-                        ok: {
-                            label: 'DAGGERHEART.UI.Sidebar.actorDirectory.createAdversary',
-                            callback: (event, button, dialog) => Number(button.form.elements.tier.value)
-                        }
-                    });
-
-                    if (tier === actor.system.tier) {
-                        ui.notifications.warn('This actor is already at this tier');
-                    } else if (tier) {
-                        const source = actor.system.adjustForTier(tier);
-                        await Actor.create(source);
-                        ui.notifications.info(`Tier ${tier} ${actor.name} created`);
-                    }
-                }
-            },
             {
                 label: 'DAGGERHEART.UI.Sidebar.actorDirectory.activateParty',
                 icon: `<i class="fa-regular fa-square"></i>`,

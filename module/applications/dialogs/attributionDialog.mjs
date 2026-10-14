@@ -26,7 +26,7 @@ export default class AttributionDialog extends HandlebarsApplicationMixin(Applic
     };
 
     static PARTS = {
-        main: { template: 'systems/daggerheart/templates/dialogs/attribution.hbs' }
+        main: { template: 'systems/daggerheart-theah/templates/dialogs/attribution.hbs' }
     };
 
     _attachPartListeners(partId, htmlElement, options) {

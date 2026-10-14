@@ -1,0 +1,15 @@
+{
+  "_id": "ce7ddf0ed49c02bb",
+  "name": "Thick Blood",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-flag-white-mountain.webp",
+  "system": {
+    "description": "<p>When you take Minor damage, you can <strong>mark a Stress</strong> instead of marking a HP.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "63c8a76e4bad4cbc",
+  "_key": "!items!ce7ddf0ed49c02bb"
+}

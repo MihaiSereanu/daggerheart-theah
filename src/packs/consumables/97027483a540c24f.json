@@ -1,0 +1,15 @@
+{
+  "_id": "97027483a540c24f",
+  "name": "Mythic Dust",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Mythic Dust</strong>: You can apply this dust to a weapon that deals magic damage to add a d12 to your next damage roll with that weapon.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!97027483a540c24f"
+}

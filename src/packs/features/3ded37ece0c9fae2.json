@@ -1,0 +1,15 @@
+{
+  "_id": "3ded37ece0c9fae2",
+  "name": "Battlefield Orders",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-standard-blue.webp",
+  "system": {
+    "description": "<p>Choose two stratagems from below. You can <strong>mark a Stress</strong> to use them when the conditions are met.</p>\n<ul>\n<li><strong>Aim True!</strong> Before an ally makes an attack roll, they apply your Instinct or Wits modifier to the attack roll.</li>\n<li><strong>Press On!</strong> When the ally makes a successful attack, they also force the target to <strong>mark a Stress</strong>.</li>\n<li><strong>Shield Wall!</strong> When an ally would take Severe damage, they can <strong>mark a Stress</strong> to reduce the threshold.</li>\n<li><strong>Hold the Line!</strong> When the ally would be moved against their will, they may choose not to be moved.</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "0db2dc22f59539a7",
+  "_key": "!items!3ded37ece0c9fae2"
+}

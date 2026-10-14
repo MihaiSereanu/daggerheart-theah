@@ -209,7 +209,7 @@ export default class DHActorRoll extends foundry.abstract.TypeDataModel {
     async updateTargetHTML({ tab = null } = {}) {
         if (tab) this.targeting.usingSelect = tab === 'select';
         const targetTokensHTML = await foundry.applications.handlebars.renderTemplate(
-            'systems/daggerheart/templates/ui/chat/parts/target-tokens-part.hbs',
+            'systems/daggerheart-theah/templates/ui/chat/parts/target-tokens-part.hbs',
             {
                 targeting: this.targeting,
                 currentTargets: this._getCurrentTargets(),

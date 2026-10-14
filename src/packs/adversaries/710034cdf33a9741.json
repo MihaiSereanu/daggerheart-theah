@@ -1,0 +1,81 @@
+{
+  "_id": "710034cdf33a9741",
+  "name": "Tough Zombie",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A large corpse, decay-bloated and angry.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "bruiser",
+    "difficulty": 10,
+    "notes": "<h3>Normal | Bruiser</h3>\n<p><em>A large corpse, decay-bloated and angry.</em><br><strong>Motives &amp; Tactics:</strong> Crush, destroy, hail debris, slam</p>\n<p><strong>Difficulty:</strong> 10 | <strong>Thresholds:</strong> 8/15 | <strong>HP:</strong> 7 | <strong>Stress:</strong> 4</p>\n<p><strong>ATK:</strong> +2 | Slam: Very Close | 1d10+3 physical</p>\n<hr>\n<p><strong>Experience:</strong> Collateral Damage +2, Throw +4</p>\n<h4>Normal | Bruiser</h4>\n<p><strong>Slow - Passive</strong>: When you spotlight the Zombie and they don’t have a token on their stat block, they can’t act yet. Place a token on their stat block and describe what they’re preparing to do. When you spotlight the Zombie and they have a token on their stat block, clear the token and they can act.</p>\n<p><strong>Rend Asunder - Action</strong>: Make a standard attack with advantage against a target the Zombie has Restrained. On a success, the attack deals direct damage.</p>\n<p><strong>Rip and Tear - Reaction</strong>: When the Zombie makes a successful standard attack, you can <strong>mark a Stress</strong> to temporarily Restrain the target and force them to <strong>mark 2 Stress</strong>.</p>\n",
+    "damageThresholds": {
+      "major": 8,
+      "severe": 15
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 7
+      },
+      "stress": {
+        "value": 0,
+        "max": 4
+      }
+    },
+    "motivesAndTactics": "Crush, destroy, hail debris, slam",
+    "experiences": {
+      "e28f455b5ea60925": {
+        "name": "Collateral Damage",
+        "value": 2
+      },
+      "741fe7c2f4b7fca9": {
+        "name": "Throw",
+        "value": 4
+      }
+    },
+    "attack": {
+      "_id": "4caf003ad1aeaadc",
+      "name": "Slam",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/unarmed-punch-fist-yellow-red.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "veryClose",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 2
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d10+3"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [],
+  "prototypeToken": {
+    "name": "Tough Zombie",
+    "actorLink": false
+  },
+  "_key": "!actors!710034cdf33a9741"
+}

@@ -49,7 +49,7 @@ export default class FearTracker extends HandlebarsApplicationMixin(ApplicationV
     static PARTS = {
         resources: {
             root: true,
-            template: 'systems/daggerheart/templates/ui/fearTracker.hbs'
+            template: 'systems/daggerheart-theah/templates/ui/fearTracker.hbs'
         }
     };
 

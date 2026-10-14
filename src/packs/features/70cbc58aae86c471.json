@@ -1,0 +1,15 @@
+{
+  "_id": "70cbc58aae86c471",
+  "name": "Rise to the Challenge",
+  "type": "feature",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow-teal.webp",
+  "system": {
+    "description": "<p>When you are reduced to 2 or fewer HP, your will sharpens. You may roll a d20 as your Hope Die.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "d8e031aec4068609",
+  "_key": "!items!70cbc58aae86c471"
+}

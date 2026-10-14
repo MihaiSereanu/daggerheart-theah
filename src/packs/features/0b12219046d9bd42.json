@@ -1,0 +1,15 @@
+{
+  "_id": "0b12219046d9bd42",
+  "name": "Thick Hide",
+  "type": "feature",
+  "img": "icons/creatures/abilities/bear-roar-bite-brown-green.webp",
+  "system": {
+    "description": "<p>You gain a +2 bonus to your damage thresholds.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "e8129b5b4c6cbd24",
+  "_key": "!items!0b12219046d9bd42"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "271606c46492c05a",
+  "name": "Resilient",
+  "type": "feature",
+  "img": "icons/environment/creatures/horse-white.webp",
+  "system": {
+    "description": "<p>When you take a Recovery Move during a rest, you always recover the maximum amount.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "47efdd5a27976b38",
+  "_key": "!items!271606c46492c05a"
+}

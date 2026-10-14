@@ -1,0 +1,15 @@
+{
+  "_id": "0f0c865fce16649a",
+  "name": "Sorcerous Lineage",
+  "type": "feature",
+  "img": "icons/magic/symbols/runes-star-magenta.webp",
+  "system": {
+    "description": "<p>When you gain this feature, select a <strong>Sorcerous Tradition</strong> and choose a Talent from its list. This chosen Tradition does not count towards your standard Domain limit, and you can learn further Sorcerous Talents via Advancement. You also gain <strong>Ritual Casting</strong>, with its effects informed by your chosen Tradition.</p>\n<blockquote>\n<p>See Appendix for <strong>Sorcerous Talents</strong> and <strong>Ritual Casting</strong> rules.</p>\n</blockquote>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "bad69822cb6a96d8",
+  "_key": "!items!0f0c865fce16649a"
+}

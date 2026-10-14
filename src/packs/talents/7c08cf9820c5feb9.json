@@ -1,0 +1,20 @@
+{
+  "_id": "7c08cf9820c5feb9",
+  "name": "Rune of Binding",
+  "type": "domainCard",
+  "img": "icons/magic/symbols/runes-carved-stone-purple.webp",
+  "system": {
+    "description": "<p>You may <strong>mark a Stress</strong> to target an adversary within Close range, forcing them to make a Reaction Roll (12). On a failure, they are temporarily <em>Vulnerable</em> and <em>Restrained</em> and must <strong>mark a Stress</strong> to attempt the Reaction Roll again. If used on an object, it stops in time and space until the next Rest. If someone tries to move it, you must make a Spellcast Roll against them to maintain the effect.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "galdr",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "1c31d70f005aa82e",
+  "_key": "!items!7c08cf9820c5feb9"
+}

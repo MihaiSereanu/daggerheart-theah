@@ -1,0 +1,15 @@
+{
+  "_id": "f42b090ff55ca88e",
+  "name": "Mighty",
+  "type": "feature",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow-teal.webp",
+  "system": {
+    "description": "<p>You gain a pool of Might Dice (d6s). When you roll with Hope, you may place a d6 in your Might Dice pool instead of gaining Hope. You may hold a number of these dice equal to your Brawn, and can spend them to add their results to any physical Action Roll. At the end of each session, clear unspent Might Dice and gain 1 Hope for each.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "672367d4d1c6a924",
+  "_key": "!items!f42b090ff55ca88e"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "48c3cfdf222c6574",
+  "name": "Ramp Up",
+  "type": "feature",
+  "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
+  "system": {
+    "description": "<p>You must spend a Fear to spotlight the adversary. While spotlighted, they can make their standard attack against all targets within range.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!48c3cfdf222c6574"
+}

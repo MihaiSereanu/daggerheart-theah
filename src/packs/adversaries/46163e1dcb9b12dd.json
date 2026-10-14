@@ -1,0 +1,126 @@
+{
+  "_id": "46163e1dcb9b12dd",
+  "name": "Veteran Knight",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A decorated soldier with heavy armor and a powerful swing.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "leader",
+    "difficulty": 15,
+    "notes": "<h3>Normal | Leader</h3>\n<p><em>A decorated soldier with heavy armor and a powerful swing.</em><br><strong>Motives &amp; Tactics:</strong> Run down, seek glory, show dominance</p>\n<p><strong>Difficulty:</strong> 15 | <strong>Thresholds:</strong> 8/14 | <strong>HP:</strong> 6 | <strong>Stress:</strong> 4</p>\n<p><strong>ATK:</strong> +4 | Weapon: Melee | 1d10+5 phy</p>\n<hr>\n<p><strong>Experience:</strong> High Society +2, Tactics +2</p>\n<h4>Features</h4>\n<p><strong>Shield Wall - Passive</strong>: While shielding, the Knight gains +2 Difficulty. When they take Severe damage, they lose this benefit until they are next spotlighted.</p>\n<p><strong>Heavily Armored - Passive</strong>: Reduce physical damage the Knight takes by 3.</p>\n<p><strong>Bash - Action</strong>: Move up to Close range and make a standard attack. On a success, deal 2d8+4 physical damage and the target must <strong>mark a Stress</strong>.</p>\n<p><strong>For the Realm! - Action</strong>: Mark a Stress to spotlight 1d4+1 allies. While spotlighted this way, their attacks deal half damage.</p>\n",
+    "damageThresholds": {
+      "major": 8,
+      "severe": 14
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 6
+      },
+      "stress": {
+        "value": 0,
+        "max": 4
+      }
+    },
+    "motivesAndTactics": "Run down, seek glory, show dominance",
+    "experiences": {
+      "7aa76b3f5c729495": {
+        "name": "High Society",
+        "value": 2
+      },
+      "3aeebff64b1f298f": {
+        "name": "Tactics",
+        "value": 2
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/hand-grip-sword-orange.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 4
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d10+5"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "177b0f0b47502f43",
+      "name": "Shield Wall - Passive",
+      "type": "feature",
+      "img": "icons/equipment/shield/heater-steel-gold.webp",
+      "system": {
+        "description": "<p>While shielding, the Knight gains +2 Difficulty. When they take Severe damage, they lose this benefit until they are next spotlighted.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!46163e1dcb9b12dd.177b0f0b47502f43"
+    },
+    {
+      "_id": "9dbbcee65ad731f6",
+      "name": "Heavily Armored - Passive",
+      "type": "feature",
+      "img": "icons/equipment/shield/heater-steel-gold.webp",
+      "system": {
+        "description": "<p>Reduce physical damage the Knight takes by 3.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!46163e1dcb9b12dd.9dbbcee65ad731f6"
+    },
+    {
+      "_id": "54649fe1e415ba5b",
+      "name": "Bash - Action",
+      "type": "feature",
+      "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+      "system": {
+        "description": "<p>Move up to Close range and make a standard attack. On a success, deal 2d8+4 physical damage and the target must <strong>mark a Stress</strong>.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!46163e1dcb9b12dd.54649fe1e415ba5b"
+    },
+    {
+      "_id": "7d8e5dfe8a2819c1",
+      "name": "For the Realm! - Action",
+      "type": "feature",
+      "img": "icons/sundries/flags/banner-sword-blue.webp",
+      "system": {
+        "description": "<p>Mark a Stress to spotlight 1d4+1 allies. While spotlighted this way, their attacks deal half damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!46163e1dcb9b12dd.7d8e5dfe8a2819c1"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Veteran Knight",
+    "actorLink": false
+  },
+  "_key": "!actors!46163e1dcb9b12dd"
+}

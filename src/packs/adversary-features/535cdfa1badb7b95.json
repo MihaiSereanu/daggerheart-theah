@@ -1,0 +1,15 @@
+{
+  "_id": "535cdfa1badb7b95",
+  "name": "Bite",
+  "type": "feature",
+  "img": "icons/creatures/abilities/bear-roar-bite-brown-green.webp",
+  "system": {
+    "description": "<p>Mark a Stress to make an attack against a target within Melee. On a success, deal 3d4+10 physical damage and the target is Restrained until they break free with a successful Brawn Roll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!535cdfa1badb7b95"
+}

@@ -11,28 +11,6 @@ export default class BeastformField extends fields.SchemaField {
 
     constructor(options = {}, context = {}) {
         const beastformFields = {
-            tierAccess: new fields.SchemaField({
-                exact: new fields.NumberField({
-                    integer: true,
-                    nullable: true,
-                    initial: null,
-                    choices: () => {
-                        const settingsTiers = game.settings.get(
-                            CONFIG.DH.id,
-                            CONFIG.DH.SETTINGS.gameSettings.LevelTiers
-                        ).tiers;
-                        return Object.values(settingsTiers).reduce(
-                            (acc, tier) => {
-                                acc[tier.tier] = game.i18n.localize(tier.name);
-                                return acc;
-                            },
-                            { 1: game.i18n.localize('DAGGERHEART.GENERAL.Tiers.1') }
-                        );
-                    },
-                    label: 'DAGGERHEART.ACTIONS.Config.beastform.exact.label',
-                    hint: 'DAGGERHEART.ACTIONS.Config.beastform.exact.hint'
-                })
-            }),
             modifications: new fields.SchemaField({
                 traitBonuses: new fields.ArrayField(
                     new fields.SchemaField({
@@ -72,14 +50,6 @@ export default class BeastformField extends fields.SchemaField {
             return false;
         }
 
-        const settingsTiers = game.settings.get(CONFIG.DH.id, CONFIG.DH.SETTINGS.gameSettings.LevelTiers).tiers;
-        const actorLevel = this.actor.system.levelData.level.current;
-        const actorTier =
-            Object.values(settingsTiers).find(
-                tier => actorLevel >= tier.levels.start && actorLevel <= tier.levels.end
-            ) ?? 1;
-
-        config.tierLimit = this.beastform.tierAccess.exact ?? actorTier;
         config.modifications = this.beastform.modifications;
     }
 

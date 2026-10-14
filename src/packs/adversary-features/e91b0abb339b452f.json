@@ -1,0 +1,15 @@
+{
+  "_id": "e91b0abb339b452f",
+  "name": "On My Signal",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-sword-blue.webp",
+  "system": {
+    "description": "<p>Countdown (5). The first time the adversary is spotlighted, activate the countdown. It ticks down when a PC makes an attack roll. When it triggers, all Archer Guards within Far range make a standard attack with advantage against the nearest target within their range. If multiple attacks hit the same target, combine their damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "reaction"
+  },
+  "effects": [],
+  "_key": "!items!e91b0abb339b452f"
+}

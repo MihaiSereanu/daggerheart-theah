@@ -1,0 +1,15 @@
+{
+  "_id": "a9f5a28e0e816042",
+  "name": "Rod of Suspension",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Rod of Suspension</strong>: This flat rod is inscribed with runes. When you activate the rod, it is immediately suspended in place. Until the rod is deactivated, it can&#39;t move, doesn&#39;t abide by the rules of gravity, and remains in place.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!a9f5a28e0e816042"
+}

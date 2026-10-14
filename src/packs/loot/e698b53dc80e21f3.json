@@ -1,0 +1,15 @@
+{
+  "_id": "e698b53dc80e21f3",
+  "name": "Gem of Might",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Gem of Might</strong>: You can attach this gem to a weapon, allowing you to use your Brawn instead of the listed traitn.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!e698b53dc80e21f3"
+}

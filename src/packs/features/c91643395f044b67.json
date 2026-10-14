@@ -1,0 +1,15 @@
+{
+  "_id": "c91643395f044b67",
+  "name": "Ambush",
+  "type": "feature",
+  "img": "icons/weapons/daggers/dagger-poisoned-curved-green.webp",
+  "system": {
+    "description": "<p>When you succeed on an attack while <em>Hidden</em>, add 2d6 to your damage total. If this attacks deal Severe damage, it deals an additional HP.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "9a3a9bdef4f83d9a",
+  "_key": "!items!c91643395f044b67"
+}

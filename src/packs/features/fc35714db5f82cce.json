@@ -1,0 +1,15 @@
+{
+  "_id": "fc35714db5f82cce",
+  "name": "Staggering Blow",
+  "type": "feature",
+  "img": "icons/skills/melee/unarmed-punch-fist-yellow-red.webp",
+  "system": {
+    "description": "<p>Spend 3 Hope when you hit an adversary to force them to <strong>mark a Stress</strong> and leave them temporarily <em>Reeling</em>. While <em>Reeling</em>, all their rolls are made at disadvantage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "c761d07e14c2e789",
+  "_key": "!items!fc35714db5f82cce"
+}

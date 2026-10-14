@@ -1,0 +1,25 @@
+{
+  "_id": "308dda35f048f4a2",
+  "name": "Avalon",
+  "type": "ancestry",
+  "img": "icons/creatures/abilities/lion-roar-yellow.webp",
+  "system": {
+    "description": "<p><strong>Lionhearted.</strong> When you roll with Fear, you can <strong>mark 2 Stress</strong> to change it into a roll with Hope instead.</p>\n<p><strong>Steadfast.</strong> When you fail a roll that utilized one of your Experiences, you can <strong>mark a Stress</strong> to reroll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "features": [
+      {
+        "type": "primary",
+        "item": "Compendium.daggerheart-theah.features.Item.995987112fdebee7"
+      },
+      {
+        "type": "secondary",
+        "item": "Compendium.daggerheart-theah.features.Item.4963cd5961754663"
+      }
+    ],
+    "loreReference": null
+  },
+  "effects": [],
+  "_key": "!items!308dda35f048f4a2"
+}

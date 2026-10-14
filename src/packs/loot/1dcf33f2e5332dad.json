@@ -1,0 +1,15 @@
+{
+  "_id": "1dcf33f2e5332dad",
+  "name": "Pendant of Calm",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Pendant of Calm</strong>: When you would mark your last Stress, roll a d6. On a result of 5 or higher, don&#39;t mark it.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!1dcf33f2e5332dad"
+}

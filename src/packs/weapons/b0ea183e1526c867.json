@@ -1,0 +1,58 @@
+{
+  "_id": "b0ea183e1526c867",
+  "name": "Musket",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-wood.webp",
+  "system": {
+    "description": "<p><strong>Musket</strong></p>\n<p><strong>Blackpowder</strong></p>\n<p>Blackpowder weapons share the feature <strong>Blackpowder</strong>.</p>\n<ul>\n<li><strong>Deadly</strong>: When you deal Severe damage, the target marks 1 extra HP.</li>\n<li><strong>Loud</strong>: The shot is noisy and attracts attention.</li>\n<li><strong>Reloading</strong>: After you attack, roll a d6. On a 1, mark 1 Stress to reload before firing again.</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "blackpowder": true,
+    "reloading": true,
+    "resource": {
+      "type": "simple",
+      "value": 1,
+      "max": "1",
+      "progression": "decreasing"
+    },
+    "secondary": false,
+    "burden": "twoHanded",
+    "weaponFeatures": [],
+    "attack": {
+      "_id": "a44ecce6b589b995",
+      "name": "Musket",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/weapons/guns/gun-wood.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "far",
+      "roll": {
+        "type": "attack",
+        "trait": "finesse",
+        "bonus": 0
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d10 + @finesse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "_key": "!items!b0ea183e1526c867"
+}

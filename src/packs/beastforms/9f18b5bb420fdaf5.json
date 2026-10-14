@@ -1,0 +1,81 @@
+{
+  "_id": "9f18b5bb420fdaf5",
+  "name": "Mighty Strider",
+  "type": "beastform",
+  "img": "icons/environment/creatures/horse-brown.webp",
+  "system": {
+    "description": "<p><em>(Ram, Horse, Zebra, etc)</em><br><strong>Finesse</strong> +1 <strong>Evasion</strong> +2</p>\n<p><strong>ATK:</strong> Melee Finesse d8+1 phy</p>\n<hr>\n<p><strong>Gain Advantage on</strong>: leap, navigate, sprint</p>\n<h4>Features</h4>\n<p><strong>Carrier</strong>. You can move with up to two willing allies.</p>\n<p><strong>Trample</strong>: Mark a Stress to move up to Close range in a straight line and make an attack against all targets within Melee range of the line. Targets you succeed against take 2d8 physical damage and are temporarily Vulnerable.</p>\n<p><strong>Fragile</strong>: When you take Major+ damage, you drop out of Beastform.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "mainTrait": "finesse",
+    "tokenSize": {
+      "size": "custom",
+      "width": 1,
+      "height": 1,
+      "depth": 1,
+      "scale": 1
+    },
+    "features": [
+      "Compendium.daggerheart-theah.features.Item.2f3b8f0ccd048c05",
+      "Compendium.daggerheart-theah.features.Item.24cb12d431a3c710",
+      "Compendium.daggerheart-theah.features.Item.5da168939d43f8a7"
+    ],
+    "examples": "Ram, Horse, Zebra, etc",
+    "advantageOn": {
+      "5411e30593d2b088": {
+        "value": "leap"
+      },
+      "4d7b14edf3660e1d": {
+        "value": "navigate"
+      },
+      "5082f307e0714307": {
+        "value": "sprint"
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "d69b7c1b052c24e8",
+      "name": "Mighty Strider",
+      "type": "beastform",
+      "transfer": true,
+      "img": "icons/environment/creatures/horse-brown.webp",
+      "system": {
+        "changes": [
+          {
+            "type": "add",
+            "key": "system.traits.finesse.value",
+            "value": 1,
+            "phase": "initial"
+          },
+          {
+            "type": "add",
+            "key": "system.evasion",
+            "value": 2,
+            "phase": "initial"
+          },
+          {
+            "type": "standardAttack",
+            "phase": "initial",
+            "value": {
+              "name": "Mighty Strider Attack",
+              "damageTypes": [
+                "physical"
+              ],
+              "attackRange": "melee",
+              "trait": "finesse",
+              "damageFormula": "1d8+1 + @finesse",
+              "img": "icons/creatures/claws/claw-straight-brown.webp"
+            }
+          }
+        ],
+        "duration": {
+          "type": "shortRest"
+        }
+      },
+      "_key": "!items.effects!9f18b5bb420fdaf5.d69b7c1b052c24e8"
+    }
+  ],
+  "_key": "!items!9f18b5bb420fdaf5"
+}

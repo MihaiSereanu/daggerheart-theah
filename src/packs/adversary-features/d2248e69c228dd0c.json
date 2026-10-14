@@ -1,0 +1,15 @@
+{
+  "_id": "d2248e69c228dd0c",
+  "name": "Trample",
+  "type": "feature",
+  "img": "icons/environment/creatures/horse-brown.webp",
+  "system": {
+    "description": "<p>Mark a Stress to make an attack against all targets in the adversary's path when they move. Targets the adversary succeeds against take 1d8 physical damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!d2248e69c228dd0c"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "311bd80a4f2190cb",
+  "name": "Jury Rig",
+  "type": "feature",
+  "img": "icons/sundries/books/book-open-turquoise.webp",
+  "system": {
+    "description": "<p>You may <em>Work on a Project</em> to tinker during Rests instead of Extended Rests. You may also perform the <em>Repair Armor</em> Downtime Move by spending an hour and 1 Handful.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "0f8f9e321cf3957a",
+  "_key": "!items!311bd80a4f2190cb"
+}

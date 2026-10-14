@@ -1,0 +1,15 @@
+{
+  "_id": "dcac963993687f20",
+  "name": "Flaming",
+  "type": "feature",
+  "img": "icons/magic/fire/explosion-fireball-medium-orange.webp",
+  "system": {
+    "description": "<p>When a creature makes a successful attack against the adversary from within Very Close, they must <strong>mark a Stress</strong> or become <em>Burning</em> until they put themselves out with a Finesse roll. While <em>Burning</em>, they take 2d6 magic damage when they have the spotlight.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "reaction"
+  },
+  "effects": [],
+  "_key": "!items!dcac963993687f20"
+}

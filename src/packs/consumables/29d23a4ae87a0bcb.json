@@ -1,0 +1,15 @@
+{
+  "_id": "29d23a4ae87a0bcb",
+  "name": "Death Tea",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Death Tea</strong>: After you drink this tea, you instantly kill your target when you critically succeed on an attack. If you don’t critically succeed on an attack before your next rest, you die.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!29d23a4ae87a0bcb"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "5489ace168ad5def",
+  "name": "Overwhelming Force",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-sword-blue.webp",
+  "system": {
+    "description": "<p>Targets who mark HP from the adversary's standard attack are knocked back to Very Close range.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!5489ace168ad5def"
+}

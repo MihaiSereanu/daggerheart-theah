@@ -1,0 +1,25 @@
+{
+  "foundry": "14.367",
+  "packs": {
+    "count": 620,
+    "invalid": [],
+    "tierSchemas": []
+  },
+  "talentVisibility": "passed",
+  "counters": {
+    "gentle": 0,
+    "song": 0,
+    "negativeCharm": 1,
+    "increasedCharm": 3
+  },
+  "restCounters": "passed",
+  "sessionCounters": {
+    "fixer": 0,
+    "discipline": 0,
+    "creed": 0
+  },
+  "counterMigration": "passed",
+  "allCollectionSearch": "passed",
+  "collectionSearchPreserved": "passed",
+  "browserErrors": []
+}

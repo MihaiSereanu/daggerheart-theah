@@ -1,0 +1,15 @@
+{
+  "_id": "8f5104787e49de9d",
+  "name": "Raw Force",
+  "type": "feature",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow-teal.webp",
+  "system": {
+    "description": "<p>On a successful attack roll, you may <strong>mark a Stress</strong> to put your back into your swing. On a success with Hope, add an extra d10 to your damage roll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "672367d4d1c6a924",
+  "_key": "!items!8f5104787e49de9d"
+}

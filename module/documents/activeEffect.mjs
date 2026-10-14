@@ -11,7 +11,7 @@ export default class DhActiveEffect extends foundry.documents.ActiveEffect {
 
         // If this is a copied effect from an attachment, never suppress it
         // (These effects have attachmentSource metadata)
-        if (this.flags?.daggerheart?.attachmentSource) {
+        if (this.flags?.['daggerheart-theah']?.attachmentSource) {
             return false;
         }
 
@@ -265,7 +265,7 @@ export default class DhActiveEffect extends foundry.documents.ActiveEffect {
             user: game.user.id,
             system: systemData,
             content: await foundry.applications.handlebars.renderTemplate(
-                'systems/daggerheart/templates/ui/chat/action.hbs',
+                'systems/daggerheart-theah/templates/ui/chat/action.hbs',
                 systemData
             )
         };

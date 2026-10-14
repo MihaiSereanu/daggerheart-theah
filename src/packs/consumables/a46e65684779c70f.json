@@ -1,0 +1,15 @@
+{
+  "_id": "a46e65684779c70f",
+  "name": "Knowledge Stone",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Knowledge Stone</strong>: If you die while holding this stone, an ally can learn one of your Talents, replacing one of their existing ones with it. After they take this knowledge, the stone crumbles.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!a46e65684779c70f"
+}

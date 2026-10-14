@@ -1,0 +1,15 @@
+{
+  "_id": "dbb815c8669a16fb",
+  "name": "Bend Ears",
+  "type": "feature",
+  "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+  "system": {
+    "description": "<p><strong>Mark a Stress</strong> to influence an NPC. That target’s opinion on a matter shifts towards the adversary&#39;&#39;s preference unless directly opposed to their motives.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!dbb815c8669a16fb"
+}

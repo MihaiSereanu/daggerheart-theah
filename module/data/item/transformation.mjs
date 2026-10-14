@@ -3,7 +3,7 @@ import { fromUuids, getFeaturesHTMLData } from '../../helpers/utils.mjs';
 import ForeignDocumentUUIDArrayField from '../fields/foreignDocumentUUIDArrayField.mjs';
 
 export default class DHTransformation extends BaseDataItem {
-    static embedTemplate = 'systems/daggerheart/templates/components/card/transformation.hbs';
+    static embedTemplate = 'systems/daggerheart-theah/templates/components/card/transformation.hbs';
 
     /** @inheritDoc */
     static get metadata() {
@@ -29,7 +29,7 @@ export default class DHTransformation extends BaseDataItem {
     /* -------------------------------------------- */
 
     /**@override */
-    static DEFAULT_ICON = 'systems/daggerheart/assets/icons/documents/items/vampire-dracula.svg';
+    static DEFAULT_ICON = 'systems/daggerheart-theah/assets/icons/documents/items/vampire-dracula.svg';
 
     /* -------------------------------------------- */
 
@@ -38,7 +38,7 @@ export default class DHTransformation extends BaseDataItem {
         const features = await getFeaturesHTMLData(await fromUuids(this._source.features));
         if (!features.length) return { prefix: null, value: this.description, suffix: null };
         const suffix = await foundry.applications.handlebars.renderTemplate(
-            'systems/daggerheart/templates/sheets/items/description.hbs',
+            'systems/daggerheart-theah/templates/sheets/items/description.hbs',
             { features }
         );
 

@@ -1,0 +1,20 @@
+{
+  "_id": "f08e0b4d34206e98",
+  "name": "Deadly Draw",
+  "type": "domainCard",
+  "img": "icons/skills/melee/strike-blade-scimitar-orange-blue.webp",
+  "system": {
+    "description": "<p>The first attack you make each scene is made with Disadvantage, but if it succeeds, you may <strong>spend a Hope</strong> to inflict damage as if it was a critical hit.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "flair",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "4c13446263efc38b",
+  "_key": "!items!f08e0b4d34206e98"
+}

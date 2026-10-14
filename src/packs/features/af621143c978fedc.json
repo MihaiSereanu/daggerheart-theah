@@ -1,0 +1,15 @@
+{
+  "_id": "af621143c978fedc",
+  "name": "Make a Scene",
+  "type": "feature",
+  "img": "icons/tools/instruments/lute-gold-brown.webp",
+  "system": {
+    "description": "<p>Spend 3 Hope to temporarily <em>Distract</em> a target within Close range, reducing their Difficulty by 2.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "89e7d79a69a54b43",
+  "_key": "!items!af621143c978fedc"
+}

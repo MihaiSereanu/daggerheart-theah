@@ -38,7 +38,6 @@ export const gameSettings = {
     Resources: {
         Fear: 'ResourcesFear'
     },
-    LevelTiers: 'LevelTiers',
     /** @type {'Countdowns'} */
     Countdowns: 'Countdowns',
     LastMigrationVersion: 'LastMigrationVersion',

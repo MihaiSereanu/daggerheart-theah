@@ -218,7 +218,7 @@ export default class BaseDataActor extends foundry.abstract.TypeDataModel {
         if (changes.system?.resources && autoSettings.resourceScrollTexts) {
             const textData = Object.keys(changes.system.resources).reduce((acc, key) => {
                 const resource = changes.system.resources[key];
-                if (resource.value !== undefined && resource.value !== this.resources[key].value) {
+                if (this.resources[key] && resource.value !== undefined && resource.value !== this.resources[key].value) {
                     acc.push(getScrollTextData(this.parent, resource, key));
                 }
 

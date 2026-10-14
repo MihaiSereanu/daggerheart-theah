@@ -1,0 +1,80 @@
+{
+  "_id": "112de6043ac1cfb5",
+  "name": "Agile Scout",
+  "type": "beastform",
+  "img": "icons/creatures/abilities/paw-print-orange.webp",
+  "system": {
+    "description": "<p><em>(Fox, Mouse, Weasel, etc)</em><br><strong>Finesse</strong> +1 <strong>Evasion</strong> +2</p>\n<p><strong>ATK:</strong> Melee Finesse d6 phy</p>\n<hr>\n<p><strong>Gain Advantage on</strong>: deceive, locate, sneak</p>\n<h4>Features</h4>\n<p><strong>Agile:</strong> Your movement is silent, and you can <strong>spend a Hope</strong> to move up to Far range without rolling.</p>\n<p><strong>Fragile</strong>: When you take Major+ damage, you drop out of Beastform.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "mainTrait": "finesse",
+    "tokenSize": {
+      "size": "custom",
+      "width": 1,
+      "height": 1,
+      "depth": 1,
+      "scale": 1
+    },
+    "features": [
+      "Compendium.daggerheart-theah.features.Item.cdca5584882740d9",
+      "Compendium.daggerheart-theah.features.Item.a709661ef364714f"
+    ],
+    "examples": "Fox, Mouse, Weasel, etc",
+    "advantageOn": {
+      "46bb8e47ca7d9289": {
+        "value": "deceive"
+      },
+      "6868239035ac6a2f": {
+        "value": "locate"
+      },
+      "cf0bcc1f79e2b2cb": {
+        "value": "sneak"
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "8fc998292de4edfc",
+      "name": "Agile Scout",
+      "type": "beastform",
+      "transfer": true,
+      "img": "icons/creatures/abilities/paw-print-orange.webp",
+      "system": {
+        "changes": [
+          {
+            "type": "add",
+            "key": "system.traits.finesse.value",
+            "value": 1,
+            "phase": "initial"
+          },
+          {
+            "type": "add",
+            "key": "system.evasion",
+            "value": 2,
+            "phase": "initial"
+          },
+          {
+            "type": "standardAttack",
+            "phase": "initial",
+            "value": {
+              "name": "Agile Scout Attack",
+              "damageTypes": [
+                "physical"
+              ],
+              "attackRange": "melee",
+              "trait": "finesse",
+              "damageFormula": "1d6 + @finesse",
+              "img": "icons/creatures/claws/claw-straight-brown.webp"
+            }
+          }
+        ],
+        "duration": {
+          "type": "shortRest"
+        }
+      },
+      "_key": "!items.effects!112de6043ac1cfb5.8fc998292de4edfc"
+    }
+  ],
+  "_key": "!items!112de6043ac1cfb5"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "2932cae6984759d6",
+  "name": "Singular Focus",
+  "type": "feature",
+  "img": "icons/skills/ranged/target-bullseye-arrow-green.webp",
+  "system": {
+    "description": "<p><strong>Mark a Stress</strong> and make an attack against a target. On a success, the target becomes your <em>Focus</em>. Until you choose a new Focus or the next Rest, you gain the following:</p>\n<ul>\n<li>You always know their general whereabouts</li>\n<li>When you attack them, they must also mark a Stress</li>\n<li>If you fail an attack against them, you may end your <em>Focus</em> to reroll your Duality Dice</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "c50fbf95523e89b3",
+  "_key": "!items!2932cae6984759d6"
+}

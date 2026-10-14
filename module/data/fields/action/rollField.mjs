@@ -24,7 +24,7 @@ export class DHActionRollData extends foundry.abstract.DataModel {
             diceRolling: new fields.SchemaField({
                 multiplier: new fields.StringField({
                     choices: CONFIG.DH.GENERAL.diceSetNumbers,
-                    initial: 'prof',
+                    initial: 'flat',
                     label: 'DAGGERHEART.ACTIONS.RollField.diceRolling.multiplier',
                     nullable: false,
                     required: true
@@ -93,6 +93,7 @@ export class DHActionRollData extends foundry.abstract.DataModel {
                     });
                 break;
             default:
+                if (this.bonus) modifiers.push({ label: 'Attack bonus', value: Number(Roll.replaceFormulaData(this.bonus, this.parent.actor.getRollData())) });
                 break;
         }
         return modifiers;
@@ -112,7 +113,7 @@ export class DHActionRollData extends foundry.abstract.DataModel {
             case attack.id:
             case trait.id:
                 return this.useDefault || !this.trait
-                    ? (this.parent.item.system.attack?.roll?.trait ?? 'agility')
+                    ? (this.parent.item.system.attack?.roll?.trait ?? 'finesse')
                     : actor.system.resolveTrait(this.trait);
             default:
                 return null;

@@ -1,0 +1,15 @@
+{
+  "_id": "77d321fdd26baa4b",
+  "name": "Brutal Momentum",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-symbol-axe-red.webp",
+  "system": {
+    "description": "<p>When you succeed on an attack against a target within Melee, you can <strong>spend a Hope</strong> to deal an extra 1d6 damage and make the target prone.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "b437823bd1c4738b",
+  "_key": "!items!77d321fdd26baa4b"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "a2552b3e05c1b6b4",
+  "name": "Group Attack",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-sword-blue.webp",
+  "system": {
+    "description": "<p>Spend 1 Fear to choose a target and spotlight all adversaries with this feature within Close range. Those adversaries move into Melee with the target and make one shared attack roll. On a success, each deals 2 physical damage. Combine the damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!a2552b3e05c1b6b4"
+}

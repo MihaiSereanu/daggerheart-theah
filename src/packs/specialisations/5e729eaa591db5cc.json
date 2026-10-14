@@ -1,0 +1,18 @@
+{
+  "_id": "5e729eaa591db5cc",
+  "name": "Porte",
+  "type": "subclass",
+  "img": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+  "system": {
+    "description": "<p>Play a Porte Sorcier if you want to control blood and space.</p>\n<h4>SPELLCASTING TRAIT: INSTINCT</h4>\n<blockquote>\n<p>The most famous sorcery of Montaigne is Porté, known for its spectacular and violent effects. A sorcier may cross great distances in an instant or pull to hand an object they have marked as their own. Porté tears holes in the fabric of the universe; these bleeding doorways scream with the voices of the nether realm called “The Walkway.”\n:\nPorté is passed through blood, and Montaigne nobility keep strict lineage records. Commoner sorciers are rare, though not unheard of. Tales of carriages arriving in the night to carry away children born with the gift are likely more than folklore.</p>\n</blockquote>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.619fbc2f6e310fa4",
+    "spellcastingTrait": "instinct",
+    "features": []
+  },
+  "effects": [],
+  "folder": "1adde1032a0a00cf",
+  "_key": "!items!5e729eaa591db5cc"
+}

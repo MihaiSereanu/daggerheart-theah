@@ -1,0 +1,15 @@
+{
+  "_id": "bd59fcaf483e254c",
+  "name": "Channelstone Fragment",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Channelstone Fragment</strong>: You can use this fragment to gain access to a Sorcerous Talent you do not have and use it once.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!bd59fcaf483e254c"
+}

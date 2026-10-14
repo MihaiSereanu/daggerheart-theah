@@ -3,13 +3,12 @@ import { ActionField } from '../fields/actionField.mjs';
 import { commonActorRules } from './base.mjs';
 import DhCreature from './creature.mjs';
 import { bonusField } from '../fields/actorField.mjs';
-import { getTierAdjustedAdversary } from './tierAdjustment.mjs';
 import { signedNumber } from '../../helpers/utils.mjs';
 
 export default class DhpAdversary extends DhCreature {
     static LOCALIZATION_PREFIXES = ['DAGGERHEART.ACTORS.Adversary'];
 
-    static embedTemplate = 'systems/daggerheart/templates/components/actor-embed/adversary.hbs';
+    static embedTemplate = 'systems/daggerheart-theah/templates/components/actor-embed/adversary.hbs';
 
     static get metadata() {
         return foundry.utils.mergeObject(super.metadata, {
@@ -25,11 +24,10 @@ export default class DhpAdversary extends DhCreature {
         const fields = foundry.data.fields;
         return {
             ...super.defineSchema(),
-            tier: new fields.NumberField({
+            classification: new fields.StringField({
                 required: true,
-                integer: true,
-                choices: CONFIG.DH.GENERAL.tiers,
-                initial: CONFIG.DH.GENERAL.tiers[1].id
+                choices: { normal: 'Normal', champion: 'Champion' },
+                initial: 'normal'
             }),
             type: new fields.StringField({
                 required: true,
@@ -113,7 +111,7 @@ export default class DhpAdversary extends DhCreature {
     /* -------------------------------------------- */
 
     /**@inheritdoc */
-    static DEFAULT_ICON = 'systems/daggerheart/assets/icons/documents/actors/dragon-head.svg';
+    static DEFAULT_ICON = 'systems/daggerheart-theah/assets/icons/documents/actors/dragon-head.svg';
 
     /* -------------------------------------------- */
 
@@ -136,17 +134,11 @@ export default class DhpAdversary extends DhCreature {
 
     _getTags() {
         const tags = [
-            game.i18n.localize(`DAGGERHEART.GENERAL.Tiers.${this.tier}`),
+            this.classification[0].toUpperCase() + this.classification.slice(1),
             `${game.i18n.localize(`DAGGERHEART.CONFIG.AdversaryType.${this.type}.label`)}`,
             `${game.i18n.localize('DAGGERHEART.GENERAL.difficulty')}: ${this.difficulty}`
         ];
         return tags;
-    }
-
-    /** Returns source data for this actor adjusted to a new tier, which can be used to create a new actor. */
-    adjustForTier(tier) {
-        const source = this.parent.toObject(true);
-        return getTierAdjustedAdversary(source, tier);
     }
 
     /** @inheritdoc */
@@ -287,4 +279,10 @@ export default class DhpAdversary extends DhCreature {
             }
         }
     }
+    static migrateData(source) {
+        source.classification ??= source.tier === 2 ? 'champion' : 'normal';
+        delete source.tier;
+        return super.migrateData(source);
+    }
+
 }

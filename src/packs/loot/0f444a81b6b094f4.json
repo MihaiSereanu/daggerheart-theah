@@ -1,0 +1,15 @@
+{
+  "_id": "0f444a81b6b094f4",
+  "name": "Infinite Satchel",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Infinite Satchel</strong>: When you store items in this bag, they are kept in a pocket dimension that never runs out of space. You can retrieve an item at any time. Sometimes, seemingly at random, items go missing within the satchel, only to reappear later.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!0f444a81b6b094f4"
+}

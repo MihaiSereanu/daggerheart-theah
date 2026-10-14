@@ -1,0 +1,15 @@
+{
+  "_id": "226dd544b5fa12f8",
+  "name": "Greater Vial of Vitae",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Greater Vial of Vitae</strong>: Clear 1d4+1 Hit Points.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!226dd544b5fa12f8"
+}

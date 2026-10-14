@@ -1,0 +1,15 @@
+{
+  "_id": "41dcd500fa453297",
+  "name": "Bulwark Relic",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Bulwark Relic</strong>: You gain a +1 bonus to your Brawn. You can only carry one relic.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!41dcd500fa453297"
+}

@@ -1,0 +1,111 @@
+{
+  "_id": "2d942fc2fb72fb10",
+  "name": "Ghoul",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A mockery of humanity with gangly, long limbs.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "champion",
+    "type": "standard",
+    "difficulty": 17,
+    "notes": "<h3>Champion | Standard</h3>\n<p><em>A mockery of humanity with gangly, long limbs.</em><br><strong>Motives &amp; Tactics:</strong> Devour, hunt, track</p>\n<p><strong>Difficulty:</strong> 17 | <strong>Thresholds:</strong> 12/23 | <strong>HP:</strong> 3 | <strong>Stress:</strong> 3</p>\n<p><strong>ATK:</strong> +1 | Bite &amp; Claw: Melee | 2d6+5 physical</p>\n<hr>\n<p><strong>Experience:</strong> Copycat +3</p>\n<h4>Features</h4>\n<p><strong>Unnatural - Passive</strong>: The Ghoul is resistant to physical damage.</p>\n<p><strong>Overwhelm - Passive</strong>: When a target the Ghoul attacks has other adversaries within Very Close range, deal double damage.</p>\n<p><strong>Lurching Lunge - Action</strong>: Mark a Stress to spotlight the Ghoul as an additional GM move instead of spending Fear.</p>\n",
+    "damageThresholds": {
+      "major": 12,
+      "severe": 23
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 3
+      },
+      "stress": {
+        "value": 0,
+        "max": 3
+      }
+    },
+    "motivesAndTactics": "Devour, hunt, track",
+    "experiences": {
+      "9cb2d3882480b8ee": {
+        "name": "Copycat",
+        "value": 3
+      }
+    },
+    "attack": {
+      "_id": "a692acff4c00f451",
+      "name": "Bite & Claw",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/creatures/claws/claw-talons-yellow-red.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 1
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "2d6+5"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "b8ef41faeefbb8ea",
+      "name": "Unnatural - Passive",
+      "type": "feature",
+      "img": "icons/magic/symbols/runes-star-magenta.webp",
+      "system": {
+        "description": "<p>The Ghoul is resistant to physical damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!2d942fc2fb72fb10.b8ef41faeefbb8ea"
+    },
+    {
+      "_id": "200ea0a3a32beec6",
+      "name": "Overwhelm - Passive",
+      "type": "feature",
+      "img": "icons/sundries/flags/banner-sword-blue.webp",
+      "system": {
+        "description": "<p>When a target the Ghoul attacks has other adversaries within Very Close range, deal double damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!2d942fc2fb72fb10.200ea0a3a32beec6"
+    },
+    {
+      "_id": "d6568bc81fbd7d49",
+      "name": "Lurching Lunge - Action",
+      "type": "feature",
+      "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+      "system": {
+        "description": "<p>Mark a Stress to spotlight the Ghoul as an additional GM move instead of spending Fear.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!2d942fc2fb72fb10.d6568bc81fbd7d49"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Ghoul",
+    "actorLink": false
+  },
+  "_key": "!actors!2d942fc2fb72fb10"
+}

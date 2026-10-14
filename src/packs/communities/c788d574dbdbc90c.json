@@ -1,0 +1,18 @@
+{
+  "_id": "c788d574dbdbc90c",
+  "name": "Criminal",
+  "type": "community",
+  "img": "icons/skills/social/theft-pickpocket-bribery-brown.webp",
+  "system": {
+    "description": "<p>You come from a world that thrives in the shadows, among smugglers, swindlers, and those who bend the rules to survive. These communities value wit, skill, and loyalty to their own. Outsiders may see criminals; insiders know it&#39;s rarely so simple. The code is everything, and betrayal rarely goes unpunished.</p>\n<p><strong>Scoundrel</strong>. You have advantage on rolls to negotiate with criminals, detect lies, or find a safe place to hide.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "features": [
+      "Compendium.daggerheart-theah.features.Item.5f3327596578f7f4"
+    ],
+    "loreReference": null
+  },
+  "effects": [],
+  "_key": "!items!c788d574dbdbc90c"
+}

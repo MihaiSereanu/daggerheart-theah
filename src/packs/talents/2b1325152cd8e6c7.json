@@ -1,0 +1,20 @@
+{
+  "_id": "2b1325152cd8e6c7",
+  "name": "Sidhe Charisma",
+  "type": "domainCard",
+  "img": "icons/magic/control/buff-luck-fortune-rainbow.webp",
+  "system": {
+    "description": "<p>After you make an action roll to persuade, lie, or garner favour, you can <strong>spend a Hope</strong> to reroll the Hope or Fear Die.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "glamour",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "33dde1086e88a00a",
+  "_key": "!items!2b1325152cd8e6c7"
+}

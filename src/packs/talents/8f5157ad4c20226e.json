@@ -1,0 +1,20 @@
+{
+  "_id": "8f5157ad4c20226e",
+  "name": "Heartflare",
+  "type": "domainCard",
+  "img": "icons/magic/fire/explosion-fireball-medium-orange.webp",
+  "system": {
+    "description": "<p><strong>Spend a Hope</strong> and make a Spellcast Roll against a target within Melee range. On a success, the target’s weakness burns them from within, dealing 2d8 magic damage and causing them to become temporarily <em>Vulnerable</em>.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "firewithin",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "95f4956bfe177487",
+  "_key": "!items!8f5157ad4c20226e"
+}

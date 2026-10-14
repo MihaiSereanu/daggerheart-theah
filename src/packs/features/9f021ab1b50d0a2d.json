@@ -1,0 +1,15 @@
+{
+  "_id": "9f021ab1b50d0a2d",
+  "name": "Breaking & Entering",
+  "type": "feature",
+  "img": "icons/equipment/back/cloak-hooded-green-gold.webp",
+  "system": {
+    "description": "<p>Gain Advantage on rolls made to pick locks, disarm traps or steal items.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "40f9e55b2210e6ff",
+  "_key": "!items!9f021ab1b50d0a2d"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "c2d09ac52911a3cc",
+  "name": "Bitter Reflexes",
+  "type": "feature",
+  "img": "icons/creatures/abilities/bear-roar-bite-brown-green.webp",
+  "system": {
+    "description": "<p><strong>Mark a Stress</strong> to gain advantage on a Instinct roll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "7ff2cef38f1d8657",
+  "_key": "!items!c2d09ac52911a3cc"
+}

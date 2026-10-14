@@ -1,0 +1,15 @@
+{
+  "_id": "750f6bf123e728e3",
+  "name": "Siren’s Mead",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Siren’s Mead</strong>: You gain a +1 bonus to your next Charm Roll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!750f6bf123e728e3"
+}

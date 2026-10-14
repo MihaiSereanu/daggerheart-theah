@@ -1,7 +1,7 @@
 export default class DhFolderConfig extends foundry.applications.sheets.FolderConfig {
     /** @override */
     static PARTS = {
-        body: {template: 'systems/daggerheart/templates/sheets-settings/folder-config/folder-config.hbs'},
+        body: {template: 'systems/daggerheart-theah/templates/sheets-settings/folder-config/folder-config.hbs'},
         footer: {template: 'templates/generic/form-footer.hbs'}
     };
 

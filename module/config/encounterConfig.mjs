@@ -115,17 +115,6 @@ export const BPModifiers = {
         }
     },
     1: {
-        lowerTier: {
-            sort: 1,
-            description: 'DAGGERHEART.CONFIG.BPModifiers.lowerTier.description',
-            automatic: true,
-            conditional: (_combat, adversaries, characters) => {
-                const characterMaxTier = characters.reduce((maxTier, character) => {
-                    return character.system.tier > maxTier ? character.system.tier : maxTier;
-                }, 1);
-                return adversaries.some(adversary => adversary.system.tier < characterMaxTier);
-            }
-        },
         noToughies: {
             sort: 2,
             description: 'DAGGERHEART.CONFIG.BPModifiers.noToughies.description',

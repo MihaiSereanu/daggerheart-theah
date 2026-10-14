@@ -4,129 +4,45 @@
 
 .daggerheart.chat-sidebar.theme-light,
 #interface.theme-light {
-    .chat-log {
+    .chat-log .chat-message {
         --text-color: @dark-blue;
         --bg-color: @dark-blue-40;
+        background-image: url('../assets/parchments/dh-parchment-light.png');
 
-        .chat-message {
-            .roll-formula {
-                background: @dark-15;
-                color: @dark;
-            }
+        .message-header,
+        .message-content,
+        .message-header .message-sub-header-container,
+        .message-header .message-header-metadata .message-metadata {
+            color: @dark;
+        }
 
-            &.fate,
-            &.duality {
-                background-image: url(../assets/parchments/dh-parchment-dark.png);
+        .message-header .message-sub-header-container h4,
+        fieldset, fieldset legend {
+            color: var(--text-color);
+        }
 
-                .message-content {
-                    color: @beige;
-                }
+        .roll-formula {
+            background: var(--bg-color);
+            color: var(--text-color);
+        }
 
-                .roll-formula {
-                    background: @dark-15;
-                    color: @dark;
-                }
+        &.duality, &.fate {
+            background-image: url('../assets/parchments/dh-parchment-light.png');
+            &.hope { --text-color: #765015; --bg-color: #b8872626; }
+            &.fear { --text-color: #443479; --bg-color: #7961ac26; }
+            &.critical, &.fate { --text-color: #693775; --bg-color: #9253a026; }
 
-                .message-header {
-                    .message-sub-header-container {
-                        color: @beige;
-                        h4 {
-                            color: @golden;
-                        }
-                    }
-                    .message-header-metadata {
-                        .message-metadata {
-                            color: @beige;
-                        }
-                    }
-                }
+            .message-header, .message-content { background-color: var(--bg-color); }
+        }
 
-                &.hope {
-                    --text-color: @golden;
-                    --bg-color: @golden-40;
-                    .message-header,
-                    .message-content {
-                        background-color: @golden-bg;
-                    }
-                    .roll-formula {
-                        background: var(--bg-color);
-                        color: var(--text-color);
-                    }
-                }
-
-                &.fear {
-                    --text-color: @chat-blue;
-                    --bg-color: @chat-blue-40;
-                    .message-header,
-                    .message-content {
-                        background-color: @chat-blue-bg;
-                    }
-                    .roll-formula {
-                        background: var(--bg-color);
-                        color: var(--text-color);
-                    }
-                }
-
-                &.fate,
-                &.critical {
-                    --text-color: @chat-purple;
-                    --bg-color: @chat-purple-40;
-                    .message-header,
-                    .message-content {
-                        background-color: @chat-purple-bg;
-                    }
-                    .roll-formula {
-                        background: var(--bg-color);
-                        color: var(--text-color);
-                    }
-                }
-            }
-
-            &:not(.duality):not(.fate) {
-                .font-20 {
-                    color: @dark;
-                }
-
-                .roll-die {
-                    color: @beige;
-                }
-
-                fieldset {
-                    color: @dark-blue;
-                    border-color: @dark-blue;
-
-                    legend {
-                        color: @dark-blue;
-                    }
-                }
-                .chat-roll {
-                    .roll-part-header {
-                        color: @dark-blue;
-
-                        span::before,
-                        span::after {
-                            color: @dark-blue;
-                        }
-
-                        &:before {
-                            background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, @dark-blue 100%);
-                        }
-
-                        &:after {
-                            background: linear-gradient(90deg, @dark-blue 0%, rgba(0, 0, 0, 0) 100%);
-                        }
-                    }
-
-                    .roll-part-content {
-                        &.dice-result {
-                            color: @dark;
-                        }
-                        .roll-result-container {
-                            color: @dark-blue;
-                        }
-                    }
-                }
-            }
+        .font-20, .chat-roll .roll-part-content.dice-result { color: @dark; }
+        .roll-die { color: @beige; }
+        .chat-roll .roll-part-header, .chat-roll .roll-result-container { color: var(--text-color); }
+        .chat-roll .roll-part-header::before {
+            background: linear-gradient(90deg, transparent, var(--text-color));
+        }
+        .chat-roll .roll-part-header::after {
+            background: linear-gradient(90deg, var(--text-color), transparent);
         }
     }
 }

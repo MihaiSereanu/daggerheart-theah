@@ -1,0 +1,14 @@
+{
+  "_id": "598bee2be24412a0",
+  "name": "Sanderis",
+  "type": "feature",
+  "img": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+  "system": {
+    "description": "<h2>Sanderis</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.64dc6e63daaaafde]{Bargain of Borrowed Flesh}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.65abe998d72355fb]{Bargain of the Borrowed Breath}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.8fbd592ef12ee4d8]{Bargain of Waning Fortune}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.5d9f1e3141b0e174]{Bargain of Fading Might}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.ca35bb468819687c]{Bargain of the Hungry Flame}</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!598bee2be24412a0"
+}

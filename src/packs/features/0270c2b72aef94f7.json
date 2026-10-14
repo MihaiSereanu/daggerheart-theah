@@ -1,0 +1,15 @@
+{
+  "_id": "0270c2b72aef94f7",
+  "name": "Companion",
+  "type": "feature",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": "<p>When you Help an Ally, you can roll d8 as ADV die.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "26b2b27841c5f032",
+  "_key": "!items!0270c2b72aef94f7"
+}

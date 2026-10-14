@@ -97,7 +97,7 @@ export default class EffectsField extends fields.ArrayField {
             speaker: cls.getSpeaker({ actor: this.actor }),
             title: game.i18n.localize('DAGGERHEART.UI.Chat.effectSummary.title'),
             content: await foundry.applications.handlebars.renderTemplate(
-                'systems/daggerheart/templates/ui/chat/effectSummary.hbs',
+                'systems/daggerheart-theah/templates/ui/chat/effectSummary.hbs',
                 {
                     effects: this.effects.map(e => (this.item.applyEffects ?? this.item.effects).get(e._id)),
                     targets: messageTargets

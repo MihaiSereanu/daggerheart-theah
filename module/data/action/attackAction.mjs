@@ -1,5 +1,6 @@
 import { nestedReplaceFormulaData } from '../../helpers/utils.mjs';
 import DHDamageAction from './damageAction.mjs';
+import { attackIcon } from '../../helpers/attack-icon.mjs';
 
 export default class DHAttackAction extends DHDamageAction {
     static extraSchemas = [...super.extraSchemas, 'roll', 'save'];
@@ -10,6 +11,7 @@ export default class DHAttackAction extends DHDamageAction {
 
     prepareData() {
         super.prepareData();
+        this.img ??= attackIcon(this.name, this.range, this.damage.main?.type?.has('magical') ? 'magical' : 'physical');
 
         if (this.roll.useDefault) {
             this.roll.trait = this.item.system.attack?.roll.trait; // weapons only
@@ -25,16 +27,18 @@ export default class DHAttackAction extends DHDamageAction {
     }
 
     async use(event, options) {
+        if (this.item?.system.sorcerous) {
+            if (this.actor.system.activeBeastform) return ui.notifications.warn('You cannot cast spells while in Beastform.');
+            if (this.actor.system.class.value?.name !== 'Sorcerer' || !this.actor.system.tradition) {
+                return ui.notifications.warn('Sorcerous Attack requires the Sorcerer Archetype and a Tradition.');
+            }
+            this.roll.trait = this.actor.system.spellcastModifierTrait.key;
+        }
         if (this.item?.system.needsReload) {
             return ui.notifications.error(_loc('DAGGERHEART.UI.Notifications.reloadRequired', { weapon: this.item.name }));
         }
 
         const result = await super.use(event, options);
-
-        if (result?.message?.system.action?.roll?.type === 'attack') {
-            const { updateCountdowns } = game.system.api.applications.ui.DhCountdowns;
-            await updateCountdowns(CONFIG.DH.GENERAL.countdownProgressionTypes.characterAttack.id);
-        }
 
         return result;
     }
@@ -49,9 +53,7 @@ export default class DHAttackAction extends DHDamageAction {
         }
         
         const needsReload = roll.total === 1;
-        if (needsReload) {
-            this.item.update({ 'system.resource.value': 0 });
-        }
+        await this.item.update({ 'system.reloadRequired': needsReload, 'system.resource.value': needsReload ? 0 : 1 });
 
         return { needsReload, rollValue: roll.total };
     }

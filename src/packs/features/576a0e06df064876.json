@@ -1,0 +1,15 @@
+{
+  "_id": "576a0e06df064876",
+  "name": "Academic Insight",
+  "type": "feature",
+  "img": "icons/sundries/books/book-open-turquoise.webp",
+  "system": {
+    "description": "<p>Choose two fields of study that reflect your training, <em>e.g. History, Engineering, Medicine, Natural Philosophy, Warfare, Rhetoric, Linguistics</em>. When making an Action Roll where one of these fields is relevant, you may roll with Advantage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "44fce0e030416eae",
+  "_key": "!items!576a0e06df064876"
+}

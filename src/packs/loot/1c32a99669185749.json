@@ -1,0 +1,15 @@
+{
+  "_id": "1c32a99669185749",
+  "name": "Veil Relic",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Veil Relic</strong>: You gain a +1 bonus to your Finesse. You can only carry one relic.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!1c32a99669185749"
+}

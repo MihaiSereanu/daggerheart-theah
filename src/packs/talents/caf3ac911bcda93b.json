@@ -1,0 +1,28 @@
+{
+  "_id": "caf3ac911bcda93b",
+  "name": "Their Anchor",
+  "type": "domainCard",
+  "img": "icons/sundries/flags/banner-sword-blue.webp",
+  "system": {
+    "description": "<p>If you have 4 or more Anchor Talents, gain the following:</p>\n<ul>\n<li>When you succeed with Hope, an ally within Close range of you gains a Hope.</li>\n<li>Once per Rest, if you fail with Fear, you fail with Hope.</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "anchor",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false,
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    }
+  },
+  "effects": [],
+  "folder": "9aaa1110e6898797",
+  "_key": "!items!caf3ac911bcda93b"
+}

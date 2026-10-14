@@ -1,0 +1,15 @@
+{
+  "_id": "12d828dda94079c1",
+  "name": "Relentless (X)",
+  "type": "feature",
+  "img": "icons/equipment/shield/heater-steel-gold.webp",
+  "system": {
+    "description": "<p>The adversary can be spotlighted X times per GM turn, where X is the adversary’s number of heads. Spend Fear as usual to spotlight them.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!12d828dda94079c1"
+}

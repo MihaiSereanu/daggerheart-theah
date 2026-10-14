@@ -22,25 +22,25 @@ export default class DHAdversarySettings extends DHBaseActorSettings {
     static PARTS = {
         header: {
             id: 'header',
-            template: 'systems/daggerheart/templates/sheets-settings/adversary-settings/header.hbs'
+            template: 'systems/daggerheart-theah/templates/sheets-settings/adversary-settings/header.hbs'
         },
-        tabs: { template: 'systems/daggerheart/templates/sheets/global/tabs/tab-navigation.hbs' },
+        tabs: { template: 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-navigation.hbs' },
         details: {
             id: 'details',
-            template: 'systems/daggerheart/templates/sheets-settings/adversary-settings/details.hbs'
+            template: 'systems/daggerheart-theah/templates/sheets-settings/adversary-settings/details.hbs'
         },
         attack: {
             id: 'attack',
-            template: 'systems/daggerheart/templates/sheets-settings/adversary-settings/attack.hbs'
+            template: 'systems/daggerheart-theah/templates/sheets-settings/adversary-settings/attack.hbs'
         },
         experiences: {
             id: 'experiences',
-            template: 'systems/daggerheart/templates/sheets-settings/adversary-settings/experiences.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets-settings/adversary-settings/experiences.hbs',
             scrollable: ['.scroll-container']
         },
         features: {
             id: 'features',
-            template: 'systems/daggerheart/templates/sheets-settings/adversary-settings/features.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets-settings/adversary-settings/features.hbs',
             scrollable: ['']
         }
     };

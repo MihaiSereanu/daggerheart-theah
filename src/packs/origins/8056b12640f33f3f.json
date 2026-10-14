@@ -1,0 +1,25 @@
+{
+  "_id": "8056b12640f33f3f",
+  "name": "Montaigne",
+  "type": "ancestry",
+  "img": "icons/magic/symbols/fleur-de-lis-yellow.webp",
+  "system": {
+    "description": "<p><strong>Unshakable Resolve</strong>. When you would <strong>mark a Stress</strong>, roll a d6. On a result of 6, don’t mark it.</p>\n<p><strong>Flair for the Dramatic</strong>. When you make a Finesse roll, you can <strong>spend 2 Hope</strong> to reroll your Hope Die.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "features": [
+      {
+        "type": "primary",
+        "item": "Compendium.daggerheart-theah.features.Item.e0bd416991477df7"
+      },
+      {
+        "type": "secondary",
+        "item": "Compendium.daggerheart-theah.features.Item.f6c2f3bb5bfe1fd6"
+      }
+    ],
+    "loreReference": null
+  },
+  "effects": [],
+  "_key": "!items!8056b12640f33f3f"
+}

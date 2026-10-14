@@ -12,7 +12,7 @@
             >{{source.name}}</h1>
             <div class="tags">
                 <div class="tag">
-                    <span>{{localize (concat 'DAGGERHEART.GENERAL.Tiers.' source.system.tier)}}</span>
+                    <span>{{ifThen (eq source.system.classification 'mythic') "Mythic" "Standard"}}</span>
                 </div>
                 {{#if source.system.type}}
                     <div class="tag">
@@ -43,10 +43,10 @@
         </span>
     </div>
     <div class="environment-navigation">
-        {{#> 'systems/daggerheart/templates/sheets/global/tabs/tab-navigation.hbs'}}
+        {{#> 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-navigation.hbs'}}
             <button type="button" data-action="openSettings">
                 <i class="fa-solid fa-wrench"></i>
             </button>
-        {{/ 'systems/daggerheart/templates/sheets/global/tabs/tab-navigation.hbs'}}
+        {{/ 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-navigation.hbs'}}
     </div>
 </header>

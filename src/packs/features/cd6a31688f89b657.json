@@ -1,0 +1,15 @@
+{
+  "_id": "cd6a31688f89b657",
+  "name": "Learned Application",
+  "type": "feature",
+  "img": "icons/sundries/books/book-open-turquoise.webp",
+  "system": {
+    "description": "<p>When you <em>Help an Ally</em> with a problem where your Academic Insight is useful, roll a d6. On a 5-6, you do not need to spend a Hope.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "55fa48bd3c1e99d5",
+  "_key": "!items!cd6a31688f89b657"
+}

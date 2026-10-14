@@ -1,0 +1,15 @@
+{
+  "_id": "56891250864f5c17",
+  "name": "Our Master’s Will",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-sword-blue.webp",
+  "system": {
+    "description": "<p>When you spotlight an ally within Far range, <strong>mark a Stress</strong> to gain a Fear.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "reaction"
+  },
+  "effects": [],
+  "_key": "!items!56891250864f5c17"
+}

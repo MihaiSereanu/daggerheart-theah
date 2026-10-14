@@ -1,0 +1,15 @@
+{
+  "_id": "2f886cd7d541e1ab",
+  "name": "Chameleon Shroud",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Chameleon Shroud</strong>: A creature with a Spellcast trait wearing this cloak can adjust its color, texture, and size at will.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!2f886cd7d541e1ab"
+}

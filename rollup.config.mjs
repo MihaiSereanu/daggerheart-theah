@@ -1,6 +1,7 @@
 import postcss from 'rollup-plugin-postcss';
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
+import json from '@rollup/plugin-json';
 
 export default {
     input: 'daggerheart.mjs',
@@ -10,6 +11,7 @@ export default {
         sourcemap: true
     },
     plugins: [
+        json(),
         postcss({
             config: {
                 path: './postcss.config.js'

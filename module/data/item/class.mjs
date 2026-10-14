@@ -3,7 +3,6 @@ import ForeignDocumentUUIDField from '../fields/foreignDocumentUUIDField.mjs';
 import ForeignDocumentUUIDArrayField from '../fields/foreignDocumentUUIDArrayField.mjs';
 import ItemLinkFields from '../fields/itemLinkFields.mjs';
 import { addLinkedItemsDiff, fromUuids, getFeaturesHTMLData, updateLinkedItemApps } from '../../helpers/utils.mjs';
-import { DhLevelOption } from '../levelTier.mjs';
 
 export default class DHClass extends BaseDataItem {
     /** @inheritDoc */
@@ -12,7 +11,7 @@ export default class DHClass extends BaseDataItem {
             label: 'TYPES.Item.class',
             type: 'class',
             hasDescription: true,
-            hasLevelUpOptions: true
+            hasLevelUpOptions: false
         });
     }
 
@@ -39,12 +38,12 @@ export default class DHClass extends BaseDataItem {
             }),
             characterGuide: new fields.SchemaField({
                 suggestedTraits: new fields.SchemaField({
-                    agility: new fields.NumberField({ initial: 0, integer: true }),
-                    strength: new fields.NumberField({ initial: 0, integer: true }),
+                    finesse: new fields.NumberField({ initial: 0, integer: true }),
+                    brawn: new fields.NumberField({ initial: 0, integer: true }),
                     finesse: new fields.NumberField({ initial: 0, integer: true }),
                     instinct: new fields.NumberField({ initial: 0, integer: true }),
-                    presence: new fields.NumberField({ initial: 0, integer: true }),
-                    knowledge: new fields.NumberField({ initial: 0, integer: true })
+                    charm: new fields.NumberField({ initial: 0, integer: true }),
+                    wits: new fields.NumberField({ initial: 0, integer: true })
                 }),
                 suggestedPrimaryWeapon: new ForeignDocumentUUIDField({ type: 'Item' }),
                 suggestedSecondaryWeapon: new ForeignDocumentUUIDField({ type: 'Item' }),
@@ -52,20 +51,14 @@ export default class DHClass extends BaseDataItem {
             }),
             backgroundQuestions: new fields.ArrayField(new fields.StringField(), { initial: ['', '', ''] }),
             connections: new fields.ArrayField(new fields.StringField(), { initial: ['', '', ''] }),
-            isMulticlass: new fields.BooleanField({ initial: false }),
-            levelupOptionTiers: new fields.TypedObjectField(
-                new fields.TypedObjectField(new fields.EmbeddedDataField(DhLevelOption)),
-                {
-                    initial: { 2: {}, 3: {}, 4: {} }
-                }
-            )
+            isMulticlass: new fields.BooleanField({ initial: false })
         };
     }
 
     /* -------------------------------------------- */
 
     /**@override */
-    static DEFAULT_ICON = 'systems/daggerheart/assets/icons/documents/items/laurel-crown.svg';
+    static DEFAULT_ICON = 'systems/daggerheart-theah/assets/icons/documents/items/laurel-crown.svg';
 
     /* -------------------------------------------- */
 
@@ -97,49 +90,7 @@ export default class DHClass extends BaseDataItem {
     }
 
     async _preCreate(data, options, user) {
-        if (this.actor?.type === 'character') {
-            const levelupAuto = game.system.settings.automation.levelupAuto;
-            if (levelupAuto) {
-                const path = data.system.isMulticlass ? 'system.multiclass.value' : 'system.class.value';
-                if (foundry.utils.getProperty(this.actor, path)) {
-                    ui.notifications.error(game.i18n.localize('DAGGERHEART.UI.Notifications.classAlreadySelected'));
-                    return false;
-                }
-            } else {
-                if (this.actor.system.class.value) {
-                    if (this.actor.system.multiclass.value) {
-                        ui.notifications.warn(
-                            game.i18n.localize('DAGGERHEART.UI.Notifications.multiclassAlreadyPresent')
-                        );
-                        return false;
-                    } else {
-                        const selectedDomain =
-                            await game.system.api.applications.dialogs.MulticlassChoiceDialog.configure(
-                                this.actor,
-                                this
-                            );
-                        if (!selectedDomain) return false;
-
-                        await this.updateSource({ isMulticlass: true, domains: [selectedDomain] });
-                    }
-                }
-            }
-
-            if (!data.system.isMulticlass) {
-                const addQuestions = (base, questions) => {
-                    return `${base}${questions.map(q => `<p><strong>${q}</strong></p>`).join('<br/>')}`;
-                };
-                const backgroundQuestions = data.system.backgroundQuestions.filter(x => x);
-                const connections = data.system.connections.filter(x => x);
-                await this.actor.update({
-                    'system.biography': {
-                        background: addQuestions(this.actor.system.biography.background, backgroundQuestions),
-                        connections: addQuestions(this.actor.system.biography.connections, connections)
-                    }
-                });
-            }
-        }
-
+        if (this.actor?.type === 'character' && this.actor.items.some(i => i.type === 'class')) { ui.notifications.warn('A character has one Archetype.'); return false; }
         const allowed = await super._preCreate(data, options, user);
         if (allowed === false) return;
     }
@@ -238,7 +189,7 @@ export default class DHClass extends BaseDataItem {
         const classFeatures = await getFeaturesHTMLData(this.classFeatures);
 
         const suffix = await foundry.applications.handlebars.renderTemplate(
-            'systems/daggerheart/templates/sheets/items/class/description.hbs',
+            'systems/daggerheart-theah/templates/sheets/items/class/description.hbs',
             {
                 class: this.parent,
                 domains: domainsLabel,

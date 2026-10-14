@@ -1,0 +1,100 @@
+{
+  "_id": "adf9730ce43bde09",
+  "name": "Bladed Guard",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>An armored guard bearing a sword and shield.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "standard",
+    "difficulty": 12,
+    "notes": "<h3>Normal | Standard</h3>\n<p><em>An armored guard bearing a sword and shield.</em><br><strong>Motives &amp; Tactics:</strong> Arrest, make it through the day, pin down</p>\n<p><strong>Difficulty:</strong> 12 | <strong>Thresholds:</strong> 7/11 | <strong>HP:</strong> 5 | <strong>Stress:</strong> 2</p>\n<p><strong>ATK:</strong> +1 | Weapon: Melee | 1d6+1 physical</p>\n<hr>\n<p><strong>Experience:</strong> Local Knowledge +3</p>\n<h4>Features</h4>\n<p><strong>Shield Wall - Passive</strong>: A creature who tries to move within Very Close range of the Guard must succeed on an Finesse Roll. If additional Bladed Guards are standing in a line alongside the first, and each is within Melee range of another guard in the line, the Difficulty increases by the total number of guards in that line.</p>\n<p><strong>Detain - Action</strong>: Make an attack against a target within Very Close range. On a success, <strong>mark a Stress</strong> to Restrain the target until they break free with a successful attack, Finesse Roll, or Brawn Roll.</p>\n",
+    "damageThresholds": {
+      "major": 7,
+      "severe": 11
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 5
+      },
+      "stress": {
+        "value": 0,
+        "max": 2
+      }
+    },
+    "motivesAndTactics": "Arrest, make it through the day, pin down",
+    "experiences": {
+      "5e9f5990cc7b7b3a": {
+        "name": "Local Knowledge",
+        "value": 3
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/hand-grip-sword-orange.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 1
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d6+1"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "a77e03674cce78b3",
+      "name": "Shield Wall - Passive",
+      "type": "feature",
+      "img": "icons/equipment/shield/heater-steel-gold.webp",
+      "system": {
+        "description": "<p>A creature who tries to move within Very Close range of the Guard must succeed on an Finesse Roll. If additional Bladed Guards are standing in a line alongside the first, and each is within Melee range of another guard in the line, the Difficulty increases by the total number of guards in that line.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!adf9730ce43bde09.a77e03674cce78b3"
+    },
+    {
+      "_id": "02b5c264d31f758b",
+      "name": "Detain - Action",
+      "type": "feature",
+      "img": "icons/magic/control/debuff-chains-shackles-movement-purple.webp",
+      "system": {
+        "description": "<p>Make an attack against a target within Very Close range. On a success, <strong>mark a Stress</strong> to Restrain the target until they break free with a successful attack, Finesse Roll, or Brawn Roll.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!adf9730ce43bde09.02b5c264d31f758b"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Bladed Guard",
+    "actorLink": false
+  },
+  "_key": "!actors!adf9730ce43bde09"
+}

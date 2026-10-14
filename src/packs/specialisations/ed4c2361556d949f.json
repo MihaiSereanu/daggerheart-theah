@@ -1,0 +1,27 @@
+{
+  "_id": "ed4c2361556d949f",
+  "name": "Honour Guard",
+  "type": "subclass",
+  "img": "icons/skills/melee/sword-twirl-orange.webp",
+  "system": {
+    "description": "<p>Play the Honour Guard if you want to stand on the battlefield and rally your allies with skill and pride.</p>\n<h4>Features</h4>\n<p><strong>All for One</strong>. When you gain a Style die, you may <strong>spend a Hope</strong> to give it to an ally instead. When the scene ends, an ally&#39;s unspent Style dice are lost.</p>\n<p><strong>One for All</strong>. Once per Rest, <strong>mark a Stress</strong> to rally your companions. You and all allies gain Advantage on all rolls until the scene ends or until you roll with Fear.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.516b8518d8a01ac1",
+    "spellcastingTrait": null,
+    "features": [
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.4c9edc4bbdcf1a49"
+      },
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.35d436b8f8d252d2"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": "1cf14cd678066c06",
+  "_key": "!items!ed4c2361556d949f"
+}

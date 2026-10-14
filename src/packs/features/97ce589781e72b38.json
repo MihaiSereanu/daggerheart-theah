@@ -1,0 +1,15 @@
+{
+  "_id": "97ce589781e72b38",
+  "name": "Unwavering",
+  "type": "feature",
+  "img": "icons/skills/melee/shield-block-bash-blue.webp",
+  "system": {
+    "description": "<p>Gain a +2 bonus to your damage thresholds.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "53a6e665e6106909",
+  "_key": "!items!97ce589781e72b38"
+}

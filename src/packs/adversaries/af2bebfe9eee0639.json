@@ -1,0 +1,126 @@
+{
+  "_id": "af2bebfe9eee0639",
+  "name": "Cult Adept",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A spellcaster that&#39;s made dark pacts in exchange for power.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "support",
+    "difficulty": 14,
+    "notes": "<h3>Normal | Support</h3>\n<p><em>A spellcaster that&#39;s made dark pacts in exchange for power.</em><br><strong>Motives &amp; Tactics:</strong> Curry favor, hinder foes, uncover knowledge</p>\n<p><strong>Difficulty:</strong> 14 | <strong>Thresholds:</strong> 5/9 | <strong>HP:</strong> 4 | <strong>Stress:</strong> 6</p>\n<p><strong>ATK:</strong> +2 | Magic: Far | 1d8+2 physical</p>\n<hr>\n<p><strong>Experience:</strong> Fallen Lore +2, Rituals +2</p>\n<h4>Features</h4>\n<p><strong>Enervating Blast - Action</strong>: Spend a Fear to make a standard attack against a target within range. On a success, the target must <strong>mark a Stress</strong>.</p>\n<p><strong>Shroud of the Fallen - Action</strong>: Mark a Stress to wrap an ally within Close range in a shroud of Protection until the Adept marks their last HP. While Protected, the target has resistance to all damage.</p>\n<p><strong>Shadow Shackles - Action</strong>: Spend a Fear and choose a point within Far. All targets within Close of that point are Restrained in smoky chains until they break free with a successful Brawn or Instinct Roll. A Restrained target must <strong>spend a Hope</strong> to make action rolls.</p>\n<p><strong>Fear Is Fuel - Reaction</strong>: Twice per scene, when a PC rolls a failure with Fear, clear a Stress.</p>\n<hr>\n<h1><strong>Champions</strong></h1>\n<p>The following section will detail adversaries with the Champion tag.</p>\n<p>In Heart &amp; Dagger, adversaries with the Champion tag represent enemies that are significantly stronger, smarter, or more dangerous than their baseline counterparts. A Champion might be supernatural in nature; for example, a vampiric swordsman, a demon lieutenant, even a more magically enhanced duelist. They might also simply be the best of their kind, such as a veteran commander, an undefeated arena fighter, or a duelist whose skill and ruthlessness put them far above the rest.</p>\n<p>Champions exist to create high-stakes encounters that push players to spend resources, coordinate, and think creatively rather than just trading blows. They are meant to feel overtuned compared to “fair” enemies, and that’s intentional; these foes are story beats as much as stat blocks. Giving them better statistics and powerful features is not just allowed but encouraged, because the game assumes that players will employ creative play to balance the fight. A Champion is designed to dominate the scene if not handled carefully, forcing players to engage with the fiction of battling such a difficult foe.</p>\n<p>Champions are also a necessary tool to keep higher-level PCs challenged as they grow in power. As characters gain stronger Talents and higher damage output, normal enemies, though still very much able to effectively threaten the heroes, still become somewhat trivial, which means you will have to use more of them for the desired effect.</p>\n",
+    "damageThresholds": {
+      "major": 5,
+      "severe": 9
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 4
+      },
+      "stress": {
+        "value": 0,
+        "max": 6
+      }
+    },
+    "motivesAndTactics": "Curry favor, hinder foes, uncover knowledge",
+    "experiences": {
+      "fddd65767f252d78": {
+        "name": "Fallen Lore",
+        "value": 2
+      },
+      "b158ecf95e46f52f": {
+        "name": "Rituals",
+        "value": 2
+      }
+    },
+    "attack": {
+      "_id": "83715232bff67a38",
+      "name": "Magic",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/magic/symbols/runes-star-magenta.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "far",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 2
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d8+2"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "1253bb4ed2f6d2cf",
+      "name": "Enervating Blast - Action",
+      "type": "feature",
+      "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
+      "system": {
+        "description": "<p>Spend a Fear to make a standard attack against a target within range. On a success, the target must <strong>mark a Stress</strong>.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!af2bebfe9eee0639.1253bb4ed2f6d2cf"
+    },
+    {
+      "_id": "88612b1901102682",
+      "name": "Shroud of the Fallen - Action",
+      "type": "feature",
+      "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+      "system": {
+        "description": "<p>Mark a Stress to wrap an ally within Close range in a shroud of Protection until the Adept marks their last HP. While Protected, the target has resistance to all damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!af2bebfe9eee0639.88612b1901102682"
+    },
+    {
+      "_id": "786f6262e3dcdfa3",
+      "name": "Shadow Shackles - Action",
+      "type": "feature",
+      "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+      "system": {
+        "description": "<p>Spend a Fear and choose a point within Far. All targets within Close of that point are Restrained in smoky chains until they break free with a successful Brawn or Instinct Roll. A Restrained target must <strong>spend a Hope</strong> to make action rolls.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!af2bebfe9eee0639.786f6262e3dcdfa3"
+    },
+    {
+      "_id": "e720838f853e737e",
+      "name": "Fear Is Fuel - Reaction",
+      "type": "feature",
+      "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
+      "system": {
+        "description": "<p>Twice per scene, when a PC rolls a failure with Fear, clear a Stress.</p>\n<hr>\n<h1><strong>Champions</strong></h1>\n<p>The following section will detail adversaries with the Champion tag.</p>\n<p>In Heart &amp; Dagger, adversaries with the Champion tag represent enemies that are significantly stronger, smarter, or more dangerous than their baseline counterparts. A Champion might be supernatural in nature; for example, a vampiric swordsman, a demon lieutenant, even a more magically enhanced duelist. They might also simply be the best of their kind, such as a veteran commander, an undefeated arena fighter, or a duelist whose skill and ruthlessness put them far above the rest.</p>\n<p>Champions exist to create high-stakes encounters that push players to spend resources, coordinate, and think creatively rather than just trading blows. They are meant to feel overtuned compared to “fair” enemies, and that’s intentional; these foes are story beats as much as stat blocks. Giving them better statistics and powerful features is not just allowed but encouraged, because the game assumes that players will employ creative play to balance the fight. A Champion is designed to dominate the scene if not handled carefully, forcing players to engage with the fiction of battling such a difficult foe.</p>\n<p>Champions are also a necessary tool to keep higher-level PCs challenged as they grow in power. As characters gain stronger Talents and higher damage output, normal enemies, though still very much able to effectively threaten the heroes, still become somewhat trivial, which means you will have to use more of them for the desired effect.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!af2bebfe9eee0639.e720838f853e737e"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Cult Adept",
+    "actorLink": false
+  },
+  "_key": "!actors!af2bebfe9eee0639"
+}

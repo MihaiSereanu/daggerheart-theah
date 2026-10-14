@@ -1,0 +1,159 @@
+{
+  "_id": "8e5ec09058708619",
+  "name": "Vampire Count",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A captivating undead dressed in aristocratic finery.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "champion",
+    "type": "leader",
+    "difficulty": 20,
+    "notes": "<h3>Champion | Leader</h3>\n<p><em>A captivating undead dressed in aristocratic finery.</em><br><strong>Motives &amp; Tactics:</strong> Create thralls, charm, command, fly, intimidate</p>\n<p><strong>Difficulty:</strong> 20 | <strong>Thresholds:</strong> 14/28 | <strong>HP:</strong> 6 | <strong>Stress:</strong> 6</p>\n<p><strong>ATK:</strong> +5 | Weapon: Melee | 2d12+4 physical</p>\n<hr>\n<p><strong>Experience:</strong> Aristocrat +3, Nocturnal Hunter +3</p>\n<h4>Features</h4>\n<p><strong>Terrifying - Passive</strong>: When the Vampire makes a successful attack, all PCs within Far range lose a Hope and you gain a Fear.</p>\n<p><strong>Look into My Eyes - Passive</strong>: A creature who moves into Melee range of the Vampire must make an Instinct Reaction Roll. On a failure, you gain 1d4 Fear.</p>\n<p><strong>Feed on Followers - Action</strong>: When the Vampire is within Melee range of an ally, they can cause the ally to mark a HP. The Vampire then clears a HP and rolls their next action roll with Advantage.</p>\n<p><strong>The Hunt Is On - Action</strong>: Spend 2 Fear to summon 1d4 Vampires, who appear at Far range and immediately take the spotlight.</p>\n<p><strong>Dreadful Riposte - Reaction</strong>: When a PC misses the Vampire with Fear, the Vampire may make an attack roll against them. On a hit, this attack deals direct damage.</p>\n<p><strong>Mistform - Reaction</strong>: When the Vampire takes physical damage, you can spend a Fear to take half damage.</p>\n<p><strong>Blood Rain - Reaction</strong>: When the Vampire is spotlighted, roll a d8. On a result of 6 or higher, all targets within Very Close range must mark a HP and roll their next action roll with Disadvantage.</p>\n",
+    "damageThresholds": {
+      "major": 14,
+      "severe": 28
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 6
+      },
+      "stress": {
+        "value": 0,
+        "max": 6
+      }
+    },
+    "motivesAndTactics": "Create thralls, charm, command, fly, intimidate",
+    "experiences": {
+      "d58a870f40a27ace": {
+        "name": "Aristocrat",
+        "value": 3
+      },
+      "43654c677d00318e": {
+        "name": "Nocturnal Hunter",
+        "value": 3
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/hand-grip-sword-orange.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 5
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "2d12+4"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "de93b604b511191f",
+      "name": "Terrifying - Passive",
+      "type": "feature",
+      "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
+      "system": {
+        "description": "<p>When the Vampire makes a successful attack, all PCs within Far range lose a Hope and you gain a Fear.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!8e5ec09058708619.de93b604b511191f"
+    },
+    {
+      "_id": "733c8cd6ddd6f49d",
+      "name": "Look into My Eyes - Passive",
+      "type": "feature",
+      "img": "icons/creatures/eyes/humanoid-single-purple-blue.webp",
+      "system": {
+        "description": "<p>A creature who moves into Melee range of the Vampire must make an Instinct Reaction Roll. On a failure, you gain 1d4 Fear.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!8e5ec09058708619.733c8cd6ddd6f49d"
+    },
+    {
+      "_id": "6359858972363cd8",
+      "name": "Feed on Followers - Action",
+      "type": "feature",
+      "img": "icons/sundries/flags/banner-sword-blue.webp",
+      "system": {
+        "description": "<p>When the Vampire is within Melee range of an ally, they can cause the ally to mark a HP. The Vampire then clears a HP and rolls their next action roll with Advantage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!8e5ec09058708619.6359858972363cd8"
+    },
+    {
+      "_id": "d87cad1d576813c9",
+      "name": "The Hunt Is On - Action",
+      "type": "feature",
+      "img": "icons/creatures/eyes/humanoid-single-purple-blue.webp",
+      "system": {
+        "description": "<p>Spend 2 Fear to summon 1d4 Vampires, who appear at Far range and immediately take the spotlight.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!8e5ec09058708619.d87cad1d576813c9"
+    },
+    {
+      "_id": "9f9a0552c97aac49",
+      "name": "Dreadful Riposte - Reaction",
+      "type": "feature",
+      "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+      "system": {
+        "description": "<p>When a PC misses the Vampire with Fear, the Vampire may make an attack roll against them. On a hit, this attack deals direct damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!8e5ec09058708619.9f9a0552c97aac49"
+    },
+    {
+      "_id": "4fc6b80ac8df16a3",
+      "name": "Mistform - Reaction",
+      "type": "feature",
+      "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+      "system": {
+        "description": "<p>When the Vampire takes physical damage, you can spend a Fear to take half damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!8e5ec09058708619.4fc6b80ac8df16a3"
+    },
+    {
+      "_id": "41e25d11891a535e",
+      "name": "Blood Rain - Reaction",
+      "type": "feature",
+      "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+      "system": {
+        "description": "<p>When the Vampire is spotlighted, roll a d8. On a result of 6 or higher, all targets within Very Close range must mark a HP and roll their next action roll with Disadvantage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!8e5ec09058708619.41e25d11891a535e"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Vampire Count",
+    "actorLink": false
+  },
+  "_key": "!actors!8e5ec09058708619"
+}

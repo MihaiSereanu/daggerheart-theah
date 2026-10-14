@@ -3,13 +3,13 @@
         <legend>{{localize "DAGGERHEART.SETTINGS.Scene.rangeMeasurement"}}</legend>
 
         {{#if variantRules.rangeMeasurement.enabled}}
-            {{formGroup data.schema.fields.rangeMeasurement.fields.setting value=data._source.rangeMeasurement.setting name="flags.daggerheart.rangeMeasurement.setting" id="rangeMeasurementSetting" localize=true blank=false}}
+            {{formGroup data.schema.fields.rangeMeasurement.fields.setting value=data._source.rangeMeasurement.setting name="flags.daggerheart-theah.rangeMeasurement.setting" id="rangeMeasurementSetting" localize=true blank=false}}
             
             {{#if (eq data.rangeMeasurement.setting "custom")}}
-                {{formGroup data.schema.fields.rangeMeasurement.fields.melee value=data._source.rangeMeasurement.melee name="flags.daggerheart.rangeMeasurement.melee" localize=true}}
-                {{formGroup data.schema.fields.rangeMeasurement.fields.veryClose value=data._source.rangeMeasurement.veryClose name="flags.daggerheart.rangeMeasurement.veryClose" localize=true}}
-                {{formGroup data.schema.fields.rangeMeasurement.fields.close value=data._source.rangeMeasurement.close name="flags.daggerheart.rangeMeasurement.close" localize=true}}
-                {{formGroup data.schema.fields.rangeMeasurement.fields.far value=data._source.rangeMeasurement.far name="flags.daggerheart.rangeMeasurement.far" localize=true}}
+                {{formGroup data.schema.fields.rangeMeasurement.fields.melee value=data._source.rangeMeasurement.melee name="flags.daggerheart-theah.rangeMeasurement.melee" localize=true}}
+                {{formGroup data.schema.fields.rangeMeasurement.fields.veryClose value=data._source.rangeMeasurement.veryClose name="flags.daggerheart-theah.rangeMeasurement.veryClose" localize=true}}
+                {{formGroup data.schema.fields.rangeMeasurement.fields.close value=data._source.rangeMeasurement.close name="flags.daggerheart-theah.rangeMeasurement.close" localize=true}}
+                {{formGroup data.schema.fields.rangeMeasurement.fields.far value=data._source.rangeMeasurement.far name="flags.daggerheart-theah.rangeMeasurement.far" localize=true}}
             {{/if}}
             {{#if (eq data.rangeMeasurement.setting "default")}}
                 {{formGroup variantRules.schema.fields.rangeMeasurement.fields.melee value=variantRules._source.rangeMeasurement.melee localize=true disabled=true}}
@@ -37,7 +37,7 @@
                             <div class="tags">
                                 <div class="tag">
                                     <span>
-                                        {{localize (concat 'DAGGERHEART.GENERAL.Tiers.' environment.system.tier)}}
+                                        {{environment.system.classification}}
                                     </span>
                                 </div>
                                 {{#if environment.system.type}}

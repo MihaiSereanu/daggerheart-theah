@@ -1,0 +1,15 @@
+{
+  "_id": "1d3dda11f95b379d",
+  "name": "Feast of Xuria",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Feast of Xuria</strong>: You can eat this meal to clear all Hit Points and Stress and gain 1d4 Hope.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!1d3dda11f95b379d"
+}

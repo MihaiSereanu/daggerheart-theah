@@ -1,0 +1,15 @@
+{
+  "_id": "d7605e58889b94b7",
+  "name": "Devastating Retort",
+  "type": "feature",
+  "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+  "system": {
+    "description": "<p>A PC who rolls less than 15 on an action roll targeting the adversary must <strong>mark a Stress</strong>.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!d7605e58889b94b7"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "a07cccbc994f7b3f",
+  "name": "Know the Tide",
+  "type": "feature",
+  "img": "icons/environment/settlement/lighthouse-rock-blue.webp",
+  "system": {
+    "description": "<p>You can sense the ebb and flow of life. When you roll with Fear, make a note of it. You can hold a record equal to your level. Before you make an action roll, you can spend any number of these failures to gain a +1 bonus to the roll for each failure spent. At the end of each session, clear the record.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "5bce27ef77833d70",
+  "_key": "!items!a07cccbc994f7b3f"
+}

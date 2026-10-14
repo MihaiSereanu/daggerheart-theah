@@ -1,0 +1,28 @@
+{
+  "_id": "b3c59e5387bb0cb7",
+  "name": "Blood Walkway",
+  "type": "domainCard",
+  "img": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+  "system": {
+    "description": "<p>Once per Rest, you can instantly teleport yourself and a number of willing targets equal to your Spellcasting Trait to an object marked by your blood. <strong>Mark a Stress</strong>, then make a <strong>Spellcast Roll (15)</strong> to step The Walkway. On a success, you appear at your destination. On a failure, the group must collectively <strong>mark 10 Stress</strong>.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "porte",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false,
+    "resource": {
+      "type": "simple",
+      "value": 0,
+      "max": "1",
+      "recovery": "shortRest",
+      "progression": "increasing",
+      "label": "Uses"
+    }
+  },
+  "effects": [],
+  "folder": "abd4fb970d402f00",
+  "_key": "!items!b3c59e5387bb0cb7"
+}

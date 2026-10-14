@@ -1,0 +1,34 @@
+{
+  "_id": "b866212a2a710b17",
+  "name": "Graceful",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-symbol-sun-gold-red.webp",
+  "system": {
+    "description": "<p>Gain a permanent +1 bonus to your Evasion.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [
+    {
+      "_id": "fdc520c224f9c92e",
+      "name": "Graceful",
+      "type": "base",
+      "transfer": true,
+      "img": "icons/sundries/flags/banner-symbol-sun-gold-red.webp",
+      "system": {
+        "changes": [
+          {
+            "type": "add",
+            "key": "system.evasion",
+            "value": 1,
+            "phase": "initial"
+          }
+        ]
+      },
+      "_key": "!items.effects!b866212a2a710b17.fdc520c224f9c92e"
+    }
+  ],
+  "folder": "34cd8b6ad3a8b2b3",
+  "_key": "!items!b866212a2a710b17"
+}

@@ -1,0 +1,115 @@
+{
+  "_id": "202fff6d4d5b7aaa",
+  "name": "Courtier",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>An ambitious and ostentatiously dressed socialite.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "social",
+    "difficulty": 12,
+    "notes": "<h3>Normal | Social</h3>\n<p><em>An ambitious and ostentatiously dressed socialite.</em><br><strong>Motives &amp; Tactics:</strong> Discredit, gain favor, maneuver, scheme</p>\n<p><strong>Difficulty:</strong> 12 | <strong>Thresholds:</strong> 4/8 | <strong>HP:</strong> 3 | <strong>Stress:</strong> 4</p>\n<p><strong>ATK:</strong> -4 | Weapon: Melee | 1d4+2 physical</p>\n<hr>\n<p><strong>Experience:</strong> Socialite +3, Schemer +2</p>\n<h4>Features</h4>\n<p><strong>Scapegoat - Action</strong>: Spend a Fear and target a PC. The Courtier convinces a crowd or prominent individual that the target is the cause of their current conflict or misfortune.</p>\n<p><strong>Devastating Retort - Passive</strong>: A PC who rolls less than 15 on an action roll targeting the Courtier must <strong>mark a Stress</strong>.</p>\n<p><strong>Bend Ears - Action</strong>: <strong>Mark a Stress</strong> to influence an NPC. That target’s opinion on a matter shifts towards the Courtier&#39;&#39;s preference unless directly opposed to their motives.</p>\n",
+    "damageThresholds": {
+      "major": 4,
+      "severe": 8
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 3
+      },
+      "stress": {
+        "value": 0,
+        "max": 4
+      }
+    },
+    "motivesAndTactics": "Discredit, gain favor, maneuver, scheme",
+    "experiences": {
+      "f3bd88d94dde27c8": {
+        "name": "Socialite",
+        "value": 3
+      },
+      "c19f70f77494030f": {
+        "name": "Schemer",
+        "value": 2
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/hand-grip-sword-orange.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": -4
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d4+2"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "dbe65c7c451b79f2",
+      "name": "Scapegoat - Action",
+      "type": "feature",
+      "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+      "system": {
+        "description": "<p>Spend a Fear and target a PC. The Courtier convinces a crowd or prominent individual that the target is the cause of their current conflict or misfortune.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!202fff6d4d5b7aaa.dbe65c7c451b79f2"
+    },
+    {
+      "_id": "53a6081f107bb9cd",
+      "name": "Devastating Retort - Passive",
+      "type": "feature",
+      "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+      "system": {
+        "description": "<p>A PC who rolls less than 15 on an action roll targeting the Courtier must <strong>mark a Stress</strong>.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!202fff6d4d5b7aaa.53a6081f107bb9cd"
+    },
+    {
+      "_id": "9310ea4ad3a451e5",
+      "name": "Bend Ears - Action",
+      "type": "feature",
+      "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+      "system": {
+        "description": "<p><strong>Mark a Stress</strong> to influence an NPC. That target’s opinion on a matter shifts towards the Courtier&#39;&#39;s preference unless directly opposed to their motives.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!202fff6d4d5b7aaa.9310ea4ad3a451e5"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Courtier",
+    "actorLink": false
+  },
+  "_key": "!actors!202fff6d4d5b7aaa"
+}

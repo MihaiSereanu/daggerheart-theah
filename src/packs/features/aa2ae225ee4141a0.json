@@ -1,0 +1,15 @@
+{
+  "_id": "aa2ae225ee4141a0",
+  "name": "Exploit",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-standard-blue.webp",
+  "system": {
+    "description": "<p>When you succeed on an attack against a target, <strong>spend a Hope</strong> to make the target temporarily <em>Vulnerable</em>.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "cb58dca1e0223ef3",
+  "_key": "!items!aa2ae225ee4141a0"
+}

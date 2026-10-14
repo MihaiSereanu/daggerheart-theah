@@ -1,0 +1,14 @@
+{
+  "_id": "1420c22d14c3e306",
+  "name": "Lore",
+  "type": "feature",
+  "img": "icons/sundries/books/book-embossed-jewel-gold-green.webp",
+  "system": {
+    "description": "<h2>Lore</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.efb4204df8654b3f]{Herbal Remedies}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.502bfb4c6fae2178]{Keen Intuition}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.795f3e0e914114b3]{Lorekeeper}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.58d88d086ceb0887]{Measured Counsel}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.4fc29bf21dd33d63]{Physician Training}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.6395314dc60581f6]{Principia Ascendant}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.d622d894f0df2cb2]{Quick Assist}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.956b313fc8e9135f]{Scholar’s Eye}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.cd5cc0e409ec317d]{Sound Judgement}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.e5d4dc8271c42cc6]{Steady Hands}</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!1420c22d14c3e306"
+}

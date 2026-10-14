@@ -1,0 +1,15 @@
+{
+  "_id": "7cd02f941fe5b0a0",
+  "name": "Phoenix Feather",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Phoenix Feather</strong>: If you have at least one Phoenix Feather on you when you fall unconscious, you gain a +1 bonus to the roll you make to determine whether you gain a scar.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!7cd02f941fe5b0a0"
+}

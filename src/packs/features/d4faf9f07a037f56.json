@@ -1,0 +1,15 @@
+{
+  "_id": "d4faf9f07a037f56",
+  "name": "Hard Habit",
+  "type": "feature",
+  "img": "icons/creatures/abilities/bear-roar-bite-brown-green.webp",
+  "system": {
+    "description": "<p>During a Rest, ingrained routine allows you to take an additional Downtime move.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "7ff2cef38f1d8657",
+  "_key": "!items!d4faf9f07a037f56"
+}

@@ -1,0 +1,18 @@
+{
+  "_id": "e26e36b206a59775",
+  "name": "Traveler",
+  "type": "community",
+  "img": "icons/tools/navigation/compass-brass-blue-red.webp",
+  "system": {
+    "description": "<p>You were shaped by the road, not a single place. Your people travel light, move often, and value knowledge and connection over land or gold. Some follow shared beliefs; others are bound by loss. All know the risks of life on the move.</p>\n<p><strong>Nomadic Preparedness</strong>. During a Rest, you or an ally can reroll a die used for a downtime action.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "features": [
+      "Compendium.daggerheart-theah.features.Item.c7338312c09f3d49"
+    ],
+    "loreReference": null
+  },
+  "effects": [],
+  "_key": "!items!e26e36b206a59775"
+}

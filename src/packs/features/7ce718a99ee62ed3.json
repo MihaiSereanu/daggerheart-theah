@@ -1,0 +1,15 @@
+{
+  "_id": "7ce718a99ee62ed3",
+  "name": "According to Plan",
+  "type": "feature",
+  "img": "icons/sundries/books/book-open-turquoise.webp",
+  "system": {
+    "description": "<p>Any time you roll a failure with Fear, you can spend 3 Hope to spotlight an ally within Close range before the GM takes the spotlight.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "44fce0e030416eae",
+  "_key": "!items!7ce718a99ee62ed3"
+}

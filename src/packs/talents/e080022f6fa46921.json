@@ -1,0 +1,20 @@
+{
+  "_id": "e080022f6fa46921",
+  "name": "Alter Fate",
+  "type": "domainCard",
+  "img": "icons/commodities/cloth/thread-and-needle.webp",
+  "system": {
+    "description": "<p>By kissing someone on the lips, you can <strong>mark a Stress</strong> to affect their immediate future. Until the next Rest, after the GM conveys the consequences of a roll your target made, make a Spellcasting Roll (15). On a success, your target ignores the consequences as if it never happened, but must choose another course of action. On a success with Hope, they gain Advantage in doing so.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "sorte",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "172ae6710886d3ba",
+  "_key": "!items!e080022f6fa46921"
+}

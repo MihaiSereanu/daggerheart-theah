@@ -1,0 +1,15 @@
+{
+  "_id": "2f3b8f0ccd048c05",
+  "name": "Carrier",
+  "type": "feature",
+  "img": "icons/environment/creatures/horse-brown.webp",
+  "system": {
+    "description": "<p>You can move with up to two willing allies.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "3b7c9291e9e0d05a",
+  "_key": "!items!2f3b8f0ccd048c05"
+}

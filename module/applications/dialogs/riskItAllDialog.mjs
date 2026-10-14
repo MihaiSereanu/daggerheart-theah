@@ -27,7 +27,7 @@ export default class RiskItAllDialog extends HandlebarsApplicationMixin(Applicat
     static PARTS = {
         application: {
             id: 'risk-it-all',
-            template: 'systems/daggerheart/templates/dialogs/riskItAllDialog.hbs'
+            template: 'systems/daggerheart-theah/templates/dialogs/riskItAllDialog.hbs'
         }
     };
 

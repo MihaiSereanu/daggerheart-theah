@@ -1,5 +1,3 @@
-import { itemAbleRollParse } from '../../../helpers/utils.mjs';
-import { emitAsGM, socketEvent } from '../../../systemRegistration/socket.mjs';
 import { NullableBooleanField } from '../nullableBooleanField.mjs';
 
 const fields = foundry.data.fields;
@@ -35,59 +33,8 @@ export default class CountdownField extends fields.ArrayField {
      * Must be called within Action context or similar. Requires a GM online to edit the game setting for countdowns.
      * @param {object} config    Object that contains workflow datas. Usually made from Action Fields prepareConfig methods.
      */
-    static async execute(config) {
-        const noGM = !game.users.find(x => x.isGM && x.active);
-        if (noGM) {
-            ui.notifications.warn(game.i18n.localize('DAGGERHEART.UI.Notifications.gmRequired'));
-            return;
-        }
-
-        const countdowns = [];
-        const countdownMessages = [];
-        for (let countdown of config.countdowns) {
-            let startFormula = countdown.progress.startFormula ? countdown.progress.startFormula : null;
-            let countdownStart = startFormula ? itemAbleRollParse(startFormula, this.actor, this.item) : '1';
-            if (startFormula) {
-                const roll = await new Roll(countdownStart).roll();
-                if (roll.dice.length > 0) {
-                    countdownStart = roll.total;
-                    const message = await roll.toMessage();
-                    countdownMessages.push(message);
-                } else {
-                    startFormula = null;
-                }
-            }
-
-            countdowns.push({
-                ...countdown,
-                progress: {
-                    ...countdown.progress,
-                    current: countdownStart,
-                    start: countdownStart,
-                    startFormula
-                }
-            });
-        }
-
-        if (game.dice3d) {
-            await Promise.all(
-                countdownMessages.map(message => {
-                    return game.dice3d.waitFor3DAnimationByMessageID(message.id);
-                })
-            );
-        }
-
-        if (game.user.isGM) {
-            const setting = game.settings.get(CONFIG.DH.id, CONFIG.DH.SETTINGS.gameSettings.Countdowns);
-            await setting.add(...countdowns);
-        } else {
-            await emitAsGM(
-                socketEvent.AddCountdown,
-                {
-                    data: { countdowns }
-                }
-            );
-        }
+    static async execute() {
+        return ui.notifications.warn('Countdowns are no longer available. Track this clock manually.');
     }
 
     /**

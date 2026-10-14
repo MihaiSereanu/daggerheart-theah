@@ -58,11 +58,11 @@ export default class D20RollDialog extends HandlebarsApplicationMixin(Applicatio
     static PARTS = {
         header: {
             id: 'header',
-            template: 'systems/daggerheart/templates/dialogs/dice-roll/header.hbs'
+            template: 'systems/daggerheart-theah/templates/dialogs/dice-roll/header.hbs'
         },
         rollSelection: {
             id: 'rollSelection',
-            template: 'systems/daggerheart/templates/dialogs/dice-roll/rollSelection.hbs'
+            template: 'systems/daggerheart-theah/templates/dialogs/dice-roll/rollSelection.hbs'
         }
     };
 

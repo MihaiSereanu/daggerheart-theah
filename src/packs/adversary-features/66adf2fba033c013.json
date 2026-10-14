@@ -1,0 +1,15 @@
+{
+  "_id": "66adf2fba033c013",
+  "name": "Gore",
+  "type": "feature",
+  "img": "icons/environment/creatures/horse-brown.webp",
+  "system": {
+    "description": "<p>Make an attack against a target within Very Close range, moving the adversary into Melee range of them. On a success, deal 2d8 direct physical damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!66adf2fba033c013"
+}

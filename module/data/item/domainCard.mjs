@@ -1,7 +1,8 @@
+import { talentAccess } from '../../heart-dagger/rules.mjs';
 import BaseDataItem from './base.mjs';
 
 export default class DHDomainCard extends BaseDataItem {
-    static embedTemplate = 'systems/daggerheart/templates/components/card/domain.hbs';
+    static embedTemplate = 'systems/daggerheart-theah/templates/components/card/domain.hbs';
 
     /** @inheritDoc */
     static get metadata() {
@@ -19,10 +20,11 @@ export default class DHDomainCard extends BaseDataItem {
         const fields = foundry.data.fields;
         return {
             ...super.defineSchema(),
+            granted: new fields.BooleanField({ initial: false }),
             domain: new fields.StringField({
                 choices: CONFIG.DH.DOMAIN.allDomains,
                 required: true,
-                initial: CONFIG.DH.DOMAIN.domains.arcana.id
+                initial: CONFIG.DH.DOMAIN.domains.anchor.id
             }),
             level: new fields.NumberField({ initial: 1, integer: true }),
             recallCost: new fields.NumberField({ initial: 0, integer: true }),
@@ -54,90 +56,26 @@ export default class DHDomainCard extends BaseDataItem {
         return game.i18n.localize(allDomainData[this.domain].label);
     }
 
-    get isVaultSupressed() {
-        return this.inVault && !this.vaultActive;
-    }
+    get isVaultSupressed() { return false; }
 
-    get isDomainTouchedSuppressed() {
-        if (!this.parent.system.domainTouched || this.parent.parent?.type !== 'character') return false;
+    get isDomainTouchedSuppressed() { return false; }
 
-        const matchingDomainCards = this.parent.parent.items.filter(
-            item => !item.system.inVault && item.system.domain === this.parent.system.domain
-        ).length;
-        return matchingDomainCards < this.parent.system.domainTouched;
-    }
-
-    /* -------------------------------------------- */
-
-    /**@override */
-    static DEFAULT_ICON = 'systems/daggerheart/assets/icons/documents/items/card-play.svg';
-
-    /* -------------------------------------------- */
-
-    /**@inheritdoc */
     async _preCreate(data, options, user) {
         const allowed = await super._preCreate(data, options, user);
-        if (allowed === false) return;
-
-        if (this.actor?.type === 'character') {
-            const actorClasses = this.actor.items.filter(x => x.type === 'class');
-            if (!actorClasses.length) {
-                ui.notifications.error(game.i18n.localize('DAGGERHEART.UI.Notifications.noClassSelected'));
-                return false;
-            }
-
-            if (!actorClasses.some(c => c.system.domains.find(x => x === this.domain))) {
-                ui.notifications.error(game.i18n.localize('DAGGERHEART.UI.Notifications.lacksDomain'));
-                return false;
-            }
-
-            if (this.actor.system.domainCards.total.find(x => x.name === this.parent.name)) {
-                ui.notifications.error(game.i18n.localize('DAGGERHEART.UI.Notifications.duplicateDomainCard'));
-                return false;
-            }
-
-            if (!this.actor.system.loadoutSlot.available && !this.loadoutIgnore) {
-                data.system.inVault = true;
-                await this.updateSource({ inVault: true });
-                ui.notifications.warn(game.i18n.localize('DAGGERHEART.UI.Notifications.loadoutMaxReached'));
-            }
+        if (allowed === false) return false;
+        this.updateSource({ inVault: false, recallCost: 0, level: 1 });
+        if (this.actor?.type !== 'character') return;
+        if (this.actor.items.some(i => i.type === 'domainCard' && i.sourceUuid === this.parent.sourceUuid)) {
+            ui.notifications.warn('This character already knows this Talent.'); return false;
         }
+        const error = talentAccess({ domain: this.domain, granted: this.granted, existing: this.actor.items.filter(i => i.type === 'domainCard').map(i => i.system), tradition: this.actor.system.tradition, domains: CONFIG.DH.DOMAIN.allDomains() });
+        if (error) { ui.notifications.warn(error); return false; }
     }
 
-    /**
-     * Generates a list of localized tags based on this item's type-specific properties.
-     * @returns {string[]} An array of localized tag strings.
-     */
-    _getTags() {
-        const tags = [
-            game.i18n.localize(`DAGGERHEART.CONFIG.DomainCardTypes.${this.type}`),
-            this.domainLabel,
-            `${game.i18n.localize('DAGGERHEART.GENERAL.levelShort')}: ${this.level}`,
-            `${game.i18n.localize('DAGGERHEART.ITEMS.DomainCard.recallCost')}: ${this.recallCost}`
-        ];
+    _getTags() { return [this.domainLabel]; }
 
-        return tags;
-    }
+    _getLabels() { return [this.domainLabel]; }
 
-    /**
-     * Generate a localized label array for this item subtype.
-     * @returns {(string | { value: string, icons: string[] })[]} An array of localized strings and damage label objects.
-     */
-    _getLabels() {
-        const labels = [];
-
-        if (this.type) labels.push(game.i18n.localize(`DAGGERHEART.CONFIG.DomainCardTypes.${this.type}`));
-        if (this.domainLabel) labels.push(this.domainLabel);
-        if (this.recallCost) {
-            labels.push({
-                value: `${this.recallCost}`, //converts the number to a string
-                icons: ['fa-bolt']
-            });
-        }
-        return labels;
-    }
-
-    /** @inheritdoc */
     async toEmbed(config = {}, options = {}) {
         // Card styling has certain defaults designed for embedding
         config.caption ??= false;
@@ -170,17 +108,7 @@ export default class DHDomainCard extends BaseDataItem {
      * or a warning notification result when max loadout is reached and not ignored for this domain card.
      */
     async toggleVault(event, toVault, isRecall) {
-        const { available } = this.actor.system.loadoutSlot;
-        toVault ??= !this.inVault;
-        if (!toVault && !available && !this.loadoutIgnore) {
-            return ui.notifications.warn('DAGGERHEART.UI.Notifications.loadoutMaxReached', { localize: true });
-        }
-
-        if (!toVault && isRecall && !(await this.onRecallCost(event))) {
-            return;
-        }
-
-        return await this.parent.update({ 'system.inVault': toVault });
+        return this.parent.update({ 'system.inVault': false, 'system.recallCost': 0 });
     }
 
     /**
@@ -191,28 +119,6 @@ export default class DHDomainCard extends BaseDataItem {
      * @returns {Promise<object|void>} Resolves to true if the cost is 0 or if dialog is validated, void if dialog is closed.
      */
     async onRecallCost(event) {
-        if (this.recallCost == 0) {
-            return true;
-        }
-        const type = 'effect';
-        const cls = game.system.api.models.actions.actionsTypes[type];
-        const action = new cls(
-            {
-                ...cls.getSourceConfig(this),
-                type: type,
-                chatDisplay: false,
-                cost: [
-                    {
-                        key: 'stress',
-                        value: this.recallCost
-                    }
-                ]
-            },
-            { parent: this }
-        );
-        const config = await action.use(event);
-        if (config) {
-            return !!(await this.toggleVault(false));
-        }
+        return true;
     }
 }

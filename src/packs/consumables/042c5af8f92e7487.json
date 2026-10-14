@@ -1,0 +1,15 @@
+{
+  "_id": "042c5af8f92e7487",
+  "name": "Blinding Orb",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Blinding Orb</strong>: You can activate this orb to create a flash of bright light. All targets within Close range become Blinded until they mark Hit Points.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!042c5af8f92e7487"
+}

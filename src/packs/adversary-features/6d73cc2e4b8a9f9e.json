@@ -1,0 +1,15 @@
+{
+  "_id": "6d73cc2e4b8a9f9e",
+  "name": "Battle Lust",
+  "type": "feature",
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "system": {
+    "description": "<p>Spend a Fear to boil the blood of all PCs within Far range. They use a d20 as their Fear Die until end of the scene.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!6d73cc2e4b8a9f9e"
+}

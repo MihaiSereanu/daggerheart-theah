@@ -1,0 +1,95 @@
+{
+  "_id": "232643c6f29fff4d",
+  "name": "Zombie Pack",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A group of shambling corpses that move as one.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "horde",
+    "difficulty": 12,
+    "notes": "<h3>Normal | Horde, 2 / HP</h3>\n<p><em>A group of shambling corpses that move as one.</em><br><strong>Motives &amp; Tactics:</strong> Consume flesh, hunger, maul</p>\n<p><strong>Difficulty:</strong> 12 | <strong>Thresholds:</strong> 6/12 | <strong>HP:</strong> 6 | <strong>Stress:</strong> 3</p>\n<p><strong>ATK:</strong> -1 | Bite &amp; Claw: Melee | 1d10+2 phy</p>\n<hr>\n<p><strong>Experience:</strong> None</p>\n<h4>Features</h4>\n<p><strong>Horde (1d4+2) - Passive</strong>: When the Zombies have marked half or more of their HP, their standard attack deals 1d4+2 physical damage instead.</p>\n<p><strong>Overwhelm - Reaction</strong>: When the Zombies mark HP from an attack within Melee range, you can <strong>mark a Stress</strong> to make a standard attack against the attacker.</p>\n",
+    "damageThresholds": {
+      "major": 6,
+      "severe": 12
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 6
+      },
+      "stress": {
+        "value": 0,
+        "max": 3
+      }
+    },
+    "motivesAndTactics": "Consume flesh, hunger, maul",
+    "experiences": {},
+    "attack": {
+      "_id": "a692acff4c00f451",
+      "name": "Bite & Claw",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/creatures/claws/claw-talons-yellow-red.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": -1
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d10+2"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "ff6fb871908f8dde",
+      "name": "Horde (1d4+2) - Passive",
+      "type": "feature",
+      "img": "icons/sundries/flags/banner-sword-blue.webp",
+      "system": {
+        "description": "<p>When the Zombies have marked half or more of their HP, their standard attack deals 1d4+2 physical damage instead.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!232643c6f29fff4d.ff6fb871908f8dde"
+    },
+    {
+      "_id": "a6ad4b4274b18089",
+      "name": "Overwhelm - Reaction",
+      "type": "feature",
+      "img": "icons/sundries/flags/banner-sword-blue.webp",
+      "system": {
+        "description": "<p>When the Zombies mark HP from an attack within Melee range, you can <strong>mark a Stress</strong> to make a standard attack against the attacker.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!232643c6f29fff4d.a6ad4b4274b18089"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Zombie Pack",
+    "actorLink": false
+  },
+  "_key": "!actors!232643c6f29fff4d"
+}

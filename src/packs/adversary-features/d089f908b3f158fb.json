@@ -1,0 +1,15 @@
+{
+  "_id": "d089f908b3f158fb",
+  "name": "Deadly Shot",
+  "type": "feature",
+  "img": "icons/skills/ranged/target-bullseye-arrow-green.webp",
+  "system": {
+    "description": "<p>Make an attack against a Vulnerable target within Far range. On a success, <strong>mark a Stress</strong> to deal 3d4+8 physical damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!d089f908b3f158fb"
+}

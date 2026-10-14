@@ -1,8 +1,8 @@
 <section class="embed actor adversary">
     <header class="main">
         <div class="name actor-name">{{actor.name}}</div>
-        <div class="tier">
-            {{localize "DAGGERHEART.GENERAL.Tiers.typed" tier=actor.system.tier type=type}}
+        <div class="classification">
+            {{actor.system.classification}} / {{type}}
         </div>
         <section class="description">{{{description}}}</section>
         <div class="impulses">
@@ -24,5 +24,5 @@
             </div>
         </div>
     </section>
-    {{> "systems/daggerheart/templates/components/actor-embed/_features.hbs" featureGroups=featureGroups}}
+    {{> "systems/daggerheart-theah/templates/components/actor-embed/_features.hbs" featureGroups=featureGroups}}
 </section>

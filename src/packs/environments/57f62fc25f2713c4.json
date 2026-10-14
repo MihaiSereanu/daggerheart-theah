@@ -1,0 +1,58 @@
+{
+  "_id": "57f62fc25f2713c4",
+  "name": "Cliffside Ascend",
+  "type": "environment",
+  "img": "systems/daggerheart-theah/assets/icons/documents/actors/forest.svg",
+  "system": {
+    "description": "<p><em>A steep, rocky cliffside tall enough to make traversal dangerous.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "standard",
+    "type": "traversal",
+    "difficulty": 12,
+    "notes": "<h3>Standard | Traversal</h3>\n<p><em>A steep, rocky cliffside tall enough to make traversal dangerous.</em><br><strong>Impulses:</strong> Cast the unwary down to a rocky doom, draw people in with promise of what lies at the top</p>\n<p><strong>Difficulty:</strong> 12</p>\n<h4>Features</h4>\n<p><strong>The Climb - Passive:</strong> Climbing up the cliffside uses a Progress Countdown (12). It ticks down according to the following criteria when the PCs make an action roll to climb:</p>\n<ul>\n<li><strong>Critical Succes</strong>s: Tick down 3</li>\n<li><strong>Success with Hope</strong>: Tick down 2</li>\n<li><strong>Success with Fear</strong>: Tick down 1</li>\n<li><strong>Failure with Hope</strong>: No advancement</li>\n<li><strong>Failure with Fear</strong>: Tick up 1</li>\n</ul>\n<p>When the countdown triggers, the party has made it to the top of the cliff.</p>\n<p><strong>Pitons Left Behind - Passive</strong>: Previous climbers left behind large metal rods that climbers can use to aid their ascent. If a PC using the pitons fails an action roll to climb, they can <strong>mark a Stress</strong> instead of ticking the countdown up.</p>\n<p><strong>Fall - Action:</strong> Spend a Fear to have a PC&#39;s handhold fail, plummeting them toward the ground. If they aren&#39;t saved on the next action, they must make a roll; tick up the countdown by 1, and they take 1d12 physical damage if the countdown is between 8 and 12, 2d12 between 4 and 7, and 3d12 at 3 or lower.</p>\n",
+    "impulses": "Cast the unwary down to a rocky doom, draw people in with promise of what lies at the top"
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "433eb4f3fb5f98c2",
+      "name": "The Climb - Passive",
+      "type": "feature",
+      "img": "icons/creatures/claws/claw-talons-yellow-red.webp",
+      "system": {
+        "description": "<p>Climbing up the cliffside uses a Progress Countdown (12). It ticks down according to the following criteria when the PCs make an action roll to climb:</p>\n<ul>\n<li><strong>Critical Succes</strong>s: Tick down 3</li>\n<li><strong>Success with Hope</strong>: Tick down 2</li>\n<li><strong>Success with Fear</strong>: Tick down 1</li>\n<li><strong>Failure with Hope</strong>: No advancement</li>\n<li><strong>Failure with Fear</strong>: Tick up 1</li>\n</ul>\n<p>When the countdown triggers, the party has made it to the top of the cliff.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!57f62fc25f2713c4.433eb4f3fb5f98c2"
+    },
+    {
+      "_id": "8a9a7ec81ef492a1",
+      "name": "Pitons Left Behind - Passive",
+      "type": "feature",
+      "img": "icons/tools/navigation/compass-brass-blue-red.webp",
+      "system": {
+        "description": "<p>Previous climbers left behind large metal rods that climbers can use to aid their ascent. If a PC using the pitons fails an action roll to climb, they can <strong>mark a Stress</strong> instead of ticking the countdown up.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!57f62fc25f2713c4.8a9a7ec81ef492a1"
+    },
+    {
+      "_id": "2b274c39ed74c337",
+      "name": "Fall - Action",
+      "type": "feature",
+      "img": "icons/tools/navigation/compass-brass-blue-red.webp",
+      "system": {
+        "description": "<p>Spend a Fear to have a PC&#39;s handhold fail, plummeting them toward the ground. If they aren&#39;t saved on the next action, they must make a roll; tick up the countdown by 1, and they take 1d12 physical damage if the countdown is between 8 and 12, 2d12 between 4 and 7, and 3d12 at 3 or lower.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!57f62fc25f2713c4.2b274c39ed74c337"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Cliffside Ascend",
+    "actorLink": false
+  },
+  "_key": "!actors!57f62fc25f2713c4"
+}

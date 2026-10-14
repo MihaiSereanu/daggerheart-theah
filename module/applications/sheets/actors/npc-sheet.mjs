@@ -25,14 +25,14 @@ export default class NPCSheet extends DHBaseActorSheet {
     };
 
     static PARTS = {
-        header: { template: 'systems/daggerheart/templates/sheets/actors/npc/header.hbs' },
-        tabs: { template: 'systems/daggerheart/templates/sheets/actors/npc/navigation.hbs' },
+        header: { template: 'systems/daggerheart-theah/templates/sheets/actors/npc/header.hbs' },
+        tabs: { template: 'systems/daggerheart-theah/templates/sheets/actors/npc/navigation.hbs' },
         features: {
-            template: 'systems/daggerheart/templates/sheets/actors/npc/features.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets/actors/npc/features.hbs',
             scrollable: ['.feature-section']
         },
         notes: {
-            template: 'systems/daggerheart/templates/sheets/actors/npc/notes.hbs'
+            template: 'systems/daggerheart-theah/templates/sheets/actors/npc/notes.hbs'
         }
     };
 

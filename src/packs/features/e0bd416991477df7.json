@@ -1,0 +1,15 @@
+{
+  "_id": "e0bd416991477df7",
+  "name": "Unshakable Resolve",
+  "type": "feature",
+  "img": "icons/magic/symbols/fleur-de-lis-yellow.webp",
+  "system": {
+    "description": "<p>When you would <strong>mark a Stress</strong>, roll a d6. On a result of 6, don’t mark it.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "9b92736b7c8dd2ca",
+  "_key": "!items!e0bd416991477df7"
+}

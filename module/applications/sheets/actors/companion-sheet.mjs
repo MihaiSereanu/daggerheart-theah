@@ -1,4 +1,3 @@
-import DhCompanionLevelUp from '../../levelup/companionLevelup.mjs';
 import DHBaseActorSheet from '../api/base-actor.mjs';
 
 /**@typedef {import('@client/applications/_types.mjs').ApplicationClickAction} ApplicationClickAction */
@@ -26,13 +25,13 @@ export default class CompanionSheet extends DHBaseActorSheet {
 
     static PARTS = {
         limited: {
-            template: 'systems/daggerheart/templates/sheets/actors/companion/limited.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets/actors/companion/limited.hbs',
             scrollable: ['.limited-container']
         },
-        header: { template: 'systems/daggerheart/templates/sheets/actors/companion/header.hbs' },
-        details: { template: 'systems/daggerheart/templates/sheets/actors/companion/details.hbs' },
+        header: { template: 'systems/daggerheart-theah/templates/sheets/actors/companion/header.hbs' },
+        details: { template: 'systems/daggerheart-theah/templates/sheets/actors/companion/details.hbs' },
         effects: {
-            template: 'systems/daggerheart/templates/sheets/global/tabs/tab-effects.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-effects.hbs',
             scrollable: ['.effects-sections']
         }
     };
@@ -112,6 +111,6 @@ export default class CompanionSheet extends DHBaseActorSheet {
      * @type {ApplicationClickAction}
      */
     static #levelManagement() {
-        new DhCompanionLevelUp(this.document).render({ force: true });
+        ui.notifications.info('Edit companion statistics in its sheet settings.');
     }
 }

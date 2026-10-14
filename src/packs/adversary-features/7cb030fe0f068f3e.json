@@ -1,0 +1,15 @@
+{
+  "_id": "7cb030fe0f068f3e",
+  "name": "What’s Yours Is Mine",
+  "type": "feature",
+  "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+  "system": {
+    "description": "<p>When a PC takes Severe damage within Very Close range of the adversary, you can spend a Fear to cause the target to make a Finesse Reaction Roll. On a failure, the adversary seizes one item of their choice from the target’s inventory.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "reaction"
+  },
+  "effects": [],
+  "_key": "!items!7cb030fe0f068f3e"
+}

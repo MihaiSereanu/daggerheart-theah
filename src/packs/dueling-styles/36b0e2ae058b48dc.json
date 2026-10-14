@@ -1,0 +1,14 @@
+{
+  "_id": "36b0e2ae058b48dc",
+  "name": "Mantovani",
+  "type": "feature",
+  "img": "icons/skills/melee/strike-chain-whip-blue.webp",
+  "system": {
+    "description": "<p><strong>Required Weapon: Whip</strong>\nA Vodacce-born style made famous in popular tavern stories, it uses misdirection and precision strikes from a whip.</p>\n<ul>\n<li><strong>The Flay</strong>. When you succeed with Hope on an attack against a lightly armoured target, you may <strong>mark a Stress</strong>. If you do, your target is temporarily <em>Bleeding</em> - they must <strong>mark a Stress</strong> every time they take the Spotlight.</li>\n<li><strong>The Rend.</strong> You can <strong>mark a stress</strong> when attacking a <em>Bleeding</em> target. On a success, you deal Severe damage.</li>\n<li><strong>The End.</strong> When a <em>Bleeding</em> target marks their last HP, you immediately clear one Stress.</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!36b0e2ae058b48dc"
+}

@@ -4,6 +4,7 @@
     </header>
     <ul class="actions-list">
     {{#each types}}
+        {{#unless (eq id 'countdown')}}
         <li class="action-item">
             <label class="label" for="{{id}}" data-tooltip="{{localize tooltip}}" data-tooltip-direction="LEFT">
                 <i class="fa-solid {{icon}} fa-xl"></i>
@@ -11,6 +12,7 @@
             </label>
             <input type="radio" name="type" id="{{id}}" value="{{id}}" {{#if (eq @index 0)}}checked{{/if}}>
         </li>
+        {{/unless}}
     {{/each}}
     </ul>
 </form>

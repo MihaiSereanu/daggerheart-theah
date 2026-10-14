@@ -1,0 +1,40 @@
+{
+  "foundry": "14.367",
+  "header": {
+    "inputWidth": 42,
+    "inputHeight": 24,
+    "labelDisplay": "flex",
+    "labelAlign": "center",
+    "advanceIcon": "fa-solid fa-angles-up",
+    "toolbarAdvance": 0,
+    "domainFilter": "none",
+    "domainSrc": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+    "domainSize": [
+      256,
+      256
+    ]
+  },
+  "card": {
+    "label": "Talent",
+    "bannerWidth": 117.6875,
+    "labelWidth": 117.6875,
+    "overflow": false,
+    "iconFilter": "none"
+  },
+  "actorTypes": {
+    "models": [
+      "adversary",
+      "character",
+      "environment",
+      "party"
+    ],
+    "manifest": [
+      "adversary",
+      "character",
+      "environment",
+      "party"
+    ],
+    "storedTalentType": "spell"
+  },
+  "browserErrors": []
+}

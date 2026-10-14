@@ -1,0 +1,15 @@
+{
+  "_id": "06e6c5ad0630e4fe",
+  "name": "Overwhelm",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-sword-blue.webp",
+  "system": {
+    "description": "<p>When a target the adversary attacks has other adversaries within Very Close range, deal double damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!06e6c5ad0630e4fe"
+}

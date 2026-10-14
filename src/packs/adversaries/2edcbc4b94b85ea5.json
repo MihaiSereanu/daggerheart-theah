@@ -1,0 +1,95 @@
+{
+  "_id": "2edcbc4b94b85ea5",
+  "name": "Shambling Zombie",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>An animated corpse that moves shakily, driven only by hunger.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "standard",
+    "difficulty": 10,
+    "notes": "<h3>Normal | Standard</h3>\n<p><em>An animated corpse that moves shakily, driven only by hunger.</em>\n<strong>Motives &amp; Tactics:</strong> Devour, hungry, mob enemy, shred flesh</p>\n<p><strong>Difficulty:</strong> 10 | <strong>Thresholds:</strong> 4/6 | <strong>HP:</strong> 4 | <strong>Stress:</strong> 1</p>\n<p><strong>ATK:</strong> +0 | Bite &amp; Claw: Melee | 1d6+1 physical</p>\n<hr>\n<p><strong>Experience:</strong> —</p>\n<h4>Features</h4>\n<p><strong>Too Many to Handle - Passive</strong>: When the Zombie is within Melee range of a creature and at least one other Zombie is within Close range, all attacks against that creature have Advantage.</p>\n<p><strong>Horrifying - Passive</strong>: Targets who mark HP from the Zombie&#39;s attacks must also <strong>mark a Stress</strong>.</p>\n",
+    "damageThresholds": {
+      "major": 4,
+      "severe": 6
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 4
+      },
+      "stress": {
+        "value": 0,
+        "max": 1
+      }
+    },
+    "motivesAndTactics": "Devour, hungry, mob enemy, shred flesh",
+    "experiences": {},
+    "attack": {
+      "_id": "a692acff4c00f451",
+      "name": "Bite & Claw",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/creatures/claws/claw-talons-yellow-red.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 0
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d6+1"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "68e9ac1ba0aa6be0",
+      "name": "Too Many to Handle - Passive",
+      "type": "feature",
+      "img": "icons/sundries/flags/banner-sword-blue.webp",
+      "system": {
+        "description": "<p>When the Zombie is within Melee range of a creature and at least one other Zombie is within Close range, all attacks against that creature have Advantage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!2edcbc4b94b85ea5.68e9ac1ba0aa6be0"
+    },
+    {
+      "_id": "de02e723894b3ee9",
+      "name": "Horrifying - Passive",
+      "type": "feature",
+      "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
+      "system": {
+        "description": "<p>Targets who mark HP from the Zombie&#39;s attacks must also <strong>mark a Stress</strong>.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!2edcbc4b94b85ea5.de02e723894b3ee9"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Shambling Zombie",
+    "actorLink": false
+  },
+  "_key": "!actors!2edcbc4b94b85ea5"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "40488bec5834b901",
+  "name": "Elusive Predator",
+  "type": "feature",
+  "img": "icons/skills/ranged/target-bullseye-arrow-green.webp",
+  "system": {
+    "description": "<p>When your Focus makes an attack against you, gain +2 Evasion against the attack.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "a17be006999e60eb",
+  "_key": "!items!40488bec5834b901"
+}

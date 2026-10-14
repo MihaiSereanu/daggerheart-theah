@@ -4,10 +4,8 @@
     data-group='{{tabs.settings.group}}'
 >
     {{#if (eq source.system.beastformType 'evolved')}}
-        {{formGroup systemFields.tier value=source.system.tier localize=true}}
     {{else}}
         <div class="two-columns even">
-            {{formGroup systemFields.tier value=source.system.tier localize=true}}
             {{formGroup systemFields.mainTrait value=source.system.mainTrait blank=false localize=true}}
         </div>
 

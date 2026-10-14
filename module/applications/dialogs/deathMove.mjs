@@ -30,7 +30,7 @@ export default class DhDeathMove extends HandlebarsApplicationMixin(ApplicationV
     static PARTS = {
         application: {
             id: 'death-move',
-            template: 'systems/daggerheart/templates/dialogs/deathMove.hbs'
+            template: 'systems/daggerheart-theah/templates/dialogs/deathMove.hbs'
         }
     };
 
@@ -190,7 +190,7 @@ export default class DhDeathMove extends HandlebarsApplicationMixin(ApplicationV
         const msg = {
             user: game.user.id,
             content: await foundry.applications.handlebars.renderTemplate(
-                'systems/daggerheart/templates/ui/chat/deathMove.hbs',
+                'systems/daggerheart-theah/templates/ui/chat/deathMove.hbs',
                 {
                     player: this.actor.name,
                     actor: this.actor,
@@ -208,7 +208,7 @@ export default class DhDeathMove extends HandlebarsApplicationMixin(ApplicationV
             title: game.i18n.localize('DAGGERHEART.UI.Chat.deathMove.title'),
             speaker: cls.getSpeaker(),
             flags: {
-                daggerheart: {
+                'daggerheart-theah': {
                     cssClass: 'dh-chat-message dh-style'
                 }
             }

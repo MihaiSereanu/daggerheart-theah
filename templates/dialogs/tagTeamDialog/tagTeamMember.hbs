@@ -51,7 +51,7 @@
                             {{localize "DAGGERHEART.GENERAL.roll"}}
                             <div class="roll-tools">
                                 <a class="roll-button" data-action="makeRoll" data-member="{{@root.partId}}">
-                                    <img src="systems/daggerheart/assets/icons/dice/hope/d12.svg" />
+                                    <img src="systems/daggerheart-theah/assets/icons/dice/hope/d12.svg" />
                                 </a>
 
                                 {{#if hasRolled}}
@@ -71,18 +71,18 @@
                                 <div class="roll-dice-container">
                                     <a class="roll-dice" data-action="rerollDice" data-member="{{@root.partId}}" data-dice-type="hope">
                                         <span class="dice-label">{{roll.dHope.total}}</span>
-                                        <img src="{{concat "systems/daggerheart/assets/icons/dice/hope/" roll.dHope.denomination ".svg"}}" />
+                                        <img src="{{concat "systems/daggerheart-theah/assets/icons/dice/hope/" roll.dHope.denomination ".svg"}}" />
                                     </a>
                                     <span class="roll-operator">+</span>
                                     <a class="roll-dice" data-action="rerollDice" data-member="{{@root.partId}}" data-dice-type="fear">
                                         <span class="dice-label">{{roll.dFear.total}}</span>
-                                        <img src="{{concat "systems/daggerheart/assets/icons/dice/fear/" roll.dFear.denomination ".svg"}}" />
+                                        <img src="{{concat "systems/daggerheart-theah/assets/icons/dice/fear/" roll.dFear.denomination ".svg"}}" />
                                     </a>
                                     {{#if roll.advantage.type}}
                                         <span class="roll-operator">{{#if (eq roll.advantage.type 1)}}+{{else}}-{{/if}}</span>
                                         <span class="roll-dice">
                                             <span class="dice-label">{{roll.advantage.value}}</span>
-                                            <img src="{{concat "systems/daggerheart/assets/icons/dice/" (ifThen (eq roll.advantage.type 1) "adv/" "disadv/") roll.advantage.dice ".svg"}}" />
+                                            <img src="{{concat "systems/daggerheart-theah/assets/icons/dice/" (ifThen (eq roll.advantage.type 1) "adv/" "disadv/") roll.advantage.dice ".svg"}}" />
                                         </span>
                                     {{/if}}
                                     <span class="roll-operator">{{#if (gte roll.modifierTotal 0)}}+{{else}}-{{/if}}</span>
@@ -101,7 +101,7 @@
                             {{localize "DAGGERHEART.GENERAL.damage"}}
                             <div class="roll-tools">
                                 <a class="roll-button" data-action="makeDamageRoll" data-member-key="{{@root.partId}}" {{#unless readyToRoll}}disabled{{/unless}}>
-                                    <img src="systems/daggerheart/assets/icons/dice/hope/d20.svg" />
+                                    <img src="systems/daggerheart-theah/assets/icons/dice/hope/d20.svg" />
                                 </a>
                                 <a class="delete-button" data-action="removeDamageRoll" data-member-key="{{@root.partId}}" {{#unless damage.active}}disabled{{/unless}}>
                                     <i class="fa-solid fa-trash"></i>
@@ -109,7 +109,7 @@
                             </div>
                         </span>
                         {{#if damage.active}}
-                            {{> "systems/daggerheart/templates/dialogs/tagTeamDialog/parts/tagTeamDamageParts.hbs" damage=damage isCritical=isCritical }}
+                            {{> "systems/daggerheart-theah/templates/dialogs/tagTeamDialog/parts/tagTeamDamageParts.hbs" damage=damage isCritical=isCritical }}
                         {{else}}
                             <span class="hint">{{localize "DAGGERHEART.APPLICATIONS.TagTeamSelect.makeYourRoll"}}</span>
                         {{/if}}

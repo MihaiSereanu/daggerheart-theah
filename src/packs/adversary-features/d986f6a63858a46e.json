@@ -1,0 +1,15 @@
+{
+  "_id": "d986f6a63858a46e",
+  "name": "Dive & Drop",
+  "type": "feature",
+  "img": "icons/magic/control/buff-flight-wings-blue.webp",
+  "system": {
+    "description": "<p>Mark a Stress to attack within Far range. On a success, deal 2d8 physical damage; the target must pass a Finesse Reaction Roll or be Restrained and immediately carried to Very Far. While flying, the adversary can spend another Fear drop its captive, ending its Restrained condition and dealing 2d20 physical damage upon landing unless the fall is prevented.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!d986f6a63858a46e"
+}

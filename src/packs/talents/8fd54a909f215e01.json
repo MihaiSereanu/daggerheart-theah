@@ -1,0 +1,20 @@
+{
+  "_id": "8fd54a909f215e01",
+  "name": "Unbowed",
+  "type": "domainCard",
+  "img": "icons/equipment/shield/heater-steel-gold.webp",
+  "system": {
+    "description": "<p>Gain a bonus to your Severe threshold equal to your Brawn. When you mark 1 or more HP from an attack, clear a Stress.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "valour",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "b68f69b8dced9462",
+  "_key": "!items!8fd54a909f215e01"
+}

@@ -1,0 +1,23 @@
+{
+  "_id": "53dc21fb02714f1b",
+  "name": "Sanderis",
+  "type": "subclass",
+  "img": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+  "system": {
+    "description": "<p>Play a Losejas to wield great demonic power at big costs.</p>\n<h4>SPELLCASTING TRAIT: CHARM</h4>\n<blockquote>\n<p>Sanderis is the sorcery of Sarmatia, where a <strong>Losejas</strong> forges a contract with a powerful otherworldly being called a dieva. The Losejas seeks the dieva’s true name to destroy it, while the dieva corrupts its host to break free; only one can prevail. Losejai are bound within a strict order known as the Ratas (the Circle). Those who defy it are hunted by the Purifiers, agents specialised in eliminating rogue sorcerers.</p>\n</blockquote>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.619fbc2f6e310fa4",
+    "spellcastingTrait": "charm",
+    "features": [
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.09da84128694020c"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": "1adde1032a0a00cf",
+  "_key": "!items!53dc21fb02714f1b"
+}

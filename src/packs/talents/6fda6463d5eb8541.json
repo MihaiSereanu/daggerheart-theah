@@ -1,0 +1,20 @@
+{
+  "_id": "6fda6463d5eb8541",
+  "name": "Geas",
+  "type": "domainCard",
+  "img": "icons/sundries/books/book-symbol-leaf-gold-green.webp",
+  "system": {
+    "description": "<p>You can tap into the leylines of the natural world with a Spellcasting Roll (15). On a success, you may <strong>mark 3 Stress</strong> to affect an event within the immediate future of this location. Until the next rest, you and all allies benefit from these effects:</p>\n<ul>\n<li>Gain Advantage on all Reaction Rolls</li>\n<li>When an ally rolls a Failure with Hope, you may <strong>mark a Stress</strong> to change it to a Success with Hope.</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "druidism",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "7f26513e087dfe71",
+  "_key": "!items!6fda6463d5eb8541"
+}

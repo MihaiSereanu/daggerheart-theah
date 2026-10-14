@@ -1,0 +1,50 @@
+{
+  "_id": "62ed690fa19d812c",
+  "name": "Scholar",
+  "type": "class",
+  "img": "icons/sundries/books/book-open-turquoise.webp",
+  "system": {
+    "description": "<p>Some spend their lives chasing glory. Scholars chase knowledge. Whether trained in grand academies, apprenticed to a reclusive master, or self-taught by candlelight in the corners of forgotten libraries, Scholars seek to understand the world through thought and study. They might be linguists, physicians, inventors, historians, and tacticians. They may even serve as advisors, court scribes, military engineers, or controversial lecturers.</p>\n<h5>STARTING EVASION: 10</h5>\n<h5>STARTING HP: 6</h5>\n<h4>Thematic Items</h4>\n<p>An untranslated book or a notebook filled with yourtheories</p>\n<h4>Scholar’s Hope Feature</h4>\n<p><strong>According to Plan</strong>. Any time you roll a failure with Fear, you can spend 3 Hope to spotlight an ally within Close range before the GM takes the spotlight.</p>\n<h4>Archetype Feature</h4>\n<h5>Academic Insight</h5>\n<p>Choose two fields of study that reflect your training, <em>e.g. History, Engineering, Medicine, Natural Philosophy, Warfare, Rhetoric, Linguistics</em>. When making an Action Roll where one of these fields is relevant, you may roll with Advantage.</p>\n<h5>Wordly Insight</h5>\n<p>You can make a Wits roll against an adversary to learn one of the following about them:</p>\n<ul>\n<li>Their current state of mind</li>\n<li>An Experience they may have and its value</li>\n<li>A hidden detail, either narrative or mechanical</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "evasion": 10,
+    "hitPoints": 6,
+    "domains": [],
+    "features": [
+      {
+        "type": "hope",
+        "item": "Compendium.daggerheart-theah.features.Item.7ce718a99ee62ed3"
+      },
+      {
+        "type": "class",
+        "item": "Compendium.daggerheart-theah.features.Item.576a0e06df064876"
+      },
+      {
+        "type": "class",
+        "item": "Compendium.daggerheart-theah.features.Item.590abf77171f6f8c"
+      }
+    ],
+    "subclasses": [
+      "Compendium.daggerheart-theah.specialisations.Item.676950e5b31bcf32",
+      "Compendium.daggerheart-theah.specialisations.Item.a69bdad14f5d8b8d"
+    ],
+    "inventory": {
+      "take": [],
+      "choiceA": [],
+      "choiceB": []
+    },
+    "backgroundQuestions": [
+      "What mystery first pushed you to pursue a life of study?",
+      "Who taught you to question everything, even when it was dangerous?",
+      "What truth do you believe that others call heresy?"
+    ],
+    "connections": [
+      "When did I first surprise you with something I knew that I shouldn’t have?",
+      "What secret do I keep for you, and why do you trust me with it?",
+      "How have I made your life more complicated, on purpose or not?"
+    ]
+  },
+  "effects": [],
+  "_key": "!items!62ed690fa19d812c"
+}

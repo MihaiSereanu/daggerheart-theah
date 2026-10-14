@@ -69,7 +69,7 @@ export const optionalResources = {
     favor: {
         id: 'favor',
         initial: 3,
-        max: 6,
+        max: 7,
         label: 'DAGGERHEART.CONFIG.Resources.optionalResources.favor',
         images: {
             full: { value: 'fa-solid fa-spaghetti-monster-flying', isIcon: true, opacity: 1 },

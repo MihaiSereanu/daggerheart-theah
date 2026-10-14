@@ -1,0 +1,15 @@
+{
+  "_id": "ed2f5203dcc25c77",
+  "name": "Elixir of the Charmer",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Elixir of the Charmer</strong>: Gain +1 Charm until your next rest.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!ed2f5203dcc25c77"
+}

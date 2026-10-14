@@ -1,0 +1,15 @@
+{
+  "_id": "858fa89daa67cdd2",
+  "name": "Horde (1d4+1)",
+  "type": "feature",
+  "img": "icons/sundries/flags/banner-sword-blue.webp",
+  "system": {
+    "description": "<p>When the adversary has marked half or more of their HP, their standard attack deals 1d4+1 physical damage instead.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!858fa89daa67cdd2"
+}

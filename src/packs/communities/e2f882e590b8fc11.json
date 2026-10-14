@@ -1,0 +1,18 @@
+{
+  "_id": "e2f882e590b8fc11",
+  "name": "Nobility",
+  "type": "community",
+  "img": "icons/magic/control/control-influence-crown-gold.webp",
+  "system": {
+    "description": "<p>You were raised among wealth, power, and titles. Whether noble by blood or merchant fortune, you belong to society’s upper ranks. Influence is your inheritance, and reputation is as valuable as gold. Noble characters move easily through courts and salons, trading favors and secrets like currency.</p>\n<p><strong>Privilege</strong>: You have advantage on rolls to consort with nobles or leverage your reputation to get what you want.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "features": [
+      "Compendium.daggerheart-theah.features.Item.95b8038db91eba51"
+    ],
+    "loreReference": null
+  },
+  "effects": [],
+  "_key": "!items!e2f882e590b8fc11"
+}

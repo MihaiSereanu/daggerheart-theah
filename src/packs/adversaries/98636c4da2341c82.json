@@ -1,0 +1,111 @@
+{
+  "_id": "98636c4da2341c82",
+  "name": "Skeletal Knight",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A large armored skeleton with a huge blade.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "bruiser",
+    "difficulty": 13,
+    "notes": "<h3>Normal | Bruiser</h3>\n<p><em>A large armored skeleton with a huge blade.</em><br><strong>Motives &amp; Tactics:</strong> Cut down the living, steal skin, wreak havoc</p>\n<p><strong>Difficulty:</strong> 13 | <strong>Thresholds:</strong> 7/13 | <strong>HP:</strong> 5 | <strong>Stress:</strong> 2</p>\n<p><strong>ATK:</strong> +2 | Weapon: Melee | 1d10+2 phy</p>\n<hr>\n<p><strong>Experience:</strong> Undying +2</p>\n<h4>Features</h4>\n<p><strong>Terrifying - Passive</strong>: When the Knight makes a successful attack, all PCs within Close range lose a Hope and you gain a Fear.</p>\n<p><strong>Cut to the Bone - Action</strong>: Mark a Stress to make an attack against all targets within Very Close range. Targets the Knight succeeds against take 1d8+2 physical damage and must <strong>mark a Stress</strong>.</p>\n<p><strong>Dig Two Graves - Reaction</strong>: When the Knight is defeated, they make an attack against a target within Very Close range (prioritizing the creature who killed them). On a success, the target takes 1d4+8 physical damage and loses 1d4 Hope.</p>\n",
+    "damageThresholds": {
+      "major": 7,
+      "severe": 13
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 5
+      },
+      "stress": {
+        "value": 0,
+        "max": 2
+      }
+    },
+    "motivesAndTactics": "Cut down the living, steal skin, wreak havoc",
+    "experiences": {
+      "a13cbf6147554d58": {
+        "name": "Undying",
+        "value": 2
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/hand-grip-sword-orange.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 2
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d10+2"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "cf03e3014329454c",
+      "name": "Terrifying - Passive",
+      "type": "feature",
+      "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
+      "system": {
+        "description": "<p>When the Knight makes a successful attack, all PCs within Close range lose a Hope and you gain a Fear.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!98636c4da2341c82.cf03e3014329454c"
+    },
+    {
+      "_id": "0082736c8f7f9506",
+      "name": "Cut to the Bone - Action",
+      "type": "feature",
+      "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+      "system": {
+        "description": "<p>Mark a Stress to make an attack against all targets within Very Close range. Targets the Knight succeeds against take 1d8+2 physical damage and must <strong>mark a Stress</strong>.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!98636c4da2341c82.0082736c8f7f9506"
+    },
+    {
+      "_id": "4586056b7df3940d",
+      "name": "Dig Two Graves - Reaction",
+      "type": "feature",
+      "img": "icons/sundries/books/book-symbol-skull-grey.webp",
+      "system": {
+        "description": "<p>When the Knight is defeated, they make an attack against a target within Very Close range (prioritizing the creature who killed them). On a success, the target takes 1d4+8 physical damage and loses 1d4 Hope.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!98636c4da2341c82.4586056b7df3940d"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Skeletal Knight",
+    "actorLink": false
+  },
+  "_key": "!actors!98636c4da2341c82"
+}

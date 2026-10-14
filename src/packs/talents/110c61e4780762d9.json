@@ -1,0 +1,20 @@
+{
+  "_id": "110c61e4780762d9",
+  "name": "Mirrorwalk",
+  "type": "domainCard",
+  "img": "icons/magic/control/buff-luck-fortune-rainbow.webp",
+  "system": {
+    "description": "<p>Make a <strong>Spellcast Roll (10)</strong>. On a success, <strong>mark a Stress</strong> and choose yourself or an ally you can see to pass into the realm of the Sidhe. The target steps into a nearby reflective surface and vanishes from view.</p>\n<p>Activate a Countdown (4). Each time they make a roll with Fear while in the Mirror, tick down the Countdown. When it ticks 0, they are forced to re-emerge. When they re-emerge, they must mark Stress equal to the number of ticks marked on the Countdown. The target may exit through any reflective surface they can see.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "glamour",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "33dde1086e88a00a",
+  "_key": "!items!110c61e4780762d9"
+}

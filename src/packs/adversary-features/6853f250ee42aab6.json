@@ -1,0 +1,15 @@
+{
+  "_id": "6853f250ee42aab6",
+  "name": "Flailing Limbs",
+  "type": "feature",
+  "img": "icons/creatures/claws/claw-talons-yellow-red.webp",
+  "system": {
+    "description": "<p>When the adversary makes a standard attack, they can attack all targets within Very Close range.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!6853f250ee42aab6"
+}

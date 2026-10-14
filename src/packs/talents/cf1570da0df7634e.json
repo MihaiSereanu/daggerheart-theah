@@ -1,0 +1,20 @@
+{
+  "_id": "cf1570da0df7634e",
+  "name": "Swift Defense",
+  "type": "domainCard",
+  "img": "icons/skills/melee/swords-parry-block-yellow.webp",
+  "system": {
+    "description": "<p>When targeted by an attack, <strong>mark 2 Stress</strong> to roll a d4 and add the result to your Evasion.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "tactics",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "6ba62ee322f96c14",
+  "_key": "!items!cf1570da0df7634e"
+}

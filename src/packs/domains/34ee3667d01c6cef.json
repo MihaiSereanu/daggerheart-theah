@@ -1,0 +1,14 @@
+{
+  "_id": "34ee3667d01c6cef",
+  "name": "Flair",
+  "type": "feature",
+  "img": "icons/skills/melee/strike-blade-scimitar-orange-blue.webp",
+  "system": {
+    "description": "<h2>Flair</h2>\n<ul>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.1ac278dfe638653e]{Casual Side-Step}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.dfdab5107a9c54c3]{Daring Stunt}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.f08e0b4d34206e98]{Deadly Draw}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.eb271b63b5878e46]{Deadly One-Liner}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.32ed2828ab9ecf1a]{False Opening}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.af29e41937b489e4]{No Time for Henchmen}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.f2fc6239e934bf0c]{Not Left-Handed}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.0bafbca43ca48795]{Showman}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.ff74e559f2bab2c5]{Tempt the Odds}</li>\n<li>@UUID[Compendium.daggerheart-theah.talents.Item.43eed949e042ad94]{Trick up my sleeve}</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!34ee3667d01c6cef"
+}

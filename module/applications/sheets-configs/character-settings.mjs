@@ -21,16 +21,16 @@ export default class DHCharacterSettings extends DHBaseActorSettings {
     static PARTS = {
         header: {
             id: 'header',
-            template: 'systems/daggerheart/templates/sheets-settings/character-settings/header.hbs'
+            template: 'systems/daggerheart-theah/templates/sheets-settings/character-settings/header.hbs'
         },
-        tabs: { template: 'systems/daggerheart/templates/sheets/global/tabs/tab-navigation.hbs' },
+        tabs: { template: 'systems/daggerheart-theah/templates/sheets/global/tabs/tab-navigation.hbs' },
         details: {
             id: 'details',
-            template: 'systems/daggerheart/templates/sheets-settings/character-settings/details.hbs'
+            template: 'systems/daggerheart-theah/templates/sheets-settings/character-settings/details.hbs'
         },
         experiences: {
             id: 'experiences',
-            template: 'systems/daggerheart/templates/sheets-settings/character-settings/experiences.hbs',
+            template: 'systems/daggerheart-theah/templates/sheets-settings/character-settings/experiences.hbs',
             scrollable: ['.scroll-container']
         }
     };

@@ -1,0 +1,15 @@
+{
+  "_id": "bcefb3fb1b1b4c22",
+  "name": "Dripfang Poison",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Dripfang Poison</strong>: A creature who consumes this poison takes 2d10 direct magic damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!bcefb3fb1b1b4c22"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "e5202165797d5b1f",
+  "name": "Ash of the Hidden Ones",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Ash of the Hidden Ones</strong>: When attacked, scatter this vial; roll d6s equal to your Finesse and add the highest to your Evasion.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!e5202165797d5b1f"
+}

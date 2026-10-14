@@ -1,0 +1,15 @@
+{
+  "_id": "237677b446ca8385",
+  "name": "Fragile",
+  "type": "feature",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": "<p>When you take Major+ damage, you drop out of Beastform.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "26b2b27841c5f032",
+  "_key": "!items!237677b446ca8385"
+}

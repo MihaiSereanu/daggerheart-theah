@@ -38,7 +38,7 @@ export default class ActiveEffectPathViewer extends HandlebarsApplicationMixin(A
     /** @override */
     static PARTS = {
         main: {
-            template: 'systems/daggerheart/templates/dialogs/activeEffectPathViewer.hbs',
+            template: 'systems/daggerheart-theah/templates/dialogs/activeEffectPathViewer.hbs',
             scrollable: ['.paths-container']
         }
     };

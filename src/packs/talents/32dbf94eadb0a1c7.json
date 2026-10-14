@@ -1,0 +1,20 @@
+{
+  "_id": "32dbf94eadb0a1c7",
+  "name": "Shared Tactics",
+  "type": "domainCard",
+  "img": "icons/sundries/flags/banner-sword-blue.webp",
+  "system": {
+    "description": "<p><strong>Mark a Stress</strong> to encourage cooperation - you and all allies that can hear you gain a +1 bonus to Evasion until the end of the scene or one of you takes Severe or higher damage</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "anchor",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "9aaa1110e6898797",
+  "_key": "!items!32dbf94eadb0a1c7"
+}

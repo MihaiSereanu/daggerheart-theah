@@ -1,0 +1,323 @@
+.adversary-creator {
+    .window-content {
+        gap: 12px;
+    }
+
+    .adversary-creator-part {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        min-height: 0;
+
+        > .form-footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 12px;
+
+            > button {
+                flex: 0 0 auto;
+                width: auto;
+                min-width: 110px;
+            }
+        }
+    }
+
+    .adversary-creator-content {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        max-height: calc(100vh - 170px);
+        padding-right: 4px;
+        overflow-y: auto;
+    }
+
+    .adversary-type-step {
+        padding: 8px;
+    }
+
+    .adversary-creator-heading,
+    .adversary-identity-grid,
+    .adversary-feature-toolbar,
+    .adversary-feature-result > header,
+    .adversary-experience-row,
+    .adversary-slider-row {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .adversary-creator-heading {
+        justify-content: space-between;
+        padding: 8px 10px;
+        border: 1px solid var(--color-border-light-primary);
+        border-radius: 5px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        span {
+            font-size: 0.75rem;
+            opacity: 0.75;
+        }
+
+        strong {
+            font-size: 1.15rem;
+        }
+
+        button {
+            flex: 0 0 auto;
+            width: auto;
+        }
+    }
+
+    .adversary-identity-grid {
+        align-items: stretch;
+
+        .adversary-name-field {
+            flex: 1;
+        }
+    }
+
+    .adversary-champion-toggle {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        min-width: 235px;
+        padding: 7px 10px;
+        border: 1px solid var(--color-border-light-primary);
+        border-radius: 5px;
+        cursor: pointer;
+
+        input {
+            flex: 0 0 auto;
+        }
+
+        span {
+            display: flex;
+            flex-direction: column;
+        }
+
+        small {
+            opacity: 0.75;
+        }
+    }
+
+    fieldset {
+        margin: 0;
+    }
+
+    .adversary-stat-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px 16px;
+    }
+
+    .adversary-stat-control {
+        display: grid;
+        grid-template-columns: minmax(110px, 1fr) minmax(140px, 1.6fr);
+        align-items: center;
+        gap: 8px;
+
+        > output {
+            min-width: 42px;
+            padding: 3px 8px;
+            border: 1px solid var(--color-border-light-primary);
+            border-radius: 4px;
+            text-align: center;
+            font-weight: 700;
+        }
+    }
+
+    .adversary-slider-row {
+        display: grid;
+        grid-template-columns: 20px minmax(70px, 1fr) 20px 38px;
+
+        > span {
+            font-size: 0.75rem;
+            text-align: center;
+            opacity: 0.75;
+        }
+
+        input[type='range'] {
+            min-width: 70px;
+        }
+
+        output {
+            text-align: center;
+            font-weight: 700;
+        }
+    }
+
+    .adversary-text-fields {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+
+        > .form-group {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 4px;
+
+            > label {
+                display: block;
+                flex: none;
+                width: 100%;
+                margin: 0;
+            }
+
+            > textarea {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    .adversary-experience-row {
+        margin-bottom: 6px;
+
+        input {
+            flex: 1;
+        }
+
+        button {
+            flex: 0 0 34px;
+            width: 34px;
+        }
+    }
+
+    .adversary-add-row,
+    .adversary-feature-toolbar > button {
+        width: auto;
+    }
+
+    .adversary-feature-toolbar {
+        align-items: flex-start;
+    }
+
+    .adversary-selected-features {
+        display: flex;
+        flex: 1;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .adversary-feature-empty {
+        margin: 7px 0;
+        opacity: 0.7;
+    }
+
+    .adversary-feature-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 3px 3px 3px 8px;
+        border: 1px solid var(--color-border-light-primary);
+        border-radius: 12px;
+
+        button {
+            width: 22px;
+            min-width: 22px;
+            height: 22px;
+            min-height: 22px;
+            padding: 0;
+            border: 0;
+            background: transparent;
+        }
+    }
+
+    .adversary-feature-picker {
+        margin-top: 10px;
+
+        > input {
+            width: 100%;
+            margin-bottom: 8px;
+        }
+    }
+
+    .adversary-feature-results {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        max-height: 330px;
+        overflow-y: auto;
+    }
+
+    .adversary-feature-result {
+        padding: 8px;
+        border: 1px solid var(--color-border-light-primary);
+        border-radius: 5px;
+
+        &.selected {
+            border-color: var(--color-warm-2);
+        }
+
+        > header {
+            justify-content: space-between;
+
+            div {
+                display: flex;
+                flex-direction: column;
+            }
+
+            span {
+                font-size: 0.75rem;
+                opacity: 0.75;
+            }
+
+            .adversary-feature-actions {
+                display: flex;
+                flex-direction: row;
+                gap: 6px;
+
+                button {
+                    flex: 0 0 auto;
+                    width: auto;
+                    min-width: 84px;
+                }
+            }
+        }
+    }
+
+    .adversary-feature-preview {
+        margin-top: 8px;
+        padding-top: 8px;
+        border-top: 1px solid var(--color-border-light-primary);
+
+        > :first-child {
+            margin-top: 0;
+        }
+
+        > :last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+[data-tab='actors'] .header-actions {
+    > .open-compendium-browser,
+    > .open-adversary-creator {
+        flex: 1 0 100%;
+    }
+}
+
+@media (max-width: 720px) {
+    .adversary-creator {
+        .adversary-stat-grid,
+        .adversary-text-fields {
+            grid-template-columns: 1fr;
+        }
+
+        .adversary-identity-grid {
+            align-items: stretch;
+            flex-direction: column;
+        }
+    }
+}

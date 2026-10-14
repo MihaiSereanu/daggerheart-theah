@@ -1,0 +1,95 @@
+{
+  "_id": "6589c640b5eee5db",
+  "name": "Elite Soldier",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>An armored squire or experienced commoner looking to advance.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "standard",
+    "difficulty": 13,
+    "notes": "<h3>Normal | Standard</h3>\n<p><em>An armored squire or experienced commoner looking to advance.</em>\n<strong>Motives &amp; Tactics:</strong> Gain glory, keep order, make alliances</p>\n<p><strong>Difficulty:</strong> 13 | <strong>Thresholds:</strong> 8/12 | <strong>HP:</strong> 4 | <strong>Stress:</strong> 3</p>\n<p><strong>ATK:</strong> +1 | Weapon: Very Close | 1d8+2 physical</p>\n<hr>\n<p><strong>Experience:</strong> —</p>\n<h4>Features</h4>\n<p><strong>Reinforce - Action</strong>: Mark a Stress to move into Melee range of an ally and make a standard attack against a target within Very Close range. On a success, deal 2d10+2 physical damage and the ally can clear a Stress.</p>\n<p><strong>Veteran’s Loyalty - Reaction</strong>: When the Soldier is within Very Close range of an ally who would take damage, you can <strong>mark a Stress</strong> to move into Melee range of them and take the damage instead.</p>\n",
+    "damageThresholds": {
+      "major": 8,
+      "severe": 12
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 4
+      },
+      "stress": {
+        "value": 0,
+        "max": 3
+      }
+    },
+    "motivesAndTactics": "Gain glory, keep order, make alliances",
+    "experiences": {},
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/ranged/target-bullseye-arrow-green.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "veryClose",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 1
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d8+2"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "ec529815255f58d8",
+      "name": "Reinforce - Action",
+      "type": "feature",
+      "img": "icons/equipment/shield/heater-steel-gold.webp",
+      "system": {
+        "description": "<p>Mark a Stress to move into Melee range of an ally and make a standard attack against a target within Very Close range. On a success, deal 2d10+2 physical damage and the ally can clear a Stress.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!6589c640b5eee5db.ec529815255f58d8"
+    },
+    {
+      "_id": "76b55e590b1d71c0",
+      "name": "Veteran’s Loyalty - Reaction",
+      "type": "feature",
+      "img": "icons/equipment/shield/heater-steel-gold.webp",
+      "system": {
+        "description": "<p>When the Soldier is within Very Close range of an ally who would take damage, you can <strong>mark a Stress</strong> to move into Melee range of them and take the damage instead.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!6589c640b5eee5db.76b55e590b1d71c0"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Elite Soldier",
+    "actorLink": false
+  },
+  "_key": "!actors!6589c640b5eee5db"
+}

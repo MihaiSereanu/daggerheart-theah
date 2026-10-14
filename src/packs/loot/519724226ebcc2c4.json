@@ -1,0 +1,15 @@
+{
+  "_id": "519724226ebcc2c4",
+  "name": "Hopekeeper Locket",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Hopekeeper Locket</strong>: During a Rest, if you have 6 Hope, you can <strong>spend a Hope</strong> to imbue this locket with your resolve. When you have 0 Hope, you can use the locket to immediately gain the stored Hope.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!519724226ebcc2c4"
+}

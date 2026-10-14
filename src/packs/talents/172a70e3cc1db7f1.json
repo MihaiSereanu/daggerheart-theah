@@ -1,0 +1,20 @@
+{
+  "_id": "172a70e3cc1db7f1",
+  "name": "Strange Patterns",
+  "type": "domainCard",
+  "img": "icons/commodities/cloth/thread-and-needle.webp",
+  "system": {
+    "description": "<p>When you first choose this Talent, choose a number between 1 and 12. When you roll that number on a Duality die, gain a Hope or clear a Stress. You may change this number every time you gain a level.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "sorte",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "172ae6710886d3ba",
+  "_key": "!items!172a70e3cc1db7f1"
+}

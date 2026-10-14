@@ -1,0 +1,50 @@
+{
+  "_id": "a0f9c2617d466398",
+  "name": "Soldier",
+  "type": "class",
+  "img": "icons/skills/melee/shield-block-bash-blue.webp",
+  "system": {
+    "description": "<p>Soldiers are often mercenaries, bodyguards, or loyal retainers, but the role transcends profession. It is a calling to protect others. Many serve causes or crowns, but most follow people: those they are protectors, above all and no matter the odds. Soldiers stand fast when others flee.</p>\n<h5>STARTING EVASION: 9</h5>\n<h5>STARTING HP: 7</h5>\n<h4>Thematic Items</h4>\n<p>A keepsake from your mentor or a secret key</p>\n<h4>Soldier’s Hope Feature</h4>\n<p><strong>Bulwark</strong>. Spend 3 Hope to clear 2 Armor Slots.</p>\n<h4>Archetype Feature</h4>\n<h5>Unstoppable</h5>\n<p>Once per rest, you can declare yourself <em>Unstoppable</em>. You gain an <em>Unstoppable Die</em> - place it on your sheet with the 1 facing up. Each time you deal 1 or more Hit Points of damage, increase the die&#39;s value by 1. If the value would exceed the die’s maximum or the scene ends, remove the die and lose the Unstoppable state. While <em>Unstoppable</em>, you gain the following benefits:</p>\n<ul>\n<li>Reduce the severity of physical damage by one threshold</li>\n<li>Add the current value of your Die to damage rolls</li>\n</ul>\n<blockquote>\n<p>Your Unstoppable die is a d4 at level 1, and d6 at level 5.</p>\n</blockquote>\n<h5>Combat Discipline</h5>\n<p>Once per combat scene, when you fail with Fear, you may <strong>mark a Stres</strong>s to reroll your Hope die.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "evasion": 9,
+    "hitPoints": 7,
+    "domains": [],
+    "features": [
+      {
+        "type": "hope",
+        "item": "Compendium.daggerheart-theah.features.Item.0ec042045da6b580"
+      },
+      {
+        "type": "class",
+        "item": "Compendium.daggerheart-theah.features.Item.375752c666dd2bf6"
+      },
+      {
+        "type": "class",
+        "item": "Compendium.daggerheart-theah.features.Item.34d6a72e5cfaaade"
+      }
+    ],
+    "subclasses": [
+      "Compendium.daggerheart-theah.specialisations.Item.1cd306047391e578",
+      "Compendium.daggerheart-theah.specialisations.Item.4a2577d6abe4be00"
+    ],
+    "inventory": {
+      "take": [],
+      "choiceA": [],
+      "choiceB": []
+    },
+    "backgroundQuestions": [
+      "Who did you fail to protect, and why do they still haunt your thoughts?",
+      "You were entrusted with something precious and dangerous. What is it, and what must you do?",
+      "There is something in yourself you see as a weakness. What is it, and how has it shaped your path?"
+    ],
+    "connections": [
+      "How did I save your life the first time we met?",
+      "What small gift did you give me that I always carry with me? Did I give you something in return?",
+      "What lie have you told me that I still believe without question?"
+    ]
+  },
+  "effects": [],
+  "_key": "!items!a0f9c2617d466398"
+}

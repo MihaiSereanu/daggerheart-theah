@@ -133,7 +133,7 @@ export default class DamageField extends fields.SchemaField {
 
                 damagePromises.push(
                     actor
-                        .takeDamage(configDamage, config.isDirect)
+                        .takeDamage(configDamage, config.isDirect, { extraSevereHP: this.item?.system.blackpowder ? 1 : 0, bypassResistance: Boolean(this.item?.system.ironforged) })
                         .then(updates => { 
                             if (!updates.length) return;
 
@@ -179,7 +179,7 @@ export default class DamageField extends fields.SchemaField {
                     `DAGGERHEART.UI.Chat.damageSummary.${config.hasHealing ? 'healingTitle' : 'title'}`
                 ),
                 content: await foundry.applications.handlebars.renderTemplate(
-                    'systems/daggerheart/templates/ui/chat/damageSummary.hbs',
+                    'systems/daggerheart-theah/templates/ui/chat/damageSummary.hbs',
                     {
                         targets: targetDamage,
                         allResourceLabels: getAllResourceLabels(),

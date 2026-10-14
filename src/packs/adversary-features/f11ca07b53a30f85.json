@@ -1,0 +1,15 @@
+{
+  "_id": "f11ca07b53a30f85",
+  "name": "No Quarter",
+  "type": "feature",
+  "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+  "system": {
+    "description": "<p>Spend a Fear to target a foe with three or more Pirates in Melee. The adversary leads a chorus of threats; the target makes a Charm Reaction Roll. On a failure, they mark 1d4+1 Stress. On a success, they still mark 1 Stress.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!f11ca07b53a30f85"
+}

@@ -3,6 +3,11 @@ import DHBaseAction from './baseAction.mjs';
 export default class DhCountdownAction extends DHBaseAction {
     static extraSchemas = [...super.extraSchemas, 'countdown'];
 
+    // Read legacy action data without allowing the removed countdown workflow to run.
+    async use() {
+        return ui.notifications.warn('Countdown actions are no longer available. Track this clock manually.');
+    }
+
     get defaultValues() {
         return {
             ...super.defaultValues,

@@ -1,0 +1,15 @@
+{
+  "_id": "4963cd5961754663",
+  "name": "Steadfast",
+  "type": "feature",
+  "img": "icons/creatures/abilities/lion-roar-yellow.webp",
+  "system": {
+    "description": "<p>When you fail a roll that utilized one of your Experiences, you can <strong>mark a Stress</strong> to reroll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "03dbe8149d7c33f1",
+  "_key": "!items!4963cd5961754663"
+}

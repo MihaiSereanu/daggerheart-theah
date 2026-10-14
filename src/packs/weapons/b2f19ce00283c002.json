@@ -1,0 +1,77 @@
+{
+  "_id": "b2f19ce00283c002",
+  "name": "Greatsword",
+  "type": "weapon",
+  "img": "icons/weapons/swords/greatsword-crossguard-steel.webp",
+  "system": {
+    "description": "<p><strong>Greatsword</strong></p>\n<p><strong>Massive</strong>: -1 to Evasion; roll an extra damage die and drop the lowest on hit</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "blackpowder": false,
+    "reloading": false,
+    "secondary": false,
+    "burden": "twoHanded",
+    "weaponFeatures": [
+      {
+        "value": "massive",
+        "effectIds": [],
+        "actionIds": []
+      }
+    ],
+    "attack": {
+      "_id": "81e0fca7e23ceb9b",
+      "name": "Greatsword",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/weapons/swords/greatsword-crossguard-steel.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": "brawn",
+        "bonus": 0
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d12+1 + @brawn"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "11ff46a59aff1380",
+      "name": "Greatsword",
+      "type": "base",
+      "transfer": true,
+      "img": "icons/weapons/swords/greatsword-crossguard-steel.webp",
+      "system": {
+        "changes": [
+          {
+            "type": "add",
+            "key": "system.evasion",
+            "value": -1,
+            "phase": "initial"
+          }
+        ]
+      },
+      "_key": "!items.effects!b2f19ce00283c002.11ff46a59aff1380"
+    }
+  ],
+  "_key": "!items!b2f19ce00283c002"
+}

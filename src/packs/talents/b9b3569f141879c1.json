@@ -1,0 +1,20 @@
+{
+  "_id": "b9b3569f141879c1",
+  "name": "Redirect",
+  "type": "domainCard",
+  "img": "icons/skills/melee/swords-parry-block-yellow.webp",
+  "system": {
+    "description": "<p>When a ranged attack against you fails, roll a number of d6s equal to your Instinct. If any die rolls a 6, <strong>mark a Stress</strong> to redirect the attack to a foe within Very Close range.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "tactics",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "6ba62ee322f96c14",
+  "_key": "!items!b9b3569f141879c1"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "873c168facee464f",
+  "name": "Sorcerous Aptitude",
+  "type": "feature",
+  "img": "icons/magic/symbols/runes-star-magenta.webp",
+  "system": {
+    "description": "<p>You have learned to harness magic for violence with an <strong>Action Roll using your Spellcasting Trait</strong>. On a success, deal <em>1d6+Trait magic damage</em> within Far range. You must describe the attack in line with your chosen Tradition.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "bad69822cb6a96d8",
+  "_key": "!items!873c168facee464f"
+}

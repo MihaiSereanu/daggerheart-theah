@@ -1,0 +1,14 @@
+{
+  "_id": "1f8a307a39dd410d",
+  "name": "Eisenfaust",
+  "type": "feature",
+  "img": "icons/equipment/hand/gauntlet-clawed-steel-blue.webp",
+  "system": {
+    "description": "<p><strong>Required Weapon: Broadsword &amp; Panzerhand</strong>\nEisenfaust uses an iron gauntlet to deflect or trap attacks, setting up brutal counters. A patient and punishing Eisen style, practiced by many veterans of the War of the Cross.</p>\n<ul>\n<li><strong>Iron Retort</strong>. After successfully avoiding damage from an attack, you can <strong>mark a Stress</strong> to make an attack that deals 2d4 extra damage.</li>\n<li><strong>Panzershield.</strong> Whenever you take damage, you may <strong>mark a Stress</strong> to reduce the damage by 2d4.</li>\n<li><strong>Dangerous Counters.</strong> You gain a bonus to your damage rolls equal to twice your number of marked Hit Points.</li>\n</ul>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "_key": "!items!1f8a307a39dd410d"
+}

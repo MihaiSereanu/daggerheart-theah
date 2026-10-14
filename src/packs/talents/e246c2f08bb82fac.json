@@ -1,0 +1,20 @@
+{
+  "_id": "e246c2f08bb82fac",
+  "name": "Rune of Retribution",
+  "type": "domainCard",
+  "img": "icons/magic/symbols/runes-carved-stone-purple.webp",
+  "system": {
+    "description": "<p>By speaking the first words of wrath, you may mark an adversary within Close range with a sigil. The GM gains a Fear. When the marked adversary deals damage to you or your allies, roll a d8 and make a note of the result. You can do this a number of times equal to your Wits. When you successfully attack the marked adversary, add the pooled d8s to your damage roll, then clear the dice. This effect ends when the marked adversary is defeated or you speak the words again.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "galdr",
+    "type": "spell",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "1c31d70f005aa82e",
+  "_key": "!items!e246c2f08bb82fac"
+}

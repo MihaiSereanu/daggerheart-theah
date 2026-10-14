@@ -26,7 +26,7 @@ export default class MulticlassChoiceDialog extends HandlebarsApplicationMixin(A
     static PARTS = {
         application: {
             id: 'multiclass-choice',
-            template: 'systems/daggerheart/templates/dialogs/multiclassChoice.hbs'
+            template: 'systems/daggerheart-theah/templates/dialogs/multiclassChoice.hbs'
         }
     };
 

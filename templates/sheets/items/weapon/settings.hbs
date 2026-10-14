@@ -8,8 +8,6 @@
             {{localize tabs.settings.label}}
             <a data-action="configureAttack" data-tooltip="{{localize 'DAGGERHEART.ITEMS.Weapon.configureAttack'}}"><i class="fa-solid fa-wrench icon-button"></i></a>
         </legend>
-        <span>{{localize "DAGGERHEART.GENERAL.Tiers.singular"}}</span>
-        {{formInput systemFields.tier value=source.system.tier}}
         <span>{{localize "DAGGERHEART.ITEMS.Weapon.secondaryWeapon.full"}}</span>
         {{formInput systemFields.secondary value=source.system.secondary}}
         <span>{{localize "DAGGERHEART.GENERAL.Trait.single"}}</span>
@@ -45,7 +43,7 @@
     </fieldset>
     <fieldset class="two-columns">
         <legend>{{localize "TYPES.Item.feature"}}</legend>
-        
+
         <div class="nested-inputs">
             <span>{{localize "TYPES.Item.feature"}}</span>
             {{#if featureErrors}}
@@ -55,5 +53,5 @@
 
         <input type="text" class="features-input" value="{{features}}" />
     </fieldset>
-    {{> "systems/daggerheart/templates/sheets/global/partials/resource-section/resource-section.hbs" }}
+    {{> "systems/daggerheart-theah/templates/sheets/global/partials/resource-section/resource-section.hbs" }}
 </section>

@@ -1,0 +1,130 @@
+{
+  "_id": "9f435cc60c31add6",
+  "name": "Noble",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A richly dressed and adorned aristocrat brimming with hubris.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "social",
+    "difficulty": 14,
+    "notes": "<h3>Normal | Social</h3>\n<p><em>A richly dressed and adorned aristocrat brimming with hubris.</em>\n<strong>Motives &amp; Tactics:</strong> Abuse power, gather resources, mobilize minions</p>\n<p><strong>Difficulty:</strong> 14 | <strong>Thresholds:</strong> 6/10 | <strong>HP:</strong> 3 | <strong>Stress:</strong> 5</p>\n<p><strong>ATK:</strong> -3 | Weapon: Melee | 1d6+1 physical</p>\n<hr>\n<p><strong>Experience:</strong> Aristocrat +3</p>\n<h4>Features</h4>\n<p><strong>My Land, My Rules - Passive</strong>: All social actions made against the Noble on their land have Disadvantage.</p>\n<p><strong>Guards, Seize Them! - Action</strong>: Once per scene, <strong>mark a Stress</strong> to summon 1d4 Guards, who appear at Far range.</p>\n<p><strong>Exile - Action</strong>: Spend a Fear and target a PC. The Noble exiles the target and their allies, giving them Disadvantage in social situations within their domain.</p>\n<p><strong>Execute Them! - Action:</strong> Spend a Fear per PC to have the group condemned for crimes real or imagined. A successful Charm roll can demand trial by combat or another special form of trial.</p>\n",
+    "damageThresholds": {
+      "major": 6,
+      "severe": 10
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 3
+      },
+      "stress": {
+        "value": 0,
+        "max": 5
+      }
+    },
+    "motivesAndTactics": "Abuse power, gather resources, mobilize minions",
+    "experiences": {
+      "66f4e8abc63c2a75": {
+        "name": "Aristocrat",
+        "value": 3
+      }
+    },
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/hand-grip-sword-orange.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": -3
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d6+1"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "b62612ea50d506f9",
+      "name": "My Land, My Rules - Passive",
+      "type": "feature",
+      "img": "icons/environment/wilderness/tree-oak.webp",
+      "system": {
+        "description": "<p>All social actions made against the Noble on their land have Disadvantage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!9f435cc60c31add6.b62612ea50d506f9"
+    },
+    {
+      "_id": "c87fcb99205af26c",
+      "name": "Guards, Seize Them! - Action",
+      "type": "feature",
+      "img": "icons/sundries/flags/banner-sword-blue.webp",
+      "system": {
+        "description": "<p>Once per scene, <strong>mark a Stress</strong> to summon 1d4 Guards, who appear at Far range.</p>\n",
+        "resource": {
+          "type": "simple",
+          "value": 0,
+          "max": "1",
+          "recovery": "scene",
+          "progression": "increasing",
+          "label": "Uses"
+        }
+      },
+      "effects": [],
+      "_key": "!actors.items!9f435cc60c31add6.c87fcb99205af26c"
+    },
+    {
+      "_id": "f06d10b0ef66fe2d",
+      "name": "Exile - Action",
+      "type": "feature",
+      "img": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
+      "system": {
+        "description": "<p>Spend a Fear and target a PC. The Noble exiles the target and their allies, giving them Disadvantage in social situations within their domain.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!9f435cc60c31add6.f06d10b0ef66fe2d"
+    },
+    {
+      "_id": "e6164ff6fd5e7c71",
+      "name": "Execute Them! - Action",
+      "type": "feature",
+      "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+      "system": {
+        "description": "<p>Spend a Fear per PC to have the group condemned for crimes real or imagined. A successful Charm roll can demand trial by combat or another special form of trial.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!9f435cc60c31add6.e6164ff6fd5e7c71"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Noble",
+    "actorLink": false
+  },
+  "_key": "!actors!9f435cc60c31add6"
+}

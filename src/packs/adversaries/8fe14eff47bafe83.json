@@ -1,0 +1,95 @@
+{
+  "_id": "8fe14eff47bafe83",
+  "name": "Skeleton Warrior",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A dirt-covered skeleton armed with a rusted blade.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "normal",
+    "type": "standard",
+    "difficulty": 10,
+    "notes": "<h3>Normal | Standard</h3>\n<p><em>A dirt-covered skeleton armed with a rusted blade.</em>\n<strong>Motives &amp; Tactics:</strong> Fein death, gang up, steal skin</p>\n<p><strong>Difficulty:</strong> 10 | <strong>Thresholds:</strong> 4/8 | <strong>HP:</strong> 3 | <strong>Stress:</strong> 2</p>\n<p><strong>ATK:</strong> +0 | Weapon: Melee | 1d6+2 physical</p>\n<hr>\n<p><strong>Experience:</strong> —</p>\n<h4>Features</h4>\n<p><strong>Only Bones - Passive</strong>: The Warrior is resistant to physical damage.</p>\n<p><strong>Won&#39;t Stay Dead - Reaction</strong>: When the Warrior is defeated, you can spotlight them and roll a d6. On a result of 6, if there are other adversaries on the battlefield, the Warrior re-forms with full HP.</p>\n",
+    "damageThresholds": {
+      "major": 4,
+      "severe": 8
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 3
+      },
+      "stress": {
+        "value": 0,
+        "max": 2
+      }
+    },
+    "motivesAndTactics": "Fein death, gang up, steal skin",
+    "experiences": {},
+    "attack": {
+      "_id": "f005a7a22f4a8cd8",
+      "name": "Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/skills/melee/hand-grip-sword-orange.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 0
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d6+2"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "7e1e3473a291842c",
+      "name": "Only Bones - Passive",
+      "type": "feature",
+      "img": "icons/sundries/books/book-symbol-skull-grey.webp",
+      "system": {
+        "description": "<p>The Warrior is resistant to physical damage.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!8fe14eff47bafe83.7e1e3473a291842c"
+    },
+    {
+      "_id": "f5d52e8971b4d869",
+      "name": "Won't Stay Dead - Reaction",
+      "type": "feature",
+      "img": "icons/magic/life/heart-cross-strong-green.webp",
+      "system": {
+        "description": "<p>When the Warrior is defeated, you can spotlight them and roll a d6. On a result of 6, if there are other adversaries on the battlefield, the Warrior re-forms with full HP.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!8fe14eff47bafe83.f5d52e8971b4d869"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Skeleton Warrior",
+    "actorLink": false
+  },
+  "_key": "!actors!8fe14eff47bafe83"
+}

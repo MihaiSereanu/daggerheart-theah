@@ -1,0 +1,15 @@
+{
+  "_id": "0e208ef2bde62d1c",
+  "name": "Homet’s Secret Elixir",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Homet’s Secret Elixir</strong>: After drinking this potion, the next successful attack you make critically succeeds.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!0e208ef2bde62d1c"
+}

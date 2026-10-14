@@ -1,0 +1,15 @@
+{
+  "_id": "e5e5a9a5934effdb",
+  "name": "Maestro",
+  "type": "feature",
+  "img": "icons/tools/instruments/lute-gold-brown.webp",
+  "system": {
+    "description": "<p>Your songs steel the courage of those who listen. When you give a Rally Die to an ally, they also gain a Hope or clear a Stress.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    }
+  },
+  "effects": [],
+  "folder": "700e38c3de159271",
+  "_key": "!items!e5e5a9a5934effdb"
+}

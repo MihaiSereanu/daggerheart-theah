@@ -1,0 +1,52 @@
+{
+  "_id": "74bc6f469e788331",
+  "name": "Parrying Dagger",
+  "type": "weapon",
+  "img": "icons/weapons/daggers/dagger-curved-guard-blue.webp",
+  "system": {
+    "description": "<p><strong>Parrying Dagger</strong></p>\n<p><strong>Parry</strong>: When you’re hit, you may <strong>mark 1 Stress</strong> to roll 1d6. If your roll matches one of the attacker’s damage dice, cancel one matching die before damage is totaled.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "blackpowder": false,
+    "reloading": false,
+    "secondary": true,
+    "burden": "oneHanded",
+    "weaponFeatures": [],
+    "attack": {
+      "_id": "5dba87397d519793",
+      "name": "Parrying Dagger",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/weapons/daggers/dagger-curved-guard-blue.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "melee",
+      "roll": {
+        "type": "attack",
+        "trait": "finesse",
+        "bonus": 0
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d4 + @finesse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "_key": "!items!74bc6f469e788331"
+}

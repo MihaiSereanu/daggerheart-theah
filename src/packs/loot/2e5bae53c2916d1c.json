@@ -1,0 +1,15 @@
+{
+  "_id": "2e5bae53c2916d1c",
+  "name": "Vault Chest",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Vault Chest</strong>: This magical chest appears empty. When you speak a specific trigger word or action and open the chest, you can see the items stored within it.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!2e5bae53c2916d1c"
+}

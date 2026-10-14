@@ -1,0 +1,15 @@
+{
+  "_id": "57279d83177d8d92",
+  "name": "Sidhe Cage",
+  "type": "feature",
+  "img": "icons/magic/control/debuff-chains-shackles-movement-purple.webp",
+  "system": {
+    "description": "<p>Spend a Fear to form a cage around a target within Very Close range and Restrain them until they are freed with a successful Brawn Roll. When a creature makes an action roll against the cage, they must <strong>mark a Stress</strong>.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "action"
+  },
+  "effects": [],
+  "_key": "!items!57279d83177d8d92"
+}

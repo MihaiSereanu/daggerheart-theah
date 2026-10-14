@@ -1,0 +1,117 @@
+{
+  "_id": "13ebb728d59cdbac",
+  "name": "Syrneth Vault Sentinel",
+  "type": "adversary",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p><em>A dust-covered golden construct with boxy limbs and a huge mace for a hand.</em></p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "classification": "champion",
+    "type": "bruiser",
+    "difficulty": 19,
+    "notes": "<h3>Champion | Bruiser</h3>\n<p><em>A dust-covered golden construct with boxy limbs and a huge mace for a hand.</em>\n<strong>Motives &amp; Tactics:</strong> Destroy at any cost, expunge, protect</p>\n<p><strong>Difficulty:</strong> 19 | <strong>Thresholds:</strong> 14/28 | <strong>HP:</strong> 6 | <strong>Stress:</strong> 3</p>\n<p><strong>ATK:</strong> +3 | Magitech Weapon: Very Close | 2d6+5 physical</p>\n<h4>Features</h4>\n<p><strong>Kinetic Slam - Passive</strong>: Targets who take damage from the Sentinel’s standard attack are knocked back to Very Close range.</p>\n<p><strong>Box In - Action</strong>: Mark a Stress to choose a target within Very Close range to focus on. That target has Disadvantage on attack rolls when they’re within Very Close range of the Sentinel. The Sentinel can only focus on one target at a time.</p>\n<p><strong>Mana Bolt - Action</strong>: Spend a Fear to lob explosive magic at a point within Far range. All targets within Very Close range of that point must make an Finesse Reaction Roll. Targets who fail take 2d8+20 magic damage and are knocked back to Close range. Targets who succeed take half damage and aren’t knocked back.</p>\n<p><strong>Momentum - Reaction</strong>: When the Sentinel makes a successful attack against a PC, you gain a Fear.</p>\n",
+    "damageThresholds": {
+      "major": 14,
+      "severe": 28
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 6
+      },
+      "stress": {
+        "value": 0,
+        "max": 3
+      }
+    },
+    "motivesAndTactics": "Destroy at any cost, expunge, protect",
+    "experiences": {},
+    "attack": {
+      "_id": "68d9c91f4235a424",
+      "name": "Magitech Weapon",
+      "type": "attack",
+      "systemPath": "attack",
+      "baseAction": true,
+      "chatDisplay": false,
+      "img": "icons/weapons/guns/gun-blunderbuss-bronze.webp",
+      "target": {
+        "type": "any",
+        "amount": 1
+      },
+      "range": "veryClose",
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "bonus": 3
+      },
+      "damage": {
+        "main": {
+          "type": [
+            "physical"
+          ],
+          "applyTo": "hitPoints",
+          "value": {
+            "custom": {
+              "enabled": true,
+              "formula": "2d6+5"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effects": [],
+  "items": [
+    {
+      "_id": "ab7729a1cbac00be",
+      "name": "Kinetic Slam - Passive",
+      "type": "feature",
+      "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
+      "system": {
+        "description": "<p>Targets who take damage from the Sentinel’s standard attack are knocked back to Very Close range.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!13ebb728d59cdbac.ab7729a1cbac00be"
+    },
+    {
+      "_id": "c2528861e21441b4",
+      "name": "Box In - Action",
+      "type": "feature",
+      "img": "icons/magic/control/debuff-chains-shackles-movement-purple.webp",
+      "system": {
+        "description": "<p>Mark a Stress to choose a target within Very Close range to focus on. That target has Disadvantage on attack rolls when they’re within Very Close range of the Sentinel. The Sentinel can only focus on one target at a time.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!13ebb728d59cdbac.c2528861e21441b4"
+    },
+    {
+      "_id": "da95b998a4249201",
+      "name": "Mana Bolt - Action",
+      "type": "feature",
+      "img": "icons/magic/symbols/runes-star-magenta.webp",
+      "system": {
+        "description": "<p>Spend a Fear to lob explosive magic at a point within Far range. All targets within Very Close range of that point must make an Finesse Reaction Roll. Targets who fail take 2d8+20 magic damage and are knocked back to Close range. Targets who succeed take half damage and aren’t knocked back.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!13ebb728d59cdbac.da95b998a4249201"
+    },
+    {
+      "_id": "29bcc3503fbd0fea",
+      "name": "Momentum - Reaction",
+      "type": "feature",
+      "img": "icons/environment/creatures/horse-brown.webp",
+      "system": {
+        "description": "<p>When the Sentinel makes a successful attack against a PC, you gain a Fear.</p>\n"
+      },
+      "effects": [],
+      "_key": "!actors.items!13ebb728d59cdbac.29bcc3503fbd0fea"
+    }
+  ],
+  "prototypeToken": {
+    "name": "Syrneth Vault Sentinel",
+    "actorLink": false
+  },
+  "_key": "!actors!13ebb728d59cdbac"
+}

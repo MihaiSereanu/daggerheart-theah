@@ -1,0 +1,27 @@
+{
+  "_id": "c520e406ac6977d3",
+  "name": "Mastermind",
+  "type": "subclass",
+  "img": "icons/sundries/flags/banner-standard-blue.webp",
+  "system": {
+    "description": "<p>Play the Mastermind if you want to analyze your foes and strike where they are weak.</p>\n<h4>Features</h4>\n<p><strong>Exploit.</strong> When you succeed on an attack against a target, <strong>spend a Hope</strong> to make the target temporarily <em>Vulnerable</em>.</p>\n<p><strong>Press the Advantage.</strong> Once per Rest, when an adversary within Close range takes damage and marks HP from an ally’s attack, you can move to them and strike. On a success, the adversary marks the same number of HP again.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "linkedClass": "Compendium.daggerheart-theah.archetypes.Item.bf9aa3dcaf958765",
+    "spellcastingTrait": null,
+    "features": [
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.aa2ae225ee4141a0"
+      },
+      {
+        "type": "foundation",
+        "item": "Compendium.daggerheart-theah.features.Item.faabe0047513f1e6"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": "94fed15d0674b97d",
+  "_key": "!items!c520e406ac6977d3"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "04bca376020a059e",
+  "name": "Serpentfang Distillate",
+  "type": "consumable",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Serpentfang Distillate</strong>: Apply this venom to a weapon to add a d8 to your next damage roll.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!04bca376020a059e"
+}

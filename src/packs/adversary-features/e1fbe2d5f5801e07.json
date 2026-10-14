@@ -1,0 +1,15 @@
+{
+  "_id": "e1fbe2d5f5801e07",
+  "name": "Unhinged",
+  "type": "feature",
+  "img": "icons/skills/social/diplomacy-handshake-yellow.webp",
+  "system": {
+    "description": "<p>Their standard attack deals direct damage.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "featureForm": "passive"
+  },
+  "effects": [],
+  "_key": "!items!e1fbe2d5f5801e07"
+}

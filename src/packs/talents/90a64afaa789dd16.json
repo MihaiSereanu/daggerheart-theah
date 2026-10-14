@@ -1,0 +1,20 @@
+{
+  "_id": "90a64afaa789dd16",
+  "name": "Rapid Riposte",
+  "type": "domainCard",
+  "img": "icons/skills/melee/swords-parry-block-yellow.webp",
+  "system": {
+    "description": "<p>When a Melee attack against you fails, <strong>mark a Stress</strong> to immediately force the attacker to mark a HP.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "tactics",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "6ba62ee322f96c14",
+  "_key": "!items!90a64afaa789dd16"
+}

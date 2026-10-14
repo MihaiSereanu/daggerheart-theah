@@ -1,0 +1,15 @@
+{
+  "_id": "14c067929d593c03",
+  "name": "Greatstone",
+  "type": "loot",
+  "img": "icons/containers/chest/chest-reinforced-steel-brown.webp",
+  "system": {
+    "description": "<p><strong>Greatstone</strong>: You can attach this stone to a weapon that doesn&#39;t already have a feature. The weapon gains the following feature. <strong>Powerful</strong>: On a successful attack, roll an additional damage die and discard the lowest result.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "quantity": 1
+  },
+  "effects": [],
+  "_key": "!items!14c067929d593c03"
+}

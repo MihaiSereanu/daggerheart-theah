@@ -5,7 +5,7 @@ export function updateResourcesForDualityReroll(oldDuality, newDuality, actor) {
     const stress = (newDuality === 0 ? 1 : 0) - (oldDuality === 0 ? 1 : 0);
     const fear = (newDuality === -1 ? 1 : 0) - (oldDuality === -1 ? 1 : 0);
 
-    const { hopeFear, countdownAutomation } = 
+    const { hopeFear } =
         game.settings.get(CONFIG.DH.id, CONFIG.DH.SETTINGS.gameSettings.Automation);
 
     if (game.user.isGM ? hopeFear.gm : hopeFear.players) {
@@ -19,10 +19,4 @@ export function updateResourcesForDualityReroll(oldDuality, newDuality, actor) {
         resourceUpdates.updateResources();
     }
 
-    if (countdownAutomation && fear !== 0) {
-        game.system.api.applications.ui.DhCountdowns.updateCountdowns({ 
-            type: CONFIG.DH.GENERAL.countdownProgressionTypes.fear.id, 
-            undo: fear === 1 ? false : true 
-        });
-    }
 }

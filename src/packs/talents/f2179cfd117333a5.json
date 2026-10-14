@@ -1,0 +1,20 @@
+{
+  "_id": "f2179cfd117333a5",
+  "name": "Uncanny Disguise",
+  "type": "domainCard",
+  "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
+  "system": {
+    "description": "<p>When you have a few minutes to prepare, you can <strong>mark a Stress</strong> to disguise yourself as anyone you can reasonably impersonate. While disguised, you have advantage on Charm rolls to avoid scrutiny. When you roll with Fear, someone will see through your disguise - it&#39;s only a matter of time now.</p>\n",
+    "attribution": {
+      "source": "Heart & Dagger Manuscript"
+    },
+    "domain": "shade",
+    "type": "ability",
+    "level": 1,
+    "recallCost": 0,
+    "inVault": false
+  },
+  "effects": [],
+  "folder": "5af6d37ce4bdfed9",
+  "_key": "!items!f2179cfd117333a5"
+}
